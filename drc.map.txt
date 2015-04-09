@@ -1,0 +1,3 @@
+[developer.rackspace.com]
+/ https://github.com/smashwilson/deconst-drc-blog
+/docs/ https://github.com/smashwilson/deconst-drc-docs
