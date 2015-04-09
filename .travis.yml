@@ -1,0 +1,8 @@
+---
+language: node_js
+node_js:
+- "0.12"
+install:
+- git clone --depth 1 https://github.com/deconst/preparer-asset.git /tmp/preparer-asset
+script:
+- /tmp/preparer-asset/build.sh
