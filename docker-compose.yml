@@ -1,0 +1,40 @@
+---
+content:
+  image: quay.io/deconst/content-service
+  environment:
+    RACKSPACE_USERNAME:
+    RACKSPACE_APIKEY:
+    RACKSPACE_REGION: DFW
+    CONTENT_CONTAINER: deconst-drc-content
+    ASSET_CONTAINER: deconst-drc-assets
+    CONTENT_LOG_LEVEL: DEBUG
+  ports:
+  - "9000:8080"
+mapping:
+  image: quay.io/deconst/mapping-service
+  environment:
+    CONTROL_REPO_URL: https://github.com/smashwilson/deconst-drc-control.git
+    MAP_LOG_LEVEL: DEBUG
+  ports:
+  - "9001:8080"
+layout:
+  image: quay.io/deconst/layout-service
+  environment:
+    CONTROL_REPO_URL: https://github.com/smashwilson/deconst-drc-control.git
+    LAYOUT_LOG_LEVEL: DEBUG
+  ports:
+  - "9002:8080"
+presenter:
+  image: quay.io/deconst/presenter
+  links:
+  - content
+  - mapping
+  - layout
+  environment:
+    CONTENT_SERVICE_URL: http://content:8080/
+    MAPPING_SERVICE_URL: http://mapping:8080/
+    LAYOUT_SERVICE_URL: http://layout:8080/
+    PRESENTED_URL_DOMAIN: developer.rackspace.com
+    PRESENTER_LOG_LEVEL: DEBUG
+  ports:
+  - "80:8080"
