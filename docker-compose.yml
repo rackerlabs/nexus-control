@@ -1,12 +1,17 @@
 ---
+mongo:
+  image: mongo:2.6
 content:
   image: quay.io/deconst/content-service
+  links:
+  - "mongo:mongo"
   environment:
     RACKSPACE_USERNAME:
     RACKSPACE_APIKEY:
     RACKSPACE_REGION: DFW
     CONTENT_CONTAINER: deconst-drc-content
     ASSET_CONTAINER: deconst-drc-assets
+    MONGODB_URL: mongodb://mongo:27017/content
     CONTENT_LOG_LEVEL: DEBUG
   ports:
   - "9000:8080"
