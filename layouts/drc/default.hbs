@@ -3,86 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ metadata.title }}</title>
+  <title>{{ envelope.title }}</title>
   <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
   <!-- our styles: -->
   <link rel="stylesheet" href="{{ css_drc_url }}">
 </head>
 <body>
 
-<div id="header" class="navbar navbar-fixed-top navbar-inverse navbar-default">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-btn">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand new-landing-sprite rs-developer-logo" href="/"></a>
-        </div>
-        <div class="collapse navbar-collapse" id="navbar-collapse-btn">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="/sdks/">SDKs</a></li>
-                <li><a href="/databases/">Databases</a></li>
-                <li><a href="/docs/">API Docs</a></li>
-                <li><a href="/blog/">Blog</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Community <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="https://community.rackspace.com/developers/default">Developer Forum</a></li>
-                        <li><a href="/community/">Outreach &amp; Events</a></li>
-                        <li><a href="https://github.com/rackerlabs/developer.rackspace.com">This site on github</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Help <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <!--<li><a href="#">Developer-to-Developer Support</a></li>-->
-                        <li><a href="http://www.rackspace.com/knowledge_center/">Knowledge Center</a></li>
-                        <li><a href="http://status.rackspace.com">System Health Status</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="https://my.rackspace.com/portal/auth/login">MyRackspace Portal</a></li>
-                        <li><a href="https://mycloud.rackspace.com">Cloud Control Panel</a></li>
-                        <li><a href="https://manage.rackspacecloud.com/pages/Login.jsp">Cloud Sites Control Panel</a>
-                        </li>
-                        <li><a href="https://apps.rackspace.com">Rackspace Webmail Login</a></li>
-                        <li><a href="https://cp.rackspace.com">Email Admin Login</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="/signup" class="btn btn-default" id="btn-get-started">Sign up for $50/month credit</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
-
+{{{ common/header.hbs }}}
 {{{ metadata.body }}}
-
-<div class="basement">
-    <div class="container">
-        <img src="{% asset_path rackerpowered-logo.png %}" alt="Racker Powered">
-        <ul>
-            <li>©2015 Rackspace, US Inc.</li>
-            <li><a href="http://www.rackspace.com/about/">About Rackspace</a></li>
-            <li><a href="http://ir.rackspace.com/">Investors</a></li>
-            <li><a href="http://www.rackertalent.com">Careers</a></li>
-            <li><a href="http://www.rackspace.com/information/legal/privacystatement">Privacy Statement</a></li>
-            <li><a href="http://www.rackspace.com/information/legal/websiteterms">Website Terms</a></li>
-            <li><a href="http://www.rackspace.com/information/legal/copyrights_trademarks">Trademarks</a></li>
-        </ul>
-    </div>
-</div>
+{{{ common/footer.hbs }}}
 
 <script src="{{ js_drc_url }}"></script>
-
-<!-- Tealium -->
-<script type="text/javascript" src="https://tags.tiqcdn.com/utag/rackspace/developer/prod/utag.js"></script>
 
 </body>
 </html>
