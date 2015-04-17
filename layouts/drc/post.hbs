@@ -1,0 +1,56 @@
+[@ drc/blog-page.hbs @]
+
+<h1 class="title">{{ metadata.title }}</h1>
+{{! TODO: date formatting helper; '| date: "%b %-d %Y"' }}
+<div class="byline">By {{ metadata.author }} - Posted on {{ metadata.date }}</div>
+
+{{#each metadata.tags}}
+  {{#if @first}}<div class="categories">{{/if}}
+
+  {{! TODO: replicate '| category_links'}}
+  {{ this }}
+
+  {{#if @last}}</div>{{/if}}
+{{/each}}
+
+<p>{{{ metadata.body }}}</p>
+
+<!-- Author's bio -->
+{{#if metadata.bio }}
+  <section>
+    <div class="panel panel-default">
+      <div class="panel-heading">About the author(s)</div>
+      <div class="panel-body">
+        {{{ metadata.bio }}}
+      </div>
+    </div>
+  </section>
+{{/if}}
+
+<!-- disqus comments -->
+<section>
+  <h1>Comments</h1>
+  <div id="disqus_thread" aria-live="polite">[+ drc/common/disqus.hbs +]</div>
+</section>
+
+{{#if has_next_or_previous }}
+  <div class="row">
+    <div class="col-md-12">
+      <hr />
+    </div>
+  </div>
+  <div class="row">
+  {{#if previous }}
+    <div class="col-md-6">
+      <div class="related-pretitle">Previous Article</div>
+      <span class="related-title"><a href="{{ previous.url }}">{{ previous.title }}</a></span>
+    </div>
+  {{/if}}
+  {{#if next }}
+    <div class="col-md-6">
+      <div class="related-pretitle">Next Article</div>
+      <span class="related-title"><a href="{{ next.url }}">{{ next.title }}</a></span>
+    </div>
+  {{/if}}
+  </div>
+{{/if}}

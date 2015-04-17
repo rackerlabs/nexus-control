@@ -7,14 +7,20 @@
   <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
   <!-- our styles: -->
   <link href="{{ envelope.assets.css_drc_url }}" rel="stylesheet" type='text/css'>
+  [+ common/vwo.hbs +]
+  <script type="text/javascript" src="https://www.rackspace.com/data/client"></script>
 </head>
 <body>
 
-{{{ drc/common/header.hbs }}}
+[+ drc/common/header.hbs +]
 {{{ envelope.body }}}
-{{{ drc/common/footer.hbs }}}
+[+ drc/common/footer.hbs +]
 
 <script src="{{ envelope.assets.js_drc_url }}"></script>
+
+[+ drc/common/ga.hbs +]
+[+ drc/common/survey.hbs +]
+[+ drc/common/remarketing.hbs +]
 
 </body>
 </html>

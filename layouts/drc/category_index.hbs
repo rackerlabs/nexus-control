@@ -1,0 +1,27 @@
+[@ drc/default.hbs @]
+<div class="title-header">
+  <div class="inner">
+    <span class="headline">Developer Blog</span>
+  </div>
+</div>
+<div class="container body-container">
+  <div class="row">
+    <div class="col-md-9 col-md-push-3 blog-post bodycontent">
+      <ul class="blog-entries">
+        {{#each included }}
+          <li class="entry">
+            {{! TODO: Replicate '| date_to_html_string' }}
+            <span class="byline"> {{ date | date_to_html_string }}</span>
+            <h2 class="title"><a href="{{ url }}">{{ title }}</a></h2>
+            {{! TODO: Replicate: '| category_links' }}
+            <div class="categories">Filed under {{ tags }}</div>
+          </li>
+        {{/each}}
+      </ul>
+    </div>
+    <div class="col-md-3 col-md-pull-9 sidebar">
+      [+ drc/common/blog-sidebar.hbs +]
+      [+ drc/common/sidebar-footer.hbs +]
+    </div>
+  </div>
+</div>

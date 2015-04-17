@@ -1,0 +1,12 @@
+[@ drc/page.hbs @]
+<div class="container body-container">
+  <div class="row">
+    <div class="col-md-9 col-md-push-3 bodycontent">
+      {{{ metadata.body }}}
+    </div>
+    <div class="col-md-3 col-md-pull-9 sidebar">
+      [+ drc/common/sidebar.hbs +]
+      [+ drc/common/sidebar-footer.hbs +]
+    </div>
+  </div>
+</div>
