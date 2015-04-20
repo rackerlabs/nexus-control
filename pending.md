@@ -24,7 +24,8 @@ New handlebars context fields that I'll need to add.
  * `included[].url`
  * `included[].tags`
 
-And I'll need to reproduce these handlebars filters:
+And I'll need to reproduce these Liquid filters as handlebars filters:
 
  * `{{ | date: "%b %-d %Y" }}`
+ * `{{ | date_to_html_string }}`
  * `{{ | category_links }}`
