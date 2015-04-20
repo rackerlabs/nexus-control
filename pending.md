@@ -7,13 +7,13 @@ These layouts are waiting on deconst features to be ported over properly:
 New handlebars context fields that I'll need to add.
 
  * `presented_url`
- * `metadata.tags`
- * `metadata.author`
- * `metadata.publish_date`
- * `metadata.bio`
- * `metadata.disqus.include`
- * `metadata.disqus.short_name`
- * `metadata.disqus.embed`
+ * `envelope.tags`
+ * `envelope.author`
+ * `envelope.publish_date`
+ * `envelope.bio`
+ * `envelope.disqus.include`
+ * `envelope.disqus.short_name`
+ * `envelope.disqus.embed`
  * `has_next_or_previous`
  * `previous.url`
  * `previous.title`

@@ -1,10 +1,10 @@
 [@ drc/blog-page.hbs @]
 
-<h1 class="title">{{ metadata.title }}</h1>
+<h1 class="title">{{ envelope.title }}</h1>
 {{! TODO: date formatting helper; '| date: "%b %-d %Y"' }}
-<div class="byline">By {{ metadata.author }} - Posted on {{ metadata.date }}</div>
+<div class="byline">By {{ envelope.author }} - Posted on {{ envelope.date }}</div>
 
-{{#each metadata.tags}}
+{{#each envelope.tags}}
   {{#if @first}}<div class="categories">{{/if}}
 
   {{! TODO: replicate '| category_links'}}
@@ -13,15 +13,15 @@
   {{#if @last}}</div>{{/if}}
 {{/each}}
 
-<p>{{{ metadata.body }}}</p>
+<p>{{{ envelope.body }}}</p>
 
 <!-- Author's bio -->
-{{#if metadata.bio }}
+{{#if envelope.bio }}
   <section>
     <div class="panel panel-default">
       <div class="panel-heading">About the author(s)</div>
       <div class="panel-body">
-        {{{ metadata.bio }}}
+        {{{ envelope.bio }}}
       </div>
     </div>
   </section>

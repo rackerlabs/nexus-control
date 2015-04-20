@@ -3,11 +3,11 @@
   Use the embed script if its "embed" property is true. Otherwise, render the "count" script.
 }}
 
-{{#if metadata.disqus.include}}
+{{#if envelope.disqus.include}}
 <script type="text/javascript">
-  var disqus_shortname = '{{ metadata.disqus.short_name }}';
+  var disqus_shortname = '{{ envelope.disqus.short_name }}';
 
-  {{#if metadata.disqus.embed }}
+  {{#if envelope.disqus.embed }}
     // var disqus_developer = 1;
     var disqus_identifier = '{{ presented_url }}';
     var disqus_url = '{{ presented_url }}';

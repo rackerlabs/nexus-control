@@ -1,13 +1,13 @@
 [@ drc/default.hbs @]
 <div class="title-header">
   <div class="inner">
-    <span class="headline">{{ metadata.title }}</span>
+    <span class="headline">{{ envelope.title }}</span>
   </div>
 </div>
 <div class="container body-container">
   <div class="row">
     <div class="col-md-9 col-md-push-3 bodycontent">
-      {{{ metadata.body }}}
+      {{{ envelope.body }}}
     </div>
     <div class="col-md-3 col-md-pull-9 sidebar">
       [+ drc/common/sdk-sidebar.hbs +]
