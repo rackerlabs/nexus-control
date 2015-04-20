@@ -2,3 +2,4 @@
 *.min.css
 
 assemble.rb
+*.out
