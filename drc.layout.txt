@@ -1,2 +1,11 @@
 [developer.rackspace.com]
 / default drc/default.hbs
+/ blog-index drc/blog-index.hbs
+/ blog-page drc/blog-page.hbs
+/ category_index drc/category_index.hbs
+/ databases-index drc/databases-index.hbs
+/ docs-page drc/docs-page.hbs
+/ monthly_index drc/monthly_index.hbs
+/ page drc/page.hbs
+/ post drc/post.hbs
+/ sdk-page drc/sdk-page.hbs
