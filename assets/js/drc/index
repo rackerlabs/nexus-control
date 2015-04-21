@@ -1,0 +1,13 @@
+lib/jquery/jquery-1.11.1.js
+lib/jquery/jquery.cookie-1.4.1.js
+lib/bootstrap/collapse.js
+lib/bootstrap/dropdown.js
+lib/bootstrap/tooltip.js
+lib/bootstrap/tab.js
+core.js
+pages/sponsorship.js
+pages/docs.js
+pages/devtrial.js
+pages/signup.js
+pages/home.js
+app.js
