@@ -18,17 +18,21 @@ content:
 mapping:
   image: quay.io/deconst/mapping-service
   environment:
-    CONTROL_REPO_URL: https://github.com/smashwilson/deconst-drc-control.git
+    CONTROL_REPO_URL: /data/control-repo
     MAP_LOG_LEVEL: DEBUG
   ports:
   - "9001:8080"
+  volumes:
+  - .:/data/control-repo
 layout:
   image: quay.io/deconst/layout-service
   environment:
-    CONTROL_REPO_URL: https://github.com/smashwilson/deconst-drc-control.git
+    CONTROL_REPO_URL: /data/control-repo
     LAYOUT_LOG_LEVEL: DEBUG
   ports:
   - "9002:8080"
+  volumes:
+  - .:/data/control-repo
 presenter:
   image: quay.io/deconst/presenter
   links:
