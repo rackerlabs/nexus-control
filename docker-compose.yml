@@ -9,6 +9,7 @@ content:
     RACKSPACE_USERNAME:
     RACKSPACE_APIKEY:
     RACKSPACE_REGION: DFW
+    ADMIN_APIKEY: "12345"
     CONTENT_CONTAINER: deconst-drc-content
     ASSET_CONTAINER: deconst-drc-assets
     MONGODB_URL: mongodb://mongo:27017/content
