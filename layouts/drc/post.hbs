@@ -1,6 +1,6 @@
 [@ drc/blog-page.hbs @]
 
-<h1 class="title">{{ envelope.title }}</h1>
+<h1 class="title">{{{ envelope.title }}}</h1>
 {{! TODO: date formatting helper; '| date: "%b %-d %Y"' }}
 <div class="byline">By {{ envelope.author }} - Posted on {{ envelope.publish_date }}</div>
 
@@ -43,13 +43,13 @@
   {{#if envelope.previous }}
     <div class="col-md-6">
       <div class="related-pretitle">Previous Article</div>
-      <span class="related-title"><a href="{{ envelope.previous.url }}">{{ envelope.previous.title }}</a></span>
+      <span class="related-title"><a href="{{ envelope.previous.url }}">{{{ envelope.previous.title }}}</a></span>
     </div>
   {{/if}}
   {{#if envelope.next }}
     <div class="col-md-6">
       <div class="related-pretitle">Next Article</div>
-      <span class="related-title"><a href="{{ envelope.next.url }}">{{ envelope.next.title }}</a></span>
+      <span class="related-title"><a href="{{ envelope.next.url }}">{{{ envelope.next.title }}}</a></span>
     </div>
   {{/if}}
   </div>
