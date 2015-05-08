@@ -2,7 +2,7 @@
 
 <h1 class="title">{{ envelope.title }}</h1>
 {{! TODO: date formatting helper; '| date: "%b %-d %Y"' }}
-<div class="byline">By {{ envelope.author }} - Posted on {{ envelope.date }}</div>
+<div class="byline">By {{ envelope.author }} - Posted on {{ envelope.publish_date }}</div>
 
 {{#each envelope.tags}}
   {{#if @first}}<div class="categories">{{/if}}
@@ -40,16 +40,16 @@
     </div>
   </div>
   <div class="row">
-  {{#if previous }}
+  {{#if envelope.previous }}
     <div class="col-md-6">
       <div class="related-pretitle">Previous Article</div>
-      <span class="related-title"><a href="{{ previous.url }}">{{ previous.title }}</a></span>
+      <span class="related-title"><a href="{{ envelope.previous.url }}">{{ envelope.previous.title }}</a></span>
     </div>
   {{/if}}
-  {{#if next }}
+  {{#if envelope.next }}
     <div class="col-md-6">
       <div class="related-pretitle">Next Article</div>
-      <span class="related-title"><a href="{{ next.url }}">{{ next.title }}</a></span>
+      <span class="related-title"><a href="{{ envelope.next.url }}">{{ envelope.next.title }}</a></span>
     </div>
   {{/if}}
   </div>
