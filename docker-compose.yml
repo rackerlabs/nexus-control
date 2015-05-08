@@ -24,7 +24,7 @@ mapping:
   ports:
   - "9001:8080"
   volumes:
-  - .:/data/control-repo
+  - .:/data/control-repo:ro
 layout:
   image: quay.io/deconst/layout-service
   environment:
@@ -33,7 +33,7 @@ layout:
   ports:
   - "9002:8080"
   volumes:
-  - .:/data/control-repo
+  - .:/data/control-repo:ro
 presenter:
   image: quay.io/deconst/presenter
   links:
