@@ -4,7 +4,8 @@ node_js:
 - "0.12"
 install:
 - git clone --depth 1 https://github.com/deconst/preparer-asset.git /tmp/preparer-asset
-- sudo apt-get update && sudo apt-get install python3.4
+- sudo apt-get update && sudo apt-get install wget
+- wget https://www.python.org/ftp/python/3.4.3/Python-3.4.3.tgz && tar -zxf Python-3.4.3.tgz && cd Python-3.4.3 && ./configure && make && sudo make install
 - sudo pip3.4 install -e git://github.com/deconst/mapping-service.git#egg=mappingservice --src /tmp/mapping-service
 - sudo pip3.4 install -e git://github.com/deconst/layout-service.git#egg=layoutservice --src /tmp/layout-service
 script:
