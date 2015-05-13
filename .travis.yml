@@ -4,5 +4,9 @@ node_js:
 - "0.12"
 install:
 - git clone --depth 1 https://github.com/deconst/preparer-asset.git /tmp/preparer-asset
+- pip install -e git://github.com/deconst/mapping-service.git#egg=mappingservice --src /tmp/mapping-service
+- pip install -e git://github.com/deconst/layout-service.git#egg=layoutservice --src /tmp/mapping-service
 script:
 - /tmp/preparer-asset/build.sh
+- cd /tmp/mapping-service/ && python3.4 -m mappingservice --validate true
+- cd /tmp/mapping-service/ && python3.4 -m layoutservice --validate true
