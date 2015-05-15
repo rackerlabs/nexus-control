@@ -45,6 +45,8 @@ presenter:
     MAPPING_SERVICE_URL: http://mapping:8080/
     LAYOUT_SERVICE_URL: http://layout:8080/
     PRESENTED_URL_DOMAIN: developer.rackspace.com
+    PUBLIC_URL_DOMAIN: docker
+    PUBLIC_URL_PROTO: http
     PRESENTER_LOG_LEVEL: DEBUG
   ports:
   - "80:8080"
