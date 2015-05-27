@@ -10,6 +10,6 @@ install:
 - sudo pip3.4 install -e git://github.com/deconst/layout-service.git#egg=layoutservice --src /tmp/layout-service
 - sudo pip3.4 install -e git://github.com/deconst/common-python.git#egg=deconst_common
 script:
-- /tmp/preparer-asset/build.sh
 - cd /tmp/mapping-service/ && python3.4 -m mappingservice --validate true
 - cd /tmp/layout-service/ && python3.4 -m layoutservice --validate true
+- cd ${TRAVIS_BUILD_DIR} && /tmp/preparer-asset/build.sh
