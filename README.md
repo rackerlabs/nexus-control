@@ -1,5 +1,5 @@
-# Deconst developer.rackspace.com Control Repository
+# Control Repository for developer.rackspace.com
 
 [![Build Status](https://travis-ci.org/rackerlabs/nexus-control.svg?branch=master)](https://travis-ci.org/rackerlabs/nexus-control)
 
-Deconst control repository for a prototype of hosting developer.rackspace.com with deconst.
+Deconst control repository used to host [developer.rackspace.com](https://developer.rackspace.com/).
