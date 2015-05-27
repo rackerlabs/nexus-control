@@ -6,8 +6,7 @@
 
 {{#each envelope.categories}}
   {{#if @first}}<div class="categories">{{/if}}
-    <a class="category" href="/blog/categories/{{ this }}">{{ this }}</a>
-  {{#if @last}}</div>{{else}},{{/if}}
+    <a class="category" href="/blog/categories/{{ this }}">{{ this }}</a>{{#if @last}}</div>{{else}},{{/if}}
 {{/each}}
 
 <p>{{{ envelope.body }}}</p>
