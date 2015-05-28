@@ -1,8 +1,7 @@
 [@ drc/blog-page.hbs @]
 
 <h1 class="title">{{{ envelope.title }}}</h1>
-{{! TODO: date formatting helper; '| date: "%b %-d %Y"' }}
-<div class="byline">By {{ envelope.author }} - Posted on {{ envelope.publish_date }}</div>
+<div class="byline">By {{ envelope.author }} - Posted on {{formatDate envelope.publish_date "MMM D YYYY" }}</div>
 
 {{#each envelope.categories}}
   {{#if @first}}<div class="categories">{{/if}}
