@@ -1,6 +1,7 @@
+// line 1
 (function (window, document, $) {
   var app = window.devsite;
-
+  var stuff;
   $.extend(app, {
     // TODO move to some kind of utils object or something
     getParameter: (function () {
