@@ -1,0 +1,139 @@
+.narrow-sidebar {
+    .side {
+        background: shade(white, 2%);
+        border-right: solid 1px shade(white, 10%);
+        height: ~"calc(100vh - 74px - 60px)";
+        max-width: 480px;
+        overflow-y: auto;
+        padding: 0;
+        text-align: left;
+
+        .parent-toctree {
+            padding: 25px;
+
+            &:empty {
+                padding: 0;
+            }
+        }
+
+        .toctree-wrapper {
+            border-top: solid 1px shade(white, 10%);
+            padding: 25px 0;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+
+            a {
+                padding: 0 25px;
+            }
+
+            ul li {
+                a {
+                    padding-left: 50px;
+                }
+
+                ul li {
+                    a {
+                        padding-left: 50px;
+                    }
+                }
+            }
+
+            li {
+                display: inline-block;
+                line-height: 2;
+                width: 100%;
+
+                a {
+                    display: inline-block;
+                    line-height: 1.5;
+                    width: 100%;
+
+                    &:hover, &:focus, &:active {
+                        background: shade(white, 5%);
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .main {
+        height: ~"calc(100vh - 74px - 60px)";
+        overflow-y: auto;
+    }
+
+    // Components that will likely be found in .main
+
+    img {
+        height: auto;
+        max-width: 100%;
+    }
+
+    h1 {
+        background: @link-color;
+        color: white;
+        margin-bottom: 25px;
+        left: -25px;
+        padding: 1.25em 25px;
+        position: relative;
+        width: ~"calc(100% + 50px)";
+
+        .headerlink {
+            display: none;
+        }
+    }
+
+    .headerlink {
+        color: shade(white, 15%);
+        display: inline-block;
+        font-size: 60%;
+        margin-left: 0.5em;
+        .transition(color 0.2s ease-in-out);
+        vertical-align: middle;
+        will-change: color;
+
+        &:hover, &:focus, &:active {
+            color: @link-color;
+            text-decoration: none;
+        }
+    }
+
+    .admonition {
+        &:extend(.alert);
+
+        &.warning {
+            &:extend(.alert-warning);
+        }
+    }
+}
+
+
+#rackspace-cloud-guide-to-core-infrastructure-services {
+    table {
+        border-width: 0;
+        border-color: transparent;
+        margin-bottom: 25px;
+
+        tr td {
+            border: 0;
+            border-bottom: solid 1px shade(white, 10%);
+            padding: 25px;
+
+            &:first-child {
+                text-align: center;
+
+                img {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        tr:last-child td {
+            border-bottom: 0;
+        }
+    }
+}
