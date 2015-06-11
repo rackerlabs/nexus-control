@@ -13,7 +13,16 @@
 <body>
 
 [+ drc/common/header.hbs +]
-{{{ envelope.body }}}
+<div class="container-fluid narrow-sidebar">
+    <div class="row">
+        <div class="col-md-4 sidebar">
+            {{{ envelope.toc }}}
+        </div>
+        <div class="col-md-8 main">
+            {{{ envelope.body }}}
+        </div>
+    </div>
+</div>
 [+ drc/common/footer.hbs +]
 
 <script src="/assets/js/main.js"></script>
