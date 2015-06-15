@@ -1,10 +1,8 @@
 .narrow-sidebar {
-    .side {
+    .sidebar {
         background: shade(white, 2%);
         border-right: solid 1px shade(white, 10%);
-        height: ~"calc(100vh - 74px - 60px)";
         max-width: 480px;
-        overflow-y: auto;
         padding: 0;
         text-align: left;
 
@@ -25,6 +23,7 @@
             margin: 0;
             padding: 0;
             list-style-type: none;
+            text-align: left;
 
             a {
                 padding: 0 25px;
@@ -48,12 +47,14 @@
                 width: 100%;
 
                 a {
+                    color: @link-color;
                     display: inline-block;
-                    line-height: 1.5;
+                    line-height: 2;
                     width: 100%;
 
                     &:hover, &:focus, &:active {
                         background: shade(white, 5%);
+                        color: @link-hover-color;
                         text-decoration: none;
                     }
                 }
@@ -62,8 +63,53 @@
     }
 
     .main {
-        height: ~"calc(100vh - 74px - 60px)";
-        overflow-y: auto;
+        padding: 25px;
+
+        .serial-links {
+            border-top: solid 1px shade(white, 10%);
+            padding-top: 25px;
+
+            .previous, .next {
+                position: relative;
+                width: 50%;
+
+                a {
+                    font-weight: 600;
+                }
+
+                &:before {
+                    color: shade(white, 20%);
+                    content: 'Previous';
+                    display: inline-block;
+                    font-size: 10px;
+                    font-weight: 600;
+                    left: 0;
+                    letter-spacing: 0.03em;
+                    position: absolute;
+                    text-transform: uppercase;
+                    top: -1.5em;
+                }
+            }
+
+            .previous {
+                float: left;
+
+                &:before {
+                    content: 'Previous';
+                    left: 0;
+                }
+            }
+
+            .next {
+                float: right;
+                text-align: right;
+
+                &:before {
+                    content: 'Next';
+                    right: 0;
+                }
+            }
+        }
     }
 
     // Components that will likely be found in .main
@@ -74,24 +120,16 @@
     }
 
     h1 {
-        background: @link-color;
-        color: white;
-        margin-bottom: 25px;
-        left: -25px;
-        padding: 1.25em 25px;
-        position: relative;
-        width: ~"calc(100% + 50px)";
-
-        .headerlink {
-            display: none;
-        }
+        display: none;
     }
 
     .headerlink {
         color: shade(white, 15%);
         display: inline-block;
         font-size: 60%;
-        margin-left: 0.5em;
+        float: left;
+        line-height: 1.8;
+        margin-right: 0.5em;
         .transition(color 0.2s ease-in-out);
         vertical-align: middle;
         will-change: color;
@@ -105,6 +143,10 @@
     .admonition {
         &:extend(.alert);
 
+        &.tip {
+            &:extend(.alert-info);
+        }
+
         &.warning {
             &:extend(.alert-warning);
         }
@@ -117,6 +159,7 @@
         border-width: 0;
         border-color: transparent;
         margin-bottom: 25px;
+        width: 100%;
 
         tr td {
             border: 0;

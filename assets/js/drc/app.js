@@ -1,4 +1,3 @@
-// line 1
 (function (window, document, $) {
   var app = window.devsite;
   var stuff;

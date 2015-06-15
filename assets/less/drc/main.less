@@ -1,16 +1,34 @@
-// Define variables for static images.
-@ribbon-url: @image_ribbon_png_url;
-@fpo-herobg-url: @image_fpo-herobg_jpg_url;
-@rs-logo-url: @image_rs-logo_svg_url;
-@devpluslogo-url: @image_devpluslogo_svg_url;
-@devplusbg-url: @image_devplus-bg_jpg_url;
-@new-landing-sprite-url: @image_new-landing-sprite_png_url;
+@build_images_favicon_ico: '/assets/images/favicon.ico';
+@build_images_new_landing_sprite_png: '/assets/images/new-landing-sprite.png';
+@build_images_ribbon_png: '/assets/images/ribbon.png';
+@build_fonts_fontawesome_webfont_eot: '/assets/fonts/fontawesome-webfont.eot';
+@build_fonts_fontawesome_webfont_woff: '/assets/fonts/fontawesome-webfont.woff';
+@build_images_rackerpowered_logo_png: '/assets/images/rackerpowered-logo.png';
+@build_fonts_FontAwesome_otf: '/assets/fonts/FontAwesome.otf';
+@build_images_devpluslogo_svg: '/assets/images/devpluslogo.svg';
+@build_fonts_fontawesome_webfont_ttf: '/fonts/images/fontawesome-webfont.ttf';
+@build_images_rs_logo_svg: '/assets/images/rs-logo.svg';
+@build_images_devplus_bg_jpg: '/assets/images/devplus-bg.jpg';
+@build_images_fpo_herobg_jpg: '/assets/images/fpo-herobg.jpg';
+@build_fonts_fontawesome_webfont_svg: '/assets/fonts/fontawesome-webfont.svg';
 
-@font-awesome-url-eot: @font_fontawesome-webfont_eot_url;
-@font-awesome-url-woff: @font_fontawesome-webfont_woff_url;
-@font-awesome-url-ttf: @font_fontawesome-webfont_ttf_url;
-@font-awesome-url-svg: @font_fontawesome-webfont_svg_url;
-@font-awesome-url-otf: @font_FontAwesome_otf_url;
+// This file should be empty for dev builds, and populated with asset URLs for
+// production builds. When it is not empty, it will override all the variables above.
+@import "deconst-variables.less";
+
+// Define variables for static images.
+@ribbon-url: @build_images_ribbon_png;
+@fpo-herobg-url: @build_images_fpo_herobg_jpg;
+@rs-logo-url: @build_images_rs_logo_svg;
+@devpluslogo-url: @build_images_devpluslogo_svg;
+@devplusbg-url: @build_images_devplus_bg_jpg;
+@new-landing-sprite-url: @build_images_new_landing_sprite_png;
+
+@font-awesome-url-eot: @build_fonts_fontawesome_webfont_eot;
+@font-awesome-url-woff: @build_fonts_fontawesome_webfont_woff;
+@font-awesome-url-ttf: @build_fonts_fontawesome_webfont_ttf;
+@font-awesome-url-svg: @build_fonts_fontawesome_webfont_svg;
+@font-awesome-url-otf: @build_fonts_FontAwesome_otf;
 
 // Bootstrap goes first
 @import "bootstrap/bootstrap";
