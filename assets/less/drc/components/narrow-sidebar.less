@@ -140,10 +140,30 @@
         }
     }
 
+    .figure {
+        background: shade(white, 5%);
+        border: solid 1px shade(white, 10%);
+        border-radius: 4px;
+        display: inline-block;
+        margin-bottom: 25px;
+        padding: 25px;
+        text-align: center;
+
+        a, img {
+            display: block;
+            margin: 0 auto;
+        }
+
+        .caption {
+            font-size: 12px;
+            margin: 25px 0 0 0;
+        }
+    }
+
     .admonition {
         &:extend(.alert);
 
-        &.tip {
+        &.tip, &.note {
             &:extend(.alert-info);
         }
 

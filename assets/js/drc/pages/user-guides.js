@@ -8,12 +8,6 @@
         $(objects).css({minHeight: tallest + 'px'});
     };
 
-    $('.narrow-sidebar .toctree-wrapper').each(function () {
-        var sidebar = $('.narrow-sidebar .sidebar');
-        $(this).appendTo(sidebar);
-    });
-
-
     $(document).ready(
         matchHeight($('.narrow-sidebar .sidebar, .narrow-sidebar .main'))
     );

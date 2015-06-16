@@ -7,6 +7,7 @@
   <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=latin" rel="stylesheet" type="text/css">
   <!-- our styles: -->
   <link href="{{ assets.build_css_main_css }}" rel="stylesheet" type='text/css'>
+  <!-- <link rel="stylesheet" href="/assets/css/main.css"> -->
   [+ drc/common/vwo.hbs +]
   <script type="text/javascript" src="https://www.rackspace.com/data/client"></script>
 </head>
@@ -21,7 +22,7 @@
     </div>
     <div class="row">
         <div class="col-md-3 sidebar">
-            <div class="parent-toctree">{{{ envelope.toc }}}</div>
+            {{{ globals.toc }}}
         </div>
         <div class="col-md-9 main">
             <div class="body">
