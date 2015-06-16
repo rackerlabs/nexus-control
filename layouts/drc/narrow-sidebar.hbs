@@ -6,7 +6,7 @@
   <title>{{{ envelope.title }}}</title>
   <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=latin" rel="stylesheet" type="text/css">
   <!-- our styles: -->
-  <link href="/assets/css/main.css" rel="stylesheet" type='text/css'>
+  <link href="{{ assets.build_css_main_css }}" rel="stylesheet" type='text/css'>
   [+ drc/common/vwo.hbs +]
   <script type="text/javascript" src="https://www.rackspace.com/data/client"></script>
 </head>
@@ -44,7 +44,7 @@
 </div>
 [+ drc/common/footer.hbs +]
 
-<script src="/assets/js/main.js"></script>
+<script src="{{ assets.build_js_main_js }}"></script>
 
 [+ drc/common/ga.hbs +]
 [+ drc/common/tealium.hbs +]
