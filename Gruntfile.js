@@ -149,6 +149,18 @@ module.exports = function(grunt) {
 
     grunt.registerMultiTask('empty', function () {
         var files = grunt.file.expand({filter: 'isFile'}, this.options().files);
+
+        if(files.length === 0) {
+            // create the files.
+            var fs = require('fs');
+            var path = require('path');
+
+            this.options().files.forEach(function (file, index, scope) {
+                var filePath = path.resolve(file);
+                fs.writeFileSync(filePath, '');
+            });
+
+        }
         files.forEach(function (file, index, scope) {
             grunt.log.writeln('Emptying ' + file);
             grunt.file.write(file, '');
@@ -162,6 +174,7 @@ module.exports = function(grunt) {
     ]);
 
     grunt.registerTask('build', [
+        'empty:less_vars',
         'copy:build',
         'deconst_assets:assets',
         'less:build',
