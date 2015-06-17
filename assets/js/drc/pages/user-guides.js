@@ -1,18 +1,39 @@
 (function (window, document, $) {
-    var matchHeight = function (objects) {
-        var tallest = 0;
-        for(var i = 0; i < objects.length; i++) {
-            tallest = Math.max(objects[i].getBoundingClientRect().height, tallest);
-        }
+    var matchHeight = function () {
+        var windowheight = $(window).innerHeight();
+        var headerHeight = $('#header').outerHeight();
+        var footerHeight = $('.basement').outerHeight();
+        var titleHeight = $('.title-header').outerHeight();
 
-        $(objects).css({minHeight: tallest + 'px'});
+        var minHeight = windowheight - headerHeight - footerHeight - titleHeight;
+
+        $('.narrow-sidebar .main').get(0).style.minHeight = minHeight + 'px';
+
+        setTimeout(function () {
+            $('.narrow-sidebar .sidebar').css({
+                height: $('.narrow-sidebar .main').outerHeight()
+            });
+        }, 1);
+
+
     };
 
-    $(document).ready(
-        matchHeight($('.narrow-sidebar .sidebar, .narrow-sidebar .main'))
-    );
+    $(document).ready(function () {
+        matchHeight();
 
-    $(window).on('resize', matchHeight($('.narrow-sidebar .sidebar, .narrow-sidebar .main')));
+        $('.narrow-sidebar .sidebar a').each(function () {
+            if(this.getAttribute('href') === window.location.pathname + window.location.hash) {
+                var link = this;
 
+                link.classList.add('active');
+
+                setTimeout(function () {
+                    $('.narrow-sidebar .sidebar').get(0).scrollTop = $(link).position().top - 100;
+                }, 100);
+            }
+        });
+    });
+
+    $(window).on('resize', matchHeight);
 
 })(window, document, jQuery);

@@ -1,6 +1,28 @@
 module.exports = function(grunt) {
 
     grunt.initConfig({
+        concat: {
+            dev: {
+                files: {
+                    'assets/js/main.js': [
+                        'assets/js/drc/lib/jquery/jquery-1.11.1.js',
+                        'assets/js/drc/lib/jquery/jquery.cookie-1.4.1.js',
+                        'assets/js/drc/lib/bootstrap/collapse.js',
+                        'assets/js/drc/lib/bootstrap/dropdown.js',
+                        'assets/js/drc/lib/bootstrap/tooltip.js',
+                        'assets/js/drc/lib/bootstrap/tab.js',
+                        'assets/js/drc/core.js',
+                        'assets/js/drc/pages/sponsorship.js',
+                        'assets/js/drc/pages/docs.js',
+                        'assets/js/drc/pages/devtrial.js',
+                        'assets/js/drc/pages/signup.js',
+                        'assets/js/drc/pages/user-guides.js',
+                        'assets/js/drc/pages/home.js',
+                        'assets/js/drc/app.js'
+                    ]
+                }
+            }
+        },
         copy: {
             build: {
                 files: [
@@ -109,10 +131,15 @@ module.exports = function(grunt) {
 
                 },
                 tasks: ['less:dev']
+            },
+            js: {
+                files: ['assets/js/**/*.js', '!assets/js/main.js'],
+                tasks: ['concat:dev']
             }
         }
     });
 
+    grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-less');
