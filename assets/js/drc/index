@@ -9,5 +9,6 @@ pages/sponsorship.js
 pages/docs.js
 pages/devtrial.js
 pages/signup.js
+pages/user-guides.js
 pages/home.js
 app.js

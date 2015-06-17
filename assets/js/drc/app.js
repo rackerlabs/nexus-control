@@ -1,6 +1,5 @@
 (function (window, document, $) {
   var app = window.devsite;
-
   $.extend(app, {
     // TODO move to some kind of utils object or something
     getParameter: (function () {

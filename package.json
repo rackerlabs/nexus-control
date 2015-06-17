@@ -1,0 +1,27 @@
+{
+  "name": "nexus-control",
+  "version": "1.0.0",
+  "description": "[![Build Status](https://travis-ci.org/rackerlabs/nexus-control.svg?branch=master)](https://travis-ci.org/rackerlabs/nexus-control)",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rackerlabs/nexus-control.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rackerlabs/nexus-control/issues"
+  },
+  "homepage": "https://github.com/rackerlabs/nexus-control#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-contrib-cssmin": "^0.12.3",
+    "grunt-contrib-less": "^1.0.1",
+    "grunt-contrib-uglify": "^0.9.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-deconst-assets": "^0.1.2"
+  }
+}

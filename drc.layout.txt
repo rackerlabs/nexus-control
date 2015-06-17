@@ -9,3 +9,4 @@
 / page drc/page.hbs
 / post drc/post.hbs
 / sdk-page drc/sdk-page.hbs
+/docs/user-guides/ default drc/narrow-sidebar.hbs
