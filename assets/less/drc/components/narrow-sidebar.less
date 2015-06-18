@@ -1,4 +1,9 @@
 .narrow-sidebar {
+
+    .title-header .headline {
+        font-size: 43px;
+        letter-spacing: -0.02em;
+    }
     .sidebar {
         background: shade(white, 2%);
         border-right: solid 1px shade(white, 10%);
@@ -169,10 +174,8 @@
             &:extend(.alert-warning);
         }
     }
-}
 
-
-#rackspace-cloud-guide-to-core-infrastructure-services {
+    // this is almost certainly too broad, but there's no easy way to add classes to a table in ReST
     table {
         border-width: 0;
         border-color: transparent;
