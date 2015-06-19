@@ -1,0 +1,15 @@
+{% extends "_layouts/base.html" %}
+
+{% block content %}
+    <div class="container-fluid narrow-sidebar">
+        <div class="row">{% block header %}{% endblock %}</div>
+        <div class="row">
+            <div class="col-sm-3">
+                {% block leftColumn %}{% endblock %}
+            </div>
+            <div class="col-sm-9">
+                {% block rightColumn %}{% endblock %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
