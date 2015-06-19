@@ -19,6 +19,10 @@
     };
 
     $(document).ready(function () {
+        if($('.narrow-sidebar .main').length === 0) {
+            return;
+        }
+
         matchHeight();
 
         $('.narrow-sidebar .sidebar a').each(function () {
@@ -32,8 +36,8 @@
                 }, 100);
             }
         });
-    });
 
-    $(window).on('resize', matchHeight);
+        $(window).on('resize', matchHeight);
+    });
 
 })(window, document, jQuery);
