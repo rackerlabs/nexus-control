@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{% block metaTitle %}Document Title{% endblock %}</title>
+    <title>{% block metaTitle %}Rackspace Developer Center{% endblock %}</title>
     <meta name="description" content="{% block metaDescription %}Default meta description{% endblock %}">
 
     <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" rel="stylesheet" type="text/css">
@@ -23,6 +23,7 @@
         {% include "_includes/tealium.html" %}
         {% include "_includes/survey.html" %}
         {% include "_includes/remarketing.html" %}
+        <script src="{{ deconst.content.assets.build_js_main_js }}"></script>
     {% endblock %}
 </body>
 </html>
