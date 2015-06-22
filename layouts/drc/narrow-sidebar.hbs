@@ -30,12 +30,12 @@
             <div class="serial-links clearfix">
                 <div class="previous">
                     {{#if envelope.previous}}
-                    <a href="{{ envelope.previous.url }}">{{ envelope.previous.title }}</a>
+                    <a href="{{ envelope.previous.url }}">{{{ envelope.previous.title }}}</a>
                     {{/if}}
                 </div>
                 <div class="next">
                     {{#if envelope.next}}
-                    <a href="{{ envelope.next.url }}">{{ envelope.next.title }}</a>
+                    <a href="{{ envelope.next.url }}">{{{ envelope.next.title }}}</a>
                     {{/if}}
                 </div>
             </div>
