@@ -2,5 +2,5 @@
 
 {% block metaTitle %}{{ deconst.content.envelope.title | safe }}{% endblock %}
 {% block content %}
-    {{ deconst.content.envelope.body }}
+    {{ deconst.content.envelope.body | safe }}
 {% endblock %}
