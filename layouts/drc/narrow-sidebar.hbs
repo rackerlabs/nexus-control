@@ -14,16 +14,13 @@
 
 [+ drc/common/header.hbs +]
 <div class="container-fluid narrow-sidebar">
-    <div class="row">
+    <div class="row header">
         <div class="col-md-12 title-header">
             <h1 class="headline">{{ envelope.title }}</h1>
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-3 sidebar">
-            {{{ globals.toc }}}
-        </div>
-        <div class="col-md-9 main">
+    <div class="row content">
+        <div class="col-sm-8 col-sm-push-4 col-md-9 col-md-push-3 main">
             <div class="body">
                 {{{ envelope.body }}}
             </div>
@@ -40,6 +37,10 @@
                 </div>
             </div>
         </div>
+        <div class="col-sm-4 col-sm-pull-8 col-md-3 col-md-pull-9 sidebar">
+            {{{ globals.toc }}}
+        </div>
+        <a href="#" id="sidebar-toggle"></a>
     </div>
 </div>
 [+ drc/common/footer.hbs +]
