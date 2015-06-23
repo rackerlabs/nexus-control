@@ -127,16 +127,17 @@ module.exports = function(grunt) {
         watch: {
             less: {
                 files: ['assets/less/drc/**/*.less'],
+                tasks: ['less:dev']
+            },
+            livereload: {
+                files: ['assets/js/main.js', 'assets/css/main.css'],
                 options: {
                     livereload: true
                 },
-                tasks: ['less:dev']
+                tasks: []
             },
             js: {
                 files: ['assets/js/**/*.js', '!assets/js/main.js'],
-                options: {
-                    livereload: true
-                },
                 tasks: ['concat:dev']
             }
         }
