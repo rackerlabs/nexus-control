@@ -1,0 +1,9 @@
+{
+    "developer.rackspace.com": [
+        {
+            "from": "^\/docs\/user-guides\/?$",
+            "to": "/docs/user-guides/infrastructure/",
+            "status": 301
+        }
+    ]
+}
