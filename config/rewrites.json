@@ -1,6 +1,12 @@
 {
     "developer.rackspace.com": [
         {
+            "description": "Force trailing slash",
+            "from": "^/(.*[^/])$",
+            "to": "/$1/",
+            "status": 301
+        },
+        {
             "from": "^\/docs\/user-guides\/?$",
             "to": "/docs/user-guides/infrastructure/",
             "status": 301
