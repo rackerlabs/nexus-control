@@ -1,0 +1,59 @@
+{% extends "_layouts/blog-page.html" %}
+
+{% block metaTitle %}{{ deconst.content.envelope.title }}{% endblock %}
+{% block blogContent %}
+    <h1 class="title">{{ deconst.content.envelope.title }}</h1>
+    <div class="byline">By {{ deconst.content.envelope.author }} - Posted on {{ deconst.content.envelope.publish_date|date('MMM D YYYY') }}</div>
+
+    {% if desconst.content.envelope.categories.length %}
+        <div class="categories">
+        {% for category in deconst.content.envelope.categories %}
+            <a class="category" href="/blog/categories/{{ category }}">{{ category }}</a>
+        {% endfor %}
+        </div>
+    {% endif %}
+
+    {{ deconst.content.envelope.body }}
+
+    <!-- Author's bio -->
+    {% if deconst.content.envelope.bio %}
+      <section>
+        <div class="panel panel-default">
+          <div class="panel-heading">About the author(s)</div>
+          <div class="panel-body">
+            {{ deconst.content.envelope.bio }}
+          </div>
+        </div>
+      </section>
+    {% endif %}
+
+    <!-- disqus comments -->
+    <section>
+      <h1>Comments</h1>
+      <div id="disqus_thread" aria-live="polite">
+      {% include "_includes/disqus.html" %}
+      </div>
+    </section>
+
+    {% if deconst.content.has_next_or_previous %}
+      <div class="row">
+        <div class="col-md-12">
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+      {% if deconst.content.envelope.previous %}
+        <div class="col-md-6">
+          <div class="related-pretitle">Previous Article</div>
+          <span class="related-title"><a href="{{ deconst.content.envelope.previous.url }}">{{ deconst.content.envelope.previous.title }}</a></span>
+        </div>
+      {% endif %}
+      {% if deconst.content.envelope.next %}
+        <div class="col-md-6">
+          <div class="related-pretitle">Next Article</div>
+          <span class="related-title"><a href="{{ deconst.content.envelope.next.url }}">{{ deconst.content.envelope.next.title }}</a></span>
+        </div>
+      {% endif %}
+      </div>
+    {% endif %}
+{% endblock %}

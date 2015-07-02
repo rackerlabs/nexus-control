@@ -132,7 +132,7 @@ module.exports = function(grunt) {
             livereload: {
                 files: ['assets/js/main.js', 'assets/css/main.css'],
                 options: {
-
+                    livereload: true
                 },
                 tasks: []
             },

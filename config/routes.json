@@ -1,0 +1,14 @@
+{
+    "developer.rackspace.com": {
+        "routes": {
+            "^/": "default.html",
+            "^/databases": "databases-index.html",
+            "^/blog": "blog-index.html",
+            "^/blog/.+?": "post.html",
+            "^/blog/categories": "default.html",
+            "^/docs": "docs_page.html",
+            "^/docs/user-guides/infrastructure/": "user-guides.html",
+            "^/sdks": "sdks.html"
+        }
+    }
+}

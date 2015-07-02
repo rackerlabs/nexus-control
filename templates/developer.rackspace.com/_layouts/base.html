@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block metaTitle %}Rackspace Developer Center{% endblock %}</title>
+    <meta name="description" content="{% block metaDescription %}Default meta description{% endblock %}">
+
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" rel="stylesheet" type="text/css">
+    {% if deconst.env.PRESENTER_DEVMODE == 'true' %}
+        {% set cssUrl = '/assets/css/main.css' %}
+    {% else %}
+        {% set cssUrl = deconst.content.assets.build_css_main_css %}
+    {% endif %}
+    <link rel="stylesheet" href="{{ cssUrl }}">
+
+    {% block headScripts %}
+        {% include "_includes/vwo.html" %}
+        <script type="text/javascript" src="https://www.rackspace.com/data/client"></script>
+    {% endblock %}
+</head>
+<body>
+    {% include "_includes/site-header.html" %}
+    {% block content %}{% endblock %}
+    {% include "_includes/site-footer.html" %}
+    {% block footScripts %}
+        {% if deconst.env.PRESENTER_DEVMODE == 'true' %}
+            {% set jsUrl = '/assets/js/main.js' %}
+        {% else %}
+            {% set jsUrl = deconst.content.assets.build_js_main_js %}
+        {% endif %}
+
+        {% include "_includes/ga.html" %}
+        {% include "_includes/tealium.html" %}
+        {% include "_includes/survey.html" %}
+        {% include "_includes/remarketing.html" %}
+        <script src="{{ jsUrl }}"></script>
+        {% if deconst.env.PRESENTER_LIVERELOAD == 'true' %}<script src="//localhost:35729/livereload.js"></script>{% endif %}
+    {% endblock %}
+
+</body>
+</html>
