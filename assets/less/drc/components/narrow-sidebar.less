@@ -8,7 +8,7 @@
         margin-bottom: 0;
     }
     .sidebar {
-        background: shade(white, 2%);
+        background: @background-accent;
         height: 100vh;
         left: 0;
         max-width: 768px;
@@ -35,7 +35,6 @@
         }
 
         .toctree-wrapper {
-            border-top: solid 1px shade(white, 10%);
             padding: 10px 0;
         }
 
@@ -50,31 +49,53 @@
             }
 
             li {
-                display: inline-block;
-                line-height: 2;
                 width: 100%;
 
                 a {
                     .text-overflow();
-                    color: @link-color;
+                    color: shade(white, 20%);
                     display: inline-block;
+                    font-size: 14px;
+                    font-weight: normal;
                     line-height: 2;
+                    vertical-align: middle;
                     width: 100%;
 
                     &:hover, &:focus, &:active {
-                        background: shade(white, 5%);
-                        color: @link-hover-color;
+                        background: tint(@background-accent, 10%);
                         text-decoration: none;
                     }
 
                     &.active {
                         background: @rackspace-blue;
-                        color: shade(white, 5%);
+                        color: white;
                     }
                 }
 
                 ul {
                     padding-left: 10px;
+                }
+            }
+        }
+
+        .expander {
+            max-height: 28px;
+            overflow: hidden;
+
+            .expand-toggle {
+                margin-right: 0.25em;
+            }
+
+            &.open {
+                background: shade(@background-accent, 10%);
+                max-height: 9999px;
+
+                & > a {
+                    background: @background-accent;
+                }
+
+                & > a > .expand-toggle:before {
+                    content: @fa-var-minus-square-o;
                 }
             }
         }
@@ -93,19 +114,19 @@
             width: percentage(1/4);
 
             .parent-toctree {
-                padding: 25px;
+                padding: 20px;
             }
 
             .toctree-wrapper {
-                padding: 25px 0;
+                padding: 20px 0;
             }
 
             ul a {
-                padding: 0 0 0 25px;
+                padding: 0 0 0 20px;
             }
 
             ul li ul {
-                padding-left: 25px;
+                padding-left: 20px;
             }
         }
     }
