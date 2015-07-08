@@ -43,9 +43,30 @@
         });
 
         $('.narrow-sidebar .sidebar a').each(function () {
+            this.title = this.textContent;
             if(this.getAttribute('href').indexOf('#') !== -1) {
                 $(this).closest('li').remove();
             }
+        });
+
+        $('.narrow-sidebar .sidebar ul').each(function () {
+            if($(this).html().trim() === '') {
+                $(this).remove();
+            }
+        });
+
+        $('.narrow-sidebar .sidebar li').each(function () {
+            if($(this).find('li').length === 0) {
+                return;
+            }
+
+
+
+            // build a collapsible list
+            $(this).addClass('expander');
+            var link = $(this).children('a').first();
+            var linkHtml = link.html();
+            link.html('<span class="expand-toggle fa fa-plus-square-o"></span> ' + linkHtml);
         });
 
         $('.narrow-sidebar .sidebar a').each(function () {
@@ -53,6 +74,7 @@
                 var link = this;
 
                 link.classList.add('active');
+                $(this).parents('.expander').addClass('open');
 
                 setTimeout(function () {
                     $('.narrow-sidebar .sidebar').get(0).scrollTop = $(link).position().top - 100;
@@ -60,41 +82,16 @@
             }
         });
 
+        $(document).on('click', '.narrow-sidebar .sidebar .expand-toggle', function (e) {
+            e.stopPropagation();
+            e.preventDefault();
+            $(this).closest('.expander').toggleClass('open');
+
+            matchHeight();
+        });
+
         $(window).on('resize', matchHeight);
 
-        $('.narrow-sidebar .sidebar').on('mouseenter mouseleave', 'a', function (e) {
-            if(e.type === 'mouseleave') {
-                if(!e.toElement || e.toElement.classList.contains('sidebar-link-tooltip') === false) {
-                    $('.sidebar-link-tooltip').remove();
-                    return;
-                }
-            }
-
-            if(this.scrollWidth <= $(this).outerWidth()) {
-                return;
-            }
-
-            var tooltip = document.createElement('a');
-            tooltip.className = 'sidebar-link-tooltip';
-            tooltip.href = this.href;
-            tooltip.textContent = this.textContent;
-
-            $(tooltip).css({
-                position: 'fixed',
-                top: this.getBoundingClientRect().top,
-                left: this.getBoundingClientRect().left
-            });
-
-            $(tooltip).on('mouseleave', function () {
-                $(tooltip).remove();
-            });
-
-            document.body.appendChild(tooltip);
-        });
-
-        $(window).on('scroll', function () {
-            $('.sidebar-link-tooltip').remove();
-        });
     });
 
 })(window, document, jQuery);
