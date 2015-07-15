@@ -7,6 +7,7 @@ module.exports = function(grunt) {
                     'assets/js/main.js': [
                         'assets/js/drc/lib/jquery/jquery-1.11.1.js',
                         'assets/js/drc/lib/jquery/jquery.cookie-1.4.1.js',
+                        'assets/bower_components/markalytics/dist/markalytics.js',
                         'assets/js/drc/lib/bootstrap/collapse.js',
                         'assets/js/drc/lib/bootstrap/dropdown.js',
                         'assets/js/drc/lib/bootstrap/tooltip.js',
@@ -88,6 +89,7 @@ module.exports = function(grunt) {
                     'assets/js/main.js': [
                         'assets/js/drc/lib/jquery/jquery-1.11.1.js',
                         'assets/js/drc/lib/jquery/jquery.cookie-1.4.1.js',
+                        'assets/bower_components/markalytics/dist/markalytics.js',
                         'assets/js/drc/lib/bootstrap/collapse.js',
                         'assets/js/drc/lib/bootstrap/dropdown.js',
                         'assets/js/drc/lib/bootstrap/tooltip.js',
@@ -108,6 +110,7 @@ module.exports = function(grunt) {
                     'build/js/main.js': [
                         'assets/js/drc/lib/jquery/jquery-1.11.1.js',
                         'assets/js/drc/lib/jquery/jquery.cookie-1.4.1.js',
+                        'assets/bower_components/markalytics/dist/markalytics.js',
                         'assets/js/drc/lib/bootstrap/collapse.js',
                         'assets/js/drc/lib/bootstrap/dropdown.js',
                         'assets/js/drc/lib/bootstrap/tooltip.js',
@@ -138,7 +141,7 @@ module.exports = function(grunt) {
             },
             js: {
                 files: ['assets/js/**/*.js', '!assets/js/main.js'],
-                tasks: ['concat:dev']
+                tasks: ['uglify:dev']
             }
         }
     });
