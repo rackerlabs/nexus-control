@@ -45,13 +45,21 @@
       {% if deconst.content.envelope.previous %}
         <div class="col-md-6">
           <div class="related-pretitle">Previous Article</div>
-          <span class="related-title"><a href="{{ deconst.content.envelope.previous.url }}">{{ deconst.content.envelope.previous.title }}</a></span>
+          <span class="related-title">
+              <a href="{{ deconst.content.envelope.previous.url }}" data-ga-click="event" data-category="navigation" data-action="click" data-label="after-blog-post-previous">
+                  {{ deconst.content.envelope.previous.title }}
+              </a>
+          </span>
         </div>
       {% endif %}
       {% if deconst.content.envelope.next %}
         <div class="col-md-6">
           <div class="related-pretitle">Next Article</div>
-          <span class="related-title"><a href="{{ deconst.content.envelope.next.url }}">{{ deconst.content.envelope.next.title }}</a></span>
+          <span class="related-title">
+              <a href="{{ deconst.content.envelope.next.url }}" data-ga-click="event" data-category="navigation" data-action="click" data-label="after-blog-post-next">
+                  {{ deconst.content.envelope.next.title }}
+              </a>
+          </span>
         </div>
       {% endif %}
       </div>
