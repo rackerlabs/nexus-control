@@ -8,7 +8,7 @@
         },
         {
             "description": "Force trailing slash",
-            "from": "^/(.*?/?[^./]+?[^/])$",
+            "from": "\\/([a-zA-Z0-9%_-]*?[^/])$",
             "to": "/$1/",
             "rewrite": false,
             "status": 301
