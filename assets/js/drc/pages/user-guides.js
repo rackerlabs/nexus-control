@@ -70,7 +70,10 @@
         });
 
         $('.narrow-sidebar .sidebar a').each(function () {
-            if(this.getAttribute('href') === window.location.pathname + window.location.hash) {
+            if(
+                this.getAttribute('href') === window.location.pathname + window.location.hash ||
+                this.getAttribute('href') === window.location.pathname)
+            {
                 var link = this;
 
                 link.classList.add('active');
