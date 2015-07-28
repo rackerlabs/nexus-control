@@ -37,7 +37,7 @@
   var hideAll = function () {
     // hide all of the code blocks
     $($(".lang-btn").map(function () {
-      return '.' + $(this).data('class')
+      return '.' + $(this).data('class');
     }).toArray().join(',')).hide();
 
     // hide the selected btn
@@ -58,6 +58,10 @@
         });
       }
     });
+
+    if(!docsDict[currentPage]) {
+        return;
+    }
 
     if (match) {
       $('.language-list').show();

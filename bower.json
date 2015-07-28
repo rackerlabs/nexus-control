@@ -1,0 +1,9 @@
+{
+  "name": "nexus-control",
+  "version": "0.0.0",
+  "homepage": "https://github.com/rackerlabs/nexus-control",
+  "license": "MIT",
+  "dependencies": {
+    "markalytics": "^0.1.4"
+  }
+}

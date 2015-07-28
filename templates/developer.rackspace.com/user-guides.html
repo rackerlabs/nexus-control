@@ -16,12 +16,16 @@
     <div class="serial-links clearfix">
         <div class="previous">
             {% if deconst.content.envelope.previous %}
-                <a href="{{ deconst.content.envelope.previous.url }}">{{ deconst.content.envelope.previous.title|safe }}</a>
+                <a href="{{ deconst.content.envelope.previous.url }}" data-ga-click="event" data-category="navigation" data-action="click" data-label="after-user-guide-previous">
+                    {{ deconst.content.envelope.previous.title|safe }}
+                </a>
             {% endif %}
         </div>
         <div class="next">
             {% if deconst.content.envelope.next %}
-                <a href="{{ deconst.content.envelope.next.url }}">{{ deconst.content.envelope.next.title|safe }}</a>
+                <a href="{{ deconst.content.envelope.next.url }}" data-ga-click="event" data-category="navigation" data-action="click" data-label="after-user-guide-next">
+                    {{ deconst.content.envelope.next.title|safe }}
+                </a>
             {% endif %}
         </div>
     </div>

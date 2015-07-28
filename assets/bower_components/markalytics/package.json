@@ -1,0 +1,27 @@
+{
+  "name": "markalytics",
+  "version": "0.1.4",
+  "description": "",
+  "main": "dist/markalytics.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markalytics/markalytics.git"
+  },
+  "author": "Keith Bartholomew <keith.bartholomew@rackspace.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/markalytics/markalytics/issues"
+  },
+  "homepage": "https://github.com/markalytics/markalytics#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-browserify": "^3.8.0",
+    "grunt-contrib-connect": "^0.10.1",
+    "grunt-contrib-jasmine": "^0.8.2",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-umd": "^2.3.3"
+  }
+}

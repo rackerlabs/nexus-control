@@ -1,0 +1,37 @@
+{
+  "name": "markalytics",
+  "version": "0.1.4",
+  "homepage": "https://github.com/markalytics/markalytics",
+  "authors": [
+    "Keith Bartholomew <keith.bartholomew@rackspace.com>"
+  ],
+  "description": "markup-driven analytics",
+  "main": "dist/markalytics.js",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "google-analytics",
+    "analytics",
+    "declarative"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "0.1.4",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.1.4",
+    "commit": "0720ffaa5cbdfb05c0189d7d6d7b0ce9a7cf1379"
+  },
+  "_source": "git://github.com/markalytics/markalytics.git",
+  "_target": "^0.1.4",
+  "_originalSource": "markalytics"
+}
