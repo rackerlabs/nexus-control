@@ -1,2 +1,2 @@
 {{ deconst.content.envelope.body }}
-{{ deconst.response.set('Content-Type', 'text/xml') }}
+{% set contentType = deconst.response.set('Content-Type', 'text/xml') %}
