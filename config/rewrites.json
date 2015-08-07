@@ -1,7 +1,7 @@
 {
     "developer.rackspace.com": [
         {
-            "from": "^\/docs\/user-guides\/?$",
+            "from": "^\\/docs\\/user-guides\\/?$",
             "to": "/docs/user-guides/infrastructure/",
             "rewrite": false,
             "status": 301
@@ -10,6 +10,13 @@
             "description": "Force trailing slash",
             "from": "\\/([a-zA-Z0-9%_-]*?[^/])$",
             "to": "/$1/",
+            "rewrite": false,
+            "status": 301
+        },
+        {
+            "description": "Blog: Remove .html extension",
+            "from": "^\\/blog\\/(.+?)(\\.html)$",
+            "to": "/blog/$1/",
             "rewrite": false,
             "status": 301
         }
