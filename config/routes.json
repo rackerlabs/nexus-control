@@ -8,6 +8,7 @@
             "^/blog/categories": "default.html",
             "^/docs": "docs_page.html",
             "^/docs/user-guides/infrastructure/": "user-guides.html",
+            "^/docs/rack-cli/": "user-guides.html",
             "^/sdks": "sdks.html",
             "\\.xml$": "feed.xml"
         }
