@@ -1,6 +1,11 @@
 {% extends "_layouts/narrow-sidebar.html" %}
 
-{% block metaTitle %}{{ [deconst.content.envelope.title, super()]|join(' | ') }}{% endblock %}
+{% block metaTitle %}{{ deconst.content.envelope.title }} | {{ super() }}{% endblock %}
+{% block ogTitle %}{{ deconst.content.envelope.title }} | {{ super() }}{% endblock %}
+{% block metaDescription %}{{ deconst.content.envelope.metaDescription if deconst.content.envelope.metaDescription else super() }}{% endblock %}
+{% block ogDescription %}{{ deconst.content.envelope.ogDescription if deconst.content.envelope.ogDescription else super() }}{% endblock %}
+{% block ogImage %}{{ deconst.content.envelope.ogImage if deconst.content.envelope.ogImage else super() }}{% endblock %}
+
 {% block header %}
 <div class="col-md-12 title-header">
     <h1 class="headline">{{ deconst.content.envelope.title }}</h1>

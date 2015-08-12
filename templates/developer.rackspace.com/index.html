@@ -1,6 +1,11 @@
 {% extends "_layouts/base.html" %}
 
-{% block metaTitle %}{{ deconst.content.envelope.title }}{% endblock %}
+{% block metaTitle %}{{ deconst.content.envelope.title }} | {{ super() }}{% endblock %}
+{% block ogTitle %}{{ deconst.content.envelope.title }} | {{ super() }}{% endblock %}
+{% block metaDescription %}{{ deconst.content.envelope.metaDescription if deconst.content.envelope.metaDescription else super() }}{% endblock %}
+{% block ogDescription %}{{ deconst.content.envelope.ogDescription if deconst.content.envelope.ogDescription else super() }}{% endblock %}
+{% block ogImage %}{{ deconst.content.envelope.ogImage if deconst.content.envelope.ogImage else super() }}{% endblock %}
+
 {% block content %}
     {{ deconst.content.envelope.body }}
 {% endblock %}
