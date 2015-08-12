@@ -1,0 +1,103 @@
+.blog-sidebar {
+    padding: 0;
+
+    section {
+        padding: 10px;
+
+        h5 {
+            color: tint(@text-color, 15%);
+            font-size: percentage((16/14));
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        @media (min-width: 880px) {
+            padding: 20px;
+
+            h5 {
+                font-size: percentage((18/14));
+                margin-bottom: 20px;
+            }
+        }
+
+        & + section {
+            border-top: solid 1px shade(white, 12%);
+        }
+    }
+
+    .recent-posts {
+        padding: 10px 0;
+
+        h5 {
+            padding: 0 10px;
+        }
+
+        .tab-links {
+            .grid(0px);
+            margin-bottom: 10px;
+
+            a {
+                .grid-unit(1/2, 0px);
+                background: fadeout(black, 95%);
+                border-bottom: solid 4px transparent;
+                color: @text-color;
+                font-size: 12px;
+                line-height: 36px;
+                text-align: center;
+
+                &:hover, &:focus {
+                    border-bottom-color: fadeout(@rax-blue, 80%);
+                    text-decoration: none;
+                }
+
+                &.active {
+                    border-bottom-color: @rax-blue;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        ol {
+            font-size: 13px;
+            margin: 0;
+            padding: 0 10px 0 30px;
+        }
+
+        @media (min-width: 880px) {
+            padding: 20px 0;
+
+            h5 {
+                padding: 0 20px;
+            }
+
+            .tab-links {
+                margin-bottom: 20px;
+            }
+
+            ol {
+                padding: 0 20px 0 40px;
+            }
+        }
+    }
+
+    .related-posts {
+        .post {
+            margin-bottom: 1.5em;
+
+            .read-more {
+                .open-sans('bold');
+                font-size: 12px;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .categories {
+        ul {
+            font-size: 13px;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}

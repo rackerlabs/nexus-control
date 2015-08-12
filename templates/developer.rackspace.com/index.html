@@ -1,6 +1,121 @@
 {% extends "_layouts/base.html" %}
 
-{% block metaTitle %}{{ deconst.content.envelope.title }}{% endblock %}
-{% block content %}
-    {{ deconst.content.envelope.body }}
+{% set bodyClass = "home" %}
+{% set headline = "Developers, explore our cloud" %}
+{% set tagline = '
+Get $600 in <strong>free credit</strong>. <br>
+No minimums, rate limits, support fees, or contracts. <br>
+<a href="" class="get-started">Get started now</a>
+' %}
+
+{% block bodyContent %}
+<div class="box docs-apis">
+    <div class="container">
+        <h1>Everything you need to build powerful, scalable apps.</h1>
+        <div class="tools-promos">
+            <div class="promo sdks">
+                <div class="card blue">
+                    <div class="card-content">
+                        <h3 class="card-title">SDKs &amp; tools</h3>
+                        <div class="card-body">
+                            <p>We build our SDKs on open-source platforms, supporting Java, .NET,
+                                Node.js, PHP, Python, and Ruby.</p>
+                            <a href="/sdks">Build with our SDKs <span class="fa fa-arrow-right"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="promo apis">
+                <div class="card green">
+                    <div class="card-content">
+                        <h3 class="card-title">APIs</h3>
+                        <div class="card-body">
+                            <p>Learn the capabilities of our APIs with Getting Started, Reference, and
+                                Developer guides.</p>
+                            <a href="/docs">Explore our API docs <span class="fa fa-arrow-right"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="box dev-support">
+    <div class="container">
+        <h2>Developer-to-developer support</h2>
+        <p>Complex technical questions? Talk directly to the developers who build our SDKs and APIs.</p>
+        <div class="comm-platforms">
+            <div class="platform">
+                <span class="icon fa fa-twitter"></span>
+                <h5><strong>Tweet</strong></h5>
+                <p class="item"><a href="https://twitter.com/rackspace">@rackspace</a></p>
+            </div>
+            <div class="platform">
+                <span class="icon fa fa-comments-o"></span>
+                <h5><strong>IRC</strong> on freenode</h5>
+                <p class="item"><a href="https://webchat.freenode.net/?channels=rackspace">#rackspace</a></p>
+            </div>
+            <div class="platform">
+                <span class="icon fa fa-envelope-o"></span>
+                <h5><strong>Email</strong></h5>
+                <p class="item"><a href="mailto:sdk-support@rackspace.com">Rackspace SDK Support</a></p>
+            </div>
+            <div class="platform">
+                <span class="icon fa fa-pencil"></span>
+                <h5><strong>Post</strong> in our</h5>
+                <p class="item"><a href="https://community.rackspace.com/developers/f/7">Developer Forum</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="box quote">
+    <div class="container">
+        <blockquote>
+            <span class="quotes">“</span>We built developer+<sup>TM</sup> (a monthly infrastructure credit and
+            more) to give developers the core of almost any scalable
+            cloud application they want to build.<span class="quotes">”</span>
+        </blockquote>
+        <div class="author">Jesse Noller</div>
+        <div class="author-title">Former Python Software Foundation board member, Principal Engineer &amp; Senior Manager
+            for developer+
+        </div>
+        <a href="http://www.rackspace.com/blog/rackspace-developer-program-for-developers-by-developers/">Read the blog
+            article <i class="fa fa-arrow-right"></i></a>
+    </div>
+</div>
+
+<div class="box sign-up">
+    <div class="container">
+        <a class="sign-up" href="/signup/">Sign up for free <i class="fa fa-arrow-right"></i></a>
+    </div>
+</div>
+
+<div class="box blog">
+    <div class="container">
+        <div class="link-lists">
+            <div class="link-list">
+                <h4>Developer Blog</h4>
+                <ul>
+                    <li><a href="">Principles for a Successful Developer Workshop</a></li>
+                    <li><a href="">Principles for a Successful Developer Workshop</a></li>
+                    <li><a href="">Principles for a Successful Developer Workshop</a></li>
+                </ul>
+                <p><a href="/blog/">Visit the Developer Blog <i class="fa fa-arrow-right"></i></a></p>
+            </div>
+            <div class="link-list">
+                <h4>Product News</h4>
+                <ul>
+                    <li><a href="#">Cloud Databases Introduces Enhanced Support, More Database Types, Larger...</a></li>
+                    <li><a href="#">ObjectRocket Adds Fully-Managed Redis Service</a></li>
+                    <li><a href="#">OnMetal Weekly Byte: The Story Behind OnMetal [Video]</a></li>
+                </ul>
+                <p><a href="http://www.rackspace.com/blog">Visit the Product Blog <i class="fa fa-arrow-right"></i></a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
 {% endblock %}

@@ -1,0 +1,32 @@
+@gutter-width: 0px;
+
+body.blog {
+    .header-headline {
+        background-image: url('../img/blog-banner.jpg');
+    }
+
+    .layout.sidebar-right .content {
+        font-size: 16px;
+
+        @media (min-width: 769px) {
+            font-size: 16px;
+        }
+
+        @media (min-width: 1085px) {
+            margin: 0 35px;
+            max-width: none;
+        }
+
+        @media (min-width: 1085px) {
+            margin: 0 calc(40% - 400px);
+            max-width: 800px;
+            padding: 0;
+        }
+    }
+
+    .layout.sidebar-right .sidebar {
+        @media (min-width: 1085px) {
+            margin-left: -0.25em;
+        }
+    }
+}

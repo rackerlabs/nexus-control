@@ -1,0 +1,470 @@
+{% extends "_layouts/sidebar-left.html" %}
+
+{% set bodyClass = "docs-home" %}
+{% set headlineTag = 'h1' %}
+{% set headlineAccent = 'Rackspace' %}
+{% set headline = 'Developer Docs' %}
+{% set tagline = 'Let’s Build Something Powerful Together!' %}
+{% set stickyNavOffsetTop = 392 %}
+
+{% block header %}
+    <div class="sdk-quickstart-menu">
+        <div class="title"><h2>Quickstart Guides:</h2></div>
+        <div class="links">
+            <ul>
+                <li><a href=""><span class="drc-icon-terminal"></span></a></li>
+                <li><a href=""><span class="drc-icon-python"></span></a></li>
+                <li><a href=""><span class="drc-icon-gopher"></span></a></li>
+                <li><a href=""><span class="drc-icon-dot-net"></span></a></li>
+                <li><a href=""><span class="drc-icon-java"></span></a></li>
+                <li><a href=""><span class="drc-icon-php"></span></a></li>
+                <li><a href=""><span class="drc-icon-js"></span></a></li>
+                <li><a href=""><span class="drc-icon-ruby"></span></a></li>
+            </ul>
+        </div>
+    </div>
+{% endblock %}
+
+{% block sidebar %}
+    <div class="sidebar-container" data-drc-sticky data-offset-top="{{ stickyNavOffsetTop }}" data-drc-flex-height data-flex-bottom="302">
+        <h5>Filter by Product:</h5>
+        <ul class="product-filters" data-ng-controller="DocsHomeSidebarCtrl">
+            <li class="all" data-ng-click="clickFilter('*')" data-ng-class="{'active': isFilterActive('*')}">
+                <a href="">
+                    <span class="label">All</span>
+                    <span class="indicator fa fa-check"></span>
+                </a>
+            </li>
+            <li class="compute" data-ng-click="clickFilter('compute')" data-ng-class="{'active': isFilterActive('compute')}">
+                <a href="">
+                    <span class="label">Compute</span>
+                    <span class="indicator fa fa-check"></span>
+                </a>
+            </li>
+            <li class="network" data-ng-click="clickFilter('network')" data-ng-class="{'active': isFilterActive('network')}">
+                <a href="">
+                    <span class="label">Networking</span>
+                    <span class="indicator fa fa-check"></span>
+                </a>
+            </li>
+            <li class="storage" data-ng-click="clickFilter('storage')" data-ng-class="{'active': isFilterActive('storage')}">
+                <a href="">
+                    <span class="label">Storage</span>
+                    <span class="indicator fa fa-check"></span>
+                </a>
+            </li>
+            <li class="data" data-ng-click="clickFilter('data')" data-ng-class="{'active': isFilterActive('data')}">
+                <a href="">
+                    <span class="label">Data</span>
+                    <span class="indicator fa fa-check"></span>
+                </a>
+            </li>
+            <li class="infra" data-ng-click="clickFilter('infra')" data-ng-class="{'active': isFilterActive('infra')}">
+                <a href="">
+                    <span class="label">Infrastructure &amp; Developer Tools</span>
+                    <span class="indicator fa fa-check"></span>
+                </a>
+            </li>
+            <li class="private-cloud" data-ng-click="clickFilter('private-cloud')" data-ng-class="{'active': isFilterActive('private-cloud')}">
+                <a href="">
+                    <span class="label">Private Cloud</span>
+                    <span class="indicator fa fa-check"></span>
+                </a>
+            </li>
+            <li>
+                <span data-ng-bind="filter"></span>
+            </li>
+        </ul>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div data-ng-controller="DocsHomeServicesCtrl">
+        <section class="docs-category compute" data-ng-show="isSectionActive('compute')">
+            <h2>Compute Services</h2>
+            <p>Cloud Servers, powered by OpenStack<sup>&reg;</sup>, are virtual machines running Linux or Windows Server in the Rackspace Cloud. You can scale resources like CPU, memory, and storage up or down, depending on your needs. Best of all, you can pay as you go.</p>
+            <div class="product-list">
+                <div class="product">
+                    <div class="card blue">
+                        <div class="card-content">
+                            <div class="card-title">
+                                <h4>Cloud Servers</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="list">
+                                    <div class="list-column">
+                                        <ul>
+                                            <li><a href="">Developer Guide</a></li>
+                                            <li><a href="">User Guide</a></li>
+                                            <li><a href="">Knowledge Center</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="card blue">
+                        <div class="card-content">
+                            <div class="card-title">
+                                <h4>Cloud Servers (Legacy)</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="list">
+                                    <div class="list-column">
+                                        <ul>
+                                            <li><a href="">Developer Guide</a></li>
+                                            <li><a href="">User Guide</a></li>
+                                            <li><a href="">Knowledge Center</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="card blue">
+                        <div class="card-content">
+                            <div class="card-title">
+                                <h4>Cloud Images</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="list">
+                                    <div class="list-column">
+                                        <ul>
+                                            <li><a href="">Developer Guide</a></li>
+                                            <li><a href="">User Guide</a></li>
+                                            <li><a href="">Knowledge Center</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="docs-category network" data-ng-show="isSectionActive('network')">
+            <h2>Network Services</h2>
+            <p>Rackspace's Cloud Network services are on-demand, scalable, and provide technology-agnostic network abstraction, load balancing, and DNS management. Protect your infrastructure with Cloud Load Balancers by distributing traffic efficiently. Use Cloud DNS to manage domains and subdomains.</p>
+            <div class="product-list">
+                <div class="product">
+                    <div class="card green">
+                        <div class="card-content">
+                            <div class="card-title">
+                                <h4>Cloud Networks</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="list">
+                                    <div class="list-column">
+                                        <ul>
+                                            <li><a href="">Developer Guide</a></li>
+                                            <li><a href="">User Guide</a></li>
+                                            <li><a href="">Knowledge Center</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="card green">
+                        <div class="card-content">
+                            <div class="card-title">
+                                <h4>Cloud Load Balancers</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="list">
+                                    <div class="list-column">
+                                        <ul>
+                                            <li><a href="">Developer Guide</a></li>
+                                            <li><a href="">User Guide</a></li>
+                                            <li><a href="">Knowledge Center</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="card green">
+                        <div class="card-content">
+                            <div class="card-title">
+                                <h4>Cloud DNS</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="list">
+                                    <div class="list-column">
+                                        <ul>
+                                            <li><a href="">Developer Guide</a></li>
+                                            <li><a href="">User Guide</a></li>
+                                            <li><a href="">Knowledge Center</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="docs-category storage" data-ng-show="isSectionActive('storage')">
+            <h2>Storage Services</h2>
+            <p>With our storage services, you can get dependable and performant block storage, object storage, and backup solutions for your Cloud Servers. You can scale your storage independently from your compute resources while using high-performance storage for I/O-intensive applications or to serve databases. Plus, with Cloud Files, you can store and retrieve content in a secure system including a Content Delivery Network (CDN). If you want to enable CDN for your website resources beyond Cloud Files you can use the Rackspace CDN service which has finer control on caching rules, purging content, and specifying origins.</p>
+            <div class="product-list">
+                <div class="product">
+                    <div class="card red">
+                        <div class="card-content">
+                            <div class="card-title">
+                                <h4>Cloud Block Storage</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="list">
+                                    <div class="list-column">
+                                        <ul>
+                                            <li><a href="">Developer Guide</a></li>
+                                            <li><a href="">User Guide</a></li>
+                                            <li><a href="">Knowledge Center</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="card red">
+                        <div class="card-content">
+                            <div class="card-title">
+                                <h4>Cloud Backup</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="list">
+                                    <div class="list-column">
+                                        <ul>
+                                            <li><a href="">Developer Guide</a></li>
+                                            <li><a href="">User Guide</a></li>
+                                            <li><a href="">Knowledge Center</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="card red">
+                        <div class="card-content">
+                            <div class="card-title">
+                                <h4>Cloud Files</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="list">
+                                    <div class="list-column">
+                                        <ul>
+                                            <li><a href="">Developer Guide</a></li>
+                                            <li><a href="">User Guide</a></li>
+                                            <li><a href="">Knowledge Center</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="card red">
+                        <div class="card-content">
+                            <div class="card-title">
+                                <h4>Cloud CDN</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="list">
+                                    <div class="list-column">
+                                        <ul>
+                                            <li><a href="">Developer Guide</a></li>
+                                            <li><a href="">User Guide</a></li>
+                                            <li><a href="">Knowledge Center</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="docs-category data" data-ng-show="isSectionActive('data')">
+            <h2>Data Services</h2>
+            <p>Our data services enable powerful applications and data analysis by providing pre-configured, highly performant and available SQL and NoSQL data stores such as Hadoop, MySQL, Redis, and MongoDB.</p>
+            <div class="product-list">
+                <div class="product">
+                    <div class="card yellow">
+                        <div class="card-content">
+                            <div class="card-title">Cloud Big Data</div>
+                            <div class="card-body">
+                                <ul>
+                                    <li><a href="">Developer Guide</a></li>
+                                    <li><a href="">User Guide</a></li>
+                                    <li><a href="">Knowledge Center</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="card yellow">
+                        <div class="card-content">
+                            <div class="card-title">Cloud Databases</div>
+                            <div class="card-body">
+                                <ul>
+                                    <li><a href="">Developer Guide</a></li>
+                                    <li><a href="">User Guide</a></li>
+                                    <li><a href="">Knowledge Center</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="card yellow">
+                        <div class="card-content">
+                            <div class="card-title">ObjectRocket</div>
+                            <div class="card-body">
+                                <ul>
+                                    <li><a href="">Developer Guide</a></li>
+                                    <li><a href="">User Guide</a></li>
+                                    <li><a href="">Knowledge Center</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="card yellow">
+                        <div class="card-content">
+                            <div class="card-title">Redistogo</div>
+                            <div class="card-body">
+                                <ul>
+                                    <li><a href="">Developer Guide</a></li>
+                                    <li><a href="">User Guide</a></li>
+                                    <li><a href="">Knowledge Center</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="docs-category infra" data-ng-show="isSectionActive('infra')">
+            <h2>Infrastructure &amp; Developer Tools</h2>
+            <p>This collection of powerful tools offers multiple utilities that work well with Rackspace Cloud resources. Cloud Identity is your starting point for accessing any cloud resource. Use Autoscale to provide automatic scaling based on Cloud Monitoring information, in response to in increase or decrease of overall workload, defined by your policies. Cloud Orchestration provides templates for building entire applications that are highly available, scalable, and secure. Use Cloud Queues as a notifications service, with basic components offering the flexibility to use different messaging patterns. Mailgun provides your application access to send or receive email, either through SMTP or the Mailgun API, while verifying the domain and protecting email reputation.</p>
+            <div class="product-list">
+                <div class="product">
+                    <div class="card purple">
+                        <div class="card-content">
+                            <div class="card-title">
+                                <h4>Autoscale</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="list">
+                                    <div class="list-column">
+                                        <ul>
+                                            <li><a href="">Developer Guide</a></li>
+                                            <li><a href="">User Guide</a></li>
+                                            <li><a href="">Knowledge Center</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="card purple">
+                        <div class="card-content">
+                            <div class="card-title">
+                                <h4>Cloud Monitoring</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="list">
+                                    <div class="list-column">
+                                        <ul>
+                                            <li><a href="">Developer Guide</a></li>
+                                            <li><a href="">User Guide</a></li>
+                                            <li><a href="">Knowledge Center</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="card purple">
+                        <div class="card-content">
+                            <div class="card-title">
+                                <h4>Mailgun</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="list">
+                                    <div class="list-column">
+                                        <ul>
+                                            <li><a href="">Developer Guide</a></li>
+                                            <li><a href="">User Guide</a></li>
+                                            <li><a href="">Knowledge Center</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="card purple">
+                        <div class="card-content">
+                            <div class="card-title">
+                                <h4>Cloud Queues</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="list">
+                                    <div class="list-column">
+                                        <ul>
+                                            <li><a href="">Developer Guide</a></li>
+                                            <li><a href="">User Guide</a></li>
+                                            <li><a href="">Knowledge Center</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="card purple">
+                        <div class="card-content">
+                            <div class="card-title">
+                                <h4>Cloud Orchestration</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="list">
+                                    <div class="list-column">
+                                        <ul>
+                                            <li><a href="">Developer Guide</a></li>
+                                            <li><a href="">User Guide</a></li>
+                                            <li><a href="">Knowledge Center</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+{% endblock %}

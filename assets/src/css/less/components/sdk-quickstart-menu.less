@@ -1,0 +1,45 @@
+.sdk-quickstart-menu {
+    .grid(0px);
+    background: @code-background;
+    color: white;
+    height: 60px;
+
+    .title {
+        .grid-unit(1/5, 0px);
+
+        h2 {
+            .titillium('bold');
+            font-size: 100%;
+            line-height: 60px;
+            margin-left: 35px;
+            text-transform: uppercase;
+        }
+    }
+    .links {
+        .grid-unit(4/5, 0px);
+
+        ul {
+            list-style-type: none;
+
+            li {
+                display: inline-block;
+                margin-right: -0.25em;
+                text-align: center;
+
+                a {
+                    color: shade(white, 30%);
+                    display: inline-block;
+                    font-size: 30px;
+                    line-height: 60px;
+                    padding: 0 30px;
+                    .transition(~"background 0.1s ease-in-out, color 0.1s ease-in-out");
+
+                    &:hover {
+                        background: tint(@code-background, 10%);
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}

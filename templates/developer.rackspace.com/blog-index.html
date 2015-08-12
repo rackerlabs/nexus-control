@@ -1,22 +1,69 @@
-{% extends "_layouts/base.html" %}
+{% extends "_layouts/sidebar-right.html" %}
 
-{% block metaTitle %}{{ deconst.content.envelope.title }}{% endblock %}
+{% set headlineTag = 'h1' %}
+{% set headlineAccent = 'Rackspace' %}
+{% set headline = 'Developer Blog' %}
+{% set tagline = 'News and Insights from Rackspace Developers' %}
+
+{% set bodyClass = "blog" %}
+
 {% block content %}
-    <div class="title-header">
-      <div class="inner">
-        <span class="headline">Developer Blog</span>
-      </div>
-    </div>
-    <div class="container body-container">
-      <div class="row">
-        <div class="col-md-9 col-md-push-3 blog-post bodycontent">
-            {{ deconst.content.envelope.body }}
+    {% for i in [1,2,3,4,5,6,7,8,9,10] %}
+    <section class="blog-post preview">
+        <h3 class="post-title"><a href="blog-single.html">Principles for a Successful Developer Workshop</a></h3>
+        <div class="post-info">
+            <div class="post-avatar {% if i == 1 or i == 3 %}racker{% endif %}">
+                <img src="https://s3.amazonaws.com/uifaces/faces/twitter/gerrenlamson/73.jpg" alt="FPO Image">
+            </div>
+            <div class="post-byline"><a href="" class="post-author">Everett Toews</a> | <time datetime="2015-07-20">July 20, 2015</time></div>
+            <ul class="post-categories">
+                <li><a href="">Openstack</a></li>
+                <li><a href="">Community</a></li>
+                <li><a href="">DevOps</a></li>
+            </ul>
         </div>
-        <div class="col-md-3 col-md-pull-9 sidebar">
-          {% include "_includes/sidebar.html" %}
-          {% include "_includes/sidebar-footer.html" %}
+        <div class="post-preview">
+            <p>Running a successful developer workshop (aka tutorial) is really difficult. I've attended enough workshops that have gone poorly to know that for a fact. Participating in such a workshop can be very frustrating and a huge turn off for whatever technology is being presented. That translates directly into losing developer mindshare. I think we, as an industry, can do a better job of running developer workshops.</p>
         </div>
-      </div>
+        <a href="" class="post-read-more">Read More</a>
+    </section>
+    {% endfor %}
+{% endblock %}
+{% block sidebar %}
+    <div class="blog-sidebar" data-ng-controller="BlogSidebarCtrl">
+        <section class="recent-posts">
+            <h5>Popular Posts</h5>
+            <div class="tab-links">
+                <a href="" data-ng-click="clickPostTab('month')" data-ng-class="{'active': isSectionActive('month')}">Last 30 Days</a>
+                <a href="" data-ng-click="clickPostTab('forever')" data-ng-class="{'active': isSectionActive('forever')}">All Time</a>
+            </div>
+            <ol data-ng-show="isSectionActive('month')">
+                <li><a href="">Principles for a Successful Developer Workshop</a></li>
+                <li><a href="">Installing OpenStack from Source</a></li>
+                <li><a href="">This Week in Information Security (Week of July 20th)</a></li>
+                <li><a href="">Repose Ninja &mdash; Hello World</a></li>
+                <li><a href="">Operating Your OpenStack Cloud using Ansible</a></li>
+            </ol>
+            <ol data-ng-show="isSectionActive('forever')">
+                <li><a href="">Introducing Gophercloud: an OpenStack SDK for Go</a></li>
+                <li><a href="">php-opencloud 1.11.0 Released</a></li>
+                <li><a href="">Ruby DCamp 2014</a></li>
+                <li><a href="">Adding devices into an existing Swift cluster</a></li>
+                <li><a href="">A Big Data Solution Running On Top of Rackspace Private Cloud</a></li>
+            </ol>
+        </section>
+        <section class="categories">
+            <h5>Categories</h5>
+            <ul>
+                <li><a href="">Openstack</a></li>
+                <li><a href="">DevOps</a></li>
+                <li><a href="">Community</a></li>
+                <li><a href="">Developer Experience</a></li>
+                <li><a href="">Security</a></li>
+                <li><a href="">Deployment</a></li>
+                <li><a href="">SDKs</a></li>
+                <li><a href="">Tools</a></li>
+            </ul>
+        </section>
     </div>
-
 {% endblock %}

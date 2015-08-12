@@ -1,0 +1,63 @@
+.button(@style: 'default') {
+    border-radius: 1px;
+    display: inline-block;
+    padding: 1em 3em;
+    text-decoration: none;
+    .transition(background 0.1s ease-in-out);
+
+    & when (@style = 'default') {
+        background: shade(white, 10%);
+        border: solid 1px shade(white, 15%);
+        color: @text-color;
+    }
+
+    & when (@style = 'blue') {
+        background: @rax-blue;
+        border: solid 1px shade(@rax-blue, 10%);
+        color: white;
+
+        &:hover {
+            background: shade(@rax-blue, 15%);
+        }
+    }
+
+    & when (@style = 'green') {
+        background: @rax-green;
+        border: solid 1px shade(@rax-green, 10%);
+        color: white;
+
+        &:hover {
+            background: shade(@rax-green, 15%);
+        }
+    }
+
+    & when (@style = 'yellow') {
+        background: @rax-yellow;
+        border: solid 1px shade(@rax-yellow, 10%);
+        color: @text-color;
+
+        &:hover {
+            background: shade(@rax-yellow, 15%);
+        }
+    }
+
+    & when (@style = 'red') {
+        background: @rax-red;
+        border: solid 1px shade(@rax-red, 10%);
+        color: white;
+
+        &:hover {
+            background: shade(@rax-red, 15%);
+        }
+    }
+
+    & when (@style = 'smoke') {
+        background: fadeout(black, 60%);
+        border: solid 1px white;
+        color: white;
+
+        &:hover {
+            background: fadeout(white, 90%);
+        }
+    }
+}

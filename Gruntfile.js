@@ -1,26 +1,13 @@
 module.exports = function(grunt) {
 
     grunt.initConfig({
-        concat: {
+        browserify: {
             dev: {
                 files: {
-                    'assets/js/main.js': [
-                        'assets/js/drc/lib/jquery/jquery-1.11.1.js',
-                        'assets/js/drc/lib/jquery/jquery.cookie-1.4.1.js',
-                        'assets/bower_components/markalytics/dist/markalytics.js',
-                        'assets/js/drc/lib/bootstrap/collapse.js',
-                        'assets/js/drc/lib/bootstrap/dropdown.js',
-                        'assets/js/drc/lib/bootstrap/tooltip.js',
-                        'assets/js/drc/lib/bootstrap/tab.js',
-                        'assets/js/drc/core.js',
-                        'assets/js/drc/pages/sponsorship.js',
-                        'assets/js/drc/pages/docs.js',
-                        'assets/js/drc/pages/devtrial.js',
-                        'assets/js/drc/pages/signup.js',
-                        'assets/js/drc/pages/user-guides.js',
-                        'assets/js/drc/pages/home.js',
-                        'assets/js/drc/app.js'
-                    ]
+                    'assets/src/js/bundle.js': ['assets/src/js/main.js']
+                },
+                options: {
+                    watch: true
                 }
             }
         },
@@ -28,10 +15,10 @@ module.exports = function(grunt) {
             build: {
                 files: [
                     {
-                        cwd: 'assets',
+                        cwd: 'assets/src',
                         expand: true,
-                        src: ['images/**/*', 'fonts/**/*'],
-                        dest: 'build/'
+                        src: ['img/**/*', 'fonts/**/*'],
+                        dest: 'assets/dist/'
                     }
                 ]
             }
@@ -39,17 +26,19 @@ module.exports = function(grunt) {
         cssmin: {
             build: {
                 files: {
-                    'build/css/main.css': 'build/css/main.css'
+                    'assets/dist/css/main.css': 'assets/src/css/main.css'
                 }
             }
         },
         deconst_assets: {
             assets: {
                 options: {
-                    files: ['build/fonts/**/*', 'build/images/**/*'],
+                    contentServiceUrl: 'http://docker:9000/',
+                    contentServiceKey: 'horse',
+                    files: ['assets/dist/**/*'],
                     output: [
                         {
-                            dest: 'assets/less/drc/deconst-variables.less',
+                            dest: 'assets/src/css/less/deconst-variables.less',
                             format: 'less'
                         }
                     ]
@@ -57,95 +46,67 @@ module.exports = function(grunt) {
             },
             css_js: {
                 options: {
-                    files: ['build/css/main.css', 'build/js/main.js']
+                    files: ['assets/dist/css/main.css', 'assets/dist/js/main.min.js']
                 }
             }
         },
         empty: {
             less_vars: {
                 options: {
-                    files: ['assets/less/drc/deconst-variables.less']
+                    files: ['assets/src/css/less/deconst-variables.less']
                 }
             }
         },
         less: {
             dev: {
-                options: {
-                    dumpLineNumbers: 'comments'
-                },
                 files: {
-                    'assets/css/main.css': 'assets/less/drc/main.less'
+                    'assets/src/css/main.css': ['assets/src/css/less/main.less']
+                },
+                options: {
+                    dumpLineNumbers: 'comments',
+                    paths: ['assets/bower_components'],
+                    strictMath: true,
                 }
             },
             build: {
                 files: {
-                    'build/css/main.css': 'assets/less/drc/main.less'
+                    'assets/dist/css/main.css': ['assets/src/css/less/main.less']
+                },
+                options: {
+                    paths: ['assets/bower_components'],
+                    strictMath: true,
                 }
             }
         },
         uglify: {
-            dev: {
-                files: {
-                    'assets/js/main.js': [
-                        'assets/js/drc/lib/jquery/jquery-1.11.1.js',
-                        'assets/js/drc/lib/jquery/jquery.cookie-1.4.1.js',
-                        'assets/bower_components/markalytics/dist/markalytics.js',
-                        'assets/js/drc/lib/bootstrap/collapse.js',
-                        'assets/js/drc/lib/bootstrap/dropdown.js',
-                        'assets/js/drc/lib/bootstrap/tooltip.js',
-                        'assets/js/drc/lib/bootstrap/tab.js',
-                        'assets/js/drc/core.js',
-                        'assets/js/drc/pages/sponsorship.js',
-                        'assets/js/drc/pages/docs.js',
-                        'assets/js/drc/pages/devtrial.js',
-                        'assets/js/drc/pages/signup.js',
-                        'assets/js/drc/pages/user-guides.js',
-                        'assets/js/drc/pages/home.js',
-                        'assets/js/drc/app.js'
-                    ]
-                }
-            },
             build: {
                 files: {
-                    'build/js/main.js': [
-                        'assets/js/drc/lib/jquery/jquery-1.11.1.js',
-                        'assets/js/drc/lib/jquery/jquery.cookie-1.4.1.js',
-                        'assets/bower_components/markalytics/dist/markalytics.js',
-                        'assets/js/drc/lib/bootstrap/collapse.js',
-                        'assets/js/drc/lib/bootstrap/dropdown.js',
-                        'assets/js/drc/lib/bootstrap/tooltip.js',
-                        'assets/js/drc/lib/bootstrap/tab.js',
-                        'assets/js/drc/core.js',
-                        'assets/js/drc/pages/sponsorship.js',
-                        'assets/js/drc/pages/docs.js',
-                        'assets/js/drc/pages/devtrial.js',
-                        'assets/js/drc/pages/signup.js',
-                        'assets/js/drc/pages/user-guides.js',
-                        'assets/js/drc/pages/home.js',
-                        'assets/js/drc/app.js'
+                    'assets/dist/js/main.min.js': [
+                        'assets/src/js/bundle.js'
                     ]
                 }
             }
         },
         watch: {
             less: {
-                files: ['assets/less/drc/**/*.less'],
+                files: ['assets/src/css/less/**/*.less'],
                 tasks: ['less:dev']
             },
+            js: {
+                files: ['assets/src/js/**/*.js'],
+                tasks: ['browserify:dev']
+            },
             livereload: {
-                files: ['assets/js/main.js', 'assets/css/main.css'],
+                files: ['assets/src/css/main.css', 'assets/dist/js/main.js', 'templates/**/*.html'],
+                tasks: [],
                 options: {
                     livereload: true
-                },
-                tasks: []
-            },
-            js: {
-                files: ['assets/js/**/*.js', '!assets/js/main.js'],
-                tasks: ['uglify:dev']
+                }
             }
         }
     });
 
+    grunt.loadNpmTasks('grunt-browserify');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
@@ -177,15 +138,16 @@ module.exports = function(grunt) {
     grunt.registerTask('dev', [
         'empty:less_vars',
         'less:dev',
-        'uglify:dev'
+        'browserify:dev'
     ]);
 
     grunt.registerTask('build', [
         'empty:less_vars',
         'copy:build',
         'deconst_assets:assets',
-        'less:build',
+        'less:dev',
         'cssmin:build',
+        'browserify:dev',
         'uglify:build',
         'deconst_assets:css_js'
     ]);
