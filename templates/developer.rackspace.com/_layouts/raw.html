@@ -6,6 +6,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{% block metaTitle %}Rackspace Developer Center{% endblock %}</title>
         <meta name="description" content="{% block metaDescription %}The Rackspace Developer Center gives developers tools and resources to build powerful, scalable apps on the only cloud backed by Fanatical Support®{% endblock %}">
+        <meta name="og:title" content="{% block ogTitle %}Rackspace Developer Center{% endblock %}">
+        <meta name="og:description" content="{% block ogDescription %}The Rackspace Developer Center gives developers tools and resources to build powerful, scalable apps on the only cloud backed by Fanatical Support®{% endblock %}">
+        <meta name="og:image" content="{% block ogImage %}{% endblock %}">
+        <meta name="og:type" content="site">
+        <meta name="twitter:title" content="{% block twitterTitle %}Rackspace Developer Center{% endblock %}">
+        <meta name="twitter:description" content="{% block twitterDescription %}The Rackspace Developer Center gives developers tools and resources to build powerful, scalable apps on the only cloud backed by Fanatical Support®{% endblock %}">
+        <meta name="twitter:creator" content="{% block twitterCreator %}@rackspace{% endblock %}">
+        <meta name="twitter:site" content="@rackspace">
 
         <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" rel="stylesheet" type="text/css">
         {% if deconst.env.PRESENTER_DEVMODE == 'true' %}
@@ -21,7 +29,7 @@
         {% endblock %}
     {% endblock %}
 </head>
-<body class="{{ bodyClass }}">
+<body class="{% block bodyClass %}{% endblock %}">
     {% block body %}{% endblock %}
 </body>
 </html>

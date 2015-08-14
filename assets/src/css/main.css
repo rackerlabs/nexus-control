@@ -5628,7 +5628,7 @@ body.docs-home .product-list .card ul {
 }
 /* line 4, assets/src/css/less/pages/blog.less */
 body.blog .header-headline {
-  background-image: url('../img/blog-banner.jpg');
+  background-image: url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/blog-banner-31aa089d85139ec9f58b20286273fe14c05bc18e25cc2afadc6d32cfa052721b.jpg');
 }
 /* line 8, assets/src/css/less/pages/blog.less */
 body.blog .layout.sidebar-right .content {

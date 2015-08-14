@@ -3,163 +3,47 @@
 {% set headline = 'Developer Blog' %}
 {% set tagline = 'News and Insights from Rackspace Developers' %}
 
-{% set bodyClass = "blog" %}
+{% block bodyClass %}blog{% endblock %}
 
 {% block content %}
+    {% set post = deconst.content.envelope %}
     <section class="blog-post single">
         <div>
-        <h1 class="post-title">Principles for a Successful Developer Workshop</h1>
-        <div class="post-info">
-            <div class="post-avatar racker">
-                <img src="https://s3.amazonaws.com/uifaces/faces/twitter/gerrenlamson/73.jpg" alt="FPO Image">
+            <h1 class="post-title">{{ post.title }}</h1>
+            <div class="post-info">
+                <div class="post-avatar{% if post.meta.authorIsRacker %} racker{% endif %}">
+                    {% if post.meta.authorAvatar %}
+                        <img src="{{ post.meta.authorAvatar }}" alt="{{ post.author }}">
+                    {% else %}
+                        <img src="https://randomuser.me/api/portraits/lego/1.jpg" alt="Placeholder Avatar">
+                    {% endif %}
+                </div>
+                <div class="post-byline"><a href="" class="post-author">{{ post.author }}</a> | <time datetime="{{ post.meta.date|date('YYYY-MM-DD') }}">{{ post.meta.date|date('MMMM D, YYYY') }}</time></div>
+
+                {% if post.categories.length > 0 %}
+                <ul class="post-categories">
+                    {% for category in post.categories %}
+                        <li><a href="#">{{ category }}</a></li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
             </div>
-            <div class="post-byline"><a href="" class="post-author">Everett Toews</a> | <time datetime="2015-07-20">July 20, 2015</time></div>
-            <ul class="post-categories">
-                <li><a href="">Openstack</a></li>
-                <li><a href="">Community</a></li>
-                <li><a href="">DevOps</a></li>
-            </ul>
-        </div>
-
-
-
-    <p><img class="blog-post right" src="https://8d8dcdd952aa2708c2ff-519cda130c91226e76017ae910bdb276.ssl.cf1.rackcdn.com/qcon1-a8cc38fec94be6cb9f96bdf57e5e933415e6d4749cd3b2c3f79886e60f5742fe.jpg">Running a successful developer workshop (aka tutorial) is really difficult. I've attended enough workshops that have gone poorly to know that for a fact. Participating in such a workshop can be very frustrating and a huge turn off for whatever technology is being presented. That translates directly into losing developer mindshare. I think we, as an industry, can do a better job of running developer workshops.</p>
-
-<!-- more -->
-
-<p>I've run workshops at Gluecon, QCon, SXSW, the OpenStack Summits, and internally at Rackspace. They've gone well enough that I've come up with a set of principles I follow in an attempt to give developers a better experience. I'll layout the general principles and the tools/techniques I typically use to implement them.</p>
-
-<h2>Principles for a Successful Developer Workshop</h2>
-
-<ol>
-<li><a href="#know-your-audience">Know Your Audience</a></li>
-<li><a href="#share-your-content-first">Share Your Content First</a></li>
-<li><a href="#start-from-a-clean-environment">Start From A Clean Environment</a></li>
-<li><a href="#walk-through-sign-ups">Walk-Through Sign Ups</a></li>
-<li><a href="#be-explicit">Be Explicit</a></li>
-<li><a href="#make-it-accessible">Make It Accessible</a></li>
-<li><a href="#get-help">Get Help</a></li>
-<li><a href="#get-feedback">Get Feedback</a></li>
-<li><a href="#do-less">Do Less</a></li>
-<li><a href="#conclusion">Empathy</a></li>
-</ol>
-
-<h2><a name="know-your-audience"></a>Know Your Audience</h2>
-
-<p>This is the most important and likely the most difficult one. At many conferences it's impossible to know exactly who is going to show up to your workshop, much less what their skill set is. Ask the conference organizers for the demographics and try to understand who might show up and what they might want to get out of your workshop.</p>
-
-<p>You can also attempt to know your audience at the outset and during the workshop. As people walk in, introduce yourself and ask them what they hope to get out of your workshop and why they chose it. Don't assume any knowledge whatsoever beyond the pre-requisites laid out in your abstract. They may not even have a solid foundation in those pre-requisites.</p>
-
-<p>Put everyone on the same page by starting out with some slides on the basics of your pre-requisites. At the very least it will set a common terminology for the rest of the workshop. Do "hands up" surveys of the audience by asking them what they know about the technologies already and adjust emphasis accordingly.</p>
-
-<p>One of the best ways to know your audience as the workshop progresses is the Sticky Notes technique. It's a great way for you to see how your audience is doing visually and for them to provide feedback. You can read more about it from Software Carpentry's <a href="http://software-carpentry.org/workshops/operations.html#sign-in">"What Are the Sticky Notes For?"</a>.</p>
-
-<h2><a name="share-your-content-first"></a>Share Your Content First</h2>
-
-<p>Given that your audience will have a wide variety of skill levels, provide the materials beforehand. This is crucial because those that are a bit slower picking up the material can follow along at their own pace and catch up during the breaks. Those that are a bit quicker can leap ahead and won't get bored (one caveat on this below).</p>
-
-<p>My preferred method for sharing code and the presentation is to put everything in a single GitHub repository. It's important to keep everything in a single repo because the content of the presentation often depends heavily on the code. For the slides I use <a href="https://github.com/hakimel/reveal.js/">reveal.js</a> and then use <a href="https://pages.github.com/">GitHub Pages</a> to publish them. A couple of examples are:</p>
-
-<ul>
-<li><a href="https://github.com/everett-toews/app-on-openstack">app-on-openstack</a> (<a href="http://everett-toews.github.io/app-on-openstack/presentation/">presentation</a>)</li>
-<li><a href="https://github.com/everett-toews/a-restful-adventure">a-restful-adventure</a> (<a href="http://everett-toews.github.io/a-restful-adventure/presentation/">presentation</a>)</li>
-</ul>
-
-<p>Provide a shortened URL to the presentation at the start of the workshop and also write it down on a whiteboard or somewhere for latecomers. <em>Bonus points</em>: Since it's a GitHub repo, encourage people to file issues during the workshop as another channel for feedback.</p>
-
-<p><em>Caveat</em>: When you need the quicker people to definitely stop and wait for everyone else to catch up, make it explicit <a href="http://everett-toews.github.io/app-on-openstack/presentation/#/stop">like this</a> and explain it.</p>
-
-<h2><a name="start-from-a-clean-environment"></a>Start From A Clean Environment</h2>
-
-<p>Teaching developers a new technology often involves installing some software. Typically teachers want to install this software on the attendees laptops. This is a big mistake for a number of reasons:</p>
-
-<ol>
-<li>You don't know what they already have or don't have on their laptop. It's so much more difficult to give clear and concise instructions when you don't know the starting point. <em>Hint</em>: Even if you told people to install some software in your pre-requisites, 90% will have not done that.</li>
-<li>You're probably assuming they're using a particular operating system. They could be using a Mac, Linux, or (gasp) Windows.</li>
-<li>You're polluting their laptop. Dependencies/Settings in your software may conflict with dependencies/settings on their laptop. It's a problem for them during and after the workshop.</li>
-<li>If your software involves a big download, the conference Wi-Fi won't be able to handle it, especially when an entire room of people are trying to do the same download at the same time. And creating and handing out USB sticks is painful for everyone involved.</li>
-</ol>
-
-<p>Instead start from a clean environment. We live in the age of cloud. Use it to your advantage. Have VMs in the cloud all ready to go for your attendees. You can have those VMs configured exactly how you need them to be and everyone is on the same page right from the start. Then they just ssh or do a Remote Desktop Connection to the VM and away you go.</p>
-
-<p>Naturally my preferred cloud is <a href="http://www.rackspace.com/cloud">Rackspace</a>. :) I can start <a href="http://www.rackspace.com/cloud/servers">Cloud Servers</a> for everyone, create <a href="http://www.rackspace.com/knowledge_center/article/overview-role-based-access-control-rbac">sub-users with role based access control</a> that they can use to create their own VMs, or encourage people to sign up for our <a href="https://developer.rackspace.com/signup/">developer+ program</a>.</p>
-
-<h2><a name="walk-through-sign-ups"></a>Walk-Through Sign Ups</h2>
-
-<p>Speaking of sign ups, walk-through sign ups. The technology you're teaching may involve asking the developers to sign up for some account. It's usually free within some limits or has some credits associated with it. Asking them to sign up for something free is okay and is becoming pretty commonplace.</p>
-
-<p>What isn't okay is not completely walking them through the sign up. Of course you already have an account on the service. You probably haven't had to sign up in ages. You might not be aware of the current sign up process or any steps that might trip up your audience. So walk-through the entire sign up process in front of your audience. Every. Single. Step. Enter your credit card, where you went to high school, and your first pet's name. Then just delete that account after the workshop is over.</p>
-
-<h2><a name="be-explicit"></a>Be Explicit</h2>
-
-<p>Be explicit in all things. If you catch yourself saying "As you probably already know" or any like that, you're doing it wrong. People are there because they don't already know. Here are just a few things you can be explicit about:</p>
-
-<ul>
-<li>Don't use short parameters on the command line interface. e.g. Prefer 1 over 2.
-
-<ol>
-<li><code>docker run --volume=$(pwd):/srv/jekyll --tty=true --publish 4000:4000 jekyll/pages jekyll serve</code></li>
-<li><code>docker run -v=$(pwd):/srv/jekyll -t -p 4000:4000 jekyll/pages jekyll s</code></li>
-</ol></li>
-<li>Use diagrams. Diagrams are very explicit to visual thinkers. I find <a href="https://support.google.com/docs/topic/1360903?hl=en&amp;ref_topic=1397170">Google Drawings</a> pretty usable and it's easy to collaborate with others.</li>
-<li>Be a bit verbose when it comes to naming things like files, variables, classes, etc.</li>
-</ul>
-
-<p>Always be asking yourself how you can be more explicit. You already know all of the shortcuts but your audience doesn't even know the fundamentals yet.</p>
-
-<h2><a name="make-it-accessible"></a>Make It Accessible</h2>
-
-<p>If your audience can't read/see your presentation, it's very frustrating. Make your content accessible by making sure it's readable and clearly presented without distraction.</p>
-
-<ol>
-<li>Contact the conference organizers and find out the projector resolution and aspect ratio, and adjust your presentation accordingly.</li>
-<li>Know how to zoom text in and out with your browser.</li>
-<li>Know how to maximize (not full-screen) a window quickly. <em>Mac Tip</em>: I use <a href="http://www.irradiatedsoftware.com/sizeup/">SizeUp</a> to easily maximize and put windows side-by-side.</li>
-<li>If you're working in a terminal that's displayed by the projector, people at the back of the room won't be able to see what's happening at the bottom of the screen, which is where everything happens. Move the prompt to the top of the screen often. <em>Mac Tip</em>: I use <a href="https://www.iterm2.com/">iTerm2</a> and command+R to do this.</li>
-<li>Hide browser toolbars and extensions unnecessary for the workshop.</li>
-<li>Turn off anything that can distract the audience like chat notifications, calendar notifications, etc.</li>
-<li>Turn off your screen saver. <em>Mac Tip</em>: I use <a href="http://lightheadsw.com/caffeine/">Caffeine</a> for this.</li>
-</ol>
-
-<h2><a name="get-help"></a>Get Help</h2>
-
-<p><img class="blog-post right" src="https://8d8dcdd952aa2708c2ff-519cda130c91226e76017ae910bdb276.ssl.cf1.rackcdn.com/qcon2-ec36547b2fe81294090e05ba7ab88af2a2aa38b9ef175ce3576e0615bfe6249f.jpg">It's dangerous to go alone! Get help if at all possible. You can't possibly be at the front teaching and be giving hands on help in the audience at the same time. And people will need hands on help.</p>
-
-<p>Have colleagues act as teaching assistants. Depending on the audience, you may want to make an effort to have at least one teaching assistant familiar with Windows. If your colleagues can't make it to the conference, seriously consider reaching out to others you know (or may not know so well) who are attending the conference. Those Developer Advocate/Evangelist/Relations types tend to be a helpful bunch. :) Also, you can always encourage attendees to help each other.</p>
-
-<h2><a name="get-feedback"></a>Get Feedback</h2>
-
-<p>It's usually pretty obvious when a workshop teacher hasn't practiced. The timing is off, the presentation doesn't flow very well, there are bugs in the code, the presentation doesn't match the code, etc.</p>
-
-<p>Get feedback from yourself. Practice alone, practice in front of a rubber duck, practice in front of your cat, whatever it takes. Just get some practice.</p>
-
-<p>Get feedback from others. Practice in front of other people and get their hands on the keyboard. Work on the timing, work on the flow, and hammer out bugs.</p>
-
-<h2><a name="do-less"></a>Do Less</h2>
-
-<p>The temptation is to fit as much as possible into the workshop. You only have a half/full day and you want to cram as much in there as possible. I've definitely been guilty of this one.</p>
-
-<p>Try to do a bit less. If you find yourself running very close to the maximum amount of time during practice, you should seriously consider taking something out. It always takes longer to do it during the workshop. That also gives you more time to pace yourself, to go off on the occasional tangent that particular audience might find interesting, and to take breaks.</p>
-
-<p>If there's more material you want people to get into, give them a "What's Next" section at the end of the presentation. Point them in the direction you want them to go after the workshop. Something they can do to take the material you've given them one step further than what you've taught them.</p>
-
-<h2><a name="conclusion"></a>Conclusion</h2>
-
-<p>It all boils down to empathy. Can you understand and feel what your audience is going through as they take your workshop? Can you feel their frustration when they don't understand something that has been poorly presented? Can you share their aha moment when the material finally clicks?</p>
-
-<p>Put yourself in your audience's shoes. Literally envision yourself taking your own workshop. You already know the material so well that it's particularly hard to do this, which is why it is all the more necessary. Ask yourself if you really understand what these people are going through.</p>
-
-
-<div class="author-bio">
-    <div class="avatar racker">
-        <img src="https://s3.amazonaws.com/uifaces/faces/twitter/gerrenlamson/128.jpg" alt="FPO Image">
-    </div>
-    <div class="author-info">
-        <span class="name">Everett Toews</span>
-        <div class="bio">Everett is a Rackspace Developer Advocate, he's from Canada (I think) and he's a super-nice guy. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed qui iste non quos, consequuntur nulla est eaque animi adipisci consectetur ipsam perspiciatis harum vitae voluptatibus assumenda eveniet. Unde, dolor, ex.</div>
-    </div>
-</div>
-
+            {{ post.body }}
+            {% if post.bio %}
+            <div class="author-bio">
+                <div class="avatar racker">
+                    {% if post.meta.authorAvatar %}
+                        <img src="{{ post.meta.authorAvatar }}" alt="{{ post.author }}">
+                    {% else %}
+                        <img src="https://randomuser.me/api/portraits/lego/1.jpg" alt="Placeholder Avatar">
+                    {% endif %}
+                </div>
+                <div class="author-info">
+                    <span class="name">{{ post.author }}</span>
+                    <div class="bio">{{ post.bio }}</div>
+                </div>
+            </div>
+            {% endif %}
         </div>
     </section>
 {% endblock %}
