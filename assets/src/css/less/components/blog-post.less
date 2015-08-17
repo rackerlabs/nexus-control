@@ -71,10 +71,16 @@
             float: left;
             height: 128px;
             margin-right: 20px;
+            overflow: hidden;
             width: 128px;
 
             &.racker:after {
                 .avatar-overlay();
+            }
+
+            img {
+                width: 100%;
+                height: auto;
             }
         }
 
@@ -95,6 +101,18 @@
 
     &.single {
         padding: 40px 0;
+
+        h3 {
+            .h4();
+        }
+
+        h4 {
+            .h5();
+        }
+
+        h5 {
+            .h6();
+        }
 
         .post-title {
             margin-bottom: 15px;

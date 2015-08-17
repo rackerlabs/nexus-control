@@ -2871,9 +2871,10 @@ table {
   float: left;
   height: 128px;
   margin-right: 20px;
+  overflow: hidden;
   width: 128px;
 }
-/* line 76, assets/src/css/less/components/blog-post.less */
+/* line 77, assets/src/css/less/components/blog-post.less */
 .blog-post .author-bio .avatar.racker:after {
   background: rgba(196, 0, 34, 0.8);
   bottom: 0;
@@ -2886,34 +2887,62 @@ table {
   width: 100%;
 }
 /* line 81, assets/src/css/less/components/blog-post.less */
+.blog-post .author-bio .avatar img {
+  width: 100%;
+  height: auto;
+}
+/* line 87, assets/src/css/less/components/blog-post.less */
 .blog-post .author-bio .name {
   display: block;
   font-size: 128.57142857%;
   margin-bottom: 0.5em;
 }
-/* line 88, assets/src/css/less/components/blog-post.less */
+/* line 94, assets/src/css/less/components/blog-post.less */
 .blog-post.preview {
   padding: 40px 0;
 }
-/* line 91, assets/src/css/less/components/blog-post.less */
+/* line 97, assets/src/css/less/components/blog-post.less */
 .blog-post.preview + .blog-post {
   border-top: solid 1px #e6e6e6;
 }
-/* line 96, assets/src/css/less/components/blog-post.less */
+/* line 102, assets/src/css/less/components/blog-post.less */
 .blog-post.single {
   padding: 40px 0;
 }
-/* line 99, assets/src/css/less/components/blog-post.less */
+/* line 105, assets/src/css/less/components/blog-post.less */
+.blog-post.single h3 {
+  font-family: 'titillium-bold', arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 128.57142857%;
+}
+/* line 109, assets/src/css/less/components/blog-post.less */
+.blog-post.single h4 {
+  font-family: 'titillium-bold', arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100%;
+  text-transform: uppercase;
+}
+/* line 113, assets/src/css/less/components/blog-post.less */
+.blog-post.single h5 {
+  font-family: 'titillium-bold', arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #9f9f9f;
+  text-transform: uppercase;
+}
+/* line 117, assets/src/css/less/components/blog-post.less */
 .blog-post.single .post-title {
   margin-bottom: 15px;
 }
-/* line 103, assets/src/css/less/components/blog-post.less */
+/* line 121, assets/src/css/less/components/blog-post.less */
 .blog-post.single .post-info {
   border-bottom: solid 1px #e6e6e6;
   margin-bottom: 20px;
   padding-bottom: 20px;
 }
-/* line 109, assets/src/css/less/components/blog-post.less */
+/* line 127, assets/src/css/less/components/blog-post.less */
 .blog-post.single .right,
 .blog-post.single .left {
   display: block;
@@ -2922,14 +2951,14 @@ table {
   max-width: 100%;
 }
 @media (min-width: 769px) {
-  /* line 117, assets/src/css/less/components/blog-post.less */
+  /* line 135, assets/src/css/less/components/blog-post.less */
   .blog-post.single .right {
     float: right;
     height: auto;
     margin: 0 0 1em 1em;
     max-width: 50%;
   }
-  /* line 124, assets/src/css/less/components/blog-post.less */
+  /* line 142, assets/src/css/less/components/blog-post.less */
   .blog-post.single .left {
     float: right;
     height: auto;
@@ -4255,6 +4284,13 @@ sup {
   font-size: 40%;
   vertical-align: text-top;
 }
+/* line 142, assets/src/css/less/typography.less */
+hr {
+  background: transparent;
+  border-top: dotted 1px rgba(64, 64, 64, 0.7);
+  height: 1px;
+  margin: 2em 0;
+}
 /* line 2, assets/src/css/less/modules/site-header.less */
 .site-header .header-links {
   background: black;
@@ -4674,13 +4710,14 @@ sup {
 }
 /* line 349, assets/src/css/less/modules/site-header.less */
 .site-header .header-headline {
+  background-image: url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/fpo-code-editor-d451e1cbed5e243327c02753222aff6516c860bb1892e03d3c54d9b1e1884d66.jpg');
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0;
   z-index: 1;
 }
-/* line 356, assets/src/css/less/modules/site-header.less */
+/* line 357, assets/src/css/less/modules/site-header.less */
 .site-header .header-headline h1,
 .site-header .header-headline h2 {
   font-family: 'titillium-light', arial, sans-serif;
@@ -4695,7 +4732,7 @@ sup {
   padding: 40px 0.5em;
   width: 100%;
 }
-/* line 367, assets/src/css/less/modules/site-header.less */
+/* line 368, assets/src/css/less/modules/site-header.less */
 .site-header .header-headline h1 .headline-accent,
 .site-header .header-headline h2 .headline-accent {
   font-family: 'open-sans-bold', arial, sans-serif;
@@ -4705,40 +4742,40 @@ sup {
   display: block;
 }
 @media (min-width: 769px) {
-  /* line 373, assets/src/css/less/modules/site-header.less */
+  /* line 374, assets/src/css/less/modules/site-header.less */
   .site-header .header-headline h1,
   .site-header .header-headline h2 {
     background: transparent;
     padding: 0;
   }
 }
-/* line 379, assets/src/css/less/modules/site-header.less */
+/* line 380, assets/src/css/less/modules/site-header.less */
 .site-header .header-headline .tagline {
   display: none;
   font-size: 15px;
   text-transform: uppercase;
 }
 @media (min-width: 725px) {
-  /* line 385, assets/src/css/less/modules/site-header.less */
+  /* line 386, assets/src/css/less/modules/site-header.less */
   .site-header .header-headline {
     margin-top: -60px;
   }
-  /* line 388, assets/src/css/less/modules/site-header.less */
+  /* line 389, assets/src/css/less/modules/site-header.less */
   .site-header .header-headline h2 {
     padding: 100px 40px 40px 40px;
   }
 }
 @media (min-width: 769px) {
-  /* line 393, assets/src/css/less/modules/site-header.less */
+  /* line 394, assets/src/css/less/modules/site-header.less */
   .site-header .header-headline {
     padding: 120px 60px 60px 35px;
   }
-  /* line 396, assets/src/css/less/modules/site-header.less */
+  /* line 397, assets/src/css/less/modules/site-header.less */
   .site-header .header-headline h2 {
     padding: 0;
     width: auto;
   }
-  /* line 401, assets/src/css/less/modules/site-header.less */
+  /* line 402, assets/src/css/less/modules/site-header.less */
   .site-header .header-headline .tagline {
     display: block;
     font-size: 15px;
@@ -5661,6 +5698,63 @@ body.blog .layout.sidebar-right .content {
     margin-left: -0.25em;
   }
 }
+/* line 1, assets/src/css/less/pages/community.less */
+.community {
+  display: block;
+  width: calc(100% +  35px );
+  margin-left: -35px;
+  overflow: hidden;
+  vertical-align: top;
+  margin-top: 35px;
+}
+/* line 5, assets/src/css/less/pages/community.less */
+.community .community-content {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  display: inline-block;
+  margin-right: -0.26rem;
+  margin-left: 35px;
+  vertical-align: top;
+  width: calc( 100%  -  35px );
+}
+@media (min-width: 769px) {
+  /* line 8, assets/src/css/less/pages/community.less */
+  .community .community-content {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    display: inline-block;
+    margin-right: -0.26rem;
+    margin-left: 35px;
+    vertical-align: top;
+    width: calc( 75%  -  35px );
+  }
+}
+/* line 14, assets/src/css/less/pages/community.less */
+.community .community-sidebar {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  display: inline-block;
+  margin-right: -0.26rem;
+  margin-left: 35px;
+  vertical-align: top;
+  width: calc( 100%  -  35px );
+}
+@media (min-width: 769px) {
+  /* line 17, assets/src/css/less/pages/community.less */
+  .community .community-sidebar {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    display: inline-block;
+    margin-right: -0.26rem;
+    margin-left: 35px;
+    vertical-align: top;
+    width: calc( 25%  -  35px );
+  }
+}
+/* line 22, assets/src/css/less/pages/community.less */
+.community .lead {
+  font-size: 114.28571429%;
+}
 /* line 2, assets/src/css/less/pages/home.less */
 body.home .header-headline {
   background-image: url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/misc-banner-1-bbf0f84190b962e5d7d08bc5e4e5ae0032101dafef0b683125cf1b57f6f6a94e.jpg');
@@ -6134,15 +6228,19 @@ body.sdks-home .sidebar li.active .sdk-language {
   border: solid 1px rgba(255, 255, 255, 0.5);
 }
 /* line 29, assets/src/css/less/pages/sdks.less */
-body.sdks-home .sdk {
-  padding: 40px 0 80px 0;
+body.sdks-home div.content {
+  padding-top: 40px !important;
 }
-/* line 32, assets/src/css/less/pages/sdks.less */
+/* line 33, assets/src/css/less/pages/sdks.less */
+body.sdks-home .sdk {
+  padding: 0 0 80px 0;
+}
+/* line 36, assets/src/css/less/pages/sdks.less */
 body.sdks-home .sdk + .sdk {
   border-top: dotted 1px rgba(64, 64, 64, 0.5);
   padding: 80px 0;
 }
-/* line 38, assets/src/css/less/pages/sdks.less */
+/* line 42, assets/src/css/less/pages/sdks.less */
 body.sdks-home .sdk-grid {
   display: block;
   width: calc(100% +  35px );
@@ -6150,7 +6248,7 @@ body.sdks-home .sdk-grid {
   overflow: hidden;
   vertical-align: top;
 }
-/* line 42, assets/src/css/less/pages/sdks.less */
+/* line 46, assets/src/css/less/pages/sdks.less */
 body.sdks-home .sdk-grid .title {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -6161,11 +6259,11 @@ body.sdks-home .sdk-grid .title {
   width: calc( 100%  -  35px );
   margin-bottom: 20px;
 }
-/* line 46, assets/src/css/less/pages/sdks.less */
+/* line 50, assets/src/css/less/pages/sdks.less */
 body.sdks-home .sdk-grid .title h2 {
   font-size: 200%;
 }
-/* line 50, assets/src/css/less/pages/sdks.less */
+/* line 54, assets/src/css/less/pages/sdks.less */
 body.sdks-home .sdk-grid .title .sdk-language {
   font-family: 'titillium-regular', arial, sans-serif;
   font-style: normal;
@@ -6179,7 +6277,7 @@ body.sdks-home .sdk-grid .title .sdk-language {
   text-transform: uppercase;
   vertical-align: middle;
 }
-/* line 63, assets/src/css/less/pages/sdks.less */
+/* line 67, assets/src/css/less/pages/sdks.less */
 body.sdks-home .sdk-grid .links {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -6310,7 +6408,7 @@ body.sdks-home .sdk-grid .links:before {
   color: #2ecc85;
   content: '\f108';
 }
-/* line 68, assets/src/css/less/pages/sdks.less */
+/* line 72, assets/src/css/less/pages/sdks.less */
 body.sdks-home .sdk-grid .links h3 {
   font-family: 'titillium-bold', arial, sans-serif;
   font-style: normal;
@@ -6319,12 +6417,12 @@ body.sdks-home .sdk-grid .links h3 {
   text-transform: uppercase;
   margin-bottom: 1em;
 }
-/* line 73, assets/src/css/less/pages/sdks.less */
+/* line 77, assets/src/css/less/pages/sdks.less */
 body.sdks-home .sdk-grid .links ul {
   list-style-type: none;
   padding-left: 0;
 }
-/* line 79, assets/src/css/less/pages/sdks.less */
+/* line 83, assets/src/css/less/pages/sdks.less */
 body.sdks-home .sdk-grid .installation {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -6334,7 +6432,7 @@ body.sdks-home .sdk-grid .installation {
   vertical-align: top;
   width: calc( 66.66666667%  -  35px );
 }
-/* line 82, assets/src/css/less/pages/sdks.less */
+/* line 86, assets/src/css/less/pages/sdks.less */
 body.sdks-home .sdk-grid .installation h3 {
   font-family: 'titillium-bold', arial, sans-serif;
   font-style: normal;
@@ -6342,7 +6440,7 @@ body.sdks-home .sdk-grid .installation h3 {
   font-size: 128.57142857%;
   margin-bottom: 0.5em;
 }
-/* line 88, assets/src/css/less/pages/sdks.less */
+/* line 92, assets/src/css/less/pages/sdks.less */
 body.sdks-home .sdk-grid .requirements {
   background: #fafafa;
   border: solid 1px #f2f2f2;
@@ -6351,7 +6449,7 @@ body.sdks-home .sdk-grid .requirements {
   min-width: 50%;
   padding: 0.75em 1em;
 }
-/* line 96, assets/src/css/less/pages/sdks.less */
+/* line 100, assets/src/css/less/pages/sdks.less */
 body.sdks-home .sdk-grid .requirements h4 {
   font-family: 'titillium-bold', arial, sans-serif;
   font-style: normal;
@@ -6361,7 +6459,7 @@ body.sdks-home .sdk-grid .requirements h4 {
   margin-bottom: 1em;
   text-transform: uppercase;
 }
-/* line 104, assets/src/css/less/pages/sdks.less */
+/* line 108, assets/src/css/less/pages/sdks.less */
 body.sdks-home .sdk-grid .requirements ol,
 body.sdks-home .sdk-grid .requirements ul {
   list-style-type: none;

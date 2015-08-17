@@ -1,6 +1,24 @@
 {% extends "_layouts/sidebar-left.html" %}
 
-{% set bodyClass = "sdks-home" %}
+{% set metaDescription = deconst.content.envelope.meta.metaDescription %}
+{% set metaTitle = deconst.content.envelope.meta.metaTitle %}
+{% set ogDescription = deconst.content.envelope.meta.ogDescription %}
+{% set ogImage = deconst.content.envelope.meta.ogImage %}
+{% set ogTitle = deconst.content.envelope.meta.ogTitle %}
+{% set twitterCreator = deconst.content.envelope.meta.twitterCreator %}
+{% set twitterDescription = deconst.content.envelope.meta.twitterDescription %}
+{% set twitterTitle = deconst.content.envelope.meta.twitterTitle %}
+
+{% block metaDescription %}{{ metaDescription|fallback(super()) }}{% endblock %}
+{% block metaTitle %}{{ metaTitle|fallback(super()) }}{% endblock %}
+{% block ogDescription %}{{ ogDescription|fallback(metaDescription, super()) }}{% endblock %}
+{% block ogTitle %}{{ ogTitle|fallback(metaTitle, super()) }}{% endblock %}
+{% block ogImage %}{{ ogImage|fallback(super()) }}{% endblock %}
+{% block twitterCreator %}{{ twitterCreator|fallback(super()) }}{% endblock %}
+{% block twitterDescription %}{{ twitterDescription|fallback(ogDescription, metaDescription, super()) }}{% endblock %}
+{% block twitterTitle %}{{ twitterTitle|fallback(ogTitle, metaTitle, super()) }}{% endblock %}
+
+{% block bodyClass %}sdks-home{% endblock %}
 {% set headlineTag = 'h1' %}
 {% set headlineAccent = 'Rackspace' %}
 {% set headline = 'SDKs &amp; Tools' %}
@@ -28,229 +46,17 @@
 {% block sidebar %}
 <div class="sidebar-container" data-drc-sticky data-offset-top="{{ stickyNavOffsetTop }}" data-drc-flex-height data-flex-bottom="302">
     <ul>
-        <li data-drc-scroll-indicator="gophercloud" data-use-attribute="id"><a href="">Gophercloud <span class="sdk-language">Go</span></a></li>
-        <li data-drc-scroll-indicator="jclouds" data-use-attribute="id"><a href="">JClouds <span class="sdk-language">Java</span></a></li>
-        <li data-drc-scroll-indicator="openstack-net" data-use-attribute="id"><a href="">OpenStack.NET <span class="sdk-language">.NET</span></a></li>
-        <li data-drc-scroll-indicator="pkgcloud" data-use-attribute="id"><a href="">pkgcloud <span class="sdk-language">Node.js</span></a></li>
-        <li data-drc-scroll-indicator="php-opencloud" data-use-attribute="id"><a href="">PHP-Opencloud <span class="sdk-language">PHP</span></a></li>
-        <li data-drc-scroll-indicator="pyrax" data-use-attribute="id"><a href="">Pyrax <span class="sdk-language">Python</span></a></li>
-        <li data-drc-scroll-indicator="fog" data-use-attribute="id"><a href="">Fog <span class="sdk-language">Ruby</span></a></li>
+        <li data-drc-scroll-indicator="gophercloud" data-use-attribute="id"><a href="#gophercloud">Gophercloud <span class="sdk-language">Go</span></a></li>
+        <li data-drc-scroll-indicator="jclouds" data-use-attribute="id"><a href="#jclouds">JClouds <span class="sdk-language">Java</span></a></li>
+        <li data-drc-scroll-indicator="openstack-net" data-use-attribute="id"><a href="#openstack-net">OpenStack.NET <span class="sdk-language">.NET</span></a></li>
+        <li data-drc-scroll-indicator="pkgcloud" data-use-attribute="id"><a href="#pkgcloud">pkgcloud <span class="sdk-language">Node.js</span></a></li>
+        <li data-drc-scroll-indicator="php-opencloud" data-use-attribute="id"><a href="#php-opencloud">PHP-Opencloud <span class="sdk-language">PHP</span></a></li>
+        <li data-drc-scroll-indicator="pyrax" data-use-attribute="id"><a href="#pyrax">Pyrax <span class="sdk-language">Python</span></a></li>
+        <li data-drc-scroll-indicator="fog" data-use-attribute="id"><a href="#fog">Fog <span class="sdk-language">Ruby</span></a></li>
     </ul>
 </div>
 {% endblock %}
 
 {% block content %}
-<section class="sdk go" id="gophercloud">
-    <div class="sdk-grid">
-        <div class="title">
-            <h2>Gophercloud <span class="sdk-language">Go</span></h2>
-        </div>
-        <div class="installation">
-            <div class="requirements">
-                <h4>Requirements</h4>
-                <ol>
-                  <li><a href="http://golang.org/doc/install">Go</a></li>
-                  <li><a href="http://www.git-scm.com">Git</a></li>
-                </ol>
-            </div>
-
-            <h3>Install Gophercloud</h3>
-            <p>Run the following command (after installing Go):</p>
-
-            <div class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="p">go get github.com/rackspace/gophercloud</span></code></pre></div>
-            <p>Then use it in your code by importing it:</p>
-<div class="highlight"><pre><code class="language-go" data-lang="go"><span class="kn">import</span> <span class="p">(</span>
-<span class="s">&quot;github.com/rackspace/gophercloud&quot;</span>
-<span class="s">&quot;github.com/rackspace/gophercloud/rackspace&quot;</span>
-<span class="p">)</span></code></pre></div>
-        </div>
-        <div class="links">
-            <h3>Learn More</h3>
-            <ul>
-                <li><a href="" class="learn-more">Learn More</a></li>
-                <li><a href="/docs/cloud-servers/getting-started/?lang=go">Getting Started</a></li>
-                <li><a href="http://gophercloud.io/docs/">Documentation</a></li>
-                <li><a href="https://github.com/rackspace/gophercloud/blob/master/UPGRADING.md">Release Notes</a>&nbsp;<a href="https://github.com/rackspace/gophercloud/releases.atom"></a></li>
-                <li><a href="http://gophercloud.io/">Community</a></li>
-            </ul>
-        </div>
-    </div>
-</section>
-
-<section class="sdk" id="jclouds">
-    <div class="sdk-grid">
-    <div class="title">
-        <h2>JClouds <span class="sdk-language">Java</span></h2>
-    </div>
-    <div class="installation">
-        <div class="requirements">
-            <h4>Requirements</h4>
-            <ol>
-                <li><a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Java Development Kit (JDK) version 6 or higher</a></li>
-                <li><a href="http://maven.apache.org/guides/getting-started/maven-in-five-minutes.html">Maven version 3 or higher</a></li>
-            </ol>
-        </div>
-        <h3>Install JClouds</h3>
-
-        <p>Download this <a href="/sdks/java/pom.xml">pom.xml</a> file.</p>
-
-        <div class="highlight"><pre><code class="language-sh" data-lang="sh">mvn dependency:copy-dependencies <span class="s2">&quot;-DoutputDirectory=./lib&quot;</span></code></pre></div>
-
-        <p><em>Tip</em>: To make jclouds a part of your existing project, simply copy the relevant dependencies into your own pom.xml file.</p>
-    </div>
-    <div class="links">
-        <h3>Learn More</h3>
-        <ul class="piped-list">
-          <li><a href="/docs/cloud-servers/getting-started/?lang=java">Getting Started</a></li>
-          <li><a href="http://jclouds.apache.org/guides/rackspace/">Documentation</a></li>
-          <li><a href="https://jclouds.apache.org/releasenotes/">Release Notes</a>&nbsp;<a href="http://jclouds.apache.org/releasenotes/atom.xml"></a></li>
-          <li><a href="https://jclouds.apache.org/community/">Community</a></li>
-        </ul>
-    </div>
-    </div>
-</section>
-
-<section class="sdk" id="openstack-net">
-    <div class="sdk-grid">
-    <div class="title">
-        <h2>Openstack.NET <span class="sdk-language">.NET</span></h2>
-    </div>
-    <div class="installation">
-        <h3>Install Openstack.NET</h3>
-        <div class="highlight"><pre><code class="language-sh" data-lang="sh">PM&gt; Install-Package openstack.net</code></pre></div>
-        <div class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">using</span> <span class="nn">net.openstack.Providers.Rackspace</span><span class="p">;</span>
-        <span class="k">using</span> <span class="nn">net.openstack.Core.Providers</span><span class="p">;</span>
-        <span class="k">using</span> <span class="nn">net.openstack.Core.Exceptions.Response</span><span class="p">;</span></code></pre></div>
-    </div>
-    <div class="links">
-        <h3>Learn More</h3>
-        <ul class="piped-list">
-            <li><a href="/sdks/dot-net/"> Learn More</a></li>
-            <li><a href="/docs/cloud-servers/getting-started/?lang=.net">Getting Started</a></li>
-            <li><a href="http://openstacknetsdk.org/docs">Documentation</a></li>
-            <li><a href="https://github.com/openstacknetsdk/openstack.net/releases">Release Notes</a>&nbsp;<a href="https://github.com/openstacknetsdk/openstack.net/releases.atom"></li>
-            <li><a href="https://github.com/openstacknetsdk/openstack.net/wiki">Community</a></li>
-        </ul>
-    </div>
-    </div>
-</section>
-
-<section class="sdk" id="pkgcloud">
-    <div class="sdk-grid">
-    <div class="title">
-        <h2>pkgcloud <span class="sdk-language">Node.js</span></h2>
-    </div>
-    <div class="installation">
-        <div class="requirements">
-            <h4>Requirements</h4>
-            <ol>
-                <li><a href="">Node.js</a></li>
-                <li><a href="">NPM</a></li>
-            </ol>
-        </div>
-        <h3>Install pkgcloud</h3>
-        <div class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nv">$ </span>npm install pkgcloud</code></pre></div>
-        <div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">pkgcloud</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;pkgcloud&#39;</span><span class="p">);</span>
-
-<span class="kd">var</span> <span class="nx">client</span> <span class="o">=</span> <span class="nx">pkgcloud</span><span class="p">.</span><span class="nx">providers</span><span class="p">.</span><span class="nx">rackspace</span><span class="p">.</span><span class="nx">createClient</span><span class="p">({</span><span class="cm">/* ... */</span><span class="p">});</span></code></pre></div>
-    </div>
-    <div class="links">
-        <h3>Learn More</h3>
-        <ul class="piped-list">
-            <li><a href="/sdks/node-js">Learn More</a></li>
-            <li><a href="/docs/cloud-servers/getting-started/?lang=node.js">Getting Started</a></li>
-            <li><a href="https://github.com/pkgcloud/pkgcloud/tree/master/docs">Documentation</a></li>
-            <li><a href="https://github.com/pkgcloud/pkgcloud/blob/master/CHANGELOG.md">Release Notes</a>&nbsp;<a href="https://github.com/pkgcloud/pkgcloud/releases.atom"></li>
-            <li><a href="https://github.com/pkgcloud/pkgcloud">Community</a></li>
-        </ul>
-    </div>
-    </div>
-</section>
-
-<section class="sdk" id="php-opencloud">
-    <div class="sdk-grid">
-    <div class="title">
-        <h2>PHP-Opencloud <span class="sdk-language">PHP</span></h2>
-    </div>
-    <div class="installation">
-        <div class="requirements">
-            <h4>Requirements</h4>
-            <ul>
-                <li><a href="">PHP 5.4</a> or newer</li>
-                <li><a href="">Composer</a></li>
-            </ul>
-        </div>
-        <h3>Install PHP-Opencloud</h3>
-        <div class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nv">$ </span>composer require rackspace/php-opencloud</code></pre></div>
-        <div class="highlight"><pre><code class="language-php" data-lang="php"><span class="k">require</span> <span class="s1">&#39;vendor/autoload.php&#39;</span><span class="p">;</span>
-
-        <span class="k">use</span> <span class="nx">OpenCloud\Rackspace</span><span class="p">;</span></code></pre></div>
-    </div>
-    <div class="links">
-        <h3>Learn More</h3>
-        <ul class="piped-list">
-            <li><a href="/sdks/php/"> Learn More</a></li>
-            <li><a href="/docs/cloud-servers/getting-started/?lang=php">Getting Started</a></li>
-            <li><a href="https://github.com/rackspace/php-opencloud/tree/master/docs/userguide">Documentation</a></li>
-            <li><a href="https://github.com/rackspace/php-opencloud/releases/">Release Notes</a>&nbsp;<a href="https://github.com/rackspace/php-opencloud/releases.atom"></li>
-            <li><a href="https://github.com/rackspace/php-opencloud">Community</a></li>
-        </ul>
-    </div>
-    </div>
-</section>
-
-<section class="sdk" id="pyrax">
-    <div class="sdk-grid">
-    <div class="title">
-        <h2>Pyrax <span class="sdk-language">Python</span></h2>
-    </div>
-    <div class="installation">
-        <div class="requirements">
-            <h4>Requirements</h4>
-            <ul>
-                <li><a href="">Python</a></li>
-                <li><a href="">Pip</a></li>
-            </ul>
-        </div>
-        <h3>Install Pyrax</h3>
-        <div class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nv">$ </span>pip install pyrax</code></pre></div>
-
-        <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">pyrax</span></code></pre></div>
-    </div>
-    <div class="links">
-        <h3>Learn More</h3>
-        <ul class="piped-list">
-            <li><a href="/sdks/python/">Learn More</a></li>
-            <li><a href="/docs/cloud-servers/getting-started/?lang=python">Getting Started</a></li>
-            <li><a href="https://github.com/rackspace/pyrax/tree/master/docs">Documentation</a></li>
-            <li><a href="https://github.com/rackspace/pyrax/blob/master/RELEASENOTES.md">Release Notes</a>&nbsp;<a href="https://github.com/rackspace/pyrax/releases.atom"></li>
-            <li><a href="https://github.com/rackspace/pyrax/issues">Community</a></li>
-        </ul>
-    </div>
-    </div>
-</section>
-
-<section class="sdk" id="fog">
-    <div class="sdk-grid">
-    <div class="title">
-        <h2>Fog <span class="sdk-language">Ruby</span></h2>
-    </div>
-    <div class="installation">
-        <h3>Install fog</h3>
-
-        <div class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nv">$ </span>gem install fog</code></pre></div>
-        <div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="nb">require</span> <span class="s1">&#39;fog&#39;</span></code></pre></div>
-    </div>
-    <div class="links">
-        <h3>Learn More</h3>
-        <ul class="piped-list">
-            <li><a href="/sdks/ruby/">Learn More</a></li>
-            <li><a href="/docs/cloud-servers/getting-started/?lang=ruby">Getting Started</a></li>
-            <li><a href="https://github.com/fog/fog/tree/master/lib/fog/rackspace/docs">Documentation</a></li>
-            <li><a href="https://github.com/fog/fog/releases">Release Notes</a>&nbsp;<a href="https://github.com/fog/fog/releases.atom"></li>
-            <li><a href="http://fog.io/">Community</a></li>
-        </ul>
-    </div>
-    </div>
-</section>
+  {{ deconst.content.envelope.body }}
 {% endblock %}

@@ -1,7 +1,8 @@
 {
     "developer.rackspace.com": {
         "routes": {
-            "^/": "index.html",
+            "^/": "default.html",
+            "^/$": "index.html",
             "^/databases": "databases-index.html",
             "^/blog": "blog-index.html",
             "^/blog/.+?": "blog-single.html",
