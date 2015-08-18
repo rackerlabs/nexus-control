@@ -4282,7 +4282,7 @@ dl dd {
 /* line 137, assets/src/css/less/typography.less */
 sup {
   font-size: 40%;
-  vertical-align: text-top;
+  vertical-align: super;
 }
 /* line 142, assets/src/css/less/typography.less */
 hr {
@@ -6465,4 +6465,255 @@ body.sdks-home .sdk-grid .requirements ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+/* line 2, assets/src/css/less/pages/signup.less */
+body.signup .header-headline {
+  background-image: url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/misc-banner-1-bbf0f84190b962e5d7d08bc5e4e5ae0032101dafef0b683125cf1b57f6f6a94e.jpg');
+}
+/* line 5, assets/src/css/less/pages/signup.less */
+body.signup .header-headline h2 {
+  font-family: 'titillium-light', arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  display: block;
+  font-size: 342.85714286%;
+  text-align: center;
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+  text-transform: none;
+}
+/* line 16, assets/src/css/less/pages/signup.less */
+body.signup .header-headline br {
+  display: none;
+}
+/* line 20, assets/src/css/less/pages/signup.less */
+body.signup .header-headline .tagline {
+  color: white;
+  font-size: 128.57142857%;
+  margin-bottom: 0;
+  text-align: center;
+  text-transform: none;
+}
+/* line 28, assets/src/css/less/pages/signup.less */
+body.signup .header-headline .sign-up {
+  font-family: 'open-sans-bold', arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  border-radius: 1px;
+  display: inline-block;
+  padding: 1em 3em;
+  text-decoration: none;
+  -webkit-transition: background 0.1s ease-in-out;
+  -ms-transition: background 0.1s ease-in-out;
+  transition: background 0.1s ease-in-out;
+  background: rgba(0, 0, 0, 0.4);
+  border: solid 1px white;
+  color: white;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  margin-top: 2em;
+  text-transform: uppercase;
+}
+/* line 59, assets/src/css/less/mixins/button.less */
+body.signup .header-headline .sign-up:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+@media (min-width: 769px) {
+  /* line 37, assets/src/css/less/pages/signup.less */
+  body.signup .header-headline {
+    padding: 180px 60px 120px 35px;
+  }
+  /* line 40, assets/src/css/less/pages/signup.less */
+  body.signup .header-headline h2 {
+    background: transparent;
+  }
+  /* line 44, assets/src/css/less/pages/signup.less */
+  body.signup .header-headline br {
+    display: block;
+  }
+}
+/* line 51, assets/src/css/less/pages/signup.less */
+body.signup .what-you-get {
+  border-bottom: solid 1px #e6e6e6;
+  padding: 80px 0;
+}
+/* line 55, assets/src/css/less/pages/signup.less */
+body.signup .what-you-get h3 {
+  font-family: 'titillium-regular', arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 257.14285714%;
+}
+/* line 59, assets/src/css/less/pages/signup.less */
+body.signup .what-you-get .container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 960px;
+  width: 90%;
+}
+/* line 63, assets/src/css/less/pages/signup.less */
+body.signup .what-you-get .grid {
+  display: block;
+  width: calc(100% +  35px );
+  margin-left: -35px;
+  overflow: hidden;
+  vertical-align: top;
+  text-align: center;
+}
+/* line 68, assets/src/css/less/pages/signup.less */
+body.signup .what-you-get header,
+body.signup .what-you-get footer {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  display: inline-block;
+  margin-right: -0.26rem;
+  margin-left: 35px;
+  vertical-align: top;
+  width: calc( 100%  -  35px );
+}
+/* line 72, assets/src/css/less/pages/signup.less */
+body.signup .what-you-get footer {
+  margin-top: 35px;
+}
+/* line 76, assets/src/css/less/pages/signup.less */
+body.signup .what-you-get footer a {
+  border-radius: 1px;
+  display: inline-block;
+  padding: 1em 3em;
+  text-decoration: none;
+  -webkit-transition: background 0.1s ease-in-out;
+  -ms-transition: background 0.1s ease-in-out;
+  transition: background 0.1s ease-in-out;
+  background: #3498db;
+  border: solid 1px #2f89c5;
+  color: white;
+}
+/* line 19, assets/src/css/less/mixins/button.less */
+body.signup .what-you-get footer a:hover {
+  background: #2c81ba;
+}
+/* line 80, assets/src/css/less/pages/signup.less */
+body.signup .what-you-get .benefit {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  display: inline-block;
+  margin-right: -0.26rem;
+  margin-left: 35px;
+  vertical-align: top;
+  width: calc( 33.33333333%  -  35px );
+  font-size: 114.28571429%;
+  margin-top: 35px;
+}
+/* line 85, assets/src/css/less/pages/signup.less */
+body.signup .what-you-get .benefit h4 {
+  font-family: 'titillium-regular', arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 171.42857143%;
+}
+/* line 91, assets/src/css/less/pages/signup.less */
+body.signup .cloud {
+  background: #f2f2f2;
+  border-bottom: solid 1px #e6e6e6;
+  padding: 80px 0;
+}
+/* line 96, assets/src/css/less/pages/signup.less */
+body.signup .cloud h3 {
+  font-family: 'titillium-regular', arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 257.14285714%;
+}
+/* line 100, assets/src/css/less/pages/signup.less */
+body.signup .cloud .container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 960px;
+  width: 90%;
+}
+/* line 104, assets/src/css/less/pages/signup.less */
+body.signup .cloud .grid {
+  display: block;
+  width: calc(100% +  35px );
+  margin-left: -35px;
+  overflow: hidden;
+  vertical-align: top;
+  text-align: center;
+}
+/* line 109, assets/src/css/less/pages/signup.less */
+body.signup .cloud .platform {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  display: inline-block;
+  margin-right: -0.26rem;
+  margin-left: 35px;
+  vertical-align: top;
+  width: calc( 25%  -  35px );
+}
+/* line 113, assets/src/css/less/pages/signup.less */
+body.signup .cloud header,
+body.signup .cloud footer {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  display: inline-block;
+  margin-right: -0.26rem;
+  margin-left: 35px;
+  vertical-align: top;
+  width: calc( 100%  -  35px );
+}
+/* line 117, assets/src/css/less/pages/signup.less */
+body.signup .cloud footer {
+  margin-top: 35px;
+}
+/* line 120, assets/src/css/less/pages/signup.less */
+body.signup .cloud footer a {
+  border-radius: 1px;
+  display: inline-block;
+  padding: 1em 3em;
+  text-decoration: none;
+  -webkit-transition: background 0.1s ease-in-out;
+  -ms-transition: background 0.1s ease-in-out;
+  transition: background 0.1s ease-in-out;
+  background: #3498db;
+  border: solid 1px #2f89c5;
+  color: white;
+}
+/* line 19, assets/src/css/less/mixins/button.less */
+body.signup .cloud footer a:hover {
+  background: #2c81ba;
+}
+/* line 126, assets/src/css/less/pages/signup.less */
+body.signup .last-cta {
+  padding: 80px 0;
+}
+/* line 129, assets/src/css/less/pages/signup.less */
+body.signup .last-cta .container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 960px;
+  width: 90%;
+  text-align: center;
+}
+/* line 134, assets/src/css/less/pages/signup.less */
+body.signup .last-cta h3 {
+  max-width: 25em;
+  margin: 0 auto 1.5em;
+}
+/* line 139, assets/src/css/less/pages/signup.less */
+body.signup .last-cta .signup {
+  border-radius: 1px;
+  display: inline-block;
+  padding: 1em 3em;
+  text-decoration: none;
+  -webkit-transition: background 0.1s ease-in-out;
+  -ms-transition: background 0.1s ease-in-out;
+  transition: background 0.1s ease-in-out;
+  background: #3498db;
+  border: solid 1px #2f89c5;
+  color: white;
+}
+/* line 19, assets/src/css/less/mixins/button.less */
+body.signup .last-cta .signup:hover {
+  background: #2c81ba;
 }

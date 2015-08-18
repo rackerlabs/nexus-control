@@ -1,0 +1,56 @@
+{% extends "_layouts/sidebar-left.html" %}
+
+{% set metaDescription = deconst.content.envelope.meta.metaDescription %}
+{% set metaTitle = deconst.content.envelope.meta.metaTitle %}
+{% set ogDescription = deconst.content.envelope.meta.ogDescription %}
+{% set ogImage = deconst.content.envelope.meta.ogImage %}
+{% set ogTitle = deconst.content.envelope.meta.ogTitle %}
+{% set twitterCreator = deconst.content.envelope.meta.twitterCreator %}
+{% set twitterDescription = deconst.content.envelope.meta.twitterDescription %}
+{% set twitterTitle = deconst.content.envelope.meta.twitterTitle %}
+
+{% block metaDescription %}{{ metaDescription|fallback(super()) }}{% endblock %}
+{% block metaTitle %}{{ metaTitle|fallback(super()) }}{% endblock %}
+{% block ogDescription %}{{ ogDescription|fallback(metaDescription, super()) }}{% endblock %}
+{% block ogTitle %}{{ ogTitle|fallback(metaTitle, super()) }}{% endblock %}
+{% block ogImage %}{{ ogImage|fallback(super()) }}{% endblock %}
+{% block twitterCreator %}{{ twitterCreator|fallback(super()) }}{% endblock %}
+{% block twitterDescription %}{{ twitterDescription|fallback(ogDescription, metaDescription, super()) }}{% endblock %}
+{% block twitterTitle %}{{ twitterTitle|fallback(ogTitle, metaTitle, super()) }}{% endblock %}
+
+
+{% block bodyClass %}docs-home{% endblock %}
+
+
+
+{% set headlineTag = 'h1' %}
+{% set headlineAccent = 'Rackspace' %}
+{% set headline = 'Developer Docs' %}
+{% set tagline = 'Let’s Build Something Powerful Together!' %}
+{% set stickyNavOffsetTop = 392 %}
+
+{% block header %}
+    <div class="sdk-quickstart-menu">
+        <div class="title"><h2>Quickstart Guides:</h2></div>
+        <div class="links">
+            <ul>
+                <li><a href=""><span class="drc-icon-terminal"></span></a></li>
+                <li><a href=""><span class="drc-icon-python"></span></a></li>
+                <li><a href=""><span class="drc-icon-gopher"></span></a></li>
+                <li><a href=""><span class="drc-icon-dot-net"></span></a></li>
+                <li><a href=""><span class="drc-icon-java"></span></a></li>
+                <li><a href=""><span class="drc-icon-php"></span></a></li>
+                <li><a href=""><span class="drc-icon-js"></span></a></li>
+                <li><a href=""><span class="drc-icon-ruby"></span></a></li>
+            </ul>
+        </div>
+    </div>
+{% endblock %}
+
+{% block sidebar %}
+    {{ deconst.content.envelope.toc }}
+{% endblock %}
+
+{% block content %}
+    {{ deconst.content.envelope.body }}
+{% endblock %}
