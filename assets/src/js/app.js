@@ -5,6 +5,7 @@ module.exports = moduleName;
 
 angular.module(moduleName, [
     require('./components/code-sample'),
+    require('./components/code-sample-parent'),
     require('./components/copy-code-sample'),
     require('./components/dropdown-toggle'),
     require('./components/flex-height'),

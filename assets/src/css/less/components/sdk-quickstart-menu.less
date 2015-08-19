@@ -2,7 +2,7 @@
     .grid(0px);
     background: @code-background;
     color: white;
-    height: 60px;
+    height: 35px;
 
     .title {
         .grid-unit(1/5, 0px);
@@ -10,7 +10,7 @@
         h2 {
             .titillium('bold');
             font-size: 100%;
-            line-height: 60px;
+            line-height: 35px;
             margin-left: 35px;
             text-transform: uppercase;
         }
@@ -23,20 +23,28 @@
 
             li {
                 display: inline-block;
+                line-height: 35px;
                 margin-right: -0.25em;
                 text-align: center;
 
-                a {
-                    color: shade(white, 30%);
-                    display: inline-block;
-                    font-size: 30px;
-                    line-height: 60px;
-                    padding: 0 30px;
-                    .transition(~"background 0.1s ease-in-out, color 0.1s ease-in-out");
+                & > a {
+                    background: transparent;
+                    color: fadeout(white, 20%);
+                    display: block;
+                    padding: 0 1.5em;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    .transition(background 0.1s ease-in-out);
 
                     &:hover {
-                        background: tint(@code-background, 10%);
+                        background: tint(@code-background-accent, 5%);
+                    }
+
+                    &.active span {
+                        .open-sans('bold');
+                        border-bottom: solid 2px @link-color;
                         color: white;
+                        letter-spacing: -0.04em;
                     }
                 }
             }

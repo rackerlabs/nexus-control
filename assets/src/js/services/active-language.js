@@ -9,7 +9,7 @@ var LANGUAGE_CHANGE_EVENT = 'drcLanguageChange';
 angular.module(moduleName, [])
 .factory('activeLanguage', function ($rootScope) {
     if(! localStorage.getItem(LANGUAGE_KEY)) {
-        localStorage.setItem(LANGUAGE_KEY, 'cli');
+        localStorage.setItem(LANGUAGE_KEY, 'sh');
     }
 
     return {

@@ -6,6 +6,7 @@ module.exports = moduleName;
 
 angular.module(moduleName, [
     require('./components/code-sample'),
+    require('./components/code-sample-parent'),
     require('./components/copy-code-sample'),
     require('./components/dropdown-toggle'),
     require('./components/flex-height'),
@@ -22,7 +23,39 @@ angular.module(moduleName, [
 
 angular.bootstrap(document, [moduleName]);
 
-},{"./components/code-sample":"/Users/keit8924/Code/rackerlabs/nexus-control/assets/src/js/components/code-sample.js","./components/copy-code-sample":"/Users/keit8924/Code/rackerlabs/nexus-control/assets/src/js/components/copy-code-sample.js","./components/dropdown-toggle":"/Users/keit8924/Code/rackerlabs/nexus-control/assets/src/js/components/dropdown-toggle.js","./components/flex-height":"/Users/keit8924/Code/rackerlabs/nexus-control/assets/src/js/components/flex-height.js","./components/language-selector":"/Users/keit8924/Code/rackerlabs/nexus-control/assets/src/js/components/language-selector.js","./components/scroll-indicator":"/Users/keit8924/Code/rackerlabs/nexus-control/assets/src/js/components/scroll-indicator.js","./components/section-nav-toggle":"/Users/keit8924/Code/rackerlabs/nexus-control/assets/src/js/components/section-nav-toggle.js","./components/sticky":"/Users/keit8924/Code/rackerlabs/nexus-control/assets/src/js/components/sticky.js","./controllers/blog-sidebar":"/Users/keit8924/Code/rackerlabs/nexus-control/assets/src/js/controllers/blog-sidebar.js","./controllers/docs-home-services":"/Users/keit8924/Code/rackerlabs/nexus-control/assets/src/js/controllers/docs-home-services.js","./controllers/docs-home-sidebar":"/Users/keit8924/Code/rackerlabs/nexus-control/assets/src/js/controllers/docs-home-sidebar.js","./services/active-language":"/Users/keit8924/Code/rackerlabs/nexus-control/assets/src/js/services/active-language.js","./services/filter":"/Users/keit8924/Code/rackerlabs/nexus-control/assets/src/js/services/filter.js","angular":"/Users/keit8924/Code/rackerlabs/nexus-control/node_modules/angular/index.js"}],"/Users/keit8924/Code/rackerlabs/nexus-control/assets/src/js/components/code-sample.js":[function(require,module,exports){
+},{"./components/code-sample":"/Users/keit8924/Code/rackerlabs/nexus-control/assets/src/js/components/code-sample.js","./components/code-sample-parent":"/Users/keit8924/Code/rackerlabs/nexus-control/assets/src/js/components/code-sample-parent.js","./components/copy-code-sample":"/Users/keit8924/Code/rackerlabs/nexus-control/assets/src/js/components/copy-code-sample.js","./components/dropdown-toggle":"/Users/keit8924/Code/rackerlabs/nexus-control/assets/src/js/components/dropdown-toggle.js","./components/flex-height":"/Users/keit8924/Code/rackerlabs/nexus-control/assets/src/js/components/flex-height.js","./components/language-selector":"/Users/keit8924/Code/rackerlabs/nexus-control/assets/src/js/components/language-selector.js","./components/scroll-indicator":"/Users/keit8924/Code/rackerlabs/nexus-control/assets/src/js/components/scroll-indicator.js","./components/section-nav-toggle":"/Users/keit8924/Code/rackerlabs/nexus-control/assets/src/js/components/section-nav-toggle.js","./components/sticky":"/Users/keit8924/Code/rackerlabs/nexus-control/assets/src/js/components/sticky.js","./controllers/blog-sidebar":"/Users/keit8924/Code/rackerlabs/nexus-control/assets/src/js/controllers/blog-sidebar.js","./controllers/docs-home-services":"/Users/keit8924/Code/rackerlabs/nexus-control/assets/src/js/controllers/docs-home-services.js","./controllers/docs-home-sidebar":"/Users/keit8924/Code/rackerlabs/nexus-control/assets/src/js/controllers/docs-home-sidebar.js","./services/active-language":"/Users/keit8924/Code/rackerlabs/nexus-control/assets/src/js/services/active-language.js","./services/filter":"/Users/keit8924/Code/rackerlabs/nexus-control/assets/src/js/services/filter.js","angular":"/Users/keit8924/Code/rackerlabs/nexus-control/node_modules/angular/index.js"}],"/Users/keit8924/Code/rackerlabs/nexus-control/assets/src/js/components/code-sample-parent.js":[function(require,module,exports){
+var $ = require('jquery');
+var angular = require('angular');
+
+var moduleName = 'drc.components.code-sample-parent';
+module.exports = moduleName;
+
+angular.module(moduleName, [])
+.directive('drcCodeSampleParent', function ($rootScope, activeLanguage) {
+    return {
+        controller: function ($scope, $element, $attrs) {
+            $element = $($element);
+
+            $scope.isActiveLanguage = function (language) {
+                return activeLanguage.get() === language;
+            };
+
+            $scope.setActiveClass = function (event, data) {
+                data = data || activeLanguage.get();
+
+                $element.removeClass('active-language-sh active-language-go active-language-csharp active-language-java active-language-python active-language-javascript active-language-ruby active-language-php');
+                $element.addClass('active-language-' + data);
+            };
+
+            $rootScope.$on(activeLanguage.changeEventName, $scope.setActiveClass);
+        },
+        link: function ($scope, $element, $attrs) {
+            $scope.setActiveClass();
+        }
+    };
+});
+
+},{"angular":"/Users/keit8924/Code/rackerlabs/nexus-control/node_modules/angular/index.js","jquery":"/Users/keit8924/Code/rackerlabs/nexus-control/node_modules/jquery/dist/jquery.js"}],"/Users/keit8924/Code/rackerlabs/nexus-control/assets/src/js/components/code-sample.js":[function(require,module,exports){
 var $ = require('jquery');
 var angular = require('angular');
 
@@ -564,7 +597,7 @@ var LANGUAGE_CHANGE_EVENT = 'drcLanguageChange';
 angular.module(moduleName, [])
 .factory('activeLanguage', function ($rootScope) {
     if(! localStorage.getItem(LANGUAGE_KEY)) {
-        localStorage.setItem(LANGUAGE_KEY, 'cli');
+        localStorage.setItem(LANGUAGE_KEY, 'sh');
     }
 
     return {
