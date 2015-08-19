@@ -19,6 +19,18 @@
             "to": "/blog/$1/",
             "rewrite": false,
             "status": 301
+        },
+        {
+            "from": "^\\/devtrial",
+            "to": "/signup/",
+            "rewrite": false,
+            "status": 301
+        },
+        {
+            "from": "^\\/developer-plus\\/?$",
+            "to": "/signup/",
+            "rewrite": false,
+            "status": 301
         }
     ]
 }
