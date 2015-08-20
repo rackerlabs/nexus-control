@@ -27,7 +27,7 @@
 {% set headlineAccent = 'Rackspace' %}
 {% set headline = 'Developer Docs' %}
 {% set tagline = 'Let’s Build Something Powerful Together!' %}
-{% set stickyNavOffsetTop = 392 %}
+{% set stickyNavOffsetTop = 356 %}
 
 {% block header %}
     <div class="sdk-quickstart-menu">
@@ -48,7 +48,7 @@
 {% endblock %}
 
 {% block sidebar %}
-    <div class="sidebar-container" data-drc-sticky data-offset-top="{{ stickyNavOffsetTop }}" data-drc-flex-height data-flex-bottom="302">
+    <div class="sidebar-container" data-drc-sticky data-offset-top="{{ stickyNavOffsetTop }}" data-drc-flex-height data-flex-bottom="412">
         <h5>Filter by Product:</h5>
         <ul class="product-filters" data-ng-controller="DocsHomeSidebarCtrl">
             <li class="all" data-ng-click="clickFilter('*')" data-ng-class="{'active': isFilterActive('*')}">

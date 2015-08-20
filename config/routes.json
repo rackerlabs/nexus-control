@@ -10,8 +10,8 @@
             "^/blog/categories": "blog-index.html",
             "^/docs": "docs-home.html",
             "^/docs/.+?": "docs-page.html",
-            "^/docs/user-guides/infrastructure/": "docs-global-toc.html",
-            "^/docs/rack-cli/": "docs-global-toc.html",
+            "^/docs/user-guides/infrastructure/": "user-guide.html",
+            "^/docs/rack-cli/": "rack-cli.html",
             "^/sdks": "sdks.html",
             "\\.xml$": "feed.xml"
         }

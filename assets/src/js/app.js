@@ -9,6 +9,7 @@ angular.module(moduleName, [
     require('./components/copy-code-sample'),
     require('./components/dropdown-toggle'),
     require('./components/flex-height'),
+    require('./components/global-sidebar'),
     require('./components/language-selector'),
     require('./components/scroll-indicator'),
     require('./components/section-nav-toggle'),

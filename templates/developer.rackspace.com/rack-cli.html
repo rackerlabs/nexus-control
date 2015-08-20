@@ -1,7 +1,7 @@
 {% extends "_layouts/sidebar-left.html" %}
 
-{% set metaDescription = deconst.content.envelope.meta.metaDescription %}
-{% set metaTitle = deconst.content.envelope.meta.metaTitle %}
+{% set metaDescription = deconst.content.envelope.title + " - Rackspace Developer Portal" %}
+{% set metaTitle = deconst.content.envelope.title + " - Rackspace Developer Portal" %}
 {% set ogDescription = deconst.content.envelope.meta.ogDescription %}
 {% set ogImage = deconst.content.envelope.meta.ogImage %}
 {% set ogTitle = deconst.content.envelope.meta.ogTitle %}
@@ -25,7 +25,7 @@
 {% set headlineAccent = 'Rackspace' %}
 {% set headline = 'Developer Docs' %}
 {% set tagline = 'Let’s Build Something Powerful Together!' %}
-{% set stickyNavOffsetTop = 392 %}
+{% set stickyNavOffsetTop = 326 %}
 
 {% block header %}
     <div class="sdk-quickstart-menu">
@@ -46,8 +46,10 @@
 {% endblock %}
 
 {% block sidebar %}
-    <div class="sidebar-container" data-drc-sticky data-offset-top="392" data-drc-flex-height data-flex-bottom="412">
-        {{ deconst.content.globals.toc }}
+    <div data-drc-global-sidebar>
+        <div class="sidebar-container" data-drc-sticky data-offset-top="356" data-drc-flex-height data-flex-bottom="412">
+            {{ deconst.content.globals.toc|unwrap('div.toctree-wrapper')|removeAnchors }}
+        </div>
     </div>
 {% endblock %}
 

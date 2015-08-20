@@ -215,7 +215,7 @@ table {
 }
 @font-face {
   font-family: 'source-code-regular';
-  src: url('../fonts/sourcecodepro-regular-webfont.woff') format('woff'), url('../fonts/sourcecodepro-regular-webfont.woff2') format('woff2');
+  src: url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/sourcecodepro-regular-webfont-e0b2cd80c5e190d6857df655e2bbf6817a00637bac363223590ba15428aeddd9.woff') format('woff'), url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/sourcecodepro-regular-webfont-94bf8a40e3e461e717cc92e4adff26ecf8f6776611c453cd0f4fbddb71b08c92.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -3766,9 +3766,11 @@ figure,
 figure img,
 .figure img {
   display: block;
+  height: auto;
   margin: 0 auto;
+  max-width: 100%;
 }
-/* line 14, assets/src/css/less/components/figure.less */
+/* line 16, assets/src/css/less/components/figure.less */
 figure figcaption,
 .figure figcaption,
 figure .caption,
@@ -4808,7 +4810,7 @@ hr {
 }
 /* line 349, assets/src/css/less/modules/site-header.less */
 .site-header .header-headline {
-  background-image: url('../img/fpo-code-editor.jpg');
+  background-image: url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/fpo-code-editor-d451e1cbed5e243327c02753222aff6516c860bb1892e03d3c54d9b1e1884d66.jpg');
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -5763,7 +5765,7 @@ body.docs-home .product-list .card ul {
 }
 /* line 4, assets/src/css/less/pages/blog.less */
 body.blog .header-headline {
-  background-image: url('../img/blog-banner.jpg');
+  background-image: url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/blog-banner-31aa089d85139ec9f58b20286273fe14c05bc18e25cc2afadc6d32cfa052721b.jpg');
 }
 /* line 8, assets/src/css/less/pages/blog.less */
 body.blog .layout.sidebar-right .content {
@@ -5855,7 +5857,7 @@ body.blog .layout.sidebar-right .content {
 }
 /* line 2, assets/src/css/less/pages/home.less */
 body.home .header-headline {
-  background-image: url('../img/misc-banner-1.jpg');
+  background-image: url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/misc-banner-1-bbf0f84190b962e5d7d08bc5e4e5ae0032101dafef0b683125cf1b57f6f6a94e.jpg');
 }
 /* line 5, assets/src/css/less/pages/home.less */
 body.home .header-headline h2 {
@@ -6034,7 +6036,7 @@ body.home .box.dev-support .comm-platforms .platform {
 }
 /* line 121, assets/src/css/less/pages/home.less */
 body.home .box.quote {
-  background: #f2f2f2 url('../img/quote-background.jpg') 50% 50% no-repeat;
+  background: #f2f2f2 url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/quote-background-5b29247445a92b7c2aedaf86bb826677b2b21271b23f2c5c62287b1d01e60194.jpg') 50% 50% no-repeat;
   background-size: cover;
 }
 /* line 125, assets/src/css/less/pages/home.less */
@@ -6566,7 +6568,7 @@ body.sdks-home .sdk-grid .requirements ul {
 }
 /* line 2, assets/src/css/less/pages/signup.less */
 body.signup .header-headline {
-  background-image: url('../img/misc-banner-1.jpg');
+  background-image: url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/misc-banner-1-bbf0f84190b962e5d7d08bc5e4e5ae0032101dafef0b683125cf1b57f6f6a94e.jpg');
 }
 /* line 5, assets/src/css/less/pages/signup.less */
 body.signup .header-headline h2 {
