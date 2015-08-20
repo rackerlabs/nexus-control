@@ -1,0 +1,123 @@
+{% extends "_layouts/sidebar-right.html" %}
+
+{% set metaDescription = deconst.content.envelope.meta.metaDescription %}
+{% set metaTitle = deconst.content.envelope.meta.metaTitle %}
+{% set ogDescription = deconst.content.envelope.meta.ogDescription %}
+{% set ogImage = deconst.content.envelope.meta.ogImage %}
+{% set ogTitle = deconst.content.envelope.meta.ogTitle %}
+{% set twitterCreator = deconst.content.envelope.meta.twitterCreator %}
+{% set twitterDescription = deconst.content.envelope.meta.twitterDescription %}
+{% set twitterTitle = deconst.content.envelope.meta.twitterTitle %}
+
+{% block metaDescription %}{{ metaDescription|fallback(super()) }}{% endblock %}
+{% block metaTitle %}{{ metaTitle|fallback(super()) }}{% endblock %}
+{% block ogDescription %}{{ ogDescription|fallback(metaDescription, super()) }}{% endblock %}
+{% block ogTitle %}{{ ogTitle|fallback(metaTitle, super()) }}{% endblock %}
+{% block ogImage %}{{ ogImage|fallback(super()) }}{% endblock %}
+{% block twitterCreator %}{{ twitterCreator|fallback(super()) }}{% endblock %}
+{% block twitterDescription %}{{ twitterDescription|fallback(ogDescription, metaDescription, super()) }}{% endblock %}
+{% block twitterTitle %}{{ twitterTitle|fallback(ogTitle, metaTitle, super()) }}{% endblock %}
+
+{% set headline = 'Developer Blog' %}
+{% set tagline = 'News and Insights from Rackspace Developers' %}
+
+{% block bodyClass %}blog{% endblock %}
+
+{% block content %}
+    {% set post = deconst.content.envelope %}
+    <section class="blog-post single">
+        <div>
+            <h1 class="post-title">{{ post.title }}</h1>
+            <div class="post-info">
+                <div class="post-avatar{% if post.meta.authorIsRacker %} racker{% endif %}">
+                    {% if post.meta.authorAvatar %}
+                        <img src="{{ post.meta.authorAvatar }}" alt="{{ post.author }}">
+                    {% else %}
+                        <img src="https://randomuser.me/api/portraits/lego/1.jpg" alt="Placeholder Avatar">
+                    {% endif %}
+                </div>
+                <div class="post-byline"><a href="" class="post-author">{{ post.author }}</a> | <time datetime="{{ post.meta.date|date('YYYY-MM-DD') }}">{{ post.meta.date|date('MMMM D, YYYY') }}</time></div>
+
+                {% if post.categories.length > 0 %}
+                <ul class="post-categories">
+                    {% for category in post.categories %}
+                        <li><a href="#">{{ category }}</a></li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </div>
+            {{ post.body }}
+            {% if post.bio %}
+            <div class="author-bio">
+                <div class="avatar racker">
+                    {% if post.meta.authorAvatar %}
+                        <img src="{{ post.meta.authorAvatar }}" alt="{{ post.author }}">
+                    {% else %}
+                        <img src="https://randomuser.me/api/portraits/lego/1.jpg" alt="Placeholder Avatar">
+                    {% endif %}
+                </div>
+                <div class="author-info">
+                    <span class="name">{{ post.author }}</span>
+                    <div class="bio">{{ post.bio }}</div>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </section>
+{% endblock %}
+{% block sidebar %}
+    <div class="blog-sidebar" data-ng-controller="BlogSidebarCtrl">
+        <section class="recent-posts">
+            <h5>Popular Posts</h5>
+            <div class="tab-links">
+                <a href="" data-ng-click="clickPostTab('month')" data-ng-class="{'active': isSectionActive('month')}">Last 30 Days</a>
+                <a href="" data-ng-click="clickPostTab('forever')" data-ng-class="{'active': isSectionActive('forever')}">All Time</a>
+            </div>
+            <ol data-ng-show="isSectionActive('month')">
+                <li><a href="">Principles for a Successful Developer Workshop</a></li>
+                <li><a href="">Installing OpenStack from Source</a></li>
+                <li><a href="">This Week in Information Security (Week of July 20th)</a></li>
+                <li><a href="">Repose Ninja &mdash; Hello World</a></li>
+                <li><a href="">Operating Your OpenStack Cloud using Ansible</a></li>
+            </ol>
+            <ol data-ng-show="isSectionActive('forever')">
+                <li><a href="">Introducing Gophercloud: an OpenStack SDK for Go</a></li>
+                <li><a href="">php-opencloud 1.11.0 Released</a></li>
+                <li><a href="">Ruby DCamp 2014</a></li>
+                <li><a href="">Adding devices into an existing Swift cluster</a></li>
+                <li><a href="">A Big Data Solution Running On Top of Rackspace Private Cloud</a></li>
+            </ol>
+        </section>
+        <section class="related-posts">
+            <h5>Related Reading</h5>
+            <div class="post">
+                <a href="" class="title">Built an App on OpenStack at QCon NY 2015</a>
+                <div class="preview">Last week I went to QCon NY 2015 to be both a student and a teacher in their tutorial track&hellip;</div>
+                <a href="" class="read-more">Read More</a>
+            </div>
+            <div class="post">
+                <a href="" class="title">Built an App on OpenStack at QCon NY 2015</a>
+                <div class="preview">Last week I went to QCon NY 2015 to be both a student and a teacher in their tutorial track&hellip;</div>
+                <a href="" class="read-more">Read More</a>
+            </div>
+            <div class="post">
+                <a href="" class="title">Built an App on OpenStack at QCon NY 2015</a>
+                <div class="preview">Last week I went to QCon NY 2015 to be both a student and a teacher in their tutorial track&hellip;</div>
+                <a href="" class="read-more">Read More</a>
+            </div>
+        </section>
+        <section class="categories">
+            <h5>Categories</h5>
+            <ul>
+                <li><a href="">Openstack</a></li>
+                <li><a href="">DevOps</a></li>
+                <li><a href="">Community</a></li>
+                <li><a href="">Developer Experience</a></li>
+                <li><a href="">Security</a></li>
+                <li><a href="">Deployment</a></li>
+                <li><a href="">SDKs</a></li>
+                <li><a href="">Tools</a></li>
+            </ul>
+        </section>
+    </div>
+{% endblock %}

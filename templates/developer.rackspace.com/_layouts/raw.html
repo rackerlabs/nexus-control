@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{% block metaTitle %}Rackspace Developer Center{% endblock %}</title>
+        <meta name="description" content="{% block metaDescription %}The Rackspace Developer Center gives developers tools and resources to build powerful, scalable apps on the only cloud backed by Fanatical Support®{% endblock %}">
+        <meta name="og:title" content="{% block ogTitle %}Rackspace Developer Center{% endblock %}">
+        <meta name="og:description" content="{% block ogDescription %}The Rackspace Developer Center gives developers tools and resources to build powerful, scalable apps on the only cloud backed by Fanatical Support®{% endblock %}">
+        <meta name="og:image" content="{% block ogImage %}http://fpoimg.com/1280x720{% endblock %}">
+        <meta name="og:type" content="site">
+        <meta name="twitter:title" content="{% block twitterTitle %}Rackspace Developer Center{% endblock %}">
+        <meta name="twitter:description" content="{% block twitterDescription %}The Rackspace Developer Center gives developers tools and resources to build powerful, scalable apps on the only cloud backed by Fanatical Support®{% endblock %}">
+        <meta name="twitter:creator" content="{% block twitterCreator %}@rackspace{% endblock %}">
+        <meta name="twitter:site" content="@rackspace">
+
+        <meta name="google-site-verification" content="-mqrRO0re82bACL147Jd8LJIAQ2JtzxoezhwMMJbS2s" />
+
+        <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" rel="stylesheet" type="text/css">
+        {% if deconst.env.PRESENTER_DEVMODE == 'true' %}
+            {% set cssUrl = '/assets/src/css/main.css' %}
+        {% else %}
+            {% set cssUrl = deconst.assets.assets_dist_css_main_css %}
+        {% endif %}
+        <link rel="stylesheet" href="{{ cssUrl }}">
+
+        {% block headScripts %}
+            {% include "_includes/vwo.html" %}
+            <script type="text/javascript" src="https://www.rackspace.com/data/client"></script>
+        {% endblock %}
+    {% endblock %}
+</head>
+<body class="{% block bodyClass %}{% endblock %}" data-drc-code-sample-parent>
+    {% block body %}{% endblock %}
+</body>
+</html>

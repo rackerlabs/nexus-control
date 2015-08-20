@@ -1,0 +1,89 @@
+body.docs-samples {
+    @gutter-width: 0px;
+
+    a {
+        text-decoration: underline;
+    }
+
+    .header-headline {
+        background-image: url('../img/docs-banner.jpg');
+    }
+
+    .body {
+        .background {
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+
+            .left {
+                display: none;
+            }
+
+            .center {
+                .grid-unit(1/1);
+                background: white;
+                height: 100%;
+            }
+            .right {
+                display: none;
+            }
+
+            @media (min-width: 769px) {
+                .left {
+                    .grid-unit(1/4);
+                    background: shade(white, 8%);
+                    height: 100%;
+                }
+            }
+
+            @media (min-width: 1025px) {
+                .left {
+                    .grid-unit(1/6);
+                }
+                .center {
+                    .grid-unit(5/12);
+                    width: calc( percentage((5/12)) - 0.03%);
+                }
+
+                .right {
+                    .grid-unit(5/12);
+                    background: @code-background;
+                    height: 100%;
+                }
+            }
+        }
+
+        .sidebar {
+            @media (min-width: 1025px) {
+                .grid-unit(1/6);
+            }
+
+            .sidebar-container.sticky {
+                width: percentage((1/6));
+            }
+        }
+
+        .content {
+            .grid-unit(12/12);
+            max-width: none;
+            padding: 80px 5%;
+            .transition(transform 0.2s ease-in-out);
+
+            .docs-section:first-of-type {
+                padding-top: 5px;
+            }
+
+            @media (min-width: 769px) {
+                .grid-unit(9/12);
+                padding: 35px 20px 0 20px;
+            }
+
+            @media (min-width: 1025px) {
+                .grid-unit(10/12);
+                padding: 5px 0 0 20px;
+            }
+        }
+    }
+}

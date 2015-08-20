@@ -1,0 +1,198 @@
+body.home {
+    .header-headline {
+        background-image: url('../img/misc-banner-1.jpg');
+
+        h2 {
+            .titillium('light');
+            background: fadeout(black, 60%);
+            color: white;
+            display: block;
+            font-size: percentage((48/14));
+            text-align: center;
+            text-shadow: 0px 0px 2px fadeout(black, 70%);
+            text-transform: none;
+        }
+
+        br {
+            display: none;
+        }
+
+        .tagline {
+            color: white;
+            font-size: percentage((18/14));
+            margin-bottom: 0;
+            text-align: center;
+            text-transform: none;
+        }
+
+        .get-started {
+            .open-sans('bold');
+            .button('smoke');
+            font-size: 12px;
+            letter-spacing: 0.04em;
+            margin-top: 2em;
+            text-transform: uppercase;
+        }
+
+        @media (min-width: 769px) {
+            padding: 180px 60px 120px 35px;
+
+            h2 {
+                background: transparent;
+            }
+
+            br {
+                display: block;
+            }
+
+        }
+    }
+
+    .box {
+        text-align: center;
+        padding: 80px 0;
+
+        .container {
+            .centered-container(960px);
+        }
+    }
+
+
+
+    .box.docs-apis {
+
+        h1 {
+            margin-bottom: 80px;
+        }
+
+        .tools-promos {
+            .grid(20px);
+
+            .promo {
+                .grid-unit(1/1, 20px);
+            }
+
+            @media (min-width: 769px) {
+                .grid(80px);
+
+                .promo {
+                    .grid-unit(1/2, 80px);
+                }
+            }
+        }
+    }
+
+    .box.dev-support {
+        background: @text-color;
+        color: white;
+
+        h2 {
+            font-size: percentage((36/14));
+        }
+
+        h2 + p {
+            font-size: percentage((20/14));
+            margin-bottom: 80px;
+        }
+
+        .icon {
+            font-size: 60px;
+            margin-bottom: 5px;
+        }
+
+        .comm-platforms {
+            .grid(20px);
+
+            .platform {
+                .grid-unit(1/2, 20px);
+                font-size: percentage((16/14));
+            }
+
+            @media (min-width: 769px) {
+                .grid(40px);
+
+                .platform {
+                    .grid-unit(1/4, 40px);
+                }
+            }
+        }
+    }
+
+    .box.quote {
+        background: shade(white, 5%) url('../img/quote-background.jpg') 50% 50% no-repeat;
+        background-size: cover;
+
+        blockquote {
+            font-size: percentage((26/14));
+            line-height: 1.45;
+            margin-bottom: 40px;
+
+            .quotes {
+                font-family: Georgia, serif;
+            }
+        }
+
+        .author {
+            .open-sans('bold');
+            font-size: percentage((22/14));
+        }
+
+        .author-title {
+            .open-sans('regular', 'italic');
+            margin-bottom: 40px;
+        }
+
+        a {
+            .button('smoke');
+            border: 0;
+
+            &:hover {
+                background: fadeout(black, 40%);
+            }
+        }
+
+        @media (min-width: 850px) {
+            blockquote {
+                font-size: percentage((38/14));
+            }
+        }
+
+        @media (min-width: 1067px) {
+            background-size: contain;
+        }
+    }
+
+    .box.sign-up {
+        border-bottom: solid 1px shade(white, 5%);
+
+        a.sign-up {
+            .button('blue');
+        }
+    }
+
+    .box.blog {
+        .link-lists {
+            .grid(40px);
+
+            .link-list {
+                .grid-unit(1/1, 40px);
+                text-align: left;
+            }
+
+            @media (min-width: 550px) {
+                .link-list {
+                    .grid-unit(1/2, 40px);
+                }
+            }
+        }
+
+        h4 {
+            font-size: percentage((28/14));
+            margin-bottom: 20px;
+        }
+
+        ul {
+            margin-bottom: 30px;
+        }
+    }
+}

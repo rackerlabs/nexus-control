@@ -1,0 +1,150 @@
+.blog-post {
+
+    h1.post-title {
+        font-size: percentage((28/14));
+    }
+
+    h3.post-title {
+        font-size: percentage((24/14));
+        margin-bottom: 15px;
+    }
+
+    .post-info {
+        .clearfix();
+        line-height: 2;
+        margin-bottom: 15px;
+    }
+
+    .post-avatar {
+        float: left;
+        height: 64px;
+        margin-right: 10px;
+        width: 64px;
+
+        img {
+            display: block;
+            height: 64px;
+            width: 64px;
+        }
+
+        &.racker:after {
+            .avatar-overlay('RACKER', 10px);
+        }
+    }
+
+    .post-categories {
+        font-size: 12px;
+        list-style-type: none;
+        margin: 0;
+        padding-left: 0;
+
+        li {
+            display: inline-block;
+
+            & + li {
+                margin-left: 0.25em;
+
+                &:before {
+                    content: '/';
+                    margin-right: 0.25em;
+                }
+            }
+        }
+
+    }
+
+    .post-read-more {
+        .open-sans('bold');
+        font-size: 80%;
+        text-transform: uppercase;
+    }
+
+
+    .author-bio {
+        .clearfix();
+        border: solid 1px shade(white, 10%);
+        border-width: 1px 0px;
+        margin-top: 40px;
+        padding: 40px 0;
+
+        .avatar {
+            float: left;
+            height: 128px;
+            margin-right: 20px;
+            overflow: hidden;
+            width: 128px;
+
+            &.racker:after {
+                .avatar-overlay();
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .name {
+            display: block;
+            font-size: percentage((18/14));
+            margin-bottom: 0.5em;
+        }
+    }
+
+    &.preview {
+        padding: 40px 0;
+
+        & + .blog-post {
+           border-top: solid 1px shade(white, 10%);
+       }
+    }
+
+    &.single {
+        padding: 40px 0;
+
+        h3 {
+            .h4();
+        }
+
+        h4 {
+            .h5();
+        }
+
+        h5 {
+            .h6();
+        }
+
+        .post-title {
+            margin-bottom: 15px;
+        }
+
+        .post-info {
+            border-bottom: solid 1px shade(white, 10%);
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+        }
+
+        .right, .left {
+            display: block;
+            height: auto;
+            margin: 0 auto 1.5em auto;
+            max-width: 100%;
+        }
+
+        @media (min-width: 769px) {
+            .right {
+                float: right;
+                height: auto;
+                margin: 0 0 1em 1em;
+                max-width: 50%;
+            }
+
+            .left {
+                float: right;
+                height: auto;
+                margin: 0 1em 1em 0;
+                max-width: 50%;
+            }
+        }
+    }
+}

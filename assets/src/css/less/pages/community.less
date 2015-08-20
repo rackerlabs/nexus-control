@@ -1,0 +1,25 @@
+.community {
+    .grid(35px);
+    margin-top: 35px;
+
+    .community-content {
+        .grid-unit(1/1, 35px);
+
+        @media (min-width: 769px) {
+            .grid-unit(3/4, 35px);
+        }
+
+    }
+
+    .community-sidebar {
+        .grid-unit(1/1, 35px);
+
+        @media (min-width: 769px) {
+            .grid-unit(1/4, 35px);
+        }
+    }
+
+    .lead {
+        font-size: percentage((16/14));
+    }
+}

@@ -4,6 +4,8 @@
   "homepage": "https://github.com/rackerlabs/nexus-control",
   "license": "MIT",
   "dependencies": {
+    "fontawesome": "~4.3.0",
+    "drc-icons": "git@github.com:rackerlabs/drc-icons.git#v0.3.0",
     "markalytics": "^0.1.4"
   }
 }

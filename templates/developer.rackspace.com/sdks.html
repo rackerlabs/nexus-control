@@ -1,20 +1,62 @@
-{% extends "_layouts/base.html" %}
+{% extends "_layouts/sidebar-left.html" %}
+
+{% set metaDescription = deconst.content.envelope.meta.metaDescription %}
+{% set metaTitle = deconst.content.envelope.meta.metaTitle %}
+{% set ogDescription = deconst.content.envelope.meta.ogDescription %}
+{% set ogImage = deconst.content.envelope.meta.ogImage %}
+{% set ogTitle = deconst.content.envelope.meta.ogTitle %}
+{% set twitterCreator = deconst.content.envelope.meta.twitterCreator %}
+{% set twitterDescription = deconst.content.envelope.meta.twitterDescription %}
+{% set twitterTitle = deconst.content.envelope.meta.twitterTitle %}
+
+{% block metaDescription %}{{ metaDescription|fallback(super()) }}{% endblock %}
+{% block metaTitle %}{{ metaTitle|fallback(super()) }}{% endblock %}
+{% block ogDescription %}{{ ogDescription|fallback(metaDescription, super()) }}{% endblock %}
+{% block ogTitle %}{{ ogTitle|fallback(metaTitle, super()) }}{% endblock %}
+{% block ogImage %}{{ ogImage|fallback(super()) }}{% endblock %}
+{% block twitterCreator %}{{ twitterCreator|fallback(super()) }}{% endblock %}
+{% block twitterDescription %}{{ twitterDescription|fallback(ogDescription, metaDescription, super()) }}{% endblock %}
+{% block twitterTitle %}{{ twitterTitle|fallback(ogTitle, metaTitle, super()) }}{% endblock %}
+
+{% block bodyClass %}sdks-home{% endblock %}
+{% set headlineTag = 'h1' %}
+{% set headlineAccent = 'Rackspace' %}
+{% set headline = 'SDKs &amp; Tools' %}
+{% set tagline = 'Let’s Build Something Powerful Together!' %}
+{% set stickyNavOffsetTop = 392 %}
+
+{% block header %}
+    <div class="sdk-quickstart-menu">
+        <div class="title"><h2>Quickstart Guides:</h2></div>
+        <div class="links">
+            <ul>
+                <li><a href=""><span class="drc-icon-terminal"></span></a></li>
+                <li><a href=""><span class="drc-icon-python"></span></a></li>
+                <li><a href=""><span class="drc-icon-gopher"></span></a></li>
+                <li><a href=""><span class="drc-icon-dot-net"></span></a></li>
+                <li><a href=""><span class="drc-icon-java"></span></a></li>
+                <li><a href=""><span class="drc-icon-php"></span></a></li>
+                <li><a href=""><span class="drc-icon-js"></span></a></li>
+                <li><a href=""><span class="drc-icon-ruby"></span></a></li>
+            </ul>
+        </div>
+    </div>
+{% endblock %}
+
+{% block sidebar %}
+<div class="sidebar-container" data-drc-sticky data-offset-top="{{ stickyNavOffsetTop }}" data-drc-flex-height data-flex-bottom="302">
+    <ul>
+        <li data-drc-scroll-indicator="gophercloud" data-use-attribute="id"><a href="#gophercloud">Gophercloud <span class="sdk-language">Go</span></a></li>
+        <li data-drc-scroll-indicator="jclouds" data-use-attribute="id"><a href="#jclouds">JClouds <span class="sdk-language">Java</span></a></li>
+        <li data-drc-scroll-indicator="openstack-net" data-use-attribute="id"><a href="#openstack-net">OpenStack.NET <span class="sdk-language">.NET</span></a></li>
+        <li data-drc-scroll-indicator="pkgcloud" data-use-attribute="id"><a href="#pkgcloud">pkgcloud <span class="sdk-language">Node.js</span></a></li>
+        <li data-drc-scroll-indicator="php-opencloud" data-use-attribute="id"><a href="#php-opencloud">PHP-Opencloud <span class="sdk-language">PHP</span></a></li>
+        <li data-drc-scroll-indicator="pyrax" data-use-attribute="id"><a href="#pyrax">Pyrax <span class="sdk-language">Python</span></a></li>
+        <li data-drc-scroll-indicator="fog" data-use-attribute="id"><a href="#fog">Fog <span class="sdk-language">Ruby</span></a></li>
+    </ul>
+</div>
+{% endblock %}
 
 {% block content %}
-<div class="title-header">
-  <div class="inner">
-    <span class="headline">{{ deconst.content.envelope.title|safe }}</span>
-  </div>
-</div>
-<div class="container body-container">
-  <div class="row">
-    <div class="col-md-9 col-md-push-3 bodycontent">
-      {{ deconst.content.envelope.body|safe }}
-    </div>
-    <div class="col-md-3 col-md-pull-9 sidebar">
-        {% include "_includes/sdk-sidebar.html" %}
-        {% include "_includes/sidebar-footer.html" %}
-    </div>
-  </div>
-</div>
+  {{ deconst.content.envelope.body }}
 {% endblock %}
