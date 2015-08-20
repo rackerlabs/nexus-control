@@ -4,7 +4,7 @@
 
 set -euo pipefail
 
-BRANCH="$(git symbolic-ref HEAD)"
+BRANCH="$(git symbolic-ref -q HEAD || echo "pr")"
 
 case ${BRANCH} in
   refs/heads/master)
