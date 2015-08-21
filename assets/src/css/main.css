@@ -5824,6 +5824,30 @@ body.blog .layout.sidebar-right .content {
     margin-left: -0.25em;
   }
 }
+/* line 33, assets/src/css/less/pages/blog.less */
+body.blog .pagination {
+  display: block;
+  width: calc(100% +  0px );
+  margin-left: 0px;
+  overflow: hidden;
+  vertical-align: top;
+}
+/* line 36, assets/src/css/less/pages/blog.less */
+body.blog .pagination .previous,
+body.blog .pagination .next {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  display: inline-block;
+  margin-right: -0.26rem;
+  margin-left: 0px;
+  vertical-align: top;
+  width: calc( 50%  -  0px );
+  padding: 40px 0;
+}
+/* line 41, assets/src/css/less/pages/blog.less */
+body.blog .pagination .next {
+  text-align: right;
+}
 /* line 1, assets/src/css/less/pages/community.less */
 .community {
   display: block;
