@@ -2653,6 +2653,20 @@ table {
 .drc-icon-terminal:before {
   content: '\f110';
 }
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/fontawesome-webfont-cbb644d0ee730ea57dd5fbae35ef5ba4a41d57a254a6b1215de5c9ff8a321c2d.eot');
+  src: url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/fontawesome-webfont-cbb644d0ee730ea57dd5fbae35ef5ba4a41d57a254a6b1215de5c9ff8a321c2d.eot') format('embedded-opentype'), url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/fontawesome-webfont-aadc3580d2b64ff5a7e6f1425587db4e8b033efcbf8f5c332ca52a5ed580c87c.woff2') format('woff2'), url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/fontawesome-webfont-e3870de89716b72cb61a4bba0e17c75783b361cdaba35ea96961c3070bd8ca18.woff') format('woff'), url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/fontawesome-webfont-9e540a087924a6e64790149d735cac022640e4fa6bff6bd65f5e9f41529bf0b3.ttf') format('truetype'), url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/fontawesome-webfont-bfdef833219a6edffd9c3cbc28db72739d22bb4d20cc2e2f8d56a7a4d408a206.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'drc-icons';
+  src: url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/drc-icons-ddb5ce6275373ea7cb9a40e9f079a2a3711a18c391b138cbe7e50f118e572960.eot');
+  src: url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/drc-icons-ddb5ce6275373ea7cb9a40e9f079a2a3711a18c391b138cbe7e50f118e572960.eot') format("embedded-opentype"), url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/drc-icons-fd1edce0289b9b3ef44d0130939510d338d32fb23464b72dfffd3925acda6797.woff') format("woff"), url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/drc-icons-9f312800d3109186c57fab664fb2c226565446624bb115e5519373893bfa753d.ttf') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 /* line 10, assets/src/css/less/components/admonition.less */
 .admonition {
   box-shadow: inset 8px 0px 0px #95a5a6;

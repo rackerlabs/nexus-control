@@ -17,8 +17,27 @@ module.exports = function(grunt) {
                     {
                         cwd: 'assets/src',
                         expand: true,
-                        src: ['img/**/*', 'fonts/**/*'],
+                        src: [
+                          'img/**/*',
+                          'fonts/**/*',
+                        ],
                         dest: 'assets/dist/'
+                    },
+                    {
+                      cwd: 'assets/bower_components/fontawesome',
+                      expand: true,
+                      src: [
+                        'fonts/**/*'
+                      ],
+                      dest: 'assets/dist/'
+                    },
+                    {
+                      cwd: 'assets/bower_components/drc-icons/dist',
+                      expand: true,
+                      src: [
+                        'fonts/**/*'
+                      ],
+                      dest: 'assets/dist/'
                     }
                 ]
             }
