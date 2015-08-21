@@ -215,7 +215,7 @@ table {
 }
 @font-face {
   font-family: 'source-code-regular';
-  src: url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/sourcecodepro-regular-webfont-e0b2cd80c5e190d6857df655e2bbf6817a00637bac363223590ba15428aeddd9.woff') format('woff'), url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/sourcecodepro-regular-webfont-94bf8a40e3e461e717cc92e4adff26ecf8f6776611c453cd0f4fbddb71b08c92.woff2') format('woff2');
+  src: url('../fonts/sourcecodepro-regular-webfont.woff') format('woff'), url('../fonts/sourcecodepro-regular-webfont.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -2655,15 +2655,15 @@ table {
 }
 @font-face {
   font-family: 'FontAwesome';
-  src: url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/fontawesome-webfont-cbb644d0ee730ea57dd5fbae35ef5ba4a41d57a254a6b1215de5c9ff8a321c2d.eot');
-  src: url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/fontawesome-webfont-cbb644d0ee730ea57dd5fbae35ef5ba4a41d57a254a6b1215de5c9ff8a321c2d.eot') format('embedded-opentype'), url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/fontawesome-webfont-aadc3580d2b64ff5a7e6f1425587db4e8b033efcbf8f5c332ca52a5ed580c87c.woff2') format('woff2'), url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/fontawesome-webfont-e3870de89716b72cb61a4bba0e17c75783b361cdaba35ea96961c3070bd8ca18.woff') format('woff'), url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/fontawesome-webfont-9e540a087924a6e64790149d735cac022640e4fa6bff6bd65f5e9f41529bf0b3.ttf') format('truetype'), url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/fontawesome-webfont-bfdef833219a6edffd9c3cbc28db72739d22bb4d20cc2e2f8d56a7a4d408a206.svg') format('svg');
+  src: url('../../bower_components/fontawesome/fonts/fontawesome-webfont.eot');
+  src: url('../../bower_components/fontawesome/fonts/fontawesome-webfont.eot') format('embedded-opentype'), url('../../bower_components/fontawesome/fonts/fontawesome-webfont.woff2') format('woff2'), url('../../bower_components/fontawesome/fonts/fontawesome-webfont.woff') format('woff'), url('../../bower_components/fontawesome/fonts/fontawesome-webfont.ttf') format('truetype'), url('../../bower_components/fontawesome/fonts/fontawesome-webfont.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'drc-icons';
-  src: url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/drc-icons-ddb5ce6275373ea7cb9a40e9f079a2a3711a18c391b138cbe7e50f118e572960.eot');
-  src: url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/drc-icons-ddb5ce6275373ea7cb9a40e9f079a2a3711a18c391b138cbe7e50f118e572960.eot') format("embedded-opentype"), url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/drc-icons-fd1edce0289b9b3ef44d0130939510d338d32fb23464b72dfffd3925acda6797.woff') format("woff"), url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/drc-icons-9f312800d3109186c57fab664fb2c226565446624bb115e5519373893bfa753d.ttf') format("truetype");
+  src: url('../../bower_components/drc-icons/dist/fonts/drc-icons.eot');
+  src: url('../../bower_components/drc-icons/dist/fonts/drc-icons.eot') format("embedded-opentype"), url('../../bower_components/drc-icons/dist/fonts/drc-icons.woff') format("woff"), url('../../bower_components/drc-icons/dist/fonts/drc-icons.ttf') format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -4485,13 +4485,14 @@ hr {
 /* line 46, assets/src/css/less/modules/site-header.less */
 .site-header .header-links .btn-link {
   display: none;
+  margin-bottom: 0;
   position: relative;
 }
-/* line 50, assets/src/css/less/modules/site-header.less */
+/* line 51, assets/src/css/less/modules/site-header.less */
 .site-header .header-links .btn-link.sign-up {
   margin-left: 10px;
 }
-/* line 52, assets/src/css/less/modules/site-header.less */
+/* line 53, assets/src/css/less/modules/site-header.less */
 .site-header .header-links .btn-link span {
   background: #dedede;
   border-radius: 3px;
@@ -4505,7 +4506,7 @@ hr {
   -ms-transition: background 0.1s ease-in-out;
   transition: background 0.1s ease-in-out;
 }
-/* line 64, assets/src/css/less/modules/site-header.less */
+/* line 65, assets/src/css/less/modules/site-header.less */
 .site-header .header-links .btn-link ul {
   display: none;
   position: absolute;
@@ -4518,15 +4519,16 @@ hr {
   z-index: 10;
   text-align: left;
 }
-/* line 77, assets/src/css/less/modules/site-header.less */
+/* line 78, assets/src/css/less/modules/site-header.less */
 .site-header .header-links .btn-link:hover span {
   background: #ebebeb;
 }
-/* line 81, assets/src/css/less/modules/site-header.less */
+/* line 82, assets/src/css/less/modules/site-header.less */
 .site-header .header-links .btn-link:hover ul {
   display: block;
+  margin-top: 0;
 }
-/* line 84, assets/src/css/less/modules/site-header.less */
+/* line 86, assets/src/css/less/modules/site-header.less */
 .site-header .header-links .btn-link:hover ul li {
   font-family: 'open-sans-bold', arial, sans-serif;
   font-style: normal;
@@ -4535,17 +4537,17 @@ hr {
   display: block;
   margin: 0;
 }
-/* line 90, assets/src/css/less/modules/site-header.less */
+/* line 92, assets/src/css/less/modules/site-header.less */
 .site-header .header-links .btn-link:hover ul li:first-child {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
-/* line 95, assets/src/css/less/modules/site-header.less */
+/* line 97, assets/src/css/less/modules/site-header.less */
 .site-header .header-links .btn-link:hover ul li:last-child {
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
 }
-/* line 100, assets/src/css/less/modules/site-header.less */
+/* line 102, assets/src/css/less/modules/site-header.less */
 .site-header .header-links .btn-link:hover ul li a {
   color: black;
   display: block;
@@ -4553,32 +4555,32 @@ hr {
   text-decoration: none;
   white-space: nowrap;
 }
-/* line 108, assets/src/css/less/modules/site-header.less */
+/* line 110, assets/src/css/less/modules/site-header.less */
 .site-header .header-links .btn-link:hover ul li:hover {
   background: #f7f7f7;
 }
-/* line 111, assets/src/css/less/modules/site-header.less */
+/* line 113, assets/src/css/less/modules/site-header.less */
 .site-header .header-links .btn-link:hover ul li:hover a {
   color: #404040;
 }
 @media (min-width: 375px) {
-  /* line 119, assets/src/css/less/modules/site-header.less */
+  /* line 121, assets/src/css/less/modules/site-header.less */
   .site-header .header-links .btn-link {
     display: inline-block;
   }
 }
-/* line 124, assets/src/css/less/modules/site-header.less */
+/* line 126, assets/src/css/less/modules/site-header.less */
 .site-header .header-links .text-link {
   display: none;
   line-height: 34px;
   margin: 0;
 }
-/* line 129, assets/src/css/less/modules/site-header.less */
+/* line 131, assets/src/css/less/modules/site-header.less */
 .site-header .header-links .text-link + .text-link {
   margin-left: 6px;
   padding-left: 8px;
 }
-/* line 133, assets/src/css/less/modules/site-header.less */
+/* line 135, assets/src/css/less/modules/site-header.less */
 .site-header .header-links .text-link + .text-link:before {
   background: white;
   content: '';
@@ -4589,45 +4591,45 @@ hr {
   top: 11px;
   width: 1px;
 }
-/* line 145, assets/src/css/less/modules/site-header.less */
+/* line 147, assets/src/css/less/modules/site-header.less */
 .site-header .header-links .text-link a:hover {
   color: #71b7e6;
 }
-/* line 150, assets/src/css/less/modules/site-header.less */
+/* line 152, assets/src/css/less/modules/site-header.less */
 .site-header .header-links .support-link {
   display: inline-block;
 }
 @media (min-width: 600px) {
-  /* line 155, assets/src/css/less/modules/site-header.less */
+  /* line 157, assets/src/css/less/modules/site-header.less */
   .site-header .header-links .sales-chat-link {
     display: inline-block;
   }
 }
 @media (min-width: 800px) {
-  /* line 161, assets/src/css/less/modules/site-header.less */
+  /* line 163, assets/src/css/less/modules/site-header.less */
   .site-header .header-links .text-link {
     display: inline-block;
   }
 }
-/* line 167, assets/src/css/less/modules/site-header.less */
+/* line 169, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav {
   background: rgba(255, 255, 255, 0.55);
   z-index: 2;
 }
-/* line 173, assets/src/css/less/modules/site-header.less */
+/* line 175, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .header-nav-container > ul {
   margin-bottom: 0;
   padding: 0;
   width: 100%;
 }
-/* line 178, assets/src/css/less/modules/site-header.less */
+/* line 180, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .header-nav-container > ul > li {
   display: inline-block;
   list-style-type: none;
   margin: 0;
   margin-left: -0.25em;
 }
-/* line 184, assets/src/css/less/modules/site-header.less */
+/* line 186, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .header-nav-container > ul > li > a {
   font-family: 'open-sans-bold', arial, sans-serif;
   font-style: normal;
@@ -4643,16 +4645,16 @@ hr {
   -ms-transition: background 0.1s ease-in-out;
   transition: background 0.1s ease-in-out;
 }
-/* line 195, assets/src/css/less/modules/site-header.less */
+/* line 197, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .header-nav-container > ul > li > a:hover,
 .site-header .header-nav .header-nav-container > ul > li > a.active {
   background: white;
 }
-/* line 199, assets/src/css/less/modules/site-header.less */
+/* line 201, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .header-nav-container > ul > li > a.active {
   background: rgba(247, 247, 247, 0.95);
 }
-/* line 205, assets/src/css/less/modules/site-header.less */
+/* line 207, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .header-nav-container > ul .logo {
   background: #c40022;
   display: block;
@@ -4660,15 +4662,15 @@ hr {
   -ms-transition: background 0.1s ease-in-out;
   transition: background 0.1s ease-in-out;
 }
-/* line 210, assets/src/css/less/modules/site-header.less */
+/* line 212, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .header-nav-container > ul .logo:hover {
   background: #b0001f;
 }
-/* line 214, assets/src/css/less/modules/site-header.less */
+/* line 216, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .header-nav-container > ul .logo a {
   padding: 0 1.5em;
 }
-/* line 218, assets/src/css/less/modules/site-header.less */
+/* line 220, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .header-nav-container > ul .logo a img {
   display: inline-block;
   height: auto;
@@ -4677,36 +4679,36 @@ hr {
   padding: 0;
   width: 140px;
 }
-/* line 227, assets/src/css/less/modules/site-header.less */
+/* line 229, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .header-nav-container > ul .logo a:hover {
   background: transparent;
 }
 @media (min-width: 725px) {
-  /* line 231, assets/src/css/less/modules/site-header.less */
+  /* line 233, assets/src/css/less/modules/site-header.less */
   .site-header .header-nav .header-nav-container > ul .logo {
     display: inline-block;
   }
 }
 @media (min-width: 769px) {
-  /* line 236, assets/src/css/less/modules/site-header.less */
+  /* line 238, assets/src/css/less/modules/site-header.less */
   .site-header .header-nav .header-nav-container > ul {
     padding: 0 35px;
   }
 }
 @media (min-width: 410px) {
-  /* line 242, assets/src/css/less/modules/site-header.less */
+  /* line 244, assets/src/css/less/modules/site-header.less */
   .site-header .header-nav .header-nav-container > ul > li > a {
     padding: 0 2em;
   }
 }
 @media (min-width: 725px) {
-  /* line 248, assets/src/css/less/modules/site-header.less */
+  /* line 250, assets/src/css/less/modules/site-header.less */
   .site-header .header-nav .header-nav-container > ul > li > a {
     font-size: 14px;
     line-height: 60px;
   }
 }
-/* line 255, assets/src/css/less/modules/site-header.less */
+/* line 257, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .nav-dropdown {
   background: rgba(247, 247, 247, 0.95);
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
@@ -4724,32 +4726,32 @@ hr {
   will-change: max-height;
   z-index: 2;
 }
-/* line 268, assets/src/css/less/modules/site-header.less */
+/* line 270, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .nav-dropdown.active {
   max-height: 50vh;
 }
-/* line 272, assets/src/css/less/modules/site-header.less */
+/* line 274, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .nav-dropdown::-webkit-scrollbar {
   background: transparent;
   height: 6px;
   width: 6px;
 }
-/* line 278, assets/src/css/less/modules/site-header.less */
+/* line 280, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .nav-dropdown::-webkit-scrollbar-track:vertical {
   background: transparent;
 }
-/* line 282, assets/src/css/less/modules/site-header.less */
+/* line 284, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .nav-dropdown::-webkit-scrollbar-thumb:vertical {
   background: #d9d9d9;
 }
-/* line 286, assets/src/css/less/modules/site-header.less */
+/* line 288, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .nav-dropdown .dropdown-container {
   margin-left: auto;
   margin-right: auto;
   max-width: 960px;
   width: 90%;
 }
-/* line 290, assets/src/css/less/modules/site-header.less */
+/* line 292, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .nav-dropdown .dropdown-grid {
   display: block;
   width: calc(100% +  20px );
@@ -4757,7 +4759,7 @@ hr {
   overflow: hidden;
   vertical-align: top;
 }
-/* line 294, assets/src/css/less/modules/site-header.less */
+/* line 296, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .nav-dropdown .dropdown-column {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -4770,7 +4772,7 @@ hr {
   padding-top: 10px;
 }
 @media (min-width: 700px) {
-  /* line 300, assets/src/css/less/modules/site-header.less */
+  /* line 302, assets/src/css/less/modules/site-header.less */
   .site-header .header-nav .nav-dropdown .dropdown-column {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -4783,36 +4785,36 @@ hr {
     padding-top: 20px;
   }
 }
-/* line 306, assets/src/css/less/modules/site-header.less */
+/* line 308, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .nav-dropdown .dropdown-column.compact-bottom {
   padding-bottom: 0;
 }
-/* line 310, assets/src/css/less/modules/site-header.less */
+/* line 312, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .nav-dropdown .dropdown-column.compact-top {
   padding-top: 0;
 }
-/* line 315, assets/src/css/less/modules/site-header.less */
+/* line 317, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .nav-dropdown h5 {
   margin-bottom: 0.5em;
 }
-/* line 319, assets/src/css/less/modules/site-header.less */
+/* line 321, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .nav-dropdown ul {
   list-style-type: none;
   padding-left: 0;
 }
-/* line 323, assets/src/css/less/modules/site-header.less */
+/* line 325, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .nav-dropdown ul li {
   margin-bottom: 0;
 }
-/* line 328, assets/src/css/less/modules/site-header.less */
+/* line 330, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .nav-dropdown a {
   text-decoration: none;
 }
-/* line 331, assets/src/css/less/modules/site-header.less */
+/* line 333, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .nav-dropdown a:hover {
   text-decoration: underline;
 }
-/* line 336, assets/src/css/less/modules/site-header.less */
+/* line 338, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .nav-dropdown .sdk-language {
   background: #e0e0e0;
   border-radius: 2px;
@@ -4822,16 +4824,16 @@ hr {
   padding: 0 0.5em;
   text-transform: uppercase;
 }
-/* line 349, assets/src/css/less/modules/site-header.less */
+/* line 351, assets/src/css/less/modules/site-header.less */
 .site-header .header-headline {
-  background-image: url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/fpo-code-editor-d451e1cbed5e243327c02753222aff6516c860bb1892e03d3c54d9b1e1884d66.jpg');
+  background-image: url('../img/fpo-code-editor.jpg');
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0;
   z-index: 1;
 }
-/* line 357, assets/src/css/less/modules/site-header.less */
+/* line 359, assets/src/css/less/modules/site-header.less */
 .site-header .header-headline h1,
 .site-header .header-headline h2 {
   font-family: 'titillium-light', arial, sans-serif;
@@ -4846,7 +4848,7 @@ hr {
   padding: 40px 0.5em;
   width: 100%;
 }
-/* line 368, assets/src/css/less/modules/site-header.less */
+/* line 370, assets/src/css/less/modules/site-header.less */
 .site-header .header-headline h1 .headline-accent,
 .site-header .header-headline h2 .headline-accent {
   font-family: 'open-sans-bold', arial, sans-serif;
@@ -4856,40 +4858,40 @@ hr {
   display: block;
 }
 @media (min-width: 769px) {
-  /* line 374, assets/src/css/less/modules/site-header.less */
+  /* line 376, assets/src/css/less/modules/site-header.less */
   .site-header .header-headline h1,
   .site-header .header-headline h2 {
     background: transparent;
     padding: 0;
   }
 }
-/* line 380, assets/src/css/less/modules/site-header.less */
+/* line 382, assets/src/css/less/modules/site-header.less */
 .site-header .header-headline .tagline {
   display: none;
   font-size: 15px;
   text-transform: uppercase;
 }
 @media (min-width: 725px) {
-  /* line 386, assets/src/css/less/modules/site-header.less */
+  /* line 388, assets/src/css/less/modules/site-header.less */
   .site-header .header-headline {
     margin-top: -60px;
   }
-  /* line 389, assets/src/css/less/modules/site-header.less */
+  /* line 391, assets/src/css/less/modules/site-header.less */
   .site-header .header-headline h2 {
     padding: 100px 40px 40px 40px;
   }
 }
 @media (min-width: 769px) {
-  /* line 394, assets/src/css/less/modules/site-header.less */
+  /* line 396, assets/src/css/less/modules/site-header.less */
   .site-header .header-headline {
     padding: 120px 60px 60px 35px;
   }
-  /* line 397, assets/src/css/less/modules/site-header.less */
+  /* line 399, assets/src/css/less/modules/site-header.less */
   .site-header .header-headline h2 {
     padding: 0;
     width: auto;
   }
-  /* line 402, assets/src/css/less/modules/site-header.less */
+  /* line 404, assets/src/css/less/modules/site-header.less */
   .site-header .header-headline .tagline {
     display: block;
     font-size: 15px;
@@ -5215,7 +5217,7 @@ body.docs-samples .docs-intro .headerlink {
 }
 /* line 2, assets/src/css/less/layouts/docs.less */
 body.docs .header-headline {
-  background-image: url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/misc-banner-2-4ec9b5d5fa2343043870fd524678031ac9e7eb9a787969921a4496a2ec39e95e.jpg');
+  background-image: url('../img/misc-banner-2.jpg');
 }
 /* line 6, assets/src/css/less/layouts/docs.less */
 body.docs .content {
@@ -5232,7 +5234,7 @@ body.docs .content .docs-section .code {
 }
 /* line 2, assets/src/css/less/layouts/docs-home.less */
 body.docs-home .header-headline {
-  background-image: url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/misc-banner-2-4ec9b5d5fa2343043870fd524678031ac9e7eb9a787969921a4496a2ec39e95e.jpg');
+  background-image: url('../img/misc-banner-2.jpg');
 }
 /* line 7, assets/src/css/less/layouts/docs-home.less */
 body.docs-home .background {
@@ -5779,7 +5781,7 @@ body.docs-home .product-list .card ul {
 }
 /* line 4, assets/src/css/less/pages/blog.less */
 body.blog .header-headline {
-  background-image: url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/blog-banner-31aa089d85139ec9f58b20286273fe14c05bc18e25cc2afadc6d32cfa052721b.jpg');
+  background-image: url('../img/blog-banner.jpg');
 }
 /* line 8, assets/src/css/less/pages/blog.less */
 body.blog .layout.sidebar-right .content {
@@ -5871,7 +5873,7 @@ body.blog .layout.sidebar-right .content {
 }
 /* line 2, assets/src/css/less/pages/home.less */
 body.home .header-headline {
-  background-image: url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/misc-banner-1-bbf0f84190b962e5d7d08bc5e4e5ae0032101dafef0b683125cf1b57f6f6a94e.jpg');
+  background-image: url('../img/misc-banner-1.jpg');
 }
 /* line 5, assets/src/css/less/pages/home.less */
 body.home .header-headline h2 {
@@ -6050,7 +6052,7 @@ body.home .box.dev-support .comm-platforms .platform {
 }
 /* line 121, assets/src/css/less/pages/home.less */
 body.home .box.quote {
-  background: #f2f2f2 url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/quote-background-5b29247445a92b7c2aedaf86bb826677b2b21271b23f2c5c62287b1d01e60194.jpg') 50% 50% no-repeat;
+  background: #f2f2f2 url('../img/quote-background.jpg') 50% 50% no-repeat;
   background-size: cover;
 }
 /* line 125, assets/src/css/less/pages/home.less */
@@ -6178,7 +6180,7 @@ body.docs-samples a {
 }
 /* line 8, assets/src/css/less/pages/docs-samples.less */
 body.docs-samples .header-headline {
-  background-image: url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/misc-banner-2-4ec9b5d5fa2343043870fd524678031ac9e7eb9a787969921a4496a2ec39e95e.jpg');
+  background-image: url('../img/misc-banner-2.jpg');
 }
 /* line 13, assets/src/css/less/pages/docs-samples.less */
 body.docs-samples .body .background {
@@ -6320,7 +6322,7 @@ body.docs-samples .body .content .docs-section:first-of-type {
 }
 /* line 2, assets/src/css/less/pages/sdks.less */
 body.sdks-home .header-headline {
-  background-image: url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/fpo-code-editor-d451e1cbed5e243327c02753222aff6516c860bb1892e03d3c54d9b1e1884d66.jpg');
+  background-image: url('../img/fpo-code-editor.jpg');
 }
 /* line 8, assets/src/css/less/pages/sdks.less */
 body.sdks-home .sidebar li .sdk-language {
@@ -6582,7 +6584,7 @@ body.sdks-home .sdk-grid .requirements ul {
 }
 /* line 2, assets/src/css/less/pages/signup.less */
 body.signup .header-headline {
-  background-image: url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/misc-banner-1-bbf0f84190b962e5d7d08bc5e4e5ae0032101dafef0b683125cf1b57f6f6a94e.jpg');
+  background-image: url('../img/misc-banner-1.jpg');
 }
 /* line 5, assets/src/css/less/pages/signup.less */
 body.signup .header-headline h2 {
