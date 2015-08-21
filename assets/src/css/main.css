@@ -3505,36 +3505,15 @@ ul.language-selector > li > a.active span {
 .docs-section table tbody tr:nth-child(even) th {
   background: #f7f7f7;
 }
-/* line 59, assets/src/css/less/components/docs-section.less */
-.docs-section pre {
-  overflow-x: auto;
-  overflow-y: hidden;
-  padding-bottom: 0.5em;
-}
-/* line 64, assets/src/css/less/components/docs-section.less */
-.docs-section pre::-webkit-scrollbar {
-  background: transparent;
-  height: 10px;
-  width: 10px;
-}
-/* line 70, assets/src/css/less/components/docs-section.less */
-.docs-section pre::-webkit-scrollbar-track:horizontal {
-  background: transparent;
-}
-/* line 74, assets/src/css/less/components/docs-section.less */
-.docs-section pre::-webkit-scrollbar-thumb:horizontal {
-  background: #5e6470;
-  border-radius: 10px;
-}
 @media (min-width: 1025px) {
-  /* line 81, assets/src/css/less/components/docs-section.less */
+  /* line 60, assets/src/css/less/components/docs-section.less */
   .docs-section > .description {
     float: left;
     padding-right: 35px;
     width: 50%;
   }
 }
-/* line 91, assets/src/css/less/components/docs-section.less */
+/* line 70, assets/src/css/less/components/docs-section.less */
 .docs-section > .code h2 .copy-link,
 .docs-section > .code h3 .copy-link,
 .docs-section > .code h4 .copy-link,
@@ -3545,45 +3524,45 @@ ul.language-selector > li > a.active span {
   right: 0;
   width: 1em;
 }
-/* line 100, assets/src/css/less/components/docs-section.less */
+/* line 79, assets/src/css/less/components/docs-section.less */
 .docs-section > .code hr {
   background: rgba(255, 255, 255, 0.2);
   border: none;
   height: 1px;
   margin: 1em 0;
 }
-/* line 108, assets/src/css/less/components/docs-section.less */
+/* line 87, assets/src/css/less/components/docs-section.less */
 .docs-section > .code .highlight {
   padding: 1em 0;
 }
-/* line 112, assets/src/css/less/components/docs-section.less */
+/* line 91, assets/src/css/less/components/docs-section.less */
 .docs-section > .code pre,
 .docs-section > .code code {
   color: #e0e0d7;
 }
 @media (min-width: 1025px) {
-  /* line 116, assets/src/css/less/components/docs-section.less */
+  /* line 95, assets/src/css/less/components/docs-section.less */
   .docs-section > .code {
     color: white;
     margin-left: 50%;
     padding: 0 35px;
   }
-  /* line 121, assets/src/css/less/components/docs-section.less */
+  /* line 100, assets/src/css/less/components/docs-section.less */
   .docs-section > .code h3 {
     border-bottom: dotted 1px rgba(224, 224, 215, 0.3);
     color: white;
     line-height: 2;
   }
 }
-/* line 130, assets/src/css/less/components/docs-section.less */
+/* line 109, assets/src/css/less/components/docs-section.less */
 .docs-section > .section > .section {
   margin-top: 80px;
 }
-/* line 133, assets/src/css/less/components/docs-section.less */
+/* line 112, assets/src/css/less/components/docs-section.less */
 .docs-section > .section > .section > .section {
   margin-top: 80px;
 }
-/* line 136, assets/src/css/less/components/docs-section.less */
+/* line 115, assets/src/css/less/components/docs-section.less */
 .docs-section > .section > .section > .section:first-of-type {
   margin-top: 0;
 }
@@ -4366,21 +4345,42 @@ pre code {
   padding: 0;
 }
 /* line 113, assets/src/css/less/typography.less */
+pre {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 0.5em;
+}
+/* line 118, assets/src/css/less/typography.less */
+pre::-webkit-scrollbar {
+  background: transparent;
+  height: 10px;
+  width: 10px;
+}
+/* line 124, assets/src/css/less/typography.less */
+pre::-webkit-scrollbar-track:horizontal {
+  background: transparent;
+}
+/* line 128, assets/src/css/less/typography.less */
+pre::-webkit-scrollbar-thumb:horizontal {
+  background: #5e6470;
+  border-radius: 10px;
+}
+/* line 134, assets/src/css/less/typography.less */
 dl {
   margin-bottom: 1.5em;
 }
-/* line 116, assets/src/css/less/typography.less */
+/* line 137, assets/src/css/less/typography.less */
 dl dt {
   font-family: 'open-sans-bold', arial, sans-serif;
   font-style: normal;
   font-weight: normal;
 }
-/* line 120, assets/src/css/less/typography.less */
+/* line 141, assets/src/css/less/typography.less */
 dl dd {
   margin-bottom: 1em;
 }
 @media (min-width: 30em) {
-  /* line 125, assets/src/css/less/typography.less */
+  /* line 146, assets/src/css/less/typography.less */
   dl dt {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -4392,7 +4392,7 @@ dl dd {
     padding-right: 1em;
     text-align: right;
   }
-  /* line 131, assets/src/css/less/typography.less */
+  /* line 152, assets/src/css/less/typography.less */
   dl dd {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -4403,12 +4403,12 @@ dl dd {
     width: calc( 75%  -  0px );
   }
 }
-/* line 137, assets/src/css/less/typography.less */
+/* line 158, assets/src/css/less/typography.less */
 sup {
   font-size: 40%;
   vertical-align: super;
 }
-/* line 142, assets/src/css/less/typography.less */
+/* line 163, assets/src/css/less/typography.less */
 hr {
   background: transparent;
   border-top: dotted 1px rgba(64, 64, 64, 0.7);

@@ -30,39 +30,7 @@
 {% endblock %}
 {% block sidebar %}
     <div class="blog-sidebar" data-ng-controller="BlogSidebarCtrl">
-        <section class="recent-posts">
-            <h5>Popular Posts</h5>
-            <div class="tab-links">
-                <a href="" data-ng-click="clickPostTab('month')" data-ng-class="{'active': isSectionActive('month')}">Last 30 Days</a>
-                <a href="" data-ng-click="clickPostTab('forever')" data-ng-class="{'active': isSectionActive('forever')}">All Time</a>
-            </div>
-            <ol data-ng-show="isSectionActive('month')">
-                <li><a href="">Principles for a Successful Developer Workshop</a></li>
-                <li><a href="">Installing OpenStack from Source</a></li>
-                <li><a href="">This Week in Information Security (Week of July 20th)</a></li>
-                <li><a href="">Repose Ninja &mdash; Hello World</a></li>
-                <li><a href="">Operating Your OpenStack Cloud using Ansible</a></li>
-            </ol>
-            <ol data-ng-show="isSectionActive('forever')">
-                <li><a href="">Introducing Gophercloud: an OpenStack SDK for Go</a></li>
-                <li><a href="">php-opencloud 1.11.0 Released</a></li>
-                <li><a href="">Ruby DCamp 2014</a></li>
-                <li><a href="">Adding devices into an existing Swift cluster</a></li>
-                <li><a href="">A Big Data Solution Running On Top of Rackspace Private Cloud</a></li>
-            </ol>
-        </section>
-        <section class="categories">
-            <h5>Categories</h5>
-            <ul>
-                <li><a href="/blog/categories/openstack">Openstack</a></li>
-                <li><a href="/blog/categories/devops">DevOps</a></li>
-                <li><a href="/blog/categories/community">Community</a></li>
-                <li><a href="/blog/categories/developers">Developer Experience</a></li>
-                <li><a href="/blog/categories/security">Security</a></li>
-                <li><a href="/blog/categories/deployment">Deployment</a></li>
-                <li><a href="/blog/categories/sdks">SDKs</a></li>
-                <li><a href="/blog/categories/tools">Tools</a></li>
-            </ul>
-        </section>
+        {% include "_includes/blog-popular-posts.html" %}
+        {% include "_includes/blog-popular-categories.html" %}
     </div>
 {% endblock %}
