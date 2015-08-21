@@ -5201,7 +5201,7 @@ body.docs-samples .docs-intro .headerlink {
 }
 /* line 2, assets/src/css/less/layouts/docs.less */
 body.docs .header-headline {
-  background-image: url('../img/docs-banner.jpg');
+  background-image: url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/misc-banner-2-4ec9b5d5fa2343043870fd524678031ac9e7eb9a787969921a4496a2ec39e95e.jpg');
 }
 /* line 6, assets/src/css/less/layouts/docs.less */
 body.docs .content {
@@ -5218,7 +5218,7 @@ body.docs .content .docs-section .code {
 }
 /* line 2, assets/src/css/less/layouts/docs-home.less */
 body.docs-home .header-headline {
-  background-image: url('../img/fpo-code-editor.jpg');
+  background-image: url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/misc-banner-2-4ec9b5d5fa2343043870fd524678031ac9e7eb9a787969921a4496a2ec39e95e.jpg');
 }
 /* line 7, assets/src/css/less/layouts/docs-home.less */
 body.docs-home .background {
@@ -6164,7 +6164,7 @@ body.docs-samples a {
 }
 /* line 8, assets/src/css/less/pages/docs-samples.less */
 body.docs-samples .header-headline {
-  background-image: url('../img/docs-banner.jpg');
+  background-image: url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/misc-banner-2-4ec9b5d5fa2343043870fd524678031ac9e7eb9a787969921a4496a2ec39e95e.jpg');
 }
 /* line 13, assets/src/css/less/pages/docs-samples.less */
 body.docs-samples .body .background {
@@ -6306,7 +6306,7 @@ body.docs-samples .body .content .docs-section:first-of-type {
 }
 /* line 2, assets/src/css/less/pages/sdks.less */
 body.sdks-home .header-headline {
-  background-image: url('../img/fpo-code-editor.jpg');
+  background-image: url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/fpo-code-editor-d451e1cbed5e243327c02753222aff6516c860bb1892e03d3c54d9b1e1884d66.jpg');
 }
 /* line 8, assets/src/css/less/pages/sdks.less */
 body.sdks-home .sidebar li .sdk-language {

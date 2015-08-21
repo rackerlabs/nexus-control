@@ -33,7 +33,7 @@
                     {% if post.meta.authorAvatar %}
                         <img src="{{ post.meta.authorAvatar }}" alt="{{ post.author }}">
                     {% else %}
-                        <img src="https://randomuser.me/api/portraits/lego/1.jpg" alt="Placeholder Avatar">
+                        <img src="{{ deconst.content.assets.assets_dist_img_avatar_default_svg }}" alt="Placeholder Avatar">
                     {% endif %}
                 </div>
                 <div class="post-byline"><a href="" class="post-author">{{ post.author }}</a> | <time datetime="{{ post.meta.date|date('YYYY-MM-DD') }}">{{ post.meta.date|date('MMMM D, YYYY') }}</time></div>
