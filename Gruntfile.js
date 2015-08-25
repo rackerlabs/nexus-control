@@ -190,4 +190,6 @@ module.exports = function(grunt) {
         'deconst_assets:css_js'
     ]);
 
+    grunt.registerTask('default', ['build']);
+
 };
