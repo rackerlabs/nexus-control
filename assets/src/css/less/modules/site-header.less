@@ -204,7 +204,7 @@
                         display: inline-block;
                         font-size: 12px;
                         line-height: 56px;
-                        padding: 0 0.5em;
+                        padding: 0 1em;
                         text-decoration: none;
                         text-transform: uppercase;
                         .transition(background 0.1s ease-in-out);
@@ -216,6 +216,14 @@
                         &.active {
                             background: fadeout(shade(white, 3%), 5%);
                         }
+                    }
+                }
+
+                .wordy {
+                    display: none;
+
+                    @media (min-width: 769px) {
+                        display: inline;
                     }
                 }
 
@@ -396,7 +404,7 @@
             text-transform: uppercase;
         }
 
-        @media (min-width: 725px) {
+        @media (min-width: 726px) {
             margin-top: -60px;
 
             h2 {
