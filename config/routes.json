@@ -12,7 +12,8 @@
             "^/docs/.+?": "docs-page.html",
             "^/docs/user-guides/infrastructure/": "user-guide.html",
             "^/docs/rack-cli/": "rack-cli.html",
-            "^/sdks": "sdks.html",
+            "^/sdks": "sdks-home.html",
+            "^/sdks/.+?": "sdks-page.html",
             "\\.xml$": "feed.xml"
         }
     }
