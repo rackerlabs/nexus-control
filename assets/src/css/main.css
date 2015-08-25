@@ -4501,8 +4501,25 @@ hr {
 .site-header .header-links .btn-link.sign-up {
   margin-left: 10px;
 }
-/* line 53, assets/src/css/less/modules/site-header.less */
-.site-header .header-links .btn-link span {
+/* line 54, assets/src/css/less/modules/site-header.less */
+.site-header .header-links .btn-link.sign-up > span,
+.site-header .header-links .btn-link.sign-up > a {
+  background: #5aaa28;
+  color: white;
+}
+/* line 59, assets/src/css/less/modules/site-header.less */
+.site-header .header-links .btn-link.sign-up .extra-words {
+  display: none;
+}
+@media (min-width: 1055px) {
+  /* line 62, assets/src/css/less/modules/site-header.less */
+  .site-header .header-links .btn-link.sign-up .extra-words {
+    display: inline;
+  }
+}
+/* line 68, assets/src/css/less/modules/site-header.less */
+.site-header .header-links .btn-link > span,
+.site-header .header-links .btn-link > a {
   background: #dedede;
   border-radius: 3px;
   color: black;
@@ -4515,7 +4532,7 @@ hr {
   -ms-transition: background 0.1s ease-in-out;
   transition: background 0.1s ease-in-out;
 }
-/* line 65, assets/src/css/less/modules/site-header.less */
+/* line 80, assets/src/css/less/modules/site-header.less */
 .site-header .header-links .btn-link ul {
   display: none;
   position: absolute;
@@ -4528,16 +4545,16 @@ hr {
   z-index: 10;
   text-align: left;
 }
-/* line 78, assets/src/css/less/modules/site-header.less */
+/* line 93, assets/src/css/less/modules/site-header.less */
 .site-header .header-links .btn-link:hover span {
   background: #ebebeb;
 }
-/* line 82, assets/src/css/less/modules/site-header.less */
+/* line 97, assets/src/css/less/modules/site-header.less */
 .site-header .header-links .btn-link:hover ul {
   display: block;
   margin-top: 0;
 }
-/* line 86, assets/src/css/less/modules/site-header.less */
+/* line 101, assets/src/css/less/modules/site-header.less */
 .site-header .header-links .btn-link:hover ul li {
   font-family: 'open-sans-bold', arial, sans-serif;
   font-style: normal;
@@ -4546,17 +4563,17 @@ hr {
   display: block;
   margin: 0;
 }
-/* line 92, assets/src/css/less/modules/site-header.less */
+/* line 107, assets/src/css/less/modules/site-header.less */
 .site-header .header-links .btn-link:hover ul li:first-child {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
-/* line 97, assets/src/css/less/modules/site-header.less */
+/* line 112, assets/src/css/less/modules/site-header.less */
 .site-header .header-links .btn-link:hover ul li:last-child {
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
 }
-/* line 102, assets/src/css/less/modules/site-header.less */
+/* line 117, assets/src/css/less/modules/site-header.less */
 .site-header .header-links .btn-link:hover ul li a {
   color: black;
   display: block;
@@ -4564,32 +4581,32 @@ hr {
   text-decoration: none;
   white-space: nowrap;
 }
-/* line 110, assets/src/css/less/modules/site-header.less */
+/* line 125, assets/src/css/less/modules/site-header.less */
 .site-header .header-links .btn-link:hover ul li:hover {
   background: #f7f7f7;
 }
-/* line 113, assets/src/css/less/modules/site-header.less */
+/* line 128, assets/src/css/less/modules/site-header.less */
 .site-header .header-links .btn-link:hover ul li:hover a {
   color: #404040;
 }
 @media (min-width: 375px) {
-  /* line 121, assets/src/css/less/modules/site-header.less */
+  /* line 136, assets/src/css/less/modules/site-header.less */
   .site-header .header-links .btn-link {
     display: inline-block;
   }
 }
-/* line 126, assets/src/css/less/modules/site-header.less */
+/* line 141, assets/src/css/less/modules/site-header.less */
 .site-header .header-links .text-link {
   display: none;
   line-height: 34px;
   margin: 0;
 }
-/* line 131, assets/src/css/less/modules/site-header.less */
+/* line 146, assets/src/css/less/modules/site-header.less */
 .site-header .header-links .text-link + .text-link {
   margin-left: 6px;
   padding-left: 8px;
 }
-/* line 135, assets/src/css/less/modules/site-header.less */
+/* line 150, assets/src/css/less/modules/site-header.less */
 .site-header .header-links .text-link + .text-link:before {
   background: white;
   content: '';
@@ -4600,45 +4617,45 @@ hr {
   top: 11px;
   width: 1px;
 }
-/* line 147, assets/src/css/less/modules/site-header.less */
+/* line 162, assets/src/css/less/modules/site-header.less */
 .site-header .header-links .text-link a:hover {
   color: #71b7e6;
 }
-/* line 152, assets/src/css/less/modules/site-header.less */
+/* line 167, assets/src/css/less/modules/site-header.less */
 .site-header .header-links .support-link {
   display: inline-block;
 }
 @media (min-width: 600px) {
-  /* line 157, assets/src/css/less/modules/site-header.less */
+  /* line 172, assets/src/css/less/modules/site-header.less */
   .site-header .header-links .sales-chat-link {
     display: inline-block;
   }
 }
 @media (min-width: 800px) {
-  /* line 163, assets/src/css/less/modules/site-header.less */
+  /* line 178, assets/src/css/less/modules/site-header.less */
   .site-header .header-links .text-link {
     display: inline-block;
   }
 }
-/* line 169, assets/src/css/less/modules/site-header.less */
+/* line 184, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav {
   background: rgba(255, 255, 255, 0.55);
   z-index: 2;
 }
-/* line 175, assets/src/css/less/modules/site-header.less */
+/* line 190, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .header-nav-container > ul {
   margin-bottom: 0;
   padding: 0;
   width: 100%;
 }
-/* line 180, assets/src/css/less/modules/site-header.less */
+/* line 195, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .header-nav-container > ul > li {
   display: inline-block;
   list-style-type: none;
   margin: 0;
   margin-left: -0.25em;
 }
-/* line 186, assets/src/css/less/modules/site-header.less */
+/* line 201, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .header-nav-container > ul > li > a {
   font-family: 'open-sans-bold', arial, sans-serif;
   font-style: normal;
@@ -4654,16 +4671,16 @@ hr {
   -ms-transition: background 0.1s ease-in-out;
   transition: background 0.1s ease-in-out;
 }
-/* line 197, assets/src/css/less/modules/site-header.less */
+/* line 212, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .header-nav-container > ul > li > a:hover,
 .site-header .header-nav .header-nav-container > ul > li > a.active {
   background: white;
 }
-/* line 201, assets/src/css/less/modules/site-header.less */
+/* line 216, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .header-nav-container > ul > li > a.active {
   background: rgba(247, 247, 247, 0.95);
 }
-/* line 207, assets/src/css/less/modules/site-header.less */
+/* line 222, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .header-nav-container > ul .logo {
   background: #c40022;
   display: block;
@@ -4671,15 +4688,11 @@ hr {
   -ms-transition: background 0.1s ease-in-out;
   transition: background 0.1s ease-in-out;
 }
-/* line 212, assets/src/css/less/modules/site-header.less */
-.site-header .header-nav .header-nav-container > ul .logo:hover {
-  background: #b0001f;
-}
-/* line 216, assets/src/css/less/modules/site-header.less */
+/* line 227, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .header-nav-container > ul .logo a {
   padding: 0 1.5em;
 }
-/* line 220, assets/src/css/less/modules/site-header.less */
+/* line 231, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .header-nav-container > ul .logo a img {
   display: inline-block;
   height: auto;
@@ -4688,36 +4701,36 @@ hr {
   padding: 0;
   width: 140px;
 }
-/* line 229, assets/src/css/less/modules/site-header.less */
+/* line 240, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .header-nav-container > ul .logo a:hover {
   background: transparent;
 }
 @media (min-width: 725px) {
-  /* line 233, assets/src/css/less/modules/site-header.less */
+  /* line 244, assets/src/css/less/modules/site-header.less */
   .site-header .header-nav .header-nav-container > ul .logo {
     display: inline-block;
   }
 }
 @media (min-width: 769px) {
-  /* line 238, assets/src/css/less/modules/site-header.less */
+  /* line 249, assets/src/css/less/modules/site-header.less */
   .site-header .header-nav .header-nav-container > ul {
     padding: 0 35px;
   }
 }
 @media (min-width: 410px) {
-  /* line 244, assets/src/css/less/modules/site-header.less */
+  /* line 255, assets/src/css/less/modules/site-header.less */
   .site-header .header-nav .header-nav-container > ul > li > a {
     padding: 0 2em;
   }
 }
 @media (min-width: 725px) {
-  /* line 250, assets/src/css/less/modules/site-header.less */
+  /* line 261, assets/src/css/less/modules/site-header.less */
   .site-header .header-nav .header-nav-container > ul > li > a {
     font-size: 14px;
     line-height: 60px;
   }
 }
-/* line 257, assets/src/css/less/modules/site-header.less */
+/* line 268, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .nav-dropdown {
   background: rgba(247, 247, 247, 0.95);
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
@@ -4735,32 +4748,32 @@ hr {
   will-change: max-height;
   z-index: 2;
 }
-/* line 270, assets/src/css/less/modules/site-header.less */
+/* line 281, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .nav-dropdown.active {
   max-height: 50vh;
 }
-/* line 274, assets/src/css/less/modules/site-header.less */
+/* line 285, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .nav-dropdown::-webkit-scrollbar {
   background: transparent;
   height: 6px;
   width: 6px;
 }
-/* line 280, assets/src/css/less/modules/site-header.less */
+/* line 291, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .nav-dropdown::-webkit-scrollbar-track:vertical {
   background: transparent;
 }
-/* line 284, assets/src/css/less/modules/site-header.less */
+/* line 295, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .nav-dropdown::-webkit-scrollbar-thumb:vertical {
   background: #d9d9d9;
 }
-/* line 288, assets/src/css/less/modules/site-header.less */
+/* line 299, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .nav-dropdown .dropdown-container {
   margin-left: auto;
   margin-right: auto;
   max-width: 960px;
   width: 90%;
 }
-/* line 292, assets/src/css/less/modules/site-header.less */
+/* line 303, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .nav-dropdown .dropdown-grid {
   display: block;
   width: calc(100% +  20px );
@@ -4768,7 +4781,7 @@ hr {
   overflow: hidden;
   vertical-align: top;
 }
-/* line 296, assets/src/css/less/modules/site-header.less */
+/* line 307, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .nav-dropdown .dropdown-column {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -4781,7 +4794,7 @@ hr {
   padding-top: 10px;
 }
 @media (min-width: 700px) {
-  /* line 302, assets/src/css/less/modules/site-header.less */
+  /* line 313, assets/src/css/less/modules/site-header.less */
   .site-header .header-nav .nav-dropdown .dropdown-column {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -4794,36 +4807,36 @@ hr {
     padding-top: 20px;
   }
 }
-/* line 308, assets/src/css/less/modules/site-header.less */
+/* line 319, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .nav-dropdown .dropdown-column.compact-bottom {
   padding-bottom: 0;
 }
-/* line 312, assets/src/css/less/modules/site-header.less */
+/* line 323, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .nav-dropdown .dropdown-column.compact-top {
   padding-top: 0;
 }
-/* line 317, assets/src/css/less/modules/site-header.less */
+/* line 328, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .nav-dropdown h5 {
   margin-bottom: 0.5em;
 }
-/* line 321, assets/src/css/less/modules/site-header.less */
+/* line 332, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .nav-dropdown ul {
   list-style-type: none;
   padding-left: 0;
 }
-/* line 325, assets/src/css/less/modules/site-header.less */
+/* line 336, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .nav-dropdown ul li {
   margin-bottom: 0;
 }
-/* line 330, assets/src/css/less/modules/site-header.less */
+/* line 341, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .nav-dropdown a {
   text-decoration: none;
 }
-/* line 333, assets/src/css/less/modules/site-header.less */
+/* line 344, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .nav-dropdown a:hover {
   text-decoration: underline;
 }
-/* line 338, assets/src/css/less/modules/site-header.less */
+/* line 349, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .nav-dropdown .sdk-language {
   background: #e0e0e0;
   border-radius: 2px;
@@ -4833,7 +4846,7 @@ hr {
   padding: 0 0.5em;
   text-transform: uppercase;
 }
-/* line 351, assets/src/css/less/modules/site-header.less */
+/* line 362, assets/src/css/less/modules/site-header.less */
 .site-header .header-headline {
   background-image: url('../img/fpo-code-editor.jpg');
   background-position: 50% 50%;
@@ -4842,7 +4855,7 @@ hr {
   padding: 0;
   z-index: 1;
 }
-/* line 359, assets/src/css/less/modules/site-header.less */
+/* line 370, assets/src/css/less/modules/site-header.less */
 .site-header .header-headline h1,
 .site-header .header-headline h2 {
   font-family: 'titillium-light', arial, sans-serif;
@@ -4857,7 +4870,7 @@ hr {
   padding: 40px 0.5em;
   width: 100%;
 }
-/* line 370, assets/src/css/less/modules/site-header.less */
+/* line 381, assets/src/css/less/modules/site-header.less */
 .site-header .header-headline h1 .headline-accent,
 .site-header .header-headline h2 .headline-accent {
   font-family: 'open-sans-bold', arial, sans-serif;
@@ -4867,40 +4880,40 @@ hr {
   display: block;
 }
 @media (min-width: 769px) {
-  /* line 376, assets/src/css/less/modules/site-header.less */
+  /* line 387, assets/src/css/less/modules/site-header.less */
   .site-header .header-headline h1,
   .site-header .header-headline h2 {
     background: transparent;
     padding: 0;
   }
 }
-/* line 382, assets/src/css/less/modules/site-header.less */
+/* line 393, assets/src/css/less/modules/site-header.less */
 .site-header .header-headline .tagline {
   display: none;
   font-size: 15px;
   text-transform: uppercase;
 }
 @media (min-width: 725px) {
-  /* line 388, assets/src/css/less/modules/site-header.less */
+  /* line 399, assets/src/css/less/modules/site-header.less */
   .site-header .header-headline {
     margin-top: -60px;
   }
-  /* line 391, assets/src/css/less/modules/site-header.less */
+  /* line 402, assets/src/css/less/modules/site-header.less */
   .site-header .header-headline h2 {
     padding: 100px 40px 40px 40px;
   }
 }
 @media (min-width: 769px) {
-  /* line 396, assets/src/css/less/modules/site-header.less */
+  /* line 407, assets/src/css/less/modules/site-header.less */
   .site-header .header-headline {
     padding: 120px 60px 60px 35px;
   }
-  /* line 399, assets/src/css/less/modules/site-header.less */
+  /* line 410, assets/src/css/less/modules/site-header.less */
   .site-header .header-headline h2 {
     padding: 0;
     width: auto;
   }
-  /* line 404, assets/src/css/less/modules/site-header.less */
+  /* line 415, assets/src/css/less/modules/site-header.less */
   .site-header .header-headline .tagline {
     display: block;
     font-size: 15px;

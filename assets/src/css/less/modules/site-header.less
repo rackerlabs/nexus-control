@@ -48,9 +48,24 @@
             margin-bottom: 0;
             position: relative;
 
-            &.sign-up {margin-left: 10px;}
+            &.sign-up {
+                margin-left: 10px;
 
-            span {
+                & > span, & > a {
+                    background: @rax-green;
+                    color: white;
+                }
+
+                .extra-words {
+                    display: none;
+
+                    @media (min-width: 1055px) {
+                        display: inline;
+                    }
+                }
+            }
+
+            & > span, & > a {
                 background: shade(white, 13%);
                 border-radius: 3px;
                 color: black;
