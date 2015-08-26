@@ -1,0 +1,222 @@
+@di-font-path: '../fonts';
+@di-font-name: 'drc-icons';
+
+
+@di-var-bolt-circle: '\f101';
+
+@di-var-coffee-cup-circle: '\f102';
+
+@di-var-dot-net: '\f103';
+
+@di-var-exclamation-circle: '\f104';
+
+@di-var-gopher: '\f105';
+
+@di-var-java: '\f106';
+
+@di-var-js: '\f107';
+
+@di-var-letter-i-circle: '\f108';
+
+@di-var-lightbulb-circle: '\f109';
+
+@di-var-megaphone-circle: '\f10a';
+
+@di-var-pencil-circle: '\f10b';
+
+@di-var-php: '\f10c';
+
+@di-var-python: '\f10d';
+
+@di-var-ruby: '\f10e';
+
+@di-var-star-circle: '\f10f';
+
+@di-var-terminal: '\f110';
+
+
+@font-face {
+	font-family: @di-font-name;
+	src:url(~"@{di-font-path}/drc-icons.eot?8f9f0fe7a4bb487064de0a3d4ba5ecf6");
+	src:url(~"@{di-font-path}/drc-icons.eot?#iefix") format("embedded-opentype"),
+		url(~"@{di-font-path}/drc-icons.woff?8f9f0fe7a4bb487064de0a3d4ba5ecf6") format("woff"),
+		url(~"@{di-font-path}/drc-icons.ttf?8f9f0fe7a4bb487064de0a3d4ba5ecf6") format("truetype");
+	font-weight:normal;
+	font-style:normal;
+}
+
+.drc-icon() {
+	display: inline-block;
+	font: normal normal normal 14px/1 @di-font-name; // shortening font declaration
+	font-size: inherit; // can't have font-size inherit on line above, so need to override
+	text-rendering: auto; // optimizelegibility throws things off #1094
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	transform: translate(0, 0); // ensures no half-pixel rendering in firefox
+}
+
+[class*="drc-icon-"] {
+    .drc-icon();
+}
+
+.drc-icon-bolt-circle() {
+    &:before {
+        content: @di-var-bolt-circle;
+    }
+}
+
+.drc-icon-coffee-cup-circle() {
+    &:before {
+        content: @di-var-coffee-cup-circle;
+    }
+}
+
+.drc-icon-dot-net() {
+    &:before {
+        content: @di-var-dot-net;
+    }
+}
+
+.drc-icon-exclamation-circle() {
+    &:before {
+        content: @di-var-exclamation-circle;
+    }
+}
+
+.drc-icon-gopher() {
+    &:before {
+        content: @di-var-gopher;
+    }
+}
+
+.drc-icon-java() {
+    &:before {
+        content: @di-var-java;
+    }
+}
+
+.drc-icon-js() {
+    &:before {
+        content: @di-var-js;
+    }
+}
+
+.drc-icon-letter-i-circle() {
+    &:before {
+        content: @di-var-letter-i-circle;
+    }
+}
+
+.drc-icon-lightbulb-circle() {
+    &:before {
+        content: @di-var-lightbulb-circle;
+    }
+}
+
+.drc-icon-megaphone-circle() {
+    &:before {
+        content: @di-var-megaphone-circle;
+    }
+}
+
+.drc-icon-pencil-circle() {
+    &:before {
+        content: @di-var-pencil-circle;
+    }
+}
+
+.drc-icon-php() {
+    &:before {
+        content: @di-var-php;
+    }
+}
+
+.drc-icon-python() {
+    &:before {
+        content: @di-var-python;
+    }
+}
+
+.drc-icon-ruby() {
+    &:before {
+        content: @di-var-ruby;
+    }
+}
+
+.drc-icon-star-circle() {
+    &:before {
+        content: @di-var-star-circle;
+    }
+}
+
+.drc-icon-terminal() {
+    &:before {
+        content: @di-var-terminal;
+    }
+}
+
+
+.drc-icon-bolt-circle {
+    .drc-icon-bolt-circle();
+}
+
+.drc-icon-coffee-cup-circle {
+    .drc-icon-coffee-cup-circle();
+}
+
+.drc-icon-dot-net {
+    .drc-icon-dot-net();
+}
+
+.drc-icon-exclamation-circle {
+    .drc-icon-exclamation-circle();
+}
+
+.drc-icon-gopher {
+    .drc-icon-gopher();
+}
+
+.drc-icon-java {
+    .drc-icon-java();
+}
+
+.drc-icon-js {
+    .drc-icon-js();
+}
+
+.drc-icon-letter-i-circle {
+    .drc-icon-letter-i-circle();
+}
+
+.drc-icon-lightbulb-circle {
+    .drc-icon-lightbulb-circle();
+}
+
+.drc-icon-megaphone-circle {
+    .drc-icon-megaphone-circle();
+}
+
+.drc-icon-pencil-circle {
+    .drc-icon-pencil-circle();
+}
+
+.drc-icon-php {
+    .drc-icon-php();
+}
+
+.drc-icon-python {
+    .drc-icon-python();
+}
+
+.drc-icon-ruby {
+    .drc-icon-ruby();
+}
+
+.drc-icon-star-circle {
+    .drc-icon-star-circle();
+}
+
+.drc-icon-terminal {
+    .drc-icon-terminal();
+}
+

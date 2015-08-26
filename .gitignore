@@ -2,6 +2,7 @@ node_modules
 assets/css/main.css
 assets/js/main.js
 assets/less/drc/deconst-variables.less
+assets/dist
 build
 *.min.js
 *.min.css

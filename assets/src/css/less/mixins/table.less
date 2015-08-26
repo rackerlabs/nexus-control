@@ -1,0 +1,36 @@
+.table() {
+    margin-bottom: 1.5em;
+    max-width: 100%;
+
+    caption {
+        .titillium('bold');
+        font-size: 16px;
+        margin-bottom: 0.5em;
+        text-align: left;
+    }
+
+    thead {
+        th {
+            .open-sans('bold');
+            background: shade(white, 15%);
+            font-size: 14px;
+            text-align: center;
+
+        }
+    }
+
+    tr td,
+    tr th {
+        border: solid 1px shade(white, 15%);
+        border-collapse: collapse;
+        padding: 0.5em;
+    }
+
+    tbody tr {
+        &:nth-child(even) {
+            td, th {
+                background: shade(white, 3%);
+            }
+        }
+    }
+}
