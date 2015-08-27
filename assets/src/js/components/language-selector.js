@@ -32,7 +32,7 @@ angular.module(moduleName, [])
                 e.preventDefault();
                 activeLanguage.set($attrs.drcLanguageSelector);
 
-                if(this.href.trim() !== '' && this.href.trim() !== '#') {
+                if(this.getAttribute('href').trim() !== '' && this.getAttribute('href').trim() !== '#') {
                     window.location = this.href;
                 }
             });
