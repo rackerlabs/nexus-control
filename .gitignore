@@ -1,11 +1,6 @@
 node_modules
-assets/css/main.css
-assets/js/main.js
-assets/less/drc/deconst-variables.less
+assets/src/css/less/deconst-variables.less
+assets/src/css/main.css
+assets/src/js/bundle.js
 assets/dist
 build
-*.min.js
-*.min.css
-
-assemble.rb
-*.out
