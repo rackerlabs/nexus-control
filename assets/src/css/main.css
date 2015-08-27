@@ -215,7 +215,7 @@ table {
 }
 @font-face {
   font-family: 'source-code-regular';
-  src: url('../fonts/sourcecodepro-regular-webfont.woff') format('woff'), url('../fonts/sourcecodepro-regular-webfont.woff2') format('woff2');
+  src: url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/sourcecodepro-regular-webfont-e0b2cd80c5e190d6857df655e2bbf6817a00637bac363223590ba15428aeddd9.woff') format('woff'), url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/sourcecodepro-regular-webfont-94bf8a40e3e461e717cc92e4adff26ecf8f6776611c453cd0f4fbddb71b08c92.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -2655,15 +2655,15 @@ table {
 }
 @font-face {
   font-family: 'FontAwesome';
-  src: url('../../bower_components/fontawesome/fonts/fontawesome-webfont.eot');
-  src: url('../../bower_components/fontawesome/fonts/fontawesome-webfont.eot') format('embedded-opentype'), url('../../bower_components/fontawesome/fonts/fontawesome-webfont.woff2') format('woff2'), url('../../bower_components/fontawesome/fonts/fontawesome-webfont.woff') format('woff'), url('../../bower_components/fontawesome/fonts/fontawesome-webfont.ttf') format('truetype'), url('../../bower_components/fontawesome/fonts/fontawesome-webfont.svg') format('svg');
+  src: url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/fontawesome-webfont-cbb644d0ee730ea57dd5fbae35ef5ba4a41d57a254a6b1215de5c9ff8a321c2d.eot');
+  src: url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/fontawesome-webfont-cbb644d0ee730ea57dd5fbae35ef5ba4a41d57a254a6b1215de5c9ff8a321c2d.eot') format('embedded-opentype'), url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/fontawesome-webfont-aadc3580d2b64ff5a7e6f1425587db4e8b033efcbf8f5c332ca52a5ed580c87c.woff2') format('woff2'), url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/fontawesome-webfont-e3870de89716b72cb61a4bba0e17c75783b361cdaba35ea96961c3070bd8ca18.woff') format('woff'), url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/fontawesome-webfont-9e540a087924a6e64790149d735cac022640e4fa6bff6bd65f5e9f41529bf0b3.ttf') format('truetype'), url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/fontawesome-webfont-bfdef833219a6edffd9c3cbc28db72739d22bb4d20cc2e2f8d56a7a4d408a206.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'drc-icons';
-  src: url('../../bower_components/drc-icons/dist/fonts/drc-icons.eot');
-  src: url('../../bower_components/drc-icons/dist/fonts/drc-icons.eot') format("embedded-opentype"), url('../../bower_components/drc-icons/dist/fonts/drc-icons.woff') format("woff"), url('../../bower_components/drc-icons/dist/fonts/drc-icons.ttf') format("truetype");
+  src: url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/drc-icons-ddb5ce6275373ea7cb9a40e9f079a2a3711a18c391b138cbe7e50f118e572960.eot');
+  src: url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/drc-icons-ddb5ce6275373ea7cb9a40e9f079a2a3711a18c391b138cbe7e50f118e572960.eot') format("embedded-opentype"), url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/drc-icons-fd1edce0289b9b3ef44d0130939510d338d32fb23464b72dfffd3925acda6797.woff') format("woff"), url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/drc-icons-9f312800d3109186c57fab664fb2c226565446624bb115e5519373893bfa753d.ttf') format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -4507,17 +4507,24 @@ hr {
   background: #5aaa28;
   color: white;
 }
-/* line 59, assets/src/css/less/modules/site-header.less */
+/* line 60, assets/src/css/less/modules/site-header.less */
+.site-header .header-links .btn-link.sign-up:hover span,
+.site-header .header-links .btn-link.sign-up:active span,
+.site-header .header-links .btn-link.sign-up:focus span {
+  background: #5aaa28;
+  color: white;
+}
+/* line 66, assets/src/css/less/modules/site-header.less */
 .site-header .header-links .btn-link.sign-up .extra-words {
   display: none;
 }
 @media (min-width: 1055px) {
-  /* line 62, assets/src/css/less/modules/site-header.less */
+  /* line 69, assets/src/css/less/modules/site-header.less */
   .site-header .header-links .btn-link.sign-up .extra-words {
     display: inline;
   }
 }
-/* line 68, assets/src/css/less/modules/site-header.less */
+/* line 75, assets/src/css/less/modules/site-header.less */
 .site-header .header-links .btn-link > span,
 .site-header .header-links .btn-link > a {
   background: #dedede;
@@ -4532,7 +4539,7 @@ hr {
   -ms-transition: background 0.1s ease-in-out;
   transition: background 0.1s ease-in-out;
 }
-/* line 80, assets/src/css/less/modules/site-header.less */
+/* line 87, assets/src/css/less/modules/site-header.less */
 .site-header .header-links .btn-link ul {
   display: none;
   position: absolute;
@@ -4545,16 +4552,16 @@ hr {
   z-index: 10;
   text-align: left;
 }
-/* line 93, assets/src/css/less/modules/site-header.less */
+/* line 100, assets/src/css/less/modules/site-header.less */
 .site-header .header-links .btn-link:hover span {
   background: #ebebeb;
 }
-/* line 97, assets/src/css/less/modules/site-header.less */
+/* line 104, assets/src/css/less/modules/site-header.less */
 .site-header .header-links .btn-link:hover ul {
   display: block;
   margin-top: 0;
 }
-/* line 101, assets/src/css/less/modules/site-header.less */
+/* line 108, assets/src/css/less/modules/site-header.less */
 .site-header .header-links .btn-link:hover ul li {
   font-family: 'open-sans-bold', arial, sans-serif;
   font-style: normal;
@@ -4563,17 +4570,17 @@ hr {
   display: block;
   margin: 0;
 }
-/* line 107, assets/src/css/less/modules/site-header.less */
+/* line 114, assets/src/css/less/modules/site-header.less */
 .site-header .header-links .btn-link:hover ul li:first-child {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
-/* line 112, assets/src/css/less/modules/site-header.less */
+/* line 119, assets/src/css/less/modules/site-header.less */
 .site-header .header-links .btn-link:hover ul li:last-child {
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
 }
-/* line 117, assets/src/css/less/modules/site-header.less */
+/* line 124, assets/src/css/less/modules/site-header.less */
 .site-header .header-links .btn-link:hover ul li a {
   color: black;
   display: block;
@@ -4581,32 +4588,32 @@ hr {
   text-decoration: none;
   white-space: nowrap;
 }
-/* line 125, assets/src/css/less/modules/site-header.less */
+/* line 132, assets/src/css/less/modules/site-header.less */
 .site-header .header-links .btn-link:hover ul li:hover {
   background: #f7f7f7;
 }
-/* line 128, assets/src/css/less/modules/site-header.less */
+/* line 135, assets/src/css/less/modules/site-header.less */
 .site-header .header-links .btn-link:hover ul li:hover a {
   color: #404040;
 }
 @media (min-width: 375px) {
-  /* line 136, assets/src/css/less/modules/site-header.less */
+  /* line 143, assets/src/css/less/modules/site-header.less */
   .site-header .header-links .btn-link {
     display: inline-block;
   }
 }
-/* line 141, assets/src/css/less/modules/site-header.less */
+/* line 148, assets/src/css/less/modules/site-header.less */
 .site-header .header-links .text-link {
   display: none;
   line-height: 34px;
   margin: 0;
 }
-/* line 146, assets/src/css/less/modules/site-header.less */
+/* line 153, assets/src/css/less/modules/site-header.less */
 .site-header .header-links .text-link + .text-link {
   margin-left: 6px;
   padding-left: 8px;
 }
-/* line 150, assets/src/css/less/modules/site-header.less */
+/* line 157, assets/src/css/less/modules/site-header.less */
 .site-header .header-links .text-link + .text-link:before {
   background: white;
   content: '';
@@ -4617,45 +4624,45 @@ hr {
   top: 11px;
   width: 1px;
 }
-/* line 162, assets/src/css/less/modules/site-header.less */
+/* line 169, assets/src/css/less/modules/site-header.less */
 .site-header .header-links .text-link a:hover {
   color: #71b7e6;
 }
-/* line 167, assets/src/css/less/modules/site-header.less */
+/* line 174, assets/src/css/less/modules/site-header.less */
 .site-header .header-links .support-link {
   display: inline-block;
 }
 @media (min-width: 600px) {
-  /* line 172, assets/src/css/less/modules/site-header.less */
+  /* line 179, assets/src/css/less/modules/site-header.less */
   .site-header .header-links .sales-chat-link {
     display: inline-block;
   }
 }
 @media (min-width: 800px) {
-  /* line 178, assets/src/css/less/modules/site-header.less */
+  /* line 185, assets/src/css/less/modules/site-header.less */
   .site-header .header-links .text-link {
     display: inline-block;
   }
 }
-/* line 184, assets/src/css/less/modules/site-header.less */
+/* line 191, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav {
   background: rgba(255, 255, 255, 0.55);
   z-index: 2;
 }
-/* line 190, assets/src/css/less/modules/site-header.less */
+/* line 197, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .header-nav-container > ul {
   margin-bottom: 0;
   padding: 0;
   width: 100%;
 }
-/* line 195, assets/src/css/less/modules/site-header.less */
+/* line 202, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .header-nav-container > ul > li {
   display: inline-block;
   list-style-type: none;
   margin: 0;
   margin-left: -0.25em;
 }
-/* line 201, assets/src/css/less/modules/site-header.less */
+/* line 208, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .header-nav-container > ul > li > a {
   font-family: 'open-sans-bold', arial, sans-serif;
   font-style: normal;
@@ -4671,26 +4678,26 @@ hr {
   -ms-transition: background 0.1s ease-in-out;
   transition: background 0.1s ease-in-out;
 }
-/* line 212, assets/src/css/less/modules/site-header.less */
+/* line 219, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .header-nav-container > ul > li > a:hover,
 .site-header .header-nav .header-nav-container > ul > li > a.active {
   background: white;
 }
-/* line 216, assets/src/css/less/modules/site-header.less */
+/* line 223, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .header-nav-container > ul > li > a.active {
   background: rgba(247, 247, 247, 0.95);
 }
-/* line 222, assets/src/css/less/modules/site-header.less */
+/* line 229, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .header-nav-container > ul .wordy {
   display: none;
 }
 @media (min-width: 769px) {
-  /* line 225, assets/src/css/less/modules/site-header.less */
+  /* line 232, assets/src/css/less/modules/site-header.less */
   .site-header .header-nav .header-nav-container > ul .wordy {
     display: inline;
   }
 }
-/* line 230, assets/src/css/less/modules/site-header.less */
+/* line 237, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .header-nav-container > ul .logo {
   background: #c40022;
   display: block;
@@ -4698,11 +4705,11 @@ hr {
   -ms-transition: background 0.1s ease-in-out;
   transition: background 0.1s ease-in-out;
 }
-/* line 235, assets/src/css/less/modules/site-header.less */
+/* line 242, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .header-nav-container > ul .logo a {
   padding: 0 1.5em;
 }
-/* line 239, assets/src/css/less/modules/site-header.less */
+/* line 246, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .header-nav-container > ul .logo a img {
   display: inline-block;
   height: auto;
@@ -4711,36 +4718,36 @@ hr {
   padding: 0;
   width: 140px;
 }
-/* line 248, assets/src/css/less/modules/site-header.less */
+/* line 255, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .header-nav-container > ul .logo a:hover {
   background: transparent;
 }
 @media (min-width: 725px) {
-  /* line 252, assets/src/css/less/modules/site-header.less */
+  /* line 259, assets/src/css/less/modules/site-header.less */
   .site-header .header-nav .header-nav-container > ul .logo {
     display: inline-block;
   }
 }
 @media (min-width: 769px) {
-  /* line 257, assets/src/css/less/modules/site-header.less */
+  /* line 264, assets/src/css/less/modules/site-header.less */
   .site-header .header-nav .header-nav-container > ul {
     padding: 0 35px;
   }
 }
 @media (min-width: 410px) {
-  /* line 263, assets/src/css/less/modules/site-header.less */
+  /* line 270, assets/src/css/less/modules/site-header.less */
   .site-header .header-nav .header-nav-container > ul > li > a {
     padding: 0 2em;
   }
 }
 @media (min-width: 725px) {
-  /* line 269, assets/src/css/less/modules/site-header.less */
+  /* line 276, assets/src/css/less/modules/site-header.less */
   .site-header .header-nav .header-nav-container > ul > li > a {
     font-size: 14px;
     line-height: 60px;
   }
 }
-/* line 276, assets/src/css/less/modules/site-header.less */
+/* line 283, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .nav-dropdown {
   background: rgba(247, 247, 247, 0.95);
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
@@ -4758,32 +4765,32 @@ hr {
   will-change: max-height;
   z-index: 2;
 }
-/* line 289, assets/src/css/less/modules/site-header.less */
+/* line 296, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .nav-dropdown.active {
   max-height: 50vh;
 }
-/* line 293, assets/src/css/less/modules/site-header.less */
+/* line 300, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .nav-dropdown::-webkit-scrollbar {
   background: transparent;
   height: 6px;
   width: 6px;
 }
-/* line 299, assets/src/css/less/modules/site-header.less */
+/* line 306, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .nav-dropdown::-webkit-scrollbar-track:vertical {
   background: transparent;
 }
-/* line 303, assets/src/css/less/modules/site-header.less */
+/* line 310, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .nav-dropdown::-webkit-scrollbar-thumb:vertical {
   background: #d9d9d9;
 }
-/* line 307, assets/src/css/less/modules/site-header.less */
+/* line 314, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .nav-dropdown .dropdown-container {
   margin-left: auto;
   margin-right: auto;
   max-width: 960px;
   width: 90%;
 }
-/* line 311, assets/src/css/less/modules/site-header.less */
+/* line 318, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .nav-dropdown .dropdown-grid {
   display: block;
   width: calc(100% +  20px );
@@ -4791,7 +4798,7 @@ hr {
   overflow: hidden;
   vertical-align: top;
 }
-/* line 315, assets/src/css/less/modules/site-header.less */
+/* line 322, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .nav-dropdown .dropdown-column {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -4804,7 +4811,7 @@ hr {
   padding-top: 10px;
 }
 @media (min-width: 700px) {
-  /* line 321, assets/src/css/less/modules/site-header.less */
+  /* line 328, assets/src/css/less/modules/site-header.less */
   .site-header .header-nav .nav-dropdown .dropdown-column {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -4817,36 +4824,36 @@ hr {
     padding-top: 20px;
   }
 }
-/* line 327, assets/src/css/less/modules/site-header.less */
+/* line 334, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .nav-dropdown .dropdown-column.compact-bottom {
   padding-bottom: 0;
 }
-/* line 331, assets/src/css/less/modules/site-header.less */
+/* line 338, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .nav-dropdown .dropdown-column.compact-top {
   padding-top: 0;
 }
-/* line 336, assets/src/css/less/modules/site-header.less */
+/* line 343, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .nav-dropdown h5 {
   margin-bottom: 0.5em;
 }
-/* line 340, assets/src/css/less/modules/site-header.less */
+/* line 347, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .nav-dropdown ul {
   list-style-type: none;
   padding-left: 0;
 }
-/* line 344, assets/src/css/less/modules/site-header.less */
+/* line 351, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .nav-dropdown ul li {
   margin-bottom: 0;
 }
-/* line 349, assets/src/css/less/modules/site-header.less */
+/* line 356, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .nav-dropdown a {
   text-decoration: none;
 }
-/* line 352, assets/src/css/less/modules/site-header.less */
+/* line 359, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .nav-dropdown a:hover {
   text-decoration: underline;
 }
-/* line 357, assets/src/css/less/modules/site-header.less */
+/* line 364, assets/src/css/less/modules/site-header.less */
 .site-header .header-nav .nav-dropdown .sdk-language {
   background: #e0e0e0;
   border-radius: 2px;
@@ -4856,16 +4863,16 @@ hr {
   padding: 0 0.5em;
   text-transform: uppercase;
 }
-/* line 370, assets/src/css/less/modules/site-header.less */
+/* line 377, assets/src/css/less/modules/site-header.less */
 .site-header .header-headline {
-  background-image: url('../img/fpo-code-editor.jpg');
+  background-image: url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/fpo-code-editor-d451e1cbed5e243327c02753222aff6516c860bb1892e03d3c54d9b1e1884d66.jpg');
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0;
   z-index: 1;
 }
-/* line 378, assets/src/css/less/modules/site-header.less */
+/* line 385, assets/src/css/less/modules/site-header.less */
 .site-header .header-headline h1,
 .site-header .header-headline h2 {
   font-family: 'titillium-light', arial, sans-serif;
@@ -4880,7 +4887,7 @@ hr {
   padding: 40px 0.5em;
   width: 100%;
 }
-/* line 389, assets/src/css/less/modules/site-header.less */
+/* line 396, assets/src/css/less/modules/site-header.less */
 .site-header .header-headline h1 .headline-accent,
 .site-header .header-headline h2 .headline-accent {
   font-family: 'open-sans-bold', arial, sans-serif;
@@ -4890,40 +4897,40 @@ hr {
   display: block;
 }
 @media (min-width: 769px) {
-  /* line 395, assets/src/css/less/modules/site-header.less */
+  /* line 402, assets/src/css/less/modules/site-header.less */
   .site-header .header-headline h1,
   .site-header .header-headline h2 {
     background: transparent;
     padding: 0;
   }
 }
-/* line 401, assets/src/css/less/modules/site-header.less */
+/* line 408, assets/src/css/less/modules/site-header.less */
 .site-header .header-headline .tagline {
   display: none;
   font-size: 15px;
   text-transform: uppercase;
 }
 @media (min-width: 726px) {
-  /* line 407, assets/src/css/less/modules/site-header.less */
+  /* line 414, assets/src/css/less/modules/site-header.less */
   .site-header .header-headline {
     margin-top: -60px;
   }
-  /* line 410, assets/src/css/less/modules/site-header.less */
+  /* line 417, assets/src/css/less/modules/site-header.less */
   .site-header .header-headline h2 {
     padding: 100px 40px 40px 40px;
   }
 }
 @media (min-width: 769px) {
-  /* line 415, assets/src/css/less/modules/site-header.less */
+  /* line 422, assets/src/css/less/modules/site-header.less */
   .site-header .header-headline {
     padding: 120px 60px 60px 35px;
   }
-  /* line 418, assets/src/css/less/modules/site-header.less */
+  /* line 425, assets/src/css/less/modules/site-header.less */
   .site-header .header-headline h2 {
     padding: 0;
     width: auto;
   }
-  /* line 423, assets/src/css/less/modules/site-header.less */
+  /* line 430, assets/src/css/less/modules/site-header.less */
   .site-header .header-headline .tagline {
     display: block;
     font-size: 15px;
@@ -5249,7 +5256,7 @@ body.docs-samples .docs-intro .headerlink {
 }
 /* line 2, assets/src/css/less/layouts/docs.less */
 body.docs .header-headline {
-  background-image: url('../img/misc-banner-2.jpg');
+  background-image: url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/misc-banner-2-4ec9b5d5fa2343043870fd524678031ac9e7eb9a787969921a4496a2ec39e95e.jpg');
 }
 /* line 6, assets/src/css/less/layouts/docs.less */
 body.docs .content {
@@ -5266,7 +5273,7 @@ body.docs .content .docs-section .code {
 }
 /* line 2, assets/src/css/less/layouts/docs-home.less */
 body.docs-home .header-headline {
-  background-image: url('../img/misc-banner-2.jpg');
+  background-image: url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/misc-banner-2-4ec9b5d5fa2343043870fd524678031ac9e7eb9a787969921a4496a2ec39e95e.jpg');
 }
 /* line 7, assets/src/css/less/layouts/docs-home.less */
 body.docs-home .background {
@@ -5417,16 +5424,21 @@ body.docs-home .sidebar-container h5 {
     width: calc(20%);
   }
 }
-/* line 97, assets/src/css/less/layouts/docs-home.less */
+/* line 96, assets/src/css/less/layouts/docs-home.less */
+body.docs-home .product-filters {
+  border-bottom: dotted 1px rgba(64, 64, 64, 0.7);
+  margin-bottom: 20px;
+}
+/* line 100, assets/src/css/less/layouts/docs-home.less */
 body.docs-home .product-filters li {
   margin-bottom: 20px;
 }
-/* line 99, assets/src/css/less/layouts/docs-home.less */
+/* line 102, assets/src/css/less/layouts/docs-home.less */
 body.docs-home .product-filters li a {
   display: block;
   padding: 0 28px 0 0;
 }
-/* line 103, assets/src/css/less/layouts/docs-home.less */
+/* line 106, assets/src/css/less/layouts/docs-home.less */
 body.docs-home .product-filters li a .label {
   color: #b3b3b3;
   font-size: 114.28571429%;
@@ -5434,7 +5446,7 @@ body.docs-home .product-filters li a .label {
   -ms-transition: color 0.1s ease-in-out;
   transition: color 0.1s ease-in-out;
 }
-/* line 109, assets/src/css/less/layouts/docs-home.less */
+/* line 112, assets/src/css/less/layouts/docs-home.less */
 body.docs-home .product-filters li a .indicator {
   border: solid 1px #404040;
   color: transparent;
@@ -5451,11 +5463,11 @@ body.docs-home .product-filters li a .indicator {
   top: 6px;
   width: 14px;
 }
-/* line 125, assets/src/css/less/layouts/docs-home.less */
+/* line 128, assets/src/css/less/layouts/docs-home.less */
 body.docs-home .product-filters li a:hover .indicator {
   color: #9f9f9f;
 }
-/* line 132, assets/src/css/less/layouts/docs-home.less */
+/* line 135, assets/src/css/less/layouts/docs-home.less */
 body.docs-home .product-filters li.active a {
   font-family: 'titillium-regular', arial, sans-serif;
   font-style: normal;
@@ -5463,46 +5475,46 @@ body.docs-home .product-filters li.active a {
   background: transparent;
   letter-spacing: 0;
 }
-/* line 137, assets/src/css/less/layouts/docs-home.less */
+/* line 140, assets/src/css/less/layouts/docs-home.less */
 body.docs-home .product-filters li.active a .label {
   color: #404040;
 }
-/* line 141, assets/src/css/less/layouts/docs-home.less */
+/* line 144, assets/src/css/less/layouts/docs-home.less */
 body.docs-home .product-filters li.active a .indicator {
   background: #3498db;
   border-color: #3498db;
   color: white;
 }
-/* line 148, assets/src/css/less/layouts/docs-home.less */
+/* line 151, assets/src/css/less/layouts/docs-home.less */
 body.docs-home .product-filters li.active.network .indicator {
   background: #5aaa28;
   border-color: #5aaa28;
   color: white;
 }
-/* line 154, assets/src/css/less/layouts/docs-home.less */
+/* line 157, assets/src/css/less/layouts/docs-home.less */
 body.docs-home .product-filters li.active.storage .indicator {
   background: #e74c3c;
   border-color: #e74c3c;
   color: white;
 }
-/* line 160, assets/src/css/less/layouts/docs-home.less */
+/* line 163, assets/src/css/less/layouts/docs-home.less */
 body.docs-home .product-filters li.active.data .indicator {
   background: #efc75e;
   border-color: #efc75e;
   color: white;
 }
-/* line 166, assets/src/css/less/layouts/docs-home.less */
+/* line 169, assets/src/css/less/layouts/docs-home.less */
 body.docs-home .product-filters li.active.infra .indicator {
   background: #8e708e;
   border-color: #8e708e;
   color: white;
 }
-/* line 175, assets/src/css/less/layouts/docs-home.less */
+/* line 178, assets/src/css/less/layouts/docs-home.less */
 body.docs-home .docs-category {
   border-bottom: dotted 1px #9f9f9f;
   padding: 80px 0;
 }
-/* line 179, assets/src/css/less/layouts/docs-home.less */
+/* line 182, assets/src/css/less/layouts/docs-home.less */
 body.docs-home .docs-category > h2 {
   font-family: 'titillium-regular', arial, sans-serif;
   font-style: normal;
@@ -5510,7 +5522,7 @@ body.docs-home .docs-category > h2 {
   margin-bottom: 0px;
   text-transform: uppercase;
 }
-/* line 185, assets/src/css/less/layouts/docs-home.less */
+/* line 188, assets/src/css/less/layouts/docs-home.less */
 body.docs-home .docs-category > p {
   font-family: 'open-sans-light', arial, sans-serif;
   font-style: normal;
@@ -5518,7 +5530,7 @@ body.docs-home .docs-category > p {
   font-size: 16px;
   margin-bottom: 35px;
 }
-/* line 192, assets/src/css/less/layouts/docs-home.less */
+/* line 195, assets/src/css/less/layouts/docs-home.less */
 body.docs-home .product-list {
   display: block;
   width: calc(100% +  35px );
@@ -5526,7 +5538,7 @@ body.docs-home .product-list {
   overflow: hidden;
   vertical-align: top;
 }
-/* line 195, assets/src/css/less/layouts/docs-home.less */
+/* line 198, assets/src/css/less/layouts/docs-home.less */
 body.docs-home .product-list .product {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -5537,7 +5549,7 @@ body.docs-home .product-list .product {
   width: calc( 100%  -  35px );
 }
 @media (min-width: 480px) {
-  /* line 198, assets/src/css/less/layouts/docs-home.less */
+  /* line 201, assets/src/css/less/layouts/docs-home.less */
   body.docs-home .product-list .product {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -5549,7 +5561,7 @@ body.docs-home .product-list .product {
   }
 }
 @media (min-width: 769px) {
-  /* line 202, assets/src/css/less/layouts/docs-home.less */
+  /* line 205, assets/src/css/less/layouts/docs-home.less */
   body.docs-home .product-list .product {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -5560,11 +5572,11 @@ body.docs-home .product-list .product {
     width: calc( 33.33333333%  -  35px );
   }
 }
-/* line 207, assets/src/css/less/layouts/docs-home.less */
+/* line 210, assets/src/css/less/layouts/docs-home.less */
 body.docs-home .product-list .card {
   margin-bottom: 35px;
 }
-/* line 210, assets/src/css/less/layouts/docs-home.less */
+/* line 213, assets/src/css/less/layouts/docs-home.less */
 body.docs-home .product-list .card ul {
   list-style-type: none;
   padding-left: 0;
@@ -5813,7 +5825,7 @@ body.docs-home .product-list .card ul {
 }
 /* line 4, assets/src/css/less/pages/blog.less */
 body.blog .header-headline {
-  background-image: url('../img/blog-banner.jpg');
+  background-image: url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/blog-banner-31aa089d85139ec9f58b20286273fe14c05bc18e25cc2afadc6d32cfa052721b.jpg');
 }
 /* line 8, assets/src/css/less/pages/blog.less */
 body.blog .layout.sidebar-right .content {
@@ -5929,7 +5941,7 @@ body.blog .pagination .next {
 }
 /* line 2, assets/src/css/less/pages/home.less */
 body.home .header-headline {
-  background-image: url('../img/misc-banner-1.jpg');
+  background-image: url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/misc-banner-1-bbf0f84190b962e5d7d08bc5e4e5ae0032101dafef0b683125cf1b57f6f6a94e.jpg');
 }
 /* line 5, assets/src/css/less/pages/home.less */
 body.home .header-headline h2 {
@@ -6108,7 +6120,7 @@ body.home .box.dev-support .comm-platforms .platform {
 }
 /* line 121, assets/src/css/less/pages/home.less */
 body.home .box.quote {
-  background: #f2f2f2 url('../img/quote-background.jpg') 50% 50% no-repeat;
+  background: #f2f2f2 url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/quote-background-5b29247445a92b7c2aedaf86bb826677b2b21271b23f2c5c62287b1d01e60194.jpg') 50% 50% no-repeat;
   background-size: cover;
 }
 /* line 125, assets/src/css/less/pages/home.less */
@@ -6236,7 +6248,7 @@ body.docs-samples a {
 }
 /* line 8, assets/src/css/less/pages/docs-samples.less */
 body.docs-samples .header-headline {
-  background-image: url('../img/misc-banner-2.jpg');
+  background-image: url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/misc-banner-2-4ec9b5d5fa2343043870fd524678031ac9e7eb9a787969921a4496a2ec39e95e.jpg');
 }
 /* line 13, assets/src/css/less/pages/docs-samples.less */
 body.docs-samples .body .background {
@@ -6378,7 +6390,7 @@ body.docs-samples .body .content .docs-section:first-of-type {
 }
 /* line 2, assets/src/css/less/pages/sdks.less */
 body.sdks-home .header-headline {
-  background-image: url('../img/fpo-code-editor.jpg');
+  background-image: url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/fpo-code-editor-d451e1cbed5e243327c02753222aff6516c860bb1892e03d3c54d9b1e1884d66.jpg');
 }
 /* line 8, assets/src/css/less/pages/sdks.less */
 body.sdks-home .sidebar li .sdk-language {
@@ -6670,7 +6682,7 @@ body.sdks-home .sdk-grid .requirements ul {
 }
 /* line 2, assets/src/css/less/pages/signup.less */
 body.signup .header-headline {
-  background-image: url('../img/misc-banner-1.jpg');
+  background-image: url('https://4bd667f676f2d4d15ba2-679cea096fc9f9d061cc945341af85dc.ssl.cf1.rackcdn.com/signup-banner-cf5d0e1dd1e6045735ca353ba85406c1a69208c8df23bf36fa3ab2305c496a56.jpg');
 }
 /* line 5, assets/src/css/less/pages/signup.less */
 body.signup .header-headline h2 {
