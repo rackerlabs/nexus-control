@@ -94,6 +94,9 @@ body.docs-home {
     }
 
     .product-filters {
+        border-bottom: dotted 1px fadeout(@text-color, 30%);
+        margin-bottom: 20px;
+
         li {
             margin-bottom: 20px;
             a {
@@ -166,6 +169,12 @@ body.docs-home {
                 &.infra .indicator {
                     background: @theme-purple;
                     border-color: @theme-purple;
+                    color: white;
+                }
+
+                &.dev-tools .indicator {
+                    background: @theme-pink;
+                    border-color: @theme-pink;
                     color: white;
                 }
             }
