@@ -1,7 +1,7 @@
 module.exports = [
     'addScrollIndicators',
     function (input) {
-        var cheerio = require('cheerio');
+        var cheerio = require('../lib/cheerio');
 
         var $ = cheerio.load(input);
         $('li').each(function () {

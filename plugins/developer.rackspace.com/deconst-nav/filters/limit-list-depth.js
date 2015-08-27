@@ -2,7 +2,7 @@ module.exports = [
     'limitListDepth',
     function (input, limit) {
         limit = limit || 2;
-        var cheerio = require('cheerio');
+        var cheerio = require('../lib/cheerio');
         var $ = cheerio.load(input);
         var selector = [];
 
