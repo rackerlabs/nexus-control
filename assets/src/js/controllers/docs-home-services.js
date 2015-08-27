@@ -4,7 +4,7 @@ var moduleName = 'drc.controllers.docs-home-services';
 module.exports = moduleName;
 
 angular.module(moduleName, [])
-.controller('DocsHomeServicesCtrl', function($scope, filter) {
+.controller('DocsHomeServicesCtrl', ['$scope', 'filter', function($scope, filter) {
     var COLLECTION = 'docs-home';
 
     $scope.isSectionActive = function (value) {
@@ -16,4 +16,4 @@ angular.module(moduleName, [])
             return item === value;
         });
     };
-});
+}]);

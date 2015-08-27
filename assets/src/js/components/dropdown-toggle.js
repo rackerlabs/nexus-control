@@ -7,7 +7,7 @@ module.exports = moduleName;
 var DROPDOWN_EVENT = 'drcDropdownChange';
 
 angular.module(moduleName, [])
-.directive('drcDropdownToggle', function ($rootScope) {
+.directive('drcDropdownToggle', ['$rootScope', function ($rootScope) {
     return {
         link: function ($scope, $element, $attrs, ctrl) {
             $element = $($element);
@@ -48,4 +48,4 @@ angular.module(moduleName, [])
             });
         }
     };
-});
+}]);

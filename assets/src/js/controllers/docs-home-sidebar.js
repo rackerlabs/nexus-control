@@ -4,7 +4,7 @@ var moduleName = 'drc.controllers.docs-home-sidebar';
 module.exports = moduleName;
 
 angular.module(moduleName, [])
-.controller('DocsHomeSidebarCtrl', function($scope, filter) {
+.controller('DocsHomeSidebarCtrl', ['$scope', 'filter', function($scope, filter) {
     var COLLECTION = 'docs-home';
 
     $scope.clickFilter = function (value) {
@@ -31,4 +31,4 @@ angular.module(moduleName, [])
             return item === value;
         });
     };
-});
+}]);

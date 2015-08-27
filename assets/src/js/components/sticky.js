@@ -13,7 +13,7 @@ angular.module(moduleName, [])
     return {
         scope: {},
         restrict: 'A',
-        controller: function ($scope, $element, $attrs) {
+        controller: ['$scope', '$element', '$attrs', function ($scope, $element, $attrs) {
             $scope.RESET = 'sticky sticky-top sticky-bottom';
             $scope.scrollParent = $(window);
             $scope.data = {};
@@ -100,7 +100,7 @@ angular.module(moduleName, [])
                 setTimeout($scope.checkPosition, 1);
             };
 
-        },
+        }],
         link: function ($scope, $element, $attrs) {
             $element = $($element);
             $scope.data = {

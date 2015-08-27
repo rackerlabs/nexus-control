@@ -7,7 +7,7 @@ module.exports = moduleName;
 var filters = [];
 
 angular.module(moduleName, [])
-.factory('filter', function ($rootScope) {
+.factory('filter', ['$rootScope', function ($rootScope) {
     var addFilter = function (name) {
         if(_.findIndex(filters, {name: name}) !== -1) {
             return _.findIndex(filters, {name: name});
@@ -50,4 +50,4 @@ angular.module(moduleName, [])
             return filters[collectionIndex].items;
         }
     };
-});
+}]);

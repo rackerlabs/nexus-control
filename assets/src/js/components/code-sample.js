@@ -5,10 +5,10 @@ var moduleName = 'drc.components.code-sample';
 module.exports = moduleName;
 
 angular.module(moduleName, [])
-.directive('drcCodeSample', function ($rootScope, activeLanguage) {
+.directive('drcCodeSample', ['$rootScope', 'activeLanguage', function ($rootScope, activeLanguage) {
     return {
         scope: {},
-        controller: function ($scope, $element, $attrs) {
+        controller: ['$scope', '$element', '$attrs', function ($scope, $element, $attrs) {
             $element = $($element);
 
             $scope.isActiveLanguage = function () {
@@ -25,9 +25,9 @@ angular.module(moduleName, [])
             };
 
             $rootScope.$on(activeLanguage.changeEventName, $scope.setActiveClass);
-        },
+        }],
         link: function ($scope, $element, $attrs) {
             $scope.setActiveClass();
         }
     };
-});
+}]);

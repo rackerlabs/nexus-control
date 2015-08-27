@@ -7,7 +7,7 @@ var LANGUAGE_KEY = 'drc.preferredLanguage';
 var LANGUAGE_CHANGE_EVENT = 'drcLanguageChange';
 
 angular.module(moduleName, [])
-.factory('activeLanguage', function ($rootScope) {
+.factory('activeLanguage', ['$rootScope', function ($rootScope) {
     if(! localStorage.getItem(LANGUAGE_KEY)) {
         localStorage.setItem(LANGUAGE_KEY, 'sh');
     }
@@ -22,4 +22,4 @@ angular.module(moduleName, [])
         },
         changeEventName: LANGUAGE_CHANGE_EVENT
     };
-});
+}]);

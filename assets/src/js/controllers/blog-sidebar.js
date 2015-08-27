@@ -4,7 +4,7 @@ var moduleName = 'drc.controllers.blog-sidebar';
 module.exports = moduleName;
 
 angular.module(moduleName, [])
-.controller('BlogSidebarCtrl', function($scope, filter) {
+.controller('BlogSidebarCtrl', ['$scope', 'filter', function($scope, filter) {
     var COLLECTION = 'blog-popular-posts';
 
     filter.add(COLLECTION, 'month');
@@ -23,4 +23,4 @@ angular.module(moduleName, [])
             return item === value;
         });
     };
-});
+}]);

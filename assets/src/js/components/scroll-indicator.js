@@ -7,7 +7,7 @@ module.exports = moduleName;
 var INDICATOR_CHANGE_EVENT = 'drcScrollIndicatorChange';
 
 angular.module(moduleName, [])
-.factory('scrollIndicator', function ($rootScope) {
+.factory('scrollIndicator', ['$rootScope', function ($rootScope) {
     var listenersAdded = false;
     var options, indicators, milestones, activeMilestone;
 
@@ -72,10 +72,10 @@ angular.module(moduleName, [])
 
         }
     };
-})
-.directive('drcScrollIndicator', function ($rootScope, scrollIndicator) {
+}])
+.directive('drcScrollIndicator', ['$rootScope', 'scrollIndicator', function ($rootScope, scrollIndicator) {
     return {
-        controller: function ($scope, $element, $attrs) {
+        controller: ['$scope', '$element', '$attrs', function ($scope, $element, $attrs) {
             $element = $($element);
 
             $rootScope.$on('drcScrollIndicatorChange', function (event, data) {
@@ -87,11 +87,11 @@ angular.module(moduleName, [])
                     $element.removeClass('active');
                 }
             });
-        },
+        }],
         link: function ($scope, $element, $attrs) {
             scrollIndicator.init({
                 attribute: $attrs.useAttribute || 'data-drc-scroll-milestone'
             });
         }
     };
-});
+}]);

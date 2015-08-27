@@ -5,9 +5,9 @@ var moduleName = 'drc.components.code-sample-parent';
 module.exports = moduleName;
 
 angular.module(moduleName, [])
-.directive('drcCodeSampleParent', function ($rootScope, activeLanguage) {
+.directive('drcCodeSampleParent', ['$rootScope', 'activeLanguage', function ($rootScope, activeLanguage) {
     return {
-        controller: function ($scope, $element, $attrs) {
+        controller: ['$scope', '$element', function ($scope, $element) {
             $element = $($element);
 
             $scope.isActiveLanguage = function (language) {
@@ -22,9 +22,9 @@ angular.module(moduleName, [])
             };
 
             $rootScope.$on(activeLanguage.changeEventName, $scope.setActiveClass);
-        },
+        }],
         link: function ($scope, $element, $attrs) {
             $scope.setActiveClass();
         }
     };
-});
+}]);
