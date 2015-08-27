@@ -3122,11 +3122,11 @@ table {
 }
 /* line 11, assets/src/css/less/components/cards.less */
 .card.blue {
-  border-top-color: #3498db;
+  border-top-color: #739eaf;
 }
 /* line 15, assets/src/css/less/components/cards.less */
 .card.green {
-  border-top-color: #5aaa28;
+  border-top-color: #1abc9c;
 }
 /* line 19, assets/src/css/less/components/cards.less */
 .card.yellow {
@@ -3134,30 +3134,34 @@ table {
 }
 /* line 23, assets/src/css/less/components/cards.less */
 .card.red {
-  border-top-color: #e74c3c;
+  border-top-color: #efc75e;
 }
 /* line 27, assets/src/css/less/components/cards.less */
 .card.purple {
   border-top-color: #8e708e;
 }
 /* line 31, assets/src/css/less/components/cards.less */
+.card.pink {
+  border-top-color: #d86c90;
+}
+/* line 35, assets/src/css/less/components/cards.less */
 .card .card-content {
   border: solid 1px #e6e6e6;
   border-bottom-left-radius: 1px;
   border-bottom-right-radius: 1px;
   border-top: 0;
 }
-/* line 38, assets/src/css/less/components/cards.less */
+/* line 42, assets/src/css/less/components/cards.less */
 .card .card-title {
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
   padding: calc(0.5em + 8px) 20px 0.5em 20px;
 }
-/* line 44, assets/src/css/less/components/cards.less */
+/* line 48, assets/src/css/less/components/cards.less */
 .card .card-body {
   padding: 0 20px 20px 20px;
 }
-/* line 48, assets/src/css/less/components/cards.less */
+/* line 52, assets/src/css/less/components/cards.less */
 .card:hover {
   background: white;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
@@ -5487,20 +5491,20 @@ body.docs-home .product-filters li.active a .label {
 }
 /* line 144, assets/src/css/less/layouts/docs-home.less */
 body.docs-home .product-filters li.active a .indicator {
-  background: #3498db;
-  border-color: #3498db;
+  background: #739eaf;
+  border-color: #739eaf;
   color: white;
 }
 /* line 151, assets/src/css/less/layouts/docs-home.less */
 body.docs-home .product-filters li.active.network .indicator {
-  background: #5aaa28;
-  border-color: #5aaa28;
+  background: #1abc9c;
+  border-color: #1abc9c;
   color: white;
 }
 /* line 157, assets/src/css/less/layouts/docs-home.less */
 body.docs-home .product-filters li.active.storage .indicator {
-  background: #e74c3c;
-  border-color: #e74c3c;
+  background: #efc75e;
+  border-color: #efc75e;
   color: white;
 }
 /* line 163, assets/src/css/less/layouts/docs-home.less */
@@ -5515,12 +5519,18 @@ body.docs-home .product-filters li.active.infra .indicator {
   border-color: #8e708e;
   color: white;
 }
-/* line 178, assets/src/css/less/layouts/docs-home.less */
+/* line 175, assets/src/css/less/layouts/docs-home.less */
+body.docs-home .product-filters li.active.dev-tools .indicator {
+  background: #d86c90;
+  border-color: #d86c90;
+  color: white;
+}
+/* line 184, assets/src/css/less/layouts/docs-home.less */
 body.docs-home .docs-category {
   border-bottom: dotted 1px #9f9f9f;
   padding: 80px 0;
 }
-/* line 182, assets/src/css/less/layouts/docs-home.less */
+/* line 188, assets/src/css/less/layouts/docs-home.less */
 body.docs-home .docs-category > h2 {
   font-family: 'titillium-regular', arial, sans-serif;
   font-style: normal;
@@ -5528,7 +5538,7 @@ body.docs-home .docs-category > h2 {
   margin-bottom: 0px;
   text-transform: uppercase;
 }
-/* line 188, assets/src/css/less/layouts/docs-home.less */
+/* line 194, assets/src/css/less/layouts/docs-home.less */
 body.docs-home .docs-category > p {
   font-family: 'open-sans-light', arial, sans-serif;
   font-style: normal;
@@ -5536,7 +5546,7 @@ body.docs-home .docs-category > p {
   font-size: 16px;
   margin-bottom: 35px;
 }
-/* line 195, assets/src/css/less/layouts/docs-home.less */
+/* line 201, assets/src/css/less/layouts/docs-home.less */
 body.docs-home .product-list {
   display: block;
   width: calc(100% +  35px );
@@ -5544,7 +5554,7 @@ body.docs-home .product-list {
   overflow: hidden;
   vertical-align: top;
 }
-/* line 198, assets/src/css/less/layouts/docs-home.less */
+/* line 204, assets/src/css/less/layouts/docs-home.less */
 body.docs-home .product-list .product {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -5555,7 +5565,7 @@ body.docs-home .product-list .product {
   width: calc( 100%  -  35px );
 }
 @media (min-width: 480px) {
-  /* line 201, assets/src/css/less/layouts/docs-home.less */
+  /* line 207, assets/src/css/less/layouts/docs-home.less */
   body.docs-home .product-list .product {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -5567,7 +5577,7 @@ body.docs-home .product-list .product {
   }
 }
 @media (min-width: 769px) {
-  /* line 205, assets/src/css/less/layouts/docs-home.less */
+  /* line 211, assets/src/css/less/layouts/docs-home.less */
   body.docs-home .product-list .product {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -5578,11 +5588,11 @@ body.docs-home .product-list .product {
     width: calc( 33.33333333%  -  35px );
   }
 }
-/* line 210, assets/src/css/less/layouts/docs-home.less */
+/* line 216, assets/src/css/less/layouts/docs-home.less */
 body.docs-home .product-list .card {
   margin-bottom: 35px;
 }
-/* line 213, assets/src/css/less/layouts/docs-home.less */
+/* line 219, assets/src/css/less/layouts/docs-home.less */
 body.docs-home .product-list .card ul {
   list-style-type: none;
   padding-left: 0;
