@@ -266,8 +266,13 @@ angular.module(moduleName, [])
         },
         link: function ($scope, $element, $attrs) {
             $scope.setActiveClass();
-            $element.on('click', function () {
+            $element.on('click', function (e) {
+                e.preventDefault();
                 activeLanguage.set($attrs.drcLanguageSelector);
+
+                if(this.href.trim() !== '' && this.href.trim() !== '#') {
+                    window.location = this.href;
+                }
             });
         }
     };
