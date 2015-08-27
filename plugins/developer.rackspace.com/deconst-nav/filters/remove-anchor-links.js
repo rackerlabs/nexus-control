@@ -1,7 +1,7 @@
 module.exports = [
     'removeAnchors',
     function (input) {
-        var cheerio = require('../lib/cheerio');
+        var cheerio = require('cheerio');
         var $ = cheerio.load(input);
 
         $('a').each(function () {
