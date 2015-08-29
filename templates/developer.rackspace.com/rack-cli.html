@@ -37,5 +37,21 @@
 {% block content %}
     <section class="docs-section">
         {{ deconst.content.envelope.body }}
+        <footer class="docs-footer">
+          <div class="previous-next-links">
+            <div class="previous">
+              {% if deconst.content.envelope.previous %}
+                <span class="label">Previous</span>
+                <a href="{{ deconst.content.envelope.previous.url }}">{{ deconst.content.envelope.previous.title }}</a>
+              {% endif %}
+            </div>
+            <div class="next">
+              {% if deconst.content.envelope.next %}
+                <span class="label">Next</span>
+                <a href="{{ deconst.content.envelope.next.url }}">{{ deconst.content.envelope.next.title }}</a>
+              {% endif %}
+            </div>
+          </div>
+        </footer>
     </section>
 {% endblock %}
