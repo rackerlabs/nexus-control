@@ -1,0 +1,45 @@
+@gutter-width: 0px;
+
+body.blog {
+    .header-headline {
+        background-image: url(@assets_dist_img_blog_banner_jpg);
+    }
+
+    .layout.sidebar-right .content {
+        font-size: 16px;
+
+        @media (min-width: 769px) {
+            font-size: 16px;
+        }
+
+        @media (min-width: 1085px) {
+            margin: 0 35px;
+            max-width: none;
+        }
+
+        @media (min-width: 1085px) {
+            margin: 0 calc(40% - 400px);
+            max-width: 800px;
+            padding: 0;
+        }
+    }
+
+    .layout.sidebar-right .sidebar {
+        @media (min-width: 1085px) {
+            margin-left: -0.25em;
+        }
+    }
+
+    .pagination {
+        .grid(0px);
+
+        .previous, .next {
+            .grid-unit(1/2, 0px);
+            padding: 40px 0;
+        }
+
+        .next {
+            text-align: right;
+        }
+    }
+}

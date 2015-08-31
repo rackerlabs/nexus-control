@@ -1,0 +1,141 @@
+.site-footer, .basement-container {
+    background: @code-background;
+    color: white;
+    padding: 20px 0;
+
+    h5 {
+        .titillium('bold');
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+
+    a {
+        color: white;
+        font-size: 12px;
+        line-height: 2;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    @gutter-width: 20px;
+    .footer-container, .basement-container {
+        .grid();
+
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 5%;
+        width: 100%;
+
+        @media (min-width: 769px) {
+            padding: 0 35px;
+        }
+    }
+
+    .docs-links, .community-links, .sdk-links {
+        display: none;
+    }
+
+    .partner-links {
+        h5, ul {
+            display: none;
+        }
+    }
+
+    @media (min-width: 551px) {
+        padding: 40px 0;
+
+        .docs-links, .community-links, .sdk-links, .partner-links {
+            .grid-unit(1/2);
+            margin-bottom: 40px;
+        }
+
+        .docs-links {
+            ul {
+                .grid-unit(1/2, 0px);
+            }
+        }
+
+        .partner-links {
+            h5, ul {
+                display: block;
+            }
+        }
+
+        .copyright {
+            display: none;
+        }
+    }
+
+    @media (max-width: 550px) {
+        .copyright {
+            display: block;
+            font-size: 14px;
+            text-align: center;
+        }
+    }
+
+    @media (min-width: 901px) {
+        .docs-links, .community-links, .sdk-links, .partner-links {
+            margin-bottom: 0;
+        }
+
+        .docs-links {
+            .grid-unit(5/12);
+        }
+
+        .community-links, .sdk-links {
+            .grid-unit(2/12);
+        }
+
+        .partner-links {
+            .grid-unit(3/12);
+        }
+    }
+}
+
+.basement-container {
+    background: black;
+    padding: 20px;
+    display: none;
+
+    @media (min-width: 551px) {
+        display:block;
+    }
+
+    & > ul {
+        display:inline-block;
+
+        & > li {
+            display:inline-block;
+            line-height: 34px;
+            margin: 0;
+
+            & + .text-link {
+                margin-left: 6px;
+                padding-left: 8px;
+
+                &:before {
+                    background: white;
+                    content: '';
+                    display: block;
+                    height: 12px;
+                    left: 0;
+                    position: absolute;
+                    top: 11px;
+                    width: 1px;
+                }
+            }
+        }
+
+    }
+
+}

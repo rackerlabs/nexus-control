@@ -31,6 +31,12 @@
             "to": "/signup/",
             "rewrite": false,
             "status": 301
+        },
+        {
+            "from": "^\\/sdks\\/?$",
+            "to": "/docs/#sdks",
+            "rewrite": false,
+            "status": 301
         }
     ]
 }

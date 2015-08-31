@@ -1,0 +1,19 @@
+{% extends "_layouts/base.html" %}
+
+{% block bodyContent %}
+    <div class="container">
+        <div class="layout one-column">
+            <div class="header">
+                {% block header %}{% endblock %}
+            </div>
+            <div class="background">
+                <div class="left"></div>
+                <div class="center"></div>
+                <div class="right"></div>
+            </div>
+            <div class="content">
+                {% block content %}{% endblock %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,73 @@
+.admonition-style(@color: #95a5a6, @icon: @fa-var-info-circle) {
+    box-shadow: inset 8px 0px 0px @color;
+
+    &:before {
+        color: @color;
+        content: @icon;
+    }
+}
+
+.admonition {
+    .admonition-style();
+    .titillium('light');
+    background: transparent;
+    border: solid 1px shade(white, 8%);
+    border-left: 0;
+    border-radius: 1px;
+    display: inline-block;
+    margin-bottom: 3em;
+    min-height: 48px;
+    padding: 10px 10px 10px 56px;
+
+    &:before {
+        .drc-icon();
+        content: @di-var-letter-i-circle;
+        font-size: 21px;
+        height: 21px;
+        left: 21px;
+        position: absolute;
+        text-align: center;
+        top: 12px;
+        width: 21px;
+    }
+
+    &.note {
+        .admonition-style(@admonition-color-note, @di-var-pencil-circle);
+    }
+
+    &.alert {
+        .admonition-style(@admonition-color-alert, @di-var-coffee-cup-circle);
+    }
+
+    &.tip, &.hint {
+        .admonition-style(@admonition-color-tip, @di-var-letter-i-circle);
+    }
+
+    &.warning, &.danger, &.caution {
+        .admonition-style(@admonition-color-warning, @di-var-bolt-circle);
+    }
+
+    &.error {
+        .admonition-style(@admonition-color-error, @di-var-exclamation-circle);
+    }
+
+    &.attention {
+        .admonition-style(@admonition-color-attention, @di-var-megaphone-circle);
+    }
+
+    &.important {
+        .admonition-style(@admonition-color-important, @di-var-star-circle);
+    }
+
+    .admonition-title {
+        display: none;
+    }
+
+    * {
+        background: none;
+    }
+
+    :last-child {
+        margin-bottom: 0;
+    }
+}

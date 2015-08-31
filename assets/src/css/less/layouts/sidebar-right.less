@@ -1,0 +1,64 @@
+.layout.sidebar-right {
+    .background {
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+
+        .left {
+            .grid-unit(1/1);
+            height: 100%;
+        }
+
+        .center {
+            display: none;
+        }
+
+        .right {
+            display: none;
+            background: shade(white, 8%);
+            height: 100%;
+        }
+
+        @media (min-width: 769px) {
+            .left {
+                .grid-unit(4/5);
+            }
+
+            .right {
+                .grid-unit(1/5);
+            }
+        }
+    }
+
+    .content {
+        .grid-unit(1/1, 0px);
+        padding: 0 5%;
+
+        @media (min-width: 769px) {
+            .grid-unit(4/5);
+            padding: 0 35px;
+
+        }
+
+        @media (min-width: 1287px) {
+            .grid-unit(4/5, 0px);
+            padding: 0 0;
+            margin: 0 calc(40% - 480px);
+            max-width: 960px;
+        }
+    }
+
+    .sidebar {
+        display: none;
+
+        @media (min-width: 769px) {
+            .grid-unit(1/5, 0px);
+        }
+
+        @media (min-width: 1287px) {
+            margin-left: -0.25em;
+        }
+    }
+}

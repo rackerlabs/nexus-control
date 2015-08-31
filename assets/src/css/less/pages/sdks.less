@@ -1,0 +1,133 @@
+body.sdks-home {
+    .header-headline {
+        background-image: url(@assets_dist_img_fpo_code_editor_jpg);
+    }
+
+    .sidebar {
+        li {
+            .sdk-language {
+                .titillium();
+                background: shade(white, 12%);
+                border-radius: 2px;
+                display: inline-block;
+                font-size: 9px;
+                margin-left: 0.5em;
+                padding: 0 0.5em;
+                text-transform: uppercase;
+                vertical-align: middle;
+            }
+
+            &.active {
+                .sdk-language {
+                    background: transparent;
+                    border: solid 1px fadeout(white, 50%);
+                }
+            }
+        }
+    }
+
+    div.content {
+        padding-top: 40px !important;
+    }
+
+    .sdk {
+        padding: 0 0 40px 0;
+
+        & + .sdk {
+            border-top: dotted 1px fadeout(@text-color, 50%);
+            padding: 40px 0;
+        }
+    }
+
+    .sdk-grid {
+        .grid(35px);
+
+
+        .title {
+            .grid-unit(1/1, 35px);
+            margin-bottom: 20px;
+
+            h2 {
+                font-size: percentage((28/14));
+            }
+
+            .sdk-language {
+                .titillium();
+                background: shade(white, 12%);
+                border-radius: 2px;
+                display: inline-block;
+                font-size: 12px;
+                margin-left: 0.5em;
+                padding: 0 0.5em;
+                text-transform: uppercase;
+                vertical-align: middle;
+            }
+        }
+
+        .links {
+            .grid-unit(1/1, 35px);
+            .admonition();
+            .tip();
+
+            h3 {
+                .h5();
+                margin-bottom: 1em;
+            }
+
+            ul {
+                list-style-type: none;
+                padding-left: 0;
+            }
+        }
+
+        .installation {
+            .grid-unit(1/1, 35px);
+
+            h3 {
+                .h4();
+                margin-bottom: 0.5em;
+            }
+        }
+
+        .requirements {
+            background: shade(white, 2%);
+            border: solid 1px shade(white, 5%);
+            border-radius: 1px;
+            margin-bottom: 3em;
+            min-width: 50%;
+            padding: 0.75em 1em;
+
+            h4 {
+                .titillium('bold');
+                color: tint(@text-color, 40%);
+                font-size: 14px;
+                margin-bottom: 1em;
+                text-transform: uppercase;
+            }
+
+            ol, ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+
+    @media(min-width: 769px) {
+        padding: 0 0 80px 0;
+
+        & + .sdk {
+            padding: 80px 0;
+        }
+
+        .sdk-grid {
+            .installation {
+                .grid-unit(2/3, 35px);
+            }
+
+            .links {
+                .grid-unit(1/3, 35px);
+            }
+        }
+    }
+}
