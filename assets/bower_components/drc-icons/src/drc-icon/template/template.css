@@ -1,0 +1,42 @@
+@di-font-path: '../fonts';
+@di-font-name: 'drc-icons';
+
+<% for(var index = 0; index < glyphs.length; index++) { %>
+@di-var-<%= glyphs[index] %>: '\<%= codepoints[index] %>';
+<% } %>
+
+@font-face {
+	font-family: @di-font-name;
+	src:url(~"@{di-font-path}/<%= fontFilename %>.eot?<%= hash %>");
+	src:url(~"@{di-font-path}/<%= fontFilename %>.eot?#iefix") format("embedded-opentype"),
+		url(~"@{di-font-path}/<%= fontFilename %>.woff?<%= hash %>") format("woff"),
+		url(~"@{di-font-path}/<%= fontFilename %>.ttf?<%= hash %>") format("truetype");
+	font-weight:normal;
+	font-style:normal;
+}
+
+.drc-icon() {
+	display: inline-block;
+	font: normal normal normal 14px/1 @di-font-name; // shortening font declaration
+	font-size: inherit; // can't have font-size inherit on line above, so need to override
+	text-rendering: auto; // optimizelegibility throws things off #1094
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	transform: translate(0, 0); // ensures no half-pixel rendering in firefox
+}
+
+[class*="<%= classPrefix %>"] {
+    .drc-icon();
+}
+<% for(var index = 0; index < glyphs.length; index++) { %>
+.<%= classPrefix %><%= glyphs[index] %>() {
+    &:before {
+        content: @di-var-<%= glyphs[index] %>;
+    }
+}
+<% } %>
+<% for(var index = 0; index < glyphs.length; index++) { %>
+.<%= classPrefix %><%= glyphs[index] %> {
+    .<%= classPrefix %><%= glyphs[index] %>();
+}
+<% } %>

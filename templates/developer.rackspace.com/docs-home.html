@@ -1,0 +1,94 @@
+{% extends "_layouts/sidebar-left.html" %}
+
+{% set metaDescription = deconst.content.envelope.meta.metaDescription %}
+{% set metaTitle = deconst.content.envelope.meta.metaTitle %}
+{% set ogDescription = deconst.content.envelope.meta.ogDescription %}
+{% set ogImage = deconst.content.envelope.meta.ogImage %}
+{% set ogTitle = deconst.content.envelope.meta.ogTitle %}
+{% set twitterCreator = deconst.content.envelope.meta.twitterCreator %}
+{% set twitterDescription = deconst.content.envelope.meta.twitterDescription %}
+{% set twitterTitle = deconst.content.envelope.meta.twitterTitle %}
+
+{% block metaDescription %}{{ metaDescription|fallback(super()) }}{% endblock %}
+{% block metaTitle %}{{ metaTitle|fallback(super()) }}{% endblock %}
+{% block ogDescription %}{{ ogDescription|fallback(metaDescription, super()) }}{% endblock %}
+{% block ogTitle %}{{ ogTitle|fallback(metaTitle, super()) }}{% endblock %}
+{% block ogImage %}{{ ogImage|fallback(super()) }}{% endblock %}
+{% block twitterCreator %}{{ twitterCreator|fallback(super()) }}{% endblock %}
+{% block twitterDescription %}{{ twitterDescription|fallback(ogDescription, metaDescription, super()) }}{% endblock %}
+{% block twitterTitle %}{{ twitterTitle|fallback(ogTitle, metaTitle, super()) }}{% endblock %}
+
+
+{% block bodyClass %}docs-home{% endblock %}
+
+
+
+{% set headlineTag = 'h1' %}
+{% set headlineAccent = 'Rackspace' %}
+{% set headline = 'Developer Docs' %}
+{% set tagline = 'Let’s Build Something Powerful Together!' %}
+{% set stickyNavOffsetTop = 321 %}
+
+{% block sidebar %}
+    <div class="sidebar-container" data-drc-sticky data-offset-top="{{ stickyNavOffsetTop }}" data-drc-flex-height data-flex-bottom="443">
+        <h5>Filter by Product:</h5>
+        <ul class="product-filters" data-ng-controller="DocsHomeSidebarCtrl">
+            <li class="all" data-ng-click="clickFilter('*')" data-ng-class="{'active': isFilterActive('*')}">
+                <a href="">
+                    <span class="label">All</span>
+                    <span class="indicator fa fa-check"></span>
+                </a>
+            </li>
+            <li class="compute" data-ng-click="clickFilter('compute')" data-ng-class="{'active': isFilterActive('compute')}">
+                <a href="">
+                    <span class="label">Compute</span>
+                    <span class="indicator fa fa-check"></span>
+                </a>
+            </li>
+            <li class="network" data-ng-click="clickFilter('network')" data-ng-class="{'active': isFilterActive('network')}">
+                <a href="">
+                    <span class="label">Network</span>
+                    <span class="indicator fa fa-check"></span>
+                </a>
+            </li>
+            <li class="storage" data-ng-click="clickFilter('storage')" data-ng-class="{'active': isFilterActive('storage')}">
+                <a href="">
+                    <span class="label">Storage</span>
+                    <span class="indicator fa fa-check"></span>
+                </a>
+            </li>
+            <li class="data" data-ng-click="clickFilter('data')" data-ng-class="{'active': isFilterActive('data')}">
+                <a href="">
+                    <span class="label">Data</span>
+                    <span class="indicator fa fa-check"></span>
+                </a>
+            </li>
+            <li class="infra" data-ng-click="clickFilter('infra')" data-ng-class="{'active': isFilterActive('infra')}">
+                <a href="">
+                    <span class="label">Infrastructure &amp; Developer Services</span>
+                    <span class="indicator fa fa-check"></span>
+                </a>
+            </li>
+            <li class="dev-tools" data-ng-click="clickFilter('dev-tools')" data-ng-class="{'active': isFilterActive('dev-tools')}">
+                <a href="">
+                    <span class="label">SDKs &amp; Tools</span>
+                    <span class="indicator fa fa-check"></span>
+                </a>
+            </li>
+        </ul>
+        <h5>Quickstart Guides:</h5>
+        <ul class="quickstarts">
+            <li><a href="/docs/cloud-servers/getting-started/" data-drc-language-selector="go">Go</a></li>
+            <li><a href="/docs/cloud-servers/getting-started/" data-drc-language-selector="java">Java</a></li>
+            <li><a href="/docs/cloud-servers/getting-started/" data-drc-language-selector="csharp">.NET</a></li>
+            <li><a href="/docs/cloud-servers/getting-started/" data-drc-language-selector="javascript">Node.js</a></li>
+            <li><a href="/docs/cloud-servers/getting-started/" data-drc-language-selector="php">PHP</a></li>
+            <li><a href="/docs/cloud-servers/getting-started/" data-drc-language-selector="python">Python</a></li>
+            <li><a href="/docs/cloud-servers/getting-started/" data-drc-language-selector="ruby">Ruby</a></li>
+        </ul>
+    </div>
+{% endblock %}
+
+{% block content %}
+    {{ deconst.content.envelope.body }}
+{% endblock %}
