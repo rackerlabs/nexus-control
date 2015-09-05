@@ -36,12 +36,12 @@
                         <img src="{{ deconst.content.assets.assets_dist_img_avatar_default_svg }}" alt="Placeholder Avatar">
                     {% endif %}
                 </div>
-                <div class="post-byline"><a href="" class="post-author">{{ post.author }}</a> | <time datetime="{{ post.meta.date|date('YYYY-MM-DD') }}">{{ post.meta.date|date('MMMM D, YYYY') }}</time></div>
+                <div class="post-byline"><a href="/blog/authors/{{ post.author|lower|replace(' ', '-') }}" class="post-author">{{ post.author }}</a> | <time datetime="{{ post.meta.date|date('YYYY-MM-DD') }}">{{ post.meta.date|date('MMMM D, YYYY') }}</time></div>
 
                 {% if post.categories.length > 0 %}
                 <ul class="post-categories">
                     {% for category in post.categories %}
-                        <li><a href="#">{{ category }}</a></li>
+                        <li><a href="/blog/categories/{{ category|replace(' ', '-') }}">{{ category }}</a></li>
                     {% endfor %}
                 </ul>
                 {% endif %}

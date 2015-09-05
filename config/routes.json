@@ -8,6 +8,7 @@
             "^/blog": "blog-index.html",
             "^/blog/.+?": "blog-single.html",
             "^/blog/categories": "blog-index.html",
+            "^/blog/authors": "blog-index.html",
             "^/docs": "docs-home.html",
             "^/docs/.+?": "docs-page.html",
             "^/docs/user-guides/infrastructure/": "user-guide.html",
