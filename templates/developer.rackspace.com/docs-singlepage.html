@@ -1,0 +1,57 @@
+{% extends "_layouts/sidebar-left.html" %}
+
+{% set metaDescription = deconst.content.envelope.title + " - Rackspace Developer Portal" %}
+{% set metaTitle = deconst.content.envelope.title + " - Rackspace Developer Portal" %}
+{% set ogDescription = deconst.content.envelope.meta.ogDescription %}
+{% set ogImage = deconst.content.envelope.meta.ogImage %}
+{% set ogTitle = deconst.content.envelope.meta.ogTitle %}
+{% set twitterCreator = deconst.content.envelope.meta.twitterCreator %}
+{% set twitterDescription = deconst.content.envelope.meta.twitterDescription %}
+{% set twitterTitle = deconst.content.envelope.meta.twitterTitle %}
+
+{% block metaDescription %}{{ metaDescription|fallback(super()) }}{% endblock %}
+{% block metaTitle %}{{ metaTitle|fallback(super()) }}{% endblock %}
+{% block ogDescription %}{{ ogDescription|fallback(metaDescription, super()) }}{% endblock %}
+{% block ogTitle %}{{ ogTitle|fallback(metaTitle, super()) }}{% endblock %}
+{% block ogImage %}{{ ogImage|fallback(super()) }}{% endblock %}
+{% block twitterCreator %}{{ twitterCreator|fallback(super()) }}{% endblock %}
+{% block twitterDescription %}{{ twitterDescription|fallback(ogDescription, metaDescription, super()) }}{% endblock %}
+{% block twitterTitle %}{{ twitterTitle|fallback(ogTitle, metaTitle, super()) }}{% endblock %}
+
+
+{% block bodyClass %}docs{% endblock %}
+
+{% set headlineTag = 'h1' %}
+{% set headlineAccent = 'Rackspace' %}
+{% set headline = 'Developer Docs' %}
+{% set tagline = 'Let’s Build Something Powerful Together!' %}
+
+{% block header %}
+    <div class="sdk-quickstart-menu">
+        <div class="title"><h2>I’m Coding in:</h2></div>
+        <div class="links">
+            <ul>
+                <li><a href="" data-drc-language-selector="sh"><span>cURL</span></a></li>
+                <li><a href="" data-drc-language-selector="python"><span>Python</span></a></li>
+                <li><a href="" data-drc-language-selector="go"><span>Go</span></a></li>
+                <li><a href="" data-drc-language-selector="csharp"><span>.NET</span></a></li>
+                <li><a href="" data-drc-language-selector="java"><span>Java</span></a></li>
+                <li><a href="" data-drc-language-selector="php"><span>PHP</span></a></li>
+                <li><a href="" data-drc-language-selector="javascript"><span>Node.js</span></a></li>
+                <li><a href="" data-drc-language-selector="ruby"><span>Ruby</span></a></li>
+            </ul>
+        </div>
+    </div>
+{% endblock %}
+
+{% block sidebar %}
+    <div class="sidebar-container" data-drc-sticky data-offset-top="356" data-drc-flex-height data-flex-bottom="443">
+        {{ deconst.content.envelope.toc|limitListDepth(2)|addScrollIndicators }}
+    </div>
+{% endblock %}
+
+{% block content %}
+    <section class="docs-section">
+        {{ deconst.content.envelope.body }}
+    </section>
+{% endblock %}
