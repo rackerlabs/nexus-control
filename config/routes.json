@@ -13,6 +13,8 @@
             "^/docs": "docs-home.html",
             "^/docs/.+?": "docs-page.html",
             "^/docs/user-guides/infrastructure/": "user-guide.html",
+            "^/docs/cloud-images/v2/developer-guide": "docs-singlepage.html",
+            "^/docs/cloud-load-balancers/v1/developer-guide": "docs-singlepage.html",
             "^/docs/rack-cli/": "rack-cli.html",
             "^/sdks": "sdks-home.html",
             "^/sdks/.+?": "sdks-page.html",
