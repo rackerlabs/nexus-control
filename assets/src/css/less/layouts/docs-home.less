@@ -198,6 +198,36 @@ body.docs-home {
         }
     }
 
+    .docs-banner {
+        border: solid 1px shade(white, 10%);
+        border-radius: 1px;
+        margin-top: 35px;
+        padding: 35px;
+        text-align: center;
+
+        h4 {
+            margin-bottom: 1em;
+        }
+
+        p {
+            font-size: percentage((16/14));
+            text-align: left;
+        }
+
+        p.banner-button {
+            margin-bottom: 0;
+            text-align: center;
+
+            a.banner-button {
+                .button('blue');
+                .open-sans('bold');
+                font-size: percentage((14/16));
+                padding: 0.5em 1.5em;
+                text-transform: uppercase;
+            }
+        }
+    }
+
     .product-list {
         .grid(35px);
 
