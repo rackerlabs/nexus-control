@@ -23,14 +23,12 @@
         {% endif %}
         <link rel="stylesheet" href="{{ cssUrl }}">
 
-        {% block headScripts %}
-            {% include "_includes/vwo.html" %}
-            <script type="text/javascript" src="https://www.rackspace.com/data/client"></script>
-        {% endblock %}
+        {% block headScripts %}{% endblock %}
     {% endblock %}
 </head>
 <body class="{% block bodyClass %}{% endblock %}" data-drc-code-sample-parent>
     {% block body %}{% endblock %}
+    {% include "_includes/rackspace-client.html" %}
     {% include "_includes/ga.html" %}
     {% include "_includes/tealium.html" %}
 </body>
