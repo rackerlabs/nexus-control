@@ -112,7 +112,7 @@ module.exports = function(grunt) {
                 tasks: ['less:dev']
             },
             js: {
-                files: ['assets/src/js/**/*.js'],
+                files: ['assets/src/js/**/*.js', '!assets/src/js/bundle.js'],
                 tasks: ['browserify:dev']
             },
             livereload: {
