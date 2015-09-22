@@ -1,0 +1,111 @@
+body.databases {
+  .sidebar-container {
+    h5 {
+      margin-bottom: 20px;
+    }
+  }
+
+  .databases-intro {
+    border-bottom: solid 1px shade(white, 5%);
+    padding-top: 40px;
+    padding-bottom: 80px;
+
+    .intro-grid {
+      .grid(35px);
+
+      .intro-text {
+        .grid-unit(7/12, 35px);
+
+        blockquote {
+          .open-sans('regular', 'italic');
+          background: shade(white, 5%);
+          border-radius: 1px;
+          font-size: percentage((16/14));
+          padding: 1em;
+
+          footer {
+            margin-top: 1em;
+            text-align: right;
+          }
+        }
+      }
+
+      .intro-video {
+        .grid-unit(5/12, 35px);
+
+        iframe {
+          margin-top: 54px;
+          min-height: 250px;
+        }
+      }
+    }
+  }
+
+  .database-products {
+    .database-product {
+      padding: 80px 0;
+
+      & + .database-product {
+        border-top: solid 1px shade(white, 5%);
+      }
+
+      .databases-product-image {
+        display: inline-block;
+      }
+
+      .databases-well-text {
+        font-size: percentage((18/14));
+        display: inline-block;
+        margin-bottom: 20px;
+      }
+
+      .databases-product-heading {
+        .h3();
+        margin-bottom: 0.25em;
+      }
+
+      .databases-product-title {
+        margin: 0;
+        .h4();
+      }
+
+      .piped-list {
+        list-style-type: none;
+        margin: 0 0 20px 0;
+        padding: 0;
+
+        li {
+          display: inline-block;
+
+          a {
+            .open-sans('bold');
+            text-transform: uppercase;
+          }
+
+          & + li {
+            margin-left: 2em;
+
+            &:before {
+              color: tint(@text-color, 50%);
+              content: '/';
+              left: -1.4em;
+              position: absolute;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  [role="tabpanel"] {
+    .grid(0px);
+
+    .tabs {
+      .grid-unit(1/5, 0px);
+    }
+
+    .content {
+      .grid-unit(4/5, 0px);
+    }
+  }
+}
