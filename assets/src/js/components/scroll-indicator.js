@@ -9,26 +9,17 @@ var INDICATOR_CHANGE_EVENT = 'drcScrollIndicatorChange';
 angular.module(moduleName, [])
 .factory('scrollIndicator', ['$rootScope', function ($rootScope) {
     var listenersAdded = false;
-    var options, indicators, milestones, activeMilestone;
-
+    var options = {},
+        milestones = [],
+        activeMilestone = '';
 
     return {
         init: function (initOptions) {
             options = initOptions;
-            indicators = $('[data-drc-scroll-indicator]');
-            potentialMilestones = $('['+ options.attribute +']');
+            var milestoneSelector = '[' + options.attribute + '="' + options.id +'"]';
+            milestones.push($(milestoneSelector)[0]);
 
-            milestones = [];
-
-            potentialMilestones.each(function () {
-                if($('[data-drc-scroll-indicator="' + this.getAttribute(options.attribute) + '"]').length !== 0) {
-                    milestones.push(this);
-                }
-            });
-
-            milestones = $(milestones);
-
-            activeMilestone = indicators[0].getAttribute('data-drc-scroll-indicator');
+            activeMilestone = $('[data-drc-scroll-indicator]').first().attr('data-drc-scroll-indicator');
             $rootScope.$broadcast(INDICATOR_CHANGE_EVENT, activeMilestone);
 
             this.addListeners();
@@ -49,14 +40,16 @@ angular.module(moduleName, [])
                 element: null
             };
 
-            milestones.each((function (index, element) {
+            for(var i = 0; i < milestones.length; i++) {
+                var index = i;
+                var element = milestones[i];
                 var fromThreshold = element.getBoundingClientRect().top - viewThreshold;
 
                 if(fromThreshold < 0 && fromThreshold > closestMilestone.position) {
                     closestMilestone.position = fromThreshold;
                     closestMilestone.element = element;
                 }
-            }).bind(this));
+            }
 
             if(!closestMilestone.element) {
                 return;
@@ -78,18 +71,22 @@ angular.module(moduleName, [])
         controller: ['$scope', '$element', '$attrs', function ($scope, $element, $attrs) {
             $element = $($element);
 
-            $rootScope.$on('drcScrollIndicatorChange', function (event, data) {
-                if(data === $attrs.drcScrollIndicator) {
-                    $element.addClass('active');
-                    $element.parents('li').addClass('active');
-                }
-                else {
-                    $element.removeClass('active');
-                }
+            $rootScope.$on(INDICATOR_CHANGE_EVENT, function (event, data) {
+                window.requestAnimationFrame(function () {
+                    if(data === $attrs.drcScrollIndicator) {
+                        $element.addClass('active');
+                        $element.parents('li').addClass('active');
+                    }
+                    else {
+                        $element.removeClass('active');
+                    }
+                });
             });
         }],
         link: function ($scope, $element, $attrs) {
             scrollIndicator.init({
+                element: $element,
+                id: $attrs.drcScrollIndicator,
                 attribute: $attrs.useAttribute || 'data-drc-scroll-milestone'
             });
         }

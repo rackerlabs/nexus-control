@@ -12,7 +12,7 @@ angular.module(moduleName, [
     require('./components/global-sidebar'),
     require('./components/language-selector'),
     require('./components/scroll-indicator'),
-     require('./components/sticky'),
+    require('./components/sticky'),
     require('./controllers/blog-sidebar'),
     require('./controllers/docs-home-services'),
     require('./controllers/docs-home-sidebar'),

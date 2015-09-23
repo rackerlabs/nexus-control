@@ -16,6 +16,6 @@
         {% else %}
             {% set jsUrl = deconst.assets.assets_dist_js_main_min_js %}
         {% endif %}
-        <script src="{{ jsUrl }}"></script>
+        <script src="{{ jsUrl }}" async></script>
     {% endblock %}
 {% endblock %}
