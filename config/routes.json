@@ -29,6 +29,7 @@
             "^/docs/cloud-servers/v2/developer-guide": "docs-singlepage.html",
             "^/docs/cloud-files/v1/developer-guide": "docs-singlepage.html",
             "^/docs/cloud-metrics/v1/developer-guide": "docs-singlepage.html",
+            "^/docs/cloud-identity/v2/developer-guide": "docs-singlepage.html",
             "^/docs/rack-cli/": "rack-cli.html",
             "^/sdks": "sdks-home.html",
             "^/sdks/.+?": "sdks-page.html",
