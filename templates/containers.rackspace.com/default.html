@@ -1,0 +1,66 @@
+{% extends "_layouts/base.html" %}
+{% block bodyClass %}home{% endblock %}
+{% block bodyContent %}
+<section class="home-section hero">
+  <div class="section-container">
+    <div class="section-grid">
+      <div class="hero-message">
+        <h1 class="headline">The Next Big Thing is Here</h1>
+        <p class="tagline">High-performance, portable container runtimes for developers.</p>
+        <form>
+          <input type="email" placeholder="Enter Your E-mail Address...">
+          <input type="password" placeholder="Create a password...">
+          <button type="submit">Sign up!</button>
+        </form>
+      </div>
+      <div class="hero-graphic">
+        {% include "_partials/hero-cube.svg" %}
+      </div>
+    </div>
+  </div>
+</section>
+<section class="home-section features">
+  <div class="section-container">
+    <div class="section-grid">
+      <div class="summary">
+        <h2>
+          <span class="accent red">Features</span>
+        </h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, impedit accusamus eveniet, perspiciatis ipsa numquam, saepe aliquam et blanditiis eaque suscipit sequi, voluptate corrupti repudiandae assumenda expedita. Tempore cum, aspernatur!</p>
+      </div>
+      <div class="feature">
+        <img src="//fpoimg.com/100x100" alt="">
+        <h3>Faster Provisioning</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit soluta unde aspernatur quos.</p>
+      </div>
+      <div class="feature">
+        <img src="//fpoimg.com/100x100" alt="">
+        <h3>Open Standards</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit soluta unde aspernatur quos.</p>
+      </div>
+      <div class="feature">
+        <img src="//fpoimg.com/100x100" alt="">
+        <h3>Advanced Security</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit soluta unde aspernatur quos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="home-section cp-demo">
+  <div class="section-container">
+    <div class="section-grid">
+      <div class="text">
+        <h2>
+          <span class="accent yellow">At Your Fingertips</span>
+        </h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nam illum voluptas eaque aspernatur, fuga, nesciunt quis pariatur ut cum ratione ad facere repudiandae. Itaque, provident placeat magni qui error?</p>
+      </div>
+      <div class="demo">
+        <div class="demo-frame">
+          <img src="//fpoimg.com/400x250" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

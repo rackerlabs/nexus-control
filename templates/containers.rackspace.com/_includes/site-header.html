@@ -1,0 +1,25 @@
+<header class="site-header">
+  <div class="header-nav">
+    <a href="http://www.rackspace.com/" class="logo">
+        {% if deconst.env.PRESENTER_DEVMODE == 'true' %}
+            {% set logoUrl = '/assets/containers.rackspace.com/src/img/rackspace-logo.svg' %}
+        {% else %}
+            {% set logoUrl = deconst.assets.assets_dist_img_rackspace_logo_svg %}
+        {% endif %}
+        <img src="{{ logoUrl }}" alt="Rackspace Logo" />
+    </a>
+    <ul class="header-links">
+      <li class="active">
+        <a href="/">Containers Home</a>
+      </li>
+      <li>
+        <a href="/docs">Documentation</a>
+      </li>
+      <li>
+        <a href="">Support</a>
+      </li>
+      <li class="separator"></li>
+      <li><a href="">Log In</a></li>
+    </ul>
+  </div>
+</header>

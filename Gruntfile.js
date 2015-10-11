@@ -79,7 +79,8 @@ module.exports = function(grunt) {
         less: {
             dev: {
                 files: {
-                    'assets/src/css/main.css': ['assets/src/css/less/main.less']
+                    'assets/src/css/main.css': ['assets/src/css/less/main.less'],
+                    'assets/containers.rackspace.com/src/css/main.css': ['assets/containers.rackspace.com/src/css/less/main.less']
                 },
                 options: {
                     dumpLineNumbers: 'comments',
@@ -89,7 +90,8 @@ module.exports = function(grunt) {
             },
             build: {
                 files: {
-                    'assets/dist/css/main.css': ['assets/src/css/less/main.less']
+                    'assets/dist/css/main.css': ['assets/src/css/less/main.less'],
+                    'assets/containers.rackspace.com/dist/css/main.css': ['assets/containers.rackspace.com/src/css/less/main.less']
                 },
                 options: {
                     paths: ['assets/bower_components'],
@@ -108,7 +110,7 @@ module.exports = function(grunt) {
         },
         watch: {
             less: {
-                files: ['assets/src/css/less/**/*.less'],
+                files: ['assets/**/src/css/less/**/*.less'],
                 tasks: ['less:dev']
             },
             js: {

@@ -1,0 +1,781 @@
+/* line 1, assets/containers.rackspace.com/src/css/less/reset.less */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* line 22, assets/containers.rackspace.com/src/css/less/reset.less */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+/* line 26, assets/containers.rackspace.com/src/css/less/reset.less */
+body {
+  line-height: 1;
+}
+/* line 29, assets/containers.rackspace.com/src/css/less/reset.less */
+ol,
+ul {
+  list-style: none;
+}
+/* line 32, assets/containers.rackspace.com/src/css/less/reset.less */
+blockquote,
+q {
+  quotes: none;
+}
+/* line 35, assets/containers.rackspace.com/src/css/less/reset.less */
+blockquote:before,
+q:before,
+blockquote:after,
+q:after {
+  content: '';
+  content: none;
+}
+/* line 41, assets/containers.rackspace.com/src/css/less/reset.less */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* line 46, assets/containers.rackspace.com/src/css/less/reset.less */
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  position: relative;
+}
+@font-face {
+  font-family: 'lato-light';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v11/kcf5uOXucLcbFOydGU24WALUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+}
+@font-face {
+  font-family: 'lato-light-italic';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Lato Light Italic'), local('Lato-LightItalic'), url(https://fonts.gstatic.com/s/lato/v11/2HG_tEPiQ4Z6795cGfdivLO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+@font-face {
+  font-family: 'lato-regular';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v11/qIIYRU-oROkIk8vfvxw6QvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+@font-face {
+  font-family: 'lato-bold';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v11/qdgUG4U09HnJwhYI-uK18wLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+}
+@font-face {
+  font-family: 'lato-bolid-italic';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v11/HkF_qI1x_noxlxhrhMQYELO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+@font-face {
+  font-family: 'lato-regular-italic';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v11/RYyZNoeFgb0l7W3Vu1aSWOvvDin1pK8aKteLpeZ5c0A.woff) format('woff');
+}
+/* line 1, assets/containers.rackspace.com/src/css/less/typography.less */
+body,
+html {
+  font-family: 'lato-regular', arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #404040;
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/* line 9, assets/containers.rackspace.com/src/css/less/typography.less */
+em,
+i {
+  font-family: 'lato-regular-italic', arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+}
+/* line 12, assets/containers.rackspace.com/src/css/less/typography.less */
+em strong,
+i strong,
+em b,
+i b {
+  font-family: 'lato-bold-italic', arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+}
+/* line 17, assets/containers.rackspace.com/src/css/less/typography.less */
+strong,
+b {
+  font-family: 'lato-bold', arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+/* line 20, assets/containers.rackspace.com/src/css/less/typography.less */
+strong em,
+b em,
+strong i,
+b i {
+  font-family: 'lato-bold-italic', arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+}
+/* line 25, assets/containers.rackspace.com/src/css/less/typography.less */
+a {
+  color: #3498db;
+  cursor: pointer;
+  text-decoration: none;
+}
+/* line 30, assets/containers.rackspace.com/src/css/less/typography.less */
+a:hover,
+a:focus,
+a:active {
+  color: #2f89c5;
+  text-decoration: underline;
+}
+/* line 35, assets/containers.rackspace.com/src/css/less/typography.less */
+a:visited {
+  color: #3498db;
+}
+/* line 40, assets/containers.rackspace.com/src/css/less/typography.less */
+p {
+  margin-bottom: 1.5em;
+}
+/* line 44, assets/containers.rackspace.com/src/css/less/typography.less */
+h1,
+.h1 {
+  font-family: 'lato-light', arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 257.14285714%;
+}
+/* line 49, assets/containers.rackspace.com/src/css/less/typography.less */
+h2,
+.h2 {
+  font-family: 'lato-light', arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 214.28571429%;
+}
+/* line 54, assets/containers.rackspace.com/src/css/less/typography.less */
+h3,
+.h3 {
+  font-family: 'lato-light', arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 171.42857143%;
+}
+/* line 59, assets/containers.rackspace.com/src/css/less/typography.less */
+h4,
+.h4 {
+  font-family: 'lato-light', arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 128.57142857%;
+}
+/* line 64, assets/containers.rackspace.com/src/css/less/typography.less */
+h5,
+.h5 {
+  font-family: 'lato-bold', arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100%;
+  text-transform: uppercase;
+}
+/* line 70, assets/containers.rackspace.com/src/css/less/typography.less */
+h6,
+.h6 {
+  font-family: 'lato-bold', arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #9f9f9f;
+  text-transform: uppercase;
+}
+/* line 76, assets/containers.rackspace.com/src/css/less/typography.less */
+ol {
+  list-style-type: decimal;
+  padding-left: 1.4em;
+  margin-bottom: 1.5em;
+}
+/* line 82, assets/containers.rackspace.com/src/css/less/typography.less */
+ul {
+  list-style-type: disc;
+  padding-left: 1.4em;
+  margin-bottom: 1.5em;
+}
+/* line 89, assets/containers.rackspace.com/src/css/less/typography.less */
+ol li,
+ul li {
+  margin-bottom: 0.5em;
+}
+/* line 92, assets/containers.rackspace.com/src/css/less/typography.less */
+ol li ul,
+ul li ul {
+  margin-top: 0.5em;
+}
+/* line 98, assets/containers.rackspace.com/src/css/less/typography.less */
+code {
+  background: #f2f2f2;
+  border-radius: 2px;
+  color: #1f5b83;
+  padding: 0 0.2em;
+  font-family: 'Monaco', 'Consolas', 'Courier New', monospace;
+}
+/* line 106, assets/containers.rackspace.com/src/css/less/typography.less */
+pre code {
+  background: none;
+  border-radius: 0;
+  color: #e0e0d7;
+  padding: 0;
+}
+/* line 113, assets/containers.rackspace.com/src/css/less/typography.less */
+pre {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 0.5em;
+}
+/* line 119, assets/containers.rackspace.com/src/css/less/typography.less */
+pre::-webkit-scrollbar {
+  background: transparent;
+  height: 10px;
+  width: 10px;
+}
+/* line 125, assets/containers.rackspace.com/src/css/less/typography.less */
+pre::-webkit-scrollbar-track:horizontal {
+  background: transparent;
+}
+/* line 129, assets/containers.rackspace.com/src/css/less/typography.less */
+pre::-webkit-scrollbar-thumb:horizontal {
+  background: #5e6470;
+  border-radius: 10px;
+}
+/* line 135, assets/containers.rackspace.com/src/css/less/typography.less */
+dl {
+  margin-bottom: 1.5em;
+}
+/* line 138, assets/containers.rackspace.com/src/css/less/typography.less */
+dl dt {
+  font-family: 'lato-bold', arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+/* line 142, assets/containers.rackspace.com/src/css/less/typography.less */
+dl dd {
+  margin-bottom: 1em;
+}
+@media (min-width: 30em) {
+  /* line 147, assets/containers.rackspace.com/src/css/less/typography.less */
+  dl dt {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    display: inline-block;
+    margin-right: -0.26rem;
+    margin-left: 0px;
+    vertical-align: top;
+    width: calc( 25%  -  0px );
+    padding-right: 1em;
+    text-align: right;
+  }
+  /* line 153, assets/containers.rackspace.com/src/css/less/typography.less */
+  dl dd {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    display: inline-block;
+    margin-right: -0.26rem;
+    margin-left: 0px;
+    vertical-align: top;
+    width: calc( 75%  -  0px );
+  }
+}
+/* line 159, assets/containers.rackspace.com/src/css/less/typography.less */
+sup {
+  font-size: 40%;
+  vertical-align: super;
+}
+/* line 164, assets/containers.rackspace.com/src/css/less/typography.less */
+hr {
+  background: transparent;
+  border-top: dotted 1px rgba(64, 64, 64, 0.7);
+  height: 1px;
+  margin: 2em 0;
+}
+/* line 1, assets/containers.rackspace.com/src/css/less/components/site-header.less */
+.site-header {
+  height: 60px;
+}
+/* line 4, assets/containers.rackspace.com/src/css/less/components/site-header.less */
+.site-header .header-nav {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 980px;
+  width: 90%;
+}
+/* line 8, assets/containers.rackspace.com/src/css/less/components/site-header.less */
+.site-header .logo {
+  display: inline-block;
+  height: 60px;
+  line-height: 60px;
+  width: 130px;
+}
+/* line 15, assets/containers.rackspace.com/src/css/less/components/site-header.less */
+.site-header .logo img {
+  display: inline-block;
+  height: auto;
+  vertical-align: middle;
+  width: 100%;
+}
+/* line 23, assets/containers.rackspace.com/src/css/less/components/site-header.less */
+.site-header .header-links {
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+/* line 28, assets/containers.rackspace.com/src/css/less/components/site-header.less */
+.site-header .header-links li {
+  display: inline-block;
+  height: 60px;
+  margin: 0;
+  vertical-align: middle;
+}
+/* line 34, assets/containers.rackspace.com/src/css/less/components/site-header.less */
+.site-header .header-links li a {
+  color: #404040;
+  display: inline-block;
+  letter-spacing: -0.03em;
+  line-height: 30px;
+  margin: 15px 0.5em 0 0.5em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+/* line 43, assets/containers.rackspace.com/src/css/less/components/site-header.less */
+.site-header .header-links li a:hover,
+.site-header .header-links li a:focus,
+.site-header .header-links li a:active {
+  color: #303030;
+  outline: none;
+  text-decoration: none;
+  text-shadow: 0px 0px 0px black;
+}
+/* line 51, assets/containers.rackspace.com/src/css/less/components/site-header.less */
+.site-header .header-links li.active a {
+  border-bottom: solid 1px #404040;
+  text-shadow: 0px 0px 0px black;
+}
+/* line 57, assets/containers.rackspace.com/src/css/less/components/site-header.less */
+.site-header .header-links li.separator {
+  background: #404040;
+  height: 30px;
+  width: 1px;
+}
+/* line 2, assets/containers.rackspace.com/src/css/less/pages/home.less */
+body.home .home-section {
+  padding: 40px 0;
+}
+/* line 5, assets/containers.rackspace.com/src/css/less/pages/home.less */
+body.home .home-section .section-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 980px;
+  width: 90%;
+}
+/* line 9, assets/containers.rackspace.com/src/css/less/pages/home.less */
+body.home .home-section .section-grid {
+  display: block;
+  width: calc(100% +  50px );
+  margin-left: -50px;
+  overflow: hidden;
+  vertical-align: top;
+}
+/* line 13, assets/containers.rackspace.com/src/css/less/pages/home.less */
+body.home .home-section h2 {
+  margin-bottom: 0.5em;
+}
+/* line 16, assets/containers.rackspace.com/src/css/less/pages/home.less */
+body.home .home-section h2 .accent {
+  display: inline-block;
+  line-height: 40px;
+}
+/* line 20, assets/containers.rackspace.com/src/css/less/pages/home.less */
+body.home .home-section h2 .accent.red {
+  border-bottom: solid 2px #e74c3c;
+}
+/* line 28, assets/containers.rackspace.com/src/css/less/pages/home.less */
+body.home .home-section.hero .hero-message {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  display: inline-block;
+  margin-right: -0.26rem;
+  margin-left: 50px;
+  vertical-align: top;
+  width: calc( 60%  -  50px );
+}
+/* line 31, assets/containers.rackspace.com/src/css/less/pages/home.less */
+body.home .home-section.hero .hero-message .headline {
+  font-size: 285.71428571%;
+  text-transform: uppercase;
+}
+/* line 36, assets/containers.rackspace.com/src/css/less/pages/home.less */
+body.home .home-section.hero .hero-message .tagline {
+  text-transform: uppercase;
+}
+/* line 40, assets/containers.rackspace.com/src/css/less/pages/home.less */
+body.home .home-section.hero .hero-message input[type="email"],
+body.home .home-section.hero .hero-message input[type="password"] {
+  font-family: 'lato-regular', arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  background: white;
+  border: solid 1px #404040;
+  display: block;
+  font-size: 14px;
+  padding: 0.9em 1em;
+  margin-bottom: 14px;
+  -webkit-transition: border 0.1s ease-in-out;
+  -ms-transition: border 0.1s ease-in-out;
+  transition: border 0.1s ease-in-out;
+  width: 280px;
+}
+/* line 52, assets/containers.rackspace.com/src/css/less/pages/home.less */
+body.home .home-section.hero .hero-message input[type="email"]:focus,
+body.home .home-section.hero .hero-message input[type="password"]:focus {
+  outline: none;
+  border: solid 1px #0dafcc;
+}
+/* line 58, assets/containers.rackspace.com/src/css/less/pages/home.less */
+body.home .home-section.hero .hero-message button[type="submit"] {
+  font-family: 'lato-regular', arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  border-radius: 1px;
+  display: inline-block;
+  padding: 1em 3em;
+  text-decoration: none;
+  -webkit-transition: background 0.1s ease-in-out;
+  -ms-transition: background 0.1s ease-in-out;
+  transition: background 0.1s ease-in-out;
+  background: #e6e6e6;
+  border: solid 1px #d9d9d9;
+  color: #404040;
+  background: #8ad284;
+  border: solid 1px #83c87d;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  -webkit-transition: background 0.1s ease-in-out, border 0.1s ease-in-out;
+  -ms-transition: background 0.1s ease-in-out, border 0.1s ease-in-out;
+  transition: background 0.1s ease-in-out, border 0.1s ease-in-out;
+}
+/* line 68, assets/containers.rackspace.com/src/css/less/pages/home.less */
+body.home .home-section.hero .hero-message button[type="submit"]:hover,
+body.home .home-section.hero .hero-message button[type="submit"]:focus {
+  outline: none;
+  background: #83c87d;
+  border: solid 1px #689e63;
+}
+/* line 76, assets/containers.rackspace.com/src/css/less/pages/home.less */
+body.home .home-section.hero .hero-graphic {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  display: inline-block;
+  margin-right: -0.26rem;
+  margin-left: 50px;
+  vertical-align: top;
+  width: calc( 40%  -  50px );
+}
+/* line 79, assets/containers.rackspace.com/src/css/less/pages/home.less */
+body.home .home-section.hero .hero-graphic img {
+  display: block;
+  margin: 0 auto;
+}
+/* line 84, assets/containers.rackspace.com/src/css/less/pages/home.less */
+body.home .home-section.hero .hero-graphic #chunk-5 {
+  animation: chunk-5 5s 0.4s ease-in-out infinite;
+}
+/* line 88, assets/containers.rackspace.com/src/css/less/pages/home.less */
+body.home .home-section.hero .hero-graphic #chunk-6 {
+  animation: chunk-6 8s ease-in-out infinite;
+}
+/* line 92, assets/containers.rackspace.com/src/css/less/pages/home.less */
+body.home .home-section.hero .hero-graphic #chunk-7 {
+  animation: chunk-7 4s ease-in-out infinite;
+}
+/* line 96, assets/containers.rackspace.com/src/css/less/pages/home.less */
+body.home .home-section.hero .hero-graphic #chunk-8 {
+  animation: chunk-8 6s 3s ease-in-out infinite;
+}
+/* line 100, assets/containers.rackspace.com/src/css/less/pages/home.less */
+body.home .home-section.hero .hero-graphic #chunk-10 {
+  animation: chunk-10 4s 0.2s ease-in-out infinite;
+}
+/* line 106, assets/containers.rackspace.com/src/css/less/pages/home.less */
+body.home .home-section.features {
+  text-align: center;
+}
+/* line 109, assets/containers.rackspace.com/src/css/less/pages/home.less */
+body.home .home-section.features .summary {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  display: inline-block;
+  margin-right: -0.26rem;
+  margin-left: 50px;
+  vertical-align: top;
+  width: calc( 100%  -  50px );
+  margin-bottom: 20px;
+  padding: 0 15%;
+}
+/* line 114, assets/containers.rackspace.com/src/css/less/pages/home.less */
+body.home .home-section.features .summary h2 {
+  font-family: 'lato-light', arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 128.57142857%;
+  text-transform: uppercase;
+}
+/* line 120, assets/containers.rackspace.com/src/css/less/pages/home.less */
+body.home .home-section.features .feature {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  display: inline-block;
+  margin-right: -0.26rem;
+  margin-left: 50px;
+  vertical-align: top;
+  width: calc( 33.33333333%  -  50px );
+}
+/* line 123, assets/containers.rackspace.com/src/css/less/pages/home.less */
+body.home .home-section.features .feature img {
+  margin-bottom: 10px;
+}
+/* line 127, assets/containers.rackspace.com/src/css/less/pages/home.less */
+body.home .home-section.features .feature h3 {
+  font-family: 'lato-light', arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 128.57142857%;
+  margin-bottom: 20px;
+}
+/* line 134, assets/containers.rackspace.com/src/css/less/pages/home.less */
+body.home .home-section.cp-demo {
+  background: #f0f5fc;
+}
+/* line 137, assets/containers.rackspace.com/src/css/less/pages/home.less */
+body.home .home-section.cp-demo .section-grid {
+  display: block;
+  width: calc(100% +  0px );
+  margin-left: 0px;
+  overflow: hidden;
+  vertical-align: top;
+}
+/* line 141, assets/containers.rackspace.com/src/css/less/pages/home.less */
+body.home .home-section.cp-demo .text {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  display: inline-block;
+  margin-right: -0.26rem;
+  margin-left: 0px;
+  vertical-align: top;
+  width: calc( 40%  -  0px );
+}
+/* line 144, assets/containers.rackspace.com/src/css/less/pages/home.less */
+body.home .home-section.cp-demo .demo {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  display: inline-block;
+  margin-right: -0.26rem;
+  margin-left: 0px;
+  vertical-align: top;
+  width: calc( 60%  -  0px );
+}
+/* line 147, assets/containers.rackspace.com/src/css/less/pages/home.less */
+body.home .home-section.cp-demo .demo .demo-frame {
+  background: url('/assets/containers.rackspace.com/src/img/laptop-frame.svg') 0% 0% no-repeat;
+  padding: 4.3% 16.7%;
+}
+/* line 151, assets/containers.rackspace.com/src/css/less/pages/home.less */
+body.home .home-section.cp-demo .demo .demo-frame img {
+  width: 100%;
+  height: 100%;
+}
+@keyframes chunk-5 {
+  /* line 161, assets/containers.rackspace.com/src/css/less/pages/home.less */
+  0% {
+    transform: translate3d(0%, 0%, 0);
+  }
+  /* line 165, assets/containers.rackspace.com/src/css/less/pages/home.less */
+  40% {
+    transform: translate3d(-27%, -24%, 0);
+  }
+  /* line 169, assets/containers.rackspace.com/src/css/less/pages/home.less */
+  60% {
+    transform: translate3d(-27%, -24%, 0);
+  }
+  /* line 173, assets/containers.rackspace.com/src/css/less/pages/home.less */
+  100% {
+    transform: translate3d(0%, 0%, 0);
+  }
+}
+@keyframes chunk-6 {
+  /* line 179, assets/containers.rackspace.com/src/css/less/pages/home.less */
+  0% {
+    transform: translate3d(0%, 0%, 0);
+  }
+  /* line 183, assets/containers.rackspace.com/src/css/less/pages/home.less */
+  40% {
+    transform: translate3d(181%, -156%, 0);
+  }
+  /* line 187, assets/containers.rackspace.com/src/css/less/pages/home.less */
+  60% {
+    transform: translate3d(181%, -156%, 0);
+  }
+  /* line 191, assets/containers.rackspace.com/src/css/less/pages/home.less */
+  100% {
+    transform: translate3d(0%, 0%, 0);
+  }
+}
+@keyframes chunk-7 {
+  /* line 197, assets/containers.rackspace.com/src/css/less/pages/home.less */
+  0% {
+    transform: translate3d(0%, 0%, 0);
+  }
+  /* line 201, assets/containers.rackspace.com/src/css/less/pages/home.less */
+  40% {
+    transform: translate3d(14%, -12%, 0);
+  }
+  /* line 205, assets/containers.rackspace.com/src/css/less/pages/home.less */
+  60% {
+    transform: translate3d(14%, -12%, 0);
+  }
+  /* line 209, assets/containers.rackspace.com/src/css/less/pages/home.less */
+  100% {
+    transform: translate3d(0%, 0%, 0);
+  }
+}
+@keyframes chunk-8 {
+  /* line 215, assets/containers.rackspace.com/src/css/less/pages/home.less */
+  0% {
+    transform: translate3d(0%, 0%, 0);
+  }
+  /* line 219, assets/containers.rackspace.com/src/css/less/pages/home.less */
+  40% {
+    transform: translate3d(83%, -72%, 0);
+  }
+  /* line 223, assets/containers.rackspace.com/src/css/less/pages/home.less */
+  60% {
+    transform: translate3d(83%, -72%, 0);
+  }
+  /* line 227, assets/containers.rackspace.com/src/css/less/pages/home.less */
+  100% {
+    transform: translate3d(0%, 0%, 0);
+  }
+}
+@keyframes chunk-10 {
+  /* line 233, assets/containers.rackspace.com/src/css/less/pages/home.less */
+  0% {
+    transform: translate3d(0%, 0%, 0);
+  }
+  /* line 237, assets/containers.rackspace.com/src/css/less/pages/home.less */
+  40% {
+    transform: translate3d(0%, 25%, 0);
+  }
+  /* line 241, assets/containers.rackspace.com/src/css/less/pages/home.less */
+  60% {
+    transform: translate3d(0%, 25%, 0);
+  }
+  /* line 245, assets/containers.rackspace.com/src/css/less/pages/home.less */
+  100% {
+    transform: translate3d(0%, 0%, 0);
+  }
+}
