@@ -700,9 +700,11 @@ body.home .home-section.features .feature {
 }
 /* line 137, assets/containers.rackspace.com/src/css/less/pages/home.less */
 body.home .home-section.features .feature img {
+  height: auto;
   margin-bottom: 10px;
+  max-width: 100px;
 }
-/* line 141, assets/containers.rackspace.com/src/css/less/pages/home.less */
+/* line 143, assets/containers.rackspace.com/src/css/less/pages/home.less */
 body.home .home-section.features .feature h3 {
   font-family: 'lato-light', arial, sans-serif;
   font-style: normal;
@@ -710,11 +712,11 @@ body.home .home-section.features .feature h3 {
   font-size: 128.57142857%;
   margin-bottom: 20px;
 }
-/* line 148, assets/containers.rackspace.com/src/css/less/pages/home.less */
+/* line 150, assets/containers.rackspace.com/src/css/less/pages/home.less */
 body.home .home-section.cp-demo {
   background: #f0f5fc;
 }
-/* line 151, assets/containers.rackspace.com/src/css/less/pages/home.less */
+/* line 153, assets/containers.rackspace.com/src/css/less/pages/home.less */
 body.home .home-section.cp-demo .section-grid {
   display: block;
   width: calc(100% +  0px );
@@ -722,7 +724,7 @@ body.home .home-section.cp-demo .section-grid {
   overflow: hidden;
   vertical-align: top;
 }
-/* line 155, assets/containers.rackspace.com/src/css/less/pages/home.less */
+/* line 157, assets/containers.rackspace.com/src/css/less/pages/home.less */
 body.home .home-section.cp-demo .text {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -732,7 +734,7 @@ body.home .home-section.cp-demo .text {
   vertical-align: top;
   width: calc( 40%  -  0px );
 }
-/* line 158, assets/containers.rackspace.com/src/css/less/pages/home.less */
+/* line 160, assets/containers.rackspace.com/src/css/less/pages/home.less */
 body.home .home-section.cp-demo .text h2 {
   font-family: 'lato-light', arial, sans-serif;
   font-style: normal;
@@ -740,7 +742,7 @@ body.home .home-section.cp-demo .text h2 {
   font-size: 128.57142857%;
   text-transform: uppercase;
 }
-/* line 163, assets/containers.rackspace.com/src/css/less/pages/home.less */
+/* line 165, assets/containers.rackspace.com/src/css/less/pages/home.less */
 body.home .home-section.cp-demo .demo {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -750,21 +752,21 @@ body.home .home-section.cp-demo .demo {
   vertical-align: top;
   width: calc( 60%  -  0px );
 }
-/* line 166, assets/containers.rackspace.com/src/css/less/pages/home.less */
+/* line 168, assets/containers.rackspace.com/src/css/less/pages/home.less */
 body.home .home-section.cp-demo .demo .demo-frame {
   background: url('/assets/containers.rackspace.com/src/img/laptop-frame.svg') 0% 0% no-repeat;
   padding: 4.3% 16.7%;
 }
-/* line 170, assets/containers.rackspace.com/src/css/less/pages/home.less */
+/* line 172, assets/containers.rackspace.com/src/css/less/pages/home.less */
 body.home .home-section.cp-demo .demo .demo-frame img {
   width: 100%;
   height: 100%;
 }
-/* line 178, assets/containers.rackspace.com/src/css/less/pages/home.less */
+/* line 180, assets/containers.rackspace.com/src/css/less/pages/home.less */
 body.home .home-section.resources {
   text-align: center;
 }
-/* line 181, assets/containers.rackspace.com/src/css/less/pages/home.less */
+/* line 183, assets/containers.rackspace.com/src/css/less/pages/home.less */
 body.home .home-section.resources .summary {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -776,7 +778,7 @@ body.home .home-section.resources .summary {
   margin-bottom: 20px;
   padding: 0 15%;
 }
-/* line 186, assets/containers.rackspace.com/src/css/less/pages/home.less */
+/* line 188, assets/containers.rackspace.com/src/css/less/pages/home.less */
 body.home .home-section.resources .summary h2 {
   font-family: 'lato-light', arial, sans-serif;
   font-style: normal;
@@ -784,7 +786,7 @@ body.home .home-section.resources .summary h2 {
   font-size: 128.57142857%;
   text-transform: uppercase;
 }
-/* line 192, assets/containers.rackspace.com/src/css/less/pages/home.less */
+/* line 194, assets/containers.rackspace.com/src/css/less/pages/home.less */
 body.home .home-section.resources .resource {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -795,18 +797,19 @@ body.home .home-section.resources .resource {
   width: calc( 33.33333333%  -  50px );
   text-align: left;
 }
-/* line 197, assets/containers.rackspace.com/src/css/less/pages/home.less */
+/* line 199, assets/containers.rackspace.com/src/css/less/pages/home.less */
 body.home .home-section.resources .resource .image {
   background: #e0e0e0;
   margin-bottom: 10px;
-  padding: 40px 0;
+  padding: 20px 0;
 }
-/* line 202, assets/containers.rackspace.com/src/css/less/pages/home.less */
+/* line 204, assets/containers.rackspace.com/src/css/less/pages/home.less */
 body.home .home-section.resources .resource .image img {
   display: block;
   margin: 0 auto;
+  max-width: 150px;
 }
-/* line 208, assets/containers.rackspace.com/src/css/less/pages/home.less */
+/* line 211, assets/containers.rackspace.com/src/css/less/pages/home.less */
 body.home .home-section.resources .resource h3 {
   font-family: 'lato-light', arial, sans-serif;
   font-style: normal;
@@ -814,7 +817,7 @@ body.home .home-section.resources .resource h3 {
   font-size: 128.57142857%;
   margin-bottom: 20px;
 }
-/* line 214, assets/containers.rackspace.com/src/css/less/pages/home.less */
+/* line 217, assets/containers.rackspace.com/src/css/less/pages/home.less */
 body.home .home-section.resources .resources-button {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -824,7 +827,7 @@ body.home .home-section.resources .resources-button {
   vertical-align: top;
   width: calc( 100%  -  50px );
 }
-/* line 217, assets/containers.rackspace.com/src/css/less/pages/home.less */
+/* line 220, assets/containers.rackspace.com/src/css/less/pages/home.less */
 body.home .home-section.resources .resources-button a {
   border-radius: 1px;
   display: inline-block;
@@ -841,12 +844,12 @@ body.home .home-section.resources .resources-button a {
 body.home .home-section.resources .resources-button a:hover {
   background: #0b95ad;
 }
-/* line 223, assets/containers.rackspace.com/src/css/less/pages/home.less */
+/* line 226, assets/containers.rackspace.com/src/css/less/pages/home.less */
 body.home .home-section.sign-up {
   background: #f0f5fc;
   text-align: center;
 }
-/* line 227, assets/containers.rackspace.com/src/css/less/pages/home.less */
+/* line 230, assets/containers.rackspace.com/src/css/less/pages/home.less */
 body.home .home-section.sign-up .heading,
 body.home .home-section.sign-up .form,
 body.home .home-section.sign-up .more-info {
@@ -858,12 +861,12 @@ body.home .home-section.sign-up .more-info {
   vertical-align: top;
   width: calc( 100%  -  50px );
 }
-/* line 231, assets/containers.rackspace.com/src/css/less/pages/home.less */
+/* line 234, assets/containers.rackspace.com/src/css/less/pages/home.less */
 body.home .home-section.sign-up .heading,
 body.home .home-section.sign-up .form {
   margin-bottom: 30px;
 }
-/* line 235, assets/containers.rackspace.com/src/css/less/pages/home.less */
+/* line 238, assets/containers.rackspace.com/src/css/less/pages/home.less */
 body.home .home-section.sign-up .form {
   display: block;
   width: calc(100% +  18px );
@@ -873,7 +876,7 @@ body.home .home-section.sign-up .form {
   margin: 0 auto 30px auto;
   max-width: 800px;
 }
-/* line 240, assets/containers.rackspace.com/src/css/less/pages/home.less */
+/* line 243, assets/containers.rackspace.com/src/css/less/pages/home.less */
 body.home .home-section.sign-up .form .username,
 body.home .home-section.sign-up .form .password {
   box-sizing: border-box;
@@ -884,7 +887,7 @@ body.home .home-section.sign-up .form .password {
   vertical-align: top;
   width: calc( 40%  -  18px );
 }
-/* line 244, assets/containers.rackspace.com/src/css/less/pages/home.less */
+/* line 247, assets/containers.rackspace.com/src/css/less/pages/home.less */
 body.home .home-section.sign-up .form .submit {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -894,20 +897,20 @@ body.home .home-section.sign-up .form .submit {
   vertical-align: top;
   width: calc( 20%  -  18px );
 }
-/* line 248, assets/containers.rackspace.com/src/css/less/pages/home.less */
+/* line 251, assets/containers.rackspace.com/src/css/less/pages/home.less */
 body.home .home-section.sign-up .form input[type="email"],
 body.home .home-section.sign-up .form input[type="password"],
 body.home .home-section.sign-up .form button[type="submit"] {
   width: 100%;
 }
-/* line 253, assets/containers.rackspace.com/src/css/less/pages/home.less */
+/* line 256, assets/containers.rackspace.com/src/css/less/pages/home.less */
 body.home .home-section.sign-up .more-info {
   font-family: 'lato-light', arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
 }
-/* line 260, assets/containers.rackspace.com/src/css/less/pages/home.less */
+/* line 263, assets/containers.rackspace.com/src/css/less/pages/home.less */
 body.home .home-section.news .blog,
 body.home .home-section.news .product {
   box-sizing: border-box;
@@ -918,34 +921,34 @@ body.home .home-section.news .product {
   vertical-align: top;
   width: calc( 50%  -  50px );
 }
-/* line 263, assets/containers.rackspace.com/src/css/less/pages/home.less */
+/* line 266, assets/containers.rackspace.com/src/css/less/pages/home.less */
 body.home .home-section.news .blog h2,
 body.home .home-section.news .product h2 {
   border-bottom: solid 1px #e6e6e6;
   font-size: 171.42857143%;
 }
-/* line 268, assets/containers.rackspace.com/src/css/less/pages/home.less */
+/* line 271, assets/containers.rackspace.com/src/css/less/pages/home.less */
 body.home .home-section.news .blog h3,
 body.home .home-section.news .product h3 {
   font-size: 128.57142857%;
 }
-/* line 272, assets/containers.rackspace.com/src/css/less/pages/home.less */
+/* line 275, assets/containers.rackspace.com/src/css/less/pages/home.less */
 body.home .home-section.news .blog .news-list,
 body.home .home-section.news .product .news-list {
   margin: 0;
   padding: 0;
 }
-/* line 276, assets/containers.rackspace.com/src/css/less/pages/home.less */
+/* line 279, assets/containers.rackspace.com/src/css/less/pages/home.less */
 body.home .home-section.news .blog .news-list .news-item,
 body.home .home-section.news .product .news-list .news-item {
   list-style-type: none;
 }
-/* line 279, assets/containers.rackspace.com/src/css/less/pages/home.less */
+/* line 282, assets/containers.rackspace.com/src/css/less/pages/home.less */
 body.home .home-section.news .blog .news-list .news-item + .news-item,
 body.home .home-section.news .product .news-list .news-item + .news-item {
   margin-top: 40px;
 }
-/* line 283, assets/containers.rackspace.com/src/css/less/pages/home.less */
+/* line 286, assets/containers.rackspace.com/src/css/less/pages/home.less */
 body.home .home-section.news .blog .news-list .news-item .detail,
 body.home .home-section.news .product .news-list .news-item .detail {
   font-family: 'lato-regular-italic', arial, sans-serif;
@@ -954,91 +957,91 @@ body.home .home-section.news .product .news-list .news-item .detail {
   color: #666666;
 }
 @keyframes chunk-5 {
-  /* line 294, assets/containers.rackspace.com/src/css/less/pages/home.less */
+  /* line 297, assets/containers.rackspace.com/src/css/less/pages/home.less */
   0% {
     transform: translate3d(0%, 0%, 0);
   }
-  /* line 298, assets/containers.rackspace.com/src/css/less/pages/home.less */
+  /* line 301, assets/containers.rackspace.com/src/css/less/pages/home.less */
   40% {
     transform: translate3d(-82%, -51%, 0);
   }
-  /* line 302, assets/containers.rackspace.com/src/css/less/pages/home.less */
+  /* line 305, assets/containers.rackspace.com/src/css/less/pages/home.less */
   60% {
     transform: translate3d(-82%, -51%, 0);
   }
-  /* line 306, assets/containers.rackspace.com/src/css/less/pages/home.less */
+  /* line 309, assets/containers.rackspace.com/src/css/less/pages/home.less */
   100% {
     transform: translate3d(0%, 0%, 0);
   }
 }
 @keyframes chunk-6 {
-  /* line 312, assets/containers.rackspace.com/src/css/less/pages/home.less */
+  /* line 315, assets/containers.rackspace.com/src/css/less/pages/home.less */
   0% {
     transform: translate3d(0%, 0%, 0);
   }
-  /* line 316, assets/containers.rackspace.com/src/css/less/pages/home.less */
+  /* line 319, assets/containers.rackspace.com/src/css/less/pages/home.less */
   40% {
     transform: translate3d(181%, -156%, 0);
   }
-  /* line 320, assets/containers.rackspace.com/src/css/less/pages/home.less */
+  /* line 323, assets/containers.rackspace.com/src/css/less/pages/home.less */
   60% {
     transform: translate3d(181%, -156%, 0);
   }
-  /* line 324, assets/containers.rackspace.com/src/css/less/pages/home.less */
+  /* line 327, assets/containers.rackspace.com/src/css/less/pages/home.less */
   100% {
     transform: translate3d(0%, 0%, 0);
   }
 }
 @keyframes chunk-7 {
-  /* line 330, assets/containers.rackspace.com/src/css/less/pages/home.less */
+  /* line 333, assets/containers.rackspace.com/src/css/less/pages/home.less */
   0% {
     transform: translate3d(0%, 0%, 0);
   }
-  /* line 334, assets/containers.rackspace.com/src/css/less/pages/home.less */
+  /* line 337, assets/containers.rackspace.com/src/css/less/pages/home.less */
   40% {
     transform: translate3d(14%, -12%, 0);
   }
-  /* line 338, assets/containers.rackspace.com/src/css/less/pages/home.less */
+  /* line 341, assets/containers.rackspace.com/src/css/less/pages/home.less */
   60% {
     transform: translate3d(14%, -12%, 0);
   }
-  /* line 342, assets/containers.rackspace.com/src/css/less/pages/home.less */
+  /* line 345, assets/containers.rackspace.com/src/css/less/pages/home.less */
   100% {
     transform: translate3d(0%, 0%, 0);
   }
 }
 @keyframes chunk-8 {
-  /* line 348, assets/containers.rackspace.com/src/css/less/pages/home.less */
+  /* line 351, assets/containers.rackspace.com/src/css/less/pages/home.less */
   0% {
     transform: translate3d(0%, 0%, 0);
   }
-  /* line 352, assets/containers.rackspace.com/src/css/less/pages/home.less */
+  /* line 355, assets/containers.rackspace.com/src/css/less/pages/home.less */
   40% {
     transform: translate3d(83%, -72%, 0);
   }
-  /* line 356, assets/containers.rackspace.com/src/css/less/pages/home.less */
+  /* line 359, assets/containers.rackspace.com/src/css/less/pages/home.less */
   60% {
     transform: translate3d(83%, -72%, 0);
   }
-  /* line 360, assets/containers.rackspace.com/src/css/less/pages/home.less */
+  /* line 363, assets/containers.rackspace.com/src/css/less/pages/home.less */
   100% {
     transform: translate3d(0%, 0%, 0);
   }
 }
 @keyframes chunk-10 {
-  /* line 366, assets/containers.rackspace.com/src/css/less/pages/home.less */
+  /* line 369, assets/containers.rackspace.com/src/css/less/pages/home.less */
   0% {
     transform: translate3d(0%, 0%, 0);
   }
-  /* line 370, assets/containers.rackspace.com/src/css/less/pages/home.less */
+  /* line 373, assets/containers.rackspace.com/src/css/less/pages/home.less */
   40% {
     transform: translate3d(0%, 25%, 0);
   }
-  /* line 374, assets/containers.rackspace.com/src/css/less/pages/home.less */
+  /* line 377, assets/containers.rackspace.com/src/css/less/pages/home.less */
   60% {
     transform: translate3d(0%, 25%, 0);
   }
-  /* line 378, assets/containers.rackspace.com/src/css/less/pages/home.less */
+  /* line 381, assets/containers.rackspace.com/src/css/less/pages/home.less */
   100% {
     transform: translate3d(0%, 0%, 0);
   }
