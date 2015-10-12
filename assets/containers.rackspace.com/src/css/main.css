@@ -1046,3 +1046,68 @@ body.home .home-section.news .product .news-list .news-item .detail {
     transform: translate3d(0%, 0%, 0);
   }
 }
+/* line 2, assets/containers.rackspace.com/src/css/less/pages/docs-home.less */
+body.docs-home .docs-section {
+  padding: 40px 0;
+}
+/* line 5, assets/containers.rackspace.com/src/css/less/pages/docs-home.less */
+body.docs-home .docs-section .section-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 980px;
+  width: 90%;
+}
+/* line 8, assets/containers.rackspace.com/src/css/less/pages/docs-home.less */
+body.docs-home .docs-section .section-grid {
+  display: block;
+  width: calc(100% +  50px );
+  margin-left: -50px;
+  overflow: hidden;
+  vertical-align: top;
+}
+/* line 14, assets/containers.rackspace.com/src/css/less/pages/docs-home.less */
+body.docs-home .docs-section.hero .background {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  display: inline-block;
+  margin-right: -0.26rem;
+  margin-left: 50px;
+  vertical-align: top;
+  width: calc( 100%  -  50px );
+  position: absolute;
+  width: 980px;
+  height: auto;
+  max-width: 100%;
+}
+/* line 22, assets/containers.rackspace.com/src/css/less/pages/docs-home.less */
+body.docs-home .docs-section.hero .text {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  display: inline-block;
+  margin-right: -0.26rem;
+  margin-left: 50px;
+  vertical-align: top;
+  width: calc( 100%  -  50px );
+  height: 380px;
+  padding-top: 75px;
+}
+/* line 29, assets/containers.rackspace.com/src/css/less/pages/docs-home.less */
+body.docs-home .docs-section.featured-articles {
+  background: #f0f5fc;
+}
+/* line 32, assets/containers.rackspace.com/src/css/less/pages/docs-home.less */
+body.docs-home .docs-section.featured-articles .intro {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  display: inline-block;
+  margin-right: -0.26rem;
+  margin-left: 50px;
+  vertical-align: top;
+  width: calc( 100%  -  50px );
+  text-align: center;
+}
+/* line 36, assets/containers.rackspace.com/src/css/less/pages/docs-home.less */
+body.docs-home .docs-section.featured-articles .intro h2 {
+  font-size: 128.57142857%;
+  text-transform: uppercase;
+}

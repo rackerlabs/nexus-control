@@ -39,7 +39,8 @@
     },
     "containers.rackspace.com": {
       "routes": {
-        "^/": "default.html"
+        "^/": "default.html",
+        "^/docs": "docs-home.html"
       }
     }
 }

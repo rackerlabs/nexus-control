@@ -1,0 +1,20 @@
+{% extends "_layouts/base.html" %}
+
+{% block bodyClass %}docs-home{% endblock %}
+{% block bodyContent %}
+  <section class="docs-section hero">
+    <div class="section-container">
+      <div class="section-grid">
+        <div class="background">
+          {% include "_partials/docs-hero.svg" %}
+        </div>
+        <div class="text">
+          <h1 class="headline">Containers Help Center</h1>
+          <p class="tagline">Lorem ipsum dolor sit amet, consectetur adipisicing elit in quae repellendus.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {{ deconst.content.envelope.body }}
+{% endblock %}

@@ -1,0 +1,42 @@
+body.docs-home {
+  .docs-section {
+    padding: 40px 0;
+    
+    .section-container {
+      .centered-container(980px);
+    }
+    .section-grid {
+      .grid(50px);
+    }
+  }
+
+  .docs-section.hero {
+    .background {
+      .grid-unit(1/1, 50px);
+      position: absolute;
+      width: 980px;
+      height: auto;
+      max-width: 100%;
+    }
+
+    .text {
+      .grid-unit(1/1, 50px);
+      height: 380px;
+      padding-top: 75px;
+    }
+  }
+
+  .docs-section.featured-articles {
+    background: #f0f5fc;
+
+    .intro {
+      .grid-unit(1/1, 50px);
+      text-align: center;
+
+      h2 {
+        font-size: percentage((18/14));
+        text-transform: uppercase;
+      }
+    }
+  }
+}
