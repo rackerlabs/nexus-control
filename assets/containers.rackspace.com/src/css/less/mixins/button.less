@@ -12,22 +12,32 @@
     }
 
     & when (@style = 'blue') {
-        background: @rax-blue;
-        border: solid 1px shade(@rax-blue, 10%);
+        background: @theme-blue;
+        border: solid 1px shade(@theme-blue, 10%);
         color: white;
 
         &:hover {
-            background: shade(@rax-blue, 15%);
+            background: shade(@theme-blue, 15%);
+        }
+    }
+
+    & when (@style = 'teal') {
+        background: @theme-teal;
+        border: solid 1px shade(@theme-teal, 10%);
+        color: white;
+
+        &:hover {
+            background: shade(@theme-teal, 15%);
         }
     }
 
     & when (@style = 'green') {
-        background: @rax-green;
-        border: solid 1px shade(@rax-green, 10%);
+        background: @theme-green;
+        border: solid 1px shade(@theme-green, 10%);
         color: white;
 
         &:hover {
-            background: shade(@rax-green, 15%);
+            background: shade(@theme-green, 15%);
         }
     }
 
