@@ -1,0 +1,23 @@
+h1, h2, h3, h4, h5, h6 {
+  .accent {
+    display: inline-block;
+
+    &.red {
+      border-bottom: solid 2px @theme-red;
+    }
+
+    &.yellow {
+      border-bottom: solid 2px @theme-yellow;
+    }
+
+    &.blue {
+      border-bottom: solid 2px @theme-blue;
+    }
+  }
+}
+
+h2 {
+  .accent {
+    line-height: 40px;
+  }
+}

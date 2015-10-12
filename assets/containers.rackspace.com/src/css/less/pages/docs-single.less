@@ -1,0 +1,45 @@
+body.docs-single {
+  .docs-section {
+    .page-section();
+
+    h2 {
+      margin-bottom: 0.6em;
+    }
+  }
+
+  .docs-section.hero {
+    .background {
+      .grid-unit(1/1, 50px);
+      position: absolute;
+      width: 980px;
+      height: auto;
+      max-width: 100%;
+    }
+
+    .text {
+      .grid-unit(1/1, 50px);
+      height: 380px;
+      padding-top: 75px;
+      text-align: center;
+
+      h1 {
+        font-size: percentage((48/14));
+        line-height: 1.61;
+
+        & > span {
+          background: fadeout(white, 10%);
+          line-height: 1;
+          padding: 0.2em;
+        }
+      }
+    }
+  }
+
+  .docs-section.article {
+    .section-container {
+      .centered-container(800px);
+    }
+
+    font-size: percentage((16/14));
+  }
+}
