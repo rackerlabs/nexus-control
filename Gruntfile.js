@@ -24,6 +24,15 @@ module.exports = function(grunt) {
                         dest: 'assets/dist/'
                     },
                     {
+                        cwd: 'assets/containers.rackspace.com/src',
+                        expand: true,
+                        src: [
+                          'img/**/*',
+                          'fonts/**/*',
+                        ],
+                        dest: 'assets/containers.rackspace.com/dist/'
+                    },
+                    {
                       cwd: 'assets/bower_components/fontawesome',
                       expand: true,
                       src: [
@@ -45,15 +54,14 @@ module.exports = function(grunt) {
         cssmin: {
             build: {
                 files: {
-                    'assets/dist/css/main.css': 'assets/src/css/main.css'
+                    'assets/dist/css/main.css': 'assets/src/css/main.css',
+                    'assets/containers.rackspace.com/dist/css/main.css': 'assets/containers.rackspace.com/src/css/main.css'
                 }
             }
         },
         deconst_assets: {
             assets: {
                 options: {
-                    contentServiceUrl: 'http://docker:9000/',
-                    contentServiceKey: 'horse',
                     files: ['assets/dist/**/*'],
                     output: [
                         {
@@ -63,23 +71,43 @@ module.exports = function(grunt) {
                     ]
                 }
             },
+            containers_assets: {
+                options: {
+                    files: ['assets/containers.rackspace.com/dist/**/*'],
+                    output: [
+                        {
+                            dest: 'assets/containers.rackspace.com/src/css/less/deconst-variables.less',
+                            format: 'less'
+                        }
+                    ]
+                }
+            },
             css_js: {
                 options: {
                     files: ['assets/dist/css/main.css', 'assets/dist/js/main.min.js']
+                }
+            },
+            containers_css_js: {
+                options: {
+                    files: ['assets/containers.rackspace.com/dist/css/main.css', 'assets/containers.rackspace.com/dist/js/main.min.js']
                 }
             }
         },
         empty: {
             less_vars: {
                 options: {
-                    files: ['assets/src/css/less/deconst-variables.less']
+                    files: [
+                      'assets/src/css/less/deconst-variables.less',
+                      'assets/containers.rackspace.com/src/css/less/deconst-variables.less'
+                    ]
                 }
             }
         },
         less: {
             dev: {
                 files: {
-                    'assets/src/css/main.css': ['assets/src/css/less/main.less']
+                    'assets/src/css/main.css': ['assets/src/css/less/main.less'],
+                    'assets/containers.rackspace.com/src/css/main.css': ['assets/containers.rackspace.com/src/css/less/main.less']
                 },
                 options: {
                     dumpLineNumbers: 'comments',
@@ -89,7 +117,8 @@ module.exports = function(grunt) {
             },
             build: {
                 files: {
-                    'assets/dist/css/main.css': ['assets/src/css/less/main.less']
+                    'assets/dist/css/main.css': ['assets/src/css/less/main.less'],
+                    'assets/containers.rackspace.com/dist/css/main.css': ['assets/containers.rackspace.com/src/css/less/main.less']
                 },
                 options: {
                     paths: ['assets/bower_components'],
@@ -108,7 +137,7 @@ module.exports = function(grunt) {
         },
         watch: {
             less: {
-                files: ['assets/src/css/less/**/*.less'],
+                files: ['assets/**/src/css/less/**/*.less'],
                 tasks: ['less:dev']
             },
             js: {
@@ -164,11 +193,13 @@ module.exports = function(grunt) {
         'empty:less_vars',
         'copy:build',
         'deconst_assets:assets',
+        'deconst_assets:containers_assets',
         'less:dev',
         'cssmin:build',
         'browserify:dev',
         'uglify:build',
-        'deconst_assets:css_js'
+        'deconst_assets:css_js',
+        'deconst_assets:containers_css_js'
     ]);
 
     grunt.registerTask('default', ['build']);

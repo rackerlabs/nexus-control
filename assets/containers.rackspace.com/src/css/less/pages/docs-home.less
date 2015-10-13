@@ -1,0 +1,159 @@
+body.docs-home {
+  .docs-section {
+    .page-section();
+
+    h2 {
+      margin-bottom: 0.6em;
+    }
+  }
+
+  .docs-section.hero {
+    .background {
+      .grid-unit(1/1, 50px);
+      position: absolute;
+      width: 980px;
+      height: auto;
+      max-width: 100%;
+    }
+
+    .text {
+      .grid-unit(1/1, 50px);
+      height: 380px;
+      padding-top: 75px;
+    }
+  }
+
+  .docs-section.featured-articles {
+    background: #f0f5fc;
+
+    .intro {
+      .grid-unit(1/1, 50px);
+      text-align: center;
+
+      h2 {
+        .h4();
+        text-transform: uppercase;
+      }
+    }
+
+    .featured-sets {
+      .set {
+        .grid-unit(1/3, 50px);
+
+        .image {
+          background: shade(white, 12%);
+          margin-bottom: 10px;
+          padding: 20px 0;
+
+          img {
+            display: block;
+            margin: 0 auto;
+            max-width: 150px;
+          }
+        }
+
+        h3 {
+          .h4();
+          margin-bottom: 5px;
+        }
+
+        ul {
+          margin: 0;
+          padding: 0;
+
+          li {
+            list-style-type: none;
+
+            & + li {
+              margin-top: 15px;
+            }
+
+            h4 {
+              font-size: percentage((14/14));
+            }
+
+            a {
+
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .docs-section.all-articles {
+    .page-section();
+
+    .heading, .tools, .articles {
+      .grid-unit(1/1, 50px);
+    }
+
+    .heading {
+      text-align: center;
+
+      h2 {
+        .h4();
+        text-transform: uppercase;
+      }
+    }
+
+    .tools {
+      border-bottom: solid 1px shade(white, 15%);
+      padding-bottom: 10px;
+
+      ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+          display: inline-block;
+          list-style-type: none;
+
+          & + li {
+            margin-left: 20px;
+          }
+
+          a {
+            .lato('light');
+            color: @text-color;
+            font-size: percentage((18/14));
+          }
+        }
+      }
+    }
+
+    .articles {
+      ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+          list-style-type: none;
+          margin: 0;
+          padding: 20px 0 0 0;
+
+          & + li {
+            border-top: solid 1px shade(white, 15%);
+          }
+
+          h3 {
+            font-size: percentage((18/14));
+            line-height: 1;
+            margin-bottom: 5px;
+          }
+
+          .excerpt {
+            margin-bottom: 10px;
+          }
+
+          .details {
+            .lato('regular', 'italic');
+            color: tint(@text-color, 25%);
+            margin-bottom: 5px;
+          }
+        }
+      }
+    }
+  }
+}

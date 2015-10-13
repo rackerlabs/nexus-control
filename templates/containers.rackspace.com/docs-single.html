@@ -1,0 +1,30 @@
+{% extends "_layouts/base.html" %}
+
+{% block bodyClass %}docs-single{% endblock %}
+{% block bodyContent %}
+  <section class="docs-section hero">
+    <div class="section-container">
+      <div class="section-grid">
+        <div class="background">
+          {% include "_partials/docs-hero.svg" %}
+        </div>
+        <div class="text">
+          <h1 class="article-title"><span>{{ deconst.content.envelope.title }}</span></h1>
+          <div class="attribution">
+            <span class="author">{{ deconst.content.envelope.meta.author }}</span>
+            <span class="date">{{ deconst.content.envelope.meta.date }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="docs-section article">
+    <div class="section-container">
+      <div class="section-grid">
+        <article>
+          {{ deconst.content.envelope.body }}
+        </article>
+      </div>
+    </div>
+  </section>
+{% endblock %}

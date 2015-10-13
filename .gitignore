@@ -1,6 +1,9 @@
 node_modules
 assets/src/css/less/deconst-variables.less
+assets/containers.rackspace.com/src/css/less/deconst-variables.less
 assets/src/css/main.css
+assets/containers.rackspace.com/src/css/main.css
 assets/src/js/bundle.js
 assets/dist
+assets/containers.rackspace.com/dist
 build

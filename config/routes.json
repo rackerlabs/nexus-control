@@ -36,5 +36,12 @@
             "^/sdks/.+?": "sdks-page.html",
             "\\.xml$": "feed.xml"
         }
+    },
+    "containers.rackspace.com": {
+      "routes": {
+        "^/": "default.html",
+        "^/docs": "docs-home.html",
+        "^/docs/.+?/.+?": "docs-single.html"
+      }
     }
 }
