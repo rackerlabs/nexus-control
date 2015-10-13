@@ -37,7 +37,7 @@
             "\\.xml$": "feed.xml"
         }
     },
-    "containers.rackspace.com": {
+    "boatboat.deconst.horse": {
       "routes": {
         "^/": "default.html",
         "^/docs": "docs-home.html",
