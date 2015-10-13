@@ -18,7 +18,7 @@
         {% if deconst.env.PRESENTER_DEVMODE == 'true' %}
             {% set cssUrl = '/assets/containers.rackspace.com/src/css/main.css' %}
         {% else %}
-            {% set cssUrl = deconst.assets.assets_dist_css_main_css %}
+            {% set cssUrl = deconst.assets.assets_containers_rackspace_com_dist_css_main_css %}
         {% endif %}
         <link rel="stylesheet" href="{{ cssUrl }}">
 
@@ -26,6 +26,6 @@
     {% endblock %}
 </head>
 <body class="{% block bodyClass %}{% endblock %}">
-    {% block body %}{% endblock %}
+  {% block body %}{% endblock %}
 </body>
 </html>

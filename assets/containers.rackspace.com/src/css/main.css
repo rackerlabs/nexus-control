@@ -1679,11 +1679,22 @@ body.docs-single .docs-section.hero .text h1 > span {
   line-height: 1;
   padding: 0.2em;
 }
-/* line 38, assets/containers.rackspace.com/src/css/less/pages/docs-single.less */
+/* line 36, assets/containers.rackspace.com/src/css/less/pages/docs-single.less */
+body.docs-single .docs-section.hero .text .attribution {
+  font-family: 'lato-regular-italic', arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+}
+/* line 39, assets/containers.rackspace.com/src/css/less/pages/docs-single.less */
+body.docs-single .docs-section.hero .text .attribution > span {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2px;
+}
+/* line 47, assets/containers.rackspace.com/src/css/less/pages/docs-single.less */
 body.docs-single .docs-section.article {
   font-size: 114.28571429%;
 }
-/* line 39, assets/containers.rackspace.com/src/css/less/pages/docs-single.less */
+/* line 48, assets/containers.rackspace.com/src/css/less/pages/docs-single.less */
 body.docs-single .docs-section.article .section-container {
   margin-left: auto;
   margin-right: auto;
