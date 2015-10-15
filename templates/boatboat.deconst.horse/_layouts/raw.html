@@ -4,16 +4,16 @@
     {% block head %}
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>{% block metaTitle %}Rackspace Developer Center{% endblock %}</title>
-        <meta name="description" content="{% block metaDescription %}The Rackspace Developer Center gives developers tools and resources to build powerful, scalable apps on the only cloud backed by Fanatical Support®{% endblock %}">
-        <meta name="og:title" content="{% block ogTitle %}Rackspace Developer Center{% endblock %}">
-        <meta name="og:description" content="{% block ogDescription %}The Rackspace Developer Center gives developers tools and resources to build powerful, scalable apps on the only cloud backed by Fanatical Support®{% endblock %}">
+        <title>{% block metaTitle %}Carina, by Rackspace{% endblock %}</title>
+        <meta name="description" content="{% block metaDescription %}Carina by Rackspace® - A high performance, instant-on &amp; portable container environment for developers.{% endblock %}">
+        <meta name="og:title" content="{% block ogTitle %}Carina by Rackspace®{% endblock %}">
+        <meta name="og:description" content="{% block ogDescription %}Carina by Rackspace® - A high performance, instant-on &amp; portable container environment for developers.{% endblock %}">
         <meta name="og:image" content="{% block ogImage %}{{ deconst.assets.assets_dist_img_default_og_image_jpg }}{% endblock %}">
         <meta name="og:type" content="site">
         <meta name="twitter:title" content="{% block twitterTitle %}Rackspace Developer Center{% endblock %}">
-        <meta name="twitter:description" content="{% block twitterDescription %}The Rackspace Developer Center gives developers tools and resources to build powerful, scalable apps on the only cloud backed by Fanatical Support®{% endblock %}">
-        <meta name="twitter:creator" content="{% block twitterCreator %}@rackspace{% endblock %}">
-        <meta name="twitter:site" content="@rackspace">
+        <meta name="twitter:description" content="{% block twitterDescription %}Carina by Rackspace® - A high performance, instant-on &amp; portable container environment for developers.{% endblock %}">
+        <meta name="twitter:creator" content="{% block twitterCreator %}@getcarina{% endblock %}">
+        <meta name="twitter:site" content="@getcarina">
 
         {% if deconst.env.PRESENTER_DEVMODE == 'true' %}
             {% set cssUrl = '/assets/containers.rackspace.com/src/css/main.css' %}
