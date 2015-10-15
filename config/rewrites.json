@@ -40,7 +40,7 @@
         },
         {
             "from": "^\\/docs\\/cloud-cdn\\/v1\\/developer-guide\\/?(.*)$",
-            "to": "/docs/cdn/$1",
+            "to": "/docs/cdn/v1/developer-guide/$1",
             "rewrite": false,
             "status": 301
         },
