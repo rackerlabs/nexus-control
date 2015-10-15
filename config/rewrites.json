@@ -55,6 +55,6 @@
             "to": "/docs/metrics/v1/developer-guide/$1",
             "rewrite": false,
             "status": 301
-        },
+        }
     ]
 }
