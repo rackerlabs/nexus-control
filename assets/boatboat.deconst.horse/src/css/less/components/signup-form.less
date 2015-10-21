@@ -1,0 +1,67 @@
+.control {
+  & + .control {
+    margin-top: 14px;
+  }
+
+  &.error {
+    input[type="email"],
+    input[type="password"] {
+      border: solid 1px @theme-red;
+      color: shade(@theme-red, 20%);
+
+      &:focus {
+        color: @text-color;
+      }
+    }
+
+    .control-validation {
+      color: shade(@theme-red, 20%);
+      margin-top: 7px;
+    }
+  }
+}
+
+input[type="email"],
+input[type="password"] {
+  .lato();
+  background: white;
+  border: solid 1px @text-color;
+  display: block;
+  font-size: 14px;
+  padding: 0.9em 1em;
+  .transition(border 0.1s ease-in-out);
+  width: 280px;
+
+  &:focus {
+    outline: none;
+    border: solid 1px @theme-teal;
+  }
+}
+
+button[type="submit"] {
+  .lato();
+  .button();
+  background: #8ad284;
+  border: solid 1px shade(#8ad284, 5%);
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 0.9em 1em;
+  .transition(~"background 0.1s ease-in-out, border 0.1s ease-in-out");
+
+  &:hover, &:focus {
+    outline: none;
+    background: shade(#8ad284, 5%);
+    border: solid 1px shade(#8ad284, 25%);
+  }
+
+  &[disabled] {
+    background: tint(#8ad284, 35%);
+    border: solid 1px tint(#8ad284, 35%);
+
+    &:hover, &:focus {
+      background: tint(#8ad284, 35%);
+      border: solid 1px tint(#8ad284, 35%);
+    }
+  }
+}
