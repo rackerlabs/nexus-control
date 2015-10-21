@@ -42,7 +42,8 @@
         "^/": "default.html",
         "^/docs": "docs-home.html",
         "^/docs/.+?/.+?": "docs-single.html",
-        "\\.txt$": "robots.txt"
+        "\\.txt$": "robots.txt",
+        "^/$": "robots.txt"
       }
     }
 }
