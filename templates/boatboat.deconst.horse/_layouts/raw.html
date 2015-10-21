@@ -16,7 +16,7 @@
         <meta name="twitter:site" content="@getcarina">
 
         {% if deconst.env.PRESENTER_DEVMODE == 'true' %}
-            {% set cssUrl = '/assets/containers.rackspace.com/src/css/main.css' %}
+            {% set cssUrl = '/assets/boatboat.deconst.horse/src/css/main.css' %}
         {% else %}
             {% set cssUrl = deconst.assets.assets_boatboat_deconst_horse_dist_css_main_css %}
         {% endif %}
@@ -28,5 +28,13 @@
 <body class="{% block bodyClass %}{% endblock %}">
   {% block body %}{% endblock %}
   {% include "_includes/ga.html" %}
+  {% block footScripts %}
+    {% if deconst.env.PRESENTER_DEVMODE == 'true' %}
+        {% set jsUrl = '/assets/boatboat.deconst.horse/src/js/bundle.js' %}
+    {% else %}
+        {% set jsUrl = deconst.assets.assets_boatboat_deconst_horse_dist_js_site_min_js %}
+    {% endif %}
+    <script src="{{ jsUrl }}"></script>
+  {% endblock %}
 </body>
 </html>

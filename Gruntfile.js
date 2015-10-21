@@ -9,6 +9,14 @@ module.exports = function(grunt) {
                 options: {
                     watch: true
                 }
+            },
+            carina: {
+                files: {
+                    'assets/boatboat.deconst.horse/src/js/bundle.js': ['assets/boatboat.deconst.horse/src/js/site.js']
+                },
+                options: {
+                    watch: true
+                }
             }
         },
         copy: {
@@ -71,7 +79,7 @@ module.exports = function(grunt) {
                     ]
                 }
             },
-            containers_assets: {
+            carina_assets: {
                 options: {
                     files: ['assets/boatboat.deconst.horse/dist/**/*'],
                     output: [
@@ -87,7 +95,7 @@ module.exports = function(grunt) {
                     files: ['assets/dist/css/main.css', 'assets/dist/js/main.min.js']
                 }
             },
-            containers_css_js: {
+            carina_css_js: {
                 options: {
                     files: ['assets/boatboat.deconst.horse/dist/css/main.css', 'assets/boatboat.deconst.horse/dist/js/main.min.js']
                 }
@@ -130,7 +138,10 @@ module.exports = function(grunt) {
             build: {
                 files: {
                     'assets/dist/js/main.min.js': [
-                        'assets/src/js/bundle.js'
+                      'assets/src/js/bundle.js'
+                    ],
+                    'assets/boatboat.deconst.horse/dist/js/site.min.js': [
+                      'assets/boatboat.deconst.horse/src/js/bundle.js'
                     ]
                 }
             }
@@ -143,6 +154,10 @@ module.exports = function(grunt) {
             js: {
                 files: ['assets/src/js/**/*.js', '!assets/src/js/bundle.js'],
                 tasks: ['browserify:dev']
+            },
+            carina_js: {
+              files: ['assets/boatboat.deconst.horse/src/js/**/*.js', '!assets/boatboat.deconst.horse/src/js/bundle.js'],
+              tasks: ['browserify:carina']
             },
             livereload: {
                 files: ['assets/src/css/main.css', 'assets/dist/js/main.js', 'templates/**/*.html'],
@@ -193,13 +208,14 @@ module.exports = function(grunt) {
         'empty:less_vars',
         'copy:build',
         'deconst_assets:assets',
-        'deconst_assets:containers_assets',
+        'deconst_assets:carina_assets',
         'less:dev',
         'cssmin:build',
         'browserify:dev',
+        'browserify:carina',
         'uglify:build',
         'deconst_assets:css_js',
-        'deconst_assets:containers_css_js'
+        'deconst_assets:carina_css_js'
     ]);
 
     grunt.registerTask('default', ['build']);
