@@ -41,7 +41,7 @@
       "routes": {
         "^/": "default.html",
         "^/docs": "docs-home.html",
-        "^/docs/.+?/.+?": "docs-single.html",
+        "^/docs/.+?": "docs-single.html",
         "\\.txt$": "robots.txt"
       }
     }
