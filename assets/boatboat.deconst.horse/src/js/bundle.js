@@ -1,4 +1,15 @@
-(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({"/Users/keit8924/Code/rackerlabs/nexus-control/assets/boatboat.deconst.horse/src/js/signup/signup-form.js":[function(require,module,exports){
+(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({"/Users/keit8924/Code/rackerlabs/nexus-control/assets/boatboat.deconst.horse/src/js/docs/docs-list.js":[function(require,module,exports){
+var angular = require('angular');
+
+var moduleName = 'carina.docs.docs-list';
+module.exports = moduleName;
+
+angular.module(moduleName, [])
+.controller('DocsListCtrl', [function () {
+  this.showCollection =  'tutorials';
+}]);
+
+},{"angular":"/Users/keit8924/Code/rackerlabs/nexus-control/node_modules/angular/index.js"}],"/Users/keit8924/Code/rackerlabs/nexus-control/assets/boatboat.deconst.horse/src/js/signup/signup-form.js":[function(require,module,exports){
 var angular = require('angular');
 
 var moduleName = 'carina.signup.signup-form';
@@ -53,12 +64,13 @@ window.$ = window.jQuery = $;
 var angular = require('angular');
 
 angular.module('carina', [
-  require('./signup/signup')
+  require('./signup/signup'),
+  require('./docs/docs-list')
 ]);
 
 angular.bootstrap(document, ['carina']);
 
-},{"./signup/signup":"/Users/keit8924/Code/rackerlabs/nexus-control/assets/boatboat.deconst.horse/src/js/signup/signup.js","angular":"/Users/keit8924/Code/rackerlabs/nexus-control/node_modules/angular/index.js","jquery":"/Users/keit8924/Code/rackerlabs/nexus-control/node_modules/jquery/dist/jquery.js"}],"/Users/keit8924/Code/rackerlabs/nexus-control/node_modules/angular/angular.js":[function(require,module,exports){
+},{"./docs/docs-list":"/Users/keit8924/Code/rackerlabs/nexus-control/assets/boatboat.deconst.horse/src/js/docs/docs-list.js","./signup/signup":"/Users/keit8924/Code/rackerlabs/nexus-control/assets/boatboat.deconst.horse/src/js/signup/signup.js","angular":"/Users/keit8924/Code/rackerlabs/nexus-control/node_modules/angular/index.js","jquery":"/Users/keit8924/Code/rackerlabs/nexus-control/node_modules/jquery/dist/jquery.js"}],"/Users/keit8924/Code/rackerlabs/nexus-control/node_modules/angular/angular.js":[function(require,module,exports){
 /**
  * @license AngularJS v1.4.4
  * (c) 2010-2015 Google, Inc. http://angularjs.org
