@@ -111,13 +111,25 @@ body.docs-home {
           list-style-type: none;
 
           & + li {
-            margin-left: 20px;
+            margin-left: 30px;
           }
 
           a {
             .lato('light');
             color: @text-color;
+            display: inline-block;
             font-size: percentage((18/14));
+            line-height: 2;
+
+            &:hover, &:focus {
+              color: darken(@link-color, 15%);
+              text-decoration: none;
+            }
+
+            &.active {
+              color: @link-color;
+              border-bottom: solid 2px @link-color;
+            }
           }
         }
       }
