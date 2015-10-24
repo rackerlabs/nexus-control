@@ -7,16 +7,22 @@
 
   .logo {
     display: inline-block;
-    height: 60px;
-    line-height: 60px;
+    height: 48px;
+    line-height: 48px;
     width: 130px;
 
 
     img {
       display: inline-block;
       height: auto;
+      margin: 0;
       vertical-align: middle;
       width: 100%;
+    }
+
+    @media (min-width: 550px) {
+      height: 60px;
+      line-height: 60px;
     }
   }
 
@@ -58,6 +64,18 @@
       background: @text-color;
       height: 30px;
       width: 1px;
+    }
+
+    .long {
+      @media (max-width: 479px) {
+        display: none;
+      }
+    }
+
+    .short {
+      @media (min-width: 480px) {
+        display: none;
+      }
     }
   }
 }

@@ -30,11 +30,15 @@ input[type="password"] {
   font-size: 14px;
   padding: 0.9em 1em;
   .transition(border 0.1s ease-in-out);
-  width: 280px;
+  width: 100%;
 
   &:focus {
     outline: none;
     border: solid 1px @theme-teal;
+  }
+
+  @media (min-width: 550px) {
+    max-width: 280px;
   }
 }
 
@@ -48,6 +52,7 @@ button[type="submit"] {
   font-size: 14px;
   padding: 0.9em 1em;
   .transition(~"background 0.1s ease-in-out, border 0.1s ease-in-out");
+  width: 100%;
 
   &:hover, &:focus {
     outline: none;
@@ -63,5 +68,9 @@ button[type="submit"] {
       background: tint(#8ad284, 35%);
       border: solid 1px tint(#8ad284, 35%);
     }
+  }
+
+  @media (min-width: 480px) {
+    width: auto;
   }
 }
