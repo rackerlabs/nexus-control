@@ -12,7 +12,7 @@ module.exports = function(grunt) {
             },
             carina: {
                 files: {
-                    'assets/boatboat.deconst.horse/src/js/bundle.js': ['assets/boatboat.deconst.horse/src/js/site.js']
+                    'assets/getcarina.com/src/js/bundle.js': ['assets/getcarina.com/src/js/site.js']
                 },
                 options: {
                     watch: true
@@ -32,13 +32,13 @@ module.exports = function(grunt) {
                         dest: 'assets/dist/'
                     },
                     {
-                        cwd: 'assets/boatboat.deconst.horse/src',
+                        cwd: 'assets/getcarina.com/src',
                         expand: true,
                         src: [
                           'img/**/*',
                           'fonts/**/*',
                         ],
-                        dest: 'assets/boatboat.deconst.horse/dist/'
+                        dest: 'assets/getcarina.com/dist/'
                     },
                     {
                       cwd: 'assets/bower_components/fontawesome',
@@ -63,7 +63,7 @@ module.exports = function(grunt) {
             build: {
                 files: {
                     'assets/dist/css/main.css': 'assets/src/css/main.css',
-                    'assets/boatboat.deconst.horse/dist/css/main.css': 'assets/boatboat.deconst.horse/src/css/main.css'
+                    'assets/getcarina.com/dist/css/main.css': 'assets/getcarina.com/src/css/main.css'
                 }
             }
         },
@@ -81,10 +81,10 @@ module.exports = function(grunt) {
             },
             carina_assets: {
                 options: {
-                    files: ['assets/boatboat.deconst.horse/dist/**/*'],
+                    files: ['assets/getcarina.com/dist/**/*'],
                     output: [
                         {
-                            dest: 'assets/boatboat.deconst.horse/src/css/less/deconst-variables.less',
+                            dest: 'assets/getcarina.com/src/css/less/deconst-variables.less',
                             format: 'less'
                         }
                     ]
@@ -97,7 +97,7 @@ module.exports = function(grunt) {
             },
             carina_css_js: {
                 options: {
-                    files: ['assets/boatboat.deconst.horse/dist/css/main.css', 'assets/boatboat.deconst.horse/dist/js/main.min.js']
+                    files: ['assets/getcarina.com/dist/css/main.css', 'assets/getcarina.com/dist/js/main.min.js']
                 }
             }
         },
@@ -106,7 +106,7 @@ module.exports = function(grunt) {
                 options: {
                     files: [
                       'assets/src/css/less/deconst-variables.less',
-                      'assets/boatboat.deconst.horse/src/css/less/deconst-variables.less'
+                      'assets/getcarina.com/src/css/less/deconst-variables.less'
                     ]
                 }
             }
@@ -115,7 +115,7 @@ module.exports = function(grunt) {
             dev: {
                 files: {
                     'assets/src/css/main.css': ['assets/src/css/less/main.less'],
-                    'assets/boatboat.deconst.horse/src/css/main.css': ['assets/boatboat.deconst.horse/src/css/less/main.less']
+                    'assets/getcarina.com/src/css/main.css': ['assets/getcarina.com/src/css/less/main.less']
                 },
                 options: {
                     dumpLineNumbers: 'comments',
@@ -126,7 +126,7 @@ module.exports = function(grunt) {
             build: {
                 files: {
                     'assets/dist/css/main.css': ['assets/src/css/less/main.less'],
-                    'assets/boatboat.deconst.horse/dist/css/main.css': ['assets/boatboat.deconst.horse/src/css/less/main.less']
+                    'assets/getcarina.com/dist/css/main.css': ['assets/getcarina.com/src/css/less/main.less']
                 },
                 options: {
                     paths: ['assets/bower_components'],
@@ -140,8 +140,8 @@ module.exports = function(grunt) {
                     'assets/dist/js/main.min.js': [
                       'assets/src/js/bundle.js'
                     ],
-                    'assets/boatboat.deconst.horse/dist/js/site.min.js': [
-                      'assets/boatboat.deconst.horse/src/js/bundle.js'
+                    'assets/getcarina.com/dist/js/site.min.js': [
+                      'assets/getcarina.com/src/js/bundle.js'
                     ]
                 }
             }
@@ -156,7 +156,7 @@ module.exports = function(grunt) {
                 tasks: ['browserify:dev']
             },
             carina_js: {
-              files: ['assets/boatboat.deconst.horse/src/js/**/*.js', '!assets/boatboat.deconst.horse/src/js/bundle.js'],
+              files: ['assets/getcarina.com/src/js/**/*.js', '!assets/getcarina.com/src/js/bundle.js'],
               tasks: ['browserify:carina']
             },
             livereload: {

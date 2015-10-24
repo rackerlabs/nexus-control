@@ -37,7 +37,7 @@
             "\\.xml$": "feed.xml"
         }
     },
-    "boatboat.deconst.horse": {
+    "getcarina.com": {
       "routes": {
         "^/": "default.html",
         "^/docs": "docs-home.html",
