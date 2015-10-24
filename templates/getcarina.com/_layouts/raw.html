@@ -16,9 +16,9 @@
         <meta name="twitter:site" content="@getcarina">
 
         {% if deconst.env.PRESENTER_DEVMODE == 'true' %}
-            {% set cssUrl = '/assets/boatboat.deconst.horse/src/css/main.css' %}
+            {% set cssUrl = '/assets/getcarina.com/src/css/main.css' %}
         {% else %}
-            {% set cssUrl = deconst.assets.assets_boatboat_deconst_horse_dist_css_main_css %}
+            {% set cssUrl = deconst.assets.assets_getcarina_com_dist_css_main_css %}
         {% endif %}
         <link rel="stylesheet" href="{{ cssUrl }}">
 
@@ -30,9 +30,9 @@
   {% include "_includes/ga.html" %}
   {% block footScripts %}
     {% if deconst.env.PRESENTER_DEVMODE == 'true' %}
-        {% set jsUrl = '/assets/boatboat.deconst.horse/src/js/bundle.js' %}
+        {% set jsUrl = '/assets/getcarina.com/src/js/bundle.js' %}
     {% else %}
-        {% set jsUrl = deconst.assets.assets_boatboat_deconst_horse_dist_js_site_min_js %}
+        {% set jsUrl = deconst.assets.assets_getcarina_com_dist_js_site_min_js %}
     {% endif %}
     <script src="{{ jsUrl }}"></script>
   {% endblock %}
