@@ -20,15 +20,22 @@
     padding: 0;
 
     li {
-      display: inline-block;
       font-size: 12px;
-      line-height: 14px;
+      line-height: 24px;
       list-style-type: none;
+    }
 
-      & + li {
-        border-left: solid 1px white;
-        margin-left: 5px;
-        padding-left: 8px;
+    @media (min-width: 640px) {
+      li {
+        display: inline-block;
+        line-height: 14px;
+        list-style-type: none;
+
+        & + li {
+          border-left: solid 1px white;
+          margin-left: 5px;
+          padding-left: 8px;
+        }
       }
     }
   }
