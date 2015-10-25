@@ -5,5 +5,5 @@ module.exports = moduleName;
 
 angular.module(moduleName, [])
 .controller('DocsListCtrl', [function () {
-  this.showCollection =  'tutorials';
+  this.showCollection =  'getting-started';
 }]);
