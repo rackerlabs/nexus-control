@@ -97,7 +97,7 @@ module.exports = function(grunt) {
             },
             carina_css_js: {
                 options: {
-                    files: ['assets/getcarina.com/dist/css/main.css', 'assets/getcarina.com/dist/js/main.min.js']
+                    files: ['assets/getcarina.com/dist/css/main.css', 'assets/getcarina.com/dist/js/site.min.js']
                 }
             }
         },
