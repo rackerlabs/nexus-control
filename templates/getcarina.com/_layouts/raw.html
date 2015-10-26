@@ -15,6 +15,8 @@
         <meta name="twitter:creator" content="{% block twitterCreator %}@getcarina{% endblock %}">
         <meta name="twitter:site" content="@getcarina">
 
+        <meta name="google-site-verification" content="-qoXCz5J658-HCVb3o1x3AOOOKFGNNvW0tKfw8PKTyQ" />
+
         {% if deconst.env.PRESENTER_DEVMODE == 'true' %}
             {% set cssUrl = '/assets/getcarina.com/src/css/main.css' %}
         {% else %}
@@ -34,7 +36,7 @@
     {% else %}
         {% set jsUrl = deconst.assets.assets_getcarina_com_dist_js_site_min_js %}
     {% endif %}
-    <script src="{{ jsUrl }}"></script>
+    <script src="{{ jsUrl }}" async></script>
   {% endblock %}
 </body>
 </html>
