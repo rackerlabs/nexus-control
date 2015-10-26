@@ -4,8 +4,10 @@ window.$ = window.jQuery = $;
 var angular = require('angular');
 
 angular.module('carina', [
+  require('angular-cookies'),
+  require('./beta-alert/beta-alert'),
+  require('./docs/docs-list'),
   require('./signup/signup'),
-  require('./docs/docs-list')
 ]);
 
 angular.bootstrap(document, ['carina']);
