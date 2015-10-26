@@ -3,6 +3,8 @@ var angular = require('angular');
 var moduleName = 'carina.signup.signup-form';
 module.exports = moduleName;
 
+var SIGNUP_HOST = process.env.CARINA_SIGNUP_HOST || 'https://app.getcarina.com';
+
 angular.module(moduleName, [])
 .controller('SignupFormCtrl', ['$http', function ($http) {
   this.formData = {
@@ -19,7 +21,7 @@ angular.module(moduleName, [])
 
     $http({
       method: 'POST',
-      url: 'http://localhost:8080/api/signup',
+      url: SIGNUP_HOST + '/api/signup',
       data: this.formData
     })
     .then(function (response) {
