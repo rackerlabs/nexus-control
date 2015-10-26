@@ -1,10 +1,18 @@
 <header class="site-header">
   <div class="header-nav">
-    <a href="http://developer.rackspace.com/" class="logo">
+    <a href="https://developer.rackspace.com/" class="logo">
         {% if deconst.env.PRESENTER_DEVMODE == 'true' %}
             {% set logoUrl = '/assets/getcarina.com/src/img/rackspace-logo.svg' %}
         {% else %}
             {% set logoUrl = deconst.assets.assets_getcarina_com_dist_img_rackspace_logo_svg %}
+        {% endif %}
+        <img src="{{ logoUrl }}" alt="Rackspace Logo" />
+    </a>
+    <a href="https://getcarina.com/" class="logo">
+        {% if deconst.env.PRESENTER_DEVMODE == 'true' %}
+            {% set logoUrl = '/assets/getcarina.com/src/img/carina-horizontal-color-40px.svg' %}
+        {% else %}
+            {% set logoUrl = deconst.assets.assets_getcarina_com_dist_img_carina_horizontal_color_40px_svg %}
         {% endif %}
         <img src="{{ logoUrl }}" alt="Rackspace Logo" />
     </a>
