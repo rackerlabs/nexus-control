@@ -2,6 +2,7 @@ var $ = require('jquery');
 window.$ = window.jQuery = $;
 
 var angular = require('angular');
+var markalytics = require('markalytics');
 
 angular.module('carina', [
   require('angular-cookies'),
