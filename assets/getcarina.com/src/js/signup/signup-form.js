@@ -25,6 +25,13 @@ angular.module(moduleName, [])
       data: this.formData
     })
     .then(function (response) {
+      if(window.ga) {
+        window.ga('send', 'event', {
+          eventCategory: 'signup-conversion',
+          eventLabel: 'signup-success',
+          eventAction: 'submit'
+        });
+      }
       this.status = 'submitted';
       return;
     }.bind(this))
