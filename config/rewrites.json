@@ -68,7 +68,7 @@
             "from": "^\\/blog\\/?$",
             "to": "^\\blog\\/announcing-carina\\/",
             "rewrite": false,
-            "status": 301
+            "status": 302
         },
         {
             "description": "Force trailing slash",
