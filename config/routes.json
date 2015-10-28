@@ -43,7 +43,7 @@
         "^/docs": "docs-home.html",
         "^/docs/.+?": "docs-single.html",
         "^/blog/.+?": "docs-single.html",
-        "\\.txt$": "robots.txt"
+        "\\.txt$": "plain.txt"
       }
     }
 }
