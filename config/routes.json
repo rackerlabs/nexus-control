@@ -46,5 +46,11 @@
         "^/blog/.+?": "docs-single.html",
         "\\.txt$": "plain.txt"
       }
+    },
+    "support.rackspace.com": {
+      "routes": {
+        "^/": "deferred.html",
+        "^/launch/.+?": "default.html"
+      }
     }
 }
