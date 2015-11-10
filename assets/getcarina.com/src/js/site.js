@@ -9,6 +9,12 @@ angular.module('carina', [
   require('./beta-alert/beta-alert'),
   require('./docs/docs-list'),
   require('./signup/signup'),
-]);
+])
+.config(['$locationProvider', function ($locationProvider) {
+  $locationProvider.html5Mode({
+    enabled: true,
+    requireBase: false
+  });
+}]);
 
 angular.bootstrap(document, ['carina']);
