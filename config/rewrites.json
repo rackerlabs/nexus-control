@@ -65,12 +65,6 @@
     ],
     "getcarina.com": [
         {
-            "from": "^\\/blog\\/?$",
-            "to": "/blog/announcing-carina/",
-            "rewrite": false,
-            "status": 302
-        },
-        {
             "description": "Force trailing slash",
             "from": "\\/([a-zA-Z0-9%_-]*?[^/])$",
             "to": "/$1/",

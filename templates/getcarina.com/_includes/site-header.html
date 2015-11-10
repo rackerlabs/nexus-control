@@ -1,6 +1,6 @@
 <div class="beta-alert" data-carina-beta-alert data-ng-cloak>
   <div class="message">
-    Carina<sup>&trade;</sup> by Rackspace is in public beta. See the <a href="http://www.rackspace.com/information/legal/carinatestterms" target="_blank">Terms of Service</a>. Bugs &amp; feature enhancements can be filed on <a href="https://github.com/getcarina/feedback/issues" target="_blank">GitHub</a>. 
+    Carina<sup>&trade;</sup> by Rackspace is in public beta. See the <a href="http://www.rackspace.com/information/legal/carinatestterms" target="_blank">Terms of Service</a>. Bugs &amp; feature enhancements can be filed on <a href="https://github.com/getcarina/feedback/issues" target="_blank">GitHub</a>.
     <a href="" class="dismiss-link" data-ng-click="betaAlert.dismiss()">&times;</a>
   </div>
 </div>
@@ -22,6 +22,9 @@
       </li>
       <li{% if deconst.request.path.match('/docs') %} class="active"{% endif %}>
         <a href="/docs"><span class="long">Documentation</span><span class="short">Docs</span></a>
+      </li>
+      <li{% if deconst.request.path.match('/docs') %} class="active"{% endif %}>
+        <a href="/blog/">Blog</a>
       </li>
       <li>
         <a href="https://community.getcarina.com/">Community</a>
