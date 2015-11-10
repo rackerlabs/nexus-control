@@ -1,0 +1,21 @@
+{% extends "_layouts/base.html" %}
+
+{% block bodyClass %}blog-home{% endblock %}
+{% block bodyContent %}
+  <section class="blog-section hero">
+    <div class="section-container">
+      <div class="section-grid">
+        <div class="background">
+          {% include "_partials/docs-hero-short.svg" %}
+        </div>
+        <div class="text">
+          <h1 class="headline"><span>Carina<sup>&trade;</sup> Blog</span></h1>
+          <p class="tagline"><span>News and announcements from the Carina team</span></p>
+          <p class="tagline"><span><a href="/blog/atom.xml" class="blog-subscribe">Subscribe via RSS</a></span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {{ deconst.content.envelope.body }}
+{% endblock %}

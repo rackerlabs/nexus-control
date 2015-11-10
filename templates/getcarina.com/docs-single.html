@@ -20,7 +20,7 @@
           <h1 class="article-title"><span>{{ deconst.content.envelope.title }}</span></h1>
           <div class="attribution">
             <span class="author">{{ deconst.content.envelope.meta.author }}</span>
-            <span class="date">{{ deconst.content.envelope.meta.date }}</span>
+            <span class="date">{{ deconst.content.envelope.meta.date|date('MMMM D, YYYY') }}</span>
           </div>
         </div>
       </div>
