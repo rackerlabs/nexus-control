@@ -15,6 +15,10 @@ angular.module(moduleName, [])
 
     return {
         init: function (initOptions) {
+            if(window.innerWidth < 768) {
+              return;
+            }
+
             options = initOptions;
             var milestoneSelector = '[' + options.attribute + '="' + options.id +'"]';
             milestones.push($(milestoneSelector)[0]);
@@ -43,6 +47,11 @@ angular.module(moduleName, [])
             for(var i = 0; i < milestones.length; i++) {
                 var index = i;
                 var element = milestones[i];
+
+                if(!element) {
+                  continue;
+                }
+
                 var fromThreshold = element.getBoundingClientRect().top - viewThreshold;
 
                 if(fromThreshold < 0 && fromThreshold > closestMilestone.position) {
