@@ -52,6 +52,11 @@
 
 {% block content %}
     <section class="docs-section">
-        {{ deconst.content.envelope.body }}
+      {% set output = deconst.content.envelope.body %}
+      {% if deconst.content.envelope.meta.collapseSections == 'true' %}
+        {% set output = output|collapseSections %}
+      {% endif %}
+
+      {{ output }}
     </section>
 {% endblock %}

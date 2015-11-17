@@ -4,12 +4,8 @@
 var $ = require('jquery');
 var angular = require('angular');
 
-
-var moduleName = 'drc.components.flex-height';
-module.exports = moduleName;
-
-angular.module(moduleName, [])
-.directive('drcFlexHeight', function () {
+module.exports = angular.module('drc.components.flex-height', [])
+.directive('drcFlexHeight', ['$rootScope', function ($rootScope) {
     return {
         link: function ($scope, $element, $attrs) {
             $element = $($element);
@@ -29,8 +25,9 @@ angular.module(moduleName, [])
             };
 
             $(window).on('scroll resize', flexHeight.bind(this));
+            $rootScope.$on('$drcFlexHeight.flexHeight', flexHeight.bind(this));
 
             flexHeight();
         }
     };
-});
+}]).name;
