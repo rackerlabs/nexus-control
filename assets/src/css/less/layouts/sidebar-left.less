@@ -62,4 +62,66 @@
             margin-left: calc(40% - 480px);
         }
     }
+
+    .content > .docs-section > .section > .toctree-wrapper > .collapsible-section {
+      display: none;
+
+      &.open {
+        display: block;
+      }
+    }
+
+    .collapsible-section-toggle {
+      border-bottom: solid 1px shade(white, 10%);
+      cursor: pointer;
+
+      .toggle {
+        .fa();
+        color: tint(@text-color, 50%);
+        font-size: percentage((12/14));
+        height: 32px;
+        text-align: center;
+        text-decoration: none;
+        line-height: 32px;
+        vertical-align: top;
+
+        &:before {
+          color: @link-color;
+          content: @fa-var-minus;
+          margin-right: 0.5em;
+          vertical-align: middle;
+        }
+      }
+
+      &.show {
+        h2 {
+          display: inline-block;
+          font-size: percentage((20/14));
+        }
+
+        .toggle {
+          color: transparent;
+          font-size: percentage((14/14));
+          height: 50px;
+          line-height: 50px;
+          overflow: hidden;
+          width: 25px;
+
+          &:before {
+            color: @link-color;
+            content: @fa-var-plus;
+          }
+        }
+      }
+
+      h2 {
+        display: none;
+        line-height: 50px;
+        margin: 0;
+
+        .headerlink {
+          display: none;
+        }
+      }
+    }
 }

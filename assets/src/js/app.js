@@ -1,3 +1,5 @@
+global.$ = global.jQuery = require('jquery');
+
 var angular = require('angular');
 
 var moduleName = 'drc.app';
@@ -6,6 +8,7 @@ module.exports = moduleName;
 angular.module(moduleName, [
     require('./components/code-sample'),
     require('./components/code-sample-parent'),
+    require('./components/collapsible-section'),
     require('./components/database-jump'),
     require('./components/dropdown-toggle'),
     require('./components/flex-height'),
