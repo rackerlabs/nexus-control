@@ -62,5 +62,31 @@ body.docs-single {
     article {
       .grid-unit(1/1, 50px);
     }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      .anchor-link {
+        color: shade(white, 30%);
+        .transition(color 0.1s ease-in-out);
+
+        &:before {
+          content: '\00b6';
+          display: inline-block;
+          font-size: 50%;
+          line-height: 2.8;
+          vertical-align: top;
+        }
+      }
+
+      &:hover{
+        .anchor-link {
+          color: @link-color;
+        }
+      }
+    }
   }
 }
