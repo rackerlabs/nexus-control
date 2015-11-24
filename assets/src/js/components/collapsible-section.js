@@ -18,6 +18,16 @@ module.exports = angular.module('drc.components.collapsible-section', [])
             }, 20);
           };
 
+          $scope.open = function () {
+            $element.addClass('open');
+
+            // Give the browser a little time to paint so the flexHeight
+            // calculations are correct.
+            setTimeout(function () {
+              $rootScope.$emit('$drcFlexHeight.flexHeight');
+            }, 20);
+          };
+
           $scope.openWithId = function (id) {
             var matchingElement = document.getElementById(id);
 
@@ -29,7 +39,7 @@ module.exports = angular.module('drc.components.collapsible-section', [])
               $(matchingElement).parents('.collapsible-section').attr('id') == $element.attr('id') ||
               $(matchingElement).attr('id') == $element.attr('id')
             ) {
-              $scope.toggle();
+              $scope.open();
             }
           };
 
