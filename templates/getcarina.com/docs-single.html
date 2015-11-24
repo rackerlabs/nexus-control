@@ -1,10 +1,10 @@
 {% extends "_layouts/base.html" %}
 
-{% block metaTitle %}{{ deconst.content.envelope.title + ' | ' }}{{ super() }}{% endblock %}
+{% block metaTitle %}{{ deconst.content.envelope.title + ' | Carina by Rackspace' }}{% endblock %}
 {% block metaDescription %}{{ deconst.content.envelope.meta.description|fallback(super()) }}{% endblock %}
-{% block ogTitle %}{{ deconst.content.envelope.title + ' | ' }}{{ super() }}{% endblock %}
+{% block ogTitle %}{{ deconst.content.envelope.title + ' | Carina by Rackspace' }}{% endblock %}
 {% block ogDescription %}{{ deconst.content.envelope.meta.description|fallback(super()) }}{% endblock %}
-{% block twitterTitle %}{{ deconst.content.envelope.title + ' | ' }}{{ super() }}{% endblock %}
+{% block twitterTitle %}{{ deconst.content.envelope.title + ' | Carina by Rackspace' }}{% endblock %}
 {% block twitterDescription %}{{ deconst.content.envelope.meta.description|fallback(super()) }}{% endblock %}
 
 {% block bodyClass %}docs-single{% endblock %}
