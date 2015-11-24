@@ -1,16 +1,15 @@
 var $ = require('jquery');
 var angular = require('angular');
-
-var moduleName = 'drc.components.scroll-indicator';
-module.exports = moduleName;
+var _ = require('lodash');
 
 var INDICATOR_CHANGE_EVENT = 'drcScrollIndicatorChange';
 
-angular.module(moduleName, [])
+module.exports = angular.module('drc.components.scroll-indicator', [])
 .factory('scrollIndicator', ['$rootScope', function ($rootScope) {
     var listenersAdded = false;
     var options = {},
-        milestones = [],
+        anchorLinks = null,
+        milestones = null,
         activeMilestone = '';
 
     return {
@@ -20,12 +19,6 @@ angular.module(moduleName, [])
             }
 
             options = initOptions;
-            var milestoneSelector = '[' + options.attribute + '="' + options.id +'"]';
-            milestones.push($(milestoneSelector)[0]);
-
-            activeMilestone = $('[data-drc-scroll-indicator]').first().attr('data-drc-scroll-indicator');
-            $rootScope.$broadcast(INDICATOR_CHANGE_EVENT, activeMilestone);
-
             this.addListeners();
         },
         addListeners: function () {
@@ -38,17 +31,32 @@ angular.module(moduleName, [])
             listenersAdded = true;
         },
         scrollListener: function (e) {
+            anchorLinks = options.element.find('a[href^="#"]');
+            milestones = $('[' + options.attribute + ']');
+            milestones = _.filter(milestones, function (milestone) {
+              var match = _.find(anchorLinks, function (link) {
+                return link.getAttribute('href').replace('#','') == milestone.getAttribute(options.attribute);
+              });
+
+              return match;
+            });
+
             var viewThreshold = parseInt($(window).height() * 0.6);
             closestMilestone = {
                 position: -Infinity,
                 element: null
             };
 
-            for(var i = 0; i < milestones.length; i++) {
+            for (var i = 0; i < milestones.length; i++) {
                 var index = i;
                 var element = milestones[i];
 
                 if(!element) {
+                  continue;
+                }
+
+                // This weird edge case happens on some milestones that aren't on the page
+                if(element.getBoundingClientRect().top === 0 && element.getBoundingClientRect().bottom === 0) {
                   continue;
                 }
 
@@ -60,11 +68,11 @@ angular.module(moduleName, [])
                 }
             }
 
-            if(!closestMilestone.element) {
+            if (!closestMilestone.element) {
                 return;
             }
 
-            if(
+            if (
                 closestMilestone.element.getAttribute(options.attribute) !==
                 activeMilestone
             ) {
@@ -78,17 +86,14 @@ angular.module(moduleName, [])
 .directive('drcScrollIndicator', ['$rootScope', 'scrollIndicator', function ($rootScope, scrollIndicator) {
     return {
         controller: ['$scope', '$element', '$attrs', function ($scope, $element, $attrs) {
-            $element = $($element);
-
             $rootScope.$on(INDICATOR_CHANGE_EVENT, function (event, data) {
+              var indicatorLink = $element.find('[href="#' + data +'"]');
                 window.requestAnimationFrame(function () {
-                    if(data === $attrs.drcScrollIndicator) {
-                        $element.addClass('active');
-                        $element.parents('li').addClass('active');
-                    }
-                    else {
-                        $element.removeClass('active');
-                    }
+                  $element.find('a[href]').removeClass('active');
+                  $element.find('li').removeClass('active');
+
+                  indicatorLink.addClass('active');
+                  indicatorLink.parents('li').addClass('active');
                 });
             });
         }],
@@ -100,4 +105,4 @@ angular.module(moduleName, [])
             });
         }
     };
-}]);
+}]).name;
