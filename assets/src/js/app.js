@@ -19,6 +19,7 @@ angular.module(moduleName, [
     require('./controllers/blog-sidebar'),
     require('./controllers/docs-home-services'),
     require('./controllers/docs-home-sidebar'),
+    require('./controllers/carina-signup-form'),
     require('./services/active-language'),
     require('./services/filter'),
 ]);

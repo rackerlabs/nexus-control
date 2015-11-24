@@ -58,6 +58,127 @@ body.home {
     }
 
 
+    .box.carina-signup {
+      background: #f0f5fc;
+
+      h2 {
+        .open-sans('light');
+      }
+
+      form {
+        text-align: left;
+      }
+
+      .control.email, .control.password {
+        .grid-unit(1/1, 0px);
+      }
+
+      .control.submit {
+        .grid-unit(1/1, 0px);
+      }
+
+      .control {
+        &.error {
+          input[type="email"],
+          input[type="password"] {
+            border: solid 1px @theme-red;
+            color: shade(@theme-red, 20%);
+
+            &:focus {
+              color: @text-color;
+            }
+          }
+
+          .control-validation {
+            color: shade(@theme-red, 20%);
+            margin-top: 7px;
+          }
+        }
+
+        & + .control {
+          margin-top: 14px;
+        }
+      }
+
+      input[type="email"],
+      input[type="password"] {
+        .open-sans();
+        background: white;
+        border: solid 1px @text-color;
+        display: block;
+        font-size: 14px;
+        padding: 0.9em 1em;
+        .transition(border 0.1s ease-in-out);
+        width: 100%;
+
+        &:focus {
+          outline: none;
+          border: solid 1px @theme-teal;
+        }
+      }
+
+      button[type="submit"] {
+        .open-sans();
+        .button();
+        background: @theme-teal;
+        border: solid 1px shade(@theme-teal, 5%);
+        color: white;
+        cursor: pointer;
+        font-size: 14px;
+        padding: 0.9em 2.5em;
+        .transition(~"background 0.1s ease-in-out, border 0.1s ease-in-out");
+        width: 100%;
+
+        &:hover, &:focus {
+          outline: none;
+          background: shade(@theme-teal, 5%);
+          border: solid 1px shade(@theme-teal, 25%);
+        }
+
+        &[disabled] {
+          background: tint(@theme-teal, 35%);
+          border: solid 1px tint(@theme-teal, 35%);
+
+          &:hover, &:focus {
+            background: tint(@theme-teal, 35%);
+            border: solid 1px tint(@theme-teal, 35%);
+          }
+        }
+
+        @media (min-width: 480px) {
+          width: auto;
+        }
+      }
+
+      .form-submitted {
+        background: @theme-teal;
+        color: white;
+        padding: 20px;
+      }
+
+      @media (min-width: 768px) {
+
+        .control + .control {
+          margin-top: 0;
+        }
+
+        form {
+          .grid(18px);
+          margin-left: auto;
+          margin-right: auto;
+
+          .control.email, .control.password {
+            .grid-unit(4/10, 18px);
+            margin-top: 0;
+          }
+
+          .control.submit {
+            .grid-unit(2/10, 18px);
+            margin-top: 0;
+          }
+        }
+      }
+    }
 
     .box.docs-apis {
 
