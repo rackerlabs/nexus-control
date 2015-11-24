@@ -70,8 +70,12 @@ body.docs-single {
     h5,
     h6 {
       .anchor-link {
-        color: shade(white, 30%);
+        color: transparent;
+        left: -1em;
+        position: absolute;
+        text-align: center;
         .transition(color 0.1s ease-in-out);
+        width: 1em;
 
         &:before {
           content: '\00b6';
