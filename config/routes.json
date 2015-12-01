@@ -48,5 +48,11 @@
         "\\.xml$": "feed.xml",
         "\\.txt$": "plain.txt"
       }
+    },
+    "support.rackspace.com": {
+      "routes": {
+        "^/": "deferred.html",
+        "^/launch/.+?": "default.html"
+      }
     }
 }
