@@ -239,47 +239,47 @@ body.home {
         }
     }
 
-    .box.quote {
+    .box.carina-quote {
         background: shade(white, 5%) url(@assets_dist_img_quote_background_jpg) 50% 50% no-repeat;
         background-size: cover;
 
+        h2 {
+          font-size: percentage((36/14));
+        }
+
+        h2 + p {
+          font-size: percentage((20/14));
+          margin-bottom: 40px;
+        }
+
         blockquote {
-            font-size: percentage((26/14));
-            line-height: 1.45;
-            margin-bottom: 40px;
+          font-size: percentage((18/14));
+          line-height: 1.45;
+          margin-bottom: 10px;
 
             .quotes {
-                font-family: Georgia, serif;
+              font-family: Georgia, serif;
             }
         }
 
         .author {
-            .open-sans('bold');
-            font-size: percentage((22/14));
-        }
-
-        .author-title {
-            .open-sans('regular', 'italic');
-            margin-bottom: 40px;
+          .open-sans('regular','italic');
+          font-size: percentage((18/14));
+          margin-bottom: 40px;
         }
 
         a {
-            .button('smoke');
-            border: 0;
-
-            &:hover {
-                background: fadeout(black, 40%);
-            }
+          .button('blue');
         }
 
         @media (min-width: 850px) {
-            blockquote {
-                font-size: percentage((38/14));
-            }
+          blockquote {
+            font-size: percentage((28/14));
+          }
         }
 
         @media (min-width: 1067px) {
-            background-size: contain;
+          background-size: contain;
         }
     }
 
