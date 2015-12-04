@@ -61,6 +61,15 @@
             "to": "/docs/cloud-networks/v2/developer-guide/$1",
             "rewrite": false,
             "status": 301
+        },
+        {
+            "from": "^\\/logs\\/?$",
+            "to": "/",
+            "toProtocol": "https",
+            "toHostname": "iad1-10096-kibana.es.objectrocket.com",
+            "toPort": "20096",
+            "rewrite": false,
+            "status": 302
         }
     ],
     "getcarina.com": [
@@ -70,6 +79,15 @@
             "to": "/$1/",
             "rewrite": false,
             "status": 301
+        },
+        {
+            "from": "^\\/logs\\/?$",
+            "to": "/",
+            "toProtocol": "https",
+            "toHostname": "iad1-10096-kibana.es.objectrocket.com",
+            "toPort": "20096",
+            "rewrite": false,
+            "status": 302
         }
     ],
     "www.developer.rackspace.com": [
@@ -119,6 +137,15 @@
             "to": "/$1/",
             "rewrite": false,
             "status": 301
+        },
+        {
+            "from": "^\\/logs\\/?$",
+            "to": "/",
+            "toProtocol": "https",
+            "toHostname": "iad1-10096-kibana.es.objectrocket.com",
+            "toPort": "20096",
+            "rewrite": false,
+            "status": 302
         }
     ]
 }
