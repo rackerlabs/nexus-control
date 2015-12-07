@@ -29,7 +29,7 @@
             "^/docs/autoscale/v1/developer-guide": "docs-singlepage.html",
             "^/docs/cloud-servers/v2/developer-guide": "docs-singlepage.html",
             "^/docs/cloud-files/v1/developer-guide": "docs-singlepage.html",
-            "^/docs/metrics/v1/developer-guide": "docs-singlepage.html",
+            "^/docs/metrics/v2/developer-guide": "docs-singlepage.html",
             "^/docs/cloud-identity/v2/developer-guide": "docs-singlepage.html",
             "^/docs/cloud-monitoring/v1/developer-guide": "docs-singlepage.html",
             "^/docs/rack-cli/": "rack-cli.html",
