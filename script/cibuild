@@ -31,6 +31,4 @@ fi
 if [ "${PUBLISH}" = "true" ]; then
   npm install
   grunt build
-else
-  # Verify control repository contents
 fi
