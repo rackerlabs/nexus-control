@@ -7,7 +7,13 @@ angular.module(moduleName, [])
 .controller('DocsListCtrl', ['$scope', function ($scope) {
   this.showCollection =  'getting-started';
 
-  if(['#getting-started', '#tutorials', '#best-practices'].indexOf(window.location.hash) !== -1) {
+  if([
+    '#getting-started',
+    '#concepts',
+    '#tutorials',
+    '#troubleshooting',
+    '#ecosystem'
+  ].indexOf(window.location.hash) !== -1) {
     this.showCollection = window.location.hash.replace('#','');
   }
 
