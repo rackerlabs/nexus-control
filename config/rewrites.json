@@ -169,6 +169,13 @@
             "status": 301
         },
         {
+            "description": "Cloud Servers extensions redirect",
+            "from": "^\\/api-ref-servers-ext.html$",
+            "to": "/docs/cloud-servers/v2/developer-guide/#api-reference",
+            "rewrite": false,
+            "status": 301
+        },
+        {
             "description": "Auto Scale API v1.0 redirect",
             "from": "^\\/api-ref-auto-scale.html$",
             "to": "/docs/autoscale/v1/developer-guide/#api-reference",
@@ -263,6 +270,28 @@
             "description": "Rackspace CDN redirect",
             "from": "^\\/api-ref-raxCDN.html$",
             "to": "/docs/cdn/v1/developer-guide/#document-api-reference",
+            "rewrite": false,
+            "status": 301
+        },
+        {
+            "description": "Email and Apps API redirect",
+            "from": "^\\/api-ref-email-and-apps.html$",
+            "to": "/docs/",
+            "rewrite": false,
+            "status": 301
+        },
+        {
+            "description": "Identity API redirect",
+            "from": "^\\/api-ref-identity.html$",
+            "to": "/docs/cloud-identity/v2/developer-guide/#document-api-reference",
+            "rewrite": false,
+            "status": 301
+        }
+        ,
+        {
+            "description": "Keep (Barbican) API redirect",
+            "from": "^\\/api-ref-keep2.html$",
+            "to": "/docs/",
             "rewrite": false,
             "status": 301
         }
