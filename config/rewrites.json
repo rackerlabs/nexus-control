@@ -193,7 +193,7 @@
         {
             "description": "Cloud Big Data API v2 redirect",
             "from": "^\\/api-ref-big-data-v2(\\.html)?",
-            "to": "docs/cloud-big-data/v2/developer-guide/#api-reference",
+            "to": "/docs/cloud-big-data/v2/developer-guide/#api-reference",
             "rewrite": false,
             "status": 301
         },
@@ -220,7 +220,7 @@
         },
         {
             "description": "Cloud Files redirect",
-            "from": "^\\/api-ref-files.html$",
+            "from": "^\\/api-ref-files(\\.html)?",
             "to": "/docs/cloud-files/v1/developer-guide/#api-reference",
             "rewrite": false,
             "status": 301
@@ -287,8 +287,7 @@
             "to": "/docs/cloud-identity/v2/developer-guide/#document-api-reference",
             "rewrite": false,
             "status": 301
-        }
-        ,
+        },
         {
             "description": "Keep (Barbican) API redirect",
             "from": "^\\/api-ref-keep2(\\.html)?",
