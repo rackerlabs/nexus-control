@@ -1,0 +1,31 @@
+.table-of-contents {
+  background: shade(white, 2%);
+  border: solid 1px shade(white, 6%);
+  font-size: 14px;
+  padding: 20px;
+  z-index: 1;
+
+  h4 {
+    .lato('bold');
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin-bottom: 1em;
+    }
+  }
+
+  @media (min-width: 768px) {
+    float: right;
+    width: calc(40% - 20px);
+    margin: 0 20px 0 20px;
+  }
+}
