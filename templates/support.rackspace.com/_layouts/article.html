@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    {% include head.html %}
+    <body>
+        {% include header.html %}
+        <article>
+            <div class="container">
+                <div class="row">
+                    <div class="three columns sidebar sticky">
+                        <h3>Contents</h3>
+                        <ul class="nav">
+                            <li><a href="">Introduction</a></li>
+                            <li class="active"><a href="">The next chapter in the saga of this long article</a></li>
+                            <li><a href="">The next chapter in the saga of this long article</a></li>
+                            <li><a href="">The next chapter in the saga of this long article</a></li>
+                            <li><a href="">The next chapter in the saga of this long article</a></li>
+                            <li><a href="">The next chapter in the saga of this long article</a></li>
+                        </ul>
+                        
+                        <h3>Related Articles</h3>
+                        <ul>
+                            <li><a href="">Article Name: Try to be Concise and Not Too Long</a></li>
+                            <li><a href="">Article Name: Try to be Concise and Not Too Long</a></li>
+                            <li><a href="">Article Name: Try to be Concise and Not Too Long</a></li>
+                        </ul>
+                        
+                        <h3>Have Feedback?</h3>
+                        <p>We love customer feedback. Help us improve our products and service by <a href="">leaving yours</a>.</p>                        
+                    </div>
+                    <div class="nine columns content">
+                        <ul class="breadcrumbs">
+                            <li><a href="{{ '../home'  | prepend: site.baseurl }}">Knowledge Center</a></li>
+                            <li>Cloud Servers</li>
+                        </ul>
+                        
+                        <h2 class="less-margin">{{ page.title }}</h2>
+
+                        <ul class="meta">
+                            <li>By: <a href="">{{ page.author }}</a></li>
+                            <li>On: {{ page.date | date: "%b %-d, %Y" }}</li>
+                        </ul>
+                                            
+                        {{ content }}
+                        
+                        <p class="comment"><i class="fa fa-comments-o"></i> Continue the conversation in the <a href="">Rackspace Community</a>.</p>
+                        
+                        <aside class="cta">
+                            <h3>Start building on our Managed Cloud today.</h3>
+                            <p class="button"><a href="">Sign Up Now</a></p>
+                            <p>Still have questions? Open a <a href="">chat</a> with a sales representative.</p>
+                        </aside>
+                        
+                    </div>
+                </div>
+            </div>
+        </article>        
+        {% include footer.html %}
+    </body>
+</html>

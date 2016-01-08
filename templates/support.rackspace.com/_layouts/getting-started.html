@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    {% include head.html %}
+    <body>
+        {% include header.html %}
+        <article>
+            <div class="container">
+                <div class="row">
+                    <div class="three columns sidebar">
+                        
+                        <h3>Areas of Interest</h3>
+                        <ul class="area">
+                            <li class="active"><a href="">Getting Started</a></li>
+                            <li><a href="{{ '../faq' | prepend: site.baseurl }}">FAQs</a></li>
+                        </ul>
+                        
+                        <hr />
+                        
+                        <h3>Contents</h3>
+                        <ul class="nav">
+                            <li class="active"><a href="">Managing Your Account</a></li>
+                            <li><a href="#a">Creating Servers and Saving</a></li>
+                            <li><a href="#b">Remote Access</a></li>
+                            <li><a href="#c">Cloud Server Security</a></li>
+                            <li><a href="#d">DNS &amp; Domain Management</a></li>
+                        </ul>
+                                                
+                        <h3>Related Articles</h3>
+                        <ul>
+                            <li><a href="">Article Name: Try to be Concise and Not Too Long</a></li>
+                            <li><a href="">Article Name: Try to be Concise and Not Too Long</a></li>
+                            <li><a href="">Article Name: Try to be Concise and Not Too Long</a></li>
+                        </ul>
+                        
+                        <h3>Have Feedback?</h3>
+                        <p>We love customer feedback. Help us improve our products and service by <a href="">leaving yours</a>.</p>                        
+                    </div>
+                    <div class="nine columns content getting-started">
+                        <ul class="breadcrumbs">
+                            <li><a href="{{ '../home' | prepend: site.baseurl }}">Knowledge Center</a></li>
+                            <li><a href="{{ '../product' | prepend: site.baseurl }}">Cloud Servers</a></li>
+                            <li>Getting Started</li>
+                        </ul>
+                        
+                        <h2 class="less-margin">{{ page.title }}</h2>
+
+                        <ul class="meta">
+                            <li>By: <a href="">{{ page.author }}</a></li>
+                            <li>On: {{ page.date | date: "%b %-d, %Y" }}</li>
+                        </ul>
+                        
+                        {{ content }}
+                        
+                    </div>
+                </div>
+            </div>
+        </article>        
+        {% include footer.html %}
+    </body>
+</html>
