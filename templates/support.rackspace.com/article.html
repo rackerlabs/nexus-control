@@ -29,18 +29,19 @@
                     </div>
                     <div class="nine columns content">
                         <ul class="breadcrumbs">
-                            <li><a href="{{ '../home'  | prepend: site.baseurl }}">Knowledge Center</a></li>
+                            <li><a href="{{ deconst.url.getSiteUrl(deconst.context, deconst.context.request.path) }}">Knowledge Center</a></li>
                             <li>Cloud Servers</li>
                         </ul>
                         
-                        <h2 class="less-margin">{{ page.title }}</h2>
+                        <h2 class="less-margin">{{ deconst.content.envelope.metadata.title }}</h2>
 
                         <ul class="meta">
-                            <li>By: <a href="">{{ page.author }}</a></li>
-                            <li>On: {{ page.date | date: "%b %-d, %Y" }}</li>
+                            <li>By: <a href="">{{ deconst.content.envelope.metadata.created_by }}</a></li>
+                            <li>On: {{
+                            deconst.content.envelope.metadata.created_date | date: "%b %-d, %Y" }}</li>
                         </ul>
                                             
-                        {{ content }}
+                        {{ deconst.content.envelope.body }}
                         
                         <p class="comment"><i class="fa fa-comments-o"></i> Continue the conversation in the <a href="">Rackspace Community</a>.</p>
                         
