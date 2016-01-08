@@ -52,7 +52,8 @@
     "support.rackspace.com": {
       "routes": {
         "^/": "deferred.html",
-        "^/launch/.+?": "default.html"
+        "^/launch/.+?": "default.html",
+        "^/howto/.+?": "default.html"
       }
     }
 }
