@@ -1,13 +1,17 @@
                         <h3>Contents</h3>
                         <div class="sidebar-container">
+                        {% if deconst.content.envelope.toc %}
                         {{ deconst.content.envelope.toc|pruneRoot|limitListDepth(2) }}
                         {# TODO #}
+                        {% endif %}
                         </div>
 
                         <h3>Related Articles</h3>
                         <div>
+                        {% if deconst.content.envelope.related %}
                         {{ deconst.content.envelope.related|pruneRoot|limitListDepth(2) }}
                         {# TODO #}
+                        {% endif %}
                         </div>
 
                         <h3>Have Feedback?</h3>
