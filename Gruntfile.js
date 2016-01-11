@@ -103,7 +103,7 @@ module.exports = function(grunt) {
                     files: ['assets/support.rackspace.com/dist/**/*'],
                     output: [
                         {
-                            dest: 'assets/support.rackspace.com/src/css/_sass/deconst-variables.less',
+                            dest: 'assets/support.rackspace.com/src/css/_sass/deconst-variables.scss',
                             format: 'scss'
                         }
                     ]
@@ -141,7 +141,7 @@ module.exports = function(grunt) {
                 options: {
                     files: [
                       'assets/src/css/less/deconst-variables.less',
-                      'assets/support.rackspace.com/src/css/_sass/deconst-variables.less',
+                      'assets/support.rackspace.com/src/css/_sass/deconst-variables.scss',
                       'assets/getcarina.com/src/css/less/deconst-variables.less'
                     ]
                 }
