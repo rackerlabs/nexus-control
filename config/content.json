@@ -24,6 +24,7 @@
             "/docs/metrics/v2/developer-guide/": "https://github.com/rackerlabs/docs-cloud-metrics/",
             "/docs/cloud-identity/v2/developer-guide/": "https://github.com/rackerlabs/docs-cloud-identity-2.0/",
             "/docs/cloud-monitoring/v1/developer-guide/": "https://github.com/rackerlabs/docs-cloud-monitoring/",
+            "/docs/dedicated-load-balancers/v2/dev-guide/": "https://github.com/rackerlabs/docs-dedicated-networking/",
             "/docs/glossary": "https://github.com/rackerlabs/docs-common"
         },
         "proxy": {
