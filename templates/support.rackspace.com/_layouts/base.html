@@ -3,13 +3,16 @@
 {% set headlineTag = headlineTag if headlineTag else 'h2' %}
 
 {% block body %}
-    {% block siteHeader %}
-        {% include "_includes/site-header.html" %}
-    {% endblock %}
+  <div id="rax-header"></div>
+
+  <div id="main-content">
     {% block bodyContent %}{% endblock %}
-    {% block siteFooter %}
-        {% include "_includes/site-footer.html" %}
-    {% endblock %}
-    {% block footerScripts %}
-    {% endblock %}
+  </div>
+
+  <div id="rax-footer"></div>
+
+  <script type="text/javascript">
+    injectTemplate("howto", "#rax-header", "#rax-footer", "#main-content");
+  </script>
+  {% block footerScripts %}{% endblock %}
 {% endblock %}
