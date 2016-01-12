@@ -81,7 +81,7 @@ module.exports = function(grunt) {
             build: {
                 files: {
                     'assets/dist/css/main.css': 'assets/src/css/main.css',
-                    'assets/support.rackspace.com/dist/css/main.css': 'assets/support.rackspace.com/src/css/main.css'
+                    'assets/support.rackspace.com/dist/css/main.css': 'assets/support.rackspace.com/src/css/main.css',
                     'assets/getcarina.com/dist/css/main.css': 'assets/getcarina.com/src/css/main.css'
                 }
             }
@@ -129,7 +129,7 @@ module.exports = function(grunt) {
                 options: {
                     files: ['assets/support.rackspace.com/dist/css/main.css', 'assets/support.rackspace.com/dist/js/site.min.js']
                 }
-            }
+            },
             carina_css_js: {
                 options: {
                     files: ['assets/getcarina.com/dist/css/main.css', 'assets/getcarina.com/dist/js/site.min.js']
