@@ -7,4 +7,9 @@ assets/getcarina.com/src/js/bundle.js
 assets/src/js/bundle.js
 assets/dist
 assets/getcarina.com/dist
+assets/support.rackspace.com/src/css/_sass/deconst-variables.scss
+assets/support.rackspace.com/src/css/main.css
+assets/support.rackspace.com/src/js/bundle.js
+assets/support.rackspace.com/dist
 build
+.sass-cache

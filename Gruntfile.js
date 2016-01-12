@@ -45,7 +45,7 @@ module.exports = function(grunt) {
                         expand: true,
                         src: [
                           'img/**/*',
-                          'fonts/**/*',
+                          'fonts/**/*'
                         ],
                         dest: 'assets/support.rackspace.com/dist/'
                     },
@@ -81,7 +81,7 @@ module.exports = function(grunt) {
             build: {
                 files: {
                     'assets/dist/css/main.css': 'assets/src/css/main.css',
-                    'assets/support.rackspace.com/dist/css/main.css': 'assets/support.rackspace.com/src/css/main.css',
+                    'assets/support.rackspace.com/dist/css/main.min.css': 'assets/support.rackspace.com/dist/css/main.css',
                     'assets/getcarina.com/dist/css/main.css': 'assets/getcarina.com/src/css/main.css'
                 }
             }
@@ -170,6 +170,17 @@ module.exports = function(grunt) {
                 }
             }
         },
+        sass: {
+            options: {
+                style: 'expanded',
+                loadPath: 'assets/support.rackspace.com/src/css/_sass',
+            },
+            build: {
+                files: {
+                    'assets/support.rackspace.com/dist/css/main.css': 'assets/support.rackspace.com/src/css/main.scss'
+                }
+            }
+        },
         uglify: {
             build: {
                 files: {
@@ -189,6 +200,10 @@ module.exports = function(grunt) {
             less: {
                 files: ['assets/**/src/css/less/**/*.less'],
                 tasks: ['less:dev']
+            },
+            sass: {
+                files: ['assets/**/src/css/_sass/**/*.scss'],
+                tasks: ['sass']
             },
             js: {
                 files: ['assets/src/js/**/*.js', '!assets/src/js/bundle.js'],
@@ -217,6 +232,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-less');
+    grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-deconst-assets');
@@ -244,6 +260,7 @@ module.exports = function(grunt) {
     grunt.registerTask('dev', [
         'empty:less_vars',
         'less:dev',
+        'sass',
         'browserify:dev'
     ]);
 
@@ -254,6 +271,7 @@ module.exports = function(grunt) {
         'deconst_assets:support_assets',
         'deconst_assets:carina_assets',
         'less:dev',
+        'sass',
         'cssmin:build',
         'browserify:dev',
         'browserify:support',
