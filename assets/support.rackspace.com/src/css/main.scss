@@ -287,7 +287,7 @@ a {
         }
     }
         
-    // Article-list Sort 
+    // Article-list Sort -- OUT OF SCOPE
     
     .list-sort-container {
         margin: 20px 0 30px;
@@ -441,9 +441,7 @@ a {
         }
     }
     
-    &.inactive {
-        display: none;
-    }
+    &.inactive {display: none;}
 
     // Home-page styles and mods
     
@@ -451,210 +449,320 @@ a {
         border-left: none;
         padding: 0 0 0 0;
         
+        h2 {
+            font-size: 28px;
+            font-weight: 300;
+            margin: 30px 0 0 0;
+        }
+        
+        p.lead {
+            font-size: 16px;
+            margin-bottom: 35px;
+        }
+        
+        hr {margin-bottom: 30px;}
+                
         // Troubleshoot div {border: 1px solid red;}
 
-        &.one-half {
-            margin-left: 0px;
-        }
-        #inf-guide-callout {
-            padding: 35px;
-            border: 1px solid #e6e6e6;
-            h4 {
-                text-align: center;
+        .filter-product-type {
+        
+            ul {
+                margin: 0 0 40px 0;
+                list-style-type: none;
+        
+                li {
+                    font-family: $font-family-secondary;
+                    display: inline;
+        
+                    &:last-child {padding-right: 0px;}
+        
+                    a {
+                        padding: 5px 25px;
+                        font-size: 16px;
+                        color: #888;
+                        font-weight: 300;
+        
+                        &.active {
+                            background: $color-kcblue;
+                            color: #fff;
+        
+                            &:hover {text-decoration: none;}
+                        }
+        
+                        &.inactive {
+                            background: #f3f3f3;
+                        
+                            &:hover {
+                                text-decoration: none;
+                                background:$color-kcblue;
+                                color: #fff;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
             }
         }
-    }
 
-    .product-wrap { 
-        border-bottom: 1px dotted #474747;
-        margin-bottom: 30px;
+        &.product-type-cloud {
+        
+            h3 {
+                font-style: italic;
+                margin-bottom: 15px;
+                font-size: 18px;
+                font-weight: 300;
+                color: #999;
+            }
+        
+            .icon {
+                background-repeat: no-repeat;
+                background-position: top left;
+                background-size: 35px 35px;
+            
+                h4 {
+                    line-height: 17px;
+                
+                    a {
+                        text-transform: uppercase;
+                        padding-left: 45px;
+                        font-size: 16px;
+                        font-weight: 600;
+                        display: block;
+
+                        span {
+                            font-size: 13px;
+                            display: block;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            } 
+       
+            .servers {
+                background-image: url('../images/icon-servers.png');
+                background-image: none, url('../images/icon-servers.svg');
+            }
+
+            .files {
+                background-image: url('../images/icon-files.png');
+                background-image: none, url('../images/icon-files.svg');
+            }
+
+            .sites {
+                background-image: url('../images/icon-sites.png');
+                background-image: none, url('../images/icon-sites.svg');
+            }
+
+            .load-balancers {
+                background-image: url('../images/icon-load-balancers.png');
+                background-image: none, url('../images/icon-load-balancers.svg');
+            }
+
+            .backup {
+                background-image: url('../images/icon-backup.png');
+                background-image: none, url('../images/icon-backup.svg');
+            }
+
+            .databases {
+                background-image: url('../images/icon-databases.png');
+                background-image: none, url('../images/icon-databases.svg');
+            }
+
+            .images {
+                background-image: url('../images/icon-images.png');
+                background-image: none, url('../images/icon-images.svg');
+            }
+
+            .block-storage {
+                background-image: url('../images/icon-files.png');
+                background-image: none, url('../images/icon-files.svg');
+            }
+
+            .private {
+                background-image: url('../images/icon-private-cloud.png');
+                background-image: none, url('../images/icon-private-cloud.svg');
+            }
+
+            .monitoring {
+                background-image: url('../images/icon-monitoring.png');
+                background-image: none, url('../images/icon-monitoring.svg');
+            }
+
+            .big-data {
+                background-image: url('../images/icon-big-data.png');
+                background-image: none, url('../images/icon-big-data.svg');
+            }
+
+            .orchestration {
+                background-image: url('../images/icon-orchestration.png');
+                background-image: none, url('../images/icon-orchestration.svg');
+            }
+
+            .auto-scale {
+                background-image: url('../images/icon-auto-scale.png');
+                background-image: none, url('../images/icon-auto-scale.svg');
+            }
+
+            .rackconnect {
+                background-image: url('../images/icon-rackconnect.png');
+                background-image: none, url('../images/icon-rackconnect.svg');
+            }
+
+            .vmware {
+                background-image: url('../images/icon-vmware.png');
+                background-image: none, url('../images/icon-vmware.svg');
+            }
+
+            .cdn {
+                background-image: url('../images/icon-cdn.png');
+                background-image: none, url('../images/icon-cdn.svg');
+            }
+
+            .intelligence {
+                background-image: url('../images/icon-intelligence.png');
+                background-image: none, url('../images/icon-intelligence.svg');
+            }
+        }
+    
+        &.product-type-email {
+            margin-top: 30px;
+            
+            .icon {
+                background-repeat: no-repeat;
+                background-position: top left;
+                background-size: 35px 35px;
+            
+                h4 {
+                    line-height: 16px;
+                
+                    a {
+                        text-transform: uppercase;
+                        padding-left: 45px;
+                        font-size: 16px;
+                        font-weight: 600;
+                        display: block;
+                    
+                        span {
+                            font-size: 13px;
+                            display: block;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+        
+            .email {
+                background-image: url('../images/icon-email.png');
+                background-image: none, url('../images/icon-email.svg');
+            }
+        
+            .skype {
+                background-image: url('../images/icon-skype.png');
+                background-image: none, url('../images/icon-skype.svg');
+            }
+        
+            .exchange {
+                background-image: url('../images/icon-exchange.png');
+                background-image: none, url('../images/icon-exchange.svg');
+            }
+        
+            .sharepoint {
+                background-image: url('../images/icon-sharepoint.png');
+                background-image: none, url('../images/icon-sharepoint.svg');
+            }
+        
+            .email-wizard {
+                background-image: url('../images/icon-wizard.png');
+                background-image: none, url('../images/icon-wizard.svg');
+                background-repeat: no-repeat;
+                position: relative;
+                margin-bottom: 20px;
+                
+                h4 {
+                    padding: 7px 0 0 60px;
+                    margin-bottom: 5px;
+                }
+            
+                p {
+                    padding-left: 60px;
+                    margin-bottom: 20px;
+                }
+                
+                aside.cta {
+                    text-align: right;
+                    
+                    #email-button {
+                        border: 1px solid #499917;
+                        background: none;
+                        color: #499917;
+                        padding: 12px 50px;
+                        margin-top: 7px;
+                        white-space: nowrap;
+                        
+                        &:hover {
+                            background: #499917;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.one-half {margin-left: 0px;}
+        
+        #inf-guide-callout {
+            margin-top: 25px;
+            
+            h4 {margin-bottom: 5px;}
+            
+            aside.cta {
+                text-align: right;
+                
+                #guide-button {
+                    border: 1px solid #499917;
+                    background: none;
+                    color: #499917;
+                    padding: 12px 50px;
+                    margin-top: 7px;
+                    white-space: nowrap;
+                    
+                    &:hover {
+                        background: #499917;
+                        color: #fff;
+                    }
+                }
+            }
+            
+        }
     }
 
     &.contact {
-        h2 {
-            padding: 20px 0 0 0;
-        }
+        margin-top: 20px;
+        padding: 1px 0 25px 0;
+
         div {
-            &:first-of-type {
-                margin-left: 0px;
-            }
+            &:first-of-type {margin-left: 0px;}
+            
             h3 {
-                font-size: 18px;
+                color: #666;
+                font-size: 16px;
                 font-weight: 300;
+            
                 span {
                     display: block;
                     font-weight: 600;
-                    padding-bottom: 12px;
+                    padding-bottom: 7px;
                 }
+                em {margin-left: 15px;}
             }
         }
     }
-
-    .product-type-email {
-        .icon {
-            background-repeat: no-repeat;
-            background-position: top left;
-            background-size: 35px 35px;
-            margin-bottom: 45px;
-            h3 {
-                margin: 5px 0 5px 0;
-                a {
-                    text-transform: uppercase;
-                    padding-left: 50px;
-                    font-size: 16px;
-                    font-weight: 600;
-                    display: block;
-                    span {
-                        font-size: 13px;
-                        display: block;
-                        font-weight: 400;
-                    }
-                }
-            }
-        }
-        .email {
-            background-image: url('../images/icon-email.svg');
-            background-image: url('../images/icon-email.png');
-        }
-        .skype {
-            background-image: url('../images/icon-skype.svg');
-            background-image: url('../images/icon-skype.png');
-        }
-        .exchange {
-            background-image: url('../images/icon-exchange.svg');
-            background-image: url('../images/icon-exchange.png');
-        }
-        .sharepoint {
-            background-image: url('../images/icon-sharepoint.svg');
-            background-image: url('../images/icon-sharepoint.png');
-        }
-        .email-wizard {
-            background-image: none, url('../images/icon-wizard.svg');
-            background-image: none, url('../images/icon-wizard.png');
-            background-repeat: no-repeat;
-            background-position: 27px 16px;
-            border: 1px solid #ddd;
-            padding: 25px;
-            display: block;
-            h4 {
-                padding-left: 60px;
-                text-align: left;
-                margin: 0 0 15px 0;
-            }
-            p {
-                max-width: 60%;
-                margin: 0 0;
-            }
-        }
-    }
-
-    #email-button {
-        position: absolute;
-        bottom: 14%;
-        right: 16%;
-        padding: 12px 35px;
-    }
-
-    .product-type-cloud {
-        h4 {
-            text-align: left;
-        }
-        .icon {
-            background-repeat: no-repeat;
-            background-position: top left;
-            background-size: 35px 35px;
-            margin-bottom: 60px;
-            h3 {
-                margin: 5px 0 5px 0;
-                a {
-                    text-transform: uppercase;
-                    padding-left: 50px;
-                    font-size: 16px;
-                    font-weight: 600;
-                    display: block;
-                    span {
-                        font-size: 13px;
-                        display: block;
-                        font-weight: 400;
-                    }
-                }
-            }
-        } 
-       .servers {
-            background-image: url('../images/icon-servers.svg');
-            background-image: url('../images/icon-servers.png');
-        }
-        .files {
-            background-image: url('../images/icon-files.svg');
-            background-image: url('../images/icon-files.png');
-        }
-        .sites {
-            background-image: url('../images/icon-sites.svg');
-            background-image: url('../images/icon-sites.png');
-        }
-        .load-balancers {
-            background-image: url('../images/icon-load-balancers.svg');
-            background-image: url('../images/icon-load-balancers.png');
-        }
-        .backup {
-            background-image: url('../images/icon-backup.svg');
-            background-image: url('../images/icon-backup.png');
-        }
-        .databases {
-            background-image: url('../images/icon-databases.svg');
-            background-image: url('../images/icon-databases.png');
-        }
-        .images {
-            background-image: url('../images/icon-images.svg');
-            background-image: url('../images/icon-images.png');
-        }
-        .block-storage {
-            background-image: url('../images/icon-files.svg');
-            background-image: url('../images/icon-files.png');
-        }
-        .private {
-            background-image: url('../images/icon-private-cloud.svg');
-            background-image: url('../images/icon-private-cloud.png');
-        }
-
-        .monitoring {
-            background-image: url('../images/icon-monitoring.svg');
-            background-image: url('../images/icon-monitoring.png');
-        }
-        .big-data {
-            background-image: url('../images/icon-big-data.svg');
-            background-image: url('../images/icon-big-data.png');
-        }
-        .orchestration {
-            background-image: url('../images/icon-orchestration.svg');
-            background-image: url('../images/icon-orchestration.png');
-        }
-        .auto-scale {
-            background-image: url('../images/icon-auto-scale.svg');
-            background-image: url('../images/icon-auto-scale.png');
-        }
-        .rackconnect {
-            background-image: url('../images/icon-rackconnect.svg');
-            background-image: url('../images/icon-rackconnect.png');
-        }
-        .vmware {
-            background-image: url('../images/icon-vmware.svg');
-            background-image: url('../images/icon-vmware.png');
-        }
-        .cdn {
-            background-image: url('../images/icon-cdn.svg');
-            background-image: url('../images/icon-cdn.png');
-        }
-        .intelligence {
-            background-image: url('../images/icon-intelligence.svg');
-            background-image: url('../images/icon-intelligence.png');
-        }
-    }
-
+    
+    #product-type-email #product-type-cloud,
+    #product-type-getstart {display: none;}
+        
     //first class to clear margin right 
-    .primary {
-        margin-left: 0px;
-    }
+    .primary {margin-left: 0px;}
 
     //Card styles for 'Most relevent content section'
     /* Styles for cards for reimplementation on support home after jan 22nd.
@@ -690,47 +798,6 @@ a {
     }
 
     */
-
-    #product-type-email #product-type-cloud, #product-type-getstart{
-        display: none;
-    }
-
-    .filter-product-type {
-        display: block;
-        text-align: left;
-        ul {
-            margin-left: 0px;
-            display: block;
-            list-style-type: none;
-            li {
-                font-family: $font-family-secondary;
-                display: inline;
-                padding-right: 30px;
-                &:last-child {
-                    padding-right: 0px;
-                }
-                a {
-                    font-size: 21px;
-                    color: #474747;
-                    text-transform: uppercase;
-                    &.active {
-                        border-bottom: solid 5px $color-kcblue;
-                        &:hover {
-                            text-decoration: none;
-                        }
-                    }
-                    &.inactive {
-                        &:hover {
-                            text-decoration: none;
-                            border-bottom: solid 5px #999999;
-                            transition: color 0s;
-                            cursor: pointer;
-                        }
-                    }
-                }
-            }
-        }
-    }
         
     // Article-list styles and mods
     

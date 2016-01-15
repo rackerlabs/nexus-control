@@ -53,10 +53,10 @@
       "routes": {
         "^/": "deferred.html",
         "^/launch/.+?": "default.html",
-        "^/howto/.+?": "article.html",
-        "^/howto/.+?-faq/": "faq.html",
-        "^/howto/.+?-getting-started": "getting-started.html",
-        "^/howto/$": "home.html"
+        "^/how-to/$": "home.html",
+        "^/how-to/.+?": "article.html",
+        "^/how-to/.+?-faq/": "faq.html",
+        "^/how-to/.+?-getting-started": "getting-started.html"
       }
     }
 }

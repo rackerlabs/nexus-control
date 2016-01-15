@@ -1,64 +1,19 @@
-<!DOCTYPE html>
-<html>
-    {% include head.html %}
-    <body>
-        {% include header.html %}
+{% extends "_layouts/base.html" %}
+
+{% set article_type = "faq"}
+
+{% block bodyContent %}
         <article>
             <div class="container">
                 <div class="row">
                     <div class="three columns sidebar sticky">
-                        
-                        <h3>Areas of Interest</h3>
-                        <ul class="area">
-                            <li><a href="{{ '../getting-started'  | prepend: site.baseurl }}">Getting Started</a></li>
-                            <li class="active"><a href="">FAQs</a></li>
-                        </ul>
-                        
-                        <hr />
-                        
-                        <h3>Contents</h3>
-                        <ul class="nav">
-                            <li class="active"><a href="">Getting Started</a></li>
-                            <li><a href="">Account Services</a></li>
-                            <li><a href="">Server Management</a></li>
-                            <li><a href="">Performance</a></li>
-                            <li><a href="">Billing and Account</a></li>
-                            <li><a href="">Support</a></li>
-                            <li><a href="">Security</a></li>
-                            <li><a href="">FAQs</a></li>
-                            <li><a href="">API</a></li>
-                        </ul>
-                                                
-                        <h3>Related Articles</h3>
-                        <ul>
-                            <li><a href="">Article Name: Try to be Concise and Not Too Long</a></li>
-                            <li><a href="">Article Name: Try to be Concise and Not Too Long</a></li>
-                            <li><a href="">Article Name: Try to be Concise and Not Too Long</a></li>
-                        </ul>
-                        
-                        <h3>Have Feedback?</h3>
-                        <p>We love customer feedback. Help us improve our products and service by <a href="">leaving yours</a>.</p>                        
+                      {% include "_includes/product-sidebar.html" %}
                     </div>
                     <div class="nine columns content faq">
-                        <ul class="breadcrumbs">
-                            <li><a href="{{ '../home'  | prepend: site.baseurl }}">Knowledge Center</a></li>
-                            <li><a href="{{ '../product'  | prepend: site.baseurl }}">Cloud Servers</a></li>
-                            <li>FAQs</li>
-                        </ul>
-                        
-                        <h2 class="less-margin">{{ page.title }}</h2>
-
-                        <ul class="meta">
-                            <li>By: <a href="">{{ page.author }}</a></li>
-                            <li>On: {{ page.date | date: "%b %-d, %Y" }}</li>
-                        </ul>
-                        
-                        {{ content }}
-                        
+                        {% include "_includes/product-header.html" %}
+                        {{ deconst.content.envelope.body }}
                     </div>
                 </div>
             </div>
-        </article>        
-        {% include footer.html %}
-    </body>
-</html>
+        </article>
+{% endblock %}
