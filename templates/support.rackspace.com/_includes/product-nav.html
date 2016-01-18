@@ -1,8 +1,9 @@
 <h3>Areas of Interest</h3>
 
-{% set productHref = deconst.request.path.replace(r/-faq\/|-getting-started\/|\/$/, "") %}
+{% set productHref = deconst.request.path.replace(r/-faq\/|-getting-started\/|-all-articles\/|\/$/, "") %}
 
 <ul class="area">
-  <li{% if deconst.request.path.match('-getting-started/') %} class="active"{% endif %}><a href="{{ productHref + "-getting-started/" }}">Getting Started</a></li>
+  <li{% if deconst.request.path.match('-getting-started/') %} class="active"{% endif %}><a href="{{ productHref + "-getting-started/" }}">Product Guide</a></li>
   <li{% if deconst.request.path.match('-faq/') %} class="active"{% endif %}><a href="{{ productHref + "-faq/" }}">FAQs</a></li>
+  <li{% if deconst.request.path.match('-all-articles/') %} class="active"{% endif %}><a href="{{ productHref + "-all-articles/" }}">All Articles</a></li>
 </ul>

@@ -1,13 +1,17 @@
-<!DOCTYPE html>
-<html>
-    {% include head.html %}
-    <body>
+{% extends "_layouts/base.html" %}
+
+{% block bodyContent %}
         <article>
             <div class="container">
                 <div class="row">
-                    {{ content }}
+                    <div class="three columns sidebar sticky">
+                      {% include "_includes/product-sidebar.html" %}
+                    </div>
+                    <div class="nine columns content page-list">
+                        {% include "_includes/product-header.html" %}
+                        {{ deconst.content.envelope.body }}
+                    </div>
                 </div>
             </div>
-        </article>        
-    </body>
-</html>
+        </article>
+{% endblock %}

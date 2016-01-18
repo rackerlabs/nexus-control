@@ -1,5 +1,4 @@
-{% extends "_layouts/base.html" %}
-
+{% extends "_includes/product-sidebar.html" %}
 {% block contents %}
             <h3>Contents</h3>
             <ul class="nav">
@@ -12,21 +11,4 @@
                 <li{% if deconst.request.path.match('#security') %} class"active"{% endif %}><a href="#security">Security</a></li>
                 <li{% if deconst.request.path.match('#API') %} class"active"{% endif %}><a href="#API">API</a></li>
             </ul>
-{% endblock %}
-
-
-{% block bodyContent %}
-        <article>
-            <div class="container">
-                <div class="row">
-                    <div class="three columns sidebar sticky">
-                      {% include "_includes/faq-sidebar.html" %}
-                    </div>
-                    <div class="nine columns content faq">
-                        {% include "_includes/product-header.html" %}
-                        {{ deconst.content.envelope.body }}
-                    </div>
-                </div>
-            </div>
-        </article>
 {% endblock %}

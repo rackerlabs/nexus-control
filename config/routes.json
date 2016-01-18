@@ -73,6 +73,7 @@
         "^/how-to/rackspace-private-cloud-microsoft-platform/$": "product.html",
         "^/how-to/rackspace-private-cloud-openstack/$": "product.html",
         "^/how-to/.+?-faq/$": "faq.html",
+        "^/how-to/.+?-all-articles/$": "page-list.html",
         "^/how-to/.+?-getting-started/$": "getting-started.html"
       }
     }
