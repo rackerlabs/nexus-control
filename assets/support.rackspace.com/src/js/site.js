@@ -1,67 +1,44 @@
 $(document).ready(function(){
 
   // FAQs toggle content
-  
+
   $("div.faq h4").nextUntil("h4, h3, hr").hide();
   $("div.faq h4").click(function() {
     $(this).nextUntil("h4, h3, hr").slideToggle("fast");
     $(this).toggleClass("active", 1000);
   });
-  
+
   // Tags toggle
-  
+
   $("#list-tags").click(function() {
     $(".tags-list").toggle();
   });
 
-  // To-top link 
-
   // Homepage list toggle controls
+  var tabs = {
+    'cloud-hosting': '#cloud-ctrl, #cloud-display',
+    'cloud-office': '#office-ctrl, #office-display',
+    'core-user-guide': '#get-start-ctrl, #get-start-display'
+  };
 
-  $("#cloud-ctrl").click(function(){
-    $(this).removeClass( "inactive" ).addClass( "active" );
-    $("#office-ctrl, #get-start-ctrl, #sdks-ctrl").removeClass("active").addClass("inactive");
-    $("#cloud-display").removeClass( "inactive" ).addClass( "active" );
-    $("#office-display, #get-start-display, #sdks-display").removeClass("active").addClass("inactive");
-  });
+  // set the specified tab as active
+  function setTabActive(tab) {
+    $(".filter-product-type a").removeClass('active').addClass('inactive');
+    $(".product-type").removeClass('active').addClass('inactive');
+    $(tabs[tab]).removeClass('inactive').addClass('active');
+    window.location.hash = "#" + tab;
+  };
 
-  $("#office-ctrl").click(function(){
-    $(this).removeClass( "inactive" ).addClass( "active" );
-    $("#cloud-ctrl, #get-start-ctrl, #sdks-ctrl").removeClass("active").addClass("inactive");
-    $("#office-display").removeClass( "inactive" ).addClass( "active" );
-    $("#cloud-display, #get-start-display, #sdks-display").removeClass("active").addClass("inactive");
-  });
+  // if the window has a hash location, and it's not blank
+  var loc = window.location.hash.replace(/#/, '');
+  if (loc !== '' && tabs[loc] !== undefined) {
+    setTabActive(loc);
+  } else {
+    setTabActive('cloud-hosting');
+  }
 
-  $("#get-start-ctrl").click(function(){
-    $(this).removeClass( "inactive" ).addClass( "active" );
-    $("#office-ctrl, #cloud-ctrl, #sdks-ctrl").removeClass("active").addClass("inactive");
-    $("#get-start-display").removeClass( "inactive" ).addClass( "active" );
-    $("#office-display, #cloud-display, #sdks-display").removeClass("active").addClass("inactive");
-
-  });
-
-  $("#sdks-ctrl").click(function(){
-    $(this).removeClass( "inactive" ).addClass( "active" );
-    $("#office-ctrl, #get-start-ctrl, #cloud-ctrl").removeClass("active").addClass("inactive");
-    $("#sdks-display").removeClass( "inactive" ).addClass( "active" );
-    $("#office-display, #get-start-display, #cloud-display").removeClass("active").addClass("inactive");
-  });
-  
-
-  /* // Sentence Casing h2 elements for demo purposes
-
-  var words = $('h2').text().split(' ');
-  var html = '';
-  $.each(words, function() {
-    html += '<span style="text-transform:lowercase">'+this.substring(0,1)+'</span>'+this.substring(1) + ' ';
-  });
-  $('h2').html(html);
-  
-  */
-
+  // add onclick handlers to the tabs
+  $("#cloud-ctrl").click(setTabActive.bind(null, 'cloud-hosting'));
+  $("#office-ctrl").click(setTabActive.bind(null, 'cloud-office'));
+  $("#get-start-ctrl").click(setTabActive.bind(null, 'core-user-guide'));
 });
-
-
-
-
-
