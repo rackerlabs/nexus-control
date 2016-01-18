@@ -55,8 +55,8 @@
         "^/launch/.+?": "default.html",
         "^/how-to/$": "home.html",
         "^/how-to/.+?": "article.html",
-        "^/how-to/.+?-faq/": "faq.html",
-        "^/how-to/.+?-getting-started": "getting-started.html"
+        "^/how-to/.+?-faq/$": "faq.html",
+        "^/how-to/.+?-getting-started$": "getting-started.html"
       }
     }
 }
