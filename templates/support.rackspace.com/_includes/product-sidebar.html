@@ -4,15 +4,14 @@
 
                         <h3>Contents</h3>
                         <ul class="nav">
-                            <li class="active"><a href="">Getting Started</a></li>
-                            <li><a href="">Account Services</a></li>
-                            <li><a href="">Server Management</a></li>
-                            <li><a href="">Performance</a></li>
-                            <li><a href="">Billing and Account</a></li>
-                            <li><a href="">Support</a></li>
-                            <li><a href="">Security</a></li>
-                            <li><a href="">FAQs</a></li>
-                            <li><a href="">API</a></li>
+                            <li{% if deconst.request.path.match('#gettingStarted') %} class="active"{% endif %}><a href="#gettingStarted">Getting Started</a></li>
+                            <li{% if deconst.request.path.match('#accountServices') %} class="active"{% endif %}><a href="#accountServices">Account Services</a></li>
+                            <li{% if deconst.request.path.match('#serverManagement') %} class"active"{% endif %}><a href="#serverManagement">Server Management</a></li>
+                            <li{% if deconst.request.path.match('#performance') %} class"active"{% endif %}><a href="#performance">Performance</a></li>
+                            <li{% if deconst.request.path.match('#billingandAccount') %} class"active"{% endif %}><a href="#billingandAccount">Billing and Account</a></li>
+                            <li{% if deconst.request.path.match('#support') %} class"active"{% endif %}><a href="#support">Support</a></li>
+                            <li{% if deconst.request.path.match('#security') %} class"active"{% endif %}><a href="#security">Security</a></li>
+                            <li{% if deconst.request.path.match('#API') %} class"active"{% endif %}><a href="#API">API</a></li>
                         </ul>
 
                         {% include "_includes/feedback-sidebar.html" %}

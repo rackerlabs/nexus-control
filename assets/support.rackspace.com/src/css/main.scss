@@ -8,7 +8,7 @@
         "header",
         "footer",
         "syntax",
-        
+
         url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700),
         url(https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600,700),
         url(https://fonts.googleapis.com/css?family=Source+Code+Pro),
@@ -539,88 +539,88 @@ a {
             } 
        
             .servers {
-                background-image: url('../images/icon-servers.png');
-                background-image: none, url('../images/icon-servers.svg');
+                background-image: url($assets_support_rackspace_com_dist_img_icon_servers_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_servers_svg);
             }
 
             .files {
-                background-image: url('../images/icon-files.png');
-                background-image: none, url('../images/icon-files.svg');
+                background-image: url($assets_support_rackspace_com_dist_img_icon_files_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_files_svg);
             }
 
             .sites {
-                background-image: url('../images/icon-sites.png');
-                background-image: none, url('../images/icon-sites.svg');
+                background-image: url($assets_support_rackspace_com_dist_img_icon_sites_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_sites_svg);
             }
 
             .load-balancers {
-                background-image: url('../images/icon-load-balancers.png');
-                background-image: none, url('../images/icon-load-balancers.svg');
+                background-image: url($assets_support_rackspace_com_dist_img_icon_load_balancers_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_load_balancers_svg);
             }
 
             .backup {
-                background-image: url('../images/icon-backup.png');
-                background-image: none, url('../images/icon-backup.svg');
+                background-image: url($assets_support_rackspace_com_dist_img_icon_backup_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_backup_svg);
             }
 
             .databases {
-                background-image: url('../images/icon-databases.png');
-                background-image: none, url('../images/icon-databases.svg');
+                background-image: url($assets_support_rackspace_com_dist_img_icon_databases_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_databases_svg);
             }
 
             .images {
-                background-image: url('../images/icon-images.png');
-                background-image: none, url('../images/icon-images.svg');
+                background-image: url($assets_support_rackspace_com_dist_img_icon_images_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_images_svg);
             }
 
             .block-storage {
-                background-image: url('../images/icon-files.png');
-                background-image: none, url('../images/icon-files.svg');
+                background-image: url($assets_support_rackspace_com_dist_img_icon_files_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_files_svg);
             }
 
             .private {
-                background-image: url('../images/icon-private-cloud.png');
-                background-image: none, url('../images/icon-private-cloud.svg');
+                background-image: url($assets_support_rackspace_com_dist_img_icon_private_cloud_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_private_cloud_svg);
             }
 
             .monitoring {
-                background-image: url('../images/icon-monitoring.png');
-                background-image: none, url('../images/icon-monitoring.svg');
+                background-image: url($assets_support_rackspace_com_dist_img_icon_monitoring_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_monitoring_svg);
             }
 
             .big-data {
-                background-image: url('../images/icon-big-data.png');
-                background-image: none, url('../images/icon-big-data.svg');
+                background-image: url($assets_support_rackspace_com_dist_img_icon_big_data_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_big_data_svg);
             }
 
             .orchestration {
-                background-image: url('../images/icon-orchestration.png');
-                background-image: none, url('../images/icon-orchestration.svg');
+                background-image: url($assets_support_rackspace_com_dist_img_icon_orchestration_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_orchestration_svg);
             }
 
             .auto-scale {
-                background-image: url('../images/icon-auto-scale.png');
-                background-image: none, url('../images/icon-auto-scale.svg');
+                background-image: url($assets_support_rackspace_com_dist_img_icon_auto_scale_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_auto_scale_svg);
             }
 
             .rackconnect {
-                background-image: url('../images/icon-rackconnect.png');
-                background-image: none, url('../images/icon-rackconnect.svg');
+                background-image: url($assets_support_rackspace_com_dist_img_icon_rackconnect_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_rackconnect_svg);
             }
 
             .vmware {
-                background-image: url('../images/icon-vmware.png');
-                background-image: none, url('../images/icon-vmware.svg');
+                background-image: url($assets_support_rackspace_com_dist_img_icon_vmware_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_vmware_svg);
             }
 
             .cdn {
-                background-image: url('../images/icon-cdn.png');
-                background-image: none, url('../images/icon-cdn.svg');
+                background-image: url($assets_support_rackspace_com_dist_img_icon_cdn_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_cdn_svg);
             }
 
             .intelligence {
-                background-image: url('../images/icon-intelligence.png');
-                background-image: none, url('../images/icon-intelligence.svg');
+                background-image: url($assets_support_rackspace_com_dist_img_icon_intelligence_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_intelligence_svg);
             }
         }
     
