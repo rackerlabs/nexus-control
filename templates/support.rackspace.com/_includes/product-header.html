@@ -6,6 +6,8 @@
                         <h2 class="less-margin">{{ title }}</h2>
 
                         <ul class="meta">
-                            <li>By: {{ created_by }}</li> 
-                            <li>On: {{ created_date }}</li>
+                            {% if created_by %}
+                            <li>By: {{ created_by }}</li>
+                            {% if created_date %}<li>On: {{ created_date }}</li>{% endif %}
+                            {% endif %}
                         </ul>
