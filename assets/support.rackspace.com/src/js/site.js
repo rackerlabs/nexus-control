@@ -29,16 +29,23 @@ $(document).ready(function(){
     window.location.hash = "#" + tab;
   };
 
-  // if the window has a hash location, and it's not blank
-  var loc = window.location.hash.replace(/#/, '');
-  if (loc !== '' && tabs[loc] !== undefined) {
-    setTabActive(loc);
-  } else {
-    setTabActive('cloud-hosting');
-  }
+  function wireUpStuff() {
+    // if the window has a hash location, and it's not blank
+    var loc = window.location.hash.replace(/#/, '');
 
-  // add onclick handlers to the tabs
-  $("#cloud-ctrl").click(setTabActive.bind(null, 'cloud-hosting'));
-  $("#office-ctrl").click(setTabActive.bind(null, 'cloud-office'));
-  $("#get-start-ctrl").click(setTabActive.bind(null, 'core-user-guide'));
+    if (loc !== '' && tabs[loc] !== undefined) {
+      setTabActive(loc);
+    } else {
+      setTabActive('cloud-hosting');
+    }
+
+    // add onclick handlers to the tabs
+    $("#cloud-ctrl").click(setTabActive.bind(null, 'cloud-hosting'));
+    $("#office-ctrl").click(setTabActive.bind(null, 'cloud-office'));
+    $("#get-start-ctrl").click(setTabActive.bind(null, 'core-user-guide'));
+  };
+
+  if (window.location.pathname.match(/how-to\/$/)) {
+    wireUpStuff();
+  }
 });
