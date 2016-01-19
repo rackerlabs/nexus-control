@@ -161,28 +161,28 @@ a {
         margin-left: 20px;
     }
     
-    p > code {
+    code {
         font-family: $font-family-code;
         color: inherit;
         background: #ededed;
         white-space: nowrap;
+        padding: 2px 4px;
     }
-    
-    .highlight {
+
+    pre > code {
+        display: block;
+        white-space: pre;
+        padding: 20px;
+        background: #3B3F45;
+        font-family: $font-family-code;
+        color: #fff;  
+        
         margin-bottom: 30px;
         font-size: 13px;
         line-height: 20px;
         overflow: auto;
-
-        pre > code {
-            display: block;
-            white-space: pre;
-            padding: 20px;
-            background: #3B3F45;
-            font-family: $font-family-code;
-            color: #fff;            
-        }        
-    }    
+                  
+    }        
     
     hr {
         margin-bottom: 40px;
@@ -204,19 +204,21 @@ a {
     table {
         border-collapse: collapse;
         border-spacing: 0;
-        
+
         margin-bottom: 35px;
         font-size: 14px;
         font-weight: 300;
         line-height: 24px;
+        width: 100%;
         
         th {
-        background: $color-kcblue;
-        color: #fff;
-        border-right: 1px solid #fff;
-        font-weight: 400;
+            white-space: nowrap;
+            background: $color-kcblue;
+            color: #fff;
+            border-right: 1px solid #fff;
+            font-weight: 400;
         
-        &:last-child {border-right-color: $color-kcblue;}
+            &:last-child {border-right-color: $color-kcblue;}
         
         }
 
@@ -226,6 +228,8 @@ a {
             padding: 10px;
             text-align: left;
         }
+        
+        code:last-child, pre:last-child, p:last-child, ul:last-child, ol:last-child {margin-bottom: 0;}
         
     }
 
