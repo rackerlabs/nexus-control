@@ -1,0 +1,72 @@
+// START Footer
+
+#footer-wrapper {
+    font-family: $font-family-primary;
+    width: 100%;
+    border-top: 10px solid $color-brand;
+    background: #2a2a2a;
+
+    #footer-container {
+        width: 980px;
+        margin: 0 auto;
+        padding: 25px 10px 30px;
+        -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+        -moz-box-sizing: border-box; /* Firefox, other Gecko */
+        box-sizing: border-box; /* IE 8+ */
+        
+        .footer-col {
+            float: left;
+            width: 20%;
+            
+            &.footer-about {
+                width: 35%;
+                
+                .footer-about-list {
+                    float: left;
+                    width: 45%;
+                }
+            }                
+        }
+        
+        h4 {
+            font-size: 13px;
+            text-transform: uppercase;
+            color: #fff;
+            margin: 0 0 10px;
+            font-weight: 400;
+        }        
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            line-height: 21px;
+            padding: 0;
+        }
+        
+        a {
+            font-size: 12px;
+            color: #aaa;
+            text-decoration: none;
+            
+            &:hover {text-decoration: underline;}
+        }        
+    }
+    
+    #basement-wrapper {
+        width: 100%;
+        background: #000;
+        color: #fff;
+
+        #basement-container {
+            width: 980px;
+            margin: 0 auto;
+            padding: 20px 10px;
+            font-size: 12px;
+            -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+            -moz-box-sizing: border-box; /* Firefox, other Gecko */
+            box-sizing: border-box; /* IE 8+ */
+        }
+    }
+}
+
+// END Footer
