@@ -3,6 +3,7 @@ window.$ = window.jQuery = $;
 
 var setupHomepage = require('./homepage');
 var setupAllArticles = require('./all-articles');
+var setupAdmonish = require('./admonish');
 
 // kick things off
 $(document).ready(function(){
@@ -26,4 +27,6 @@ $(document).ready(function(){
   if (window.location.pathname.match(/-all-articles\/$/)) {
     setupAllArticles();
   }
+
+  setupAdmonish();
 });
