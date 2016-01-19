@@ -201,6 +201,34 @@ a {
     
     // Page Content: UTILITY LISTS
         
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        
+        margin-bottom: 35px;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 24px;
+        
+        th {
+        background: $color-kcblue;
+        color: #fff;
+        border-right: 1px solid #fff;
+        font-weight: 400;
+        
+        &:last-child {border-right-color: $color-kcblue;}
+        
+        }
+
+        td {border: 1px solid #ddd;}
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        
+    }
+
     ul {
         &.breadcrumbs {
             font-family: $font-family-secondary;
