@@ -1,9 +1,10 @@
 {% extends "_layouts/raw.html" %}
 
-{% set title = "Knowledge Center | " + deconst.content.envelope.title %}
+{% set title = deconst.content.envelope.title %}
 {% set product = deconst.content.envelope.metadata.product %}
 {% set created_by = deconst.content.envelope.metadata.created_by  %}
 {% set created_date = deconst.content.envelope.metadata.created_date  %}
+{% set last_modified_date =  deconst.content.envelope.metadata.last_modified_date %}
 
 {% set siteUrl = deconst.url.getSiteUrl(deconst.context, deconst.context.request.path) %}
 {% set cssUrl = deconst.assets.assets_support_rackspace_com_dist_css_main_css %}
