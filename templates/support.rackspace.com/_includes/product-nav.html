@@ -3,7 +3,7 @@
 {% set productHref = deconst.request.path.replace(r/-faq\/|-get-started\/|-all-articles\/|\/$/, "") %}
 
 <ul class="area">
-  <li{% if deconst.request.path.match('-get-started/') %} class="active"{% endif %}><a href="{{ productHref + "-get-started/" }}">Product Guide</a></li>
+  <li{% if deconst.request.path.match(productHref + '/') %} class="active"{% endif %}><a href="{{ productHref }}">Product Guide</a></li>
   <li{% if deconst.request.path.match('-faq/') %} class="active"{% endif %}><a href="{{ productHref + "-faq/" }}">FAQs</a></li>
   <li{% if deconst.request.path.match('-all-articles/') %} class="active"{% endif %}><a href="{{ productHref + "-all-articles/" }}">All Articles</a></li>
 </ul>
