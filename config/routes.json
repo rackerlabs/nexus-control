@@ -84,7 +84,9 @@
         "^/how-to/sharepoint/$": "product.html",
         "^/how-to/.+?-faq/$": "faq.html",
         "^/how-to/.+?-all-articles/$": "page-list.html",
-        "^/how-to/.+?-get-started/$": "getting-started.html"
+        "^/how-to/.+?-get-started/$": "getting-started.html",
+        "^/white-paper/.+?": "white-paper.html",
+        "^/case-study/.+?": "case-study.html"
       }
     }
 }
