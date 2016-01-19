@@ -1,3 +1,12 @@
+                        <div class="feedback-container">
                         <h3>Have Feedback?</h3>
-                        <p>We love customer feedback. Help us improve our products and service by <a href="">leaving yours</a>.</p>
-                        {# TODO #}
+                        <p>We love customer feedback. Help us improve our products and service by <a href="https://feedback.rackspace.com/forums/264368-rackspace-documentation">leaving yours</a>.</p>
+                        </div>
+
+                        {% if deconst.content.envelope.metadata.github_url %}
+                        <hr/>
+                        <div class="contributing-container">
+                        <h3>Contributing</h3>
+                        <p>You can edit this article on <a href="{{ deconst.content.envelope.metadata.github_url }}">GitHub</a></p>
+                        </div>
+                        {% endif %}
