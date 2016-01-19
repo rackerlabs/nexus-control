@@ -1,0 +1,32 @@
+{% extends "_layouts/base.html" %}
+
+{% block contents %}
+            <h3>Contents</h3>
+            <ul class="nav">
+                <li{% if deconst.request.path.match('#gettingStarted') %} class="active"{% endif %}><a href="#gettingStarted">Getting Started</a></li>
+                <li{% if deconst.request.path.match('#accountServices') %} class="active"{% endif %}><a href="#accountServices">Account Services</a></li>
+                <li{% if deconst.request.path.match('#serverManagement') %} class"active"{% endif %}><a href="#serverManagement">Server Management</a></li>
+                <li{% if deconst.request.path.match('#performance') %} class"active"{% endif %}><a href="#performance">Performance</a></li>
+                <li{% if deconst.request.path.match('#billingandAccount') %} class"active"{% endif %}><a href="#billingandAccount">Billing and Account</a></li>
+                <li{% if deconst.request.path.match('#support') %} class"active"{% endif %}><a href="#support">Support</a></li>
+                <li{% if deconst.request.path.match('#security') %} class"active"{% endif %}><a href="#security">Security</a></li>
+                <li{% if deconst.request.path.match('#API') %} class"active"{% endif %}><a href="#API">API</a></li>
+            </ul>
+{% endblock %}
+
+
+{% block bodyContent %}
+        <article>
+            <div class="container">
+                <div class="row">
+                    <div class="three columns sidebar sticky">
+                      {% include "_includes/faq-sidebar.html" %}
+                    </div>
+                    <div class="nine columns content faq">
+                        {% include "_includes/product-header.html" %}
+                        {{ deconst.content.envelope.body }}
+                    </div>
+                </div>
+            </div>
+        </article>
+{% endblock %}

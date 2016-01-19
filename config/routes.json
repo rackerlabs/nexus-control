@@ -52,7 +52,39 @@
     "support.rackspace.com": {
       "routes": {
         "^/": "deferred.html",
-        "^/launch/.+?": "default.html"
+        "^/how-to/$": "home.html",
+        "^/how-to/.+?": "article.html",
+        "^/how-to/cloud-servers/$": "product.html",
+        "^/how-to/cloud-sites/$": "product.html",
+        "^/how-to/cloud-images/$": "product.html",
+        "^/how-to/managed-vmware-services/$": "product.html",
+        "^/how-to/cloud-networks/$": "product.html",
+        "^/how-to/cloud-dns/$": "product.html",
+        "^/how-to/cloud-load-balancers/$": "product.html",
+        "^/how-to/rackspace-rackconnect/$": "product.html",
+        "^/how-to/cloud-files/$": "product.html",
+        "^/how-to/cloud-block-storage/$": "product.html",
+        "^/how-to/rackspace-cdn/$": "product.html",
+        "^/how-to/cloud-databases/$": "product.html",
+        "^/how-to/cloud-big-data/$": "product.html",
+        "^/how-to/cloud-queues/$": "product.html",
+        "^/how-to/cloud-backup/$": "product.html",
+        "^/how-to/cloud-monitoring/$": "product.html",
+        "^/how-to/cloud-orchestration/$": "product.html",
+        "^/how-to/rackspace-auto-scale/$": "product.html",
+        "^/how-to/rackspace-intelligence/$": "product.html",
+        "^/how-to/managed-operations/$": "product.html",
+        "^/how-to/rackspace-private-cloud-microsoft-platform/$": "product.html",
+        "^/how-to/rackspace-private-cloud-openstack/$": "product.html",
+        "^/how-to/rackspace-email/$": "product.html",
+        "^/how-to/rackspace-email-archiving/$": "product.html",
+        "^/how-to/office-365/$": "product.html",
+        "^/how-to/skype-for-business/$": "product.html",
+        "^/how-to/exchange/$": "product.html",
+        "^/how-to/sharepoint/$": "product.html",
+        "^/how-to/.+?-faq/$": "faq.html",
+        "^/how-to/.+?-all-articles/$": "page-list.html",
+        "^/how-to/.+?-get-started/$": "getting-started.html"
       }
     }
 }
