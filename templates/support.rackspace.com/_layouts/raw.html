@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        {% if title %}<title>{{ title }}</title>{% else %}<title>Knowledge Center</title>{% endif %}
+        <title>{{ title }}</title>
         {% if excerpt %}<meta name="description" content="{{ excerpt | striptags | truncate(160) }}>{% endif %}
 
         <link rel="canonical" href="{{ siteUrl }}">
