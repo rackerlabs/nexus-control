@@ -22,6 +22,7 @@
             "^/docs/cloud-databases/v1/developer-guide": "docs-singlepage.html",
             "^/docs/cloud-backup/v1/developer-guide": "docs-singlepage.html",
             "^/docs/cloud-orchestration/v1/developer-guide": "docs-singlepage.html",
+            "^/docs/cloud-orchestration/v1/resources-reference": "user-guide.html",
             "^/docs/rackconnect/v3/developer-guide": "docs-singlepage.html",
             "^/docs/cloud-queues/v1/developer-guide": "docs-singlepage.html",
             "^/docs/cloud-networks/v2/developer-guide": "docs-singlepage.html",
