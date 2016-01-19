@@ -31,6 +31,11 @@
       <div class="section-grid">
         <article>
           {{ deconst.content.envelope.body }}
+          {% if deconst.request.path.match('^/blog') and deconst.content.envelope.meta.authorIsRacker == false %}
+          <div class="guest-post-message">
+            <strong>This post was contributed by a member of the Carina community.</strong> Are you doing something interesting with Carina that you’d like to tell the world about? Share it here! <a href="https://github.com/getcarina/getcarina.com/blob/master/CONTRIBUTING.md">Learn how</a>.
+          </div>
+          {% endif %}
         </article>
       </div>
     </div>
