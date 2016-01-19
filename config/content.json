@@ -14,6 +14,7 @@
             "/docs/cloud-databases/v1/developer-guide/": "https://github.com/rackerlabs/docs-cloud-databases/",
             "/docs/cloud-backup/v1/developer-guide/": "https://github.com/rackerlabs/docs-cloud-backup/v1/",
             "/docs/cloud-orchestration/v1/developer-guide/": "https://github.com/rackerlabs/docs-cloud-orchestration/",
+            "/docs/cloud-orchestration/v1/resources-reference/": "https://github.com/rackerlabs/heat-resource-ref/",
             "/docs/rackconnect/v3/developer-guide/": "https://github.com/rackerlabs/docs-cloud-rackconnect/",
             "/docs/cloud-queues/v1/developer-guide/": "https://github.com/rackerlabs/docs-cloud-queues/",
             "/docs/cloud-networks/v2/developer-guide/": "https://github.com/rackerlabs/docs-cloud-networks/",
