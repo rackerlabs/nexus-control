@@ -1,5 +1,8 @@
 {% extends "_includes/product-sidebar.html" %}
 {% block contents %}
+{#
+ # SSDEV-429 - remove until headers are H4s and made dynamic
+
             <h3>Contents</h3>
             <ul class="nav">
                 <li{% if deconst.request.path.match('#gettingStarted') %} class="active"{% endif %}><a href="#gettingStarted">Getting Started</a></li>
@@ -11,4 +14,5 @@
                 <li{% if deconst.request.path.match('#security') %} class"active"{% endif %}><a href="#security">Security</a></li>
                 <li{% if deconst.request.path.match('#API') %} class"active"{% endif %}><a href="#API">API</a></li>
             </ul>
+#}
 {% endblock %}
