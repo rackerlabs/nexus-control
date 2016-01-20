@@ -2,7 +2,7 @@
 var $ = require('jquery');
 var _ = require('lodash');
 
-var options = ['note', 'warning'];
+var options = ['note', 'note:', 'warning', 'warning:'];
 
 function setup() {
   // grab all of the candidate admonishments
@@ -19,9 +19,9 @@ function setup() {
   _.each(candidates, function (para) {
     var type = para.firstChild.textContent.toLowerCase();
 
-    if (type === 'note') {
+    if (type.search(/^note/) != -1) {
       $(para).addClass('information');
-    } else if (type === 'warning') {
+    } else if (type.search(/^warning/) != -1) {
       $(para).addClass('admonition');
     }
   });
