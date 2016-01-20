@@ -574,19 +574,69 @@ a {
                 background-image: none, url($assets_support_rackspace_com_dist_img_icon_servers_svg);
             }
 
-            .files {
-                background-image: url($assets_support_rackspace_com_dist_img_icon_files_png);
-                background-image: none, url($assets_support_rackspace_com_dist_img_icon_files_svg);
-            }
-
             .sites {
                 background-image: url($assets_support_rackspace_com_dist_img_icon_sites_png);
                 background-image: none, url($assets_support_rackspace_com_dist_img_icon_sites_svg);
             }
 
+            .images {
+                background-image: url($assets_support_rackspace_com_dist_img_icon_images_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_images_svg);
+            }
+            
+            .vmware {
+                background-image: url($assets_support_rackspace_com_dist_img_icon_vmware_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_vmware_svg);
+            }
+            
+            .networks {
+                background-image: url($assets_support_rackspace_com_dist_img_icon_networks_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_networks_svg);
+            }
+            
+            .dns {
+                background-image: url($assets_support_rackspace_com_dist_img_icon_dns_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_dns_svg);
+            }            
+
             .load-balancers {
                 background-image: url($assets_support_rackspace_com_dist_img_icon_load_balancers_png);
                 background-image: none, url($assets_support_rackspace_com_dist_img_icon_load_balancers_svg);
+            }
+
+            .rackconnect {
+                background-image: url($assets_support_rackspace_com_dist_img_icon_rackconnect_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_rackconnect_svg);
+            }
+            
+            .files {
+                background-image: url($assets_support_rackspace_com_dist_img_icon_files_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_files_svg);
+            }
+            
+            .block-storage {
+                background-image: url($assets_support_rackspace_com_dist_img_icon_block-storage_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_block-storage_svg);
+            }
+            
+            .cdn {
+                background-image: url($assets_support_rackspace_com_dist_img_icon_cdn_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_cdn_svg);
+            }
+            
+            .databases {
+                background-image: url($assets_support_rackspace_com_dist_img_icon_databases_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_databases_svg);
+            }
+            
+            .big-data {
+                background-image: url($assets_support_rackspace_com_dist_img_icon_big_data_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_big_data_svg);
+            }
+            
+            .queues {
+                background-image: url($assets_support_rackspace_com_dist_img_icon_queues_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_queues_svg);
             }
 
             .backup {
@@ -594,34 +644,9 @@ a {
                 background-image: none, url($assets_support_rackspace_com_dist_img_icon_backup_svg);
             }
 
-            .databases {
-                background-image: url($assets_support_rackspace_com_dist_img_icon_databases_png);
-                background-image: none, url($assets_support_rackspace_com_dist_img_icon_databases_svg);
-            }
-
-            .images {
-                background-image: url($assets_support_rackspace_com_dist_img_icon_images_png);
-                background-image: none, url($assets_support_rackspace_com_dist_img_icon_images_svg);
-            }
-
-            .block-storage {
-                background-image: url($assets_support_rackspace_com_dist_img_icon_files_png);
-                background-image: none, url($assets_support_rackspace_com_dist_img_icon_files_svg);
-            }
-
-            .private {
-                background-image: url($assets_support_rackspace_com_dist_img_icon_private_cloud_png);
-                background-image: none, url($assets_support_rackspace_com_dist_img_icon_private_cloud_svg);
-            }
-
             .monitoring {
                 background-image: url($assets_support_rackspace_com_dist_img_icon_monitoring_png);
                 background-image: none, url($assets_support_rackspace_com_dist_img_icon_monitoring_svg);
-            }
-
-            .big-data {
-                background-image: url($assets_support_rackspace_com_dist_img_icon_big_data_png);
-                background-image: none, url($assets_support_rackspace_com_dist_img_icon_big_data_svg);
             }
 
             .orchestration {
@@ -634,25 +659,21 @@ a {
                 background-image: none, url($assets_support_rackspace_com_dist_img_icon_auto_scale_svg);
             }
 
-            .rackconnect {
-                background-image: url($assets_support_rackspace_com_dist_img_icon_rackconnect_png);
-                background-image: none, url($assets_support_rackspace_com_dist_img_icon_rackconnect_svg);
-            }
-
-            .vmware {
-                background-image: url($assets_support_rackspace_com_dist_img_icon_vmware_png);
-                background-image: none, url($assets_support_rackspace_com_dist_img_icon_vmware_svg);
-            }
-
-            .cdn {
-                background-image: url($assets_support_rackspace_com_dist_img_icon_cdn_png);
-                background-image: none, url($assets_support_rackspace_com_dist_img_icon_cdn_svg);
+            .managed-operations {
+                background-image: url($assets_support_rackspace_com_dist_img_icon_managed-operations_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_managed-operations_svg);
             }
 
             .intelligence {
                 background-image: url($assets_support_rackspace_com_dist_img_icon_intelligence_png);
                 background-image: none, url($assets_support_rackspace_com_dist_img_icon_intelligence_svg);
             }
+
+            .private {
+                background-image: url($assets_support_rackspace_com_dist_img_icon_private_cloud_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_private_cloud_svg);
+            }
+
         }
     
         &.product-type-email {
@@ -701,7 +722,17 @@ a {
                 background-image: url($assets_support_rackspace_com_dist_img_icon_sharepoint_png);
                 background-image: none, url($assets_support_rackspace_com_dist_img_icon_sharepoint_svg);
             }
-        
+            
+            .email-archiving {
+                background-image: url($assets_support_rackspace_com_dist_img_icon_email-archiving_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_email-archiving_svg);
+            }
+            
+            .office-365 {
+                background-image: url($assets_support_rackspace_com_dist_img_icon_office-365_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_office-365_svg);
+            }
+                                
             .email-wizard {
                 background-image: url($assets_support_rackspace_com_dist_img_icon_wizard_png);
                 background-image: none, url($assets_support_rackspace_com_dist_img_icon_wizard_svg);
