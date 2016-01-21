@@ -6,10 +6,6 @@
 {% elif deconst.request.path.match('-all-articles/$') %}
   {% set productHref = deconst.request.path.replace(r/-all-articles\/$/, "") %}
   {% set pageType = "all-articles" %}
-{% elif deconst.content.envelope.metadata.type.match("article") %}
-  {% set pageType = "article" %}
-  {% set productIdentifier = deconst.content.envelope.metadata.product.replace(" ", "-").toLowerCase() %}
-  {% set productHref = "/how-to/" + productIdentifier %}
 {% else %}
   {% set productHref = deconst.request.path.replace(r/\/$/, "") %}
   {% set pageType = "introduction" %}
