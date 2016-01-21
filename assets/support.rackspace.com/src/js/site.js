@@ -10,10 +10,10 @@ var setupAdmonish = require('./admonish');
 $(document).ready(function(){
 
   // FAQs toggle content
-  $("div.faq h4").nextUntil("h4, h3, hr").hide();
-
+  $("div.faq h4").nextUntil("h4, h3, hr, .legal-container").hide();
+  
   $("div.faq h4").click(function() {
-    $(this).nextUntil("h4, h3, hr").slideToggle("fast");
+    $(this).nextUntil("h4, h3, hr, .legal-container").slideToggle("fast");
     $(this).toggleClass("active", 1000);
   });
 
