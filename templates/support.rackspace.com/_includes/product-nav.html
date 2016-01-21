@@ -1,18 +1,23 @@
+
+{% if deconst.content.envelope.metadata.product != "undefined" %}
 <h3>For This Product:</h3>
 
+{# article, page, product #}
+{% set pageType = deconst.content.envelope.metadata.type %}
+
 {% if deconst.request.path.match('-faq/$') %}
-  {% set productHref = deconst.request.path.replace(r/-faq\/$/, "") %}
-  {% set pageType = "faq" %}
+    {% set pageType = "faq" %}
 {% elif deconst.request.path.match('-all-articles/$') %}
-  {% set productHref = deconst.request.path.replace(r/-all-articles\/$/, "") %}
-  {% set pageType = "all-articles" %}
-{% else %}
-  {% set productHref = deconst.request.path.replace(r/\/$/, "") %}
-  {% set pageType = "introduction" %}
+    {% set pageType = "all-articles" %}
 {% endif %}
 
+{# has no trailing slash #}
+{% set productURL = deconst.content.envelope.metadata.product_url %}
+
 <ul class="area">
-  <li{% if pageType == "introduction" %} class="active"{% endif %}><a href="{{ productHref + "/" }}">Introduction</a></li>
-  <li{% if pageType == "faq" %} class="active"{% endif %}><a href="{{ productHref + "-faq/" }}">FAQs</a></li>
-  <li{% if pageType == "all-articles" %} class="active"{% endif %}><a href="{{ productHref + "-all-articles/" }}">All Articles</a></li>
+  <li{% if pageType == "product" %} class="active"{% endif %}><a href="/how-to/{{ productURL + "/" }}">Introduction</a></li>
+  <li{% if pageType == "faq" %} class="active"{% endif %}><a href="/how-to/{{ productURL + "-faq/" }}">FAQs</a></li>
+  <li{% if pageType == "all-articles" %} class="active"{% endif %}><a href="/how-to/{{ productURL + "-all-articles/" }}">All Articles</a></li>
 </ul>
+
+{% endif %}
