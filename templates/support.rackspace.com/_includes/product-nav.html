@@ -1,0 +1,18 @@
+<h3>For This Product:</h3>
+
+{% if deconst.request.path.match('-faq/$') %}
+  {% set productHref = deconst.request.path.replace(r/-faq\/$/, "") %}
+  {% set pageType = "faq" %}
+{% elif deconst.request.path.match('-all-articles/$') %}
+  {% set productHref = deconst.request.path.replace(r/-all-articles\/$/, "") %}
+  {% set pageType = "all-articles" %}
+{% else %}
+  {% set productHref = deconst.request.path.replace(r/\/$/, "") %}
+  {% set pageType = "introduction" %}
+{% endif %}
+
+<ul class="area">
+  <li{% if pageType == "introduction" %} class="active"{% endif %}><a href="{{ productHref + "/" }}">Introduction</a></li>
+  <li{% if pageType == "faq" %} class="active"{% endif %}><a href="{{ productHref + "-faq/" }}">FAQs</a></li>
+  <li{% if pageType == "all-articles" %} class="active"{% endif %}><a href="{{ productHref + "-all-articles/" }}">All Articles</a></li>
+</ul>

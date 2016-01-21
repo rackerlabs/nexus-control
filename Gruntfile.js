@@ -10,6 +10,14 @@ module.exports = function(grunt) {
                     watch: true
                 }
             },
+            support: {
+                files: {
+                    'assets/support.rackspace.com/src/js/bundle.js': ['assets/support.rackspace.com/src/js/site.js']
+                },
+                options: {
+                    watch: true
+                }
+            },
             carina: {
                 files: {
                     'assets/getcarina.com/src/js/bundle.js': ['assets/getcarina.com/src/js/site.js']
@@ -31,6 +39,15 @@ module.exports = function(grunt) {
                           'fonts/**/*',
                         ],
                         dest: 'assets/dist/'
+                    },
+                    {
+                        cwd: 'assets/support.rackspace.com/src',
+                        expand: true,
+                        src: [
+                          'img/**/*',
+                          'fonts/**/*'
+                        ],
+                        dest: 'assets/support.rackspace.com/dist/'
                     },
                     {
                         cwd: 'assets/getcarina.com/src',
@@ -64,6 +81,7 @@ module.exports = function(grunt) {
             build: {
                 files: {
                     'assets/dist/css/main.css': 'assets/src/css/main.css',
+                    'assets/support.rackspace.com/dist/css/main.min.css': 'assets/support.rackspace.com/dist/css/main.css',
                     'assets/getcarina.com/dist/css/main.css': 'assets/getcarina.com/src/css/main.css'
                 }
             }
@@ -76,6 +94,17 @@ module.exports = function(grunt) {
                         {
                             dest: 'assets/src/css/less/deconst-variables.less',
                             format: 'less'
+                        }
+                    ]
+                }
+            },
+            support_assets: {
+                options: {
+                    files: ['assets/support.rackspace.com/dist/**/*'],
+                    output: [
+                        {
+                            dest: 'assets/support.rackspace.com/src/css/_sass/deconst-variables.scss',
+                            format: 'scss'
                         }
                     ]
                 }
@@ -96,6 +125,11 @@ module.exports = function(grunt) {
                     files: ['assets/dist/css/main.css', 'assets/dist/js/main.min.js']
                 }
             },
+            support_css_js: {
+                options: {
+                    files: ['assets/support.rackspace.com/dist/css/main.css', 'assets/support.rackspace.com/dist/js/site.min.js']
+                }
+            },
             carina_css_js: {
                 options: {
                     files: ['assets/getcarina.com/dist/css/main.css', 'assets/getcarina.com/dist/js/site.min.js']
@@ -107,6 +141,7 @@ module.exports = function(grunt) {
                 options: {
                     files: [
                       'assets/src/css/less/deconst-variables.less',
+                      'assets/support.rackspace.com/src/css/_sass/deconst-variables.scss',
                       'assets/getcarina.com/src/css/less/deconst-variables.less'
                     ]
                 }
@@ -135,11 +170,25 @@ module.exports = function(grunt) {
                 }
             }
         },
+        sass: {
+            options: {
+                style: 'expanded',
+                loadPath: 'assets/support.rackspace.com/src/css/_sass',
+            },
+            build: {
+                files: {
+                    'assets/support.rackspace.com/dist/css/main.css': 'assets/support.rackspace.com/src/css/main.scss'
+                }
+            }
+        },
         uglify: {
             build: {
                 files: {
                     'assets/dist/js/main.min.js': [
                       'assets/src/js/bundle.js'
+                    ],
+                    'assets/support.rackspace.com/dist/js/site.min.js': [
+                      'assets/support.rackspace.com/src/js/bundle.js'
                     ],
                     'assets/getcarina.com/dist/js/site.min.js': [
                       'assets/getcarina.com/src/js/bundle.js'
@@ -152,9 +201,17 @@ module.exports = function(grunt) {
                 files: ['assets/**/src/css/less/**/*.less'],
                 tasks: ['less:dev']
             },
+            sass: {
+                files: ['assets/**/src/css/_sass/**/*.scss'],
+                tasks: ['sass']
+            },
             js: {
                 files: ['assets/src/js/**/*.js', '!assets/src/js/bundle.js'],
                 tasks: ['browserify:dev']
+            },
+            support_js: {
+              files: ['assets/support.rackspace.com/src/js/**/*.js', '!assets/support.rackspace.com/src/js/bundle.js'],
+              tasks: ['browserify:dev']
             },
             carina_js: {
               files: ['assets/getcarina.com/src/js/**/*.js', '!assets/getcarina.com/src/js/bundle.js'],
@@ -175,6 +232,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-less');
+    grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-deconst-assets');
@@ -202,6 +260,7 @@ module.exports = function(grunt) {
     grunt.registerTask('dev', [
         'empty:less_vars',
         'less:dev',
+        'sass',
         'browserify:dev'
     ]);
 
@@ -209,13 +268,17 @@ module.exports = function(grunt) {
         'empty:less_vars',
         'copy:build',
         'deconst_assets:assets',
+        'deconst_assets:support_assets',
         'deconst_assets:carina_assets',
         'less:dev',
+        'sass',
         'cssmin:build',
         'browserify:dev',
+        'browserify:support',
         'browserify:carina',
         'uglify:build',
         'deconst_assets:css_js',
+        'deconst_assets:support_css_js',
         'deconst_assets:carina_css_js'
     ]);
 
