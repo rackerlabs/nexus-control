@@ -897,6 +897,7 @@ a {
     // Product Guide styles and mods (formerly Getting Started)
     
     &.product-guide {
+
         ul {
             font-family: $font-family-secondary;
             font-size: 18px;
@@ -1061,4 +1062,14 @@ a {
     position: sticky;
     top: -60px;
     z-index: 1;
+}
+
+
+// Search Results
+
+.support-results-container {
+    padding-top: 30px;
+    width: 980px !important;
+    margin: 0 auto;
+    font-family: $font-family-primary;   
 }

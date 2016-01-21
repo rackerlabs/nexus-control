@@ -6,9 +6,12 @@ var setupAllArticles = require('./all-articles');
 var setupAdmonish = require('./admonish');
 
 // kick things off
+
 $(document).ready(function(){
+
   // FAQs toggle content
   $("div.faq h4").nextUntil("h4, h3, hr").hide();
+
   $("div.faq h4").click(function() {
     $(this).nextUntil("h4, h3, hr").slideToggle("fast");
     $(this).toggleClass("active", 1000);
@@ -29,4 +32,9 @@ $(document).ready(function(){
   }
 
   setupAdmonish();
+  
+  // remove announcement banner from KC
+
+  $(".banner-gs-container").remove();
+  
 });
