@@ -30,7 +30,7 @@ a {
 
 .content {
     margin-left: 0;
-    padding: 35px 0 40px 40px;
+    padding: 35px 0 10px 40px;
     font-family: $font-family-primary;
     color: #474747;
     border-left: 1px solid #ccc;
@@ -1060,7 +1060,7 @@ a {
     position: -o-sticky;
     position: -ms-sticky;
     position: sticky;
-    top: -60px;
+    top: 0px;
     z-index: 1;
 }
 
@@ -1072,4 +1072,20 @@ a {
     width: 980px !important;
     margin: 0 auto;
     font-family: $font-family-primary;   
+}
+
+// Legal Disclaimer
+
+.legal-container {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid $color-kcblue;
+    
+    p {
+        font-size: 11px;
+        line-height: 13px;
+        margin-bottom: 15px;
+    }
+    
+    img {margin-bottom: 10px;}
 }
