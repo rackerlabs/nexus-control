@@ -71,7 +71,7 @@ a {
     p {
         margin-bottom: 35px;
         font-size: 14px;
-        font-weight: 300;
+        font-weight: 400;
         line-height: 24px;
         
         strong {font-weight: 700;}
@@ -131,14 +131,14 @@ a {
     a {
         color: $color-kcblue;
         text-decoration: none;
-        font-weight: 400;
+        font-weight: 600;
         
         &:hover {text-decoration: underline;}
     }
     
     ol, ul {
         font-size: 14px;
-        font-weight: 300;
+        font-weight: 400;
         line-height: 21px;
         margin-bottom: 40px;
         
@@ -191,7 +191,7 @@ a {
     }
     
     img {
-        border: 5px solid #ddd;
+        border: 2px solid #ddd;
         max-width: 100%;
         
         -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
@@ -207,7 +207,7 @@ a {
 
         margin-bottom: 35px;
         font-size: 14px;
-        font-weight: 300;
+        font-weight: 400;
         line-height: 24px;
         width: 100%;
         
@@ -255,7 +255,7 @@ a {
         
         &.meta {
             font-size: 14px;
-            font-weight: 300;
+            font-weight: 400;
             list-style: none;
             padding-bottom: 5px;
             margin: 0 0 40px 0;
@@ -295,7 +295,7 @@ a {
         text-align: center;
         
         h3 {
-            font-weight: 300;
+            font-weight: 400;
             font-size: 28px;
         }
         
@@ -308,7 +308,7 @@ a {
                 padding: 20px 25px;
                 font-size: 16px;
                 color: #fff;
-                font-weight: 300;
+                font-weight: 400;
                 
                 &:hover {
                     text-decoration: none;
@@ -334,7 +334,7 @@ a {
             dl {
                 font-size: 14px;
                 font-family: $font-family-secondary;
-                font-weight: 300;
+                font-weight: 400;
                 margin-top: 10px;
                 dd, dt {
                     display: inline-block;
@@ -493,8 +493,6 @@ a {
         
         hr {margin-bottom: 30px;}
                 
-        // Troubleshoot div {border: 1px solid red;}
-
         .filter-product-type {
         
             ul {
@@ -511,7 +509,7 @@ a {
                         padding: 5px 25px;
                         font-size: 16px;
                         color: #888;
-                        font-weight: 300;
+                        font-weight: 400;
         
                         &.active {
                             background: $color-kcblue;
@@ -866,7 +864,7 @@ a {
     &.article-list {
         
         h4 {
-            font-weight: 300;
+            font-weight: 400;
             margin-bottom: 3px;
             color: $color-kcblue;
             &:hover {
@@ -896,13 +894,13 @@ a {
         }
     }
     
-    // Getting Started styles and mods
+    // Product Guide styles and mods (formerly Getting Started)
     
-    &.getting-started {
+    &.product-guide {
         ul {
             font-family: $font-family-secondary;
             font-size: 18px;
-            font-weight: 300;
+            font-weight: 400;
             list-style: none;
             margin-left: 0;
             
@@ -936,9 +934,7 @@ a {
     
 }
 
-.river {
-    background: #F2F5F5;
-}
+.river {background: #F2F5F5;}
 
 // Page Sidebar
 
@@ -1006,6 +1002,7 @@ a {
     
     p {
         color: #757575;
+        margin-bottom: 40px;
         
         a {
             color: $color-kcblue;
