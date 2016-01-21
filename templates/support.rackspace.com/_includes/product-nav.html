@@ -14,6 +14,12 @@
 {# has no trailing slash #}
 {% set productURL = deconst.content.envelope.metadata.product_url %}
 
+{# if we don't have a product_url to work with #}
+{% if not productURL  %}
+    {% set productURL = deconst.content.envelope.metadata.product.replace(" ", "-").toLowerCase() %}
+    {% set productURL = productURL.replace("rackspace-private-cloud", "rpc") %}
+{% endif %}
+
 <ul class="area">
   <li{% if pageType == "product" %} class="active"{% endif %}><a href="/how-to/{{ productURL + "/" }}">Introduction</a></li>
   <li{% if pageType == "faq" %} class="active"{% endif %}><a href="/how-to/{{ productURL + "-faq/" }}">FAQs</a></li>
