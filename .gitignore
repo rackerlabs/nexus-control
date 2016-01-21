@@ -8,3 +8,6 @@ assets/src/js/bundle.js
 assets/dist
 assets/getcarina.com/dist
 build
+
+.cache
+.tmp
