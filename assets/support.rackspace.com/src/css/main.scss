@@ -85,11 +85,21 @@ a {
             margin-bottom: 15px;
         }
         
-        &.information {
+        &.callout-note {
             padding: 20px;
-            // color: #11405B;
             background: #E5F1FC;
             border-top: 1px solid $color-kcblue;
+            
+            a {
+                color: $color-text;
+                text-decoration: underline;
+            }
+        }
+        
+        &.callout-important {
+            padding: 20px;
+            background: #ffebbf;
+            border-top: 1px solid #bfa66f;
             
             a {
                 // color: #247AAA;
@@ -98,14 +108,23 @@ a {
             }
         }
         
-        &.admonition {
+        &.callout-tip {
             padding: 20px;
-            // color: #402027;
+            background: #57a95b;
+            border-top: 1px solid #b0f2b3;
+            
+            a {
+                color: $color-text;
+                text-decoration: underline;
+            }
+        }
+                
+        &.callout-warning {
+            padding: 20px;
             background: #F7DFE3;
             border-top: 1px solid #990021;
             
             a {
-                // color: #990021;
                 color: $color-text;
                 text-decoration: underline;
             }
