@@ -1,0 +1,122 @@
+{
+    "getcarina.com": [
+        {
+            "description": "Force trailing slash",
+            "from": "\\/([a-zA-Z0-9%_-]*?[^/])$",
+            "to": "/$1/",
+            "rewrite": false,
+            "status": 301
+        },
+        {
+            "from": "^\\/logs\\/?$",
+            "to": "/",
+            "toProtocol": "https",
+            "toHostname": "iad1-10096-kibana.es.objectrocket.com",
+            "toPort": "20096",
+            "rewrite": false,
+            "status": 302
+        },
+        {
+          "from": "\\/docs\\/tutorials\\/introduction-docker-swarm\\/?",
+          "to": "/docs/concepts/introduction-docker-swarm/",
+          "rewrite": false,
+          "status": 301
+        },
+        {
+          "from": "\\/docs\\/tutorials\\/docker-swarm-carina\\/?",
+          "to": "/docs/concepts/docker-swarm-carina/",
+          "rewrite": false,
+          "status": 301
+        },
+        {
+          "from": "\\/docs\\/tutorials\\/docker-compose-with-carina\\/?",
+          "to": "/docs/concepts/docker-compose-with-carina/",
+          "rewrite": false,
+          "status": 301
+        },
+        {
+          "from": "\\/docs\\/tutorials\\/docker-networking-basics\\/?",
+          "to": "/docs/concepts/docker-networking-basics/",
+          "rewrite": false,
+          "status": 301
+        },
+        {
+          "from": "\\/docs\\/tutorials\\/containers-101\\/?",
+          "to": "/docs/concepts/containers-101/",
+          "rewrite": false,
+          "status": 301
+        },
+        {
+          "from": "\\/docs\\/tutorials\\/docker-101\\/?",
+          "to": "/docs/concepts/docker-101/",
+          "rewrite": false,
+          "status": 301
+        },
+        {
+          "from": "\\/docs\\/tutorials\\/service-discovery-101\\/?",
+          "to": "/docs/concepts/service-discovery-101/",
+          "rewrite": false,
+          "status": 301
+        },
+        {
+          "from": "\\/docs\\/tutorials\\/stop-nonresponsive-running-container\\/?",
+          "to": "/docs/troubleshooting/stop-nonresponsive-running-container/",
+          "rewrite": false,
+          "status": 301
+        },
+        {
+          "from": "\\/docs\\/references\\/troubleshooting-port-unavailable\\/?",
+          "to": "/docs/troubleshooting/troubleshooting-port-unavailable/",
+          "rewrite": false,
+          "status": 301
+        },
+        {
+          "from": "\\/docs\\/tutorials\\/troubleshooting-windos-docker-vm-startup\\/?",
+          "to": "/docs/troubleshooting/troubleshooting-windows-docker-vm-startup/",
+          "rewrite": false,
+          "status": 301
+        },
+        {
+          "from": "\\/docs\\/references\\/troubleshooting-cannot-enable-tty-mode-on-windows\\/?",
+          "to": "/docs/troubleshooting/troubleshooting-cannot-enable-tty-mode-on-windows",
+          "rewrite": false,
+          "status": 301
+        },
+        {
+          "from": "\\/docs\\/tutorials\\/troubleshooting\\/?",
+          "to": "/docs/troubleshooting/common-problems/",
+          "rewrite": false,
+          "status": 301
+        },
+        {
+          "from": "\\/docs\\/references\\/image-registries\\/?",
+          "to": "/docs/reference/image-registries/",
+          "rewrite": false,
+          "status": 301
+        },
+        {
+          "from": "\\/docs\\/tutorials\\/autoscaling-carina\\/?",
+          "to": "/docs/reference/autoscaling-carina/",
+          "rewrite": false,
+          "status": 301
+        },
+        {
+          "from": "\\/docs\\/release-notes\\/?",
+          "to": "/docs/reference/release-notes/",
+          "rewrite": false,
+          "status": 301
+        },
+        {
+          "from": "\\/docs\\/faq\\/?",
+          "to": "/docs/reference/faq/",
+          "rewrite": false,
+          "status": 301
+        },
+        {
+          "from": "\\/docs\\/references\\/glossary\\/?",
+          "to": "/docs/reference/glossary/",
+          "rewrite": false,
+          "status": 301
+        }
+    ]
+}

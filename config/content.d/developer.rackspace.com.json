@@ -1,0 +1,35 @@
+{
+  "developer.rackspace.com": {
+      "content": {
+          "/": "https://github.com/rackerlabs/docs-developer-blog/",
+          "/docs/": "https://github.com/rackerlabs/docs-quickstart/",
+          "/docs/user-guides/infrastructure/": "https://github.com/rackerlabs/docs-core-infra-user-guide/",
+          "/docs/user-guides/orchestration/": "https://github.com/rackerlabs/rs-heat-docs/",
+          "/docs/rack-cli/": "https://github.com/rackspace/rack/",
+          "/docs/cloud-images/v2/developer-guide/": "https://github.com/rackerlabs/docs-cloud-images/",
+          "/docs/cloud-load-balancers/v1/developer-guide/": "https://github.com/rackerlabs/docs-cloud-load-balancers/",
+          "/docs/cloud-block-storage/v1/developer-guide/": "https://github.com/rackerlabs/docs-cloud-block-storage/",
+          "/docs/cloud-dns/v1/developer-guide/": "https://github.com/rackerlabs/docs-cloud-dns/",
+          "/docs/cdn/v1/developer-guide/": "https://github.com/rackerlabs/docs-cloud-cdn/",
+          "/docs/cloud-databases/v1/developer-guide/": "https://github.com/rackerlabs/docs-cloud-databases/",
+          "/docs/cloud-backup/v1/developer-guide/": "https://github.com/rackerlabs/docs-cloud-backup/v1/",
+          "/docs/cloud-orchestration/v1/developer-guide/": "https://github.com/rackerlabs/docs-cloud-orchestration/",
+          "/docs/cloud-orchestration/v1/resources-reference/": "https://github.com/rackerlabs/heat-resource-ref/",
+          "/docs/rackconnect/v3/developer-guide/": "https://github.com/rackerlabs/docs-cloud-rackconnect/",
+          "/docs/cloud-queues/v1/developer-guide/": "https://github.com/rackerlabs/docs-cloud-queues/",
+          "/docs/cloud-networks/v2/developer-guide/": "https://github.com/rackerlabs/docs-cloud-networks/",
+          "/docs/cloud-big-data/v2/developer-guide/": "https://github.com/rackerlabs/docs-cloud-big-data/v2/",
+          "/docs/autoscale/v1/developer-guide/": "https://github.com/rackerlabs/otter/",
+          "/docs/cloud-servers/v2/developer-guide/": "https://github.com/rackerlabs/docs-cloud-servers/",
+          "/docs/cloud-files/v1/developer-guide/": "https://github.com/rackerlabs/docs-cloud-files/",
+          "/docs/metrics/v2/developer-guide/": "https://github.com/rackerlabs/docs-cloud-metrics/",
+          "/docs/cloud-identity/v2/developer-guide/": "https://github.com/rackerlabs/docs-cloud-identity/",
+          "/docs/cloud-monitoring/v1/developer-guide/": "https://github.com/rackerlabs/docs-cloud-monitoring/",
+          "/docs/dedicated-load-balancers/v2/dev-guide/": "https://github.com/rackerlabs/docs-dedicated-networking/",
+          "/docs/glossary/": "https://github.com/rackerlabs/docs-common/"
+      },
+      "proxy": {
+          "/favicon.ico": "https://8d8dcdd952aa2708c2ff-519cda130c91226e76017ae910bdb276.ssl.cf1.rackcdn.com/favicon-aa186bee158ecea4c9b6a98e2ceec3141b6b7d8d94dcb71731ba112e2b17b1db.ico"
+      }
+  }
+}

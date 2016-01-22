@@ -1,0 +1,13 @@
+{
+    "getcarina.com": {
+      "routes": {
+        "^/": "default.html",
+        "^/docs": "docs-home.html",
+        "^/docs/.+?": "docs-single.html",
+        "^/blog/?": "blog/index.html",
+        "^/blog/.+?": "docs-single.html",
+        "\\.xml$": "feed.xml",
+        "\\.txt$": "plain.txt"
+      }
+    }
+}
