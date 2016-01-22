@@ -1,0 +1,19 @@
+{% extends "_layouts/base.html" %}
+
+
+{% block bodyContent %}
+        <article>
+            <div class="container">
+                <div class="row">
+                  <div class="three columns sidebar sticky">
+                    {% include "_includes/article-sidebar.html" %}
+                  </div>
+                  <div class="nine columns content">
+                    {% include "_includes/article-header.html" %}
+                    {{ deconst.content.envelope.body }}
+                    {% include "_includes/article-footer.html" %}
+                  </div>
+                </div>
+            </div>
+        </article>
+{% endblock %}
