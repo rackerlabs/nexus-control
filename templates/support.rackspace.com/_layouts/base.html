@@ -1,15 +1,28 @@
 {% extends "_layouts/raw.html" %}
 
+{% set title = deconst.content.envelope.title %}
+{% set product = deconst.content.envelope.metadata.product %}
+{% set created_by = deconst.content.envelope.metadata.created_by  %}
+{% set created_date = deconst.content.envelope.metadata.created_date  %}
+{% set last_modified_date =  deconst.content.envelope.metadata.last_modified_date %}
+
+{% set siteUrl = deconst.url.getSiteUrl(deconst.context, deconst.context.request.path) %}
+{% set cssUrl = deconst.assets.assets_support_rackspace_com_dist_css_main_css %}
+{% set jsUrl = deconst.assets.assets_support_rackspace_com_dist_js_site_min_js %}
+
 {% set headlineTag = headlineTag if headlineTag else 'h2' %}
 
 {% block body %}
-    {% block siteHeader %}
-        {% include "_includes/site-header.html" %}
-    {% endblock %}
+  <div id="rax-header"></div>
+
+  <div id="main-content">
     {% block bodyContent %}{% endblock %}
-    {% block siteFooter %}
-        {% include "_includes/site-footer.html" %}
-    {% endblock %}
-    {% block footerScripts %}
-    {% endblock %}
+  </div>
+
+  <div id="rax-footer"></div>
+
+  <script type="text/javascript">
+    injectTemplate("how-to", "#rax-header", "#rax-footer", "#main-content");
+  </script>
+  {% block footerScripts %}{% endblock %}
 {% endblock %}
