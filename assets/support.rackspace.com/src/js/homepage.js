@@ -9,11 +9,14 @@ var tabs = {
 };
 
 // set the specified tab as active
-function setTabActive(tab) {
+function setTabActive(tab, setHash) {
   $(".filter-product-type a").removeClass('active').addClass('inactive');
   $(".product-type").removeClass('active').addClass('inactive');
   $(tabs[tab]).removeClass('inactive').addClass('active');
-  window.location.hash = "#" + tab;
+
+  if (setHash) {
+    window.location.hash = "#" + tab;
+  }
 };
 
 function setup() {
@@ -21,15 +24,15 @@ function setup() {
   var loc = window.location.hash.replace(/#/, '');
 
   if (loc !== '' && tabs[loc] !== undefined) {
-    setTabActive(loc);
+    setTabActive(loc, true);
   } else {
-    setTabActive('cloud-hosting');
+    setTabActive('cloud-hosting', false);
   }
 
   // add onclick handlers to the tabs
-  $("#cloud-ctrl").click(setTabActive.bind(null, 'cloud-hosting'));
-  $("#office-ctrl").click(setTabActive.bind(null, 'cloud-office'));
-  $("#get-start-ctrl").click(setTabActive.bind(null, 'core-user-guide'));
+  $("#cloud-ctrl").click(setTabActive.bind(null, 'cloud-hosting', true));
+  $("#office-ctrl").click(setTabActive.bind(null, 'cloud-office', true));
+  $("#get-start-ctrl").click(setTabActive.bind(null, 'core-user-guide', true));
 };
 
 module.exports = setup;

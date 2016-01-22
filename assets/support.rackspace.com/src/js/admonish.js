@@ -2,7 +2,7 @@
 var $ = require('jquery');
 var _ = require('lodash');
 
-var options = ['note', 'note:', 'warning', 'warning:'];
+var options = ['note', 'note:', 'warning', 'warning:', 'important', 'important:', 'tip', 'tip:'];
 
 function setup() {
   // grab all of the candidate admonishments
@@ -20,9 +20,13 @@ function setup() {
     var type = para.firstChild.textContent.toLowerCase();
 
     if (type.search(/^note/) != -1) {
-      $(para).addClass('information');
+      $(para).addClass('callout-note');
     } else if (type.search(/^warning/) != -1) {
-      $(para).addClass('admonition');
+      $(para).addClass('callout-warning');
+    } else if (type.search(/^important/) != -1) {
+      $(para).addClass('callout-important');
+    } else if (type.search(/^tip/) != -1) {
+      $(para).addClass('callout-tip');
     }
   });
 };
