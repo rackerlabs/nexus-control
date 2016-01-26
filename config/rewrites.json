@@ -238,6 +238,16 @@
         "status": 301
       }
     ],
+    "www.support.rackspace.com": [
+        {
+            "from": "^(.*)$",
+            "to": "$1",
+            "toProtocol": "https",
+            "toHostname": "support.rackspace.com",
+            "rewrite": false,
+            "status": 301
+        }
+    ],
     "support.rackspace.com": [
         {
             "description": "Force trailing slash",
@@ -254,6 +264,13 @@
             "toPort": "20096",
             "rewrite": false,
             "status": 302
+        },
+        {
+            "description": "white-paper index to all articles",
+            "from": "^\\/white-paper\\/$",
+            "to": "/white-paper/white-paper-all-articles/",
+            "rewrite": false,
+            "status": 301
         }
     ],
     "api.rackspace.com": [
