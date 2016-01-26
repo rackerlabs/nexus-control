@@ -238,6 +238,16 @@
         "status": 301
       }
     ],
+    "www.support.rackspace.com": [
+        {
+            "from": "^(.*)$",
+            "to": "$1",
+            "toProtocol": "https",
+            "toHostname": "support.rackspace.com",
+            "rewrite": false,
+            "status": 301
+        }
+    ],
     "support.rackspace.com": [
         {
             "description": "Force trailing slash",
