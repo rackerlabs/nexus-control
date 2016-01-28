@@ -33,6 +33,7 @@
             "^/docs/metrics/v2/developer-guide": "docs-singlepage.html",
             "^/docs/cloud-identity/v2/developer-guide": "docs-singlepage.html",
             "^/docs/cloud-monitoring/v1/developer-guide": "docs-singlepage.html",
+             "^/docs/cloud-keep/v1/developer-guide/": "docs-singlepage.html",
             "^/docs/dedicated-load-balancers/v2/dev-guide/": "docs-singlepage.html",
             "^/docs/glossary": "docs-singlepage.html",
             "^/docs/rack-cli/": "rack-cli.html",
