@@ -15,6 +15,13 @@
           "toPort": "20096",
           "rewrite": false,
           "status": 302
+      },
+      {
+          "description": "white-paper index to all articles",
+          "from": "^\\/white-paper\\/$",
+          "to": "/white-paper/white-paper-all-articles/",
+          "rewrite": false,
+          "status": 301
       }
   ]
 }
