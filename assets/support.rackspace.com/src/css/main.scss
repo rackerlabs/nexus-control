@@ -172,6 +172,8 @@ a {
         list-style-type: decimal;
         list-style-position: outside;
         margin-left: 20px;
+        
+        ol {list-style-type: lower-alpha;}
     }
     
     ul {
