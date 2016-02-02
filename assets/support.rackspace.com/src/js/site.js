@@ -33,8 +33,8 @@ $(document).ready(function(){
 
   setupAdmonish();
   
-  // remove announcement banner from KC
+  // remove redesign link from KC
 
-  $(".banner-gs-container").remove();
+  $(".banner-redesign-link").remove();
   
 });
