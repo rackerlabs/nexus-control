@@ -22,6 +22,20 @@
           "to": "/white-paper/white-paper-all-articles/",
           "rewrite": false,
           "status": 301
+      },
+      {
+          "description": "Modify hosts article - Spanish translation",
+          "from": "\\/knowledge_center\\/es\\/article\\/how-do-i-modify-my-hosts-file(.*)$",
+          "to": "/how-to/como-meodificar-mi-archivo-de-hosts/",
+          "rewrite": false,
+          "status": 301
+      },
+      {
+          "description": "Modify hosts article - Portuguese translation",
+          "from": "\\/knowledge_center\\/pt\\/article\\/how-do-i-modify-my-hosts-file(.*)$",
+          "to": "/how-to/como-modifico-meus-arquivos-de-hosts/",
+          "rewrite": false,
+          "status": 301
       }
   ]
 }
