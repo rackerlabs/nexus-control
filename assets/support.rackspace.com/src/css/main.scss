@@ -956,7 +956,11 @@ a {
     
 }
 
-.river {background: #F2F5F5;}
+.river {
+    width: 100%;
+    min-width: 960px;
+    background: #F2F5F5;
+}
 
 // Page Sidebar
 
