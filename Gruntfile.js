@@ -73,6 +73,14 @@ module.exports = function(grunt) {
                         'fonts/**/*'
                       ],
                       dest: 'assets/dist/'
+                    },
+                    {
+                      cwd: 'assets/bower_components/fontawesome',
+                      expand: true,
+                      src: [
+                        'fonts/**/*'
+                      ],
+                      dest: 'assets/getcarina.com/dist/'
                     }
                 ]
             }
