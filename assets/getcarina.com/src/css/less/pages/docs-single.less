@@ -76,9 +76,10 @@ body.docs-single {
         text-align: center;
         .transition(color 0.1s ease-in-out);
         width: 1em;
+        .fa-icon();
 
         &:before {
-          content: '\00b6';
+          content: @fa-var-link;
           display: inline-block;
           font-size: 50%;
           line-height: 2.8;

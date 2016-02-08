@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'FontAwesome';
+  src: url(@assets_dist_fonts_fontawesome_webfont_eot);
+  src: url(@assets_dist_fonts_fontawesome_webfont_eot) format('embedded-opentype'),
+    url(@assets_dist_fonts_fontawesome_webfont_woff2) format('woff2'),
+    url(@assets_dist_fonts_fontawesome_webfont_woff) format('woff'),
+    url(@assets_dist_fonts_fontawesome_webfont_ttf) format('truetype'),
+    url(@assets_dist_fonts_fontawesome_webfont_svg) format('svg');
+//  src: url('@{fa-font-path}/FontAwesome.otf') format('opentype'); // used when developing fonts
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import "fontawesome/less/variables";
+@import "fontawesome/less/mixins";
+// Their path sucks. Using ours above.
+// @import "fontawesome/less/path";
+@import "fontawesome/less/core";
+@import "fontawesome/less/larger";
+@import "fontawesome/less/fixed-width";
+@import "fontawesome/less/list";
+@import "fontawesome/less/bordered-pulled";
+@import "fontawesome/less/animated";
+@import "fontawesome/less/rotated-flipped";
+@import "fontawesome/less/stacked";
+@import "fontawesome/less/icons";
