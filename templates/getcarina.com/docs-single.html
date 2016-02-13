@@ -46,7 +46,7 @@
   <section class="docs-section article">
     <div class="section-container">
       <div class="section-grid">
-        <article>
+        <article data-ng-non-bindable>
           {{ deconst.content.envelope.body }}
           {% if deconst.request.path.match('^/blog') and deconst.content.envelope.meta.authorIsRacker == false %}
           <div class="guest-post-message">
