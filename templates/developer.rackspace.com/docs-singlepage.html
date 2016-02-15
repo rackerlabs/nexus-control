@@ -49,7 +49,7 @@
         {% if deconst.content.envelope.meta.github_issues_url or deconst.content.envelope.meta.github_edit_url %}
           {% if deconst.content.envelope.meta.preferGithubIssues %}
             {% set githubLinkUrl = deconst.content.envelope.meta.github_issues_url %}
-            {% set githubLinkText = 'Submit Bug on GitHub' %}
+            {% set githubLinkText = 'Submit an issue' %}
           {% else %}
             {% set githubLinkUrl = deconst.content.envelope.meta.github_edit_url %}
             {% set githubLinkText = 'Edit on GitHub' %}
