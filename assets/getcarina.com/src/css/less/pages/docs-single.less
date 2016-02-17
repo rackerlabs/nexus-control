@@ -94,7 +94,7 @@ body.docs-single {
       }
     }
 
-    img {
+    img, figure {
       &.right {
         float: right;
         margin: 0 0 1.5em 1.5em;
@@ -105,6 +105,18 @@ body.docs-single {
         float: left;
         margin: 0 1.5em 1.5em 0;
         max-width: 50%;
+      }
+    }
+
+    figure {
+      img {
+        margin: 0 0 0.25em 0;
+      }
+
+      figcaption {
+        .lato('regular', 'italic');
+        font-size: 14px;
+        text-align: center;
       }
     }
   }
