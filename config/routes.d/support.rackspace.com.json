@@ -49,7 +49,7 @@
         "^/how-to/cloud-queues-faq/$": "faq.html",
         "^/how-to/cloud-backup-faq/$": "faq.html",
         "^/how-to/cloud-monitoring-faq/$": "faq.html",
-        "^/how-to/rackspace-metrics/$": "faq.html",
+        "^/how-to/rackspace-metrics-faq/$": "faq.html",
         "^/how-to/cloud-orchestration-faq/$": "faq.html",
         "^/how-to/rackspace-auto-scale-faq/$": "faq.html",
         "^/how-to/rackspace-intelligence-faq/$": "faq.html",
