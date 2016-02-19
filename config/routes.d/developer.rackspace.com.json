@@ -36,7 +36,7 @@
             "^/docs/cloud-keep/v1/developer-guide/": "docs-singlepage.html",
             "^/docs/dedicated-load-balancers/v2/dev-guide/": "docs-singlepage.html",
             "^/docs/glossary": "docs-singlepage.html",
-            "^/docs/private-cloud": "docs-singlepage.html",
+            "^/docs/private-cloud": "user-guide.html",
             "^/docs/rack-cli/": "rack-cli.html",
             "^/sdks": "sdks-home.html",
             "^/sdks/.+?": "sdks-page.html",
