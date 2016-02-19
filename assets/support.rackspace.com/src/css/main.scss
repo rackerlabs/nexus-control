@@ -34,102 +34,102 @@ a {
     font-family: $font-family-primary;
     color: #474747;
     border-left: 1px solid #ccc;
-        
+
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
     -moz-box-sizing: border-box;    /* Firefox, other Gecko */
     box-sizing: border-box;         /* IE 8+ */
-    
+
     // Page Content: HEADERS
-    
+
     h2, h3, h4, h5, h6 {
         margin-bottom: 30px;
         font-family: $font-family-secondary;
     }
-    
+
     h2 {
         font-weight: 400;
         font-size: 28px;
         line-height: 33px;
-        
+
         &.less-margin {margin-bottom: 10px;}
     }
-    
+
     h3 {font-size: 24px; font-weight: 600;}
-    
+
     h4 {
         font-size: 18px;
         font-weight: 600;
         line-height: 20px;
     }
-    
+
     h5 {font-size: 17px; font-weight: 400;}
-    
+
     h6 {font-size: 14px; font-weight: 600;}
-    
+
     // Page Content: BODY
-    
+
     strong {font-weight: 700;}
     em {font-style: italic;}
-    
+
     p {
         margin-bottom: 35px;
         font-size: 14px;
         font-weight: 400;
         line-height: 24px;
-        
+
         // Paragraph types
-        
+
         &.lead {
             font-size: 16px;
             line-height: 26px;
             margin-bottom: 15px;
         }
-        
+
         &.callout-note {
             padding: 20px;
             background: #E5F1FC;
             border-top: 1px solid $color-kcblue;
-            
+
             a {
                 color: $color-text;
                 text-decoration: underline;
             }
         }
-        
+
         &.callout-important {
             padding: 20px;
             background: #ffebbf;
             border-top: 1px solid #bfa66f;
-            
+
             a {
                 // color: #247AAA;
                 color: $color-text;
                 text-decoration: underline;
             }
         }
-        
+
         &.callout-tip {
             padding: 20px;
             background: #57a95b;
             border-top: 1px solid #b0f2b3;
-            
+
             a {
                 color: $color-text;
                 text-decoration: underline;
             }
         }
-                
+
         &.callout-warning {
             padding: 20px;
             background: #F7DFE3;
             border-top: 1px solid #990021;
-            
+
             a {
                 color: $color-text;
                 text-decoration: underline;
             }
-        } 
-        
+        }
+
         &.comment {
             margin: 50px 0;
             padding: 30px 0;
@@ -144,44 +144,44 @@ a {
                 vertical-align: sub;
                 color: $color-kcblue;
             }
-        }       
+        }
     }
-    
+
     a {
         color: $color-kcblue;
         text-decoration: none;
         font-weight: 600;
-        
+
         &:hover {text-decoration: underline;}
     }
-    
+
     ol, ul {
         font-size: 14px;
         font-weight: 400;
         line-height: 21px;
         margin-bottom: 40px;
-        
+
         li {margin-bottom: 20px;}
-        
+
         // Nested Lists
-        
+
         ol, ul {margin: 20px 0 0 20px;}
     }
-    
+
     ol {
         list-style-type: decimal;
         list-style-position: outside;
         margin-left: 20px;
-        
+
         ol {list-style-type: lower-alpha;}
     }
-    
+
     ul {
         list-style-type: circle;
         list-style-position: outside;
         margin-left: 20px;
     }
-    
+
     code {
         font-family: $font-family-code;
         color: inherit;
@@ -196,32 +196,32 @@ a {
         padding: 20px;
         background: #3B3F45;
         font-family: $font-family-code;
-        color: #fff;  
-        
+        color: #fff;
+
         margin-bottom: 30px;
         font-size: 13px;
         line-height: 20px;
         overflow: auto;
-                  
-    }        
-    
+
+    }
+
     hr {
         margin-bottom: 40px;
         border-width: 0;
         border-top: 1px solid #E1E1E1;
     }
-    
+
     img {
         border: 2px solid #ddd;
         max-width: 100%;
-        
+
         -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
         -moz-box-sizing: border-box;    /* Firefox, other Gecko */
         box-sizing: border-box;         /* IE 8+ */
     }
-    
+
     // Page Content: UTILITY LISTS
-        
+
     table {
         border-collapse: collapse;
         border-spacing: 0;
@@ -231,16 +231,16 @@ a {
         font-weight: 400;
         line-height: 24px;
         width: 100%;
-        
+
         th {
             white-space: nowrap;
             background: $color-kcblue;
             color: #fff;
             border-right: 1px solid #fff;
             font-weight: 400;
-        
+
             &:last-child {border-right-color: $color-kcblue;}
-        
+
         }
 
         td {border: 1px solid #ddd;}
@@ -249,9 +249,9 @@ a {
             padding: 10px;
             text-align: left;
         }
-        
+
         code:last-child, pre:last-child, p:last-child, ul:last-child, ol:last-child {margin-bottom: 0;}
-        
+
     }
 
     ul {
@@ -264,16 +264,16 @@ a {
             li {
                 display: inline-block;
                 margin: 0 7px 0 0;
-            
+
                 &:after {
                     content: "/";
                     margin-left: 7px;
                 }
-            
+
                 &:last-child:after {content: " ";}
             }
         }
-        
+
         &.meta {
             font-size: 14px;
             font-weight: 400;
@@ -285,41 +285,41 @@ a {
             li {
                 display: inline-block;
                 margin: 0 20px 0 0;
-                
+
                 a {font-weight: 300;}
             }
-            
+
         }
-                
+
         &.pagination {
             margin: 0;
-            
+
             li {
                 display: inline-block;
                 a {
                     padding: 10px;
-                    
+
                     &.active {
                         pointer-events: none;
                         color: $color-text;
                     }
                 }
-                
+
                 &:first-child a {padding-left: 0;}
-                
+
             }
         }
-        
+
     }
-        
+
     .cta {
         text-align: center;
-        
+
         h3 {
             font-weight: 400;
             font-size: 28px;
         }
-        
+
         .button {
             margin-bottom: 20px;
 
@@ -330,7 +330,7 @@ a {
                 font-size: 16px;
                 color: #fff;
                 font-weight: 400;
-                
+
                 &:hover {
                     text-decoration: none;
                     background: #499917;
@@ -338,20 +338,20 @@ a {
             }
         }
     }
-        
+
     // Article-list Sort -- OUT OF SCOPE
-    
+
     .list-sort-container {
         margin: 20px 0 30px;
-        
+
         .row {
             padding: 10px;
             background: #f2f5f5;
             border-top: 1px solid #bfbfbf;
             color: #666;
-        
+
             // Sort & number of results
-        
+
             dl {
                 font-size: 14px;
                 font-family: $font-family-secondary;
@@ -360,23 +360,23 @@ a {
                 dd, dt {
                     display: inline-block;
                     margin-left: 11px;
-                
+
                     a {color: #666;}
 
                     i {margin-left: 3px;}
-                    
-                    &:first-child {margin: 0;}          
-                }            
+
+                    &:first-child {margin: 0;}
+                }
             }
-            
+
             // Filter field
-        
+
             #filter {
                 position: relative;
                 width: 100%;
                 background: #fff;
                 border: 1px solid #bfbfbf;
-            
+
                 input[type='text']#filter-input {
                     border-width: 0;
                     outline-width: 0;
@@ -389,18 +389,18 @@ a {
                     -webkit-box-shadow: none;
                     -moz-box-shadow: none;
                     box-shadow: none;
-                
+
                     &:focus {
                         outline-width: 0;
                         background: none;
                     }
-                
+
                     &::-webkit-input-placeholder {font-style: italic;}
                     &:-moz-placeholder {font-style: italic;}
                     &::-moz-placeholder {font-style: italic;}
                     &:-ms-input-placeholder {font-style: italic;}
                 }
-                                        
+
                 button#filter-button {
                     position: absolute;
                     top: 0;
@@ -412,136 +412,136 @@ a {
                     padding: 9px;
                     background: none;
                     color: #555;
-                
+
                     -moz-transition: all 0.15s linear;
                     -webkit-transition: all 0.15s linear;
                     transition: all 0.15s linear;
-                
+
                     &:hover {color: #111;}
                 }
-            
+
             }
-            
+
             /* CSS styles for Tags for reimplementation, pending content strategy
-            
+
             &.tags {
                 border-top-color: #fff;
-                
+
                 dl {
                     margin-top: 3px;
-                    
+
                     dt {margin-right: 10px;}
                     dd {
                         margin: 0 5px 5px 0;
                         padding: 1px 5px 3px 7px;
-                        
+
                         -webkit-border-radius: 3px;
                         -moz-border-radius: 3px;
                         border-radius: 3px;
-                        
+
                         background: $color-kcblue;
                         color: #fff;
-                        
-                        a {                            
+
+                        a {
                             font-size: 18px;
                             color: #fff;
                             margin-left: 3px;
-                            
+
                             &:hover {
                                 text-decoration: none;
                             }
-                        } 
+                        }
                     }
                 }
             }
-            
+
             &.tags-list {
                 border-top-width: 0;
                 display: none;
-                
+
                 ul {
                     font-size: 14px;
                     font-family: $font-family-secondary;
                     font-weight: 300;
                     margin: 0 0 0 0;
-                    
+
                     li {
                         display: inline-block;
                         margin: 0 5px 5px 0;
-                        
+
                         a {
                             -moz-transition: none;
                             -webkit-transition: none;
                             transition: none;
-                            
+
                             padding: 0 5px;
                             color: #666;
-                        
+
                             &:hover {
-                                text-decoration: none;                        
+                                text-decoration: none;
                                 background: $color-kcblue;
                                 color: #fff;
-                                
+
                                 -webkit-border-radius: 3px;
                                 -moz-border-radius: 3px;
                                 border-radius: 3px;
                             }
                         }
-                    }            
+                    }
                 }
             } */
         }
     }
-    
+
     &.inactive {display: none;}
 
     // Home-page styles and mods
-    
+
     &.home {
         border-left: none;
         padding: 0 0 0 0;
-        
+
         h2 {
             font-size: 28px;
             font-weight: 300;
             margin: 30px 0 0 0;
         }
-        
+
         p.lead {
             font-size: 16px;
             margin-bottom: 35px;
         }
-        
+
         hr {margin-bottom: 30px;}
-                
+
         .filter-product-type {
-        
+
             ul {
                 margin: 0 0 40px 0;
                 list-style-type: none;
-        
+
                 li {
                     font-family: $font-family-secondary;
                     display: inline;
-        
+
                     &:last-child {padding-right: 0px;}
-        
+
                     a {
                         padding: 5px 25px;
                         font-size: 16px;
                         color: #888;
                         font-weight: 400;
-        
+
                         &.active {
                             background: $color-kcblue;
                             color: #fff;
-        
+
                             &:hover {text-decoration: none;}
                         }
-        
+
                         &.inactive {
                             background: #f3f3f3;
-                        
+
                             &:hover {
                                 text-decoration: none;
                                 background:$color-kcblue;
@@ -555,7 +555,7 @@ a {
         }
 
         &.product-type-cloud {
-        
+
             h3 {
                 font-style: italic;
                 margin-bottom: 15px;
@@ -563,15 +563,15 @@ a {
                 font-weight: 300;
                 color: #999;
             }
-        
+
             .icon {
                 background-repeat: no-repeat;
                 background-position: top left;
                 background-size: 35px 35px;
-            
+
                 h4 {
                     line-height: 17px;
-                
+
                     a {
                         text-transform: uppercase;
                         padding-left: 45px;
@@ -586,8 +586,8 @@ a {
                         }
                     }
                 }
-            } 
-       
+            }
+
             .servers {
                 background-image: url($assets_support_rackspace_com_dist_img_icon_servers_png);
                 background-image: none, url($assets_support_rackspace_com_dist_img_icon_servers_svg);
@@ -602,21 +602,21 @@ a {
                 background-image: url($assets_support_rackspace_com_dist_img_icon_images_png);
                 background-image: none, url($assets_support_rackspace_com_dist_img_icon_images_svg);
             }
-            
+
             .vmware {
                 background-image: url($assets_support_rackspace_com_dist_img_icon_vmware_png);
                 background-image: none, url($assets_support_rackspace_com_dist_img_icon_vmware_svg);
             }
-            
+
             .networks {
                 background-image: url($assets_support_rackspace_com_dist_img_icon_networks_png);
                 background-image: none, url($assets_support_rackspace_com_dist_img_icon_networks_svg);
             }
-            
+
             .dns {
                 background-image: url($assets_support_rackspace_com_dist_img_icon_dns_png);
                 background-image: none, url($assets_support_rackspace_com_dist_img_icon_dns_svg);
-            }            
+            }
 
             .load-balancers {
                 background-image: url($assets_support_rackspace_com_dist_img_icon_load_balancers_png);
@@ -627,32 +627,32 @@ a {
                 background-image: url($assets_support_rackspace_com_dist_img_icon_rackconnect_png);
                 background-image: none, url($assets_support_rackspace_com_dist_img_icon_rackconnect_svg);
             }
-            
+
             .files {
                 background-image: url($assets_support_rackspace_com_dist_img_icon_files_png);
                 background-image: none, url($assets_support_rackspace_com_dist_img_icon_files_svg);
             }
-            
+
             .block-storage {
                 background-image: url($assets_support_rackspace_com_dist_img_icon_block-storage_png);
                 background-image: none, url($assets_support_rackspace_com_dist_img_icon_block-storage_svg);
             }
-            
+
             .cdn {
                 background-image: url($assets_support_rackspace_com_dist_img_icon_cdn_png);
                 background-image: none, url($assets_support_rackspace_com_dist_img_icon_cdn_svg);
             }
-            
+
             .databases {
                 background-image: url($assets_support_rackspace_com_dist_img_icon_databases_png);
                 background-image: none, url($assets_support_rackspace_com_dist_img_icon_databases_svg);
             }
-            
+
             .big-data {
                 background-image: url($assets_support_rackspace_com_dist_img_icon_big_data_png);
                 background-image: none, url($assets_support_rackspace_com_dist_img_icon_big_data_svg);
             }
-            
+
             .queues {
                 background-image: url($assets_support_rackspace_com_dist_img_icon_queues_png);
                 background-image: none, url($assets_support_rackspace_com_dist_img_icon_queues_svg);
@@ -661,6 +661,11 @@ a {
             .backup {
                 background-image: url($assets_support_rackspace_com_dist_img_icon_backup_png);
                 background-image: none, url($assets_support_rackspace_com_dist_img_icon_backup_svg);
+            }
+
+            .metrics {
+                background-image: url($assets_support_rackspace_com_dist_img_icon_metrics_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_metrics_svg);
             }
 
             .monitoring {
@@ -694,25 +699,25 @@ a {
             }
 
         }
-    
+
         &.product-type-email {
             margin-top: 30px;
-            
+
             .icon {
                 background-repeat: no-repeat;
                 background-position: top left;
                 background-size: 35px 35px;
-            
+
                 h4 {
                     line-height: 16px;
-                
+
                     a {
                         text-transform: uppercase;
                         padding-left: 45px;
                         font-size: 16px;
                         font-weight: 600;
                         display: block;
-                    
+
                         span {
                             font-size: 13px;
                             display: block;
@@ -721,57 +726,57 @@ a {
                     }
                 }
             }
-        
+
             .email {
                 background-image: url($assets_support_rackspace_com_dist_img_icon_email_png);
                 background-image: none, url($assets_support_rackspace_com_dist_img_icon_email_svg);
             }
-        
+
             .skype {
                 background-image: url($assets_support_rackspace_com_dist_img_icon_skype_png);
                 background-image: none, url($assets_support_rackspace_com_dist_img_icon_skype_svg);
             }
-        
+
             .exchange {
                 background-image: url($assets_support_rackspace_com_dist_img_icon_exchange_png);
                 background-image: none, url($assets_support_rackspace_com_dist_img_icon_exchange_svg);
             }
-        
+
             .sharepoint {
                 background-image: url($assets_support_rackspace_com_dist_img_icon_sharepoint_png);
                 background-image: none, url($assets_support_rackspace_com_dist_img_icon_sharepoint_svg);
             }
-            
+
             .email-archiving {
                 background-image: url($assets_support_rackspace_com_dist_img_icon_email-archiving_png);
                 background-image: none, url($assets_support_rackspace_com_dist_img_icon_email-archiving_svg);
             }
-            
+
             .office-365 {
                 background-image: url($assets_support_rackspace_com_dist_img_icon_office-365_png);
                 background-image: none, url($assets_support_rackspace_com_dist_img_icon_office-365_svg);
             }
-                                
+
             .email-wizard {
                 background-image: url($assets_support_rackspace_com_dist_img_icon_wizard_png);
                 background-image: none, url($assets_support_rackspace_com_dist_img_icon_wizard_svg);
                 background-repeat: no-repeat;
                 position: relative;
                 margin-bottom: 20px;
-                
+
                 h4 {
                     padding: 7px 0 0 60px;
                     margin-bottom: 5px;
                 }
-            
+
                 p {
                     padding-left: 60px;
                     margin-bottom: 20px;
                 }
-                
+
                 aside.cta {
                     text-align: right;
-                    
+
                     #email-button {
                         border: 1px solid #499917;
                         background: none;
@@ -779,7 +784,7 @@ a {
                         padding: 12px 50px;
                         margin-top: 7px;
                         white-space: nowrap;
-                        
+
                         &:hover {
                             background: #499917;
                             color: #fff;
@@ -790,15 +795,15 @@ a {
         }
 
         &.one-half {margin-left: 0px;}
-        
+
         #inf-guide-callout {
             margin-top: 25px;
-            
+
             h4 {margin-bottom: 5px;}
-            
+
             aside.cta {
                 text-align: right;
-                
+
                 #guide-button {
                     border: 1px solid #499917;
                     background: none;
@@ -806,14 +811,14 @@ a {
                     padding: 12px 50px;
                     margin-top: 7px;
                     white-space: nowrap;
-                    
+
                     &:hover {
                         background: #499917;
                         color: #fff;
                     }
                 }
             }
-            
+
         }
     }
 
@@ -823,12 +828,12 @@ a {
 
         div {
             &:first-of-type {margin-left: 0px;}
-            
+
             h3 {
                 color: #666;
                 font-size: 16px;
                 font-weight: 300;
-            
+
                 span {
                     display: block;
                     font-weight: 600;
@@ -838,11 +843,11 @@ a {
             }
         }
     }
-    
+
     #product-type-email #product-type-cloud,
     #product-type-getstart {display: none;}
-        
-    //first class to clear margin right 
+
+    //first class to clear margin right
     .primary {margin-left: 0px;}
 
     //Card styles for 'Most relevent content section'
@@ -858,8 +863,8 @@ a {
         &:hover {
             cursor: pointer;
             transition: all .2s;
-            -moz-box-shadow: 1px 1px 5px #999; 
-            -webkit-box-shadow: 1px 1px 5px #999; 
+            -moz-box-shadow: 1px 1px 5px #999;
+            -webkit-box-shadow: 1px 1px 5px #999;
             box-shadow: 1px 1px 5px #999;
         }
         img {
@@ -879,11 +884,11 @@ a {
     }
 
     */
-        
+
     // Article-list styles and mods
-    
+
     &.article-list {
-        
+
         h4 {
             font-weight: 400;
             margin-bottom: 3px;
@@ -892,14 +897,14 @@ a {
                 text-decoration: underline;
             }
         }
-        
+
         ul.meta {
             padding-bottom: 25px;
             margin-bottom: 25px;
             border-bottom-color: #ddd;
-            
+
             dl {
-                
+
                 dt, dd {
                     display: inline-block;
                     margin: 0 5px 0 0;
@@ -914,9 +919,9 @@ a {
             }
         }
     }
-    
+
     // Product Guide styles and mods (formerly Getting Started)
-    
+
     &.product-guide {
 
         ul {
@@ -925,7 +930,7 @@ a {
             font-weight: 400;
             list-style: none;
             margin-left: 0;
-            
+
             &.meta {
                 font-size: 14px;
                 font-family: $font-family-primary;
@@ -933,27 +938,27 @@ a {
             &.breadcrumbs {font-size: 11px;}
         }
     }
-    
+
     // FAQs styles and mods
-    
+
     &.faq {
         h4 {
             font-weight: 400;
             margin-bottom: 20px;
             padding-left: 25px;
             background: url($assets_support_rackspace_com_dist_img_icon_plus_svg) 0 3px no-repeat;
-            
+
             &:hover{
                 cursor: pointer;
                 color: $color-kcblue;
             }
-            
-            &.active {background: url($assets_support_rackspace_com_dist_img_icon_minus_svg) 0 3px no-repeat}            
+
+            &.active {background: url($assets_support_rackspace_com_dist_img_icon_minus_svg) 0 3px no-repeat}
         }
-        
+
         hr {margin-top: 30px;}
     }
-    
+
 }
 
 .river {
@@ -971,7 +976,7 @@ a {
     font-size: 14px;
     line-height: 16px;
     color: #474747;
-    
+
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
     -moz-box-sizing: border-box;    /* Firefox, other Gecko */
     box-sizing: border-box;         /* IE 8+ */
@@ -981,53 +986,53 @@ a {
         font-weight: 700;
         margin-bottom: 15px;
     }
-    
+
     a {
         font-weight: 400;
         text-decoration: none;
         color: #777;
-        
+
         &:hover {color: $color-kcblue;}
-        
+
         &.home-link {
             display: block;
             margin-bottom: 20px;
             padding-bottom: 20px;
             border-bottom: 1px solid #E1E1E1;
-            
+
             i {margin-right: 5px;}
         }
-    } 
-    
+    }
+
     ul {
         margin-bottom: 40px;
-        
+
         li {margin-bottom: 13px;}
-        
+
         // Page Sidebar LISTS
-        
+
         &.area {
             li.active {
                 display: block;
                 padding: 7px 10px;
                 background: $color-kcblue;
                 pointer-events: none;
-                
+
                 a {color: #fff;}
             }
         }
-        
+
         &.nav {
             li.active {
                 padding-left: 6px;
                 border-left: 3px solid $color-kcblue;
                 font-weight: 700;
                 pointer-events: none;
-                
+
                 a {color: $color-text;}
             }
         }
-        
+
     }
 
     hr {
@@ -1035,14 +1040,14 @@ a {
         border-width: 0;
         border-top: 1px solid #E1E1E1;
     }
-    
+
     p {
         color: #757575;
         margin-bottom: 40px;
-        
+
         a {
             color: $color-kcblue;
-        
+
             &:hover {text-decoration: underline;}
         }
     }
@@ -1106,7 +1111,7 @@ a {
     padding-top: 30px;
     width: 960px !important;
     margin: 0 auto;
-    font-family: $font-family-primary;   
+    font-family: $font-family-primary;
 }
 
 // Legal Disclaimer
@@ -1115,12 +1120,12 @@ a {
     margin-top: 30px;
     padding-top: 20px;
     border-top: 1px solid $color-kcblue;
-    
+
     p {
         font-size: 11px;
         line-height: 13px;
         margin-bottom: 15px;
     }
-    
+
     img {margin-bottom: 10px;}
 }
