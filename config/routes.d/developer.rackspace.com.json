@@ -16,6 +16,7 @@
             "^/docs/user-guides/orchestration/": "user-guide.html",
             "^/docs/cloud-images/v2/developer-guide": "docs-singlepage.html",
             "^/docs/cloud-load-balancers/v1/developer-guide": "docs-singlepage.html",
+            "^/docs/cloud-load-balancers/v2/developer-guide": "docs-singlepage.html",
             "^/docs/cloud-block-storage/v1/developer-guide": "docs-singlepage.html",
             "^/docs/cloud-dns/v1/developer-guide": "docs-singlepage.html",
             "^/docs/cdn/v1/developer-guide": "docs-singlepage.html",
