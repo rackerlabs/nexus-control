@@ -21,7 +21,6 @@
           <div class="attribution">
             <span class="author">{{ deconst.content.envelope.meta.author }}</span>
             <span class="date">{{ deconst.content.envelope.meta.date|date('MMMM D, YYYY') }}</span>
-            {% if deconst.request.path.match('^/docs') %}
               {% if deconst.content.envelope.meta.github_issues_url or deconst.content.envelope.meta.github_edit_url %}
                 {% if deconst.content.envelope.meta.preferGithubIssues %}
                   {% set githubLinkUrl = deconst.content.envelope.meta.github_issues_url %}
@@ -37,7 +36,6 @@
                   </a>
                 </span>
               {% endif %}
-            {% endif %}
           </div>
         </div>
       </div>
