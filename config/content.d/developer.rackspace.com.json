@@ -31,7 +31,8 @@
           "/docs/cloud-keep/v1/developer-guide/": "https://github.com/rackerlabs/docs-barbican/",
           "/docs/dedicated-load-balancers/v2/dev-guide/": "https://github.com/rackerlabs/docs-dedicated-networking/",
           "/docs/glossary/": "https://github.com/rackerlabs/docs-common/",
-          "/docs/private-cloud/rpc/": "https://github.com/rackerlabs/docs-rpc/",
+          "/docs/private-cloud/rpc/v11": "https://github.com/rackerlabs/docs-rpc/v11/",
+          "/docs/private-cloud/rpc/v10": "https://github.com/rackerlabs/docs-rpc/v10/",
           "/docs/private-cloud/dedicated-vcloud/": "https://github.com/rackerlabs/docs-dedicated-vcloud/",
           "/docs/private-cloud/red-hat/": "https://github.com/rackerlabs/docs-redhat-osp/"
       },

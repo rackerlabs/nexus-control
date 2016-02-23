@@ -76,6 +76,10 @@
             "toPort": "20096",
             "rewrite": false,
             "status": 302
+        },
+        {
+          "from": "^/docs/private-cloud/rpc/?$",
+          "to": "/docs/private-cloud/rpc/v11"
         }
     ]
 }
