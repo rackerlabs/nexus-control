@@ -7,10 +7,32 @@ body.home {
             background: fadeout(black, 60%);
             color: white;
             display: block;
-            font-size: percentage((48/14));
+            font-size: percentage((40/14));
             text-align: center;
             text-shadow: 0px 0px 2px fadeout(black, 70%);
-            text-transform: none;
+            text-transform: uppercase;;
+        }
+
+        #headline-typer {
+          .titillium();
+          border-bottom: solid 2px white;
+          display: inline-block;
+          min-width: 10em;
+
+          .word {
+            line-height: 1;
+
+            &:after {
+              animation: blink 1s infinite linear;
+              background: white;
+              content: "";
+              display: inline-block;
+              height: 1em;
+              margin-left: 0.1em;
+              vertical-align: top;
+              width: 1px;
+            }
+          }
         }
 
         br {
@@ -23,15 +45,29 @@ body.home {
             margin-bottom: 0;
             text-align: center;
             text-transform: none;
-        }
 
-        .get-started {
-            .open-sans('bold');
-            .button('smoke');
-            font-size: 12px;
-            letter-spacing: 0.04em;
-            margin-top: 2em;
-            text-transform: uppercase;
+            a {
+              color: white;
+              text-decoration: underline;
+
+              &:hover, &:focus {
+                color: @link-color;
+              }
+            }
+
+            .get-started {
+                .open-sans();
+                .button('blue');
+                font-size: 16px;
+                letter-spacing: 0.04em;
+                margin-top: 2em;
+                text-decoration: none;
+                text-transform: uppercase;
+
+                &:hover, &:focus {
+                  color: white;
+                }
+            }
         }
 
         @media (min-width: 769px) {
@@ -39,6 +75,11 @@ body.home {
 
             h2 {
                 background: transparent;
+            }
+
+            .tagline {
+              margin: 0 auto;
+              max-width: 760px;
             }
 
             br {
@@ -57,136 +98,20 @@ body.home {
         }
     }
 
-
-    .box.carina-signup {
-      background: #f0f5fc;
-
-      h2 {
-        .open-sans('light');
-      }
-
-      form {
-        text-align: left;
-      }
-
-      .control.email, .control.password {
-        .grid-unit(1/1, 0px);
-      }
-
-      .control.submit {
-        .grid-unit(1/1, 0px);
-      }
-
-      .control {
-        &.error {
-          input[type="email"],
-          input[type="password"] {
-            border: solid 1px @theme-red;
-            color: shade(@theme-red, 20%);
-
-            &:focus {
-              color: @text-color;
-            }
-          }
-
-          .control-validation {
-            color: shade(@theme-red, 20%);
-            margin-top: 7px;
-          }
-        }
-
-        & + .control {
-          margin-top: 14px;
-        }
-      }
-
-      input[type="email"],
-      input[type="password"] {
-        .open-sans();
-        background: white;
-        border: solid 1px @text-color;
-        display: block;
-        font-size: 14px;
-        padding: 0.9em 1em;
-        .transition(border 0.1s ease-in-out);
-        width: 100%;
-
-        &:focus {
-          outline: none;
-          border: solid 1px @theme-teal;
-        }
-      }
-
-      button[type="submit"] {
-        .open-sans();
-        .button();
-        background: @theme-teal;
-        border: solid 1px shade(@theme-teal, 5%);
-        color: white;
-        cursor: pointer;
-        font-size: 14px;
-        padding: 0.9em 2.5em;
-        .transition(~"background 0.1s ease-in-out, border 0.1s ease-in-out");
-        width: 100%;
-
-        &:hover, &:focus {
-          outline: none;
-          background: shade(@theme-teal, 5%);
-          border: solid 1px shade(@theme-teal, 25%);
-        }
-
-        &[disabled] {
-          background: tint(@theme-teal, 35%);
-          border: solid 1px tint(@theme-teal, 35%);
-
-          &:hover, &:focus {
-            background: tint(@theme-teal, 35%);
-            border: solid 1px tint(@theme-teal, 35%);
-          }
-        }
-
-        @media (min-width: 480px) {
-          width: auto;
-        }
-      }
-
-      .form-submitted {
-        background: @theme-teal;
-        color: white;
-        padding: 20px;
-      }
-
-      @media (min-width: 768px) {
-
-        .control + .control {
-          margin-top: 0;
-        }
-
-        form {
-          .grid(18px);
-          margin-left: auto;
-          margin-right: auto;
-
-          .control.email, .control.password {
-            .grid-unit(4/10, 18px);
-            margin-top: 0;
-          }
-
-          .control.submit {
-            .grid-unit(2/10, 18px);
-            margin-top: 0;
-          }
-        }
-      }
-    }
-
     .box.docs-apis {
 
         h1 {
-            margin-bottom: 80px;
+          .titillium('bold');
+          margin-bottom: 0.25em;
+        }
+
+        h1 + p {
+          margin: 0 auto;
+          max-width: 760px;
         }
 
         .tools-promos {
+            margin-top: 60px;
             .grid(20px);
 
             .promo {
@@ -194,18 +119,120 @@ body.home {
             }
 
             @media (min-width: 769px) {
-                .grid(80px);
+                .grid(20px);
 
                 .promo {
-                    .grid-unit(1/2, 80px);
+                    .grid-unit(1/3, 20px);
                 }
             }
+        }
+
+        .card {
+          &.yellow, &.red {
+            border-top: solid 1px shade(white, 10%);
+          }
+
+          &.yellow {
+            .card-action, .card-subtitle {
+              color: @theme-yellow;
+            }
+
+            .card-subtitle:before {
+              background: @theme-yellow;
+            }
+
+            .card-subtitle span:before,
+            .card-subtitle span:after {
+              background: @theme-yellow;
+            }
+          }
+
+          &.red {
+            .card-action, .card-subtitle {
+              color: @theme-red;
+            }
+
+            .card-subtitle:before {
+              background: @theme-red;
+            }
+
+            .card-subtitle span:before,
+            .card-subtitle span:after {
+              background: @theme-red;
+            }
+          }
+
+          .card-image {
+            padding-top: 20px;
+            svg {
+              height: 36px;
+              width: 36px;
+            }
+          }
+
+
+          .card-title {
+            padding: 0.5em;
+            padding-bottom: 0;
+          }
+
+          .card-subtitle {
+            display: inline-block;
+            line-height: 1;
+            padding: 0 4em;
+            text-transform: uppercase;
+
+            &:before {
+              content: "";
+              display: block;
+              position: absolute;
+              height: 1px;
+              width: 100%;
+              left: 0;
+              top: 0.5em;
+            }
+
+            span {
+              background: white;
+              padding: 0 0.5em;
+
+              &:before, &:after {
+                background: transparent;
+                border-radius: 50%;
+                content: "";
+                display: block;
+                height: 3px;
+                position: absolute;
+                top: ~"calc(0.5em + 2px)";
+                width: 3px;
+              }
+
+              &:before {
+                left: -4em;
+              }
+
+              &:after {
+                right: -4em;
+              }
+            }
+          }
+
+          .card-body {
+            padding: 3em 30px 3em 30px;
+            padding-top: 3em;
+          }
+
+          .card-action {
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 1.5em;
+            text-transform: uppercase;
+          }
         }
     }
 
     .box.dev-support {
-        background: @text-color;
-        color: white;
+        border-top: solid 1px shade(white, 12%);
 
         h2 {
             font-size: percentage((36/14));
@@ -217,8 +244,8 @@ body.home {
         }
 
         .icon {
-            font-size: 60px;
-            margin-bottom: 5px;
+            font-size: 50px;
+            margin-bottom: 25px;
         }
 
         .comm-platforms {
@@ -239,59 +266,41 @@ body.home {
         }
     }
 
-    .box.carina-quote {
-        background: shade(white, 5%) url(@assets_dist_img_quote_background_jpg) 50% 50% no-repeat;
-        background-size: cover;
+    .box.rack-cli {
+      border-top: solid 1px shade(white, 12%);
+      background: #f0f5fc;
 
-        h2 {
-          font-size: percentage((36/14));
+      .cli-grid {
+        .grid(40px);
+      }
+
+      .cli-image {
+        .grid-unit(7/12, 20px);
+      }
+
+      .cli-text {
+        .grid-unit(5/12, 20px);
+        text-align: left;
+        font-size: 16px;
+
+        .action {
+          margin-top: 4em;
         }
 
-        h2 + p {
-          font-size: percentage((20/14));
-          margin-bottom: 40px;
-        }
-
-        blockquote {
-          font-size: percentage((18/14));
-          line-height: 1.45;
-          margin-bottom: 10px;
-
-            .quotes {
-              font-family: Georgia, serif;
-            }
-        }
-
-        .author {
-          .open-sans('regular','italic');
-          font-size: percentage((18/14));
-          margin-bottom: 40px;
-        }
-
-        a {
+        .download-button {
           .button('blue');
+          padding: 0.5em 1.5em;
         }
 
-        @media (min-width: 850px) {
-          blockquote {
-            font-size: percentage((28/14));
-          }
+        .info-button {
+          .button('link');
+          padding: 0.5em 1.5em;
         }
-
-        @media (min-width: 1067px) {
-          background-size: contain;
-        }
-    }
-
-    .box.sign-up {
-        border-bottom: solid 1px shade(white, 5%);
-
-        a.sign-up {
-            .button('blue');
-        }
+      }
     }
 
     .box.blog {
+        border-top: solid 1px shade(white, 12%);
         .link-lists {
             .grid(40px);
 
@@ -316,4 +325,26 @@ body.home {
             margin-bottom: 30px;
         }
     }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  39% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  89% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
