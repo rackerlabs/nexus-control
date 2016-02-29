@@ -13,6 +13,7 @@ angular.module(moduleName, [
     require('./components/dropdown-toggle'),
     require('./components/flex-height'),
     require('./components/global-sidebar'),
+    require('./components/headline-typer'),
     require('./components/language-selector'),
     require('./components/scroll-indicator'),
     require('./components/sticky'),
