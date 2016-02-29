@@ -1,1 +1,11 @@
-[]
+[
+  { "kind": "github", "project": "rackerlabs/otter" },
+  { "kind": "github", "project": "rackerlabs/standard-usage-schemas" },
+  { "kind": "github", "project": "rackerlabs/docs-rpc" },
+  { "kind": "github", "project": "rackerlabs/docs-cloud-identity-2.0" },
+  { "kind": "github", "project": "rackerlabs/docs-dedicated-vcloud" },
+  { "kind": "github", "project": "rackerlabs/docs-redhat-osp" },
+  { "kind": "github", "project": "rackerlabs/heat-resource-ref" },
+  { "kind": "github", "project": "rackerlabs/docs-cloud-monitoring" },
+  { "kind": "github", "project": "rackerlabs/docs-cloud-metrics" }
+]
