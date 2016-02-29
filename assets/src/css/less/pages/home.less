@@ -301,28 +301,67 @@ body.home {
 
     .box.blog {
         border-top: solid 1px shade(white, 12%);
-        .link-lists {
-            .grid(40px);
 
-            .link-list {
-                .grid-unit(1/1, 40px);
-                text-align: left;
-            }
+        .headline {
+          margin-bottom: 40px;
+        }
 
-            @media (min-width: 550px) {
-                .link-list {
-                    .grid-unit(1/2, 40px);
+        .tab-buttons {
+          ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: left;
+
+            li {
+              .titillium('light');
+              display: inline-block;
+              font-size: 18px;
+              line-height: 24px;
+              padding: 0 1em;
+              text-transform: uppercase;
+
+              a {
+                color: @text-color;
+
+                &:hover, &:focus, &:active {
+                  color: shade(@link-color, 10%);
+                  text-decoration: none;
                 }
+
+                &.active {
+                  color: @link-color;
+                }
+              }
             }
+
+            li.active-link-indicator {
+              background: @link-color;
+              height: 2px;
+              left: 0;
+              margin: 0;
+              padding: 0;
+              position: absolute;
+              bottom: 0px;
+              .transition(all 0.15s ease-in);
+              width: 0px;
+            }
+          }
         }
 
-        h4 {
-            font-size: percentage((28/14));
-            margin-bottom: 20px;
-        }
+        [data-tab] {
+          padding: 60px 0 0 0;
+          text-align: left;
 
-        ul {
-            margin-bottom: 30px;
+          .big-button {
+            padding-top: 60px;
+            text-align: center;
+
+            a {
+              .button('link');
+              border: solid 1px @link-color;
+            }
+          }
         }
     }
 }

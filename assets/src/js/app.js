@@ -17,6 +17,7 @@ angular.module(moduleName, [
     require('./components/language-selector'),
     require('./components/scroll-indicator'),
     require('./components/sticky'),
+    require('./components/tab-set'),
     require('./controllers/blog-sidebar'),
     require('./controllers/docs-home-services'),
     require('./controllers/docs-home-sidebar'),
