@@ -360,7 +360,46 @@ body.home {
             a {
               .button('link');
               border: solid 1px @link-color;
+              transition: all 0.1s ease-in-out;
+
+              &:hover, &:active, &:focus {
+                background: @link-color;
+                color: white;
+                text-decoration: none;
+              }
             }
+          }
+        }
+
+        .blog-posts {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+
+          .blog-post {
+            margin: 0;
+            padding: 0 0 20px 0;
+
+            .post-avatar {
+              margin-top: 0.5em;
+            }
+
+            .post-info {
+              margin-bottom: 0;
+            }
+          }
+
+          .blog-post + .blog-post {
+            border-top: solid 1px shade(white, 10%);
+            padding-top: 20px;
+          }
+
+          h4 {
+            .titillium();
+          }
+
+          .post-categories {
+            display: inline-block;
           }
         }
     }
