@@ -35,7 +35,7 @@ angular.module(moduleName, [])
                 $scope.activeWordIndex + 1;
               return resolve($scope.words[$scope.activeWordIndex]);
             }
-          }, 90);
+          }, 50);
         });
       };
 
