@@ -117,6 +117,24 @@
           "to": "/docs/reference/glossary/",
           "rewrite": false,
           "status": 301
+        },
+        {
+          "from": "\\/docs\\/concepts\\/docker-networking-basics\\/?",
+          "to": "/docs/tutorials/overlay-networks/",
+          "rewrite": false,
+          "status": 301
+        },
+        {
+          "from": "\\/docs\\/tutorials\\/connect-docker-containers-with-links\\/?",
+          "to": "/docs/tutorials/overlay-networks/",
+          "rewrite": false,
+          "status": 301
+        },
+        {
+          "from": "\\/docs\\/tutorials\\/connect-docker-containers-ambassador-pattern\\/?",
+          "to": "/docs/tutorials/overlay-networks/",
+          "rewrite": false,
+          "status": 301
         }
     ]
 }
