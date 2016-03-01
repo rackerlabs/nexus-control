@@ -38,11 +38,18 @@
           "status": 301
       },
       {
-        "description": "Redirect /knowledge_center/email-apps/ to /how-to#cloud-office",
-        "from": "^\\/knowledge_center\\/email-apps\\/?",
-        "to": "/how-to/#cloud-office",
-        "rewrite": false,
-        "status": 301
+          "description": "Redirect /knowledge_center/email-apps/ to /how-to#cloud-office",
+          "from": "^\\/knowledge_center\\/email-apps\\/?",
+          "to": "/how-to/#cloud-office",
+          "rewrite": false,
+          "status": 301
+      },
+      {
+          "description": "Redirect all /knowledge_center/article/ links to /how-to/.",
+          "from": "^\\/knowledge_center\\/article\\/(.*)$",
+          "to": "/how-to/$1",
+          "rewrite": false,
+          "status": 301
       }
   ]
 }
