@@ -63,8 +63,8 @@ angular.module(moduleName, [])
         e.preventDefault();
 
         $scope.$apply(function () {
-          $scope.activeTab = e.target.getAttribute('data-tab-link');
-        });
+          $scope.activeTab = this.getAttribute('data-tab-link');
+        }.bind(this));
       });
     }]
   };
