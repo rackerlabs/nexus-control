@@ -27,7 +27,7 @@
           "/docs/cloud-files/v1/developer-guide/": "https://github.com/rackerlabs/docs-cloud-files/",
           "/docs/metrics/v2/developer-guide/": "https://github.com/rackerlabs/docs-cloud-metrics/",
           "/docs/cloud-identity/v2/developer-guide/": "https://github.com/rackerlabs/docs-cloud-identity/",
-          "/docs/cloud-monitoring/v1/developer-guide/": "https://github.com/rackerlabs/docs-cloud-monitoring/",
+          "/docs/rackspace-monitoring/v1/developer-guide/": "https://github.com/rackerlabs/docs-cloud-monitoring/",
           "/docs/cloud-keep/v1/developer-guide/": "https://github.com/rackerlabs/docs-barbican/",
           "/docs/dedicated-load-balancers/v2/dev-guide/": "https://github.com/rackerlabs/docs-dedicated-networking/",
           "/docs/glossary/": "https://github.com/rackerlabs/docs-common/",
