@@ -69,6 +69,12 @@
             "status": 301
         },
         {
+            "from": "^\\/how-to\\/cloud-monitoring\\/?(.*)$",
+            "to": "/how-to/rackspace-monitoring/$1",
+            "rewrite": false,
+            "status": 301
+        },
+        {
             "from": "^\\/logs\\/?$",
             "to": "/",
             "toProtocol": "https",
