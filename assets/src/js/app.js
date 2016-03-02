@@ -15,6 +15,7 @@ angular.module(moduleName, [
     require('./components/global-sidebar'),
     require('./components/headline-typer'),
     require('./components/language-selector'),
+    require('./components/rack-cli-graphic').name,
     require('./components/scroll-indicator'),
     require('./components/sticky'),
     require('./components/tab-set'),

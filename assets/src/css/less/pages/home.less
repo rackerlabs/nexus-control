@@ -275,11 +275,17 @@ body.home {
       }
 
       .cli-image {
-        .grid-unit(7/12, 20px);
+        .grid-unit(8/12, 20px);
+
+        img {
+          // margin: 0;
+          max-width: 100%;
+          height: auto;
+        }
       }
 
       .cli-text {
-        .grid-unit(5/12, 20px);
+        .grid-unit(4/12, 20px);
         text-align: left;
         font-size: 16px;
 
@@ -409,6 +415,33 @@ body.home {
 
             & > li {
               .grid-unit(1/2, 40px);
+
+              h5 {
+                .titillium();
+                font-size: 20px;
+                text-transform: none;
+                margin-bottom: 0.25em;
+              }
+
+              .date, .location {
+                display: inline-block;
+                line-height: 1;
+                margin-bottom: 1em;
+              }
+
+              .date {
+                .open-sans('bold');
+              }
+
+              .date + .location {
+                border-left: solid 1px tint(@text-color, 70%);
+                margin-left: 0.5em;
+                padding-left: 0.5em;
+              }
+
+              .description {
+                font-size: 16px;
+              }
             }
           }
         }
