@@ -60,4 +60,15 @@
             background: fadeout(white, 90%);
         }
     }
+
+    & when (@style = 'link') {
+        background: tranparent;
+        border: solid 1px transparent;
+        color: @link-color;
+
+        &:hover {
+          color: shade(@link-color, 10%);
+          text-decoration: underline;
+        }
+    }
 }
