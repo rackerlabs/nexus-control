@@ -65,11 +65,6 @@
 
 {% block content %}
     <section class="docs-section" data-ng-non-bindable>
-      {% set output = deconst.content.envelope.body %}
-      {% if deconst.content.envelope.meta.collapseSections == 'true' %}
-        {% set output = output|collapseSections %}
-      {% endif %}
-
-      {{ output }}
+      {{ deconst.content.envelope.body }}
     </section>
 {% endblock %}
