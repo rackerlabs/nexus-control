@@ -3,5 +3,10 @@
 {% block bodyClass %}home{% endblock %}
 
 {% block bodyContent %}
+  {#
+    Rackspace Intelligence expects this HTML comment to appear on the home page.
+    Don't remove it unless you want to have a bad time.
+  #}
+  <!-- SITE-MONITORING-KEY: 7a1aac5ffd12d03b  -->
   {{ deconst.content.envelope.body }}
 {% endblock %}
