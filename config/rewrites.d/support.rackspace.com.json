@@ -43,6 +43,13 @@
         "to": "/how-to/#cloud-office",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "Redirect /knowledge_center/Frequently_Asked_Questions/ to /how-to/cloud-servers-faq/",
+        "from": "^\\/knowledge_center\\/Frequently_Asked_Questions\\/?",
+        "to": "/how-to/cloud-servers-faq/",
+        "rewrite": false,
+        "status": 301
       }
   ]
 }
