@@ -21,6 +21,20 @@
   }
 }
 
+form {
+  .control.recaptcha {
+    max-height: 120px;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+  &.ng-pristine {
+    .control.recaptcha {
+      max-height: 0px;
+    }
+  }
+}
+
 input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -40,7 +54,9 @@ input[type="password"] {
   }
 
   @media (min-width: 550px) {
-    max-width: 280px;
+    // this funky max-width is to match the size of the reCAPTCHA component,
+    // which we can't style at all.
+    max-width: 302px;
   }
 }
 

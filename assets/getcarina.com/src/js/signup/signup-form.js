@@ -9,7 +9,8 @@ angular.module(moduleName, [])
 .controller('SignupFormCtrl', ['$http', function ($http) {
   this.formData = {
     username: '',
-    password: ''
+    password: '',
+    recaptchaResponse: ''
   };
 
   this.status = 'waiting';
