@@ -1,4 +1,6 @@
 [
+  { "kind": "github", "project": "rackerlabs/docs-developer-blog" },
+  { "kind": "github", "project": "rackerlabs/docs-quickstart" },
   { "kind": "github", "project": "rackerlabs/otter" },
   { "kind": "github", "project": "rackerlabs/standard-usage-schemas" },
   { "kind": "github", "project": "rackerlabs/docs-rpc", "branches": ["v10", "v11"] },
