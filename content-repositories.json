@@ -1,7 +1,7 @@
 [
   { "kind": "github", "project": "rackerlabs/otter" },
   { "kind": "github", "project": "rackerlabs/standard-usage-schemas" },
-  { "kind": "github", "project": "rackerlabs/docs-rpc" },
+  { "kind": "github", "project": "rackerlabs/docs-rpc", "branches": ["v10", "v11"] },
   { "kind": "github", "project": "rackerlabs/docs-cloud-identity" },
   { "kind": "github", "project": "rackerlabs/docs-dedicated-vcloud" },
   { "kind": "github", "project": "rackerlabs/docs-redhat-osp" },
