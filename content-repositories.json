@@ -11,6 +11,8 @@
   { "kind": "github", "project": "rackerlabs/docs-cloud-monitoring" },
   { "kind": "github", "project": "rackerlabs/docs-cloud-databases" },
   { "kind": "github", "project": "rackerlabs/docs-cloud-metrics" },
-  { "kind": "github", "project": "rackerlabs/docs-barbican"}, 
+  { "kind": "github", "project": "rackerlabs/docs-barbican" },
+  { "kind": "github", "project": "rackerlabs/docs-cloud-servers" },
+  { "kind": "github", "project": "rackerlabs/docs-cloud-networks" },
   { "kind": "github", "project": "getcarina/getcarina.com" }
 ]
