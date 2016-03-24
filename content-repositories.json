@@ -1,4 +1,4 @@
-[
+ [
   { "kind": "github", "project": "rackerlabs/docs-developer-blog" },
   { "kind": "github", "project": "rackerlabs/docs-quickstart" },
   { "kind": "github", "project": "rackerlabs/otter" },
@@ -14,5 +14,6 @@
   { "kind": "github", "project": "rackerlabs/docs-barbican" },
   { "kind": "github", "project": "rackerlabs/docs-cloud-servers" },
   { "kind": "github", "project": "rackerlabs/docs-cloud-networks" },
+  { "kind": "github", "project": "rackerlabs/rackspace-how-to" },
   { "kind": "github", "project": "getcarina/getcarina.com" }
 ]

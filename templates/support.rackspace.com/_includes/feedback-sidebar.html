@@ -3,10 +3,10 @@
                             <p>We love customer feedback. Help us improve our products and service by <a href="https://feedback.rackspace.com/forums/264368-rackspace-documentation">leaving yours</a>.</p>
                         </div>
 
-                        {% if deconst.content.envelope.metadata.github_url %}
+                        {% if deconst.content.envelope.meta.github_edit_url %}
                         <hr/>
-                        
+
                         <div class="contributing-container">
-                            <p class="button-wp"><a href="{{ deconst.content.envelope.metadata.github_url }}"><i class="fa fa-github"></i>Edit This Article</a></p>
+                            <p class="button-wp"><a href="{{ deconst.content.envelope.meta.github_edit_url }}"><i class="fa fa-github"></i>Edit This Article</a></p>
                         </div>
                         {% endif %}
