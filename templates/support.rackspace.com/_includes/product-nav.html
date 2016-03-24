@@ -1,7 +1,7 @@
 <a class="home-link" href="/how-to/"><i class="fa fa-home"></i>How&#8211;To Home</a>
 
 {% if deconst.content.envelope.meta.product != "undefined" %}
-<h3>For This Product:</h3>
+<h3>{{ deconst.content.envelope.meta.product }}</h3>
 
 {# article, page, product #}
 {% set pageType = deconst.content.envelope.meta.type %}
