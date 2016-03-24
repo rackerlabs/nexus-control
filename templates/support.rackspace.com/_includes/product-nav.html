@@ -1,10 +1,10 @@
 <a class="home-link" href="/how-to/"><i class="fa fa-home"></i>How&#8211;To Home</a>
 
-{% if deconst.content.envelope.metadata.product != "undefined" %}
+{% if deconst.content.envelope.meta.product != "undefined" %}
 <h3>For This Product:</h3>
 
 {# article, page, product #}
-{% set pageType = deconst.content.envelope.metadata.type %}
+{% set pageType = deconst.content.envelope.meta.type %}
 
 {% if deconst.request.path.match('-faq/$') %}
     {% set pageType = "faq" %}
@@ -13,11 +13,11 @@
 {% endif %}
 
 {# has no trailing slash #}
-{% set productURL = deconst.content.envelope.metadata.product_url %}
+{% set productURL = deconst.content.envelope.meta.product_url %}
 
 {# if we don't have a product_url to work with #}
 {% if not productURL  %}
-    {% set productURL = deconst.content.envelope.metadata.product.replace(" ", "-").toLowerCase() %}
+    {% set productURL = deconst.content.envelope.meta.product.replace(" ", "-").toLowerCase() %}
     {% set productURL = productURL.replace("rackspace-private-cloud", "rpc") %}
 {% endif %}
 
