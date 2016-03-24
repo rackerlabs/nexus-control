@@ -8,6 +8,7 @@
   { "kind": "github", "project": "rackerlabs/docs-dedicated-vcloud" },
   { "kind": "github", "project": "rackerlabs/docs-redhat-osp" },
   { "kind": "github", "project": "rackerlabs/heat-resource-ref" },
+  { "kind": "github", "project": "rackerlabs/docs-cloud-big-data"},
   { "kind": "github", "project": "rackerlabs/docs-cloud-monitoring" },
   { "kind": "github", "project": "rackerlabs/docs-cloud-databases" },
   { "kind": "github", "project": "rackerlabs/docs-cloud-metrics" },
