@@ -5,7 +5,7 @@
   { "kind": "github", "project": "rackerlabs/docs-dedicated-vcloud" },
   { "kind": "github", "project": "rackerlabs/docs-redhat-osp" },
   { "kind": "github", "project": "rackerlabs/docs-rpc", "branches": ["v10", "v11"] },
-  { "kind": "github", "project": "rackerlabs/rackspace-how-to" }
+  { "kind": "github", "project": "rackerlabs/rackspace-how-to" },
   { "kind": "github", "project": "rackerlabs/docs-barbican" },
   { "kind": "github", "project": "rackerlabs/docs-cloud-databases" },
   { "kind": "github", "project": "rackerlabs/docs-cloud-big-data"},
