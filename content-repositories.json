@@ -12,6 +12,7 @@
   { "kind": "github", "project": "rackerlabs/docs-cloud-identity" },
   { "kind": "github", "project": "rackerlabs/docs-cloud-images" },
   { "kind": "github", "project": "rackerlabs/docs-cloud-load-balancers" },
+  { "kind": "github", "project": "rackerlabs/docs-cloud-files" },
   { "kind": "github", "project": "rackerlabs/docs-cloud-metrics" },
   { "kind": "github", "project": "rackerlabs/docs-cloud-monitoring" },
   { "kind": "github", "project": "rackerlabs/docs-cloud-networks" },
