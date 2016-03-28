@@ -37,6 +37,7 @@
     "angular-cookies": "^1.4.7",
     "cheerio": "^0.19.0",
     "envify": "^3.4.0",
+    "grunt": "^0.4.5",
     "markalytics": "^0.1.3"
   }
 }
