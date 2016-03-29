@@ -1,0 +1,5 @@
+{% set contentType = deconst.response.set('Content-Type', 'application/json') %}
+{% set query = deconst.request.query.q or '' %}
+{% set page = deconst.request.query.page or 1 %}
+
+{{ query|search(pageNumber=page)|json }}

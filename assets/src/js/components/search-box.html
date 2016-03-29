@@ -1,0 +1,15 @@
+<div class="search-input">
+  <input type="search" placeholder="Search this site" data-ng-model="searchBox.query">
+  <ul class="search-results">
+    <li class="loading" data-ng-if="searchBox.searchInProgress">
+      Loading&hellip; <span class="fa fa-spinner fa-spin"></span>
+    </li>
+    <li class="no-results" data-ng-if="!searchBox.searchInProgress && searchBox.query.length >= 2 && searchBox.results.length == 0">
+      <em>No results found.</em>
+    </li>
+    <li data-ng-repeat="result in searchBox.results track by $index">
+      <a class="title" href="" data-ng-bind-html="result.title"></a>
+      <div class="excerpt" data-ng-bind-html="result.excerpt"></div>
+    </li>
+  </ul>
+</div>

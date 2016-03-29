@@ -6,6 +6,7 @@ var moduleName = 'drc.app';
 module.exports = moduleName;
 
 angular.module(moduleName, [
+    require('angular-sanitize'),
     require('./components/code-sample'),
     require('./components/code-sample-parent'),
     require('./components/collapsible-section'),
@@ -17,6 +18,7 @@ angular.module(moduleName, [
     require('./components/language-selector'),
     require('./components/rack-cli-graphic').name,
     require('./components/scroll-indicator'),
+    require('./components/search-box'),
     require('./components/sticky'),
     require('./components/tab-set'),
     require('./controllers/blog-sidebar'),
@@ -27,6 +29,7 @@ angular.module(moduleName, [
     require('./controllers/upcoming-events').name,
     require('./services/active-language'),
     require('./services/filter'),
+    require('./services/search'),
 ]);
 
 angular.bootstrap(document, [moduleName]);
