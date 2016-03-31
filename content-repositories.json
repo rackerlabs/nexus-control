@@ -6,6 +6,7 @@
   { "kind": "github", "project": "rackerlabs/docs-redhat-osp" },
   { "kind": "github", "project": "rackerlabs/docs-rpc", "branches": ["v10", "v11"] },
   { "kind": "github", "project": "rackerlabs/rackspace-how-to" },
+  { "kind": "github", "project": "rackerlabs/docs-core-infra-user-guide" },
   { "kind": "github", "project": "rackerlabs/docs-barbican" },
   { "kind": "github", "project": "rackerlabs/docs-cloud-backup" },
   { "kind": "github", "project": "rackerlabs/docs-cloud-block-storage" },
