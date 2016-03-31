@@ -34,11 +34,12 @@
           "/docs/private-cloud/rpc/v11": "https://github.com/rackerlabs/docs-rpc/v11/",
           "/docs/private-cloud/rpc/v10": "https://github.com/rackerlabs/docs-rpc/v10/",
           "/docs/private-cloud/dedicated-vcloud/": "https://github.com/rackerlabs/docs-dedicated-vcloud/",
-          "/docs/private-cloud/red-hat/": "https://github.com/rackerlabs/docs-redhat-osp/"
+          "/docs/private-cloud/red-hat/": "https://github.com/rackerlabs/docs-redhat-osp/",
+          "/search/": null
       },
       "proxy": {
           "/favicon.ico": "https://8d8dcdd952aa2708c2ff-519cda130c91226e76017ae910bdb276.ssl.cf1.rackcdn.com/favicon-aa186bee158ecea4c9b6a98e2ceec3141b6b7d8d94dcb71731ba112e2b17b1db.ico",
-          "/product-news-feed": "https://blog.rackspace.com/channels-rss/?channel=1"
+          "/product-news-feed": "https://blog.rackspace.com/feed/"
       }
   }
 }

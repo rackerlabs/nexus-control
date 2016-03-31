@@ -3,6 +3,7 @@
         "routes": {
             "^/": "default.html",
             "^/$": "index.html",
+            "^/search": "search.html",
             "^/signup": "index.html",
             "^/databases": "databases-index.html",
             "^/blog": "blog-index.html",
