@@ -9,7 +9,7 @@ angular.module(moduleName, [])
     search: function (options) {
       return $http({
         method: 'GET',
-        url: '/search/',
+        url: '/_api/search/',
         params: {
           q: options.query
         }
