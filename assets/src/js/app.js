@@ -19,6 +19,7 @@ angular.module(moduleName, [
     require('./components/rack-cli-graphic').name,
     require('./components/scroll-indicator'),
     require('./components/search-box'),
+    require('./components/search-results'),
     require('./components/sticky'),
     require('./components/tab-set'),
     require('./controllers/blog-sidebar'),
