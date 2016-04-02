@@ -11,7 +11,7 @@ angular.module(moduleName, [])
 
   var defaultQuery = {
     query: '',
-    pageNumber: 5
+    pageNumber: 1
   };
 
   var emptyResults = {
