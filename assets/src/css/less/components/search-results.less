@@ -36,6 +36,13 @@
       &.loading {
         text-align: center;
       }
+
+      &.no-results, &.results-count {
+        .open-sans('regular', 'italic');
+        color: tint(@text-color, 40%);
+        padding-top: 0;
+        padding-bottom: 0;
+      }
     }
   }
 }

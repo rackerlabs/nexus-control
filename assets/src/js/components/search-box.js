@@ -22,15 +22,11 @@ angular.module(moduleName, [])
     if (!$scope.loadInitial && arguments[0] == arguments[1]) {
       return;
     }
-
+    
     SearchService.emit('updateQuery', {
       query: newVal
     });
   };
-
-  SearchService.on('results', function (results) {
-    this.results = results.results;
-  }.bind(this));
 
   $scope.$watch(watchQuery, onQueryChange);
 

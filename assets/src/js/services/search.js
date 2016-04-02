@@ -5,28 +5,35 @@ var moduleName = 'drc.services.search';
 module.exports = moduleName;
 
 angular.module(moduleName, [])
-.service('SearchService', ['$http', '$q', function ($http, $q) {
-  // This is our export value. Public interface is all through
+.service('SearchService', ['$http', function ($http) {
+  // This is our export value. Public interface is all through the event emitter
   var emitter = EventEmitter({});
+
+  var defaultQuery = {
+    query: '',
+    pageNumber: 5
+  };
 
   var emptyResults = {
     results: [],
     total: 0
   };
 
+  // Centralized search state. Uses getters and setters for certain properties
+  // to ensure that events are emitted when their values change.
   var state = Object.create(Object, {
     completedQuery: {
-      enumerable: false, //change to false
+      enumerable: false,
       value: {},
       writable: true
     },
     _query: {
-      enumerable: false, //change to false
+      enumerable: false,
       value: {},
       writable: true
     },
     _results: {
-      enumerable: false, //change to false
+      enumerable: false,
       value: {},
       writable: true
     },
@@ -41,8 +48,13 @@ angular.module(moduleName, [])
         return this._query;
       },
       set: function (value) {
-        this._query.query = value.query;
+        for (var prop in value) {
+          if (value.hasOwnProperty(prop)) {
+            this._query[prop] = value[prop];
+          }
+        }
 
+        emitter.emit('queryChange', this._query);
         emitter.emit('search');
       }
     },
@@ -76,6 +88,7 @@ angular.module(moduleName, [])
   });
 
   state.results = emptyResults;
+  state.query = defaultQuery;
 
   var search = function () {
     // Don't stack up search requests. One at a time!
@@ -101,14 +114,15 @@ angular.module(moduleName, [])
       method: 'GET',
       url: '/_api/search/',
       params: {
-        q: state.query.query
+        q: state.query.query,
+        pageNumber: state.query.pageNumber
       }
     })
     .then(function (response) {
       state.searchInProgress = false;
       state.results = response.data;
 
-      // People type fast. If query state has changed since we finished _this_
+      // People type fast. If query state has changed since we finished this
       // query, emit the search event again to search with the latest state.
       if (state.completedQuery.query !== state.query.query) {
         emitter.emit('search');
@@ -125,10 +139,12 @@ angular.module(moduleName, [])
     });
   };
 
-  emitter.on('search', search);
+
   emitter.on('updateQuery', function (query) {
     state.query = query;
   });
+
+  emitter.on('search', search);
 
   return emitter;
 }]);

@@ -7,14 +7,17 @@ module.exports = moduleName;
 angular.module(moduleName, [])
 .controller('SearchResultsCtrl', ['$scope', '$timeout', 'SearchService', function ($scope, $timeout, SearchService) {
   this.query = '';
-  this.results = [];
+  this.results = {};
   this.searchInProgress = false;
 
   var noResultsTimer;
 
-  SearchService.on('updateQuery', function (query) {
+  SearchService.on('queryChange', function (query) {
     // Cancel the timeout to show a "no results" message
-    $timeout.cancel(noResultsTimer);
+    if (query.query !== '') {
+      $timeout.cancel(noResultsTimer);
+    }
+
     this.query = query.query;
   }.bind(this));
 
@@ -25,13 +28,14 @@ angular.module(moduleName, [])
     // cancelled any time the query is updated.
     if (results.results.length === 0) {
       noResultsTimer = $timeout(function () {
-        this.results = results.results;
-      }.bind(this), 400);
+        this.results = results;
+      }.bind(this), 500);
 
       return;
     }
 
-    this.results = results.results;
+    $timeout.cancel(noResultsTimer);
+    this.results = results;
   }.bind(this));
 
   SearchService.on('searchStart', function () {
