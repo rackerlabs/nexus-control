@@ -1,0 +1,31 @@
+[data-drc-search-box] {
+  .search-input {
+    margin: 0;
+    width: 100%;
+
+    input {
+      -webkit-appearance: none;
+      background: fadeout(white, 30%);
+      border: solid 1px #ccc;
+      display: block;
+      font-family: Arial;
+      font-size: 14px;
+      line-height: 32px;
+      margin: 0;
+      outline: none;
+      padding: 0 0.5em;
+      transition: background 0.2s ease-out, border-color 0.2s ease-out;
+      width: 100%;
+
+      &:focus {
+        background: white;
+        border-color: @rax-blue;
+      }
+
+      &::-webkit-input-placeholder {
+        color: tint(@text-color, 20%);
+        font-style: italic;
+      }
+    }
+  }
+}

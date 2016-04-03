@@ -7,6 +7,7 @@ module.exports = function(grunt) {
                     'assets/src/js/bundle.js': ['assets/src/js/main.js']
                 },
                 options: {
+                    transform: ['brfs'],
                     watch: true
                 }
             },
