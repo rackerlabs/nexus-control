@@ -13,6 +13,7 @@
         .header-links-container {
             @gutter-width: 0px;
             .grid(@gutter-width);
+            display: none;
             padding: 0 5%;
 
             .phone-chat-links {
@@ -42,6 +43,10 @@
             .portal-links {
                 margin-bottom: 0;
                 text-align: right;
+            }
+
+            @media (min-width: 475px) {
+              display: block;
             }
 
             @media (min-width: 769px) {
@@ -235,8 +240,8 @@
                 & > li.search {
                   float: right;
                   height: 60px;
-                  padding: 13px 0;
-                  width: 280px;
+                  padding: 0;
+                  width: 100%;
 
                   .search-results {
                     max-height: 400px;
@@ -250,12 +255,28 @@
                       padding-bottom: 1em;
                     }
                   }
+
+                  @media (min-width: 768px) {
+                    padding: 13px;
+                    padding-left: 0;
+                    width: 220px;
+                  }
+
+                  @media (min-width: 1024px) {
+                    padding: 13px 0;
+                    width: 240px;
+                  }
+
+                  @media (min-width: 1039px) {
+                    padding: 13px 0;
+                    width: 280px;
+                  }
                 }
 
                 .wordy {
                     display: none;
 
-                    @media (min-width: 769px) {
+                    @media (min-width: 1024px) {
                         display: inline;
                     }
                 }
@@ -287,14 +308,14 @@
                     }
                 }
 
-                @media (min-width: 769px) {
+                @media (min-width: 1024px) {
                     padding: 0 35px;
                 }
             }
 
             @media (min-width: 410px) {
                 & > ul > li > a {
-                    padding: 0 2em;
+                    padding: 0 1em;
                 }
             }
 
@@ -302,6 +323,12 @@
                 & > ul > li > a {
                     font-size: 14px;
                     line-height: 60px;
+                }
+            }
+
+            @media (min-width: 1025px) {
+                & > ul > li > a {
+                    padding: 0 2em;
                 }
             }
         }
