@@ -22,6 +22,7 @@
   { "kind": "github", "project": "rackerlabs/docs-cloud-metrics" },
   { "kind": "github", "project": "rackerlabs/docs-cloud-monitoring" },
   { "kind": "github", "project": "rackerlabs/docs-cloud-networks" },
+  { "kind": "github", "project": "rackerlabs/docs-cloud-orchestration" },
   { "kind": "github", "project": "rackerlabs/docs-cloud-queues" },
   { "kind": "github", "project": "rackerlabs/docs-cloud-rackconnect" },
   { "kind": "github", "project": "rackerlabs/docs-dedicated-networking" }, 
