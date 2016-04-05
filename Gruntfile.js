@@ -24,7 +24,7 @@ module.exports = function(grunt) {
                     'assets/getcarina.com/src/js/bundle.js': ['assets/getcarina.com/src/js/site.js']
                 },
                 options: {
-                    transform: ['envify'],
+                    transform: ['brfs', 'envify'],
                     watch: true
                 }
             }

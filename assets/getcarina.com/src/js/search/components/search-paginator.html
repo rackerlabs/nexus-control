@@ -1,0 +1,12 @@
+<ul class="pages">
+  <li class="prev" data-ng-if="paginator.query.pageNumber > 1">
+    <a href="" data-ng-click="paginator.goToPage(paginator.query.pageNumber - 1)">Previous</a>
+  </li>
+  <li data-ng-repeat="page in paginator.range">
+    <span data-ng-if="page.currentPage">{{ page.pageNumber }}</span>
+    <a href="" data-ng-click="paginator.goToPage(page.pageNumber)" data-ng-if="!page.currentPage">{{ page.pageNumber }}</a>
+  </li>
+  <li class="next" data-ng-if="paginator.results.pages && paginator.range[paginator.range.length - 1].pageNumber < paginator.results.pages">
+    <a href="" data-ng-click="paginator.goToPage(paginator.query.pageNumber + 1)">Next</a>
+  </li>
+</ul>

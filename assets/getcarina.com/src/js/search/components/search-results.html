@@ -1,0 +1,15 @@
+<ul class="search-results">
+  <li class="loading" data-ng-if="searchResults.searchInProgress">
+    Loading&hellip; <span class="fa fa-spinner fa-spin"></span>
+  </li>
+  <li class="no-results" data-ng-if="!searchResults.searchInProgress && searchResults.query.length >= 2 && searchResults.results.total == 0">
+    <em>No results found.</em>
+  </li>
+  <li class="results-count" data-ng-if="searchResults.query !== '' && searchResults.results.total > 0">
+    {{ searchResults.results.total }} results
+  </li>
+  <li data-ng-repeat="result in searchResults.results.results track by $index" data-ng-if="searchResults.query !== ''">
+    <a class="title" data-ng-href="{{ result.url }}" data-ng-bind-html="result.title || result.url"></a>
+    <div class="excerpt" data-ng-bind-html="result.excerpt"></div>
+  </li>
+</ul>

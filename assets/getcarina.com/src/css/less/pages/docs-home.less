@@ -38,6 +38,16 @@ body.docs-home {
       width: 90%;
     }
 
+    .search {
+      margin: 0 auto;
+      max-width: 980px;
+      width: 100%;
+
+      .search-input {
+        width: 100%;
+      }
+    }
+
     h1, p {
       & > span {
         background: fadeout(white, 10%);
@@ -49,6 +59,12 @@ body.docs-home {
     @media (min-width: 640px) {
       .text {
         padding: 80px 0;
+      }
+
+      .search {
+        .search-input {
+          width: 50%;
+        }
       }
     }
 
