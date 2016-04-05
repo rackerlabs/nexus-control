@@ -6,7 +6,7 @@
     <em>No results found.</em>
   </li>
   <li class="results-count" data-ng-if="searchResults.query !== '' && searchResults.results.total > 0">
-    {{ searchResults.results.total }} results
+    {{ searchResults.results.total }} result<span data-ng-if="searchResults.results.total !== 1">s</span>
   </li>
   <li data-ng-repeat="result in searchResults.results.results track by $index" data-ng-if="searchResults.query !== ''">
     <a class="title" data-ng-href="{{ result.url }}" data-ng-bind-html="result.title || result.url"></a>
