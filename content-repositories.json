@@ -11,7 +11,6 @@
   { "kind": "github", "project": "rackerlabs/docs-cloud-backup" },
   { "kind": "github", "project": "rackerlabs/docs-cloud-block-storage" },
   { "kind": "github", "project": "rackerlabs/docs-cloud-cdn" },
-  { "kind": "github", "project": "rackerlabs/docs-common" },
   { "kind": "github", "project": "rackerlabs/docs-cloud-databases" },
   { "kind": "github", "project": "rackerlabs/docs-cloud-dns" },
   { "kind": "github", "project": "rackerlabs/docs-cloud-big-data"},
