@@ -69,11 +69,11 @@
             "status": 301
         },
         {
-            "from": "^\\/docs\\/cloud-monitoring\\/v1\\/developer-guide\\/?(.*)$",
-            "to": "/docs/rackspace-monitoring/v1/developer-guide/$1",
+            "from": "^\\/docs\\/cloud-monitoring\\/?(.*)$",
+            "to": "/docs/rackspace-monitoring/$1",
             "rewrite": false,
             "status": 301
-        },
+        }
         {
             "from": "^\\/how-to\\/cloud-monitoring\\/?(.*)$",
             "to": "/how-to/rackspace-monitoring/$1",
