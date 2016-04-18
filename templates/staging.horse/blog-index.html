@@ -1,0 +1,36 @@
+{% extends "_layouts/sidebar-right.html" %}
+
+{% set metaDescription = deconst.content.envelope.meta.title %}
+{% set metaTitle = deconst.content.envelope.meta.title %}
+{% set ogDescription = deconst.content.envelope.meta.ogDescription %}
+{% set ogImage = deconst.content.envelope.meta.ogImage %}
+{% set ogTitle = deconst.content.envelope.meta.ogTitle %}
+{% set twitterCreator = deconst.content.envelope.meta.twitterCreator %}
+{% set twitterDescription = deconst.content.envelope.meta.twitterDescription %}
+{% set twitterTitle = deconst.content.envelope.meta.twitterTitle %}
+
+{% block metaDescription %}{{ metaDescription|fallback(super()) }}{% endblock %}
+{% block metaTitle %}{{ metaTitle|fallback(super()) }}{% endblock %}
+{% block ogDescription %}{{ ogDescription|fallback(metaDescription, super()) }}{% endblock %}
+{% block ogTitle %}{{ ogTitle|fallback(metaTitle, super()) }}{% endblock %}
+{% block ogImage %}{{ ogImage|fallback(super()) }}{% endblock %}
+{% block twitterCreator %}{{ twitterCreator|fallback(super()) }}{% endblock %}
+{% block twitterDescription %}{{ twitterDescription|fallback(ogDescription, metaDescription, super()) }}{% endblock %}
+{% block twitterTitle %}{{ twitterTitle|fallback(ogTitle, metaTitle, super()) }}{% endblock %}
+
+{% set headlineTag = 'h1' %}
+{% set headlineAccent = 'Rackspace' %}
+{% set headline = 'Developer Blog' %}
+{% set tagline = 'News and Insights from Rackspace Developers' %}
+
+{% block bodyClass %}blog{% endblock %}
+
+{% block content %}
+    {{ deconst.content.envelope.body }}
+{% endblock %}
+{% block sidebar %}
+    <div class="blog-sidebar" data-ng-controller="BlogSidebarCtrl">
+        {% include "_includes/blog-popular-posts.html" %}
+        {% include "_includes/blog-popular-categories.html" %}
+    </div>
+{% endblock %}

@@ -42,5 +42,13 @@
           "/favicon.ico": "https://8d8dcdd952aa2708c2ff-519cda130c91226e76017ae910bdb276.ssl.cf1.rackcdn.com/favicon-aa186bee158ecea4c9b6a98e2ceec3141b6b7d8d94dcb71731ba112e2b17b1db.ico",
           "/product-news-feed": "https://blog.rackspace.com/feed/"
       }
-  }
+  },
+  "staging.horse": {
+      "content": {  
+         "/docs/rpc-docs/": "https://github.com/rackerlabs/docs-rpc/v12/",
+         "/docs/managed-vmware-services/": "https://github.com/rackerlabs/docs-dedicated/vlcoud/vcenter-handbook/",
+         "/docs/managed-vmware-services/": "https://github.com/rackerlabs/docs-dedicated/vlcoud/vcloud-handbook/",
+         "/docs/managed-vmware-services/": "https://github.com/rackerlabs/docs-dedicated/vlcoud/vcloud-handbook-1.5/"   
+      }
+  } 
 }

@@ -1,0 +1,32 @@
+{% extends "_layouts/base.html" %}
+
+{% set metaDescription = deconst.content.envelope.meta.metaDescription %}
+{% set metaTitle = deconst.content.envelope.meta.metaTitle %}
+{% set ogDescription = deconst.content.envelope.meta.ogDescription %}
+{% set ogImage = deconst.content.envelope.meta.ogImage %}
+{% set ogTitle = deconst.content.envelope.meta.ogTitle %}
+{% set twitterCreator = deconst.content.envelope.meta.twitterCreator %}
+{% set twitterDescription = deconst.content.envelope.meta.twitterDescription %}
+{% set twitterTitle = deconst.content.envelope.meta.twitterTitle %}
+
+{% block metaDescription %}{{ metaDescription|fallback(super()) }}{% endblock %}
+{% block metaTitle %}{{ metaTitle|fallback(super()) }}{% endblock %}
+{% block ogDescription %}{{ ogDescription|fallback(metaDescription, super()) }}{% endblock %}
+{% block ogTitle %}{{ ogTitle|fallback(metaTitle, super()) }}{% endblock %}
+{% block ogImage %}{{ ogImage|fallback(super()) }}{% endblock %}
+{% block twitterCreator %}{{ twitterCreator|fallback(super()) }}{% endblock %}
+{% block twitterDescription %}{{ twitterDescription|fallback(ogDescription, metaDescription, super()) }}{% endblock %}
+{% block twitterTitle %}{{ twitterTitle|fallback(ogTitle, metaTitle, super()) }}{% endblock %}
+
+{% block bodyClass %}{{ deconst.content.envelope.meta.bodyClass }}{% endblock %}
+{% set headline = deconst.content.envelope.meta.headline %}
+{% set tagline = deconst.content.envelope.meta.tagline %}
+
+{% block bodyContent %}
+    {#
+      Rackspace Intelligence expects this HTML comment to appear on the home page.
+      Don't remove it unless you want to have a bad time.
+    #}
+    <!-- SITE-MONITORING-KEY: 03f04f0d8ab6e9e0  -->
+    {{ deconst.content.envelope.body }}
+{% endblock %}
