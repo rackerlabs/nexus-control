@@ -44,11 +44,11 @@
       }
   },
   "staging.horse": {
-      "content": {  
+      "content": {
          "/docs/private-cloud/rpc/v12/": "https://github.com/rackerlabs/docs-rpc/v12/",
          "/docs/managed-vmware-services/": "https://github.com/rackerlabs/docs-dedicated/vlcoud/vcenter-handbook/",
          "/docs/managed-vmware-services/": "https://github.com/rackerlabs/docs-dedicated/vlcoud/vcloud-handbook/",
-         "/docs/managed-vmware-services/": "https://github.com/rackerlabs/docs-dedicated/vlcoud/vcloud-handbook-1.5/"   
+         "/docs/managed-vmware-services/": "https://github.com/rackerlabs/docs-dedicated/vlcoud/vcloud-handbook-1.5/"
       }
-  } 
+  }
 }
