@@ -1,0 +1,16 @@
+{% extends "_layouts/base.html" %}
+
+{% block content %}
+    <div class="container-fluid narrow-sidebar">
+        <div class="row header">{% block header %}{% endblock %}</div>
+        <div class="row content">
+            <div class="col-sm-8 col-sm-push-4 col-md-9 col-md-push-3 main">
+                {% block rightColumn %}{% endblock %}
+            </div>
+            <div class="col-sm-4 col-sm-pull-8 col-md-3 col-md-pull-9 sidebar">
+                {% block leftColumn %}{% endblock %}
+            </div>
+            <a href="#" id="sidebar-toggle"></a>
+        </div>
+    </div>
+{% endblock %}
