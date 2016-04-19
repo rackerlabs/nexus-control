@@ -33,6 +33,13 @@
             "status": 301
         },
         {
+            "from": "^\\/signup",
+            "to": "/cloud",
+            "toProtocol": "https",
+            "toHostname": "cart.rackspace.com",
+            "status": "301"
+        },
+        {
             "from": "^\\/sdks\\/?$",
             "to": "/docs/#sdks",
             "rewrite": false,
