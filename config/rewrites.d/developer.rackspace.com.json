@@ -38,7 +38,7 @@
             "toProtocol": "https",
             "toHostname": "cart.rackspace.com",
             "rewrite": false,
-            "status": "301"
+            "status": 301
         },
         {
             "from": "^\\/sdks\\/?$",
