@@ -37,6 +37,7 @@
             "to": "/cloud",
             "toProtocol": "https",
             "toHostname": "cart.rackspace.com",
+            "rewrite": false,
             "status": "301"
         },
         {
