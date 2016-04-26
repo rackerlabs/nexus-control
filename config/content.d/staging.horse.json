@@ -1,7 +1,6 @@
 {
   "staging.horse": {
     "content": {
-      "/docs/private-cloud/rpc/v12/": "https://github.com/rackerlabs/docs-rpc/v12/",
       "/docs/private-cloud/rpc/master/": "https://github.com/rackerlabs/docs-rpc/master/",
       "/docs/managed-vmware-services/vcenter-handbook/": "https://github.com/rackerlabs/docs/managed-vmware-services/vcenter-handbook",
       "/docs/managed-vmware-services/vcloud-handbook/": "https://github.com/rackerlabs/docs/managed-vmware-services/vcloud-handbook/",
