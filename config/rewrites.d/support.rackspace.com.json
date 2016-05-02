@@ -57,6 +57,6 @@
          "to": "/how-to/rackspace-monitoring/$1",
          "rewrite": false,
          "status": 301
-      },
+      }
   ]
 }
