@@ -50,6 +50,13 @@
         "to": "/how-to/cloud-servers-faq/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "Redirect /how-to/cloud-monitoring URLs to /how-to/rackspace-monitoring",
+         "from": "^\\/how-to\\/cloud-monitoring\\/?(.*)$",
+         "to": "/how-to/rackspace-monitoring/$1",
+         "rewrite": false,
+         "status": 301
       }
   ]
 }
