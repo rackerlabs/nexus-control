@@ -26,24 +26,6 @@
 {% set headline = 'Developer Docs' %}
 {% set tagline = 'Let’s Build Something Powerful Together!' %}
 
-{% block header %}
-    <div class="sdk-quickstart-menu">
-        <div class="title"><h2>I’m Coding in:</h2></div>
-        <div class="links">
-            <ul>
-                <li><a href="" data-drc-language-selector="sh"><span>cURL</span></a></li>
-                <li><a href="" data-drc-language-selector="python"><span>Python</span></a></li>
-                <li><a href="" data-drc-language-selector="go"><span>Go</span></a></li>
-                <li><a href="" data-drc-language-selector="csharp"><span>.NET</span></a></li>
-                <li><a href="" data-drc-language-selector="java"><span>Java</span></a></li>
-                <li><a href="" data-drc-language-selector="php"><span>PHP</span></a></li>
-                <li><a href="" data-drc-language-selector="javascript"><span>Node.js</span></a></li>
-                <li><a href="" data-drc-language-selector="ruby"><span>Ruby</span></a></li>
-            </ul>
-        </div>
-    </div>
-{% endblock %}
-
 {% block sidebar %}
     <div class="sidebar-container" data-drc-sticky data-offset-top="356" data-drc-flex-height data-flex-bottom="443" data-drc-scroll-indicator data-use-attribute="id">
         {% if deconst.content.envelope.meta.github_issues_url or deconst.content.envelope.meta.github_edit_url %}
