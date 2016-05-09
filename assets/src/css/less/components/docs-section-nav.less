@@ -67,17 +67,26 @@
         padding: 0;
         width: 100%;
 
-        & > li {
-            & > a {
+        & > li.toctree-l1:first-of-type a {
+            .titillium('bold');
+            text-transform: uppercase;
+        }
+
+        li {
+            a {
                 .titillium();
                 background: transparent;
                 border-radius: 1px;
                 color: tint(@text-color, 20%);
-                display: inline-block;
+                display: block;
                 font-size: 16px;
-                padding: 0.4em;
+                padding: 0.4em 0.5em;
                 text-decoration: none;
-                .transition(~"background 0.1s ease-in-out, color 0.1s ease-in-out");
+
+                &.active {
+                    background: fadeout(@link-color, 80%);
+                    box-shadow: inset 3px 0px 0px 0px @link-color;
+                }
 
                 &:hover {
                     color: @link-color;
@@ -88,61 +97,14 @@
                 margin-top: 0px;
             }
 
-            &.active > a {
-                background: @link-color;
-                color: white;
-                letter-spacing: -0.04em;
-            }
-
             ul {
-                border-left: dotted 1px shade(white, 30%);
                 list-style-type: none;
-                margin: 20px 0 20px 7px;
-                padding: 0 0 0 10px;
+                margin: 0;
+                padding: 0;
 
-                li {
-                    line-height: 1;
-
-                    a {
-                        color: @text-color;
-                        line-height: 1;
-                        text-decoration: none;
-
-                        &:hover {
-                            color: @link-color;
-                        }
-                    }
-
-                    & + li {
-                        margin-top: 10px;
-                    }
+                li a {
+                    padding-left: 20px;
                 }
-            }
-        }
-
-        li {
-            &:before {
-                background: @rax-yellow;
-                border-radius: 50%;
-                content: '';
-                display: block;
-                height: 13px;
-                left: -17px;
-                position: absolute;
-                top: 1px;
-                .transform(scale(0));
-                .transition(transform 0.1s ease-in);
-                width: 13px;
-            }
-
-            &.active:before {
-                .transform(scale(1));
-                .transition(transform 0.1s 0.1s ease-out);
-            }
-
-            &.active > a {
-                .open-sans('bold');
-                letter-spacing: -0.04em;
             }
         }
     }
@@ -157,10 +119,10 @@
     }
 
     @media (min-width: 1025px) {
-        padding: 15px 20px 0 35px;
+        padding: 15px 20px 0 20px;
 
         &.sticky {
-            @sticky-width: (1 / 5 * 100);
+            @sticky-width: (1/4 * 100);
             width: ~"calc(@{sticky-width}%)";
         }
     }

@@ -23,17 +23,17 @@
         @media (min-width: 769px) {
             .left {
                 .grid-unit(1/5);
-                background: shade(white, 8%);
+                background: shade(white, 2%);
                 height: 100%;
             }
         }
 
         @media (min-width: 1025px) {
             .left {
-                .grid-unit(1/5);
+                .grid-unit(1/4);
             }
             .center {
-                .grid-unit(4/5);
+                .grid-unit(3/4);
             }
         }
     }
@@ -43,6 +43,10 @@
 
         @media (min-width: 769px) {
             .grid-unit(1/5);
+        }
+
+        @media (min-width: 1025px) {
+            .grid-unit(1/4);
         }
     }
 
@@ -56,8 +60,12 @@
             max-width: 960px;
         }
 
+        @media (min-width: 1025px) {
+            .grid-unit(3/4);
+        }
+
         @media (min-width: 1302px) {
-            .grid-unit(4/5, 0px);
+            .grid-unit(3/4, 0px);
             padding: 0 0;
             margin-left: calc(40% - 480px);
         }
