@@ -90,10 +90,7 @@ module.exports = angular.module('drc.components.scroll-indicator', [])
               var indicatorLink = $element.find('[href="#' + data +'"]');
                 window.requestAnimationFrame(function () {
                   $element.find('a[href]').removeClass('active');
-                  $element.find('li').removeClass('active');
-
                   indicatorLink.addClass('active');
-                  indicatorLink.parents('li').addClass('active');
                 });
             });
         }],
