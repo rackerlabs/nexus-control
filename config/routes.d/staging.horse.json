@@ -2,7 +2,6 @@
   "staging.horse": {
     "routes": {
       "^/docs/private-cloud/": "user-guide.html",
-      "^/docs/managed-vmware-services/": "user-guide.html"
     }
   }
 }
