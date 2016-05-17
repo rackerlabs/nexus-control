@@ -37,7 +37,7 @@
           "/docs/private-cloud/rpc/v10": "https://github.com/rackerlabs/docs-rpc/v10/",
           "/docs/managed-vmware-services/vcenter/": "https://github.com/rackerlabs/docs-dedicated-vcloud/vcenter-handbook/",
           "/docs/managed-vmware-services/vcloud/v1/": "https://github.com/rackerlabs/docs-dedicated-vcloud/vcloud-handbook/",
-          "/docs/managed-vmware-services/vcloud/v1.5/": "https://github.com/rackerlabs/docs-dedicated-vcloud/vcloud-handbook-1.5/",
+          "/docs/managed-vmware-services/vcloud/v1.5/": "https://github.com/rackerlabs/docs-dedicated-vcloud/vcloud-handbook-v1.5/",
           "/docs/private-cloud/red-hat/": "https://github.com/rackerlabs/docs-redhat-osp/",
           "/search/": null
       },
