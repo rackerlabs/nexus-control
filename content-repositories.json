@@ -2,7 +2,7 @@
   { "kind": "github", "project": "getcarina/getcarina.com" },
   { "kind": "github", "project": "rackerlabs/docs-developer-blog" },
   { "kind": "github", "project": "rackerlabs/docs-quickstart" },
-  { "kind": "github", "project": "rackerlabs/docs-dedicated-vcloud" },
+  { "kind": "github", "project": "rackerlabs/docs-dedicated-vcloud", "branches": ["master"]},
   { "kind": "github", "project": "rackerlabs/docs-redhat-osp" },
   { "kind": "github", "project": "rackerlabs/docs-rpc", "branches": ["master","v10", "v11", "v12"] },
   { "kind": "github", "project": "rackerlabs/rackspace-how-to" },
