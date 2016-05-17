@@ -4,7 +4,7 @@
   { "kind": "github", "project": "rackerlabs/docs-quickstart" },
   { "kind": "github", "project": "rackerlabs/docs-dedicated-vcloud" },
   { "kind": "github", "project": "rackerlabs/docs-redhat-osp" },
-  { "kind": "github", "project": "rackerlabs/docs-rpc", "branches": ["v10", "v11", "v12"] },
+  { "kind": "github", "project": "rackerlabs/docs-rpc", "branches": ["master","v10", "v11", "v12"] },
   { "kind": "github", "project": "rackerlabs/rackspace-how-to" },
   { "kind": "github", "project": "rackerlabs/docs-core-infra-user-guide" },
   { "kind": "github", "project": "rackerlabs/docs-barbican" },
@@ -24,11 +24,12 @@
   { "kind": "github", "project": "rackerlabs/docs-cloud-orchestration" },
   { "kind": "github", "project": "rackerlabs/docs-cloud-queues" },
   { "kind": "github", "project": "rackerlabs/docs-cloud-rackconnect" },
-  { "kind": "github", "project": "rackerlabs/docs-dedicated-networking" }, 
+  { "kind": "github", "project": "rackerlabs/docs-dedicated-networking" },
   { "kind": "github", "project": "rackerlabs/docs-cloud-servers" },
   { "kind": "github", "project": "rackerlabs/docs-rackspace" },
   { "kind": "github", "project": "rackerlabs/heat-resource-ref" },
   { "kind": "github", "project": "rackerlabs/otter" },
   { "kind": "github", "project": "rackerlabs/rs-heat-docs" },
-  { "kind": "github", "project": "rackerlabs/standard-usage-schemas" }
+  { "kind": "github", "project": "rackerlabs/standard-usage-schemas" },
+  { "kind": "github", "project": "rackspace/rack" }
 ]

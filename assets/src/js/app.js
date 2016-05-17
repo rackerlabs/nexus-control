@@ -9,6 +9,7 @@ angular.module(moduleName, [
     require('angular-sanitize'),
     require('./components/code-sample'),
     require('./components/code-sample-parent'),
+    require('./components/collapsible-nav'),
     require('./components/collapsible-section'),
     require('./components/database-jump'),
     require('./components/dropdown-toggle'),
