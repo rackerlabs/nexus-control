@@ -38,6 +38,13 @@
           "status": 301
       },
       {
+        "description": "Redirect /knowledge_center/what-is-pci-compliance URL to /how-to/are-cloud-servers-pci-dss-compliant/",
+        "from": "^\\/knowledge_center\\/article\\/what-is-pci-compliance(.*)$",
+        "to": "/how-to/are-cloud-servers-pci-dss-compliant/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
         "description": "Redirect /knowledge_center/email-apps/ to /how-to#cloud-office",
         "from": "^\\/knowledge_center\\/email-apps\\/?",
         "to": "/how-to/#cloud-office",
@@ -48,13 +55,6 @@
         "description": "Redirect /knowledge_center/Frequently_Asked_Questions/ to /how-to/cloud-servers-faq/",
         "from": "^\\/knowledge_center\\/Frequently_Asked_Questions\\/?",
         "to": "/how-to/cloud-servers-faq/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect /knowledge_center/what-is-pci-compliance URL to /how-to/are-cloud-servers-pci-dss-compliant/",
-        "from": "^\\/knowledge_center\\/article\\/what-is-pci-compliance(.*)$",
-        "to": "/how-to/are-cloud-servers-pci-dss-compliant/",
         "rewrite": false,
         "status": 301
       },
