@@ -42,7 +42,7 @@
                 <span class="link-text">{{ githubLinkText }}</span>
               </a>
             {% endif %}
-            {{ deconst.content.globals.toc|unwrap('div.toctree-wrapper')|removeAnchors }}
+            {{ deconst.addenda.repository_toc.envelope.body|unwrap('div.toctree-wrapper')|removeAnchors }}
         </div>
     </div>
 {% endblock %}
