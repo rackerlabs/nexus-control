@@ -7,6 +7,8 @@ module.exports = moduleName;
 
 angular.module(moduleName, [
     require('angular-sanitize'),
+    require('ngCookies'),
+    require('angular-md5'),
     require('./components/code-sample'),
     require('./components/code-sample-parent'),
     require('./components/collapsible-nav'),
