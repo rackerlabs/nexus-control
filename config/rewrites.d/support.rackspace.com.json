@@ -95,10 +95,19 @@
       },
       {
         "description": "Redirect support.rackspace.com /how-to/getting-started-with-cloud-files-and-cdn-0/ URL to how-to/how-to/getting-started-with-cloud-files-and-cdn/ ",
-        "from": "^\\/how-to\\/article\\/how-to/how-to/getting-started-with-cloud-files-and-cdn-0/(.*)$",
-        "to": "/how-to/how-to/getting-started-with-cloud-files-and-cdn/",
+        "from": "^\\/how-to\\/article\\/how-to/getting-started-with-cloud-files-and-cdn-0/(.*)$",
+        "to": "/how-to/getting-started-with-cloud-files-and-cdn/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
+        "description": "Redirect support.rackspace.com/how-to/rackspace-private-cloud-backup-and-recovery/ URL to how-to/rpc-openstack/ ",
+        "from": "^\\/how-to\\/article\\/how-to/rackspace-private-cloud-backup-and-recovery/(.*)$",
+        "to": "/how-to/rpc-openstack/
+        ",
         "rewrite": false,
         "status": 301
       }
+      
     ]
 }
