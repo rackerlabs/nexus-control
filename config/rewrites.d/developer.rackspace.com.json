@@ -102,7 +102,7 @@
           "to": "/docs/private-cloud/rpc/v11"
         },
         {
-          "from": "^\\/docs\\/(.+?)\\/getting-started\\/(.*?)",
+          "from": "^\\/docs\\/([^/]+?)\\/getting-started\\/(.*?)",
           "to": "/docs/$1/quickstart/$2",
           "rewrite": false,
           "status": 301
