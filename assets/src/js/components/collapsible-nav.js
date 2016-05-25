@@ -6,7 +6,7 @@ var moduleName = 'drc.components.collapsible-nav';
 module.exports = moduleName;
 
 angular.module(moduleName, [])
-.directive('drcCollapsibleNav', [function () {
+.directive('drcCollapsibleNav', ['$rootScope', 'scrollIndicator', function ($rootScope, scrollIndicator) {
     return {
         controller: ['$scope', '$element', '$attrs', function ($scope, $element, $attrs) {
 
@@ -58,11 +58,6 @@ angular.module(moduleName, [])
               _.forEach(links, function (link) {
                 link.classList.remove('active');
               });
-
-              // close all open lists
-              _.forEach(lists, function (list) {
-                list.classList.remove('open');
-              });
             };
 
             // Reset the list and open the currently active link
@@ -78,7 +73,7 @@ angular.module(moduleName, [])
                 var linkFromTop = link.getBoundingClientRect().top;
 
                 element.scrollTop = linkFromTop - elementFromTop;
-              }, 300);
+              }, 30);
             };
 
             // Loop through all the <li> tags we can find
@@ -93,24 +88,32 @@ angular.module(moduleName, [])
                 item.insertBefore(createCollapseTarget(), item.children[0]);
             });
 
-            // Loop through all the <a> tags we can find
-            var currentURL = new URL(window.location.href);
-            var links = element.querySelectorAll('a[href]');
+            var handleNewURL = function (url) {
+              // Loop through all the <a> tags we can find
+              var currentURL = new URL(url);
+              var links = element.querySelectorAll('a[href]');
 
-            _.forEach(links, function (link, index, array) {
-              var linkURL = new URL(link.href);
-              // only match URLs with the same pathname as the current location
-              if (currentURL.pathname !== linkURL.pathname) {
-                return;
-              }
+              _.forEach(links, function (link, index, array) {
+                var linkURL = new URL(link.href);
+                // only match URLs with the same pathname as the current location
+                if (currentURL.pathname !== linkURL.pathname) {
+                  return;
+                }
 
-              if (currentURL.hash && currentURL.hash === linkURL.hash) {
-                // Pathname and hash both match, mark this as active
-                markLinkActive(link);
-              } else if (currentURL.hash === '' && linkURL.hash === '') {
-                // Hashes are both empty, mark this as active
-                markLinkActive(link);
-              }
+                if (currentURL.hash && currentURL.hash === linkURL.hash) {
+                  // Pathname and hash both match, mark this as active
+                  markLinkActive(link);
+                } else if (currentURL.hash === '' && linkURL.hash === '') {
+                  // Hashes are both empty, mark this as active
+                  markLinkActive(link);
+                }
+              });
+            }
+
+            handleNewURL(window.location.href);
+
+            $rootScope.$on(scrollIndicator.eventName, function (event, data) {
+              handleNewURL(data);
             });
         }
     };
