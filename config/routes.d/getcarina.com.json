@@ -6,6 +6,7 @@
         "^/search": "search.html",
         "^/docs": "docs-home.html",
         "^/docs/.+?": "docs-single.html",
+        "^/lp/carina-contest": "docs-single.html",
         "^/blog/?": "blog/index.html",
         "^/blog/.+?": "docs-single.html",
         "\\.xml$": "feed.xml",
