@@ -48,8 +48,10 @@
 {% endblock %}
 
 {% block content %}
-  <section class="docs-section" data-drc-scroll-pane data-ng-non-bindable>
-    {{ deconst.content.envelope.body }}
+  <section class="docs-section" data-drc-scroll-pane>
+    <div data-ng-non-bindable>
+      {{ deconst.content.envelope.body }}
+    </div>
     <footer class="docs-footer">
       <div class="previous-next-links">
         <div class="previous">
