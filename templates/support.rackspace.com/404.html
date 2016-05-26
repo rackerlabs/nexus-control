@@ -1,0 +1,16 @@
+{% extends "_layouts/base.html" %}
+
+{% block metaTitle %}{{ ['Page Not Found', super()]|join(' - ') }}{% endblock %}
+{% block bodyClass %}not-found{% endblock %}
+
+{% set headlineTag = 'h2' %}
+{% set headlineAccent = 'Rackspace' %}
+{% set headline = 'Support Network' %}
+
+{% block bodyContent %}
+    <div class="not-found-message">
+        <h1>Page Not Found</h1>
+        <p>Sorry, we couldn't find the page you were looking for. The page may have moved or been deleted. 
+        You can also search our community forum at <a href="https://community.rackspace.com/></a></p>
+    </div>
+{% endblock %}
