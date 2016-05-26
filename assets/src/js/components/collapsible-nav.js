@@ -69,11 +69,15 @@ angular.module(moduleName, [])
               // Wait a bit for things to render, then try to scroll the active
               // link into view
               setTimeout(function () {
-                var elementFromTop = element.getBoundingClientRect().top;
+                var rect = element.getBoundingClientRect();
+                var paneBottom = rect.bottom;
+                var paneTop = rect.top
                 var linkFromTop = link.getBoundingClientRect().top;
 
-                element.scrollTop = linkFromTop - elementFromTop;
-              }, 30);
+                if (linkFromTop > paneBottom * 0.85 || linkFromTop < paneTop * 0.85) {
+                  element.scrollTop = linkFromTop - paneTop;
+                }
+              }, 10);
             };
 
             // Loop through all the <li> tags we can find
