@@ -103,11 +103,9 @@
       {
         "description": "Redirect support.rackspace.com/how-to/rackspace-private-cloud-backup-and-recovery/ URL to how-to/rpc-openstack/ ",
         "from": "^\\/how-to\\/article\\/how-to/rackspace-private-cloud-backup-and-recovery/(.*)$",
-        "to": "/how-to/rpc-openstack/
-        ",
+        "to": "/how-to/rpc-openstack/",
         "rewrite": false,
         "status": 301
       }
-      
     ]
 }
