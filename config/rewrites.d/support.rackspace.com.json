@@ -38,6 +38,13 @@
           "status": 301
       },
       {
+        "description": "Redirect /knowledge_center/what-is-pci-compliance URL to /how-to/are-cloud-servers-pci-dss-compliant/",
+        "from": "^\\/knowledge_center\\/article\\/what-is-pci-compliance(.*)$",
+        "to": "/how-to/are-cloud-servers-pci-dss-compliant/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
         "description": "Redirect /knowledge_center/email-apps/ to /how-to#cloud-office",
         "from": "^\\/knowledge_center\\/email-apps\\/?",
         "to": "/how-to/#cloud-office",
@@ -57,6 +64,50 @@
          "to": "/how-to/rackspace-monitoring/$1",
          "rewrite": false,
          "status": 301
+      },
+      {
+         "description": "Redirect support.rackspace.com/white-paper/numa-vnuma-and-cpu-scheduling/ URL to how-to/numa-vnuma-and-cpu-scheduling/ ",
+        "from": "^\\/white-paper\\/article\\/numa-vnuma-and-cpu-scheduling(.*)$",
+        "to": "/how-to/numa-vnuma-and-cpu-scheduling/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
+        "description": "Redirect support.rackspace.com/white-paper/systems-management-simplified-in-the-cloud-0/ URL to how-to/systems-management-simplified-in-the-cloud/ ",
+        "from": "^\\/white-paper\\/article\\/systems-management-simplified-in-the-cloud-0(.*)$",
+        "to": "/how-to/systems-management-simplified-in-the-cloud/",
+        "rewrite": false,
+        "status": 301
+      },
+      { 
+        "description": "Redirect support.rackspace.com/white-paper/systems-management-simplified-in-the-cloud/ URL to how-to/systems-management-simplified-in-the-cloud/ ",
+        "from": "^\\/white-paper\\/article\\/systems-management-simplified-in-the-cloud(.*)$",
+        "to": "/how-to/systems-management-simplified-in-the-cloud/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
+        "description": "Redirect support.rackspace.com /how-to/generating-your-encrypted-key-in-cloud-backup/ URL to how-to/generate-your-encrypted-key-in-cloud-backup/ ",
+        "from": "^\\/how-to\\/article\\/how-to/generating-your-encrypted-key-in-cloud-backup/(.*)$",
+        "to": "/how-to/generate-your-encrypted-key-in-cloud-backup/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
+        "description": "Redirect support.rackspace.com /how-to/getting-started-with-cloud-files-and-cdn-0/ URL to how-to/how-to/getting-started-with-cloud-files-and-cdn/ ",
+        "from": "^\\/how-to\\/article\\/how-to/getting-started-with-cloud-files-and-cdn-0/(.*)$",
+        "to": "/how-to/getting-started-with-cloud-files-and-cdn/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
+        "description": "Redirect support.rackspace.com/how-to/rackspace-private-cloud-backup-and-recovery/ URL to how-to/rpc-openstack/ ",
+        "from": "^\\/how-to\\/article\\/how-to/rackspace-private-cloud-backup-and-recovery/(.*)$",
+        "to": "/how-to/rpc-openstack/
+        ",
+        "rewrite": false,
+        "status": 301
       }
-  ]
+      
+    ]
 }

@@ -2,7 +2,7 @@
 	"docs.rackspace.com": [
 		{
 			"description": "Redirect root traffic to developer.rs.com/docs/",
-			"from": "^\\/$",
+			"from": "^/$",
 			"to": "/docs/",
 			"toProtocol": "https",
 			"toHostname": "developer.rackspace.com",
@@ -11,7 +11,7 @@
 		},
 		{
 			"description": "cloud servers legacy",
-			"from": "^\\/servers/api/v1.0/cs-devguide\\/$",
+			"from": "^/servers/api/v1.0/cs-devguide",
 			"to": "/docs/#docs-cloud-servers-legacy",
 			"toProtocol": "https",
 			"toHostname": "developer.rackspace.com",
@@ -20,7 +20,7 @@
 		},
 		{
 			"description": "cloud big data v1",
-			"from": "^\\/cbd/api/v1.0/cbd-devguide\\/$",
+			"from": "^/cbd/api/v1.0/cbd-devguide",
 			"to": "/docs/cloud-big-data/v2/developer-guide/#release-notes",
 			"toProtocol": "https",
 			"toHostname": "developer.rackspace.com",
@@ -29,7 +29,7 @@
 		},
 		{
 			"description": "orchestration templates user guide",
-			"from": "^\\/orchestration/api/v1/orchestration-templates-devguide\\/$",
+			"from": "^/orchestration/api/v1/orchestration-templates-devguide",
 			"to": "/docs/user-guides/orchestration/",
 			"toProtocol": "https",
 			"toHostname": "developer.rackspace.com",
@@ -38,7 +38,7 @@
 		},
 		{
 			"description": "cloud feeds developer guide",
-			"from": "^\\/cloud-feeds/api/v1.0/feeds-devguide\\/$",
+			"from": "^/cloud-feeds/api/v1.0/feeds-devguide",
 			"to": "/docs/cloud-feeds/v1/developer-guide/",
 			"toProtocol": "https",
 			"toHostname": "developer.rackspace.com",
@@ -47,7 +47,7 @@
 		},
 		{
 			"description": "Rackspace Private Cloud Operator and User Guide, v10",
-			"from": "^\\/rpc/api/v10/bk-rpc-guide\\/$",
+			"from": "^/rpc/api/v10/bk-rpc-guide",
 			"to": "/docs/private-cloud/rpc/v10rpc-v10-op-user-guide/rpc-access/",
 			"toProtocol": "https",
 			"toHostname": "developer.rackspace.com",
@@ -56,7 +56,7 @@
 		},
 		{
 			"description": "Rackspace Private Cloud Powered by Red Hat Features and Architecture",
-			"from": "^\\/rpc/api/rh1/bk-rpcr-refarch\\/$",
+			"from": "^/rpc/api/rh1/bk-rpcr-refarch",
 			"to": "/docs/private-cloud/red-hat/rpcr-arch/",
 			"toProtocol": "https",
 			"toHostname": "developer.rackspace.com",

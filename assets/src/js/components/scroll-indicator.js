@@ -1,108 +1,74 @@
 var $ = require('jquery');
 var angular = require('angular');
 var _ = require('lodash');
+var URL = require('url-parse');
 
-var INDICATOR_CHANGE_EVENT = 'drcScrollIndicatorChange';
+var MILESTONE_CHANGE_EVENT = 'drcScrollMilestoneChange';
 
 module.exports = angular.module('drc.components.scroll-indicator', [])
 .factory('scrollIndicator', ['$rootScope', function ($rootScope) {
-    var listenersAdded = false;
-    var options = {},
-        anchorLinks = null,
-        milestones = null,
-        activeMilestone = '';
-
     return {
-        init: function (initOptions) {
-            if(window.innerWidth < 768) {
+        eventName: MILESTONE_CHANGE_EVENT,
+        findClosestMilestone: function (milestones) {
+          var viewThreshold = parseInt(window.innerHeight * 0.1);
+          closestMilestone = {
+              position: -Infinity,
+              element: null
+          };
+
+          _.forEach(milestones, function (milestone) {
+            if(!milestone) {
               return;
             }
 
-            options = initOptions;
-            this.addListeners();
-        },
-        addListeners: function () {
-            if(listenersAdded) {
-                return;
+            // This weird edge case happens on some milestones that aren't on the page
+            if(milestone.getBoundingClientRect().top === 0 && milestone.getBoundingClientRect().bottom === 0) {
+              return;
             }
 
-            $(window).on('scroll.scrollIndicator resize.scrollIndicator', this.scrollListener.bind(this));
+            var fromThreshold = milestone.getBoundingClientRect().top - viewThreshold;
 
-            listenersAdded = true;
-        },
-        scrollListener: function (e) {
-            anchorLinks = options.element.find('a[href^="#"]');
-            milestones = $('[' + options.attribute + ']');
-            milestones = _.filter(milestones, function (milestone) {
-              var match = _.find(anchorLinks, function (link) {
-                return link.getAttribute('href').replace('#','') == milestone.getAttribute(options.attribute);
-              });
-
-              return match;
-            });
-
-            var viewThreshold = parseInt($(window).height() * 0.6);
-            closestMilestone = {
-                position: -Infinity,
-                element: null
-            };
-
-            for (var i = 0; i < milestones.length; i++) {
-                var index = i;
-                var element = milestones[i];
-
-                if(!element) {
-                  continue;
-                }
-
-                // This weird edge case happens on some milestones that aren't on the page
-                if(element.getBoundingClientRect().top === 0 && element.getBoundingClientRect().bottom === 0) {
-                  continue;
-                }
-
-                var fromThreshold = element.getBoundingClientRect().top - viewThreshold;
-
-                if(fromThreshold < 0 && fromThreshold > closestMilestone.position) {
-                    closestMilestone.position = fromThreshold;
-                    closestMilestone.element = element;
-                }
+            if(fromThreshold < 0 && fromThreshold > closestMilestone.position) {
+                closestMilestone.position = fromThreshold;
+                closestMilestone.element = milestone;
             }
+          });
 
-            if (!closestMilestone.element) {
-                return;
-            }
+          if (!closestMilestone.element) {
+              return;
+          }
 
-            if (
-                closestMilestone.element.getAttribute(options.attribute) !==
-                activeMilestone
-            ) {
-                activeMilestone = closestMilestone.element.getAttribute(options.attribute);
-                $rootScope.$broadcast(INDICATOR_CHANGE_EVENT, activeMilestone);
-            }
-
+          return closestMilestone.element;
         }
     };
 }])
-.directive('drcScrollIndicator', ['$rootScope', 'scrollIndicator', function ($rootScope, scrollIndicator) {
-    return {
-        controller: ['$scope', '$element', '$attrs', function ($scope, $element, $attrs) {
-            $rootScope.$on(INDICATOR_CHANGE_EVENT, function (event, data) {
-              var indicatorLink = $element.find('[href="#' + data +'"]');
-                window.requestAnimationFrame(function () {
-                  $element.find('a[href]').removeClass('active');
-                  $element.find('li').removeClass('active');
+// Can I add comments here?
+.directive('drcScrollPane', ['$rootScope', 'scrollIndicator', function ($rootScope, scrollIndicator) {
+  return {
+    restrict: 'A',
+    controller: ['$scope', '$element', function ($scope, $element) {
+      $scope.closestMilestone = null;
 
-                  indicatorLink.addClass('active');
-                  indicatorLink.parents('li').addClass('active');
-                });
-            });
-        }],
-        link: function ($scope, $element, $attrs) {
-            scrollIndicator.init({
-                element: $element,
-                id: $attrs.drcScrollIndicator,
-                attribute: $attrs.useAttribute || 'data-drc-scroll-milestone'
-            });
+      window.addEventListener('scroll', function (e) {
+        var el = $element[0];
+        var milestones = el.querySelectorAll('[id]');
+
+        var newMilestone = scrollIndicator.findClosestMilestone(milestones);
+
+        if (newMilestone && newMilestone != $scope.closestMilestone) {
+          $scope.closestMilestone = newMilestone;
+
+          var url = new URL(window.location.href);
+          if (newMilestone != milestones[0]) {
+            url.set('hash', '#' + newMilestone.getAttribute('id'));
+          }
+
+          $rootScope.$broadcast(scrollIndicator.eventName, url.toString());
         }
-    };
+      });
+    }],
+    link: function ($scope, $element, $attrs) {
+
+    }
+  };
 }]).name;

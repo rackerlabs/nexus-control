@@ -28,7 +28,7 @@
 
 {% block sidebar %}
   <div data-drc-global-sidebar>
-    <div class="sidebar-container" data-drc-sticky data-offset-top="321" data-drc-flex-height data-flex-bottom="443">
+    <div class="sidebar-container" data-drc-sticky data-offset-top="321" data-drc-flex-height data-flex-bottom="443" data-drc-collapsible-nav>
       {% if deconst.content.envelope.meta.github_issues_url or deconst.content.envelope.meta.github_edit_url %}
         {% if deconst.content.envelope.meta.preferGithubIssues %}
           {% set githubLinkUrl = deconst.content.envelope.meta.github_issues_url %}
@@ -42,14 +42,16 @@
           <span class="link-text">{{ githubLinkText }}</span>
         </a>
       {% endif %}
-      {{ deconst.content.globals.toc|unwrap('div')|limitListDepth(3) }}
+      {{ deconst.addenda.repository_toc.envelope.body }}
     </div>
   </div>
 {% endblock %}
 
 {% block content %}
-  <section class="docs-section">
-    {{ deconst.content.envelope.body }}
+  <section class="docs-section" data-drc-scroll-pane>
+    <div data-ng-non-bindable>
+      {{ deconst.content.envelope.body }}
+    </div>
     <footer class="docs-footer">
       <div class="previous-next-links">
         <div class="previous">
