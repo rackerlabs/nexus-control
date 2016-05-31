@@ -106,6 +106,13 @@
         "to": "/how-to/rpc-openstack/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "Redirect /how-to/rackspace-cloud-backup-overview/ URL to /how-to/best-practices-for-cloud-backup/",
+        "from": "^\\/how-to\\/rackspace-cloud-backup-overview(.*)$",
+        "to": "/how-to/best-practices-for-cloud-backup/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
