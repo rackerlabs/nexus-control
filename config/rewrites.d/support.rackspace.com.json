@@ -67,43 +67,50 @@
       },
       {
          "description": "Redirect support.rackspace.com/white-paper/numa-vnuma-and-cpu-scheduling/ URL to how-to/numa-vnuma-and-cpu-scheduling/ ",
-        "from": "^\\/white-paper\\/article\\/numa-vnuma-and-cpu-scheduling(.*)$",
+        "from": "^\\/white-paper\\/numa-vnuma-and-cpu-scheduling(.*)$",
         "to": "/how-to/numa-vnuma-and-cpu-scheduling/",
         "rewrite": false,
         "status": 301
       },
       {
         "description": "Redirect support.rackspace.com/white-paper/systems-management-simplified-in-the-cloud-0/ URL to how-to/systems-management-simplified-in-the-cloud/ ",
-        "from": "^\\/white-paper\\/article\\/systems-management-simplified-in-the-cloud-0(.*)$",
+        "from": "^\\/white-paper\\/systems-management-simplified-in-the-cloud-0(.*)$",
         "to": "/how-to/systems-management-simplified-in-the-cloud/",
         "rewrite": false,
         "status": 301
       },
       { 
         "description": "Redirect support.rackspace.com/white-paper/systems-management-simplified-in-the-cloud/ URL to how-to/systems-management-simplified-in-the-cloud/ ",
-        "from": "^\\/white-paper\\/article\\/systems-management-simplified-in-the-cloud(.*)$",
+        "from": "^\\/white-paper\\/systems-management-simplified-in-the-cloud(.*)$",
         "to": "/how-to/systems-management-simplified-in-the-cloud/",
         "rewrite": false,
         "status": 301
       },
       {
         "description": "Redirect support.rackspace.com /how-to/generating-your-encrypted-key-in-cloud-backup/ URL to how-to/generate-your-encrypted-key-in-cloud-backup/ ",
-        "from": "^\\/how-to\\/article\\/how-to/generating-your-encrypted-key-in-cloud-backup/(.*)$",
+        "from": "^\\/how-to\\/generating-your-encrypted-key-in-cloud-backup(.*)$",
         "to": "/how-to/generate-your-encrypted-key-in-cloud-backup/",
         "rewrite": false,
         "status": 301
       },
       {
         "description": "Redirect support.rackspace.com /how-to/getting-started-with-cloud-files-and-cdn-0/ URL to how-to/how-to/getting-started-with-cloud-files-and-cdn/ ",
-        "from": "^\\/how-to\\/article\\/how-to/getting-started-with-cloud-files-and-cdn-0/(.*)$",
+        "from": "^\\/how-to\\/getting-started-with-cloud-files-and-cdn-0(.*)$",
         "to": "/how-to/getting-started-with-cloud-files-and-cdn/",
         "rewrite": false,
         "status": 301
       },
       {
         "description": "Redirect support.rackspace.com/how-to/rackspace-private-cloud-backup-and-recovery/ URL to how-to/rpc-openstack/ ",
-        "from": "^\\/how-to\\/article\\/how-to/rackspace-private-cloud-backup-and-recovery/(.*)$",
+        "from": "^\\/how-to\\/rackspace-private-cloud-backup-and-recovery(.*)$",
         "to": "/how-to/rpc-openstack/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
+        "description": "Redirect /how-to/rackspace-cloud-backup-overview/ URL to /how-to/best-practices-for-cloud-backup/",
+        "from": "^\\/how-to\\/rackspace-cloud-backup-overview(.*)$",
+        "to": "/how-to/best-practices-for-cloud-backup/",
         "rewrite": false,
         "status": 301
       }
