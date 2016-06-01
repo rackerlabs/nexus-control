@@ -42,7 +42,11 @@
           <span class="link-text">{{ githubLinkText }}</span>
         </a>
       {% endif %}
-      {{ deconst.addenda.repository_toc.envelope.body }}
+      {% if deconst.addenda.repository_toc %}
+        {{ deconst.addenda.repository_toc.envelope.body }}
+      {% else %}
+        {{ deconst.content.envelope.toc }}
+      {% endif %}
     </div>
   </div>
 {% endblock %}
