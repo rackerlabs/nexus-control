@@ -45,6 +45,19 @@
 
 {% block sidebar %}
 <div class="sidebar-container" data-drc-sticky data-offset-top="{{ stickyNavOffsetTop }}" data-drc-flex-height data-flex-bottom="302">
+  {% if deconst.content.envelope.meta.github_issues_url or deconst.content.envelope.meta.github_edit_url %}
+               {% if deconst.content.envelope.meta.preferGithubIssues %}
+                 {% set githubLinkUrl = deconst.content.envelope.meta.github_issues_url %}
+                 {% set githubLinkText = 'Submit an issue' %}
+               {% else %}
+                 {% set githubLinkUrl = deconst.content.envelope.meta.github_edit_url %}
+                 {% set githubLinkText = 'Edit on GitHub' %}
+               {% endif %}
+               <a href="{{ githubLinkUrl }}" target="_blank" class="github-link">
+                 <span class="icon fa fa-github"></span>
+                 <span class="link-text">{{ githubLinkText }}</span>
+               </a>
+             {% endif %}
     <ul>
         <li{% if deconst.request.path.indexOf('sdks/golang') != -1 %} class="active"{% endif %}>
             <a href="/sdks/golang">Go</a>
