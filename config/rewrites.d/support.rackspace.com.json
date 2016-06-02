@@ -113,7 +113,7 @@
         "to": "/how-to/best-practices-for-cloud-backup/",
         "rewrite": false,
         "status": 301
-      }
+      },
       {
         "description": "Redirect /how-to/cloud-storage-app-for-microsoft-sharepoint-accessing-cloud-files-containers/ URL to /how-to/cloud-files/",
         "from": "^\\/how-to\\/article\\/cloud-storage-app-for-microsoft-sharepoint-accessing-cloud-files-containers(.*)$",
@@ -128,7 +128,7 @@
         "rewrite": false,
         "status": 301
       },
-{
+      {
         "description": "Redirect /how-to/cloud-storage-app-for-microsoft-sharepoint-how-to-add-and-delete-files-in-a-container/ URL to /how-to/cloud-files/",
         "from": "^\\/how-to\\/article\\/cloud-storage-app-for-microsoft-sharepoint-how-to-add-and-delete-files-in-a-container(.*)$",
         "to": "/how-to/cloud-files/",
@@ -162,6 +162,6 @@
         "to": "/how-to/cloud-files/",
         "rewrite": false,
         "status": 301
-      },
+      }
     ]
 }
