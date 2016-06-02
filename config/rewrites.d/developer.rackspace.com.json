@@ -97,10 +97,49 @@
             "rewrite": false,
             "status": 302
         },
+        
+        {
+          "description": "Redirect vCenter doc to URL for Managed VMWare services",       
+          "from": "^\\/docs/private-cloud\\/dedicated-vcloud\\/vcenter-handbook\\/?(.*)$",
+          "to": "/docs/managed-vmware-services/vcenter/$1",
+          "rewrite": false,
+          "status": 301
+        },
+        
+        {
+          "description": "Redirect vCloud v1.5 doc to URL for Managed VMWare services", 
+          "from": "^\\/docs\\/private-cloud\\/dedicated-vcloud\\/vcloud-handbook-v1.5\\/?(.*)$",
+          "to": "/docs/managed-vmware-services/vcloud/v1.5/?(.*)$",
+          "rewrite": false,
+          "status": 301
+        },
+
+        {
+          "description": "Redirect vCloud v1.0 doc to URL for managed VMWare services", 
+          "from": "^\\/docs\\/private-cloud\\/dedicated-vcloud\\/vcloud-handbook\\/?(.*)$",
+          "to": "/docs/managed-vmware-services/vcloud/v1//$1",
+          "rewrite": false,
+          "status": 301
+        },
+        
+        {
+          "description": "Redirect dedicated vCloud doc menu to managed VMWare services menu", 
+          "from": "^\\/docs\\/private-cloud\\/dedicated-vcloud\\/?(.*)$",
+          "to": "/docs/#docs-managed-vmware-services",
+          "rewrite": false,
+          "status": 301
+        },
+       
+        {
+          "from": "^/docs/private-cloud/rpc/?$",
+          "to": "/docs/private-cloud/rpc/v11",
+        },
+        
         {
           "from": "^/docs/private-cloud/rpc/?$",
           "to": "/docs/private-cloud/rpc/v11"
         },
+        
         {
           "from": "^\\/docs\\/([^/]+?)\\/getting-started\\/(.*?)",
           "to": "/docs/$1/quickstart/$2",
