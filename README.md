@@ -26,7 +26,7 @@ To test changes to templates or assets on your local machine before pushing them
     ```bash
     cp /path/to/nexus-control/integrated-env /path/to/integrated/env
 
-    ${EDITOR} ${PARENT}/integrated/env
+    ${EDITOR} /path/to/integrated/env
     # Change this line:
     #  export CONTROL_REPO_HOST_PATH= ; echo "Please set CONTROL_REPO_HOST_PATH in ${BASH_SOURCE[@]}" && return 1
     # To:
