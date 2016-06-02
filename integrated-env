@@ -1,0 +1,105 @@
+# Copy this to a clone of deconst/integrated to preview control repository changes locally.
+#
+# cp env.example env
+# ${EDITOR} env
+
+# Universal settings ###############################################################################
+# You'll need to set these whatever you're doing.
+
+# The content service's administrative API Key. Used for write actions.
+# Set this to something arbitrary and "random". While you're running locally it doesn't need to
+# be anything particularly difficult.
+export ADMIN_APIKEY=1111
+
+# Set this to the domain name of the site you're interested in.
+# Other interesting values depending on what you're working on: getcarina.com, support.rackspace.com.
+export PRESENTED_URL_DOMAIN=developer.rackspace.com
+
+# Determine the storage backend.
+# Use "memory" for in memory storage or "remote" for Cloud Files storage.
+export STORAGE=memory
+
+# Control repository settings ######################################################################
+# Customize the control repository used by your local Deconst instance.
+
+# To preview local changes to a control repository:
+
+# Set this to a path to a control repository on your local machine to preview local changes to a
+# control repository.
+
+unset CONTROL_REPO_HOST_PATH
+export CONTROL_REPO_HOST_PATH= ; echo "Please set CONTROL_REPO_HOST_PATH in ${BASH_SOURCE[@]}" && return 1
+
+# To use a control repository from a remote git repository:
+
+# Set these to a git URL and branch to load the control repository from GitHub instead.
+# export CONTROL_REPO_URL=https://github.com/rackerlabs/nexus-control.git
+# export CONTROL_REPO_BRANCH=master
+
+# A task to be run in the control repo's directory to build/upload assets
+export CONTROL_REPO_ASSETS_TASK="grunt build"
+
+# Storage settings #################################################################################
+# Control where Deconst stores assets.
+# These only need to be set if you've changed STORAGE to "remote" in the Universal settings.
+
+# Rackspace credentials.
+# These are only used for Cloud Files and are only necessary if STORAGE is set to "remote".
+
+export RACKSPACE_USERNAME=
+export RACKSPACE_APIKEY=
+export RACKSPACE_REGION=
+
+# Set this to something different to keep content separated in different Cloud Files containers.
+# Deconst uses two: one for CDN assets and one for metadata envelopes.
+export CONTAINER_NAME=integrated
+
+export CONTENT_CONTAINER=deconst-${CONTAINER_NAME}-content
+export ASSET_CONTAINER=deconst-${CONTAINER_NAME}-asset
+
+# Template settings ################################################################################
+# These settings only do anything if the templates in the control repository you're using read them.
+
+# "true" or "false", whether the presenter should load assets directly from the control repo, or
+# via the assets container
+export PRESENTER_DEVMODE=
+
+# "true" or "false", whether the presenter should inject a Livereload script in
+# the body. Doesn't do anything unless your templates watch this variable.
+export PRESENTER_LIVERELOAD=
+
+# Internal stuff ###################################################################################
+# Bash munging to simplify some of the settings above and derive related variables. You shouldn't
+# need to edit anything here unless you're debugging this repo.
+
+# Derive the container-internal CONTROL_REPO_PATH from the other CONTROL_REPO_* variables.
+
+if [ -n "${CONTROL_REPO_HOST_PATH:-}" ]; then
+  if [ -n "${CONTROL_REPO_URL}" ]; then
+    unset CONTROL_REPO_URL
+    unset CONTROL_REPO_BRANCH
+    echo "Ignoring CONTROL_REPO_URL in favor of CONTROL_REPO_HOST_PATH." >&2
+  fi
+
+  export CONTROL_REPO_PATH="${CONTROL_REPO_HOST_PATH}"
+else
+  export CONTROL_REPO_HOST_PATH=$(pwd)
+  export CONTROL_REPO_PATH=/tmp/control-repo
+fi
+
+# Set MEMORY_ASSET_PREFIX appropriately depending on whether you're using docker-machine or the
+# Docker for (Mac|Windows) betas.
+
+if [ -z "${DOCKER_HOST:-}" ]; then
+  # Defaulting to the local Docker socket.
+  # Use localhost.
+  export DECONST_PUBLIC=localhost
+else
+  # Yank it from DOCKER_HOST.
+  # This should work from docker-machine and Carina.
+  export DECONST_PUBLIC=${DOCKER_HOST#tcp://}
+  DECONST_PUBLIC=${DECONST_PUBLIC%:[0-9]*}
+fi
+
+export MEMORY_ASSET_PREFIX=http://${DECONST_PUBLIC}:9000/assets/
+export STAGING_MEMORY_ASSET_PREFIX=http://${DECONST_PUBLIC}:9001/assets/
