@@ -76,3 +76,28 @@ docker-compose restart presenter
 
 script/add-assets /path/to/nexus-control
 ```
+
+If you're unable to connect after doing this, wait several seconds for the presenter to start fully.
+
+#### Debugging
+
+If the control repository does not load, look for errors in the presenter's output:
+
+```bash
+cd /path/to/integrated
+
+docker-compose logs presenter
+```
+
+Note that both the presenter and content service take several seconds to launch and begin listening.
+
+#### Shutting down
+
+To shut the system down completely and remove all local state, to start again from a blank slate:
+
+```bash
+cd /path/to/integrated
+
+docker-compose stop
+docker-compose rm -fv
+```
