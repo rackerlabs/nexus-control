@@ -22,6 +22,15 @@ a {
     transition: all 0.15s linear;
 }
 
+// Mixins
+
+@mixin centered-container($maxWidth) {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: $maxWidth;
+    width: 90%;
+}
+
 // Page Content
 
 .nine.content {
@@ -1116,7 +1125,7 @@ a {
 
 body.not-found {
     .not-found-message {
-        .centered-container(480px);
+        @include centered-container(480px);
         padding: 80px 0;
         text-align: center;
 
