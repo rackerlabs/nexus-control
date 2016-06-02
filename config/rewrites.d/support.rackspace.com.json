@@ -116,7 +116,7 @@
       }
       {
         "description": "Redirect /how-to/cloud-storage-app-for-microsoft-sharepoint-accessing-cloud-files-containers/ URL to /how-to/cloud-files/",
-        "from": "^\\/knowledge_center\\/article\\/cloud-storage-app-for-microsoft-sharepoint-accessing-cloud-files-containers(.*)$",
+        "from": "^\\/how-to\\/article\\/cloud-storage-app-for-microsoft-sharepoint-accessing-cloud-files-containers(.*)$",
         "to": "/how-to/cloud-files/",
         "rewrite": false,
         "status": 301
