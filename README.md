@@ -46,7 +46,7 @@ To test changes to templates or assets on your local machine before pushing them
     cd /path/to/integrated
     docker-compose up -d
 
-    # Wait for "" to appear, then ^C
+    # Wait for "content-service listening at http://[::]:8080" to appear, then ^C
     docker-compose logs -f content
     ```
 
