@@ -10,7 +10,7 @@ To test changes to templates or assets on your local machine before pushing them
 
 1. Install Docker. Either [Docker Toolbox](https://docs.docker.com/engine/installation/mac/) or the [Docker for Mac or Windows beta](https://beta.docker.com/docs/) will work. Before you continue:
 
- * You should be able to run `docker version` and see both `Client:` and `Server:` in the output before continuing.
+ * You should be able to run `docker version` on a terminal and see both `Client:` and `Server:` in the output before continuing.
  * You should be able to run `docker-compose version` without seeing "command not found".
 
 2. Clone [deconst/integrated](https://github.com/deconst/integrated), this repository, and any relevant content repositories. [rackerlabs/docs-developer-blog](https://github.com/rackerlabs/docs-developer-blog) includes the frontpage and is a likely candidate.
