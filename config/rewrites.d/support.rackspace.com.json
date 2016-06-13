@@ -123,52 +123,60 @@
       },
       {
         "description": "Redirect /how-to/cloud-storage-app-for-microsoft-sharepoint-accessing-cloud-files-containers/ URL to /how-to/cloud-files/",
-        "from": "^\\/how-to\\/article\\/cloud-storage-app-for-microsoft-sharepoint-accessing-cloud-files-containers(.*)$",
+        "from": "^\\/how-to\\/cloud-storage-app-for-microsoft-sharepoint-accessing-cloud-files-containers(.*)$",
         "to": "/how-to/cloud-files/",
         "rewrite": false,
         "status": 301
       },
 {
         "description": "Redirect /how-to/cloud-storage-app-for-microsoft-sharepoint-browser-compatibility-matrix/ URL to /how-to/cloud-files/",
-        "from": "^\\/how-to\\/article\\/cloud-storage-app-for-microsoft-sharepoint-browser-compatibility-matrix(.*)$",
+        "from": "^\\/how-to\\/cloud-storage-app-for-microsoft-sharepoint-browser-compatibility-matrix(.*)$",
         "to": "/how-to/cloud-files/",
         "rewrite": false,
         "status": 301
       },
 {
         "description": "Redirect /how-to/cloud-storage-app-for-microsoft-sharepoint-how-to-add-and-delete-files-in-a-container/ URL to /how-to/cloud-files/",
-        "from": "^\\/how-to\\/article\\/cloud-storage-app-for-microsoft-sharepoint-how-to-add-and-delete-files-in-a-container(.*)$",
+        "from": "^\\/how-to\\/cloud-storage-app-for-microsoft-sharepoint-how-to-add-and-delete-files-in-a-container(.*)$",
         "to": "/how-to/cloud-files/",
         "rewrite": false,
         "status": 301
       },
 {
         "description": "Redirect /how-to/cloud-storage-app-for-microsoft-sharepoint-how-to-remove-your-credentials-from-the-app/ URL to /how-to/cloud-files/",
-        "from": "^\\/how-to\\/article\\/cloud-storage-app-for-microsoft-sharepoint-how-to-remove-your-credentials-from-the-app(.*)$",
+        "from": "^\\/how-to\\/cloud-storage-app-for-microsoft-sharepoint-how-to-remove-your-credentials-from-the-app(.*)$",
         "to": "/how-to/cloud-files/",
         "rewrite": false,
         "status": 301
       },
 {
         "description": "Redirect /how-to/cloud-storage-app-for-microsoft-sharepoint-how-to-set-up-credentials-to-access-cloud-files/ URL to /how-to/cloud-files/",
-        "from": "^\\/how-to\\/article\\/cloud-storage-app-for-microsoft-sharepoint-how-to-set-up-credentials-to-access-cloud-files(.*)$",
+        "from": "^\\/how-to\\/cloud-storage-app-for-microsoft-sharepoint-how-to-set-up-credentials-to-access-cloud-files(.*)$",
         "to": "/how-to/cloud-files/",
         "rewrite": false,
         "status": 301
       },
 {
         "description": "Redirect /how-to/cloud-storage-app-for-microsoft-sharepoint-how-to-share-a-file-with-another-person/ URL to /how-to/cloud-files/",
-        "from": "^\\/how-to\\/article\\/cloud-storage-app-for-microsoft-sharepoint-how-to-share-a-file-with-another-person(.*)$",
+        "from": "^\\/how-to\\/cloud-storage-app-for-microsoft-sharepoint-how-to-share-a-file-with-another-person(.*)$",
         "to": "/how-to/cloud-files/",
         "rewrite": false,
         "status": 301
       },
 {
         "description": "Redirect /how-to/cloud-storage-app-for-microsoft-sharepoint-overview/ URL to /how-to/cloud-files/",
-        "from": "^\\/how-to\\/article\\/cloud-storage-app-for-microsoft-sharepoint-overview(.*)$",
+        "from": "^\\/how-to\\/cloud-storage-app-for-microsoft-sharepoint-overview(.*)$",
         "to": "/how-to/cloud-files/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "Redirect /how-to/alarm-language-generic-thresholds-made-easy/ URL to /how-to/alarm-language-in-rackspace-monitoring",
+        "from": "^\\how-to\\/alarm-language-generic-thresholds-made-easy(.*)$",
+        "to": "/how-to/alarm-language-in-rackspace-monitoring",
+        "rewrite": false,
+        "status": 301
+      }
       }
     ]
 }
