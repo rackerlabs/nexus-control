@@ -1,6 +1,5 @@
  [
   { "kind": "github", "project": "getcarina/getcarina.com" },
-  { "kind": "github", "project": "rackerlabs/docs-arbor" },
   { "kind": "github", "project": "rackerlabs/docs-developer-blog" },
   { "kind": "github", "project": "rackerlabs/docs-quickstart" },
   { "kind": "github", "project": "rackerlabs/docs-dedicated-vcloud" },
@@ -23,6 +22,7 @@
   { "kind": "github", "project": "rackerlabs/docs-cloud-monitoring" },
   { "kind": "github", "project": "rackerlabs/docs-cloud-networks" },
   { "kind": "github", "project": "rackerlabs/docs-cloud-orchestration" },
+  { "kind": "github", "project": "rackerlabs/docs-cloud-paas" },
   { "kind": "github", "project": "rackerlabs/docs-cloud-queues" },
   { "kind": "github", "project": "rackerlabs/docs-cloud-rackconnect" },
   { "kind": "github", "project": "rackerlabs/docs-dedicated-networking" },
