@@ -183,6 +183,13 @@
         "to": "/how-to/cloud-servers-how-to-articles-other-resources/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "Redirect /how-to/getting-fanatical-support-6-tickets/ URL to /how-to/create-a-support-ticket-in-the-cloud-control-panel/",
+        "from": "^\\how-to\\/getting-fanatical-support-6-tickets(.*)$",
+        "to": "/how-to/create-a-support-ticket-in-the-cloud-control-panel/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
