@@ -173,7 +173,21 @@
       {
         "description": "Redirect /how-to/alarm-language-generic-thresholds-made-easy/ URL to /how-to/alarm-language-in-rackspace-monitoring",
         "from": "^\\how-to\\/alarm-language-generic-thresholds-made-easy(.*)$",
-        "to": "/how-to/alarm-language-in-rackspace-monitoring",
+        "to": "/how-to/alarm-language-in-rackspace-monitoring/",
+        "rewrite": false,
+        "status": 301
+      }, 
+      {
+        "description": "Redirect /how-to/general-purpose-cloud-servers-how-to-articles-and-other-resources/ URL to /how-to/cloud-servers-how-to-articles-other-resources",
+        "from": "^\\how-to\\/general-purpose-cloud-servers-how-to-articles-and-other-resources(.*)$",
+        "to": "/how-to/cloud-servers-how-to-articles-other-resources/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
+        "description": "Redirect /how-to/getting-fanatical-support-6-tickets/ URL to /how-to/create-a-support-ticket-in-the-cloud-control-panel/",
+        "from": "^\\how-to\\/getting-fanatical-support-6-tickets(.*)$",
+        "to": "/how-to/create-a-support-ticket-in-the-cloud-control-panel/",
         "rewrite": false,
         "status": 301
       }
