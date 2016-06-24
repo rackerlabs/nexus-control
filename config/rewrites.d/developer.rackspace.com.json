@@ -61,7 +61,7 @@
         {
             "description": "Redirect load balancers developer-guide URL",
             "from": "^\\/docs\\/cloud-load-balancers\\/v1\\/developer-guide\\/(.*?)",
-            "to": "/docs/docs-cloud-load-balancers/v1/$1",
+            "to": "/docs/cloud-load-balancers/v1/$1",
             "rewrite": false,
             "status": 301
         },
