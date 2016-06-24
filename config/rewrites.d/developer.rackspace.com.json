@@ -61,7 +61,7 @@
         {
             "description": "Redirect load balancers developer-guide URL",
             "from": "^\\/docs\\/cloud-load-balancers\\/v1\\/developer-guide\\/(.*?)",
-            "to": "/docs/docs-cloud-load-balancers/v1/$1",
+            "to": "/docs/cloud-load-balancers/v1/$1",
             "rewrite": false,
             "status": 301
         },
@@ -89,7 +89,6 @@
             "rewrite": false,
             "status": 301
         },
-
         {
             "from": "^\\/logs\\/?$",
             "to": "/",
@@ -99,7 +98,6 @@
             "rewrite": false,
             "status": 302
         },
-
         {
           "description": "Redirect vCenter doc to URL for Managed VMWare services",
           "from": "^\\/docs/private-cloud\\/dedicated-vcloud\\/vcenter-handbook\\/?(.*)$",
@@ -107,7 +105,6 @@
           "rewrite": false,
           "status": 301
         },
-
         {
           "description": "Redirect vCloud v1.5 doc to URL for Managed VMWare services",
           "from": "^\\/docs\\/private-cloud\\/dedicated-vcloud\\/vcloud-handbook-v1.5\\/?(.*)$",
@@ -115,7 +112,6 @@
           "rewrite": false,
           "status": 301
         },
-
         {
           "description": "Redirect vCloud v1.0 doc to URL for managed VMWare services",
           "from": "^\\/docs\\/private-cloud\\/dedicated-vcloud\\/vcloud-handbook\\/?(.*)$",
@@ -123,7 +119,6 @@
           "rewrite": false,
           "status": 301
         },
-
         {
           "description": "Redirect dedicated vCloud doc menu to managed VMWare services menu",
           "from": "^\\/docs\\/private-cloud\\/dedicated-vcloud\\/?(.*)$",
@@ -131,7 +126,6 @@
           "rewrite": false,
           "status": 301
         },
-
         {
           "description": "Redirect RPC URL to current version",
           "from": "^/docs/private-cloud/rpc/?$",
@@ -139,7 +133,6 @@
           "rewrite:": false,
           "status": 301
         },
-
         {
           "description": "Redirect getting started URLs to quickstart content",
           "from": "^\\/docs\\/([^/]+?)\\/getting-started\\/(.*?)",
