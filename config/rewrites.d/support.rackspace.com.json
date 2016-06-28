@@ -190,6 +190,13 @@
         "to": "/how-to/create-a-support-ticket-in-the-cloud-control-panel/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "Redirect /how-to/rackspace-cloud-essentials-what-are-your-name-servers/ URL to /how-to/rackspace-name-servers/",
+        "from": "^\\how-to\\/rackspace-cloud-essentials-what-are-your-name-servers(.*)$",
+        "to": "/how-to/rackspace-name-servers/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
