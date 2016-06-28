@@ -2,7 +2,8 @@
   "staging.horse": {
     "routes": {
       "^/docs/private-cloud/": "developer.rackspace.com/user-guide.html",
-      "^/docs/cloud-paas/": "developer.rackspace.com/user-guide.html"
+      "^/docs/cloud-paas/": "developer.rackspace.com/user-guide.html",
+      "^/docs/api-doc-template/": "developer.rackspace.com/user-guide.html"
     }
   }
 }
