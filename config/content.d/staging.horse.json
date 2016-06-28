@@ -3,10 +3,14 @@
     "content": {
       "/docs/private-cloud/rpc/master/": "https://github.com/rackerlabs/docs-rpc/master/",
 <<<<<<< HEAD
+<<<<<<< HEAD
       "/docs/cloud-paas": "https://github.com/rackerlabs/docs-cloud-paas/",
       "/docs/api-doc-template/": "https://github.com/rackerlabs/docs-common/"
 =======
       "/docs/private-cloud/rpc/release-notes/": "https://github.com/rackerlabs/rpc-openstack/master/"
+=======
+      "/docs/private-cloud/rpc/release-notes/": "https://github.com/rackerlabs/rpc-openstack/master/",
+>>>>>>> 3f07120... Minor edit to staging.horse.json
       "/docs/cloud-paas": "https://github.com/rackerlabs/docs-cloud-paas/"
 
 >>>>>>> 033d514... Configure deploy URL and template route
