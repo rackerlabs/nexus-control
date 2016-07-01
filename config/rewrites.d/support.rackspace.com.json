@@ -197,6 +197,48 @@
         "to": "/how-to/rackspace-name-servers/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "Redirect NGINX and PHP-FPM series to new /how-to/install-nginx-and-php-fpm-running-on-unix-file-sockets",
+        "from": "^\\how-to\\/installing-nginx-and-php-fpm-preface(.*)$",
+        "to": "/how-to/install-nginx-and-php-fpm-running-on-unix-file-sockets/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
+        "description": "Redirect NGINX and PHP-FPM series to new /how-to/install-nginx-and-php-fpm-running-on-unix-file-sockets",
+        "from": "^\\how-to\\/installing-nginx-and-php-fpm-running-on-unix-file-sockets(.*)$",
+        "to": "/how-to/install-nginx-and-php-fpm-running-on-unix-file-sockets/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
+        "description": "Redirect NGINX and PHP-FPM series to new /how-to/install-nginx-and-php-fpm-running-on-unix-file-sockets",
+        "from": "^\\how-to\\/installing-nginx-and-php-fpm-setup-for-nginx(.*)$",
+        "to": "/how-to/install-nginx-and-php-fpm-running-on-unix-file-sockets/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
+        "description": "Redirect NGINX and PHP-FPM series to new /how-to/install-nginx-and-php-fpm-running-on-unix-file-sockets",
+        "from": "^\\how-to\\/installing-nginx-and-php-fpm-setup-for-php-fpm(.*)$",
+        "to": "/how-to/install-nginx-and-php-fpm-running-on-unix-file-sockets/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
+        "description": "Redirect NGINX and PHP-FPM series to new /how-to/install-nginx-and-php-fpm-running-on-unix-file-sockets",
+        "from": "^\\how-to\\/installing-nginx-and-php-fpm-the-fun-begins(.*)$",
+        "to": "/how-to/install-nginx-and-php-fpm-running-on-unix-file-sockets/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
+        "description": "Redirect NGINX and PHP-FPM series to new /how-to/install-nginx-and-php-fpm-running-on-unix-file-sockets",
+        "from": "^\\how-to\\/installing-nginx-and-php-fpm(.*)$",
+        "to": "/how-to/install-nginx-and-php-fpm-running-on-unix-file-sockets/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
