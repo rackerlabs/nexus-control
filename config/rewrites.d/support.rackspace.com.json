@@ -172,70 +172,70 @@
       },
       {
         "description": "Redirect /how-to/alarm-language-generic-thresholds-made-easy/ URL to /how-to/alarm-language-in-rackspace-monitoring",
-        "from": "^\\how-to\\/alarm-language-generic-thresholds-made-easy(.*)$",
+        "from": "^\\/how-to\\/alarm-language-generic-thresholds-made-easy(.*)$",
         "to": "/how-to/alarm-language-in-rackspace-monitoring/",
         "rewrite": false,
         "status": 301
       }, 
       {
         "description": "Redirect /how-to/general-purpose-cloud-servers-how-to-articles-and-other-resources/ URL to /how-to/cloud-servers-how-to-articles-other-resources",
-        "from": "^\\how-to\\/general-purpose-cloud-servers-how-to-articles-and-other-resources(.*)$",
+        "from": "^\\/how-to\\/general-purpose-cloud-servers-how-to-articles-and-other-resources(.*)$",
         "to": "/how-to/cloud-servers-how-to-articles-other-resources/",
         "rewrite": false,
         "status": 301
       },
       {
         "description": "Redirect /how-to/getting-fanatical-support-6-tickets/ URL to /how-to/create-a-support-ticket-in-the-cloud-control-panel/",
-        "from": "^\\how-to\\/getting-fanatical-support-6-tickets(.*)$",
+        "from": "^\\/how-to\\/getting-fanatical-support-6-tickets(.*)$",
         "to": "/how-to/create-a-support-ticket-in-the-cloud-control-panel/",
         "rewrite": false,
         "status": 301
       },
       {
         "description": "Redirect /how-to/rackspace-cloud-essentials-what-are-your-name-servers/ URL to /how-to/rackspace-name-servers/",
-        "from": "^\\how-to\\/rackspace-cloud-essentials-what-are-your-name-servers(.*)$",
+        "from": "^\\/how-to\\/rackspace-cloud-essentials-what-are-your-name-servers(.*)$",
         "to": "/how-to/rackspace-name-servers/",
         "rewrite": false,
         "status": 301
       },
       {
         "description": "Redirect NGINX and PHP-FPM series to new /how-to/install-nginx-and-php-fpm-running-on-unix-file-sockets",
-        "from": "^\\how-to\\/installing-nginx-and-php-fpm-preface(.*)$",
+        "from": "^\\/how-to\\/installing-nginx-and-php-fpm-preface(.*)$",
         "to": "/how-to/install-nginx-and-php-fpm-running-on-unix-file-sockets/",
         "rewrite": false,
         "status": 301
       },
       {
         "description": "Redirect NGINX and PHP-FPM series to new /how-to/install-nginx-and-php-fpm-running-on-unix-file-sockets",
-        "from": "^\\how-to\\/installing-nginx-and-php-fpm-running-on-unix-file-sockets(.*)$",
+        "from": "^\\/how-to\\/installing-nginx-and-php-fpm-running-on-unix-file-sockets(.*)$",
         "to": "/how-to/install-nginx-and-php-fpm-running-on-unix-file-sockets/",
         "rewrite": false,
         "status": 301
       },
       {
         "description": "Redirect NGINX and PHP-FPM series to new /how-to/install-nginx-and-php-fpm-running-on-unix-file-sockets",
-        "from": "^\\how-to\\/installing-nginx-and-php-fpm-setup-for-nginx(.*)$",
+        "from": "^\\/how-to\\/installing-nginx-and-php-fpm-setup-for-nginx(.*)$",
         "to": "/how-to/install-nginx-and-php-fpm-running-on-unix-file-sockets/",
         "rewrite": false,
         "status": 301
       },
       {
         "description": "Redirect NGINX and PHP-FPM series to new /how-to/install-nginx-and-php-fpm-running-on-unix-file-sockets",
-        "from": "^\\how-to\\/installing-nginx-and-php-fpm-setup-for-php-fpm(.*)$",
+        "from": "^\\/how-to\\/installing-nginx-and-php-fpm-setup-for-php-fpm(.*)$",
         "to": "/how-to/install-nginx-and-php-fpm-running-on-unix-file-sockets/",
         "rewrite": false,
         "status": 301
       },
       {
         "description": "Redirect NGINX and PHP-FPM series to new /how-to/install-nginx-and-php-fpm-running-on-unix-file-sockets",
-        "from": "^\\how-to\\/installing-nginx-and-php-fpm-the-fun-begins(.*)$",
+        "from": "^\\/how-to\\/installing-nginx-and-php-fpm-the-fun-begins(.*)$",
         "to": "/how-to/install-nginx-and-php-fpm-running-on-unix-file-sockets/",
         "rewrite": false,
         "status": 301
       },
       {
         "description": "Redirect NGINX and PHP-FPM series to new /how-to/install-nginx-and-php-fpm-running-on-unix-file-sockets",
-        "from": "^\\how-to\\/installing-nginx-and-php-fpm(.*)$",
+        "from": "^\\/how-to\\/installing-nginx-and-php-fpm(.*)$",
         "to": "/how-to/install-nginx-and-php-fpm-running-on-unix-file-sockets/",
         "rewrite": false,
         "status": 301
