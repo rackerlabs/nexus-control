@@ -115,6 +115,13 @@
         "status": 301
       },
       {
+        "description": "Redirect /how-to/rackspace-cloud-backup-preferences-0/ URL to /how-to/rackspace-cloud-backup-preferences/",
+        "from": "^\\/how-to\\/rackspace-cloud-backup-preferences-0(.*)$",
+        "to": "/how-to/rackspace-cloud-backup-preferences/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
         "description": "Redirect /how-to/limits-for-rackspace-cdn/ URL to /how-to/rackspace-cdn-faq/",
         "from": "^\\/how-to\\/limits-for-rackspace-cdn(.*)$",
         "to": "/how-to/rackspace-cdn-faq/",
