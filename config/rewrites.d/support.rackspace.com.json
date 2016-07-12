@@ -239,7 +239,7 @@
         "to": "/how-to/install-nginx-and-php-fpm-running-on-unix-file-sockets/",
         "rewrite": false,
         "status": 301
-      }
+      },
         {
         "description": "Redirect Cloud Sites - subaccounts article to new /how-to/getting-started-with-cloud-sites-set-up-site-security-with-subaccounts",
         "from": "^\\/how-to\\/cloud-sites-subaccounts(.*)$",
