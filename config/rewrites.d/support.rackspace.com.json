@@ -275,5 +275,12 @@
         "rewrite": false,
         "status": 301
       },
+      {
+        "description": "Redirect metrics article to new permalink /how-to/integrate-statsd-with-rackspace-metrics",
+        "from": "^\\/how-to\\/deploying-rackspace-metrics(.*)$",
+        "to": "/how-to/integrate-statsd-with-rackspace-metrics/",
+        "rewrite": false,
+        "status": 301
+      }
     ]
 }
