@@ -247,10 +247,38 @@
         "rewrite": false,
         "status": 301
       },
-        {
+      {
         "description": "Redirect Cloud Sites - subaccounts article to new /how-to/getting-started-with-cloud-sites-set-up-site-security-with-subaccounts",
         "from": "^\\/how-to\\/cloud-sites-subaccounts(.*)$",
         "to": "/how-to/getting-started-with-cloud-sites-set-up-site-security-with-subaccounts/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
+        "description": "Redirect Cloud Sites php article to new /how-to/test-and-send-mail-using-php",
+        "from": "^\\/how-to\\/test-php-smtp-functionality(.*)$",
+        "to": "/how-to/test-and-send-mail-using-php/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
+        "description": "Redirect Cloud Sites html php article to new /how-to/test-and-send-mail-using-php",
+        "from": "^\\/how-to\\/sending-html-mail-via-php-in-cloud-sites(.*)$",
+        "to": "/how-to/test-and-send-mail-using-php/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
+        "description": "Redirect Cloud Sites html php article to new /how-to/test-and-send-mail-using-php",
+        "from": "^\\/how-to\\/test-php-mail-functionality(.*)$",
+        "to": "/how-to/test-and-send-mail-using-php/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
+        "description": "Redirect metrics article to new permalink /how-to/integrate-statsd-with-rackspace-metrics",
+        "from": "^\\/how-to\\/deploying-rackspace-metrics(.*)$",
+        "to": "/how-to/integrate-statsd-with-rackspace-metrics/",
         "rewrite": false,
         "status": 301
       }
