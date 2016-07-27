@@ -31,7 +31,7 @@
             "^/docs/cloud-networks/v2/developer-guide": "docs-singlepage.html",
             "^/docs/cloud-big-data/v2/developer-guide": "docs-singlepage.html",
             "^/docs/autoscale/v1/developer-guide": "docs-singlepage.html",
-            "^/docs/cloud-servers/v2/developer-guide": "docs-singlepage.html",
+            "^/docs/cloud-servers/v2/developer-guide": "user-guide.html",
             "^/docs/cloud-files/v1/developer-guide": "docs-singlepage.html",
             "^/docs/metrics/v2/developer-guide": "docs-singlepage.html",
             "^/docs/cloud-identity/v2/developer-guide": "docs-singlepage.html",
