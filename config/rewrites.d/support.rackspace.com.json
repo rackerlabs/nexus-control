@@ -281,6 +281,13 @@
         "to": "/how-to/integrate-statsd-with-rackspace-metrics/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "Redirect white paper article to new permalink /how-to/understanding-the-cloud-computing-stack-saas-paas-iaas/",
+        "from": "^\\/https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/whitepaper_pdf/Understanding-the-Cloud-Computing-Stack.pdf(.*)$",
+        "to": "/how-to/understanding-the-cloud-computing-stack-saas-paas-iaas/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
