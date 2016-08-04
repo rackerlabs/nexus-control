@@ -47,8 +47,9 @@
             "status": 301
         },
         {
+            "description": "Redirect cdn developer-guide URL",
             "from": "^\\/docs\\/cloud-cdn\\/v1\\/developer-guide\\/?(.*)$",
-            "to": "/docs/cdn/v1/developer-guide/$1",
+            "to": "/docs/cdn/v1/$1",
             "rewrite": false,
             "status": 301
         },
