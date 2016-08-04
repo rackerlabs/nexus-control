@@ -12,7 +12,7 @@
           "/docs/cloud-block-storage/v1/developer-guide/": "https://github.com/rackerlabs/docs-cloud-block-storage/",
           "/docs/cloud-dns/v1/developer-guide/": "https://github.com/rackerlabs/docs-cloud-dns/v1/",
           "/docs/cloud-dns/v2/developer-guide/": "https://github.com/rackerlabs/docs-cloud-dns/v2/",
-          "/docs/cdn/v1/developer-guide/": "https://github.com/rackerlabs/docs-cloud-cdn/",
+          "/docs/cdn/v1/": "https://github.com/rackerlabs/docs-cloud-cdn/",
           "/docs/cloud-databases/v1/developer-guide/": "https://github.com/rackerlabs/docs-cloud-databases/v1/",
           "/docs/cloud-backup/v1/developer-guide/": "https://github.com/rackerlabs/docs-cloud-backup/v1/",
           "/docs/cloud-backup/v2/developer-guide/": "https://github.com/rackerlabs/docs-cloud-backup/v2/",
