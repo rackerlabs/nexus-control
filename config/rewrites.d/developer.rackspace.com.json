@@ -47,12 +47,11 @@
             "status": 301
         },
         {
-     			"description": "Redirect cloud dns developer-guide URL",
-     			"from": "^\\/docs\\/cloud-dns\\/v2\\/developer-guide\\/(.*?)",
-     			"to": "/docs/cloud-dns/v2/$1",
-     			"rewrite": false,
-     			"status": 301
- 		  },
+            "from": "^\\/docs\\/cloud-autoscale\\/v1\\/developer-guide\\/?(.*)$",
+            "to": "/docs/autoscale/v1/developer-guide/$1",
+            "rewrite": false,
+            "status": 301
+        },
         {
             "description": "Redirect cdn developer-guide URL",
             "from": "^\\/docs\\/cloud-cdn\\/v1\\/developer-guide\\/?(.*)$",
@@ -61,10 +60,11 @@
             "status": 301
         },
         {
-            "from": "^\\/docs\\/cloud-autoscale\\/v1\\/developer-guide\\/?(.*)$",
-            "to": "/docs/autoscale/v1/developer-guide/$1",
-            "rewrite": false,
-            "status": 301
+          "description": "Redirect cloud dns developer-guide URL",
+          "from": "^\\/docs\\/cloud-dns\\/v2\\/developer-guide\\/(.*?)",
+          "to": "/docs/cloud-dns/v2/$1",
+          "rewrite": false,
+          "status": 301
         },
         {
             "description": "Redirect load balancers developer-guide URL",
@@ -87,12 +87,6 @@
             "status": 301
         },
         {
-            "from": "^\\/docs\\/cloud-networks\\/v1\\/developer-guide\\/?(.*)$",
-            "to": "/docs/cloud-networks/v2/developer-guide/$1",
-            "rewrite": false,
-            "status": 301
-        },
-        {
             "from": "^\\/docs\\/metrics\\/v1\\/developer-guide\\/?(.*)$",
             "to": "/docs/metrics/v2/developer-guide/$1",
             "rewrite": false,
@@ -101,6 +95,19 @@
         {
             "from": "^\\/docs\\/cloud-monitoring\\/v1\\/developer-guide\\/?(.*)$",
             "to": "/docs/rackspace-monitoring/v1/developer-guide/$1",
+            "rewrite": false,
+            "status": 301
+        },
+        {
+            "from": "^\\/docs\\/cloud-networks\\/v1\\/developer-guide\\/?(.*)$",
+            "to": "/docs/cloud-networks/v2/developer-guide/$1",
+            "rewrite": false,
+            "status": 301
+        },
+        {
+            "description": "Redirect orchestration developer-guide URL",
+            "from": "^\\/docs\\/cloud-orchestration\\/v1\\/developer-guide\\/(.*?)",
+            "to": "/docs/cloud-orchestration/v1/$1",
             "rewrite": false,
             "status": 301
         },
