@@ -81,6 +81,13 @@
             "status": 301
         },
         {
+            "description": "Redirect Cloud Block Storage developer-guide URL",
+            "from": "^\\/docs\\/cloud-block-storage\\/v1\\/developer-guide\\/(.*?)",
+            "to": "/docs/cloud-block-storage/v1/$1",
+            "rewrite": false,
+            "status": 301
+        },
+        {
             "from": "^\\/docs\\/cloud-metrics\\/v1\\/developer-guide\\/?(.*)$",
             "to": "/docs/metrics/v1/developer-guide/$1",
             "rewrite": false,
