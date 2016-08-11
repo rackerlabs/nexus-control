@@ -22,7 +22,7 @@
             "^/docs/cloud-dns/v2/": "user-guide.html",
             "^/docs/cdn/v1/": "user-guide.html",
             "^/docs/cloud-databases/v1/developer-guide": "docs-singlepage.html",
-            "^/docs/cloud-backup/v1/developer-guide": "docs-singlepage.html",
+            "^/docs/cloud-backup/v1/": "user-guide.html",
             "^/docs/cloud-backup/v2/developer-guide": "docs-singlepage.html",
             "^/docs/cloud-orchestration/v1/": "user-guide.html",
             "^/docs/cloud-orchestration/v1/resources-reference": "user-guide.html",
