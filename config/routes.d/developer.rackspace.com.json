@@ -34,7 +34,7 @@
             "^/docs/cloud-servers/v2/": "user-guide.html",
             "^/docs/cloud-files/v1/developer-guide": "docs-singlepage.html",
             "^/docs/metrics/v2/developer-guide": "docs-singlepage.html",
-            "^/docs/cloud-identity/v2/developer-guide": "docs-singlepage.html",
+            "^/docs/cloud-identity/v2/": "user-guide.html",
             "^/docs/rackspace-monitoring/v1/developer-guide": "docs-singlepage.html",
             "^/docs/cloud-keep/v1/developer-guide/": "docs-singlepage.html",
             "^/docs/cloud-feeds/v1/developer-guide/": "docs-singlepage.html",
