@@ -74,7 +74,7 @@
             "status": 301
         },
         {
-            "description": "Redirect Identiry developer-guide URL",
+            "description": "Redirect Identity developer-guide URL",
             "from": "^\\/docs\\/cloud-identity\\/v2\\/developer-guide\\/?(.*)$",
             "to": "/docs/cloud-identity/v2/$1",
             "rewrite": false,
