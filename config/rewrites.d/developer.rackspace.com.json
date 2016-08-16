@@ -67,6 +67,20 @@
           "status": 301
         },
         {
+            "description": "Redirect Identity Quickstart URL",
+            "from": "^\\/docs\\/cloud-identity\\/v2\\/developer-guide#document-quickstart-guide\\/?(.*)$",
+            "to": "/docs/cloud-identity/v2/getting-started/$1",
+            "rewrite": false,
+            "status": 301
+        },
+        {
+            "description": "Redirect Identiry developer-guide URL",
+            "from": "^\\/docs\\/cloud-identity\\/v2\\/developer-guide\\/?(.*)$",
+            "to": "/docs/cloud-identity/v2/$1",
+            "rewrite": false,
+            "status": 301
+        },
+        {
             "description": "Redirect load balancers developer-guide URL",
             "from": "^\\/docs\\/cloud-load-balancers\\/v1\\/developer-guide\\/(.*?)",
             "to": "/docs/cloud-load-balancers/v1/$1",
@@ -93,7 +107,7 @@
             "to": "/docs/cloud-backup/v1/$1",
             "rewrite": false,
             "status": 301
-        },        
+        },
         {
             "from": "^\\/docs\\/cloud-metrics\\/v1\\/developer-guide\\/?(.*)$",
             "to": "/docs/metrics/v1/developer-guide/$1",
