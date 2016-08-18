@@ -6,7 +6,7 @@
           "/docs/user-guides/infrastructure/": "https://github.com/rackerlabs/docs-core-infra-user-guide/",
           "/docs/user-guides/orchestration/": "https://github.com/rackerlabs/rs-heat-docs/",
           "/docs/rack-cli/": "https://github.com/rackspace/rack/",
-          "/docs/cloud-images/v2/developer-guide/": "https://github.com/rackerlabs/docs-cloud-images/",
+          "/docs/cloud-images/v2/": "https://github.com/rackerlabs/docs-cloud-images/",
           "/docs/cloud-load-balancers/v1/": "https://github.com/rackerlabs/docs-cloud-load-balancers/v1/",
           "/docs/cloud-load-balancers/v2/developer-guide/": "https://github.com/rackerlabs/docs-cloud-load-balancers/v2/",
           "/docs/cloud-block-storage/v1/": "https://github.com/rackerlabs/docs-cloud-block-storage/",
