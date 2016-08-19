@@ -67,6 +67,48 @@
           "status": 301
         },
         {
+          "description": "Redirect common annotated auth resp URL",
+          "from": "^\\/docs\\/cloud-identity\\/v2\\/developer-guide\\/#document-authentication-info/sample-auth-req-response(.*?)",
+          "to": "/docs/cloud-identity/v2/general-api-info/authentication-info/sample-auth-req-response",
+          "rewrite": false,
+          "status": 301
+        },
+        {
+          "description": "Redirect common auth token api reference URL",
+          "from": "^\\/docs\\/cloud-identity\\/v2\\/developer-guide\\/#token-operations",
+          "to": "/docs/cloud-identity/v2/api-reference/token-operations/",
+          "rewrite": false,
+          "status": 301
+        },
+        {
+          "description": "Redirect common manage auth tokens URL",
+          "from": "^\\/docs\\/cloud-identity\\/v2\\/developer-guide\\/#manage-authentication-tokens",
+          "to": "/docs/cloud-identity/v2/getting-started/manage-auth-tokens/",
+          "rewrite": false,
+          "status": 301
+        },
+        {
+          "description": "Redirect common RBAC add user URL",
+          "from": "^\\/docs\\/cloud-identity\\/v2\\/developer-guide\\/#add-user",
+          "to": "/docs/cloud-identity/v2/api-reference/users-operations/#add-user/",
+          "rewrite": false,
+          "status": 301
+        },
+        {
+          "description": "Redirect common RBAC add role to user URL",
+          "from": "^\\/docs\\/cloud-identity\\/v2\\/developer-guide\\/#add-role-touser",
+          "to": "/docs/cloud-identity/v2/api-reference/role-operations/#add-role-to-user/",
+          "rewrite": false,
+          "status": 301
+        },
+        {
+          "description": "Redirect common RBAC delete global role from user URL",
+          "from": "^\\/docs\\/cloud-identity\\/v2\\/developer-guide\\/#delete-global-role-from-user",
+          "to": "/docs/cloud-identity/v2/api-reference/role-operations/#delete-global-role-from-user",
+          "rewrite": false,
+          "status": 301
+        },
+        {
             "description": "Redirect Identity Quickstart URL",
             "from": "^\\/docs\\/cloud-identity\\/v2\\/developer-guide#document-quickstart-guide\\/?(.*)$",
             "to": "/docs/cloud-identity/v2/getting-started/$1",
