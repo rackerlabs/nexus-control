@@ -184,7 +184,14 @@
         },
         {
             "from": "^\\/docs\\/cloud-networks\\/v1\\/developer-guide\\/?(.*)$",
-            "to": "/docs/cloud-networks/v2/developer-guide/$1",
+            "to": "/docs/cloud-networks/v2/$1",
+            "rewrite": false,
+            "status": 301
+        },
+        {
+            "description": "Redirect networks developer-guide URL",
+            "from": "^\\/docs\\/cloud-networks\\/v2\\/developer-guide\\/(.*?)",
+            "to": "/docs/cloud-networks/v2/$1",
             "rewrite": false,
             "status": 301
         },
