@@ -270,7 +270,7 @@
         },
                 {
           "description": "Redirect product feedback link https://feedback.rackspace.com/ to default community feedback link",
-          "from": "https://feedback.rackspace.com/?$",
+          "from": "^\\/https://feedback.rackspace.com/?$",
           "to": "https://community.rackspace.com/feedback/default/",
           "rewrite:": false,
           "status": 301
