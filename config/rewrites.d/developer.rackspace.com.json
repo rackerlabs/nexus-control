@@ -172,6 +172,13 @@
             "status": 301
         },
         {
+            "description": "Redirect Cloud Queues developer-guide URL",
+            "from": "^\\/docs\\/cloud-queues\\/v1\\/developer-guide\\/(.*?)",
+            "to": "/docs/cloud-queues/v1/$1",
+            "rewrite": false,
+            "status": 301
+        },
+        {
             "from": "^\\/docs\\/cloud-metrics\\/v1\\/developer-guide\\/?(.*)$",
             "to": "/docs/metrics/v1/developer-guide/$1",
             "rewrite": false,
@@ -190,13 +197,14 @@
             "status": 301
         },
         {
+            "description": "Redirect Cloud Networks developer-guide URL",
             "from": "^\\/docs\\/cloud-networks\\/v1\\/developer-guide\\/?(.*)$",
             "to": "/docs/cloud-networks/v2/$1",
             "rewrite": false,
             "status": 301
         },
         {
-            "description": "Redirect networks developer-guide URL",
+            "description": "Redirect Cloud Networks v2 developer-guide URL",
             "from": "^\\/docs\\/cloud-networks\\/v2\\/developer-guide\\/(.*?)",
             "to": "/docs/cloud-networks/v2/$1",
             "rewrite": false,
