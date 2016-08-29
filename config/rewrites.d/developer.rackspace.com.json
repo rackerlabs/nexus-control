@@ -267,6 +267,13 @@
           "to": "/docs/$1/quickstart/$2",
           "rewrite": false,
           "status": 301
+        },
+                {
+          "description": "Redirect product feedback link https://feedback.rackspace.com/ to default community feedback link",
+          "from": "https://feedback.rackspace.com/?$",
+          "to": "https://community.rackspace.com/feedback/default/",
+          "rewrite:": false,
+          "status": 301
         }
     ]
 }
