@@ -27,7 +27,7 @@
             "^/docs/cloud-orchestration/v1/": "user-guide.html",
             "^/docs/cloud-orchestration/v1/resources-reference": "user-guide.html",
             "^/docs/rackconnect/v3/developer-guide": "docs-singlepage.html",
-            "^/docs/cloud-queues/v1/developer-guide": "docs-singlepage.html",
+            "^/docs/cloud-queues/v1/": "user-guide.html",
             "^/docs/cloud-networks/v2/": "user-guide.html",
             "^/docs/cloud-big-data/v2/developer-guide": "docs-singlepage.html",
             "^/docs/autoscale/v1/developer-guide": "docs-singlepage.html",
