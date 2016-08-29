@@ -165,6 +165,13 @@
             "status": 301
         },
         {
+            "description": "Redirect Cloud Databases developer-guide URL",
+            "from": "^\\/docs\\/cloud-databases\\/v1\\/developer-guide\\/(.*?)",
+            "to": "/docs/cloud-databases/v1/$1",
+            "rewrite": false,
+            "status": 301
+        },
+        {
             "from": "^\\/docs\\/cloud-metrics\\/v1\\/developer-guide\\/?(.*)$",
             "to": "/docs/metrics/v1/developer-guide/$1",
             "rewrite": false,
