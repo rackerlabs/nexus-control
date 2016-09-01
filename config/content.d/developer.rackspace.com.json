@@ -15,7 +15,7 @@
           "/docs/cdn/v1/": "https://github.com/rackerlabs/docs-cloud-cdn/",
           "/docs/cloud-databases/v1/": "https://github.com/rackerlabs/docs-cloud-databases/v1/",
           "/docs/cloud-backup/v1/": "https://github.com/rackerlabs/docs-cloud-backup/v1/",
-          "/docs/cloud-backup/v2/developer-guide/": "https://github.com/rackerlabs/docs-cloud-backup/v2/",
+          "/docs/cloud-backup/v2/": "https://github.com/rackerlabs/docs-cloud-backup/v2/",
           "/docs/cloud-orchestration/v1/": "https://github.com/rackerlabs/docs-cloud-orchestration/",
           "/docs/cloud-orchestration/v1/resources-reference/": "https://github.com/rackerlabs/heat-resource-ref/",
           "/docs/rackconnect/v3/developer-guide/": "https://github.com/rackerlabs/docs-cloud-rackconnect/",
