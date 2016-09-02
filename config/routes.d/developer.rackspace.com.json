@@ -18,7 +18,7 @@
             "^/docs/cloud-load-balancers/v1/": "user-guide.html",
             "^/docs/cloud-load-balancers/v2/developer-guide": "docs-singlepage.html",
             "^/docs/cloud-block-storage/v1/": "user-guide.html",
-            "^/docs/cloud-dns/v1/developer-guide": "docs-singlepage.html",
+            "^/docs/cloud-dns/v1/": "user-guide.html",
             "^/docs/cloud-dns/v2/": "user-guide.html",
             "^/docs/cdn/v1/": "user-guide.html",
             "^/docs/cloud-databases/v1/": "user-guide.html",
