@@ -290,6 +290,13 @@
         "status": 301
       },
       {
+        "description": "Redirect email article to new permalink /how-to/migrate-your-email-by-using-the-self-service-migration-tool/",
+        "from": "^\\/how-to\\/migrate-your-email-by-using-the-self-service-tool(.*)$",
+        "to": "/how-to/migrate-your-email-by-using-the-self-service-migration-tool",
+        "rewrite": false,
+        "status": 301
+      },
+      {
         "description": "Redirect white paper article to new permalink /how-to/understanding-the-cloud-computing-stack-saas-paas-iaas/",
         "from": "^\\/https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/whitepaper_pdf/Understanding-the-Cloud-Computing-Stack.pdf(.*)$",
         "to": "/how-to/understanding-the-cloud-computing-stack-saas-paas-iaas/",
