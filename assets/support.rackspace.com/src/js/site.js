@@ -33,8 +33,5 @@ $(document).ready(function(){
 
   setupAdmonish();
   
-  // remove redesign link from KC
-
-  $(".banner-redesign-link").remove();
   
 });
