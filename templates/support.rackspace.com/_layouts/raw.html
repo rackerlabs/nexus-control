@@ -1,23 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    {% block head %}
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="google-site-verification" content="NzupxPrG-13nt5r02YyMoqdVRcwCM4Ccir8VWoDqBgU" />
-
-        <title>{{ title }}</title>
-        {% if excerpt %}<meta name="description" content="{{ excerpt | striptags | truncate(160) }}>{% endif %}
-
-        <link rel="canonical" href="{{ siteUrl }}">
-        <link rel="stylesheet" href="{{ cssUrl }}">
-
-        <script src="https://c4d62906a15616653758-49dececd4e3f03377b7f33fac7abfae8.ssl.cf5.rackcdn.com/prod/raxheaderservice.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        <script type="text/javascript" src="{{ jsUrl }}"></script>
-    {% endblock %}
-</head>
 <body>
   {% block body %}{% endblock %}
         <script>
