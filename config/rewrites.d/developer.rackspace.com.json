@@ -60,9 +60,16 @@
             "status": 301
         },
         {
-          "description": "Redirect cloud dns developer-guide URL",
+          "description": "Redirect managed dns developer-guide URL",
           "from": "^\\/docs\\/cloud-dns\\/v2\\/developer-guide\\/(.*?)",
           "to": "/docs/cloud-dns/v2/$1",
+          "rewrite": false,
+          "status": 301
+        },
+                {
+          "description": "Redirect cloud dns developer-guide URL",
+          "from": "^\\/docs\\/cloud-dns\\/v1\\/developer-guide\\/(.*?)",
+          "to": "/docs/cloud-dns/v1/$1",
           "rewrite": false,
           "status": 301
         },
