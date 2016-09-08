@@ -186,6 +186,13 @@
             "status": 301
         },
         {
+            "description": "Redirect Cloud Keep Getting Started reference from product bulletin",
+            "from": "^\\/docs\\/cloud-keep\\/v1\\/developer-guide\\/#document-getting-started\\/(.*?)",
+            "to": "/docs/cloud-keep/v1/getting-started/$1",
+            "rewrite": false,
+            "status": 301
+        },
+        {
             "description": "Redirect Cloud Keep developer-guide URL",
             "from": "^\\/docs\\/cloud-keep\\/v1\\/developer-guide\\/(.*?)",
             "to": "/docs/cloud-keep/v1/$1",
