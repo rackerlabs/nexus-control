@@ -33,6 +33,7 @@
           "/docs/dedicated-load-balancers/v2/dev-guide/": "https://github.com/rackerlabs/docs-dedicated-networking/",
           "/docs/glossary/": "https://github.com/rackerlabs/docs-rackspace/",
           "/docs/private-cloud/release-notes/v13": "https://github.com/rcbops/rpc-openstack/v13/",
+          "/docs/private-cloud/rpc/v13/": "https://github.com/rackerlabs/docs-rpc/v13/",
           "/docs/private-cloud/rpc/v12/": "https://github.com/rackerlabs/docs-rpc/v12/",
           "/docs/private-cloud/rpc/v11": "https://github.com/rackerlabs/docs-rpc/v11/",
           "/docs/private-cloud/rpc/v10": "https://github.com/rackerlabs/docs-rpc/v10/",
