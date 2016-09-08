@@ -75,42 +75,42 @@
         },
         {
           "description": "Redirect common annotated auth resp URL",
-          "from": "^\\/docs\\/cloud-identity\\/v2\\/developer-guide\\/#document-authentication-info/sample-auth-req-response(.*?)",
-          "to": "/docs/cloud-identity/v2/general-api-info/authentication-info/sample-auth-req-response",
+          "from": "^\\/docs\\/cloud-identity\\/v2\\/developer-guide\\/#document-authentication-info\\/sample-auth-req-response(.*?)",
+          "to": "/docs/cloud-identity/v2/general-api-info/authentication-info/sample-auth-req-response/#annotated-authentication-request-and-response",
           "rewrite": false,
           "status": 301
         },
         {
           "description": "Redirect common auth token api reference URL",
-          "from": "^\\/docs\\/cloud-identity\\/v2\\/developer-guide\\/#token-operations",
+          "from": "^\\/docs\\/cloud-identity\\/v2\\/developer-guide\\/#token-operations\\/?(.*)$",
           "to": "/docs/cloud-identity/v2/api-reference/token-operations/",
           "rewrite": false,
           "status": 301
         },
         {
           "description": "Redirect common manage auth tokens URL",
-          "from": "^\\/docs\\/cloud-identity\\/v2\\/developer-guide\\/#manage-authentication-tokens",
+          "from": "^\\/docs\\/cloud-identity\\/v2\\/developer-guide\\/#manage-authentication-tokens\\/?(.*)$",
           "to": "/docs/cloud-identity/v2/getting-started/manage-auth-tokens/",
           "rewrite": false,
           "status": 301
         },
         {
           "description": "Redirect common RBAC add user URL",
-          "from": "^\\/docs\\/cloud-identity\\/v2\\/developer-guide\\/#add-user",
+          "from": "^\\/docs\\/cloud-identity\\/v2\\/developer-guide\\/#add-user\\/?(.*)$",
           "to": "/docs/cloud-identity/v2/api-reference/users-operations/#add-user/",
           "rewrite": false,
           "status": 301
         },
         {
           "description": "Redirect common RBAC add role to user URL",
-          "from": "^\\/docs\\/cloud-identity\\/v2\\/developer-guide\\/#add-role-touser",
+          "from": "^\\/docs\\/cloud-identity\\/v2\\/developer-guide\\/#add-role-to-user\\/?(.*)$",
           "to": "/docs/cloud-identity/v2/api-reference/role-operations/#add-role-to-user/",
           "rewrite": false,
           "status": 301
         },
         {
           "description": "Redirect common RBAC delete global role from user URL",
-          "from": "^\\/docs\\/cloud-identity\\/v2\\/developer-guide\\/#delete-global-role-from-user",
+          "from": "^\\/docs\\/cloud-identity\\/v2\\/developer-guide\\/#delete-global-role-from-user\\/?(.*)$",
           "to": "/docs/cloud-identity/v2/api-reference/role-operations/#delete-global-role-from-user",
           "rewrite": false,
           "status": 301
@@ -118,7 +118,7 @@
         {
             "description": "Redirect Identity Quickstart URL",
             "from": "^\\/docs\\/cloud-identity\\/v2\\/developer-guide#document-quickstart-guide\\/?(.*)$",
-            "to": "/docs/cloud-identity/v2/getting-started/$1",
+            "to": "/docs/cloud-identity/v2/getting-started/#getting-started/$1",
             "rewrite": false,
             "status": 301
         },
@@ -172,6 +172,13 @@
             "status": 301
         },
         {
+            "description": "Redirect Cloud Databases developer-guide URL",
+            "from": "^\\/docs\\/cloud-databases\\/v1\\/developer-guide\\/(.*?)",
+            "to": "/docs/cloud-databases/v1/$1",
+            "rewrite": false,
+            "status": 301
+        },
+        {
             "description": "Redirect Cloud Files developer-guide URL",
             "from": "^\\/docs\\/cloud-files\\/v1\\/developer-guide\\/(.*?)",
             "to": "/docs/cloud-files/v1/$1",
@@ -179,9 +186,9 @@
             "status": 301
         },
         {
-            "description": "Redirect Cloud Databases developer-guide URL",
-            "from": "^\\/docs\\/cloud-databases\\/v1\\/developer-guide\\/(.*?)",
-            "to": "/docs/cloud-databases/v1/$1",
+            "description": "Redirect Cloud Keep developer-guide URL",
+            "from": "^\\/docs\\/cloud-keep\\/v1\\/developer-guide\\/(.*?)",
+            "to": "/docs/cloud-keep/v1/$1",
             "rewrite": false,
             "status": 301
         },
@@ -195,12 +202,6 @@
         {
             "from": "^\\/docs\\/cloud-metrics\\/v1\\/developer-guide\\/?(.*)$",
             "to": "/docs/metrics/v1/developer-guide/$1",
-            "rewrite": false,
-            "status": 301
-        },
-        {
-            "from": "^\\/docs\\/metrics\\/v1\\/developer-guide\\/?(.*)$",
-            "to": "/docs/metrics/v2/developer-guide/$1",
             "rewrite": false,
             "status": 301
         },
