@@ -151,6 +151,13 @@
             "status": 301
         },
         {
+            "description": "Redirect first gen servers developer-guide URL",
+            "from": "^\\/docs\\/cloud-servers\\/v1.0\\/cs-devguide\\/(.*?)",
+            "to": "/docs/cloud-servers/v2/$1",
+            "rewrite": false,
+            "status": 301
+        },
+        {
             "description": "Redirect images developer-guide URL",
             "from": "^\\/docs\\/cloud-images\\/v2\\/developer-guide\\/(.*?)",
             "to": "/docs/cloud-images/v2/$1",
