@@ -130,9 +130,16 @@
             "status": 301
         },
         {
-            "description": "Redirect load balancers developer-guide URL",
+            "description": "Redirect load balancers v1 developer-guide URL",
             "from": "^\\/docs\\/cloud-load-balancers\\/v1\\/developer-guide\\/(.*?)",
             "to": "/docs/cloud-load-balancers/v1/$1",
+            "rewrite": false,
+            "status": 301
+        },
+        {
+            "description": "Redirect load balancers v2 developer-guide URL",
+            "from": "^\\/docs\\/cloud-load-balancers\\/v2\\/developer-guide\\/(.*?)",
+            "to": "/docs/cloud-load-balancers/v2/$1",
             "rewrite": false,
             "status": 301
         },
