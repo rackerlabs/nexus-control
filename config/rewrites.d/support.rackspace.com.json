@@ -213,6 +213,76 @@
         "status": 301
       },
       {
+        "description": "Redirect /how-to/determine-if-your-server-is-a-first-generation-cloud-server/ URL to how-to/article-retired/ ",
+        "from": "^\\/how-to\\/determine-if-your-server-is-a-first-generation-cloud-server(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
+        "description": "Redirect /how-to/first-generation-to-next-generation-cloud-server-migration-faq/ URL to how-to/article-retired/ ",
+        "from": "^\\/how-to\\/first-generation-to-next-generation-cloud-server-migration-faq(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
+        "description": "Redirect /how-to/first-gen-to-next-gen-cloud-servers-migration-pre-checks/ URL to how-to/article-retired/ ",
+        "from": "^\\/how-to\\/first-gen-to-next-gen-cloud-servers-migration-pre-checks(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
+        "description": "Redirect /how-to/first-generation-cloud-servers-sample-code/ URL to how-to/article-retired/ ",
+        "from": "^\\/how-to\\/first-generation-cloud-servers-sample-code(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
+        "description": "Redirect /how-to/first-generation-end-of-life-migrations/ URL to how-to/article-retired/ ",
+        "from": "^\\/how-to\\/first-generation-end-of-life-migrations(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
+        "description": "Redirect /how-to/migrate-a-first-generation-server-to-a-next-generation-server-with-minimal-downtime/ URL to how-to/article-retired/ ",
+        "from": "^\\/how-to\\/migrate-a-first-generation-server-to-a-next-generation-server-with-minimal-downtime(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
+        "description": "Redirect /how-to/next-generation-cloud-servers-migration-considerations-and-options/ URL to how-to/article-retired/ ",
+        "from": "^\\/how-to\\/next-generation-cloud-servers-migration-considerations-and-options(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
+        "description": "Redirect /how-to/permissions-matrix-for-next-generation-cloud-servers/ URL to how-to/article-retired/ ",
+        "from": "^\\/how-to\\/permissions-matrix-for-next-generation-cloud-servers(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
+        "description": "Redirect /how-to/permissions-matrix-for-first-generation-cloud-servers/ URL to how-to/article-retired/ ",
+        "from": "^\\/how-to\\/permissions-matrix-for-first-generation-cloud-servers(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
+        "description": "Redirect /how-to/fuse-a-custom-kernel-with-pv-grub/ URL to how-to/article-retired/ ",
+        "from": "^\\/how-to\\/use-a-custom-kernel-with-pv-grub(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
         "description": "Redirect NGINX and PHP-FPM series to new /how-to/install-nginx-and-php-fpm-running-on-unix-file-sockets",
         "from": "^\\/how-to\\/installing-nginx-and-php-fpm-preface(.*)$",
         "to": "/how-to/install-nginx-and-php-fpm-running-on-unix-file-sockets/",
