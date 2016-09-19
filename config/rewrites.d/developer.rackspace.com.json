@@ -66,7 +66,14 @@
           "rewrite": false,
           "status": 301
         },
-                {
+       {
+          "description": "Redirect cloud big data developer-guide URL",
+          "from": "^\\/docs\\/cloud-big-data\\/v2\\/developer-guide\\/(.*?)",
+          "to": "/docs/cloud-big-data/v2/$1",
+          "rewrite": false,
+          "status": 301
+        },
+        {
           "description": "Redirect cloud dns developer-guide URL",
           "from": "^\\/docs\\/cloud-dns\\/v1\\/developer-guide\\/(.*?)",
           "to": "/docs/cloud-dns/v1/$1",
