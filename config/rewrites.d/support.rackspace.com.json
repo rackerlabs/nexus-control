@@ -380,5 +380,12 @@
         "rewrite": false,
         "status": 301
       },
+      {
+       "description": "Redirect multiple domains article to new permalink /how-to/serve-multiple-domains-by-using-virtual-hosts/",
+        "from": "^\\/how-to\\/how-to-serve-multiple-domains-using-virtual-hosts/(.*)$",
+        "to": "/how-to/serve-multiple-domains-by-using-virtual-hosts//",
+        "rewrite": false,
+        "status": 301
+      },
     ]
 }
