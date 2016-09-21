@@ -376,7 +376,7 @@
       {
         "description": "Redirect  databases article to new permalink /how-to/manage-cloud-databases-ha-groups-in-the-cloud-control-panel/",
         "from": "^\\/how-to\\/managing-cloud-databases-ha-groups-in-the-cloud-control-panel/(.*)$",
-        "to": "/how-to/manage-cloud-databases-ha-groups-in-the-cloud-control-panel//",
+        "to": "/how-to/manage-cloud-databases-ha-groups-in-the-cloud-control-panel/",
         "rewrite": false,
         "status": 301
       },
