@@ -386,6 +386,6 @@
         "to": "/how-to/serve-multiple-domains-by-using-virtual-hosts/",
         "rewrite": false,
         "status": 301
-      },
+      }
     ]
 }
