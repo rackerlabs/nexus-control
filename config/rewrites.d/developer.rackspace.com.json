@@ -241,7 +241,7 @@
         },
 
         {   "description": "Redirect Rackspace Monitoring developer-guide URL",
-            "from": "^\\/docs\\/cloud-monitoring\\/v1\\/developer-guide\\/?(.*)$",
+            "from": "^\\/docs\\/rackspace-monitoring\\/v1\\/developer-guide\\/?(.*)$",
             "to": "/docs/rackspace-monitoring/v1/$1",
             "rewrite": false,
             "status": 301
