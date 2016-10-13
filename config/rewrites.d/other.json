@@ -19,6 +19,16 @@
       "status": 301
     }
   ],
+  "sdk.rackspace.com": [
+    {
+      "from": "^(.*)$",
+      "to": "$1",
+      "toProtocol": "https",
+      "toHostname": "developer.rackspace.com",
+      "rewrite": false,
+      "status": 301
+    }
+  ],
   "www.getcarina.com": [
     {
       "from": "^(.*)$",
