@@ -4,8 +4,7 @@ var $ = require('jquery');
 // Homepage list toggle controls
 var tabs = {
   'cloud-hosting': '#cloud-ctrl, #cloud-display',
-  'cloud-office': '#office-ctrl, #office-display',
-  'core-user-guide': '#get-start-ctrl, #get-start-display'
+  'cloud-office': '#office-ctrl, #office-display'
 };
 
 // set the specified tab as active
@@ -32,7 +31,6 @@ function setup() {
   // add onclick handlers to the tabs
   $("#cloud-ctrl").click(setTabActive.bind(null, 'cloud-hosting', true));
   $("#office-ctrl").click(setTabActive.bind(null, 'cloud-office', true));
-  $("#get-start-ctrl").click(setTabActive.bind(null, 'core-user-guide', true));
 };
 
 module.exports = setup;
