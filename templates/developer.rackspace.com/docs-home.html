@@ -39,6 +39,12 @@
                     <span class="indicator fa fa-check"></span>
                 </a>
             </li>
+            <li class="" data-ng-click="clickFilter('cloud')" data-ng-class="{'active': isFilterActive('cloud')}">
+                <a href="">
+                    <span class="label">Cloud</span>
+                    <span class="indicator fa fa-check"></span>
+                </a>
+            </li>
             <li class="compute" data-ng-click="clickFilter('compute')" data-ng-class="{'active': isFilterActive('compute')}">
                 <a href="">
                     <span class="label">Compute</span>
@@ -51,15 +57,9 @@
                     <span class="indicator fa fa-check"></span>
                 </a>
             </li>
-            <li class="storage" data-ng-click="clickFilter('storage')" data-ng-class="{'active': isFilterActive('storage')}">
+            <li class="storagedata" data-ng-click="clickFilter('storagedata')" data-ng-class="{'active': isFilterActive('storagedata')}">
                 <a href="">
-                    <span class="label">Storage</span>
-                    <span class="indicator fa fa-check"></span>
-                </a>
-            </li>
-            <li class="data" data-ng-click="clickFilter('data')" data-ng-class="{'active': isFilterActive('data')}">
-                <a href="">
-                    <span class="label">Data</span>
+                    <span class="label">Storage &amp; Data</span>
                     <span class="indicator fa fa-check"></span>
                 </a>
             </li>
