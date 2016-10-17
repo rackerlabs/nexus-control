@@ -80,20 +80,6 @@
         "status": 301
       },
       {
-        "description": "Redirect support.rackspace.com/white-paper/systems-management-simplified-in-the-cloud-0/ URL to how-to/systems-management-simplified-in-the-cloud/ ",
-        "from": "^\\/white-paper\\/systems-management-simplified-in-the-cloud-0(.*)$",
-        "to": "/how-to/systems-management-simplified-in-the-cloud/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect support.rackspace.com/white-paper/systems-management-simplified-in-the-cloud/ URL to how-to/systems-management-simplified-in-the-cloud/ ",
-        "from": "^\\/white-paper\\/systems-management-simplified-in-the-cloud(.*)$",
-        "to": "/how-to/systems-management-simplified-in-the-cloud/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
         "description": "Redirect support.rackspace.com /how-to/generating-your-encrypted-key-in-cloud-backup/ URL to how-to/generate-your-encrypted-key-in-cloud-backup/ ",
         "from": "^\\/how-to\\/generating-your-encrypted-key-in-cloud-backup(.*)$",
         "to": "/how-to/generate-your-encrypted-key-in-cloud-backup/",
@@ -190,7 +176,7 @@
         "to": "/how-to/alarm-language-in-rackspace-monitoring/",
         "rewrite": false,
         "status": 301
-      }, 
+      },
       {
         "description": "Redirect /how-to/general-purpose-cloud-servers-how-to-articles-and-other-resources/ URL to /how-to/cloud-servers-how-to-articles-other-resources",
         "from": "^\\/how-to\\/general-purpose-cloud-servers-how-to-articles-and-other-resources(.*)$",
