@@ -199,6 +199,20 @@
         "status": 301
       },
       {
+         "description": "Redirect support.rackspace.com/white-paper/systems-management-simplified-in-the-cloud-0/ URL to how-to/article-retired/ ",
+         "from": "^\\/white-paper\\/systems-management-simplified-in-the-cloud-0(.*)$",
+         "to": "/how-to/article-retired/",
+         "rewrite": false,
+         "status": 301
+      },
+      {
+        "description": "Redirect support.rackspace.com/white-paper/systems-management-simplified-in-the-cloud/ URL to how-to/article-retired/ ",
+        "from": "^\\/white-paper\\/systems-management-simplified-in-the-cloud(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
         "description": "Redirect /how-to/determine-if-your-server-is-a-first-generation-cloud-server/ URL to how-to/article-retired/ ",
         "from": "^\\/how-to\\/determine-if-your-server-is-a-first-generation-cloud-server(.*)$",
         "to": "/how-to/article-retired/",
