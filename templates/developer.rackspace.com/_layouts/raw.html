@@ -22,14 +22,12 @@
             {% set cssUrl = deconst.assets.assets_dist_css_main_css %}
         {% endif %}
         <link rel="stylesheet" href="{{ cssUrl }}">
-
+        {% include "_includes/gtm-script.html" %}
         {% block headScripts %}{% endblock %}
     {% endblock %}
 </head>
 <body class="{% block bodyClass %}{% endblock %}" data-drc-code-sample-parent>
+    {% include "_includes/gtm-noscript.html" %}
     {% block body %}{% endblock %}
-    {% include "_includes/rackspace-client.html" %}
-    {% include "_includes/ga.html" %}
-    {% include "_includes/tealium.html" %}
 </body>
 </html>
