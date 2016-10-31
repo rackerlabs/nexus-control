@@ -46,7 +46,7 @@
       },
       {
           "description": "Enable email archiving",
-          "from": "\\/support.rackspace.com\\/how-to/enable-email-archiving(.*)$",
+          "from": "\\/how-to\\/enable-email-archiving(.*)$",
           "to": "/how-to/enable-email-archiving-cloud-office-control-panel/",
           "rewrite": false,
           "status": 301
