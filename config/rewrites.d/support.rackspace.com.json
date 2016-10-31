@@ -45,6 +45,13 @@
           "status": 301
       },
       {
+          "description": "Enable email archiving",
+          "from": "\\/how-to\\/enable-email-archiving(.*)$",
+          "to": "/how-to/enable-email-archiving-cloud-office-control-panel/",
+          "rewrite": false,
+          "status": 301
+      },
+      {
         "description": "Redirect /knowledge_center/what-is-pci-compliance URL to /how-to/are-cloud-servers-pci-dss-compliant/",
         "from": "^\\/knowledge_center\\/article\\/what-is-pci-compliance(.*)$",
         "to": "/how-to/are-cloud-servers-pci-dss-compliant/",
