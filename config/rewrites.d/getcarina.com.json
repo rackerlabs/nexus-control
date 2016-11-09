@@ -20,8 +20,8 @@
           "from": "^\\/betadocs\\/(.?)$",
           "to": "/getcarina.com/build-38da3ce156/$1",
           "toHostname": "staging.developer.rackspace.com",
-          "rewrite": true,
-          "status": 200
+          "rewrite": false,
+          "status": 302
         },
         {
           "from": "\\/docs\\/tutorials\\/introduction-docker-swarm\\/?",
