@@ -400,6 +400,13 @@
         "to": "/how-to/upgrading-to-exchange-2016/",
         "rewrite": false,
         "status": 301
-      }
+      },
+      {
+        "description": "Redirect /how-to/migrating-an-application-built-on-a-lamp-stack-from-amazon-web-services/ URL to how-to/article-retired/ ",
+        "from": "^\\/how-to\\/migrating-an-application-built-on-a-lamp-stack-from-amazon-web-services/(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
+      }   
     ]
 }
