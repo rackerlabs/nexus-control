@@ -17,11 +17,11 @@
             "status": 302
         },
         {
-          "from": "\\/betadocs\\/(.?)$",
-          "to": "/getcarina.com/build-38da3ce156/$1",
-          "toHostname": "staging.developer.rackspace.com",
-          "rewrite": false,
-          "status": 302
+            "from": "\\/betadocs\\/(.*)$",
+            "to": "/getcarina.com/build-38da3ce156/$1",
+            "toHostname": "staging.developer.rackspace.com",
+            "rewrite": false,
+            "status": 302
         },
         {
           "from": "\\/docs\\/tutorials\\/introduction-docker-swarm\\/?",
