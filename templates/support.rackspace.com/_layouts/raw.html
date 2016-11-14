@@ -12,23 +12,14 @@
 
         <link rel="canonical" href="{{ siteUrl }}">
         <link rel="stylesheet" href="{{ cssUrl }}">
-
+        {% include "_includes/gtm-script.html" %}
         <script src="https://c4d62906a15616653758-49dececd4e3f03377b7f33fac7abfae8.ssl.cf5.rackcdn.com/prod/raxheaderservice.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script type="text/javascript" src="{{ jsUrl }}"></script>
     {% endblock %}
 </head>
 <body>
+  {% include "_includes/gtm-noscript.html" %}
   {% block body %}{% endblock %}
-        <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-81189538-1', 'auto');
-        ga('send', 'pageview');
-
-        </script>
 </body>
 </html>
