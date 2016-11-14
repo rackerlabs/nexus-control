@@ -407,6 +407,13 @@
         "to": "/how-to/article-retired/",
         "rewrite": false,
         "status": 301
-      }   
+      },
+      {
+        "description": "Redirect Configure MS SQL Server for remote access to Troubleshoot remote access to SQL Server",
+        "from": "^\\/how-to\\/configuring-ms-sql-server-for-remote-access(.*)$",
+        "to": "/how-to/troubleshoot-remote-access-to-sql-server/",
+        "rewrite": false,
+        "status": 301
+      }
     ]
 }
