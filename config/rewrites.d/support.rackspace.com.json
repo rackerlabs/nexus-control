@@ -242,7 +242,7 @@
       },
       {
         "description": "Redirect how-to/add-another-wordpress-site-to-an-existing-cloud-orchestration-stack/ URL to how-to/article-retired/ ",
-        "from": "^\\/how-to\\/dd-another-wordpress-site-to-an-existing-cloud-orchestration-stack(.*)$",
+        "from": "^\\/how-to\\/add-another-wordpress-site-to-an-existing-cloud-orchestration-stack(.*)$",
         "to": "/how-to/article-retired/",
         "rewrite": false,
         "status": 301
