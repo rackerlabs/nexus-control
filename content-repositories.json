@@ -8,7 +8,6 @@
   { "kind": "github", "project": "rcbops/rpc-openstack", "branches": ["master", "mitaka-13.0"] },
   { "kind": "github", "project": "rackerlabs/rackspace-how-to" },
   { "kind": "github", "project": "rackerlabs/docs-core-infra-user-guide" },
-  { "kind": "github", "project": "rackerlabs/docs-cloud-keep" },
   { "kind": "github", "project": "rackerlabs/docs-cloud-backup" },
   { "kind": "github", "project": "rackerlabs/docs-cloud-block-storage" },
   { "kind": "github", "project": "rackerlabs/docs-cloud-cdn" },

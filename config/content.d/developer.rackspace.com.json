@@ -28,7 +28,6 @@
           "/docs/metrics/v2/": "https://github.com/rackerlabs/docs-cloud-metrics/",
           "/docs/cloud-identity/v2/": "https://github.com/rackerlabs/docs-cloud-identity/",
           "/docs/rackspace-monitoring/v1/": "https://github.com/rackerlabs/docs-cloud-monitoring/",
-          "/docs/cloud-keep/v1/": "https://github.com/rackerlabs/docs-cloud-keep/",
           "/docs/cloud-feeds/v1/developer-guide/": "https://github.com/rackerlabs/standard-usage-schemas",
           "/docs/dedicated-load-balancers/v2/": "https://github.com/rackerlabs/docs-dedicated-networking/",
           "/docs/glossary/": "https://github.com/rackerlabs/docs-rackspace/",

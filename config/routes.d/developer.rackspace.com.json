@@ -36,7 +36,6 @@
             "^/docs/metrics/v2/": "user-guide.html",
             "^/docs/cloud-identity/v2/": "user-guide.html",
             "^/docs/rackspace-monitoring/v1/": "user-guide.html",
-            "^/docs/cloud-keep/v1/": "user-guide.html",
             "^/docs/cloud-feeds/v1/developer-guide/": "docs-singlepage.html",
             "^/docs/dedicated-load-balancers/v2/": "user-guide.html",
             "^/docs/glossary": "docs-singlepage.html",
