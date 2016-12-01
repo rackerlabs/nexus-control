@@ -81,5 +81,50 @@
 			"rewrite": false,
 			"status": 301
 		}
+	   {
+			"description": "Reach Cloud Monitoring Check types Link",
+			"from": "^/cm/api/v1.0/cm-devguide/content/service-check-types.html",
+			"to": "docs/rackspace-monitoring/v1/api-reference/check-type-operations/#check-types",
+			"toProtocol": "https",
+			"toHostname": "developer.rackspace.com",
+			"rewrite": false,
+			"status": 301
+		},
+	   {
+			"description": "Reach Cloud Monitoring Concepts Link",
+			"from": "^/cm/api/v1.0/cm-devguide/content/Concepts.html",
+			"to": "docs/rackspace-monitoring/v1/getting-started/concepts/",
+			"toProtocol": "https",
+			"toHostname": "developer.rackspace.com",
+			"rewrite": false,
+			"status": 301
+		},
+	   {
+			"description": "Reach Cloud Monitoring Overview Link",
+			"from": "^/cm/api/v1.0/cm-devguide/content/overview.html",
+			"to": "docs/rackspace-monitoring/v1/",
+			"toProtocol": "https",
+			"toHostname": "developer.rackspace.com",
+			"rewrite": false,
+			"status": 301
+		},
+	   {
+			"description": "Reach Cloud Monitoring Data Granularity Link",
+			"from": "^/cm/api/v1.0/cm-devguide/content/metrics-api.html#metrics-data-granularity",
+			"to": "docs/rackspace-monitoring/v1/api-reference/metrics-operations/#data-granularity",
+			"toProtocol": "https",
+			"toHostname": "developer.rackspace.com",
+			"rewrite": false,
+			"status": 301
+		},
+	   {
+			"description": "Reach Cloud Monitoring Metrics API Link",
+			"from": "^/cm/api/v1.0/cm-devguide/content/metrics-api.html",
+			"to": "docs/rackspace-monitoring/v1/api-reference/metrics-operations/#metrics",
+			"toProtocol": "https",
+			"toHostname": "developer.rackspace.com",
+			"rewrite": false,
+			"status": 301
+		},
 	]
 }
