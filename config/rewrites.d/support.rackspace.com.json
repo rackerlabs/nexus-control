@@ -414,6 +414,13 @@
         "to": "/how-to/troubleshoot-remote-access-to-sql-server/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "Retire Use enum metrics article",
+        "from": "^\\/how-to\\/use-enum-metrics(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
