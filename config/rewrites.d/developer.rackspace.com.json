@@ -1,17 +1,20 @@
 {
     "developer.rackspace.com": [
         {
-            "from": "^\\/docs\\/user-guides\\/?$",
-            "to": "/docs/user-guides/infrastructure/",
-            "rewrite": false,
-            "status": 301
-        },
-        {
             "description": "Force trailing slash",
             "from": "\\/([a-zA-Z0-9%_-]*?[^/])$",
             "to": "/$1/",
             "rewrite": false,
             "status": 301
+        },
+        {
+            "from": "^\\/logs\\/?$",
+            "to": "/",
+            "toProtocol": "https",
+            "toHostname": "iad1-10096-kibana.es.objectrocket.com",
+            "toPort": "20096",
+            "rewrite": false,
+            "status": 302
         },
         {
             "description": "Blog: Remove .html extension",
@@ -43,6 +46,12 @@
         {
             "from": "^\\/sdks\\/?$",
             "to": "/docs/#sdks",
+            "rewrite": false,
+            "status": 301
+        },
+        {
+            "from": "^\\/docs\\/user-guides\\/?$",
+            "to": "/docs/user-guides/infrastructure/",
             "rewrite": false,
             "status": 301
         },
@@ -268,15 +277,6 @@
             "status": 301
         },
         {
-            "from": "^\\/logs\\/?$",
-            "to": "/",
-            "toProtocol": "https",
-            "toHostname": "iad1-10096-kibana.es.objectrocket.com",
-            "toPort": "20096",
-            "rewrite": false,
-            "status": 302
-        },
-        {
           "description": "Redirect vCenter doc to URL for Managed VMWare services",
           "from": "^\\/docs/private-cloud\\/dedicated-vcloud\\/vcenter-handbook\\/?(.*)$",
           "to": "/docs/managed-vmware-services/vcenter/$1",
@@ -308,6 +308,13 @@
           "description": "Redirect RPC URL to current version",
           "from": "^/docs/private-cloud/rpc/?$",
           "to": "/docs/private-cloud/rpc/v12",
+          "rewrite:": false,
+          "status": 301
+        },
+        {
+          "description": "Redirect RPC URL to current version",
+          "from": "^/docs/private-cloud/rpc/?$",
+          "to": "/docs/private-cloud/rpc/v13",
           "rewrite:": false,
           "status": 301
         },
