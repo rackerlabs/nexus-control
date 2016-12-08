@@ -11,7 +11,7 @@
 		},
 		{
 			"description": "autoscale",
-			"from": "^\\/cas\\/api\\/v1.0\\/autoscale-devguide\\/?(.*)$",
+			"from": "^/cas/api/v1.0/autoscale-devguide/?(.*)$",
 			"to": "/docs/autoscale/v1/developer-guide/#document-index",
 			"toProtocol": "https",
 			"toHostname": "developer.rackspace.com",
@@ -20,7 +20,7 @@
 		},
 		{
 			"description": "cloud backup",
-			"from": "^\\/rcbu\\/api\\/v1.0\\/rcbu-devguide\\/?(.*)$",
+			"from": "^/rcbu/api/v1.0/rcbu-devguide/?(.*)$",
 			"to": "/docs/cloud-backup/v1/",
 			"toProtocol": "https",
 			"toHostname": "developer.rackspace.com",
@@ -38,7 +38,7 @@
 		},
 		{
 			"description": "cloud big data",
-			"from": "^\\/cbd\\/api\\/v1.0\\/?(.*)$",
+			"from": "^/cbd/api/v1.0/?(.*)$",
 			"to": "/docs/cloud-big-data/v2/",
 			"toProtocol": "https",
 			"toHostname": "developer.rackspace.com",
@@ -47,7 +47,7 @@
 		},
 		{
 			"description": "cloud block storage",
-			"from": "^\\/cbs\\/api\\/v1.0\\/?(.*)$",
+			"from": "^/cbs/api/v1.0/?(.*)$",
 			"to": "/docs/cloud-block-storage/v1/",
 			"toProtocol": "https",
 			"toHostname": "developer.rackspace.com",
@@ -56,7 +56,7 @@
 		},
 		{
 			"description": "CDN",
-			"from": "^/cdn/api/v1.0\\/?(.*)$",
+			"from": "^/cdn/api/v1.0/?(.*)$",
 			"to": "/docs/cdn/v1/",
 			"toProtocol": "https",
 			"toHostname": "developer.rackspace.com",
@@ -65,7 +65,7 @@
 		},
 		{
 			"description": "cloud databases",
-			"from": "^\\/cdb\\/api\\/v1.0\\/?(.*)$",
+			"from": "^/cdb/api/v1.0/?(.*)$",
 			"to": "/docs/cloud-databases/v1/",
 			"toProtocol": "https",
 			"toHostname": "developer.rackspace.com",
@@ -74,7 +74,7 @@
 		},
 		{
 			"description": "cloud DNS",
-			"from": "^\\/cdns\\/api\\/v1.0\\/?(.*)$",
+			"from": "^/cdns/api/v1.0/?(.*)$",
 			"to": "docs/cloud-dns/v1/",
 			"toProtocol": "https",
 			"toHostname": "developer.rackspace.com",
@@ -92,7 +92,7 @@
 		},
 		{
 			"description": "cloud files",
-			"from": "^\\/files\\/api\\/v1\\/?(.*)$",
+			"from": "^/files/api/v1/?(.*)$",
 			"to": "/docs/cloud-files/v1/",
 			"toProtocol": "https",
 			"toHostname": "developer.rackspace.com",
@@ -101,7 +101,7 @@
 		},
 		{
 			"description": "cloud identity",
-			"from": "^\\/auth\\/api\\/v2.0\\/?(.*)$",
+			"from": "^/auth/api/v2.0/?(.*)$",
 			"to": "/docs/cloud-identity/v2/",
 			"toProtocol": "https",
 			"toHostname": "developer.rackspace.com",
@@ -110,7 +110,7 @@
 		},
 		{
 			"description": "cloud images",
-			"from": "^\\/images\\/api\\/v2\\/?(.*)$",
+			"from": "^/images/api/v2/?(.*)$",
 			"to": "/docs/cloud-images/v2/",
 			"toProtocol": "https",
 			"toHostname": "developer.rackspace.com",
@@ -119,7 +119,7 @@
 		},
 		{
 			"description": "cloud load balancers",
-			"from": "^\\/loadbalancers\\/api\\/v1.0\\/?(.*)$",
+			"from": "^/loadbalancers/api/v1.0/?(.*)$",
 			"to": "/docs/cloud-load-balancers/v1/",
 			"toProtocol": "https",
 			"toHostname": "developer.rackspace.com",
@@ -128,7 +128,7 @@
 		},
 		{
 			"description": "Cloud Metrics",
-			"from": "^\\/cmet\\/api\\/v1.0\\/?(.*)$",
+			"from": "^/cmet/api/v1.0/?(.*)$",
 			"to": "/docs/metrics/v2/",
 			"toProtocol": "https",
 			"toHostname": "developer.rackspace.com",
@@ -200,7 +200,7 @@
 		},
 		{
 			"description": "cloud networks",
-			"from": "^\\/networks\\/api\\/v2\\/?(.*)$",
+			"from": "^/networks/api/v2/?(.*)$",
 			"to": "/docs/cloud-networks/v2/",
 			"toProtocol": "https",
 			"toHostname": "developer.rackspace.com",
@@ -218,7 +218,7 @@
 		},
 		{
 			"description": "orchestration API",
-			"from": "^\\/orchestration\\/api\\/v1\\/?(.*)$",
+			"from": "^/orchestration/api/v1/?(.*)$",
 			"to": "/docs/cloud-orchestration/v1/",
 			"toProtocol": "https",
 			"toHostname": "developer.rackspace.com",
@@ -227,7 +227,7 @@
 		},
 		{
 			"description": "Rackconnect",
-			"from": "^\\/rackconnect\\/api\\/v3\\/?(.*)$",
+			"from": "^/rackconnect/api/v3/?(.*)$",
 			"to": "http://docs.rcv3.apiary.io/",
 			"toProtocol": "https",
 			"toHostname": "developer.rackspace.com",
@@ -236,7 +236,7 @@
 		},
 		{
 			"description": "cloud servers legacy",
-			"from": "^\\/servers\\/api\\/v1.0\\/?(.*)$",
+			"from": "^/servers/api/v1.0/?(.*)$",
 			"to": "/docs/cloud-servers/v2/",
 			"toProtocol": "https",
 			"toHostname": "developer.rackspace.com",
@@ -245,7 +245,7 @@
 		},
 		{
 			"description": "cloud servers",
-			"from": "^\\/servers\\/api\\/v2\\/?(.*)$",
+			"from": "^/servers/api/v2/?(.*)$",
 			"to": "/docs/#docs-cloud-servers-legacy",
 			"toProtocol": "https",
 			"toHostname": "developer.rackspace.com",
