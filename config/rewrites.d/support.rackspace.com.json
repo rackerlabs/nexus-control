@@ -421,6 +421,13 @@
         "to": "/how-to/article-retired/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "Redirect Rackspace Cloud Essentials image limitations article",
+        "from": "^\\/how-to\\/rackspace-cloud-essentials-cloud-server-image-limitations(.*)$",
+        "to": "/how-to/cloud-server-image-limitations/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
