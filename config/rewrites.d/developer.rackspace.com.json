@@ -310,6 +310,13 @@
           "to": "/docs/private-cloud/rpc/v12",
           "rewrite:": false,
           "status": 301
+        },        
+        {
+          "description": "Redirect RPC Admin URL to OpenStack Admin Guide",
+          "from": "^/docs/private-cloud/rpc/([a-zA-Z0-9%_-]*)/rpc-admin/?(.*)$",
+          "to": "http://docs.openstack.org/admin-guide/index.html",
+          "rewrite:": false,
+          "status": 301
         },
         {
           "description": "Redirect RPC URL to current version",
