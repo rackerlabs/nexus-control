@@ -428,6 +428,6 @@
         "to": "/how-to/cloud-server-image-limitations/",
         "rewrite": false,
         "status": 301
-      },
+      }
     ]
 }
