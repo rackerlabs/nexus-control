@@ -428,6 +428,13 @@
         "to": "/how-to/cloud-server-image-limitations/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "Retire RPC software package update 20 march 2013 article",
+        "from": "^\\/how-to\\/rackspace-private-cloud-software-package-update-20-march-2013(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
