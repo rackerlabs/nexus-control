@@ -435,6 +435,13 @@
         "to": "/how-to/article-retired/",
         "rewrite": false,
         "status": 301
+      },
+          {
+        "description": "Retire RPC spheres of support article",
+        "from": "^\\/how-to\\/rackspace-private-cloud-spheres-of-support(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
