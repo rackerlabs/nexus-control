@@ -12,7 +12,7 @@
 		{
 			"description": "cloud servers legacy",
 			"from": "^/servers/api/v1.0/cs-devguide",
-			"to": "/docs/#docs-cloud-servers-legacy",
+			"to": "/docs/cloud-servers/v2/",
 			"toProtocol": "https",
 			"toHostname": "developer.rackspace.com",
 			"rewrite": false,
@@ -102,7 +102,7 @@
 	        {
 			"description": "Reach Cloud Monitoring Data Granularity Link",
 			"from": "^/cm/api/v1.0/cm-devguide/content/metrics-api.html#metrics-data-granularity",
-			"to": "/docs/rackspace-monitoring/v1/api-reference/metrics-operations/#data",
+			"to": "/docs/rackspace-monitoring/v1/api-reference/metrics-operations",
 			"toProtocol": "https",
 			"toHostname": "developer.rackspace.com",
 			"rewrite": false,
@@ -111,7 +111,7 @@
 	        {
 			"description": "Reach Cloud Monitoring Metrics API Link",
 			"from": "^/cm/api/v1.0/cm-devguide/content/metrics-api.html",
-			"to": "/docs/rackspace-monitoring/v1/api-reference/metrics-operations/#metrics-api-operations",
+			"to": "/docs/rackspace-monitoring/v1/api-reference/metrics-operations",
 			"toProtocol": "https",
 			"toHostname": "developer.rackspace.com",
 			"rewrite": false,
