@@ -5,9 +5,9 @@
           "from": "^\\/$",
           "to": "/docs/",
           "toProtocol": "https",
-			    "toHostname": "developer.rackspace.com",
-			    "rewrite": false,
-			    "status": 302
+	  "toHostname": "developer.rackspace.com",
+	  "rewrite": false,
+	  "status": 302
       },
       {
           "description": "Cloud Servers redirect",
