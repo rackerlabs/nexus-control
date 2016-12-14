@@ -12,7 +12,7 @@
 		{
 			"description": "autoscale",
 			"from": "^/cas/api/v1.0/autoscale-devguide/?(.*)$",
-			"to": "/docs/autoscale/v1/developer-guide/#document-index",
+			"to": "/docs/autoscale/v1/developer-guide/",
 			"toProtocol": "https",
 			"toHostname": "developer.rackspace.com",
 			"rewrite": false,
@@ -246,7 +246,7 @@
 		{
 			"description": "cloud servers",
 			"from": "^/servers/api/v2/?(.*)$",
-			"to": "/docs/#docs-cloud-servers-legacy",
+			"to": "/docs/cloud-servers/v2/",
 			"toProtocol": "https",
 			"toHostname": "developer.rackspace.com",
 			"rewrite": false,
@@ -255,7 +255,7 @@
 		{
 			"description": "Rackspace Private Cloud Operator and User Guide, v10",
 			"from": "^/rpc/api/v10/bk-rpc-guide",
-			"to": "/docs/private-cloud/rpc/v10rpc-v10-op-user-guide/rpc-access/",
+			"to": "/docs/",
 			"toProtocol": "https",
 			"toHostname": "developer.rackspace.com",
 			"rewrite": false,
