@@ -2,122 +2,120 @@
   "api.rackspace.com": [
       {
           "description": "Redirect root traffic to developer.rs.com/docs/",
-          "from": "^/$",
+          "from": "^\\/$",
           "to": "/docs/",
-          "toProtocol": "https",
-			    "toHostname": "developer.rackspace.com",
-			    "rewrite": false,
-			    "status": 302
+          "rewrite": false,
+          "status": 301
       },
       {
           "description": "Cloud Servers redirect",
           "from": "^\\/(api-ref(\\.html)?)?$",
-          "to": "/docs/cloud-servers/v2/developer-guide/#api-reference",
+          "to": "/docs/cloud-servers/v2/developer-guide/",
           "rewrite": false,
           "status": 301
       },
       {
           "description": "Cloud Servers extensions redirect",
           "from": "^\\/api-ref-servers-ext(\\.html)?$",
-          "to": "/docs/cloud-servers/v2/developer-guide/#api-reference",
+          "to": "/docs/cloud-servers/v2/developer-guide/",
           "rewrite": false,
           "status": 301
       },
       {
           "description": "Auto Scale API v1.0 redirect",
           "from": "^\\/api-ref-auto-scale(\\.html)?$",
-          "to": "/docs/autoscale/v1/developer-guide/#api-reference",
+          "to": "/docs/autoscale/v1/developer-guide/",
           "rewrite": false,
           "status": 301
       },
       {
           "description": "Cloud Backup redirect",
           "from": "^\\/api-ref-backup(\\.html)?$",
-          "to": "/docs/cloud-backup/v1/developer-guide/#api-reference",
+          "to": "/docs/cloud-backup/v1/developer-guide/",
           "rewrite": false,
           "status": 301
       },
       {
           "description": "Cloud Big Data API v2 redirect",
           "from": "^\\/api-ref-big-data-v2(\\.html)?",
-          "to": "/docs/cloud-big-data/v2/developer-guide/#api-reference",
+          "to": "/docs/cloud-big-data/v2/developer-guide/",
           "rewrite": false,
           "status": 301
       },
       {
           "description": "Cloud Block Storage redirect",
           "from": "^\\/api-ref-blockstorage(\\.html)?",
-          "to": "/docs/cloud-block-storage/v1/developer-guide/#api-reference",
+          "to": "/docs/cloud-block-storage/v1/developer-guide/",
           "rewrite": false,
           "status": 301
       },
       {
           "description": "Cloud Databases redirect",
           "from": "^\\/api-ref-databases(\\.html)?",
-          "to": "/docs/cloud-databases/v1/developer-guide/#api-reference",
+          "to": "/docs/cloud-databases/v1/developer-guide/",
           "rewrite": false,
           "status": 301
       },
       {
           "description": "Cloud DNS redirect",
           "from": "^\\/api-ref-dns(\\.html)?",
-          "to": "/docs/cloud-dns/v1/developer-guide/#api-reference",
+          "to": "/docs/cloud-dns/v1/developer-guide/",
           "rewrite": false,
           "status": 301
       },
       {
           "description": "Cloud Files redirect",
           "from": "^\\/api-ref-files(\\.html)?",
-          "to": "/docs/cloud-files/v1/developer-guide/#api-reference",
+          "to": "/docs/cloud-files/v1/developer-guide/",
           "rewrite": false,
           "status": 301
       },
       {
           "description": "Cloud Images redirect",
           "from": "^\\/api-ref-images(\\.html)?",
-          "to": "/docs/cloud-images/v2/developer-guide/#api-reference",
+          "to": "/docs/cloud-images/v2/developer-guide/",
           "rewrite": false,
           "status": 301
       },
       {
           "description": "Cloud Load Balancers redirect",
           "from": "^\\/api-ref-load-balancers(\\.html)?",
-          "to": "/docs/cloud-load-balancers/v1/developer-guide/#api-reference",
+          "to": "/docs/cloud-load-balancers/v1/developer-guide/",
           "rewrite": false,
           "status": 301
       },
       {
           "description": "Cloud Monitoring redirect",
           "from": "^\\/api-ref-monitoring(\\.html)?",
-          "to": "/docs/cloud-monitoring/v1/developer-guide/#document-api-reference",
+          "to": "/docs/cloud-monitoring/v1/developer-guide/",
           "rewrite": false,
           "status": 301
       },
       {
           "description": "Cloud Networks redirect",
           "from": "^\\/api-ref-networks(\\.html)?",
-          "to": "/docs/cloud-networks/v2/developer-guide/#document-api-reference",
+          "to": "/docs/cloud-networks/v2/developer-guide/",
           "rewrite": false,
           "status": 301
       },
       {
           "description": "Cloud Orchestration redirect",
           "from": "^\\/api-ref-orchestration(\\.html)?",
-          "to": "/docs/cloud-orchestration/v1/developer-guide/#document-api-reference",
+          "to": "/docs/cloud-orchestration/v1/developer-guide/",
           "rewrite": false,
           "status": 301
       },
       {
           "description": "Cloud Queues redirect",
           "from": "^\\/api-ref-queues(\\.html)?",
-          "to": "/docs/cloud-queues/v1/developer-guide/#document-api-reference",
+          "to": "/docs/cloud-queues/v1/developer-guide/",
           "rewrite": false,
           "status": 301
       },
       {
           "description": "Rackspace CDN redirect",
           "from": "^\\/api-ref-raxCDN(\\.html)?",
-          "to": "/docs/cdn/v1/developer-guide/#document-api-reference",
+          "to": "/docs/cdn/v1/developer-guide/",
           "rewrite": false,
           "status": 301
       },
@@ -131,7 +129,7 @@
       {
           "description": "Identity API redirect",
           "from": "^\\/api-ref-identity(\\.html)?",
-          "to": "/docs/cloud-identity/v2/developer-guide/#document-api-reference",
+          "to": "/docs/cloud-identity/v2/developer-guide/",
           "rewrite": false,
           "status": 301
       },
