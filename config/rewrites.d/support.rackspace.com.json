@@ -445,7 +445,7 @@
       },
           {
         "description": "Retire detailed permissions matrix for Cloud Big Data v1",
-        "from": "^\\/how-to\\/detailed-permissions-matrix-for-cloud-big-data(.*)$",
+        "from": "^\\/how-to\\/detailed-permissions-matrix-for-cloud-big-data(\/*.|)$",
         "to": "/how-to/article-retired/",
         "rewrite": false,
         "status": 301
