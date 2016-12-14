@@ -10,9 +10,18 @@
 			"status": 302
 		},
 		{
-			"description": "cloud servers legacy",
-			"from": "^/servers/api/v1.0/cs-devguide",
-			"to": "/docs/#docs-cloud-servers-legacy",
+			"description": "autoscale",
+			"from": "^/cas/api/v1.0/autoscale-devguide/?(.*)$",
+			"to": "/docs/autoscale/v1/developer-guide/",
+			"toProtocol": "https",
+			"toHostname": "developer.rackspace.com",
+			"rewrite": false,
+			"status": 301
+		},
+		{
+			"description": "cloud backup",
+			"from": "^/rcbu/api/v1.0/rcbu-devguide/?(.*)$",
+			"to": "/docs/cloud-backup/v1/",
 			"toProtocol": "https",
 			"toHostname": "developer.rackspace.com",
 			"rewrite": false,
@@ -21,16 +30,52 @@
 		{
 			"description": "cloud big data v1",
 			"from": "^/cbd/api/v1.0/cbd-devguide",
-			"to": "/docs/cloud-big-data/v2/developer-guide/#release-notes",
+			"to": "/docs/cloud-big-data/v2/release-notes/",
 			"toProtocol": "https",
 			"toHostname": "developer.rackspace.com",
 			"rewrite": false,
 			"status": 301
 		},
 		{
-			"description": "orchestration templates user guide",
-			"from": "^/orchestration/api/v1/orchestration-templates-devguide",
-			"to": "/docs/user-guides/orchestration/",
+			"description": "cloud big data",
+			"from": "^/cbd/api/v1.0/?(.*)$",
+			"to": "/docs/cloud-big-data/v2/",
+			"toProtocol": "https",
+			"toHostname": "developer.rackspace.com",
+			"rewrite": false,
+			"status": 301
+		},
+		{
+			"description": "cloud block storage",
+			"from": "^/cbs/api/v1.0/?(.*)$",
+			"to": "/docs/cloud-block-storage/v1/",
+			"toProtocol": "https",
+			"toHostname": "developer.rackspace.com",
+			"rewrite": false,
+			"status": 301
+		},
+		{
+			"description": "CDN",
+			"from": "^/cdn/api/v1.0/?(.*)$",
+			"to": "/docs/cdn/v1/",
+			"toProtocol": "https",
+			"toHostname": "developer.rackspace.com",
+			"rewrite": false,
+			"status": 301
+		},
+		{
+			"description": "cloud databases",
+			"from": "^/cdb/api/v1.0/?(.*)$",
+			"to": "/docs/cloud-databases/v1/",
+			"toProtocol": "https",
+			"toHostname": "developer.rackspace.com",
+			"rewrite": false,
+			"status": 301
+		},
+		{
+			"description": "cloud DNS",
+			"from": "^/cdns/api/v1.0/?(.*)$",
+			"to": "docs/cloud-dns/v1/",
 			"toProtocol": "https",
 			"toHostname": "developer.rackspace.com",
 			"rewrite": false,
@@ -46,18 +91,45 @@
 			"status": 301
 		},
 		{
-			"description": "Rackspace Private Cloud Operator and User Guide, v10",
-			"from": "^/rpc/api/v10/bk-rpc-guide",
-			"to": "/docs/private-cloud/rpc/v10rpc-v10-op-user-guide/rpc-access/",
+			"description": "cloud files",
+			"from": "^/files/api/v1/?(.*)$",
+			"to": "/docs/cloud-files/v1/",
 			"toProtocol": "https",
 			"toHostname": "developer.rackspace.com",
 			"rewrite": false,
 			"status": 301
 		},
 		{
-			"description": "Rackspace Private Cloud Powered by Red Hat Features and Architecture",
-			"from": "^/rpc/api/rh1/bk-rpcr-refarch",
-			"to": "/docs/private-cloud/red-hat/rpcr-arch/",
+			"description": "cloud identity",
+			"from": "^/auth/api/v2.0/?(.*)$",
+			"to": "/docs/cloud-identity/v2/",
+			"toProtocol": "https",
+			"toHostname": "developer.rackspace.com",
+			"rewrite": false,
+			"status": 301
+		},
+		{
+			"description": "cloud images",
+			"from": "^/images/api/v2/?(.*)$",
+			"to": "/docs/cloud-images/v2/",
+			"toProtocol": "https",
+			"toHostname": "developer.rackspace.com",
+			"rewrite": false,
+			"status": 301
+		},
+		{
+			"description": "cloud load balancers",
+			"from": "^/loadbalancers/api/v1.0/?(.*)$",
+			"to": "/docs/cloud-load-balancers/v1/",
+			"toProtocol": "https",
+			"toHostname": "developer.rackspace.com",
+			"rewrite": false,
+			"status": 301
+		},
+		{
+			"description": "Cloud Metrics",
+			"from": "^/cmet/api/v1.0/?(.*)$",
+			"to": "/docs/metrics/v2/",
 			"toProtocol": "https",
 			"toHostname": "developer.rackspace.com",
 			"rewrite": false,
@@ -102,7 +174,7 @@
 	        {
 			"description": "Reach Cloud Monitoring Data Granularity Link",
 			"from": "^/cm/api/v1.0/cm-devguide/content/metrics-api.html#metrics-data-granularity",
-			"to": "/docs/rackspace-monitoring/v1/api-reference/metrics-operations/#data",
+			"to": "/docs/rackspace-monitoring/v1/api-reference/metrics-operations",
 			"toProtocol": "https",
 			"toHostname": "developer.rackspace.com",
 			"rewrite": false,
@@ -111,7 +183,7 @@
 	        {
 			"description": "Reach Cloud Monitoring Metrics API Link",
 			"from": "^/cm/api/v1.0/cm-devguide/content/metrics-api.html",
-			"to": "/docs/rackspace-monitoring/v1/api-reference/metrics-operations/#metrics-api-operations",
+			"to": "/docs/rackspace-monitoring/v1/api-reference/metrics-operations/",
 			"toProtocol": "https",
 			"toHostname": "developer.rackspace.com",
 			"rewrite": false,
@@ -121,6 +193,78 @@
 			"description": "Cloud Monitoring Developer Guide",
 			"from": "^/cm",
 			"to": "/docs/rackspace-monitoring/v1/",
+			"toProtocol": "https",
+			"toHostname": "developer.rackspace.com",
+			"rewrite": false,
+			"status": 301
+		},
+		{
+			"description": "cloud networks",
+			"from": "^/networks/api/v2/?(.*)$",
+			"to": "/docs/cloud-networks/v2/",
+			"toProtocol": "https",
+			"toHostname": "developer.rackspace.com",
+			"rewrite": false,
+			"status": 301
+		},
+		{
+			"description": "orchestration templates user guide",
+			"from": "^/orchestration/api/v1/orchestration-templates-devguide",
+			"to": "/docs/user-guides/orchestration/",
+			"toProtocol": "https",
+			"toHostname": "developer.rackspace.com",
+			"rewrite": false,
+			"status": 301
+		},
+		{
+			"description": "orchestration API",
+			"from": "^/orchestration/api/v1/?(.*)$",
+			"to": "/docs/cloud-orchestration/v1/",
+			"toProtocol": "https",
+			"toHostname": "developer.rackspace.com",
+			"rewrite": false,
+			"status": 301
+		},
+		{
+			"description": "Rackconnect",
+			"from": "^/rackconnect/api/v3/?(.*)$",
+			"to": "http://docs.rcv3.apiary.io/",
+			"toProtocol": "https",
+			"toHostname": "developer.rackspace.com",
+			"rewrite": false,
+			"status": 301
+		},
+		{
+			"description": "cloud servers legacy",
+			"from": "^/servers/api/v1.0/?(.*)$",
+			"to": "/docs/cloud-servers/v2/",
+			"toProtocol": "https",
+			"toHostname": "developer.rackspace.com",
+			"rewrite": false,
+			"status": 301
+		},
+		{
+			"description": "cloud servers",
+			"from": "^/servers/api/v2/?(.*)$",
+			"to": "/docs/cloud-servers/v2/",
+			"toProtocol": "https",
+			"toHostname": "developer.rackspace.com",
+			"rewrite": false,
+			"status": 301
+		},
+		{
+			"description": "Rackspace Private Cloud Operator and User Guide, v10",
+			"from": "^/rpc/api/v10/bk-rpc-guide",
+			"to": "/docs/",
+			"toProtocol": "https",
+			"toHostname": "developer.rackspace.com",
+			"rewrite": false,
+			"status": 301
+		},
+		{
+			"description": "Rackspace Private Cloud Powered by Red Hat Features and Architecture",
+			"from": "^/rpc/api/rh1/bk-rpcr-refarch",
+			"to": "/docs/private-cloud/red-hat/rpcr-arch/",
 			"toProtocol": "https",
 			"toHostname": "developer.rackspace.com",
 			"rewrite": false,
