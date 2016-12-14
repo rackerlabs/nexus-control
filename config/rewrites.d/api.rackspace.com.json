@@ -4,8 +4,10 @@
           "description": "Redirect root traffic to developer.rs.com/docs/",
           "from": "^\\/$",
           "to": "/docs/",
-          "rewrite": false,
-          "status": 301
+          "toProtocol": "https",
+			    "toHostname": "developer.rackspace.com",
+			    "rewrite": false,
+			    "status": 302
       },
       {
           "description": "Cloud Servers redirect",
