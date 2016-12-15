@@ -449,6 +449,13 @@
         "to": "/how-to/article-retired/",
         "rewrite": false,
         "status": 301
-      }
+      },
+      {
+        "description": "Retire RPC partner devices",
+        "from": "^\\/how-to\\/rackspace-private-cloud-partner-devices(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
+      }  
     ]
 }
