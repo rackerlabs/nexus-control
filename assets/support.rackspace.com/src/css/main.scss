@@ -1123,17 +1123,26 @@ a {
     font-family: $font-family-primary;
 }
 
-body.not-found {
-    .not-found-message {
+div.not-found-message {
         @include centered-container(480px);
         padding: 80px 0;
         text-align: center;
 
         h1 {
             margin-bottom: 1em;
+            font-family: $font-family-secondary;
+            font-size: 257.143%;
+            font-style: normal;
+            font-weight: 400;
+            color: #474747;
+        }
+
+        p {
+            margin-bottom: 1em;
+            font-family: $font-family-primary;
+            color: #474747;
         }
     }
-}
 
 // Legal Disclaimer
 
