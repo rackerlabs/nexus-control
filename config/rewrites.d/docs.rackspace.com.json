@@ -208,6 +208,24 @@
 			"status": 301
 		},
 		{
+			"description": "orchestration templates user guide template topic redirect for REACH",
+			"from": "^/orchestration/api/v1/orchestration-templates-devguide//content/Defining_Template_dle245.html?(.*)$",
+			"to": "^/user-guides/orchestration/generic-software-config/",
+			"toProtocol": "https",
+			"toHostname": "developer.rackspace.com",
+			"rewrite": false,
+			"status": 301
+		},
+		{
+			"description": "orchestration templates user guide template topic redirect for REACH",
+			"from": "^/orchestration/api/v1/orchestration-templates-devguide/content/Simple_Template_Example-d1e637.html?(.*)$",
+			"to": "^/user-guides/orchestration/generic-software-config/",
+			"toProtocol": "https",
+			"toHostname": "developer.rackspace.com",
+			"rewrite": false,
+			"status": 301
+		},		
+		{
 			"description": "orchestration templates user guide",
 			"from": "^/orchestration/api/v1/orchestration-templates-devguide/?(.*)$",
 			"to": "/docs/user-guides/orchestration/",
