@@ -209,7 +209,7 @@
 		},
 		{
 			"description": "orchestration templates user guide",
-			"from": "^/orchestration/api/v1/orchestration-templates-devguide",
+			"from": "^/orchestration/api/v1/orchestration-templates-devguide/?(.*)$",
 			"to": "/docs/user-guides/orchestration/",
 			"toProtocol": "https",
 			"toHostname": "developer.rackspace.com",
@@ -228,9 +228,9 @@
 		{
 			"description": "Rackconnect",
 			"from": "^/rackconnect/api/v3/?(.*)$",
-			"to": "http://docs.rcv3.apiary.io/",
+			"to": "https://docs.rcv3.apiary.io/",
 			"toProtocol": "https",
-			"toHostname": "developer.rackspace.com",
+			"toHostname": "docs-rcv3.apiary.io",
 			"rewrite": false,
 			"status": 301
 		},
