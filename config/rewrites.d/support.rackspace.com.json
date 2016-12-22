@@ -87,6 +87,13 @@
         "status": 301
       },
       {
+        "description": "Redirect support.rackspace.com /how-to/rackspace-auto-scale-overview-0 URL to /how-to/rackspace-auto-scale-overview ",
+        "from": "^\\/how-to\\/rackspace-auto-scale-overview-0(.*)$",
+        "to": "/how-to/rackspace-auto-scale-overview/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
         "description": "Redirect support.rackspace.com /how-to/getting-started-with-cloud-files-and-cdn-0/ URL to how-to/how-to/getting-started-with-cloud-files-and-cdn/ ",
         "from": "^\\/how-to\\/getting-started-with-cloud-files-and-cdn-0(.*)$",
         "to": "/how-to/getting-started-with-cloud-files-and-cdn/",
