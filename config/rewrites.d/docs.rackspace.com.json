@@ -111,7 +111,7 @@
 		{
 			"description": "cloud databases",
 			"from": "^/cdb/api/v1.0/?(.*)$",
-			"to": "/docs/cloud-databases/v2/",
+			"to": "/docs/cloud-databases/v1/",
 			"toProtocol": "https",
 			"toHostname": "developer.rackspace.com",
 			"rewrite": false,
