@@ -463,6 +463,69 @@
         "to": "/how-to/article-retired/",
         "rewrite": false,
         "status": 301
-      }  
+      },
+      {
+        "description": "Retire Deploy RPC to bare metal",
+        "from": "^\\/how-to\\/bare-metal-to-rackspace-private-cloud(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
+      },  
+      {
+        "description": "Retire Building a RPC with Linux iSCSI volumes",
+        "from": "^\\/how-to\\/building-a-rackspace-private-cloud-with-linux-iscsi-volumes(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
+      }, 
+      {
+        "description": "Retire Compute Cloud using SeaMicro",
+        "from": "^\\/how-to\\/compute-cloud-nova-using-seamicro-sm15000(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
+      }, 
+      {
+        "description": "Retire Install and test Cinder in RPC lap environment",
+        "from": "^\\/how-to\\/installing-and-testing-cinder-in-your-rackspace-private-cloud-lab-environment(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
+      }, 
+      {
+        "description": "Retire Object Storage (Swift) in Rack with SeeaMicro",
+        "from": "^\\/how-to\\/object-storage-swift-in-a-rack-with-amds-seamicro-sm15000(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
+      }, 
+      {
+        "description": "Retire Private Cloud Certified Devices- Compute",
+        "from": "^\\/how-to\\/private-cloud-certified-devices-compute(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
+      }, 
+      {
+        "description": "Retire Private Cloud Tech Resources",
+        "from": "^\\/how-to\\/private-cloud-tech-resources(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
+      }, 
+      {
+        "description": "Retire RPC software VM Block Migration",
+        "from": "^\\/how-to\\/rackspace-private-cloud-software-vm-block-migration(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
+      }, 
+      {
+        "description": "Retire Using CommVault to Backup Data in RPC",
+        "from": "^\\/how-to\\/using-commvault-to-backup-data-in-rackspace-private-cloud(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
+      }
     ]
 }
