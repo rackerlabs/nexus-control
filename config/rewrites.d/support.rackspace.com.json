@@ -526,6 +526,13 @@
         "to": "/how-to/article-retired/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "Redirect upgrade-to-managed-operations-service-level/ to upgrade-to-the-managed-operations-service-level/",
+        "from": "^\\/how-to\\/upgrade-to-managed-operations-service-level(.*)$",
+        "to": "/how-to/upgrade-to-the-managed-operations-service-level/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
