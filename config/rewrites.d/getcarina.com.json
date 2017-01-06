@@ -18,8 +18,7 @@
         },
         {
             "from": "\\/betadocs\\/(.*)$",
-            "to": "/getcarina.com/build-53414681f4/$1",
-            "toHostname": "staging.developer.rackspace.com",
+            "to": "/$1",
             "rewrite": false,
             "status": 302
         },
