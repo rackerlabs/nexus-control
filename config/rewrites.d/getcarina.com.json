@@ -23,6 +23,12 @@
             "status": 302
         },
         {
+          "from": "\\/docs\\/tutorials\\/docker-version-manager\\/?",
+          "to": "/docs/reference/docker-version-manager/",
+          "rewrite": false,
+          "status": 301
+        },
+        {
           "from": "\\/docs\\/tutorials\\/introduction-docker-swarm\\/?",
           "to": "/docs/concepts/introduction-docker-swarm/",
           "rewrite": false,
