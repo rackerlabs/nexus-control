@@ -3,7 +3,7 @@ var angular = require('angular');
 var moduleName = 'carina.signup.signup-form';
 module.exports = moduleName;
 
-var SIGNUP_HOST = process.env.CARINA_SIGNUP_HOST || 'https://app.getcarina.com';
+var SIGNUP_HOST = process.env.CARINA_SIGNUP_HOST || 'https://ui-api.getcarina.com';
 
 angular.module(moduleName, [])
 .controller('SignupFormCtrl', ['$http', function ($http) {
@@ -22,11 +22,11 @@ angular.module(moduleName, [])
 
     $http({
       method: 'POST',
-      url: SIGNUP_HOST + '/api/signup',
+      url: SIGNUP_HOST + '/signup',
       data: this.formData
     })
     .then(function (response) {
-      if(window.ga) {
+      if (window.ga) {
         window.ga('send', 'event', {
           eventCategory: 'signup-conversion',
           eventLabel: 'signup-success',
