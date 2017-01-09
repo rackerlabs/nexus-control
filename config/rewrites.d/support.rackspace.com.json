@@ -540,6 +540,13 @@
         "to": "/how-to/public-folder-permissions-for-exchange-2007-and-2010/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "Retire Synchronize files to Cloud Files with File Conveyor",
+        "from": "^\\/how-to\\/synchronizing-files-to-cloud-files-with-fileconveyor(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
