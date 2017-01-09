@@ -533,6 +533,13 @@
         "to": "/how-to/upgrade-to-the-managed-operations-service-level/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "Redirect public-folder-permissions-for-exchange/ to public-folder-permissions-for-exchange-2007-and-2010/",
+        "from": "^\\/how-to\\/public-folder-permissions-for-exchange(.*)$",
+        "to": "/how-to/public-folder-permissions-for-exchange-2007-and-2010/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
