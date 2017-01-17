@@ -128,7 +128,7 @@
 		},
 		{
 			"description": "cloud feeds developer guide",
-			"from": "^/cloud-feeds/api/v1.0/feeds-devguide",
+			"from": "^/cloud-feeds/api/v1.0/feeds-devguide/?(.*)$",
 			"to": "/docs/cloud-feeds/v1/developer-guide/",
 			"toProtocol": "https",
 			"toHostname": "developer.rackspace.com",
