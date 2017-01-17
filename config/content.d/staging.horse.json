@@ -3,7 +3,7 @@
     "content": {
       "/docs/private-cloud/rpc/eng-handbook/": "https://github.com/rackerlabs/docs-rpc/eng-handbook/",
       "/docs/private-cloud/rpc/master/": "https://github.com/rackerlabs/docs-rpc/master/",
-      "/docs/private-cloud/rpc/master/": "https://github.com/rackerlabs/docs-rpc/v14/",
+      "/docs/private-cloud/rpc/v14/": "https://github.com/rackerlabs/docs-rpc/v14/",
       "/docs/private-cloud/release-notes/": "https://github.com/rcbops/rpc-openstack/master/",
       "/docs/api-doc-template/": "https://github.com/rackerlabs/docs-common/"
     }

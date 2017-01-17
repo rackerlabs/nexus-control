@@ -253,6 +253,7 @@
         {   "description": "Redirect monitor links with new product name",
             "from": "^\\/docs\\/rackspace-monitoring\\/v1\\/developer-guide\\/?(.*)$",
             "to": "/docs/rackspace-monitoring/v1/",
+            "to": "/docs/metrics/v2/",
             "rewrite": false,
             "status": 301
         },
