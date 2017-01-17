@@ -40,7 +40,7 @@
       {
           "description": "Cloud Big Data API v2 redirect",
           "from": "^\\/api-ref-big-data-v2(\\.html)?",
-          "to": "/docs/cloud-big-data/v2/api-reference",
+          "to": "/docs/cloud-big-data/v2/api-reference/",
           "rewrite": false,
           "status": 301
       },
@@ -68,14 +68,14 @@
       {
           "description": "Cloud Files redirect",
           "from": "^\\/api-ref-files(\\.html)?",
-          "to": "/docs/cloud-files/v1/",
+          "to": "/docs/cloud-files/v1/api-reference/",
           "rewrite": false,
           "status": 301
       },
       {
           "description": "Cloud Images redirect",
           "from": "^\\/api-ref-images(\\.html)?",
-          "to": "/docs/cloud-images/v2/",
+          "to": "/docs/cloud-images/v2/api-reference/",
           "rewrite": false,
           "status": 301
       },
@@ -131,7 +131,7 @@
       {
           "description": "Identity API redirect",
           "from": "^\\/api-ref-identity(\\.html)?",
-          "to": "/docs/cloud-identity/v2/",
+          "to": "/docs/cloud-identity/v2/api-reference",
           "rewrite": false,
           "status": 301
       },
