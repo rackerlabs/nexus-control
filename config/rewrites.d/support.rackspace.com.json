@@ -554,6 +554,13 @@
         "to": "/how-to/article-retired/",
         "rewrite": false,
         "status": 301
-      }
+      },
+            {
+        "description": "Redirect items-migrated-during-an-cloud-office-migration to items-migrated-during-a-cloud-office-migration/",
+        "from": "^\\/how-to\\/items-migrated-during-an-cloud-office-migration(.*)$",
+        "to": "/how-to/items-migrated-during-a-cloud-office-migration/",
+        "rewrite": false,
+        "status": 301
+      },
     ]
 }
