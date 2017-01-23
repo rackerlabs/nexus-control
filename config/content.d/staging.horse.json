@@ -6,7 +6,7 @@
       "/docs/private-cloud/rpc/v14/": "https://github.com/rackerlabs/docs-rpc/v14/",
       "/docs/private-cloud/release-notes/": "https://github.com/rcbops/rpc-openstack/master/",
       "/docs/api-doc-template/": "https://github.com/rackerlabs/docs-common/",
-      "/suoport/white-paper/": "https://github.com/rackerlabs/rackspace=tech-white-papers/"
+      "/support/white-paper/": "https://github.com/rackerlabs/rackspace-tech-white-papers/"
     }
   }
 }
