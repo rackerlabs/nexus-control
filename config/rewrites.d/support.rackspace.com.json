@@ -555,12 +555,19 @@
         "rewrite": false,
         "status": 301
       },
-            {
+       {
         "description": "Redirect items-migrated-during-an-cloud-office-migration to items-migrated-during-a-cloud-office-migration/",
         "from": "^\\/how-to\\/items-migrated-during-an-cloud-office-migration(.*)$",
         "to": "/how-to/items-migrated-during-a-cloud-office-migration/",
         "rewrite": false,
         "status": 301
       },
+      {
+        "description": "Redirect migrating-from-parse-to-rackspace/ to migrate-from-parse-to-rackspace/",
+        "from": "^\\/how-to\\/migrating-from-parse-to-rackspace(.*)$",
+        "to": "/how-to/migrate-from-parse-to-rackspace/",
+        "rewrite": false,
+        "status": 301
+      }, 
     ]
 }
