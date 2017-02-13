@@ -2,7 +2,7 @@
     "getcarina.com": {
       "routes": {
         "^/": "default.html",
-        "^/$": "index.html",
+        "^/$": "docs-single.html",
         "^/search": "search.html",
         "^/docs": "docs-home.html",
         "^/docs/.+?": "docs-single.html",
