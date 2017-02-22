@@ -575,6 +575,13 @@
         "to": "/how-to/article-retired/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "Redirect redundant WordPress article",
+        "from": "^\\/how-to\\/accelerating-wordpress-with-cloud-files-cdn-and-the-w3-total-cache-plugin(.*)$",
+        "to": "/how-to/configure-w3-total-cache-for-wordpress-with-rackspace-cloud-files-cdn/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
