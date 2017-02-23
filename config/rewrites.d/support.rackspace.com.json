@@ -582,6 +582,13 @@
         "to": "/how-to/configure-w3-total-cache-for-wordpress-with-rackspace-cloud-files-cdn/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "Retire Migrate your Drupal database from Cloud Sites to Cloud Servers",
+        "from": "^\\/how-to\\/migrating-your-drupal-database-to-cloud-servers(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
