@@ -596,6 +596,13 @@
         "to": "/how-to/article-retired/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "Redirect retired Linux SOS article to new Linux SOS article",
+        "from": "^\\/how-to\\/cloud-servers-with-managed-operations-support-for-linux(.*)$",
+        "to": "/how-to/linux-spheres-of-support-for-dedicated-and-managed-ops/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
