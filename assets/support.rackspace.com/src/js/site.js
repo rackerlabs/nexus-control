@@ -11,7 +11,7 @@ $(document).ready(function(){
 
   // FAQs toggle content
   $("div.faq h4").nextUntil("h4, h3, hr, .legal-container").hide();
-  
+
   $("div.faq h4").click(function() {
     $(this).nextUntil("h4, h3, hr, .legal-container").slideToggle("fast");
     $(this).toggleClass("active", 1000);
@@ -32,6 +32,14 @@ $(document).ready(function(){
   }
 
   setupAdmonish();
-  
-  
+
+  //setup the dropdown on the whitepaper site
+  $('#topics').change(function() {
+    var targetPosition = $($(this).val()).offset().top;
+    $('html,body').animate({
+      scrollTop: targetPosition
+    }, 'slow');
+  });
+
+
 });

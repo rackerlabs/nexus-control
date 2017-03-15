@@ -1165,3 +1165,29 @@ div.not-found-message {
 div.banner-redesign-container {
   display: none;
 }
+
+div.dropdown {
+  margin: 20px;
+  border-radius: 5px;
+  height: 29px;
+  width: 270px;
+  background-color: ghostwhite;
+  color: #fff;
+  content: &dtrif;;
+  align: right;
+}
+
+.dropdown select {
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  height: 29px;
+  padding: 5px;
+  width: 268px;
+  color: black;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}

@@ -1,6 +1,35 @@
 
 {% if deconst.content.envelope.meta.resource %}
-<p class="button-wp"><a href="{{ deconst.content.envelope.meta.resource }}"><i class="fa fa-file-text-o"></i>Download Now</a></p>
+<p class="button-wp">
+  <a href="{{ deconst.content.envelope.meta.resource }}"><i class="fa fa-file-text-o"></i>Download Now</a>
+  </p>
 {% endif %}
 
-{% include "_includes/feedback-sidebar.html" %}
+<a class="home-link" href="/whitepapers/"><i class="fa fa-home"></i>Whitepapers Home</a>
+
+{% if deconst.content.envelope.meta.product != "undefined" %}
+<h3>{{ deconst.content.envelope.meta.product }}</h3>
+
+{# article, page, product #}
+{% set pageType = deconst.content.envelope.meta.type %}
+
+{% elif deconst.request.path.match('-all-whitepapers/$') %}
+    {% set pageType = "all-whitepapers" %}
+{% endif %}
+
+{# has no trailing slash #}
+{% set productURL = deconst.content.envelope.meta.product_url %}
+
+{# if we don't have a product_url to work with #}
+{% if not productURL  %}
+    {% set productURL = deconst.content.envelope.meta.product.replace(" ", "-").toLowerCase() %}
+{% endif %}
+
+<ul class="area">
+  <li{% if pageType == "product" %} class="active"{% endif %}><a href="/whitepapers/{{ productURL + "/" }}">{{ deconst.content.envelope.meta.product }}</a></li>
+  <li{% if pageType == "all-whitepapers" %} class="active"{% endif %}><a href="/whitepapers/{{ productURL + "-all-whitepapers/" }}">All Whitepapers on {{ deconst.content.envelope.meta.product }}</a></li>
+</ul>
+
+{% endif %}
+
+{#  include "_includes/feedback-sidebar.html"  #}

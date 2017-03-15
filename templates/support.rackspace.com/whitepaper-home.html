@@ -1,0 +1,40 @@
+{% extends "_layouts/base.html" %}
+
+{% block metaTitle %}White Papers | Rackspace Support Network{% endblock %}
+{% block metaDescription %}Technical white papers from Rackspace{% endblock %}
+{% block ogTitle %}White Papers | Rackspace Support Network{% endblock %}
+{% block ogDescription %}Technical white papers from Rackspace{% endblock %}
+{% block twitterTitle %}White Papers | Rackspace Support Network{% endblock %}
+{% block twitterDescription %}Technical white papers from Rackspace{% endblock %}
+
+{% block bodyClass %}whitepaper-home{% endblock %}
+{% block bodyContent %}
+  <section class="featured">
+    <h3 class="headline">Technical White Papers</h3>
+    <p class="tagline">See how the world's leading companies use Rackspace to solve their IT concerns.</p>
+    <h4>Featured White Papers</h4>
+    <div class="card-blue">
+      <h5>{% block feature1Title %}{% endblock %}</h5>
+      <p>{% block feature1Body %}{% endblock %}</p>
+    </div>
+    <div class="card-blue">
+      <h5>{% block feature2Title %}{% endblock %}</h5>
+      <p>{% block feature2Body %}{% endblock %}</p>
+    </div>
+    <div class="card-blue">
+      <h5>{% block feature3Title %}{% endblock %}</h5>
+      <p>{% block feature3Body %}{% endblock %}</p>
+    </div>
+  </section>
+  <section class="allContent">
+    <h4 id="top">All White Papers</h4>
+    <div class="dropdown">
+      <select name="dropdown" id="topics">
+        {% for product in site.product %}
+          <option value="#{% product.title %}">{% product.title %}</option>
+        {% endfor %}
+      </select>
+    </div>
+    {{ deconst.content.envelope.body }}
+  </section>
+{% endblock %}
