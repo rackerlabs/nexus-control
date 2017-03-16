@@ -33,7 +33,7 @@
         "^/how-to/skype-for-business/$": "product.html",
         "^/how-to/exchange/$": "product.html",
         "^/how-to/sharepoint/$": "product.html",
-        "^/how-to/dedicated-hosting/$": "product.html",  
+        "^/how-to/dedicated-hosting/$": "product.html",
         "^/how-to/cloud-servers-faq/$": "faq.html",
         "^/how-to/cloud-sites-faq/$": "faq.html",
         "^/how-to/cloud-images-faq/$": "faq.html",
@@ -63,11 +63,12 @@
         "^/how-to/skype-for-business-faq/$": "faq.html",
         "^/how-to/exchange-faq/$": "faq.html",
         "^/how-to/sharepoint-faq/$": "faq.html",
-        "^/how-to/dedicated-hosting-faq/$": "faq.html",   
+        "^/how-to/dedicated-hosting-faq/$": "faq.html",
         "^/how-to/.+?-all-articles/$": "page-list.html",
         "^/how-to/.+?-get-started/$": "getting-started.html",
         "^/white-paper/.+?": "white-paper.html",
-        "^/case-study/.+?": "case-study.html"
+        "^/case-study/.+?": "case-study.html",
+        "^/whitepapers/$": "whitepaper-home.html"
       }
     }
 }
