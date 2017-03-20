@@ -6,7 +6,6 @@
 </div>
 <header class="site-header">
   <div class="header-nav">
-    {% if deconst.request.path != '/' %}
     <a href="https://getcarina.com/" class="logo">
         {% if deconst.env.PRESENTER_DEVMODE == 'true' %}
             {% set logoUrl = '/assets/getcarina.com/src/img/carina-horizontal-color-40px.svg' %}
@@ -15,7 +14,6 @@
         {% endif %}
         <img src="{{ logoUrl }}" alt="Rackspace Logo" />
     </a>
-    {% endif %}
     <ul class="header-links">
       <li{% if deconst.request.path == '/' %} class="active"{% endif %}>
         <a href="/">Home</a>
