@@ -1,11 +1,5 @@
 
-{% if deconst.content.envelope.meta.resource %}
-<p class="button-wp">
-  <a href="{{ deconst.content.envelope.meta.resource }}"><i class="fa fa-file-text-o"></i>Download Now</a>
-  </p>
-{% endif %}
-
-<a class="home-link" href="/whitepapers/"><i class="fa fa-home"></i>Whitepapers Home</a>
+<a class="home-link" href="/whitepapers/"><i class="fa fa-home"></i>White Papers Home</a>
 
 {% if deconst.content.envelope.meta.product != "undefined" %}
 <h3>{{ deconst.content.envelope.meta.product }}</h3>
@@ -20,16 +14,22 @@
 {# has no trailing slash #}
 {% set productURL = deconst.content.envelope.meta.product_url %}
 
-{# if we don't have a product_url to work with #}
-{% if not productURL  %}
-    {% set productURL = deconst.content.envelope.meta.product.replace(" ", "-").toLowerCase() %}
-{% endif %}
-
 <ul class="area">
-  <li{% if pageType == "product" %} class="active"{% endif %}><a href="/whitepapers/{{ productURL + "/" }}">{{ deconst.content.envelope.meta.product }}</a></li>
-  <li{% if pageType == "all-whitepapers" %} class="active"{% endif %}><a href="/whitepapers/{{ productURL + "-all-whitepapers/" }}">All Whitepapers on {{ deconst.content.envelope.meta.product }}</a></li>
+  <li{% if pageType == "all-whitepapers" %} class="active"{% endif %}><a href="/whitepapers/{{ productURL + "-all-whitepapers/" }}">All {{ deconst.content.envelope.meta.product }} White Papers</a></li>
 </ul>
 
-{% endif %}
+{#
+ # SSDEV-456 removed until operational
 
-{#  include "_includes/feedback-sidebar.html"  #}
+<h3>Contents</h3>
+<div class="sidebar-container">
+</div>
+#}
+
+{% if deconst.content.envelope.meta.github_edit_url %}
+<hr/>
+
+<div class="contributing-container">
+    <p class="button-wp"><a href="{{ deconst.content.envelope.meta.github_edit_url }}"><i class="fa fa-github"></i>Edit This Article</a></p>
+</div>
+{% endif %}

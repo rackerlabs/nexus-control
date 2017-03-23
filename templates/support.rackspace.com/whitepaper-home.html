@@ -1,163 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+{% extends "_layouts/base.html" %}
 
-        <title>STAGING White Papers | Rackspace Support Network</title>
-        <link rel="stylesheet" href="css/main.css">
-        <script src="https://c4d62906a15616653758-49dececd4e3f03377b7f33fac7abfae8.ssl.cf5.rackcdn.com/prod/raxheaderservice.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<!--        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
-        <script type="text/javascript" src="js/site.js"></script>
-</head>
-<body>
-  <div id="rax-header"></div>
+{% block metaTitle %}{{ ["STAGING White Papers", super()]|join(' - ')}}{% endblock %}
 
-  <div id="main-content">
-    <div class="container">
-      <div class="row content home">
-  <section class="featured">
-    <h2 class="section-heading">Technical White Papers</h3>
-    <p class="tagline">See how the world's leading companies use Rackspace to solve their IT concerns.</p>
-    <h3 class="featuredHead">Featured White Papers</h3>
-    <div class="featured-list">
-      <div class="featured">
-        <div class="card blue">
-          <div class="card-content">
-            <div class="card-title">
-              <h4 id="feature1">A Digital Marketing Powerhouse Stays On Top</h4>
-            </div>
-            <div class="card-body">
-              <p>Discover the services at the heart of the Rackspace cloud. Learn how to interact with these core services and how the Rackspace cloud gives you a new way to get your work done.</p>
-            </div>
-            <div class="card-link">
-              <p><a href="">Read the paper</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="featured2">
-        <div class="card blue">
-          <div class="card-content">
-            <div class="card-title">
-              <h4 id="feature2">Air and Water Always Online with Rackspace Solution</h4>
-            </div>
-            <div class="card-body">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-            </div>
-            <div class="card-link">
-              <p><a href="">Read the paper</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="featured2">
-        <div class="card blue">
-          <div class="card-content">
-            <div class="card-title">
-              <h4 id="feature3">Cloud Provider Zeara Achieves Scale Growth</h4>
-            </div>
-            <div class="card-body">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-            </div>
-            <div class="card-link">
-              <p><a href="">Read the paper</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="allContent">
-    <div class="allContentTop">
-      <div class="allContentHeading">
-        <h2 id="top" class="section-heading">All White Papers</h2>
-      </div>
-      <div class="dropdown">
-        <div class="row" id="dropdownRow">
-          <div class="col-lg-12">
-            <div class="btn-group">
-              <button id="topics" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span>Jump to a white paper topic </span><i class="fa fa-caret-down"></i>
-              </button>
-              <ul class="dropdown-menu scrollable-menu" role="menu">
-                <li><a href="#migrating-to-cloud">Migrating to Cloud</a></li>
-                <li><a href="#choosing-services">Choosing services</a></li>
-                <li><a href="#choosing-services-2">Choosing services 2</a></li>
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <h3 class="topicHead" id="migrating-to-cloud">Migrating to Cloud</h3>
-    <div class="topicList">
-      <ul class="paperList">
-        <li><a href="">101 Guide to the Cloud</a></li>
-        <li><a href="">451 Research: Assessing Rackspace Hybrid Cloud Capabilities in the Market - July 2013</a></li>
-        <li><a href="">9 Reasons People Are Ignoring Your Email</a></li>
-        <li><a href="">Allowing Snapshots without Detaching the Volumes</a></li>
-        <li><a href="">AppRiver Outsources Hosting to Rackspace and Keeps Its Focus on Building Business</a></li>
-      </ul>
-    </div>
-    <h3 class="topicHead" id="choosing-services">Choosing services</h3>
-    <div class="topicList too-tall">
-      <ul class="paperList">
-        <li><a href="">101 Guide to the Cloud</a></li>
-        <li><a href="">451 Research: Assessing Rackspace Hybrid Cloud Capabilities in the Market - July 2013</a></li>
-        <li><a href="">9 Reasons People Are Ignoring Your Email</a></li>
-        <li><a href="">99.9999 Is Not Enough: An OpenCloud Approach to Delivering Application Uptime and Performance</a></li>
-        <li><a href="">A Digital Marketing Powerhouse Stays on Top</a></li>
-        <li><a href="">Allowing Snapshots without Detaching the Volumes</a></li>
-        <li><a href="">AppRiver Outsources Hosting to Rackspace and Keeps Its Focus on Building Business</a></li>
-        <li><a href="">Appboy Relies on a Hybrid Infrastructure to Manage Traffic Spikes</a></li>
-        <li><a href="">Are You Ready for the Holiday Rush? 5 Survival Tips</a></li>
-        <li><a href="">At Six Flags, the Theme Is Trust for Rackspace Servers and Support</a></li>
-      </ul>
-    </div>
-    <div class="show-more">
-      <a href="#"><i class="fa fa-chevron-down"></i> <span>View more</span></a>
-    </div>
-    <h3 class="topicHead" id="choosing-services-2">Choosing services 2</h3>
-    <div class="topicList too-tall">
-      <ul class="paperList">
-        <li><a href="">101 Guide to the Cloud</a></li>
-        <li><a href="">451 Research: Assessing Rackspace Hybrid Cloud Capabilities in the Market - July 2013</a></li>
-        <li><a href="">9 Reasons People Are Ignoring Your Email</a></li>
-        <li><a href="">99.9999 Is Not Enough: An OpenCloud Approach to Delivering Application Uptime and Performance</a></li>
-        <li><a href="">A Digital Marketing Powerhouse Stays on Top</a></li>
-        <li><a href="">Allowing Snapshots without Detaching the Volumes</a></li>
-        <li><a href="">AppRiver Outsources Hosting to Rackspace and Keeps Its Focus on Building Business</a></li>
-        <li><a href="">Appboy Relies on a Hybrid Infrastructure to Manage Traffic Spikes</a></li>
-        <li><a href="">Are You Ready for the Holiday Rush? 5 Survival Tips</a></li>
-        <li><a href="">At Six Flags, the Theme Is Trust for Rackspace Servers and Support</a></li>
-      </ul>
-    </div>
-    <div class="show-more">
-      <a href="#"><i class="fa fa-chevron-down"></i> <span>View more</span></a>
-    </div>
-  </section>
-</div>
-</div>
-</div>
-  <div id="rax-footer"></div>
+{% block bodyClass %}home{% endblock %}
 
-  <script type="text/javascript">
-    injectTemplate("how-to", "#rax-header", "#rax-footer", "#main-content");
-  </script>
+{% block bodyContent %}
+  {{ deconst.content.envelope.body }}
+{% endblock %}
+
+{% block footerScripts %}
   <script type="text/javascript">
     $(document).ready(function(){
       //setup the dropdown on the whitepaper site
@@ -213,5 +64,4 @@
       }
     });
   </script>
-</body>
-</html>
+{% endblock %}

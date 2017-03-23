@@ -68,7 +68,8 @@
         "^/how-to/.+?-get-started/$": "getting-started.html",
         "^/white-paper/.+?": "white-paper.html",
         "^/case-study/.+?": "case-study.html",
-        "^/whitepapers/$": "whitepaper-home.html"
+        "^/whitepapers/$": "whitepaper-home.html",
+        "^/whitepapers/.+?": "whitepaper.html"
       }
     }
 }
