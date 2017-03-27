@@ -34,10 +34,18 @@ div.featured {
 }
 
 .card .card-content {
+  -webkit-border-bottom-colors:none;
   -moz-border-bottom-colors: none;
+  border-bottom-colors: none;
+  -webkit-border-left-colors: none;
   -moz-border-left-colors: none;
+  border-left-colors: none;
+  -webkit-border-right-colors: none;
   -moz-border-right-colors: none;
+  border-right-colors: none;
+  -webkit-border-top-colors: none;
   -moz-border-top-colors: none;
+  border-top-colors: none;
   align-items: stretch;
   border-bottom-left-radius: 1px;
   border-bottom-right-radius: 1px;
@@ -173,11 +181,7 @@ h3.topicHead {
   padding-top: 25px;
 }
 
-.topicList ul.paperList li {
-  margin-bottom: 0;
-  line-height: 1.75em;
-}
-
+// Pieces for defining height for the View More/Less Javascript
 .too-tall {
   overflow: hidden;
   height: 6em;
@@ -187,6 +191,7 @@ h3.topicHead {
   height: auto;
 }
 
+// View More/Less styles
 .show-more {
   color: #777;
   cursor: pointer;
@@ -202,6 +207,7 @@ h3.topicHead {
     color: #1779dd;
 }
 
+// Content info
 p.tagline {
   margin-bottom: 20px;
 }
@@ -214,6 +220,7 @@ p.tagline {
   font-size: 16px;
 }
 
+// Paper list definitions
 ul.paperList {
   margin-bottom: 0px;
   -webkit-column-count: 2;
@@ -222,6 +229,12 @@ ul.paperList {
   list-style-position: outside;
   list-style-type: square;
   margin-left: 20px;
+}
+
+.topicList ul.paperList li {
+  margin-bottom: 0;
+  line-height: 1.75em;
+  margin-left: 10px;
 }
 
 ul.scrollable-menu {
