@@ -21,8 +21,10 @@
 
   <div id="rax-footer"></div>
 
-  <script type="text/javascript">
-    injectTemplate("how-to", "#rax-header", "#rax-footer", "#main-content");
-  </script>
+  {% block headerScripts %}
+    <script type="text/javascript">
+      injectTemplate("how-to", "#rax-header", "#rax-footer", "#main-content");
+    </script>
+  {% endblock %}
   {% block footerScripts %}{% endblock %}
 {% endblock %}
