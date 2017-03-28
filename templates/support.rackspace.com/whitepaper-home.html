@@ -8,6 +8,12 @@
   {{ deconst.content.envelope.body }}
 {% endblock %}
 
+{% block headerScripts %}
+  <script type="text/javascript">
+    injectTemplate("whitepapers", "#rax-header", "#rax-footer", "#main-content");
+  </script>
+{% endblock %}
+
 {% block footerScripts %}
   <script type="text/javascript">
     $(document).ready(function(){
