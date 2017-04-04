@@ -603,6 +603,13 @@
         "to": "/how-to/linux-spheres-of-support-for-dedicated-and-managed-ops/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "Retire Adding a Mobile Sync license",
+        "from": "^\\how-to\\/adding-a-mobile-sync-license(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
