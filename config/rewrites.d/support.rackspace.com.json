@@ -610,6 +610,13 @@
         "to": "/how-to/article-retired/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "Redirect retired Mobile Sync set up article",
+        "from": "^\\how-to\\/set-up-mobile-sync-for-webmail-on-ios-devices(.*)$",
+        "to": "/how-to/set-up-mobile-sync/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
