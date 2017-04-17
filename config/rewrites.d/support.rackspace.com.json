@@ -332,13 +332,6 @@
         "status": 301
       },
       {
-        "description": "Redirect Cloud Sites - subaccounts article to new /how-to/getting-started-with-cloud-sites-set-up-site-security-with-subaccounts",
-        "from": "^\\/how-to\\/cloud-sites-subaccounts(.*)$",
-        "to": "/how-to/getting-started-with-cloud-sites-set-up-site-security-with-subaccounts/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
         "description": "Redirect Cloud Sites php article to new /how-to/test-and-send-mail-using-php",
         "from": "^\\/how-to\\/test-php-smtp-functionality(.*)$",
         "to": "/how-to/test-and-send-mail-using-php/",
