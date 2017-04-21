@@ -320,9 +320,16 @@
           "status": 301
         },
         {
-          "description": "Redirect RPC URL to current version",
-          "from": "^/docs/private-cloud/rpc/?$",
-          "to": "/docs/private-cloud/rpc/v13",
+          "description": "Redirect unversioned RPC URL to current version",
+          "from": "^\\/docs\\/private-cloud\\/rpc\\/?$",
+          "to": "/docs/private-cloud/rpc/v14",
+          "rewrite:": false,
+          "status": 301
+        },
+        {
+          "description": "Redirect older RPC URLs to current version",
+          "from": "^\\/docs\\/private-cloud\\/rpc\\/\bv(9|1[01])\b\\/?",
+          "to": "/docs/private-cloud/rpc/v14",
           "rewrite:": false,
           "status": 301
         },
