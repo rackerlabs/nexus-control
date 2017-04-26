@@ -40,6 +40,7 @@
           "/docs/managed-vmware-services/vcloud/v1/": "https://github.com/rackerlabs/docs-dedicated-vcloud/vcloud-handbook/",
           "/docs/managed-vmware-services/vcloud/v1.5/": "https://github.com/rackerlabs/docs-dedicated-vcloud/vcloud-handbook-v1.5/",
           "/docs/managed-vmware-services/rpc-vmware-customer-handbook/": "https://github.com/rackerlabs/docs-dedicated-vcloud/rpc-vmware-customer-handbook/",
+          "/docs/managed-vmware-services/hourly-DBA-service-handbook/": "https://github.com/rackerlabs/docs-dedicated-vcloud/hourly-DBA-service-handbook/",
           "/docs/private-cloud/red-hat/": "https://github.com/rackerlabs/docs-redhat-osp/",
           "/search/": null
       },
