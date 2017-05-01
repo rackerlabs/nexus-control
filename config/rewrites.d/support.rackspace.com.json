@@ -18,7 +18,7 @@
       },
       {
           "description": "redirect old white-paper links to new whitepapers landing page",
-          "from": "^\\/white-paper\\/$",
+          "from": "^\\/white-paper\\/?(.*)$",
           "to": "/whitepapers/",
           "rewrite": false,
           "status": 301
