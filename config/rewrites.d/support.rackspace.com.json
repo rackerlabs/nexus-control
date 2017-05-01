@@ -17,9 +17,9 @@
           "status": 302
       },
       {
-          "description": "white-paper index to all articles",
+          "description": "redirect old white-paper links to new whitepapers landing page",
           "from": "^\\/white-paper\\/$",
-          "to": "/white-paper/white-paper-all-articles/",
+          "to": "/whitepapers/",
           "rewrite": false,
           "status": 301
       },
