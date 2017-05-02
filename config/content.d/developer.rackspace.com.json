@@ -44,7 +44,7 @@
           "/docs/managed-vmware-services/mbu-for-vpc-handbook": "https://github.com/rackerlabs/docs-dedicated-vcloud/mbu-for-vpc-handbook/",
           "/docs/managed-vmware-services/vra-for-vpc-handbook": "https://github.com/rackerlabs/docs-dedicated-vcloud/vra-for-vpc-handbook/",
           "/docs/managed-vmware-services/rpc-vmware-vcloud-director-handbook": "https://github.com/rackerlabs/docs-dedicated-vcloud/rpc-vmware-vcloud-director-handbook/",
-          "/docs/managed-vmware-services/rpc-vmware-vcloud-director-handbook": "https://github.com/rackerlabs/docs-dedicated-vcloud/rpc-vmware-vrealize-operations-handbook/",
+          "/docs/managed-vmware-services/rpc-vmware-vrealize-operations-handbook": "https://github.com/rackerlabs/docs-dedicated-vcloud/rpc-vmware-vrealize-operations-handbook/",
           "/docs/private-cloud/red-hat/": "https://github.com/rackerlabs/docs-redhat-osp/",
           "/search/": null
       },
