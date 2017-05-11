@@ -599,42 +599,42 @@
       },
       {
         "description": "Retire Adding a Mobile Sync license",
-        "from": "^\\how-to\\/adding-a-mobile-sync-license(.*)$",
+        "from": "^\\/how-to\\/adding-a-mobile-sync-license(.*)$",
         "to": "/how-to/article-retired/",
         "rewrite": false,
         "status": 301
       },
       {
         "description": "Redirect retired Mobile Sync set up article",
-        "from": "^\\how-to\\/set-up-mobile-sync-for-webmail-on-ios-devices(.*)$",
+        "from": "^\\/how-to\\/set-up-mobile-sync-for-webmail-on-ios-devices(.*)$",
         "to": "/how-to/set-up-mobile-sync/",
         "rewrite": false,
         "status": 301
       },
       {
         "description": "Retire RackConnect release notes",
-        "from": "^\\how-to\\/rackconnect-release-notes(.*)$",
+        "from": "^\\/how-to\\/rackconnect-release-notes(.*)$",
         "to": "/how-to/article-retired/",
         "rewrite": false,
         "status": 301
       },
       {
         "description": "Redirect Before you move to a General Purpose cloud server article",
-        "from": "^\\how-to\\/before-you-move-to-general-purpose-or-io-cloud-server-checklist(.*)$",
+        "from": "^\\/how-to\\/before-you-move-to-general-purpose-or-io-cloud-server-checklist(.*)$",
         "to": "/how-to/considerations-for-migrating-to-a-general-purpose-or-io-cloud-server/",
         "rewrite": false,
         "status": 301
       },
       {
         "description": "Retire Configure on RAID Linux GP Cloud Server article",
-        "from": "^\\how-to\\/configuring-a-software-raid-on-a-linux-general-purpose-cloud-server(.*)$",
+        "from": "^\\/how-to\\/configuring-a-software-raid-on-a-linux-general-purpose-cloud-server(.*)$",
         "to": "/how-to/article-retired/",
         "rewrite": false,
         "status": 301
       },
       {
         "description": "Redirect Cloud Office CP to Cloud Office CP overview",
-        "from": "^\\how-to\\/cloud-office-control-panel(.*)$",
+        "from": "^\\/how-to\\/cloud-office-control-panel(.*)$",
         "to": "/how-to/cloud-office-control-panel-overview/",
         "rewrite": false,
         "status": 301
