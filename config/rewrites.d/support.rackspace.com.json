@@ -634,7 +634,7 @@
       },
       {
         "description": "Redirect Cloud Office CP to Cloud Office CP overview",
-        "from": "^\\/how-to\\/cloud-office-control-panel(.*)$",
+        "from": "^\\/how-to\\/cloud-office-control-panel(\/$|$)",
         "to": "/how-to/cloud-office-control-panel-overview/",
         "rewrite": false,
         "status": 301
