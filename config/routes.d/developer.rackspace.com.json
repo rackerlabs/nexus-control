@@ -42,6 +42,7 @@
             "^/docs/private-cloud": "user-guide.html",
             "^/docs/private-cloud/release-notes": "docs-singlepage.html",
             "^/docs/managed-vmware-services": "user-guide.html",
+            "^/docs/rpc-vmware/": "user-guide.html",
             "^/docs/rack-cli/": "rack-cli.html",
             "^/sdks": "sdks-home.html",
             "^/sdks/.+?": "sdks-page.html",
