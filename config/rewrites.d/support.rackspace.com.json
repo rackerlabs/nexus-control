@@ -645,6 +645,13 @@
         "to": "/how-to/article-retired/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "Redirect Set up DNS records for Cloud Office email and Skype for Business to Set up DNS records for Cloud Office email",
+        "from": "^\\/how-to\\/set-up-dns-records-for-cloud-office-email-and-skype-for-business(.*)$",
+        "to": "/how-to/set-up-dns-records-for-cloud-office-email/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
