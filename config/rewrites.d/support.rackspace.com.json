@@ -698,6 +698,7 @@
       {   
         "description": "Retire use-tableau-desktop-with-hive-on-cloud-big-data",
         "from": "^\\/how-to\\/use-tableau-desktop-with-hive-on-cloud-big-data(.*)$",
+        "to": "/how-to/article-retired/",
         "rewrite": false,
         "status": 301
       },
