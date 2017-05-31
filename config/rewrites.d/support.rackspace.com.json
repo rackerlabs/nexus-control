@@ -647,6 +647,61 @@
         "status": 301
       }, 
       {
+        "description": "Retire cloud-big-data-faq",
+        "from": "^\\/how-to\\/cloud-big-data-faq(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
+        "description": "Retire cloud-big-data-platform-provisioning-and-pricing",
+        "from": "^\\/how-to\\/cloud-big-data-platform-provisioning-and-pricing(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
+        "description": "Retire deploying-rackspace-cloud-big-data",
+        "from": "^\\/how-to\\/deploying-rackspace-cloud-big-data(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
+        "description": "Retire detailed-permissions-matrix-for-cloud-big-data-v2",
+        "from": "^\\/how-to\\/detailed-permissions-matrix-for-cloud-big-data-v2(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
+        "description": "Retire limits-for-cloud-big-data",
+        "from": "^\\/how-to\\/limits-for-cloud-big-data(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
+        "description": "Retire rackspace-cloud-big-data-service-glossary",
+        "from": "^\\/how-to\\/rackspace-cloud-big-data-service-glossary(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
+        "description": "Retire getting-data-into-your-big-data-cluster",
+        "from": "^\\/how-to\\/getting-data-into-your-big-data-cluster(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
+      },
+      {   
+        "description": "Retire use-tableau-desktop-with-hive-on-cloud-big-data",
+        "from": "^\\/how-to\\/use-tableau-desktop-with-hive-on-cloud-big-data(.*)$",
+        "rewrite": false,
+        "status": 301
+      },
+      {
         "description": "Redirect Using MyFirewallManager to FirewallManagerv2",
         "from": "^\\/how-to\\/using-the-myrackspace-firewall-manager(.*)$",
         "to": "/how-to/firewall-manager-v2/",
