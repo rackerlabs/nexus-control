@@ -645,7 +645,7 @@
         "to": "/how-to/article-retired/",
         "rewrite": false,
         "status": 301
-      },
+      }, 
       {
         "description": "Retire cloud-big-data-faq",
         "from": "^\\/how-to\\/cloud-big-data-faq(.*)$",
@@ -695,10 +695,24 @@
         "rewrite": false,
         "status": 301
       },
-      {
+      {   
         "description": "Retire use-tableau-desktop-with-hive-on-cloud-big-data",
         "from": "^\\/how-to\\/use-tableau-desktop-with-hive-on-cloud-big-data(.*)$",
         "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
+        "description": "Redirect Using MyFirewallManager to FirewallManagerv2",
+        "from": "^\\/how-to\\/using-the-myrackspace-firewall-manager(.*)$",
+        "to": "/how-to/firewall-manager-v2/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
+        "description": "Redirect Managed Ops RBAC article to General RBAC article",
+        "from": "^\\/how-to\\/using-rbac-with-myrackspace(.*)$",
+        "to": "/how-to/overview-role-based-access-control-rbac/",
         "rewrite": false,
         "status": 301
       }
