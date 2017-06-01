@@ -75,12 +75,12 @@
           "rewrite": false,
           "status": 301
         },
-       {
-          "description": "Redirect cloud big data developer-guide URL",
-          "from": "^\\/docs\\/cloud-big-data\\/v2\\/developer-guide\\/(.*?)",
-          "to": "/docs/cloud-big-data/v2/",
-          "rewrite": false,
-          "status": 301
+        {
+            "description": "Redirect retired Cloud Big Data links to docs page",
+            "from": "^\\/docs\\/cloud-big-data\\/v2\\/(.*?)",
+            "to": "/docs/",
+            "rewrite": false,
+            "status": 301
         },
         {
           "description": "Redirect cloud dns developer-guide URL",
