@@ -13,7 +13,6 @@
   { "kind": "github", "project": "rackerlabs/docs-cloud-cdn" },
   { "kind": "github", "project": "rackerlabs/docs-cloud-databases" },
   { "kind": "github", "project": "rackerlabs/docs-cloud-dns" },
-  { "kind": "github", "project": "rackerlabs/docs-cloud-big-data"},
   { "kind": "github", "project": "rackerlabs/docs-cloud-files" },
   { "kind": "github", "project": "rackerlabs/docs-cloud-identity" },
   { "kind": "github", "project": "rackerlabs/docs-cloud-images" },
