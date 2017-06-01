@@ -29,7 +29,6 @@
             "^/docs/rackconnect/v3/developer-guide": "docs-singlepage.html",
             "^/docs/cloud-queues/v1/": "user-guide.html",
             "^/docs/cloud-networks/v2/": "user-guide.html",
-            "^/docs/cloud-big-data/v2/": "user-guide.html",
             "^/docs/autoscale/v1/developer-guide": "docs-singlepage.html",
             "^/docs/cloud-servers/v2/": "user-guide.html",
             "^/docs/cloud-files/v1/": "user-guide.html",
