@@ -26,7 +26,7 @@
   { "kind": "github", "project": "rackerlabs/docs-cloud-queues" },
   { "kind": "github", "project": "rackerlabs/docs-cloud-rackconnect" },
   { "kind": "github", "project": "rackerlabs/docs-dedicated-networking" },
-  { "kind": "github", "project": "rackerlabs/docs-cloud-servers" },
+  { "kind": "github", "project": "rackerlabs/docs-cloud-servers", "branches": ["master"] },
   { "kind": "github", "project": "rackerlabs/docs-common"},
   { "kind": "github", "project": "rackerlabs/docs-support-network"},
   { "kind": "github", "project": "rackerlabs/docs-rackspace" },
