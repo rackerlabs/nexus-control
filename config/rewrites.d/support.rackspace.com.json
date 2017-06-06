@@ -723,6 +723,13 @@
         "to": "/how-to/overview-role-based-access-control-rbac/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "Retire Cloud Feeds archiving in the Cloud Control panel",
+        "from": "^\\/how-to\\/configure-cloud-feeds-archiving-in-the-cloud-control-panel(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
