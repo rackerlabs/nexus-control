@@ -651,9 +651,16 @@
         "description": "Redirect Set up DNS records for Cloud Office email and Skype for Business to Set up DNS records for Cloud Office email",
         "from": "^\\/how-to\\/set-up-dns-records-for-cloud-office-email-and-skype-for-business(.*)$",
         "to": "/how-to/set-up-dns-records-for-cloud-office-email/",
-         "rewrite": false,
+        "rewrite": false,
         "status": 301
-      }, 
+      },
+      {
+        "description": "Retire Cloud Big Data intro page"
+        "from": "^\\/how-to\\/cloud-big-data(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
+      },
       {
         "description": "Retire cloud-big-data-faq",
         "from": "^\\/how-to\\/cloud-big-data-faq(.*)$",
