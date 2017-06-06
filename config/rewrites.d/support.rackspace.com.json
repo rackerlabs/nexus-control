@@ -655,7 +655,7 @@
         "status": 301
       },
       {
-        "description": "Retire Cloud Big Data intro page"
+        "description": "Retire Cloud Big Data intro page",
         "from": "^\\/how-to\\/cloud-big-data(.*)$",
         "to": "/how-to/article-retired/",
         "rewrite": false,
