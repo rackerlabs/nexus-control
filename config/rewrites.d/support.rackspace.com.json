@@ -751,6 +751,13 @@
         "to": "/how-to/article-retired/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "Redirect Adding Exchange mailboxes to new permalink",
+        "from": "^\\/how-to\\/adding-microsoft-exchange-mailboxes(.*)$",
+        "to": "/how-to/add-microsoft-exchange-mailboxes/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
