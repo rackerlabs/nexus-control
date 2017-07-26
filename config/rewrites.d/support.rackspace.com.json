@@ -751,6 +751,13 @@
         "to": "/how-to/add-microsoft-exchange-mailboxes/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "Redirect Security for RPC to retired-article",
+        "from": "^\\/how-to\\/security-for-rackspace-private-cloud-powered-by-openstack(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
