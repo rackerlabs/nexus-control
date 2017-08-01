@@ -758,6 +758,13 @@
         "to": "/how-to/article-retired/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "Redirect List cloud servers to View information about available cloud servers",
+        "from": "^\\/how-to\\/list-cloud-servers-and-cloud-server-information(.*)$",
+        "to": "/how-to/view-information-about-available-cloud-servers/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
