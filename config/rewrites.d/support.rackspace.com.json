@@ -765,6 +765,13 @@
         "to": "/how-to/view-information-about-available-cloud-servers/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "Redirect View basic graphs of activity to Viewing basic graphs of activity",
+        "from": "^\\/how-to\\/viewing-basic-graphs-of-activity-in-rackspace-intelligence(.*)$",
+        "to": "/how-to/view-basic-graphs-of-activity-in-rackspace-intelligence/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
