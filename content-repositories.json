@@ -4,7 +4,7 @@
   { "kind": "github", "project": "rackerlabs/docs-quickstart" },
   { "kind": "github", "project": "rackerlabs/rpc-vmware" },
   { "kind": "github", "project": "rackerlabs/docs-redhat-osp" },
-  { "kind": "github", "project": "rcbops/docs-rpc", "branches": ["master", "v10", "v11", "v12", "v13", "v14"] },
+  { "kind": "github", "project": "rcbops/privatecloud-docs/", "branches": ["master", "v12", "v13", "v14"] },
   { "kind": "github", "project": "rcbops/rpc-openstack", "branches": ["master", "mitaka-13.0"] },
   { "kind": "github", "project": "rackerlabs/rackspace-how-to" },
   { "kind": "github", "project": "rackerlabs/docs-core-infra-user-guide" },
