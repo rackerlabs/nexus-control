@@ -1,0 +1,26 @@
+{% extends "_layouts/base.html" %}
+
+{% block bodyClass %}search{% endblock %}
+
+{% block bodyContent %}
+  <section class="search-section hero">
+    <div class="section-container">
+      <div class="section-grid">
+        <div class="background">
+          {% include "_partials/docs-hero-short.svg" %}
+        </div>
+        <div class="text">
+          <div data-carina-search-box data-load-initial="1" data-focus="1"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="search-section results">
+    <div class="section-container">
+      <div class="section-grid">
+        <div data-carina-search-results></div>
+        <div data-carina-search-paginator></div>
+      </div>
+    </div>
+  </section>
+{% endblock %}
