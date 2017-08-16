@@ -782,7 +782,7 @@
       },
       {
         "description": "Redirect Rackspace Email Mailbox Features",
-        "from": "^\\/how-to\\/\rackspace-email-mailbox-features(.*)$",
+        "from": "^\\/how-to\\/rackspace-email-mailbox-features(.*)$",
         "to": "/how-to/rackspace-email-control-panel-overview/",
         "rewrite": false,
         "status": 301
