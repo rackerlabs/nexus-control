@@ -14,7 +14,7 @@
       }
 
       & > span {
-        .lato('bold');
+        @include lato('bold');
       }
     }
   }

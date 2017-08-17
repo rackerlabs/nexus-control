@@ -6,7 +6,7 @@ body.search {
       height: auto;
       left: 50%;
       max-width: 980px;
-      .transform(translate(-50%, 0));
+      @include transform(translate(-50%, 0));
       width: 100%;
 
       @media (max-width: 767px) {
@@ -43,7 +43,7 @@ body.search {
     min-height: 400px;
 
     .section-container {
-      .centered-container(980px);
+      @include centered-container(980px);
     }
 
     [data-carina-search-results] {
