@@ -28,26 +28,26 @@
 
       &:focus {
         background: white;
-        border-color: @rax-blue;
+        border-color: $rax-blue;
       }
 
       &::-webkit-input-placeholder {
-        color: tint(@text-color, 20%);
+        color: tint($text-color, 20%);
         font-style: italic;
       }
     }
 
     button {
-      background: tint(@rax-blue, 15%);
-      border-color: @rax-blue;
+      background: tint($rax-blue, 15%);
+      border-color: $rax-blue;
       border-left-color: transparent;
       border-bottom-left-radius: 0;
       border-top-left-radius: 0;
       width: auto;
 
       &:hover, &:focus, &:active {
-        background: @rax-blue;
-        border-color: @rax-blue;
+        background: $rax-blue;
+        border-color: $rax-blue;
       }
 
       .button-text {

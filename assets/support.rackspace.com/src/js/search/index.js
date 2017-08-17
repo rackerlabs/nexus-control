@@ -1,6 +1,6 @@
 var angular = require('angular');
 
-var moduleName = 'carina.search';
+var moduleName = 'support.search';
 
 module.exports = moduleName;
 

@@ -1,6 +1,6 @@
 body.docs-home {
   .docs-section {
-    .page-section();
+    @include page-section();
 
     h2 {
       margin-bottom: 0.6em;
@@ -27,7 +27,7 @@ body.docs-home {
       height: auto;
       left: 50%;
       max-width: 980px;
-      .transform(translate(-50%, 0));
+      @include transform(translate(-50%, 0));
       width: 100%;
     }
 
@@ -91,18 +91,18 @@ body.docs-home {
     background: #f0f5fc;
 
     .intro {
-      .grid-unit(1/1, 50px);
+      @include grid-unit(1/1, 50px);
       text-align: center;
 
       h2 {
-        .h4();
+        @include h4();
         text-transform: uppercase;
       }
     }
 
     .featured-sets {
       .set {
-        .grid-unit(1/3, 50px);
+        @include grid-unit(1/3, 50px);
 
         .image {
           background: shade(white, 12%);
@@ -117,7 +117,7 @@ body.docs-home {
         }
 
         h3 {
-          .h4();
+          @include h4();
           margin-bottom: 5px;
         }
 
@@ -151,17 +151,17 @@ body.docs-home {
   }
 
   .docs-section.all-articles {
-    .page-section();
+    @include page-section();
 
     .heading, .tools, .articles {
-      .grid-unit(1/1, 50px);
+      @include grid-unit(1/1, 50px);
     }
 
     .heading {
       text-align: center;
 
       h2 {
-        .h4();
+        @include h4();
         text-transform: uppercase;
       }
     }
@@ -183,20 +183,20 @@ body.docs-home {
           }
 
           a {
-            .lato('light');
-            color: @text-color;
+            @include lato('light');
+            color: $text-color;
             display: inline-block;
             font-size: percentage((18/14));
             line-height: 2;
 
             &:hover, &:focus {
-              color: darken(@link-color, 15%);
+              color: darken($link-color, 15%);
               text-decoration: none;
             }
 
             &.active {
-              color: @link-color;
-              border-bottom: solid 2px @link-color;
+              color: $link-color;
+              border-bottom: solid 2px $link-color;
             }
           }
 
@@ -234,8 +234,8 @@ body.docs-home {
           }
 
           .details {
-            .lato('regular', 'italic');
-            color: tint(@text-color, 25%);
+            @include lato('regular', 'italic');
+            color: tint($text-color, 25%);
             margin-bottom: 5px;
           }
         }

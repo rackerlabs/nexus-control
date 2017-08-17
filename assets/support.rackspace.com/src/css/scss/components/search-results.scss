@@ -10,7 +10,7 @@
       padding: 1em 0.5em;
 
       .title {
-        .lato('bold');
+        @include lato('bold');
         display: block;
         font-size: 15px;
         margin-bottom: 0.5em;
@@ -20,7 +20,7 @@
         font-size: 12px;
 
         em {
-          .lato('bold');
+          @include lato('bold');
         }
       }
 
@@ -29,8 +29,8 @@
       }
 
       &.no-results, &.results-count {
-        .lato('regular', 'italic');
-        color: tint(@text-color, 40%);
+        @include lato('regular', 'italic');
+        color: tint($text-color, 40%);
         padding-top: 0;
         padding-bottom: 0;
       }
