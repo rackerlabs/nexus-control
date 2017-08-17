@@ -2,7 +2,7 @@ var angular = require('angular');
 var fs = require('fs');
 var _ = require('lodash');
 
-var moduleName = 'carina.search.components.search-paginator';
+var moduleName = 'support.search.components.search-paginator';
 module.exports = moduleName;
 
 angular.module(moduleName, [])
