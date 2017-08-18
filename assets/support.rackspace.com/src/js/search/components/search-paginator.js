@@ -75,7 +75,7 @@ angular.module(moduleName, [])
     this.range = updateRange(this.query, this.results);
   }.bind(this));
 }])
-.directive('carinaSearchPaginator', [function () {
+.directive('supportSearchPaginator', [function () {
   return {
     restrict: 'A',
     scope: {},
