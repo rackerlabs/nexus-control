@@ -14,7 +14,9 @@
       }
 
       & > span {
-        @include lato('bold');
+        font-family: $font-family-primary;
+        font-style: bold;
+        font-weight: normal;
       }
     }
   }
