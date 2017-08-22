@@ -10,7 +10,9 @@
       padding: 1em 0.5em;
 
       .title {
-        @include lato('bold');
+        font-family: $font-family-primary;
+        font-style: bold;
+        font-weight: normal;
         display: block;
         font-size: 15px;
         margin-bottom: 0.5em;
@@ -20,7 +22,9 @@
         font-size: 12px;
 
         em {
-          @include lato('bold');
+          font-family: $font-family-primary;
+          font-style: bold;
+          font-weight: normal;
         }
       }
 
@@ -29,8 +33,10 @@
       }
 
       &.no-results, &.results-count {
-        @include lato('regular', 'italic');
-        color: tint($text-color, 40%);
+        font-family: $font-family-primary;
+        font-style: italic;
+        font-weight: normal;
+        color: tint($color-text, 40%);
         padding-top: 0;
         padding-bottom: 0;
       }

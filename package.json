@@ -1,6 +1,7 @@
 {
   "name": "nexus-control",
   "version": "1.0.0",
+  "license": null,
   "description": "[![Build Status](https://travis-ci.org/rackerlabs/nexus-control.svg?branch=master)](https://travis-ci.org/rackerlabs/nexus-control)",
   "scripts": {
     "start": "grunt build",
@@ -18,8 +19,6 @@
     "angular": "^1.4.1",
     "angular-sanitize": "^1.5.3",
     "brfs": "^1.4.3",
-    "cheerio": "^0.19.0",
-    "grunt": "^0.4.5",
     "grunt-browserify": "^3.8.0",
     "grunt-cli": "^0.1.13",
     "grunt-concurrent": "^2.0.0",

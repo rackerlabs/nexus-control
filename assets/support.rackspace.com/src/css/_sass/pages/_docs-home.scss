@@ -184,7 +184,7 @@ body.docs-home {
 
           a {
             @include lato('light');
-            color: $text-color;
+            color: $color-text;
             display: inline-block;
             font-size: percentage((18/14));
             line-height: 2;
@@ -195,8 +195,8 @@ body.docs-home {
             }
 
             &.active {
-              color: $link-color;
-              border-bottom: solid 2px $link-color;
+              color: $color-kcblue;
+              border-bottom: solid 2px $color-kcblue;
             }
           }
 
@@ -235,7 +235,7 @@ body.docs-home {
 
           .details {
             @include lato('regular', 'italic');
-            color: tint($text-color, 25%);
+            color: tint($color-text, 25%);
             margin-bottom: 5px;
           }
         }
