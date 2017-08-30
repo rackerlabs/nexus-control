@@ -710,7 +710,7 @@
         "rewrite": false,
         "status": 301
       },
-      {   
+      {
         "description": "Retire use-tableau-desktop-with-hive-on-cloud-big-data",
         "from": "^\\/how-to\\/use-tableau-desktop-with-hive-on-cloud-big-data(.*)$",
         "to": "/how-to/article-retired/",
@@ -790,6 +790,13 @@
       {
         "description": "Redirect retired About volume types",
         "from": "^\\/how-to\\/about-volume-types(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
+        "description": "Redirect retired Managed DNS FAQ",
+        "from": "^\\/how-to\\/managed-dns-faq(.*)$",
         "to": "/how-to/article-retired/",
         "rewrite": false,
         "status": 301
