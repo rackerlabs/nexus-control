@@ -800,6 +800,13 @@
         "to": "/how-to/article-retired/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "Rename Sitecore Cloud FAQ to Sitecore Managed Cloud Premiu FAQ",
+        "from": "^\\/how-to\\/sitecore-cloud-faq(.*)$",
+        "to": "/how-to/sitecore-managed-cloud-premium-faq/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
