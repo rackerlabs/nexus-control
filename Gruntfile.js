@@ -16,6 +16,7 @@ module.exports = function(grunt) {
                     'assets/support.rackspace.com/src/js/bundle.js': ['assets/support.rackspace.com/src/js/site.js']
                 },
                 options: {
+                    transform: ['brfs', 'envify'],
                     watch: true
                 }
             },

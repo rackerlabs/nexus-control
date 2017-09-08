@@ -1,0 +1,39 @@
+[data-src-search-results] {
+  .search-results {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    li {
+      margin: 0;
+      padding: 1em 0.5em;
+
+      .title {
+        @include lato('bold');
+        display: block;
+        font-size: 15px;
+        margin-bottom: 0.5em;
+      }
+
+      .excerpt {
+        font-size: 12px;
+
+        em {
+          @include lato('bold');
+        }
+      }
+
+      &.loading {
+        text-align: center;
+      }
+
+      &.no-results, &.results-count {
+        @include lato('regular', 'italic');
+        color: tint($text-color, 40%);
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+    }
+  }
+}
