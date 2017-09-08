@@ -28,7 +28,7 @@
 
       &:focus {
         background: white;
-        border-color: $rax-blue;
+        border-color: $color-kcblue;
       }
 
       &::-webkit-input-placeholder {
@@ -38,16 +38,16 @@
     }
 
     button {
-      background: tint($rax-blue, 15%);
-      border-color: $rax-blue;
+      background: tint($color-kcblue, 15%);
+      border-color: $color-kcblue;
       border-left-color: transparent;
       border-bottom-left-radius: 0;
       border-top-left-radius: 0;
       width: auto;
 
       &:hover, &:focus, &:active {
-        background: $rax-blue;
-        border-color: $rax-blue;
+        background: $color-kcblue;
+        border-color: $color-kcblue;
       }
 
       .button-text {
