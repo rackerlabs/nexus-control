@@ -43,8 +43,6 @@ $(document).ready(function(){
 
 
 });
-Contact GitHub API Training Shop Blog About
-© 2017 GitHub, Inc. Terms Privacy Security Status Help
 
 var angular = require('angular');
 var markalytics = require('markalytics');
