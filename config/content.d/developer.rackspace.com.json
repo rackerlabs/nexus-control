@@ -38,6 +38,7 @@
           "/docs/managed-vmware-services/vcloud/v1.5/": "https://github.com/rackerlabs/rpc-vmware/vcloud-handbook-v1.5/",
           "/docs/rpc-vmware/rpc-vmware-customer-handbook/": "https://github.com/rackerlabs/rpc-vmware/rpc-vmware-customer-handbook/",
           "/docs/private-cloud/red-hat/": "https://github.com/rackerlabs/docs-redhat-osp/",
+          "/docs/rackspace-federation/": "https://github.com/rackerlabs/docs-rackspace-federation/",
           "/search/": null
       },
       "proxy": {
