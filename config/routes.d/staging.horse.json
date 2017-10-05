@@ -4,8 +4,7 @@
       "^/docs/private-cloud/release-notes/": "developer.rackspace.com/docs-singlepage.html",
       "^/docs/private-cloud/": "developer.rackspace.com/user-guide.html",
       "^/docs/api-doc-template/": "developer.rackspace.com/user-guide.html",
-      "^/docs/billing-api/": "developer.rackspace.com/user-guide.html",
-      "^/docs/rackspace-federation/": "developer.rackspace.com/user-guide.html"
+      "^/docs/billing-api/": "developer.rackspace.com/user-guide.html"
     }
   }
 }
