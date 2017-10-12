@@ -802,9 +802,16 @@
         "status": 301
       },
       {
-        "description": "Rename Sitecore Cloud FAQ to Sitecore Managed Cloud Premiu FAQ",
+        "description": "Rename Sitecore Cloud FAQ to Sitecore Managed Cloud Premium FAQ",
         "from": "^\\/how-to\\/sitecore-cloud-faq(.*)$",
         "to": "/how-to/sitecore-managed-cloud-premium-faq/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
+        "description": "Rename Rename a Rackspace email mailbox",
+        "from": "^\\/how-to\\/rename-a-rackspace-email-mailbox(.*)$",
+        "to": "/how-to/rename-a-rackspace-email-address/",
         "rewrite": false,
         "status": 301
       }
