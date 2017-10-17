@@ -1,7 +1,7 @@
 var angular = require('angular');
 var EventEmitter = require('event-emitter');
 
-var moduleName = 'carina.search.services.search';
+var moduleName = 'src.search.services.search';
 module.exports = moduleName;
 
 angular.module(moduleName, [])
@@ -12,7 +12,7 @@ angular.module(moduleName, [])
   var defaultQuery = {
     query: '',
     pageNumber: 1,
-    categories: 'getcarina.com'
+    categories: 'src'
   };
 
   var emptyResults = {

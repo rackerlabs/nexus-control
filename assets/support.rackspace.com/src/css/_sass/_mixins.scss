@@ -108,3 +108,45 @@
         -ms-transition: $content;
             transition: $content;
 }
+
+//Display
+
+@mixin display($content) {
+  display: -webkit-$content;
+  display: -moz-$content;
+  display: -ms-$content;
+  display: -o-$content;
+  display: $content;
+}
+
+//Placeholder
+
+@mixin placeholder($color,$fontstyle) {
+  &::-webkit-input-placeholder {
+    color: $color;
+    font-style: $fontstyle
+  };
+  &::-moz-input-placeholder {
+    color: $color;
+    font-style: $fontstyle
+  };
+  &::-ms-input-placeholder {
+    color: $color;
+    font-style: $fontstyle
+  };
+  &::-o-input-placeholder {
+    color: $color;
+    font-style: $fontstyle
+  };
+  &::placeholder {
+    color: $color;
+    font-style: $fontstyle
+  }
+}
+
+//Box shadow
+@mixin boxshadow($content) {
+  -webkit-box-shadow: $content;
+     -moz-box-shadow: $content;
+          box-shadow: $content;
+}

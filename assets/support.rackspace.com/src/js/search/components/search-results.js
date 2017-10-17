@@ -1,7 +1,7 @@
 var angular = require('angular');
 var fs = require('fs');
 
-var moduleName = 'support.search.components.search-results';
+var moduleName = 'src.search.components.search-results';
 module.exports = moduleName;
 
 angular.module(moduleName, [])
@@ -46,7 +46,7 @@ angular.module(moduleName, [])
     this.searchInProgress = false;
   }.bind(this));
 }])
-.directive('supportSearchResults', [function () {
+.directive('srcSearchResults', [function () {
   return {
     restrict: 'A',
     scope: {},
