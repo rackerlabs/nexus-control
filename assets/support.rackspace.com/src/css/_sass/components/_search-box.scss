@@ -1,49 +1,47 @@
 [data-src-search-box] {
   .search-input {
-    margin: 0;
-    width: 100%;
+    // margin: 0;
+    float: right;
+    width: 580px;
 
     form {
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flex;
-      display: -o-flex;
-      display: flex;
+      @include display(flex);
+      margin-top: 5px !important;
+      background: #fff;
+      position: relative;
+      width: 100%;
     }
 
     input {
+      border-width: 0;
+      outline-width: 0;
+      background: none;
+      width: 90%;
+      height: 25px;
+      padding: 10px 15px;
+      font-weight: 300;
+      font-size: 16px;
+      color: #000;
+      font-family: "Titillium Web", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      @include boxshadow(none);
       -webkit-appearance: none;
-      background: fadeout(white, 10%);
-      border: solid 1px #ccc;
-      border-right-width: 0px;
       display: block;
-      font-family: Arial;
-      font-size: 14px;
-      line-height: 32px;
-      margin: 0;
-      outline: none;
-      padding: 0 0.5em;
       transition: background 0.2s ease-out, border-color 0.2s ease-out;
-      width: 100%;
-
-      &:focus {
-        background: white;
-        border-color: $color-kcblue;
-      }
-
-      &::-webkit-input-placeholder {
-        color: tint($color-text, 20%);
-        font-style: italic;
-      }
+      @include placeholder (tint($color-text, 20%), italic);
     }
 
     button {
-      background: tint($color-kcblue, 15%);
-      border-color: $color-kcblue;
-      border-left-color: transparent;
-      border-bottom-left-radius: 0;
-      border-top-left-radius: 0;
-      width: auto;
+      position: relative;
+      top: 0;
+      right: 0;
+      cursor: pointer;
+      border-width: 0;
+      outline-width: 0;
+      font-size: 20px;
+      padding: 11px;
+      background: none;
+      color: #555;
+      @include transition(all 0.15s linear);
 
       &:hover, &:focus, &:active {
         background: $color-kcblue;

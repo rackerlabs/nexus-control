@@ -1,6 +1,6 @@
 var angular = require('angular');
 
-var moduleName = 'support.search';
+var moduleName = 'src.search';
 
 module.exports = moduleName;
 

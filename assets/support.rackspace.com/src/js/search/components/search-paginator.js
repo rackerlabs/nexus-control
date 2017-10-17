@@ -2,7 +2,7 @@ var angular = require('angular');
 var fs = require('fs');
 var _ = require('lodash');
 
-var moduleName = 'support.search.components.search-paginator';
+var moduleName = 'src.search.components.search-paginator';
 module.exports = moduleName;
 
 angular.module(moduleName, [])
@@ -75,7 +75,7 @@ angular.module(moduleName, [])
     this.range = updateRange(this.query, this.results);
   }.bind(this));
 }])
-.directive('supportSearchPaginator', [function () {
+.directive('srcSearchPaginator', [function () {
   return {
     restrict: 'A',
     scope: {},

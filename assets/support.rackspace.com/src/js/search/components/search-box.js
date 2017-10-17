@@ -1,7 +1,7 @@
 var angular = require('angular');
 var fs = require('fs');
 
-var moduleName = 'carina.search.components.search-box';
+var moduleName = 'src.search.components.search-box';
 module.exports = moduleName;
 
 angular.module(moduleName, [])
@@ -34,7 +34,7 @@ angular.module(moduleName, [])
 
 
 }])
-.directive('carinaSearchBox', [function () {
+.directive('srcSearchBox', [function () {
   return {
     restrict: 'A',
     scope: {

@@ -47,7 +47,7 @@ module.exports = function(grunt) {
                         expand: true,
                         src: [
                           'img/**/*',
-                          'fonts/**/*'
+                          'fonts/**/*',
                         ],
                         dest: 'assets/support.rackspace.com/dist/'
                     },
@@ -202,6 +202,9 @@ module.exports = function(grunt) {
                     ],
                     'assets/getcarina.com/dist/js/site.min.js': [
                       'assets/getcarina.com/src/js/bundle.js'
+                    ],
+                    'assets/support.rackspace.com/dist/js/raxheaderservice.min.js': [
+                      'assets/support.rackspace.com/raxheaderservice.js'
                     ]
                 }
             }
