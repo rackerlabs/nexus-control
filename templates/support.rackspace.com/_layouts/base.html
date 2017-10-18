@@ -22,9 +22,15 @@
   <div id="rax-footer">{% include "_includes/footer.html" %}</div>
 
   {% block headerScripts %}
-    {# <script type="text/javascript">
-      injectTemplate("how-to", "#rax-header", "#rax-footer", "#main-content");
-    </script> #}
+    {# {% if deconst.request.path.match('how-to/?') %}
+      <script type="text/javascript">
+        injectTemplate("how-to", "#rax-header", "#rax-footer", "#main-content");
+      </script>
+    {% else %}
+      <script type="text/javascript">
+        injectTemplate("whitepapers", "#rax-header", "#rax-footer", "#main-content");
+      </script>
+    {% endif %} #}
   {% endblock %}
   {% block footerScripts %}<script type="text/javascript" src="{{ jsUrl }}"></script>{% endblock %}
 {% endblock %}
