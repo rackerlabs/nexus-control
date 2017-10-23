@@ -36,6 +36,6 @@
   { "kind": "github", "project": "rackspace/rack" },
   { "kind": "github", "project": "rackerlabs/rackspace-whitepapers" },
   { "kind": "github", "project": "rackerlabs/docs-billing-apiguide" },
-  { "kind": "github", "project": "rackerlabs/docs-rackspace-federation" }
+  { "kind": "github", "project": "rackerlabs/docs-rackspace-federation" },
   { "kind": "github", "project": "rackerlabs/docs-sdp" }
 ]
