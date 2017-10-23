@@ -14,14 +14,9 @@
     <!-- third-party includes -->
     <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900' rel='stylesheet'1 type='text/css'>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="{% asset_path normalize.css %}">
-    <link rel="stylesheet" href="{% asset_path skeleton.css %}">
-
-    <link rel="stylesheet"href="{% asset_path carousel.css %}"/>
-
+    <link href="{{ cssUrl }}" rel="stylesheet">
     <link rel="stylesheet"href="https://4c5f0f4824b5f0326df3-ba48d26ab4f3c4858b16738b454bedcc.ssl.cf1.rackcdn.com/includes/css/style2.css"/>
 
-    <link rel="stylesheet"href="{% asset_path rax-footer.css %}"/>
 
     <!-- Google Tag Manager -->
     <script>
@@ -37,7 +32,7 @@
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
 
-    <script src="{% asset_path carousel.min.js %}"></script>
+    <script src="{{ deconst.assets.assets_support_rackspace_com_dist_js_carousel_min_js }}"></script>
 
     <script type="text/javascript" src="https://c4d62906a15616653758-49dececd4e3f03377b7f33fac7abfae8.ssl.cf5.rackcdn.com/prod/raxheaderservice.js"></script>
 {% endblock %}
