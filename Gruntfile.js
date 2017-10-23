@@ -205,6 +205,9 @@ module.exports = function(grunt) {
                     ],
                     'assets/support.rackspace.com/dist/js/raxheaderservice.min.js': [
                       'assets/support.rackspace.com/raxheaderservice.js'
+                    ],
+                    'assets/support.rackspace.com/dist/js/carousel.min.js': [
+                      'assets/support.rackspace.com/carousel.min.js'
                     ]
                 }
             }
