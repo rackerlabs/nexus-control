@@ -13,24 +13,18 @@
 {% set headlineTag = headlineTag if headlineTag else 'h2' %}
 
 {% block body %}
-  <div id="rax-header">{% include "_includes/header.html" %}</div>
+  <div id="rax-header"></div>
 
   <div id="main-content">
     {% block bodyContent %}{% endblock %}
   </div>
 
-  <div id="rax-footer">{% include "_includes/footer.html" %}</div>
+  <div id="rax-footer"></div>
 
   {% block headerScripts %}
-    {# {% if deconst.request.path.match('how-to/?') %}
-      <script type="text/javascript">
-        injectTemplate("how-to", "#rax-header", "#rax-footer", "#main-content");
-      </script>
-    {% else %}
-      <script type="text/javascript">
-        injectTemplate("whitepapers", "#rax-header", "#rax-footer", "#main-content");
-      </script>
-    {% endif %} #}
+    <script type="text/javascript">
+      injectTemplate("how-to", "#rax-header", "#rax-footer", "#main-content");
+    </script>
   {% endblock %}
-  {% block footerScripts %}<script type="text/javascript" src="{{ jsUrl }}"></script>{% endblock %}
+  {% block footerScripts %}{% endblock %}
 {% endblock %}
