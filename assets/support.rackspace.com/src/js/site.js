@@ -1,16 +1,13 @@
 var $ = require('jquery');
 window.$ = window.jQuery = $;
 
-var angular = require('angular');
-var markalytics = require('markalytics');
-
 var setupHomepage = require('./homepage');
 var setupAllArticles = require('./all-articles');
 var setupAdmonish = require('./admonish');
 
 // kick things off
 
-angular.element(function(){
+$(document).ready(function(){
 
   // FAQs toggle content
   $("div.faq h4").nextUntil("h4, h3, hr, .legal-container").hide();
@@ -46,11 +43,3 @@ angular.element(function(){
 
 
 });
-
-angular.module('src', [
-  require('angular-cookies'),
-  require('angular-sanitize'),
-  require('./search')
-]);
-
-angular.bootstrap(document, ['src']);

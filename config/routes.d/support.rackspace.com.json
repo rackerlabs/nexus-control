@@ -65,8 +65,7 @@
         "^/white-paper/.+?": "white-paper.html",
         "^/case-study/.+?": "case-study.html",
         "^/whitepapers/$": "whitepaper-home.html",
-        "^/whitepapers/.+?": "whitepaper.html",
-        "^/search/?": "search.html"
+        "^/whitepapers/.+?": "whitepaper.html"
       }
     }
 }
