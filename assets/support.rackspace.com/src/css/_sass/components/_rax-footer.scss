@@ -1,0 +1,103 @@
+#rax-footer-wrapper {
+	font-family:'Source Sans Pro', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	width: 100%;
+	border-top: 10px solid #0DAFCC;
+	background: #000;
+}
+
+#rax-fatfooter-wrapper {
+	width: 100%;
+	background: #151515;
+	border-bottom: 1px solid #333;
+}
+
+#rax-fatfooter-container {
+	max-width: 980px;
+	margin: 0 auto;
+	padding: 30px 10px 40px 10px;
+
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* IE 8+ */
+}
+
+.rax-fatfooter-col {
+	float: left;
+	width: 20%;
+}
+
+.rax-fatfooter-col.rax-fatfooter-about {
+	float: right;
+	width: 35%;
+}
+	
+#rax-fatfooter-container h4 {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #fff;
+	margin: 0 0 15px 0;
+}
+
+#rax-fatfooter-container ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	line-height: 20px;
+}
+
+#rax-fatfooter-container ul li {}
+
+#rax-fatfooter-container a {
+	font-size: 13px;
+	color: #999;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+#rax-fatfooter-container a:hover {text-decoration: underline;}
+	
+.rax-fatfooter-col.rax-fatfooter-about .rax-fatfooter-list-about {
+	float: left;
+	width: 45%;
+}
+
+#rax-basement-wrapper {width: 100%;}
+
+#rax-basement-container {
+	max-width: 980px;
+	margin: 0 auto;
+	padding: 20px 10px;
+	color: #fff;
+	font-size: 11px;
+
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* IE 8+ */
+}
+
+#rax-basement-container a {color: #ddd;}
+
+#rax-basement-racker-powered {
+	float: left;
+	width: 85px;
+	margin-right: 20px;
+}
+
+#rax-basement-copyright {
+	float: left;
+	margin: 5px 5px 0 0;
+}
+
+#rax-basement-navigation ul {margin-top: 5px;}
+
+#rax-basement-navigation ul li {
+	display: inline-block;
+	margin-left: 10px;
+	padding-left: 10px;
+	border-left: 1px solid #ccc;
+	line-height: 16px;
+}
+
+
