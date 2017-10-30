@@ -5,7 +5,9 @@
       "/docs/private-cloud/release-notes/": "https://github.com/rcbops/rpc-openstack/master/",
       "/docs/api-doc-template/": "https://github.com/rackerlabs/docs-common/",
       "/docs/billing-api/": "https://github.com/rackerlabs/docs-billing-apiguide/",
-      "/docs/sdp/": "https://github.com/rackerlabs/docs-SDP/"
+      "/docs/sdp/": "https://github.com/rackerlabs/docs-SDP/",
+      "/how-to/": "https://github.com/rackerlabs/rackspace-how-to/",
+      "/search/": null
     }
   }
 }
