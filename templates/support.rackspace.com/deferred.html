@@ -3,4 +3,40 @@
   Don't remove it unless you want to have a bad time.
 #}
 <!-- SITE-MONITORING-KEY: 6b824a55c911a52a  -->
-{{ deconst.content.envelope.body }}
+{% extends "_layouts/base.html" %}
+{% block head %}
+    <meta charset="utf-8">
+    <meta name="google-site-verification" content="NzupxPrG-13nt5r02YyMoqdVRcwCM4Ccir8VWoDqBgU" />
+    <title>Rackspace Support</title>
+
+    <link rel="shortcut icon"href="images/favicon.ico"/>
+
+    <!-- third-party includes -->
+    <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900' rel='stylesheet'1 type='text/css'>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="{{ cssUrl }}" rel="stylesheet">
+    <link rel="stylesheet"href="https://4c5f0f4824b5f0326df3-ba48d26ab4f3c4858b16738b454bedcc.ssl.cf1.rackcdn.com/includes/css/style2.css"/>
+
+
+    <!-- Google Tag Manager -->
+    <script>
+    dataLayer = [];
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MW68KW');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+
+    <script src="{{ deconst.assets.assets_support_rackspace_com_dist_js_carousel_min_js }}"></script>
+
+    <script type="text/javascript" src="https://c4d62906a15616653758-49dececd4e3f03377b7f33fac7abfae8.ssl.cf5.rackcdn.com/prod/raxheaderservice.js"></script>
+{% endblock %}
+
+{% block bodyContent %}
+  {{ deconst.content.envelope.body }}
+{% endblock %}
