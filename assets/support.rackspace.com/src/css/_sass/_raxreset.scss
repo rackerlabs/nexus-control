@@ -1,0 +1,23 @@
+/* START Header Reset -- based on http://meyerweb.com/eric/tools/css/reset/ v2.0b1 | 201101 */
+
+#rax-support-header {
+    line-height: 1;
+
+    div, ul, li, h1, p, a, strong, header, form, article, aside, nav, section {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+
+    ol, ul { list-style: none; }
+    
+    /* HTML5 display-role reset for older browsers */
+    article, aside, header, nav, section { display: block; }
+    
+}
+
+/* END Header Reset */

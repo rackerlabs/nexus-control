@@ -1,0 +1,17 @@
+/* Basic Clearfix */
+.rax-clearfix {
+    display: inline-block;
+
+    &:after {  
+        content: '.';
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+}
+
+/* Hides from IE-mac \*/
+.ie6 .rax-clearfix {height: 1%;}
+.rax-clearfix {display: block;}
+/* End hide from IE-mac */

@@ -7,6 +7,7 @@ var markalytics = require('markalytics');
 var setupHomepage = require('./homepage');
 var setupAllArticles = require('./all-articles');
 var setupAdmonish = require('./admonish');
+var setupHeaderService = require('./raxheaderservice');
 
 // kick things off
 
@@ -35,6 +36,7 @@ angular.element(function(){
   }
 
   setupAdmonish();
+  setupHeaderService();
 
   //setup the dropdown on the whitepaper site
   $('#topics').change(function() {
