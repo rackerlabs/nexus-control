@@ -11,8 +11,7 @@ angular.module(moduleName, [])
 
   var defaultQuery = {
     query: '',
-    pageNumber: 1,
-    categories: 'src'
+    pageNumber: 1
   };
 
   var emptyResults = {
@@ -116,8 +115,7 @@ angular.module(moduleName, [])
       url: '/_api/search/',
       params: {
         q: state.query.query,
-        pageNumber: state.query.pageNumber,
-        categories: state.query.categories
+        pageNumber: state.query.pageNumber
       }
     })
     .then(function (response) {

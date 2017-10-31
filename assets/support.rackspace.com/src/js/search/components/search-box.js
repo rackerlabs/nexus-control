@@ -28,17 +28,13 @@ angular.module(moduleName, [])
     });
   };
 
-  if ($scope.autoSearch !== '0') {
-    $scope.$watch(watchQuery, onQueryChange);
-  }
-
+  $scope.$watch(watchQuery, onQueryChange);
 
 }])
 .directive('srcSearchBox', [function () {
   return {
     restrict: 'A',
     scope: {
-      autoSearch: '@',
       focus: '@',
       loadInitial: '@'
     },
