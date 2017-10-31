@@ -5,7 +5,9 @@
       "^/docs/private-cloud/": "developer.rackspace.com/user-guide.html",
       "^/docs/api-doc-template/": "developer.rackspace.com/user-guide.html",
       "^/docs/billing-api/": "developer.rackspace.com/user-guide.html",
-      "^/docs/sdp/": "developer.rackspace.com/user-guide.html"
+      "^/docs/sdp/": "developer.rackspace.com/user-guide.html",
+      "^/how-to/$": "support.rackspace.com/home2.html",
+      "^/search/?": "support.rackspace.com/search2.html"
     }
   }
 }
