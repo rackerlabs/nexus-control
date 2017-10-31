@@ -29,6 +29,13 @@ Include jquery.openCarousel.js and jquery.openCarousel.css in your projects
 	overflow: hidden;
 	width: 50000px;
 	white-space: nowrap;
+  a.card {
+    border: 0 !important;
+    box-shadow: 0 !important;
+  }
 }
 
-.ocarousel_window_slides>* {float: left; white-space: normal;}
+.ocarousel_window_slides>* {
+  float: left;
+  white-space: normal;
+}

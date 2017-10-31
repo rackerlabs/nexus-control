@@ -9,13 +9,13 @@
         "header",
         "footer",
         "syntax",
-        "headerstyle",
         "whitepaperlanding",
+        "headerstyle",
         "components/search-box",
         "components/search-paginator",
         "components/search-results",
         "components/carousel",
-        // "pages/search",
+        "pages/search",
         // "pages/docs-home",
 
         url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700),
@@ -23,7 +23,10 @@
         url(https://fonts.googleapis.com/css?family=Source+Code+Pro),
         url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
 
-html, body {height: 100%;}
+html, body {
+  height: 100%;
+  line-height: 1.6;
+}
 
 a {
     -moz-transition: all 0.15s linear;
