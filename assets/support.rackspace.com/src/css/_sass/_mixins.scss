@@ -105,6 +105,7 @@
 
 @mixin transition($content) {
     -webkit-transition: $content;
+       -moz-transition: $content;
         -ms-transition: $content;
             transition: $content;
 }
@@ -149,4 +150,18 @@
   -webkit-box-shadow: $content;
      -moz-box-shadow: $content;
           box-shadow: $content;
+}
+
+//Box sizing
+@mixin boxsize($content) {
+  -webkit-box-sizing: $content;
+     -moz-box-sizing: $content;
+          box-sizing: $content;
+}
+
+@mixin animate($content) {
+  -webkit-animation: $content;
+     -moz-animation: $content;
+       -o-animation: $content;
+          animation: $content;
 }

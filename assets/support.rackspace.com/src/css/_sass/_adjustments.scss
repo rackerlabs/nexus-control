@@ -1,0 +1,101 @@
+// START Adjustments
+
+// Community
+.layout-region-inner.content .support-results-container h4 {
+    margin-top: 5px;
+}
+
+// Docs
+#content-wrapper .support-results-container {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+#main-content #container .support-results-container ul.support-content-filter {margin-left: 0;}
+
+#content-wrapper .support-results-container ul.support-content-filter li {
+    font-family: 'Open Sans', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    list-style-type: none;
+    margin-bottom: 25px;
+    padding: 0;
+}
+
+#main-content .container .support-results-container h4 {
+    padding-top: 25px;
+    font-family: 'Source Sans Pro', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    color: #666;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#content-wrapper .support-results-container #search-results h5 {
+    font-family: 'Source Sans Pro', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 5px;
+}
+#content-wrapper .support-results-container #search-results p {
+    font-family: 'Source Sans Pro', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    margin: 0 0 5px;
+    color: #666;
+}
+#content-wrapper .support-results-container #search-results p.meta {
+    font-family: 'Source Sans Pro', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 20px;
+}
+#content-wrapper .support-results-container p.support-results-more {
+    margin: 40px 0;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 16px;
+}
+
+/* FOR SUPPORT HUB */
+#container .support-results-container {
+    width: 960px;
+    margin: 0 auto;
+}
+.support-results-container h4 {
+    font-family: 'Source Sans Pro', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    color: #666;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* FOR KC */
+#content #content-wrap .support-results-container h4 {
+    margin-top: 5px;
+}
+
+/* END Adjustments */
+
+.ui-autocomplete.ui-corner-all {
+    border-radius: 0;
+    border-width: 0;
+}
+.ui-autocomplete.ui-corner-all li.ui-menu-item {
+    border-radius: 0;
+    color: #666;
+    line-height: 1.6;
+}
+.ui-autocomplete.ui-corner-all li.ui-menu-item a.ui-corner-all,
+.ui-autocomplete.ui-corner-all li.ui-menu-item a.ui-corner-all:hover {
+    border-radius: 0;
+    padding: 7px 10px;
+    border-width: 0;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0;
+}
