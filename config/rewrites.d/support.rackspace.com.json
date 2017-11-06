@@ -814,6 +814,13 @@
         "to": "/how-to/rename-a-rackspace-email-address/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "Redirect DNS Fundamentals",
+        "from": "^\\/whitepapers\\/dns-fundamentals(.*)$",
+        "to": "/how-to/dns-fundamentals/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
