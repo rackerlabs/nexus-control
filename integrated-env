@@ -12,7 +12,8 @@
 export ADMIN_APIKEY=1111
 
 # Set this to the domain name of the site you're interested in.
-# Other interesting values depending on what you're working on: getcarina.com, support.rackspace.com.
+# Other interesting values depending on what you're working on: getcarina.com, support.rackspace.com
+# developer.rackspace.com or staging.horse (if you are not yet in production)
 export PRESENTED_URL_DOMAIN=developer.rackspace.com
 
 # Determine the storage backend.
