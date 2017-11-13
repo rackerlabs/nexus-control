@@ -35,6 +35,8 @@ export CONTROL_REPO_HOST_PATH= ; echo "Please set CONTROL_REPO_HOST_PATH in ${BA
 # Set these to a git URL and branch to load the control repository from GitHub instead.
 # export CONTROL_REPO_URL=https://github.com/rackerlabs/nexus-control.git
 # export CONTROL_REPO_BRANCH=master
+export CONTROL_REPO_URL=
+export CONTROL_REPO_BRANCH=
 
 # A task to be run in the control repo's directory to build/upload assets
 export CONTROL_REPO_ASSETS_TASK="grunt build"
