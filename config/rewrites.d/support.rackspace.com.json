@@ -828,6 +828,20 @@
         "to": "/how-to/email-fundamentals/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "Redirect Networking fundamentals",
+        "from": "^\\/whitepapers\\/networking-fundamentals(.*)$",
+        "to": "/how-to/networking-fundamentals/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
+        "description": "Redirect Encryption fundamentals",
+        "from": "^\\/whitepapers\\/encryption-fundamentals(.*)$",
+        "to": "/how-to/encryption-fundamentals/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
