@@ -821,6 +821,13 @@
         "to": "/how-to/dns-fundamentals/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "Redirect Email fundamentals",
+        "from": "^\\/whitepapers\\/email-fundamentals(.*)$",
+        "to": "/how-to/email-fundamentals/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
