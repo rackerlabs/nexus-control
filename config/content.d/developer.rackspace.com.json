@@ -39,6 +39,7 @@
           "/docs/rpc-vmware/rpc-vmware-customer-handbook/": "https://github.com/rackerlabs/rpc-vmware/rpc-vmware-customer-handbook/",
           "/docs/private-cloud/red-hat/": "https://github.com/rackerlabs/docs-redhat-osp/",
           "/docs/rackspace-federation/": "https://github.com/rackerlabs/docs-rackspace-federation/",
+          "/docs/ticketing/": "https://github.com/rackerlabs/docs-SDP/",
           "/search/": null
       },
       "proxy": {
