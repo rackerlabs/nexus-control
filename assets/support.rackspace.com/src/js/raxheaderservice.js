@@ -11,8 +11,7 @@ var divElements = {
     "how-to": "#raxhs-how-to",
     "api": "#raxhs-api",
     "community": "#raxhs-community",
-    "support": "#raxhs-support",
-    "whitepapers": "#raxhs-whitepapers"
+    "support": "#raxhs-support"
 };
 
 function checkApiDocsHref() {

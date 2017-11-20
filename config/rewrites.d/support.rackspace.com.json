@@ -17,11 +17,22 @@
           "status": 302
       },
       {
-          "description": "redirect old white-paper links to new whitepapers landing page",
-          "from": "^\\/white-paper\\/?(.*)$",
-          "to": "/whitepapers/",
+          "description": "redirect whitepapers to customer stories page",
+          "from": "^\\/whitepapers\\/?(.*)$",
+          "to": "/customer-stories",
+          "toProtocol": "https",
+          "toHostname": "rackspace.com",
           "rewrite": false,
           "status": 301
+      },
+      {
+        "description": "redirect white-papers to customer stories page",
+        "from": "^\\/white-paper\\/?(.*)$",
+        "to": "/customer-stories",
+        "toProtocol": "https",
+        "toHostname": "rackspace.com",
+        "rewrite": false,
+        "status": 301
       },
       {
           "description": "Modify hosts article - Spanish translation",
