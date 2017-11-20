@@ -849,6 +849,13 @@
         "to": "/how-to/business-email-101-an-8-step-guide-to-selecting-email-for-your-business/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "Retire Migrate a Linux server per-package from the command line",
+        "from": "^\\/how-to\\/migrating-a-linux-server-from-the-command-line-2(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
