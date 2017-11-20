@@ -842,6 +842,13 @@
         "to": "/how-to/encryption-fundamentals/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "Redirect Business Email 101",
+        "from": "^\\/whitepapers\\/business-email-101-an-8-step-guide-to-selecting-email-for-your-business(.*)$",
+        "to": "/how-to/business-email-101-an-8-step-guide-to-selecting-email-for-your-business/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
