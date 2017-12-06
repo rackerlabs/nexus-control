@@ -881,6 +881,13 @@
         "to": "/how-to/traditional-colocation-vs-rackspace-managed-colocation/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "Comparison of hosting methods",
+        "from": "^\\/how-to\\/cloud-hosting-vs-shared-hosting-vs-vps(.*)$",
+        "to": "/how-to/comparison-of-hosting-methods/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
