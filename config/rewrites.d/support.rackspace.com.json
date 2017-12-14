@@ -888,6 +888,13 @@
         "to": "/how-to/comparison-of-hosting-methods/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "Using managed colocation",
+        "from": "^\\/how-to\\/when-is-managed-colocation-a-good-fit(.*)$",
+        "to": "/how-to/using-managed-colocation/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
