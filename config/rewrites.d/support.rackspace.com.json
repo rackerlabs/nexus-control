@@ -899,7 +899,7 @@
       {
         "description": "reclaim vat",
         "from": "^\\/how-to\\/why-do-you-need-my-vat-id-number(.*)$",
-        "to": "/how-to/reclaim-vat/",
+        "to": "/how-to/billing-services-overview/",
         "rewrite": false,
         "status": 301
       }
