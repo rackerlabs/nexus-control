@@ -895,6 +895,13 @@
         "to": "/how-to/using-managed-colocation/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "reclaim vat",
+        "from": "^\\/how-to\\/why-do-you-need-my-vat-id-number(.*)$",
+        "to": "/how-to/reclaim-vat/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
