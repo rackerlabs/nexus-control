@@ -897,7 +897,7 @@
         "status": 301
       },
       {
-        "description": "reclaim vat",
+        "description": "redirect reclaim vat to billing overview",
         "from": "^\\/how-to\\/why-do-you-need-my-vat-id-number(.*)$",
         "to": "/how-to/billing-services-overview/",
         "rewrite": false,
