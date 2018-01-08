@@ -44,6 +44,7 @@
             "^/docs/rack-cli/": "rack-cli.html",
             "^/docs/rackspace-federation/": "user-guide.html",
             "^/docs/ticketing/": "user-guide.html",
+            "^/docs/appformix/": "user-guide.html",
             "^/sdks": "sdks-home.html",
             "^/sdks/.+?": "sdks-page.html",
             "\\.xml$": "feed.xml",

@@ -40,6 +40,7 @@
           "/docs/private-cloud/red-hat/": "https://github.com/rackerlabs/docs-redhat-osp/",
           "/docs/rackspace-federation/": "https://github.com/rackerlabs/docs-rackspace-federation/",
           "/docs/ticketing/": "https://github.com/rackerlabs/docs-SDP/",
+          "/docs/appformix/": "https://github.com/rackerlabs/docs-appformix/",
           "/search/": null
       },
       "proxy": {
