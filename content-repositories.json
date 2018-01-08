@@ -37,4 +37,5 @@
   { "kind": "github", "project": "rackerlabs/docs-billing-apiguide" },
   { "kind": "github", "project": "rackerlabs/docs-rackspace-federation" },
   { "kind": "github", "project": "rackerlabs/docs-sdp" }
+  { "kind": "github", "project": "rackerlabs/docs-appformix" }
 ]
