@@ -902,6 +902,13 @@
         "to": "/how-to/billing-services-overview/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "redirect Outgoing email issue on andriod phones to Email issue on andriod phones",
+        "from": "^\\/how-to\\/outgoing-email-issue-on-android-phones(.*)$",
+        "to": "/how-to/email-issue-on-android-phones/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
