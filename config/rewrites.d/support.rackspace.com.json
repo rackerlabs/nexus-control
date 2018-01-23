@@ -920,7 +920,7 @@
       {
         "description": "retire test-and-send-mail-using-php",
         "from": "^\\/how-to\\/test-and-send-mail-using-php(.*)$",
-        "to:" "/how-to/article-retired/",
+        "to": "/how-to/article-retired/",
         "rewrite": false,
         "status": 301
       }
