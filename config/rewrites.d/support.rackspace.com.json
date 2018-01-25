@@ -50,7 +50,7 @@
       },
       {
           "description": "Getting started with Role-Based Access Control (RBAC)",
-          "from": "\\/how-to\\/getting-started-with-role-based-access-control-rbac-0(.*)$",
+          "from": "^\\/how-to\\/getting-started-with-role-based-access-control-rbac-0(.*)$",
           "to": "/how-to/getting-started-with-role-based-access-control-rbac/",
           "rewrite": false,
           "status": 301
@@ -82,13 +82,6 @@
          "to": "/how-to/rackspace-monitoring/$1",
          "rewrite": false,
          "status": 301
-      },
-      {
-         "description": "Redirect support.rackspace.com/white-paper/numa-vnuma-and-cpu-scheduling/ URL to how-to/numa-vnuma-and-cpu-scheduling/ ",
-        "from": "^\\/white-paper\\/numa-vnuma-and-cpu-scheduling(.*)$",
-        "to": "/how-to/numa-vnuma-and-cpu-scheduling/",
-        "rewrite": false,
-        "status": 301
       },
       {
         "description": "Redirect support.rackspace.com /how-to/generating-your-encrypted-key-in-cloud-backup/ URL to how-to/generate-your-encrypted-key-in-cloud-backup/ ",
@@ -213,20 +206,6 @@
         "description": "Redirect /how-to/rackspace-cloud-essentials-what-are-your-name-servers/ URL to /how-to/rackspace-name-servers/",
         "from": "^\\/how-to\\/rackspace-cloud-essentials-what-are-your-name-servers(.*)$",
         "to": "/how-to/rackspace-name-servers/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-         "description": "Redirect support.rackspace.com/white-paper/systems-management-simplified-in-the-cloud-0/ URL to how-to/article-retired/ ",
-         "from": "^\\/white-paper\\/systems-management-simplified-in-the-cloud-0(.*)$",
-         "to": "/how-to/article-retired/",
-         "rewrite": false,
-         "status": 301
-      },
-      {
-        "description": "Redirect support.rackspace.com/white-paper/systems-management-simplified-in-the-cloud/ URL to how-to/article-retired/ ",
-        "from": "^\\/white-paper\\/systems-management-simplified-in-the-cloud(.*)$",
-        "to": "/how-to/article-retired/",
         "rewrite": false,
         "status": 301
       },
@@ -374,13 +353,6 @@
         "description": "Redirect email article to new permalink /how-to/migrate-your-email-by-using-the-self-service-migration-tool/",
         "from": "^\\/how-to\\/migrate-your-email-by-using-the-self-service-tool(.*)$",
         "to": "/how-to/migrate-your-email-by-using-the-self-service-migration-tool",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect white paper article to new permalink /how-to/understanding-the-cloud-computing-stack-saas-paas-iaas/",
-        "from": "^\\/https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/whitepaper_pdf/Understanding-the-Cloud-Computing-Stack.pdf(.*)$",
-        "to": "/how-to/understanding-the-cloud-computing-stack-saas-paas-iaas/",
         "rewrite": false,
         "status": 301
       },
@@ -823,41 +795,6 @@
         "description": "Rename Rename a Rackspace email mailbox",
         "from": "^\\/how-to\\/rename-a-rackspace-email-mailbox(.*)$",
         "to": "/how-to/rename-a-rackspace-email-address/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect DNS Fundamentals",
-        "from": "^\\/whitepapers\\/dns-fundamentals(.*)$",
-        "to": "/how-to/dns-fundamentals/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect Email fundamentals",
-        "from": "^\\/whitepapers\\/email-fundamentals(.*)$",
-        "to": "/how-to/email-fundamentals/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect Networking fundamentals",
-        "from": "^\\/whitepapers\\/networking-fundamentals(.*)$",
-        "to": "/how-to/networking-fundamentals/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect Encryption fundamentals",
-        "from": "^\\/whitepapers\\/encryption-fundamentals(.*)$",
-        "to": "/how-to/encryption-fundamentals/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect Business Email 101",
-        "from": "^\\/whitepapers\\/business-email-101-an-8-step-guide-to-selecting-email-for-your-business(.*)$",
-        "to": "/how-to/business-email-101-an-8-step-guide-to-selecting-email-for-your-business/",
         "rewrite": false,
         "status": 301
       },
