@@ -911,6 +911,13 @@
         "status": 301
       },
       {
+        "description": "redirect Supported Operating Systems",
+        "from": "^\\/how-to\\/supported-operating-systems(.*)$",
+        "to": "/how-to/supported-operating-systems-in-rackspace-public-cloud/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
         "description": "Retire Administrator management: Cloud Office Control Panel",
         "from": "^\\/how-to\\/administrator-management-cloud-office-control-panel(.*)$",
         "to": "/how-to/article-retired/",
