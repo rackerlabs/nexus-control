@@ -379,7 +379,7 @@
       },
       {
         "description": "Redirect Exchange 2013 upgrade article to Exchange 2016 upgrade",
-        "from": "^\\how-to\\/upgrading-to-exchange-2013(.*)$",
+        "from": "^\\/how-to\\/upgrading-to-exchange-2013(.*)$",
         "to": "/how-to/upgrading-to-exchange-2016/",
         "rewrite": false,
         "status": 301
