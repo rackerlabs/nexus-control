@@ -930,6 +930,13 @@
         "to": "/how-to/article-retired/",
         "rewrite": false,
         "status": 301
+      },
+     {
+        "description": "redirect supported OS article",
+        "from": "^\\/how-to\\/supported-operating-systems(.*)$",
+        "to": "/how-to/supported-operating-systems-in-rackspace-public-cloud/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
