@@ -512,7 +512,7 @@
       },
       {
         "description": "Redirect public-folder-permissions-for-exchange/ to public-folder-permissions-for-exchange-2007-and-2010/",
-        "from": "^\\/how-to\\/public-folder-permissions-for-exchange(.*)$",
+        "from": "^\\/how-to\\/public-folder-permissions-for-exchange/(.*)$",
         "to": "/how-to/public-folder-permissions-for-exchange-2007-and-2010/",
         "rewrite": false,
         "status": 301
@@ -849,7 +849,7 @@
       },
       {
         "description": "redirect Supported Operating Systems",
-        "from": "^\\/how-to\\/supported-operating-systems(.*)$",
+        "from": "^\\/how-to\\/supported-operating-systems/(.*)$",
         "to": "/how-to/supported-operating-systems-in-rackspace-public-cloud/",
         "rewrite": false,
         "status": 301
