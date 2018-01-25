@@ -37,7 +37,7 @@
       {
           "description": "Modify hosts article - Spanish translation",
           "from": "\\/knowledge_center\\/es\\/article\\/how-do-i-modify-my-hosts-file(.*)$",
-          "to": "/how-to/como-meodificar-mi-archivo-de-hosts/",
+          "to": "/how-to/como-modificar-mi-archivo-de-hosts/",
           "rewrite": false,
           "status": 301
       },
@@ -50,7 +50,7 @@
       },
       {
           "description": "Getting started with Role-Based Access Control (RBAC)",
-          "from": "\\/how-to\\/getting-started-with-role-based-access-control-rbac-0(.*)$",
+          "from": "^\\/how-to\\/getting-started-with-role-based-access-control-rbac-0(.*)$",
           "to": "/how-to/getting-started-with-role-based-access-control-rbac/",
           "rewrite": false,
           "status": 301
@@ -65,7 +65,7 @@
       {
         "description": "Redirect /knowledge_center/email-apps/ to /how-to#cloud-office",
         "from": "^\\/knowledge_center\\/email-apps\\/?",
-        "to": "/how-to/#cloud-office",
+        "to": "/how-to/rackspace-email/",
         "rewrite": false,
         "status": 301
       },
@@ -82,13 +82,6 @@
          "to": "/how-to/rackspace-monitoring/$1",
          "rewrite": false,
          "status": 301
-      },
-      {
-         "description": "Redirect support.rackspace.com/white-paper/numa-vnuma-and-cpu-scheduling/ URL to how-to/numa-vnuma-and-cpu-scheduling/ ",
-        "from": "^\\/white-paper\\/numa-vnuma-and-cpu-scheduling(.*)$",
-        "to": "/how-to/numa-vnuma-and-cpu-scheduling/",
-        "rewrite": false,
-        "status": 301
       },
       {
         "description": "Redirect support.rackspace.com /how-to/generating-your-encrypted-key-in-cloud-backup/ URL to how-to/generate-your-encrypted-key-in-cloud-backup/ ",
@@ -213,20 +206,6 @@
         "description": "Redirect /how-to/rackspace-cloud-essentials-what-are-your-name-servers/ URL to /how-to/rackspace-name-servers/",
         "from": "^\\/how-to\\/rackspace-cloud-essentials-what-are-your-name-servers(.*)$",
         "to": "/how-to/rackspace-name-servers/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-         "description": "Redirect support.rackspace.com/white-paper/systems-management-simplified-in-the-cloud-0/ URL to how-to/article-retired/ ",
-         "from": "^\\/white-paper\\/systems-management-simplified-in-the-cloud-0(.*)$",
-         "to": "/how-to/article-retired/",
-         "rewrite": false,
-         "status": 301
-      },
-      {
-        "description": "Redirect support.rackspace.com/white-paper/systems-management-simplified-in-the-cloud/ URL to how-to/article-retired/ ",
-        "from": "^\\/white-paper\\/systems-management-simplified-in-the-cloud(.*)$",
-        "to": "/how-to/article-retired/",
         "rewrite": false,
         "status": 301
       },
@@ -378,13 +357,6 @@
         "status": 301
       },
       {
-        "description": "Redirect white paper article to new permalink /how-to/understanding-the-cloud-computing-stack-saas-paas-iaas/",
-        "from": "^\\/https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/whitepaper_pdf/Understanding-the-Cloud-Computing-Stack.pdf(.*)$",
-        "to": "/how-to/understanding-the-cloud-computing-stack-saas-paas-iaas/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
         "description": "Redirect  databases article to new permalink /how-to/manage-cloud-databases-ha-groups-in-the-cloud-control-panel/",
         "from": "^\\/how-to\\/managing-cloud-databases-ha-groups-in-the-cloud-control-panel(.*)$",
         "to": "/how-to/manage-cloud-databases-ha-groups-in-the-cloud-control-panel/",
@@ -407,7 +379,7 @@
       },
       {
         "description": "Redirect Exchange 2013 upgrade article to Exchange 2016 upgrade",
-        "from": "^\\how-to\\/upgrading-to-exchange-2013(.*)$",
+        "from": "^\\/how-to\\/upgrading-to-exchange-2013(.*)$",
         "to": "/how-to/upgrading-to-exchange-2016/",
         "rewrite": false,
         "status": 301
@@ -540,7 +512,7 @@
       },
       {
         "description": "Redirect public-folder-permissions-for-exchange/ to public-folder-permissions-for-exchange-2007-and-2010/",
-        "from": "^\\/how-to\\/public-folder-permissions-for-exchange(.*)$",
+        "from": "^\\/how-to\\/public-folder-permissions-for-exchange/(.*)$",
         "to": "/how-to/public-folder-permissions-for-exchange-2007-and-2010/",
         "rewrite": false,
         "status": 301
@@ -827,41 +799,6 @@
         "status": 301
       },
       {
-        "description": "Redirect DNS Fundamentals",
-        "from": "^\\/whitepapers\\/dns-fundamentals(.*)$",
-        "to": "/how-to/dns-fundamentals/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect Email fundamentals",
-        "from": "^\\/whitepapers\\/email-fundamentals(.*)$",
-        "to": "/how-to/email-fundamentals/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect Networking fundamentals",
-        "from": "^\\/whitepapers\\/networking-fundamentals(.*)$",
-        "to": "/how-to/networking-fundamentals/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect Encryption fundamentals",
-        "from": "^\\/whitepapers\\/encryption-fundamentals(.*)$",
-        "to": "/how-to/encryption-fundamentals/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect Business Email 101",
-        "from": "^\\/whitepapers\\/business-email-101-an-8-step-guide-to-selecting-email-for-your-business(.*)$",
-        "to": "/how-to/business-email-101-an-8-step-guide-to-selecting-email-for-your-business/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
         "description": "Retire Migrate a Linux server per-package from the command line",
         "from": "^\\/how-to\\/migrating-a-linux-server-from-the-command-line-2(.*)$",
         "to": "/how-to/article-retired/",
@@ -912,7 +849,7 @@
       },
       {
         "description": "redirect Supported Operating Systems",
-        "from": "^\\/how-to\\/supported-operating-systems(.*)$",
+        "from": "^\\/how-to\\/supported-operating-systems/(.*)$",
         "to": "/how-to/supported-operating-systems-in-rackspace-public-cloud/",
         "rewrite": false,
         "status": 301
