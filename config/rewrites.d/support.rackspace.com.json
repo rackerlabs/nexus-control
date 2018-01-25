@@ -65,7 +65,7 @@
       {
         "description": "Redirect /knowledge_center/email-apps/ to /how-to#cloud-office",
         "from": "^\\/knowledge_center\\/email-apps\\/?",
-        "to": "/how-to/#cloud-office",
+        "to": "/how-to/rackspace-email/",
         "rewrite": false,
         "status": 301
       },
