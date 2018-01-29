@@ -874,6 +874,13 @@
         "to": "/how-to/article-retired/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "retire set-an-email-catch-all-address-in-the-cloud-office-control-panel",
+        "from": "^\\how-to\\/set-an-email-catch-all-address-in-the-cloud-office-control-panel(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
