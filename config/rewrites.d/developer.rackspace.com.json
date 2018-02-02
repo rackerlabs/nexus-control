@@ -333,12 +333,5 @@
           "rewrite:": false,
           "status": 301
         },
-        {
-          "description": "Redirect getting started URLs to quickstart content",
-          "from": "^\\/docs\\/([^/]+?)\\/getting-started\\/(.*?)",
-          "to": "/docs/$1/quickstart/$2",
-          "rewrite": false,
-          "status": 301
-        }
     ]
 }
