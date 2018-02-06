@@ -341,11 +341,11 @@
           "status": 301
         }
         {
-          "description": "Redirect managed-vmware-services to server-virt link",
-          "from": "^\\/docs\\/([^/]+?)\\/managed-vmware-services\\/(.*?)",
-          "to": "/docs/$1/docs-vmware-server-virt/$2",
-          "rewrite": false,
-          "status": 301
-        }
+            "description": "Redirect Server Virtualization URL",
+            "from": "^\\/docs\\/managed-vmware-services\\/server-virt-handbook\\/?(.*)$",
+            "to": "/docs/docs-vmware-server-virt/server-virt-handbook/",
+            "rewrite": false,
+            "status": 301
+        },
     ]
 }
