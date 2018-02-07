@@ -346,6 +346,27 @@
           "to": "/docs/docs-vmware-server-virt/server-virt-handbook/",
           "rewrite": false,
           "status": 301
+        },
+        {
+          "description": "Redirect Dedicated vCloud 1.0 URL",
+          "from": "^\\/docs\\/managed-vmware-services\\/vcloud\\/v1\\/?(.*)$",
+          "to": "/docs/rpc-vmware/vcloud/v1/",
+          "rewrite": false,
+          "status": 301
+        },
+        {
+          "description": "Redirect Dedicated vCloud 1.5 URL",
+          "from": "^\\/docs\\/managed-vmware-services\\/vcloud\\/v1.5\\/?(.*)$",
+          "to": "/docs/rpc-vmware/vcloud/v1.5/",
+          "rewrite": false,
+          "status": 301
+        },
+        {
+          "description": "Redirect vCenter handbook URL",
+          "from": "^\\/docs\\/managed-vmware-services\\/vcenter\\/?(.*)$",
+          "to": "/docs/rpc-vmware/vcenter//",
+          "rewrite": false,
+          "status": 301
         }
     ]
 }
