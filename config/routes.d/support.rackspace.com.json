@@ -34,7 +34,7 @@
         "^/how-to/dedicated-hosting/$": "product.html",
         "^/how-to/cloud-servers-faq/$": "faq.html",
         "^/how-to/cloud-images-faq/$": "faq.html",
-        "^/how-to/managed-vmware-services-faq/$": "faq.html",
+        "^/how-to/server-virtualization-faq/$": "faq.html",
         "^/how-to/cloud-networks-faq/$": "faq.html",
         "^/how-to/cloud-dns-faq/$": "faq.html",
         "^/how-to/cloud-load-balancers-faq/$": "faq.html",
