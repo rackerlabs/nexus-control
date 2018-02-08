@@ -5,7 +5,7 @@
       "^/docs/private-cloud/": "developer.rackspace.com/user-guide.html",
       "^/docs/api-doc-template/": "developer.rackspace.com/user-guide.html",
       "^/docs/billing-api/": "developer.rackspace.com/user-guide.html",
-      "^/docs/managed-vmware-services/server-virt-handbook/": "developer.rackspace.com/user-guide.html"
+      "^/docs/docs-vmware-server-virt/server-virt-handbook/": "developer.rackspace.com/user-guide.html"
     }
   }
 }
