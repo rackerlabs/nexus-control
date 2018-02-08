@@ -881,6 +881,13 @@
         "to": "/how-to/article-retired/",
         "rewrite": false,
         "status": 301
-      }
+      },
+      {
+        "description": "Redirect Server Virtualization FAQ URL",
+        "from": "^\\/how-to\\/managed-vmware-services-faq(.*)$",
+        "to": "/how-to/server-virtualization-faq/",
+        "rewrite": false,
+        "status": 301
+       }
     ]
 }
