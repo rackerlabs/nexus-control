@@ -63,6 +63,13 @@
         "status": 301
       },
       {
+        "description": "Redirect how-to/update-billing-information-for-cloud-hosting/ URL to /retired-articles/update-billing-information-for-cloud-hosting",
+        "from": "^\\/how-to\\/update-billing-information-for-cloud-hosting(\/|)$",
+        "to": "/retired-articles/update-billing-information-for-cloud-hosting",
+        "rewrite": false,
+        "status": 301
+      },      
+      {
         "description": "Redirect /knowledge_center/email-apps/ to /how-to#cloud-office",
         "from": "^\\/knowledge_center\\/email-apps\\/?",
         "to": "/how-to/#cloud-office",
