@@ -883,8 +883,15 @@
         "status": 301
       },
       {
-        "description": "Retire Administrator management: Cloud Office Control Panel",
+        "description": "Retire Administrator management: Cloud Control Panel",
         "from": "^\\/how-to\\/update-billing-information-for-cloud-hosting(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
+        "description": "Redirect Detailed Invoices Overview",
+        "from": "^\\/how-to\\/detailed-invoices-overview(.*)$",
         "to": "/how-to/article-retired/",
         "rewrite": false,
         "status": 301
