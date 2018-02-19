@@ -884,7 +884,7 @@
       },
       {
         "description": "Retire Administrator management: Cloud Office Control Panel",
-        "from": "^\/how-to\/update-billing-information-for-cloud-hosting(.*)$",
+        "from": "^\\/how-to\\/update-billing-information-for-cloud-hosting(.*)$",
         "to": "/how-to/article-retired/",
         "rewrite": false,
         "status": 301
