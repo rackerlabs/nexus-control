@@ -63,13 +63,6 @@
         "status": 301
       },
       {
-        "description": "Retire Administrator management: Cloud Office Control Panel",
-        "from": "^\/how-to\/update-billing-information-for-cloud-hosting(\/|)$",
-        "to": "how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
         "description": "Redirect /knowledge_center/email-apps/ to /how-to#cloud-office",
         "from": "^\\/knowledge_center\\/email-apps\\/?",
         "to": "/how-to/rackspace-email/",
@@ -886,6 +879,13 @@
         "description": "retire set-an-email-catch-all-address-in-the-cloud-office-control-panel",
         "from": "^\\/how-to\\/set-an-email-catch-all-address-in-the-cloud-office-control-panel(.*)$",
         "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
+        "description": "Retire Administrator management: Cloud Office Control Panel",
+        "from": "^\/how-to\/update-billing-information-for-cloud-hosting(.*)$",
+        "to": "how-to/article-retired/",
         "rewrite": false,
         "status": 301
       }
