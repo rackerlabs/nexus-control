@@ -9,14 +9,13 @@
         "header",
         "footer",
         "syntax",
-        "whitepaperlanding",
         "headerstyle",
         "components/search-box",
         "components/search-paginator",
         "components/search-results",
         "components/carousel",
         "pages/search",
-        // "pages/docs-home",
+        "landingpage",
 
         url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700),
         url(https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700),
@@ -1193,5 +1192,3 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
 }
-
-@import "whitepaperlanding"
