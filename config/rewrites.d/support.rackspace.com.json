@@ -895,6 +895,20 @@
         "to": "/how-to/article-retired/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "Redirect Managed VMware Services landing page",
+        "from": "^\\/how-to\\/managed-vmware-services(.*)$",
+        "to": "/how-to/vmware-server-virtualization/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
+        "description": "Redirect Managed VMware Services FAQ",
+        "from": "^\\/how-to\\/managed-vmware-services-faq(.*)$",
+        "to": "/how-to/vmware-server-virtualization-faq/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
