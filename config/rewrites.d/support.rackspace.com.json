@@ -909,6 +909,13 @@
         "to": "/how-to/vmware-server-virtualization-faq/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "Retire Configure Cloud Files with Cyberduck",
+        "from": "^\\/how-to\\/configuring-rackspace-cloud-files-with-cyberduck(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
