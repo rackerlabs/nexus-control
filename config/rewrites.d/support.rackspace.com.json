@@ -916,6 +916,13 @@
         "to": "/how-to/article-retired/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "Retire General Info in the Cloud Control Panel",
+        "from": "^\\/how-to\\/general-information-cloud-office-control-panel(.*)$",
+        "to": "/how-to/cloud-office-control-panel-overview/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
