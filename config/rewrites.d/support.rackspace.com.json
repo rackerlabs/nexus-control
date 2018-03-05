@@ -923,6 +923,13 @@
         "to": "/how-to/cloud-office-control-panel-overview/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "Redirect PV versus PVHVM article",
+        "from": "^\\/how-to\\/choosing-a-virtualization-mode-pv-versus-pvhvm(.*)$",
+        "to": "/how-to/converting-your-server-from-pv-to-pvhvm/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
