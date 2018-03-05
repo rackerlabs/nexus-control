@@ -328,7 +328,7 @@
         },
         {
           "description": "Redirect older RPC URLs to current version minus one",
-          "from": "^\\/docs\\/private-cloud\\/rpc\\/\bv(9|1[0123])\b\\/?(.*)$",
+          "from": "^\\/docs\\/private-cloud\\/rpc\\/\bv(9|1[01])\b\\/?(.*)$",
           "to": "/docs/private-cloud/rpc/v16",
           "rewrite:": false,
           "status": 301
