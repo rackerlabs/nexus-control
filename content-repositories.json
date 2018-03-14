@@ -6,6 +6,7 @@
   { "kind": "github", "project": "rackerlabs/docs-redhat-osp" },
   { "kind": "github", "project": "rcbops/privatecloud-docs", "branches": ["master", "v12", "v13", "v14", "v16"] },
   { "kind": "github", "project": "rcbops/rpc-openstack", "branches": ["master", "mitaka-13.0"] },
+  { "kind": "github", "project": "rcbops/kubernetes-installer", "branches": ["master", "0.9.x"] },
   { "kind": "github", "project": "rackerlabs/rackspace-how-to" },
   { "kind": "github", "project": "rackerlabs/docs-core-infra-user-guide" },
   { "kind": "github", "project": "rackerlabs/docs-cloud-backup" },
