@@ -923,6 +923,13 @@
         "to": "/how-to/converting-your-server-from-pv-to-pvhvm/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "retire 1st gen image article and redirect images intro",
+        "from": "^\\/how-to\\/access-contents-of-a-first-generation-cloud-server-image(.*)$",
+        "to": "/how-to/cloud-images/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
