@@ -937,6 +937,13 @@
         "to": "/how-to/installing-mariadb-server-on-centos/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "redirect Enable Email Archiving: Cloud Office Control Panel",
+        "from": "^\\/how-to\\/enable-email-archiving-cloud-office-control-panel(.*)$",
+        "to:" "/how-to/enable-email-archiving/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
