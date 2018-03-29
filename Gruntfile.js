@@ -20,15 +20,6 @@ module.exports = function(grunt) {
                     watch: true
                 }
             }
-            // carina: {
-            //     files: {
-            //         'assets/getcarina.com/src/js/bundle.js': ['assets/getcarina.com/src/js/site.js']
-            //     },
-            //     options: {
-            //         transform: ['brfs', 'envify'],
-            //         watch: true
-            //     }
-            // }
         },
         copy: {
             build: {
@@ -51,15 +42,6 @@ module.exports = function(grunt) {
                         ],
                         dest: 'assets/support.rackspace.com/dist/'
                     },
-                    // {
-                    //     cwd: 'assets/getcarina.com/src',
-                    //     expand: true,
-                    //     src: [
-                    //       'img/**/*',
-                    //       'fonts/**/*',
-                    //     ],
-                    //     dest: 'assets/getcarina.com/dist/'
-                    // },
                     {
                       cwd: 'assets/bower_components/fontawesome',
                       expand: true,
@@ -75,14 +57,6 @@ module.exports = function(grunt) {
                         'fonts/**/*'
                       ],
                       dest: 'assets/dist/'
-                    },
-                    {
-                      cwd: 'assets/bower_components/fontawesome',
-                      expand: true,
-                      src: [
-                        'fonts/**/*'
-                      ],
-                      dest: 'assets/getcarina.com/dist/'
                     }
                 ]
             }
@@ -92,7 +66,6 @@ module.exports = function(grunt) {
                 files: {
                     'assets/dist/css/main.css': 'assets/src/css/main.css',
                     'assets/support.rackspace.com/dist/css/main.min.css': 'assets/support.rackspace.com/dist/css/main.css'
-                    // 'assets/getcarina.com/dist/css/main.css': 'assets/getcarina.com/src/css/main.css'
                 }
             }
         },
@@ -119,17 +92,6 @@ module.exports = function(grunt) {
                     ]
                 }
             },
-            // carina_assets: {
-            //     options: {
-            //         files: ['assets/getcarina.com/dist/**/*'],
-            //         output: [
-            //             {
-            //                 dest: 'assets/getcarina.com/src/css/less/deconst-variables.less',
-            //                 format: 'less'
-            //             }
-            //         ]
-            //     }
-            // },
             css_js: {
                 options: {
                     files: ['assets/dist/css/main.css', 'assets/dist/js/main.min.js']
@@ -140,11 +102,6 @@ module.exports = function(grunt) {
                     files: ['assets/support.rackspace.com/dist/css/main.css', 'assets/support.rackspace.com/dist/js/site.min.js']
                 }
             }
-            // carina_css_js: {
-            //     options: {
-            //         files: ['assets/getcarina.com/dist/css/main.css', 'assets/getcarina.com/dist/js/site.min.js']
-            //     }
-            // }
         },
         empty: {
             less_vars: {
@@ -152,7 +109,6 @@ module.exports = function(grunt) {
                     files: [
                       'assets/src/css/less/deconst-variables.less',
                       'assets/support.rackspace.com/src/css/_sass/deconst-variables.scss'
-                      // 'assets/getcarina.com/src/css/less/deconst-variables.less'
                     ]
                 }
             }
@@ -161,7 +117,6 @@ module.exports = function(grunt) {
             dev: {
                 files: {
                     'assets/src/css/main.css': ['assets/src/css/less/main.less']
-                    // 'assets/getcarina.com/src/css/main.css': ['assets/getcarina.com/src/css/less/main.less']
                 },
                 options: {
                     dumpLineNumbers: 'comments',
@@ -172,7 +127,6 @@ module.exports = function(grunt) {
             build: {
                 files: {
                     'assets/dist/css/main.css': ['assets/src/css/less/main.less']
-                    // 'assets/getcarina.com/dist/css/main.css': ['assets/getcarina.com/src/css/less/main.less']
                 },
                 options: {
                     paths: ['assets/bower_components'],
@@ -200,12 +154,6 @@ module.exports = function(grunt) {
                     'assets/support.rackspace.com/dist/js/site.min.js': [
                       'assets/support.rackspace.com/src/js/bundle.js'
                     ],
-                    // 'assets/getcarina.com/dist/js/site.min.js': [
-                    //   'assets/getcarina.com/src/js/bundle.js'
-                    // ],
-                    // 'assets/support.rackspace.com/dist/js/raxheaderservice.min.js': [
-                    //   'assets/support.rackspace.com/raxheaderservice.js'
-                    // ],
                     'assets/support.rackspace.com/dist/js/carousel.min.js': [
                       'assets/support.rackspace.com/carousel.min.js'
                     ]
@@ -229,10 +177,6 @@ module.exports = function(grunt) {
               files: ['assets/support.rackspace.com/src/js/**/*.js', '!assets/support.rackspace.com/src/js/bundle.js'],
               tasks: ['browserify:dev']
             },
-            // carina_js: {
-            //   files: ['assets/getcarina.com/src/js/**/*.js', '!assets/getcarina.com/src/js/bundle.js'],
-            //   tasks: ['browserify:carina']
-            // },
             livereload: {
                 files: ['assets/src/css/main.css', 'assets/dist/js/main.js', 'templates/**/*.html'],
                 tasks: [],
@@ -285,17 +229,14 @@ module.exports = function(grunt) {
         'copy:build',
         'deconst_assets:assets',
         'deconst_assets:support_assets',
-        // 'deconst_assets:carina_assets',
         'less:dev',
         'sass',
         'cssmin:build',
         'browserify:dev',
         'browserify:support',
-        // 'browserify:carina',
         'uglify:build',
         'deconst_assets:css_js',
         'deconst_assets:support_css_js'
-        // 'deconst_assets:carina_css_js'
     ]);
 
     grunt.registerTask('default', ['build']);
