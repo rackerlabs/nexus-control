@@ -57,7 +57,7 @@ module.exports = function(grunt) {
                         'fonts/**/*'
                       ],
                       dest: 'assets/dist/'
-                    },
+                    }
                 ]
             }
         },
