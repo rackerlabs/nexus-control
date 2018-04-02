@@ -944,6 +944,13 @@
         "to": "/how-to/enable-email-archiving/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "redirect Integrate Rackspace Email Archiving with Outlook",
+        "from": "^\\/how-to\\/integrate-rackspace-email-archiving-with-outlook(.*)$",
+        "to": "/how-to/integrate-email-archiving-with-outlook/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
