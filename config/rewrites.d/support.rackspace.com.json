@@ -941,7 +941,7 @@
       {
         "description": "redirect Enable Email Archiving: Cloud Office Control Panel",
         "from": "^\\/how-to\\/enable-email-archiving-cloud-office-control-panel(.*)$",
-        "to": "/how-to/enable-email-archiving/",
+        "to": "/how-to/enable-email-archiving-for-rackspace-email-and-hosted-exchange/",
         "rewrite": false,
         "status": 301
       },
