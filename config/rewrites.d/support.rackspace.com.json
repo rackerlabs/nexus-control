@@ -958,6 +958,13 @@
         "to": "/how-to/integrate-email-archiving-with-outlook/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "redirect Add Rackspace Office 365 archiving",
+        "from": "^\\/how-to\\/add-rackspace-office-365-archiving(.*)$",
+        "to": "/how-to/enable-email-archiving-for-office-365/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
