@@ -965,6 +965,13 @@
         "to": "/how-to/enable-email-archiving-for-office-365/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "redirect Suported Operating Systems in Rackspace Public Cloud to new /how-to/supported-operating-systems-and-browsers-in-rackspace-public-cloud/",
+        "from": "^\\/how-to\\/supported-operating-systems-in-rackspace-public-cloud/(.*)$",
+        "to": "/how-to/supported-operating-systems-and-browsers-in-rackspace-public-cloud//",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
