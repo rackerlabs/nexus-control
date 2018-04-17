@@ -876,14 +876,14 @@
       {
         "description": "Retire Administrator management: Cloud Control Panel",
         "from": "^\\/how-to\\/update-billing-information-for-cloud-hosting(.*)$",
-        "to": "/how-to/article-retired/",
+        "to": "/how-to/billing-services-overview/",
         "rewrite": false,
         "status": 301
       },
       {
         "description": "Redirect Detailed Invoices Overview",
         "from": "^\\/how-to\\/detailed-invoices-overview(.*)$",
-        "to": "/how-to/article-retired/",
+        "to": "/how-to/billing-services-overview/",
         "rewrite": false,
         "status": 301
       },
@@ -938,7 +938,7 @@
         "rewrite": false,
         "status": 301
       },
-      { 
+      {
         "description": "redirect Enable-email-archiving",
         "from": "^\\/how-to\\/enable-email-archiving/(.*)$",
         "to": "/how-to/enable-email-archiving-for-rackspace-email-and-hosted-exchange/",
