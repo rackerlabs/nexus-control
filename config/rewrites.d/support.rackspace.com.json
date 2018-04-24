@@ -972,6 +972,13 @@
         "to": "/how-to/supported-operating-systems-and-browsers-in-rackspace-public-cloud/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "redirect Backup Your MySQL database with phpmyadmin.md",
+        "from": "^\\/how-to\\/up-your-mysql-database-with-phpmyadmin(.*)$",
+        "to": "/how-to/managing-backups-for-cloud-databases/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
