@@ -979,6 +979,41 @@
         "to": "/how-to/managing-backups-for-cloud-databases/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "retire Sharepoint",
+        "from": "^\\/how-to\\/sharepoint/(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
+        "description": "retire Sharepoint FAQ",
+        "from": "^\\/how-to\\/sharepoint-faq(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
+        "description": "retire Getting started with Sharepoint",
+        "from": "^\\/how-to\\/getting-started-with-rackspace-services-for-sharepoint(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
+        "description": "retire how-to-install-the-rackspace-cloud-storage-app-for-microsoft-sharepoint",
+        "from": "^\\/how-to\\/how-to-install-the-rackspace-cloud-storage-app-for-microsoft-sharepoint(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
+        "description": "retire upgrade-sharepoint-site-storage-cloud-office-control-panel",
+        "from": "^\\/how-to\\/upgrade-sharepoint-site-storage-cloud-office-control-panel(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
