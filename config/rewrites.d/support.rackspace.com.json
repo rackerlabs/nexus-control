@@ -834,7 +834,7 @@
       {
         "description": "redirect Supported Operating Systems",
         "from": "^\\/how-to\\/supported-operating-systems/(.*)$",
-        "to": "/how-to/supported-operating-systems-in-rackspace-public-cloud/",
+        "to": "/how-to/supported-operating-systems-and-browsers-in-rackspace-public-cloud/",
         "rewrite": false,
         "status": 301
       },
