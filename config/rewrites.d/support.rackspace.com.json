@@ -960,8 +960,8 @@
         "status": 301
       },
       {
-        "description": "redirect Supported Operating Systems in Rackspace Public Cloud to new /how-to/supported-operating-systems-and-browsers-in-rackspace-public-cloud/",
-        "from": "^\\/how-to\\/supported-operating-systems-in-rackspace-public-cloud(.*)$",
+        "description": "redirect Supported Browsers to new /how-to/supported-operating-systems-and-browsers-in-rackspace-public-cloud/",
+        "from": "^\\/how-to\\/supported-browsers(.*)$",
         "to": "/how-to/supported-operating-systems-and-browsers-in-rackspace-public-cloud/",
         "rewrite": false,
         "status": 301
