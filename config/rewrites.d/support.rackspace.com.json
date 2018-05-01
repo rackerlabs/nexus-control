@@ -797,13 +797,6 @@
         "status": 301
       },
       {
-        "description": "Retire Supported Browsers",
-        "from": "^\\/how-to\\/supported-browsers(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
         "description": "Redirect what is managed colocation from rackspace",
         "from": "^\\/how-to\\/what-is-managed-colocation-from-rackspace(.*)$",
         "to": "/how-to/traditional-colocation-vs-rackspace-managed-colocation/",
@@ -841,7 +834,7 @@
       {
         "description": "redirect Supported Operating Systems",
         "from": "^\\/how-to\\/supported-operating-systems/(.*)$",
-        "to": "/how-to/supported-operating-systems-in-rackspace-public-cloud/",
+        "to": "/how-to/supported-operating-systems-and-browsers-in-rackspace-public-cloud/",
         "rewrite": false,
         "status": 301
       },
