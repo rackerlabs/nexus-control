@@ -42,6 +42,7 @@
           "/docs/rackspace-federation/": "https://github.com/rackerlabs/docs-rackspace-federation/",
           "/docs/ticketing/": "https://github.com/rackerlabs/docs-SDP/",
           "/docs/appformix/": "https://github.com/rackerlabs/docs-appformix/",
+          "/docs/style-guide/": "https://github.com/rackerlabs/docs-style-guide/",
           "/search/": null
       },
       "proxy": {
