@@ -35,7 +35,7 @@
             "^/docs/rackspace-monitoring/v1/": "user-guide.html",
             "^/docs/cloud-feeds/v1/developer-guide/": "docs-singlepage.html",
             "^/docs/dedicated-load-balancers/v2/": "user-guide.html",
-            "^/docs/docs-style-guide/": "docs-singlepage.html",
+            "^/docs/docs-style-guide/": "user-guide.html",
             "^/docs/glossary": "docs-singlepage.html",
             "^/docs/private-cloud": "user-guide.html",
             "^/docs/private-cloud/release-notes": "docs-singlepage.html",
