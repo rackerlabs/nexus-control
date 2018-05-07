@@ -1007,6 +1007,13 @@
         "to": "/how-to/article-retired/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "retire ach-compliance-faq.md",
+        "from": "^\\/how-to\\/ach-compliance-faq(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
