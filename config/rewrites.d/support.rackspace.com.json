@@ -1014,6 +1014,13 @@
         "to": "/how-to/article-retired/",
         "rewrite": false,
         "status": 301
-      }
+      },
+      {
+        "description": "redirect create-dns-records-for-cloud-servers-with-the-control-panel",
+        "from": "^\\/how-to\\/create-dns-records-for-cloud-servers-with-the-control-panel(.*)$",
+        "to": "/how-to/creating-dns-records-with-cloud-dns/",
+        "rewrite": false,
+        "status": 301
+      }    
     ]
 }
