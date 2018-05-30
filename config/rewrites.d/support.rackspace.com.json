@@ -1021,6 +1021,13 @@
         "to": "/how-to/creating-dns-records-with-cloud-dns/",
         "rewrite": false,
         "status": 301
-      }    
+      },
+      {
+        "description": "redirect configuring-mysql-server-on-centos",
+        "from": "^\\/how-to\\/configuring-mysql-server-on-centos(.*)$",
+        "to": "/how-to/configure-mariadb-server-on-centos/",
+        "rewrite": false,
+        "status": 301
+      }     
     ]
 }
