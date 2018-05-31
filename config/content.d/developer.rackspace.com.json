@@ -33,7 +33,7 @@
           "/docs/private-cloud/rpc/v13/": "https://github.com/rcbops/privatecloud-docs/v13/",
           "/docs/private-cloud/rpc/v12/": "https://github.com/rcbops/privatecloud-docs/v12/",
           "/docs/private-cloud/release-notes/": "https://github.com/rcbops/rpc-openstack/master/",
-          "/docs/mk8s/v1.0.x": "https://github.com/rcbops/mk8s/v1.0.x",
+          "/docs/mk8s/1.0.x": "https://github.com/rcbops/mk8s/1.0.x",
           "/docs/rpc-vmware/vcenter/": "https://github.com/rackerlabs/rpc-vmware/vcenter-handbook/",
           "/docs/rpc-vmware/vcloud/v1/": "https://github.com/rackerlabs/rpc-vmware/vcloud-handbook/",
           "/docs/rpc-vmware/vcloud/v1.5/": "https://github.com/rackerlabs/rpc-vmware/vcloud-handbook-v1.5/",
