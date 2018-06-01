@@ -41,7 +41,7 @@
             "^/docs/private-cloud/release-notes": "docs-singlepage.html",
             "^/docs/docs-vmware-server-virt": "user-guide.html",
             "^/docs/rpc-vmware/": "user-guide.html",
-            "^/docs/mk8s/": "user-guide.html",
+            "^/docs/rkaas/": "user-guide.html",
             "^/docs/rack-cli/": "rack-cli.html",
             "^/docs/rackspace-federation/": "user-guide.html",
             "^/docs/ticketing/": "user-guide.html",
