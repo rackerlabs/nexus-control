@@ -2,7 +2,7 @@
 
 [![Build Status](https://build.developer.rackspace.com/rackerlabs/nexus-control/badge?branch=master)](https://build.developer.rackspace.com/rackerlabs/nexus-control/)
 
-Deconst control repository used to host [developer.rackspace.com](https://developer.rackspace.com/), [support.rackspace.com](https://support.rackspace.com/), and [getcarina.com](https://getcarina.com). Changes to this repository take effect several minutes after being merged to master. Check [https://developer.rackspace.com/version/](https://developer.rackspace.com/version/) to see the most recent commit that's active in production. Invalid contents (incorrect JSON syntax, malformed templates) cause the repository to simply stop updating.
+Deconst control repository used to host [developer.rackspace.com](https://developer.rackspace.com/) and [support.rackspace.com](https://support.rackspace.com/). Changes to this repository take effect several minutes after being merged to master. Check [https://developer.rackspace.com/version/](https://developer.rackspace.com/version/) to see the most recent commit that's active in production. Invalid contents (incorrect JSON syntax, malformed templates) cause the repository to simply stop updating.
 
 ## Local testing
 
@@ -64,6 +64,9 @@ To test changes to templates or assets on your local machine before pushing them
     ```
 
 Visit port 80 of your Docker host *([`http://localhost/`](http://localhost/) for the Docker beta, consult `docker-machine ip` for Docker Toolbox)* and verify that the content and assets you see match those on [the live site](https://developer.rackspace.com/). :tada:
+
+For the path to content, see [config/content.d/developer.rackspace.com.json](https://github.com/rackerlabs/nexus-control/blob/master/config/content.d/developer.rackspace.com.json).
+For example: [`http://localhost/docs/rkaas`](http://localhost/docs/rkaas/).
 
 #### Making changes
 
