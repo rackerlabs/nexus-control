@@ -1028,6 +1028,20 @@
         "to": "/how-to/configure-mariadb-server-on-centos/",
         "rewrite": false,
         "status": 301
-      }     
+      },
+      {
+        "description": "retire cloud-servers-how-to-articles-other-resources",
+        "from": "^\\/how-to\\/cloud-servers-how-to-articles-other-resources(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
+        "description": "retire getting-started-with-the-rackspace-mobile-application-and-managing-accounts",
+        "from": "^\\/how-to\\/getting-started-with-the-rackspace-mobile-application-and-managing-accounts(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
+      }      
     ]
 }
