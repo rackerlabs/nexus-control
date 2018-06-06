@@ -1042,6 +1042,13 @@
         "to": "/how-to/article-retired/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "retire add-authorized-users-in-the-rackconnect-management-interface",
+        "from": "^\\/how-to\\/add-authorized-users-in-the-rackconnect-management-interface(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
       }      
     ]
 }
