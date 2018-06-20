@@ -1056,6 +1056,13 @@
         "to": "/how-to/article-retired/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "retire Automatic and manual disk partitioning on Cloud Servers",
+        "from": "^\\/how-to\\/using-automatic-and-manual-disk-partitioning-on-cloud-servers(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
