@@ -1063,6 +1063,13 @@
         "to": "/how-to/article-retired/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "retire RackConnect 1.0 post upgrade FAQ",
+        "from": "^\\/how-to\\/rackconnect-10-post-upgrade-faq(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
