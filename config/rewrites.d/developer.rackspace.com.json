@@ -347,5 +347,12 @@
           "rewrite": false,
           "status": 301
         }
+        {
+          "description": "Redirect all Rackspace KaaS docs to /latest",
+          "from": "^\\/docs\\/rkaas\\/\b([a-zA-Z0-9%_-]*)\b\\/?(.*)$",
+          "to": "/docs/rkaas/latest/",
+          "rewrite": false,
+          "status": 301
+        }
     ]
 }

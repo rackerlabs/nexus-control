@@ -5,7 +5,7 @@
       "/docs/private-cloud/release-notes/": "https://github.com/rcbops/rpc-openstack/master/",
       "/docs/api-doc-template/": "https://github.com/rackerlabs/docs-common/",
       "/docs/billing-api/": "https://github.com/rackerlabs/docs-billing-apiguide/",
-      "/docs/managed-kubernetes/master/": "https://github.com/rcbops/mk8s/master/"
+      "/docs/rkaas/master/": "https://github.com/rcbops/mk8s/master/"
     }
   }
 }
