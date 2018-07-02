@@ -1070,6 +1070,34 @@
         "to": "/how-to/article-retired/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "Redirect Delete your server article",
+        "from": "^\\/how-to\\/deleting-your-server(.*)$",
+        "to": "/how-to/delete-a-server/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
+        "description": "Redirect Reboot your server article",
+        "from": "^\\/how-to\\/reboot-your-server(.*)$",
+        "to": "/how-to/reboot-a-server/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
+        "description": "Redirect Reset your server's password article",
+        "from": "^\\/how-to\\/reset-your-server-password(.*)$",
+        "to": "/how-to/reset-a-server-password/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
+        "description": "Redirect Manageing your server, resizing and standard and general purpose servers",
+        "from": "^\\/how-to\\/managing-your-server-resizing-standard-and-general-purpose-servers(.*)$",
+        "to": "/how-to/resize-standard-and-general-purpose-servers/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
