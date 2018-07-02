@@ -346,6 +346,13 @@
           "to": "/docs/docs-vmware-server-virt/server-virt-handbook/",
           "rewrite": false,
           "status": 301
+        },
+        {
+          "description": "Redirect all Rackspace KaaS docs to /latest",
+          "from": "^\\/docs\\/rkaas\\/1.0.x\\/(.*)",
+          "to": "/docs/rkaas/latest/$1",
+          "rewrite": false,
+          "status": 301
         }
     ]
 }
