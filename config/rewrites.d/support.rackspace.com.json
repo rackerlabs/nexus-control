@@ -1093,9 +1093,23 @@
         "status": 301
       },
       {
-        "description": "Redirect Manageing your server, resizing and standard and general purpose servers",
+        "description": "Redirect Managing your server, resizing and standard and general purpose servers",
         "from": "^\\/how-to\\/managing-your-server-resizing-standard-and-general-purpose-servers(.*)$",
         "to": "/how-to/resize-standard-and-general-purpose-servers/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
+        "description": "Redirect Managing my server article",
+        "from": "^\\/how-to\\/managing-my-server/(.*)$",
+        "to": "/how-to/manage-a-cloud-server/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
+        "description": "Redirect Managing your server article",
+        "from": "^\\/how-to\\/managing-your-server/(.*)$",
+        "to": "/how-to/manage-a-cloud-server/",
         "rewrite": false,
         "status": 301
       }
