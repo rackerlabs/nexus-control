@@ -38,5 +38,6 @@
   { "kind": "github", "project": "rackerlabs/docs-rackspace-federation" },
   { "kind": "github", "project": "rackerlabs/docs-sdp" },
   { "kind": "github", "project": "rackerlabs/docs-appformix" },
-  { "kind": "github", "project": "rackerlabs/docs-style-guide" }
+  { "kind": "github", "project": "rackerlabs/docs-style-guide" },
+  { "kind": "github", "project": "rackerlabs/docs-offerings" },
 ]
