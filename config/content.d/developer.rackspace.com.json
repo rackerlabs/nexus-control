@@ -45,6 +45,7 @@
           "/docs/rackspace-federation/": "https://github.com/rackerlabs/docs-rackspace-federation/",
           "/docs/ticketing/": "https://github.com/rackerlabs/docs-SDP/",
           "/docs/appformix/": "https://github.com/rackerlabs/docs-appformix/",
+          "/docs/offer-service/v2/": "https://github.com/rackerlabs/docs-offerings",
           "/docs/style-guide/": "https://github.com/rackerlabs/docs-style-guide/",
           "/search/": null
       },
