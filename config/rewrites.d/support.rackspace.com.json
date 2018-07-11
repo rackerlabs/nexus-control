@@ -1112,6 +1112,13 @@
         "to": "/how-to/manage-a-cloud-server/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "Redirect Updating Servicenet routes on cloud servers created before june 3, 2013 article",
+        "from": "^\\/how-to\\/updating-servicenet-routes-on-cloud-servers-created-before-june-3-2013/(.*)$",
+        "to": "/how-to/updating-servicenet-routes-on-cloud-servers/", 
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
