@@ -46,7 +46,7 @@
             "^/docs/rackspace-federation/": "user-guide.html",
             "^/docs/ticketing/": "user-guide.html",
             "^/docs/appformix/": "user-guide.html",
-            "^/docs/offer-service/": "user-guide.html",
+            "^/docs/offerings/": "user-guide.html",
             "^/sdks": "sdks-home.html",
             "^/sdks/.+?": "sdks-page.html",
             "\\.xml$": "feed.xml",
