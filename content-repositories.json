@@ -40,5 +40,6 @@
   { "kind": "github", "project": "rackerlabs/docs-appformix" },
   { "kind": "github", "project": "rackerlabs/docs-style-guide" },
   { "kind": "github", "project": "rackerlabs/docs-offerings" },
-  { "kind": "github", "project": "rackerlabs/docs-ras-databases" }
+  { "kind": "github", "project": "rackerlabs/docs-ras-databases" },
+  { "kind": "github", "project": "rackerlabs/mpc-hyper-v" }
 ]
