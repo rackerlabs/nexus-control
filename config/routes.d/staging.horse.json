@@ -6,7 +6,7 @@
       "^/docs/api-doc-template/": "developer.rackspace.com/user-guide.html",
       "^/docs/billing-api/": "developer.rackspace.com/user-guide.html",
       "^/docs/rkaas/": "developer.rackspace.com/user-guide.html",
-      "^/docs/rpc-vmware/goss-rpc-vmware-handbook": "developer.rackspace.com/user-guide.html"
+      "^/docs/mpc-hyper-v/hyper-v-handbook": "developer.rackspace.com/user-guide.html"
     }
   }
 }
