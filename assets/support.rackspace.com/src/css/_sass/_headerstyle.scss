@@ -450,6 +450,7 @@ a {
         text-indent: -9999px;
         width: 140px;
         background-color: $color-brand;
+        background-size: 70%;
 
         &:hover {
           background: $color-brand;
@@ -457,6 +458,7 @@ a {
           background-image: none, url("http://68841b8cafae3df669a1-2df5b2d27d704c411ac6d714647ed975.r85.cf1.rackcdn.com/rackspace-logo.svg");
           background-repeat: no-repeat;
           background-position: 17px 9px;
+          background-size: 70%;
         }
       }
     }
