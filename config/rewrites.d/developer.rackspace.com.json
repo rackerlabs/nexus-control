@@ -356,22 +356,22 @@
         },
         {
           "description": "Redirect Rackspace KaaS User Guide",
-          "from": "^\\/docs\\/rkaas\\/latest\\/rkaas-userguide-external\\/(.*)",
+          "from": "^\\/docs\\/rkaas\\/latest\\/rkaas-userguide-external\\/?(.*)",
           "to": "/docs/rkaas/latest/external/rkaas-userguide/$1",
           "rewrite": false,
           "status": 301
         },
         {
           "description": "Redirect Rackspace KaaS Release Notes",
-          "from": "^\\/docs\\/rkaas\\/latest\\/managed-k8s-releasenotes-internal\\/(.*)",
+          "from": "^\\/docs\\/rkaas\\/latest\\/managed-k8s-releasenotes-internal\\/?(.*)",
           "to": "/docs/rkaas/latest/external/rkaas-releasenotes-external/$1",
           "rewrite": false,
           "status": 301
         },
         {
           "description": "Redirect Rackspace KaaS Technical FAQs",
-          "from": "^\\/docs\\/rkaas\\/latest\\/rkaas-faq-external/",
-          "to": "/docs/rkaas/latest/external/rkaas-faq/",
+          "from": "^\\/docs\\/rkaas\\/latest\\/rkaas-faq-external\\/?(.*)",
+          "to": "/docs/rkaas/latest/external/rkaas-faq/$1",
           "rewrite": false,
           "status": 301
         }
