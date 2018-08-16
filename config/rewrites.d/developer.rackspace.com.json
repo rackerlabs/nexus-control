@@ -363,7 +363,7 @@
         },
         {
           "description": "Redirect Rackspace KaaS Release Notes",
-          "from": "^\\/docs\\/rkaas\\/latest\\/rkaas-releasenotes-external/\\/?(.*)",
+          "from": "^\\/docs\\/rkaas\\/latest\\/rkaas-releasenotes-external\\/?(.*)",
           "to": "/docs/rkaas/latest/external/rkaas-releasenotes-external/$1",
           "rewrite": false,
           "status": 301
