@@ -12,7 +12,6 @@
 export ADMIN_APIKEY=1111
 
 # Set this to the domain name of the site you're interested in.
-# Other interesting values depending on what you're working on: getcarina.com, support.rackspace.com.
 export PRESENTED_URL_DOMAIN=developer.rackspace.com
 
 # Determine the storage backend.
@@ -96,7 +95,7 @@ if [ -z "${DOCKER_HOST:-}" ]; then
   export DECONST_PUBLIC=localhost
 else
   # Yank it from DOCKER_HOST.
-  # This should work from docker-machine and Carina.
+  # This should work from docker-machine.
   export DECONST_PUBLIC=${DOCKER_HOST#tcp://}
   DECONST_PUBLIC=${DECONST_PUBLIC%:[0-9]*}
 fi
