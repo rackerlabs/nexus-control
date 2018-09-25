@@ -48,7 +48,7 @@
           "/docs/appformix/": "https://github.com/rackerlabs/docs-appformix/",
           "/docs/offerings/": "https://github.com/rackerlabs/docs-offerings/",
           "/docs/style-guide/": "https://github.com/rackerlabs/docs-style-guide/",
-          "/docs/microsoft-hyper-v/hyper-v-handbook": "https://github.com/rackerlabs/mpc-hyper-v/",
+          "/docs/microsoft-hyper-v/hyper-v-handbook/": "https://github.com/rackerlabs/mpc-hyper-v/",
           "/search/": null
       },
       "proxy": {
