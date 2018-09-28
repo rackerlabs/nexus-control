@@ -42,6 +42,7 @@
             "^/docs/docs-vmware-server-virt": "user-guide.html",
             "^/docs/ras-databases/": "user-guide.html",
             "^/docs/rpc-vmware/": "user-guide.html",
+            "^/docs/microsoft-hyper-v/": "user-guide.html",
             "^/docs/rkaas/": "user-guide.html",
             "^/docs/rack-cli/": "rack-cli.html",
             "^/docs/rackspace-federation/": "user-guide.html",
