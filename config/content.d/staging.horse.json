@@ -4,8 +4,7 @@
       "/docs/private-cloud/rpc/master/": "https://github.com/rcbops/privatecloud-docs/master/",
       "/docs/private-cloud/release-notes/": "https://github.com/rcbops/rpc-openstack/master/",
       "/docs/api-doc-template/": "https://github.com/rackerlabs/docs-common/",
-      "/docs/billing-api/": "https://github.com/rackerlabs/docs-billing-apiguide/",
-      "/docs/mpc-hyper-v/hyper-v-handbook": "https://github.com/rackerlabs/mpc-hyper-v/hyper-v-handbook/"
+      "/docs/billing-api/": "https://github.com/rackerlabs/docs-billing-apiguide/"
     }
   }
 }
