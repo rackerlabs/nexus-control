@@ -446,19 +446,17 @@ a {
         background-image: url("https://c6046a54729453dc43d4-2df5b2d27d704c411ac6d714647ed975.ssl.cf1.rackcdn.com/rackspace_logo_support-164x60.png");
         background-image: none, url("https://c6046a54729453dc43d4-2df5b2d27d704c411ac6d714647ed975.ssl.cf1.rackcdn.com/rackspace_logo_support-164x60.svg");
         background-repeat: no-repeat;
-        background-position: 17px 9px;
+        background-position: center;
         text-indent: -9999px;
         width: 140px;
         background-color: $color-brand;
-        background-size: 70%;
 
         &:hover {
           background: $color-brand;
           background-image: url("https://c6046a54729453dc43d4-2df5b2d27d704c411ac6d714647ed975.ssl.cf1.rackcdn.com/rackspace_logo_support-164x60.png");
           background-image: none, url("https://c6046a54729453dc43d4-2df5b2d27d704c411ac6d714647ed975.ssl.cf1.rackcdn.com/rackspace_logo_support-164x60.svg");
           background-repeat: no-repeat;
-          background-position: 17px 9px;
-          background-size: 70%;
+          background-position: center;
         }
       }
     }
