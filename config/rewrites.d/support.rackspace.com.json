@@ -1133,6 +1133,20 @@
         "to": "/how-to/manually-configure-outlook-2013-for-email-hosted-on-exchange-2013/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "redirect generate-a-csr-with-openssl/",
+        "from": "^\\/how-to\\/generate-a-csr-with-openssl(.*)$",
+        "to": "/how-to/generate-a-csr/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
+        "description": "redirect create-a-csr-in-the-cloud-control-panel/",
+        "from": "^\\/how-to\\/create-a-csr-in-the-cloud-control-panel(.*)$",
+        "to": "/how-to/generate-a-csr/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
