@@ -1,7 +1,7 @@
 {
   "developer.rackspace.com": {
       "content": {
-          "/": "https://github.com/rackerlabs/docs-developer-blog/",
+          "/": "https://github.com/rackerlabs/docs-core-infra-user-guide/",
           "/docs/": "https://github.com/rackerlabs/docs-quickstart/",
           "/docs/user-guides/infrastructure/": "https://github.com/rackerlabs/docs-core-infra-user-guide/",
           "/docs/user-guides/orchestration/": "https://github.com/rackerlabs/rs-heat-docs/",
