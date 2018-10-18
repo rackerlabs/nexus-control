@@ -1,0 +1,21 @@
+{% extends "_layouts/raw.html" %}
+
+{% set headlineTag = headlineTag if headlineTag else 'h2' %}
+
+{% block body %}
+    {% block siteHeader %}
+        {% include "_includes/site-header.html" %}
+    {% endblock %}
+    {% block bodyContent %}{% endblock %}
+    {% block siteFooter %}
+        {% include "_includes/site-footer.html" %}
+    {% endblock %}
+    {% block footerScripts %}
+        {% if deconst.env.PRESENTER_DEVMODE == 'true' %}
+            {% set jsUrl = '/assets/src/js/bundle.js' %}
+        {% else %}
+            {% set jsUrl = deconst.assets.assets_dist_js_main_min_js %}
+        {% endif %}
+        <script src="{{ jsUrl }}" async></script>
+    {% endblock %}
+{% endblock %}

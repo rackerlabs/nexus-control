@@ -1,0 +1,94 @@
+{% extends "_layouts/sidebar-left.html" %}
+
+{% set metaDescription = deconst.content.envelope.meta.metaDescription %}
+{% set metaTitle = deconst.content.envelope.meta.metaTitle %}
+{% set ogDescription = deconst.content.envelope.meta.ogDescription %}
+{% set ogImage = deconst.content.envelope.meta.ogImage %}
+{% set ogTitle = deconst.content.envelope.meta.ogTitle %}
+{% set twitterCreator = deconst.content.envelope.meta.twitterCreator %}
+{% set twitterDescription = deconst.content.envelope.meta.twitterDescription %}
+{% set twitterTitle = deconst.content.envelope.meta.twitterTitle %}
+
+{% block metaDescription %}{{ metaDescription|fallback(super()) }}{% endblock %}
+{% block metaTitle %}{{ metaTitle|fallback(super()) }}{% endblock %}
+{% block ogDescription %}{{ ogDescription|fallback(metaDescription, super()) }}{% endblock %}
+{% block ogTitle %}{{ ogTitle|fallback(metaTitle, super()) }}{% endblock %}
+{% block ogImage %}{{ ogImage|fallback(super()) }}{% endblock %}
+{% block twitterCreator %}{{ twitterCreator|fallback(super()) }}{% endblock %}
+{% block twitterDescription %}{{ twitterDescription|fallback(ogDescription, metaDescription, super()) }}{% endblock %}
+{% block twitterTitle %}{{ twitterTitle|fallback(ogTitle, metaTitle, super()) }}{% endblock %}
+
+
+{% block bodyClass %}docs-home{% endblock %}
+
+
+
+{% set headlineTag = 'h1' %}
+{% set headlineAccent = 'Rackspace' %}
+{% set headline = 'Developer Docs' %}
+{% set tagline = 'Let’s Build Something Powerful Together!' %}
+{% set stickyNavOffsetTop = 321 %}
+
+{% block sidebar %}
+    <div class="sidebar-container" data-drc-sticky data-offset-top="{{ stickyNavOffsetTop }}" data-drc-flex-height data-flex-bottom="443">
+        <h5>Filter by Product:</h5>
+        <ul class="product-filters" data-ng-controller="DocsHomeSidebarCtrl">
+            <li class="all" data-ng-click="clickFilter('*')" data-ng-class="{'active': isFilterActive('*')}">
+                <a href="">
+                    <span class="label">All</span>
+                    <span class="indicator fa fa-check"></span>
+                </a>
+            </li>
+            <li class="" data-ng-click="clickFilter('cloud')" data-ng-class="{'active': isFilterActive('cloud')}">
+                <a href="">
+                    <span class="label">Cloud</span>
+                    <span class="indicator fa fa-check"></span>
+                </a>
+            </li>
+            <li class="compute" data-ng-click="clickFilter('compute')" data-ng-class="{'active': isFilterActive('compute')}">
+                <a href="">
+                    <span class="label">Compute</span>
+                    <span class="indicator fa fa-check"></span>
+                </a>
+            </li>
+            <li class="network" data-ng-click="clickFilter('network')" data-ng-class="{'active': isFilterActive('network')}">
+                <a href="">
+                    <span class="label">Network</span>
+                    <span class="indicator fa fa-check"></span>
+                </a>
+            </li>
+            <li class="storagedata" data-ng-click="clickFilter('storagedata')" data-ng-class="{'active': isFilterActive('storagedata')}">
+                <a href="">
+                    <span class="label">Storage &amp; Data</span>
+                    <span class="indicator fa fa-check"></span>
+                </a>
+            </li>
+            <li class="infra" data-ng-click="clickFilter('infra')" data-ng-class="{'active': isFilterActive('infra')}">
+                <a href="">
+                    <span class="label">Infrastructure &amp; Developer Services</span>
+                    <span class="indicator fa fa-check"></span>
+                </a>
+            </li>
+            <li class="dev-tools" data-ng-click="clickFilter('dev-tools')" data-ng-class="{'active': isFilterActive('dev-tools')}">
+                <a href="">
+                    <span class="label">SDKs &amp; Tools</span>
+                    <span class="indicator fa fa-check"></span>
+                </a>
+            </li>
+        </ul>
+        <h5>SDK Language Support:</h5>
+        <ul class="quickstarts">
+            <li><a href="/sdks/golang/" title="Go language support for Rackspace API services">Go</a></li>
+            <li><a href="/sdks/java" title="Java language support for Rackspace API services">Java</a></li>
+            <li><a href="/sdks/dot-net/" title=".NET language support for Rackspace API services">.NET</a></li>
+            <li><a href="/sdks/node-js/" title="Node.js language support for Rackspace API services">Node.js</a></li>
+            <li><a href="/sdks/php/" title="PHP language support for Rackspace API services">PHP</a></li>
+            <li><a href="/sdks/python/" title="Python language support for Rackspace API services">Python</a></li>
+            <li><a href="/sdks/ruby/" title="Ruby language support for Rackspace API services">Ruby</a></li>
+        </ul>
+    </div>
+{% endblock %}
+
+{% block content %}
+    {{ deconst.content.envelope.body }}
+{% endblock %}

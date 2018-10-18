@@ -1,0 +1,65 @@
+{% extends "_layouts/sidebar-left.html" %}
+
+
+{% set metaDescription = deconst.content.envelope.meta.metaDescription %}
+{% set metaTitle = deconst.content.envelope.meta.metaTitle %}
+{% set ogDescription = deconst.content.envelope.meta.ogDescription %}
+{% set ogImage = deconst.content.envelope.meta.ogImage %}
+{% set ogTitle = deconst.content.envelope.meta.ogTitle %}
+{% set twitterCreator = deconst.content.envelope.meta.twitterCreator %}
+{% set twitterDescription = deconst.content.envelope.meta.twitterDescription %}
+{% set twitterTitle = deconst.content.envelope.meta.twitterTitle %}
+
+{% block metaDescription %}{{ metaDescription|fallback(super()) }}{% endblock %}
+{% block metaTitle %}{{ metaTitle|fallback(super()) }}{% endblock %}
+{% block ogDescription %}{{ ogDescription|fallback(metaDescription, super()) }}{% endblock %}
+{% block ogTitle %}{{ ogTitle|fallback(metaTitle, super()) }}{% endblock %}
+{% block ogImage %}{{ ogImage|fallback(super()) }}{% endblock %}
+{% block twitterCreator %}{{ twitterCreator|fallback(super()) }}{% endblock %}
+{% block twitterDescription %}{{ twitterDescription|fallback(ogDescription, metaDescription, super()) }}{% endblock %}
+{% block twitterTitle %}{{ twitterTitle|fallback(ogTitle, metaTitle, super()) }}{% endblock %}
+
+
+{% block bodyClass %}{{ deconst.content.envelope.meta.bodyClass|fallback('databases') }}{% endblock %}
+
+{% set headlineAccent = deconst.content.envelope.meta.headlineAccent|fallback('Rackspace') %}
+{% set headline = deconst.content.envelope.meta.headline|fallback('Data & Databases') %}
+{% set tagline = deconst.content.envelope.meta.tagline %}
+
+{% block sidebar %}
+<div class="sidebar-container" data-drc-sticky data-offset-top="277" data-drc-flex-height data-flex-bottom="443">
+  <h5>Rackspace Database Products</h5>
+  <ul>
+    <li data-drc-scroll-indicator="MySQL" data-use-attribute="id">
+      <a href="#MySQL">MySQL</a>
+    </li>
+    <li data-drc-scroll-indicator="PostgreSQL" data-use-attribute="id">
+      <a href="#PostgreSQL">PostgreSQL</a>
+    </li>
+    <li data-drc-scroll-indicator="MongoDB" data-use-attribute="id">
+      <a href="#MongoDB">MongoDB</a>
+    </li>
+    <li data-drc-scroll-indicator="Redis" data-use-attribute="id">
+      <a href="#Redis">Redis</a>
+    </li>
+    <li data-drc-scroll-indicator="Cassandra" data-use-attribute="id">
+      <a href="#Cassandra">Cassandra</a>
+    </li>
+    <li data-drc-scroll-indicator="Hadoop" data-use-attribute="id">
+      <a href="#Hadoop">Hadoop</a>
+    </li>
+    <li data-drc-scroll-indicator="Oracle" data-use-attribute="id">
+      <a href="#Oracle">Oracle</a>
+    </li>
+    <li data-drc-scroll-indicator="SQLServer" data-use-attribute="id">
+      <a href="#SQLServer">SQLServer</a>
+    </li>
+    <li data-drc-scroll-indicator="ElasticSearch" data-use-attribute="id">
+      <a href="#ElasticSearch">ElasticSearch</a>
+    </li>
+  </ul>
+</div>
+{% endblock %}
+{% block content %}
+    {{ deconst.content.envelope.body }}
+{% endblock %}
