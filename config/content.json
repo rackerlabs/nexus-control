@@ -1,1 +1,9 @@
-{}
+{
+    "deconst.horse": {
+        "content": {
+            "/": "https://github.com/rackerlabs/docs-core-infra-user-guide/",
+            "/newsletter/": "https://github.com/rackerlabs/docs-core-infra-user-guide/",
+            "/search/": null
+        }
+    }
+}
