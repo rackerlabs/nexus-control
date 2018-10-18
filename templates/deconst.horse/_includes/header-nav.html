@@ -1,0 +1,114 @@
+<div class="header-nav">
+    <nav class="header-nav-container">
+        <ul>
+            <li class="logo">
+                <a href="http://www.rackspace.com/">
+                    {% if deconst.env.PRESENTER_DEVMODE == 'true' %}
+                        {% set logoUrl = '/assets/src/img/rackspace-logo.svg' %}
+                    {% else %}
+                        {% set logoUrl = deconst.assets.assets_dist_img_rackspace_logo_svg %}
+                    {% endif %}
+                    <img src="{{ logoUrl }}" alt="Rackspace Logo" />
+                </a>
+            </li>
+            <li>
+                <a href="/"><span class="wordy">Developer</span> Home</a>
+            </li>
+            <li>
+                <a href="/docs/">Documentation &amp; SDKs</a>
+            </li>
+            <li>
+                <a href="/blog/">Blog</a>
+            </li>
+            <li class="search">
+              <div data-drc-search-box></div>
+              <div data-drc-search-results></div>
+            </li>
+        </ul>
+        <div class="nav-dropdown" id="dropdown-documentation">
+            <div class="dropdown-container">
+                <div class="dropdown-grid">
+                    <div class="dropdown-column">
+                        <h5>SDK Quickstarts</h5>
+                        <ul>
+                            <li><a href="">Gophercloud</a> <span class="sdk-language">Go</span></li>
+                            <li><a href="">JClouds</a> <span class="sdk-language">Java</span></li>
+                            <li><a href="">OpenStack.NET</a><span class="sdk-language">.NET</span></li>
+                            <li><a href="">pkgcloud</a> <span class="sdk-language">Node.js</span></li>
+                            <li><a href="">php-opencloud</a> <span class="sdk-language">PHP</span></li>
+                            <li><a href="">pyrax</a> <span class="sdk-language">Python</span></li>
+                            <li><a href="">fog</a> <span class="sdk-language">Ruby</span></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown-column">
+                        <h5>Cloud User Guides</h5>
+                        <ul>
+                            <li><a href="">Core Infrastructure</a></li>
+                            <li><a href="">Cloud Servers</a></li>
+                            <li><a href="">Cloud Images</a></li>
+                            <li><a href="">Orchestration</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown-column">
+                        <h5>Developer Community</h5>
+                        <ul>
+                            <li><a href="">Developer Blog</a></li>
+                            <li><a href="">Knowledge Center</a></li>
+                            <li><a href="">Developer Forum</a></li>
+                            <li><a href="">Outreach &amp; Events</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-dropdown" id="dropdown-products">
+            <div class="dropdown-container">
+                <div class="dropdown-grid">
+                    <div class="dropdown-column">
+                        <h5>Rackspace Cloud</h5>
+                        <ul>
+                            <li><a href="">Auto Scale</a></li>
+                            <li><a href="">CDN</a></li>
+                            <li><a href="">Cloud Block Storage</a></li>
+                            <li><a href="">Cloud Databases</a></li>
+                            <li><a href="">Cloud DNS</a></li>
+                            <li><a href="">Cloud Files</a></li>
+                            <li><a href="">Cloud Identity</a></li>
+                            <li><a href="">Cloud Images</a></li>
+                            <li><a href="">Cloud Load Balancers</a></li>
+                            <li><a href="">Cloud Monitoring</a></li>
+                            <li><a href="">Cloud Networks</a></li>
+                            <li><a href="">Cloud Queues</a></li>
+                            <li><a href="">Cloud Servers</a></li>
+                            <li><a href="">Orchestration</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown-column">
+                        <h5>Other Products</h5>
+                        <ul>
+                            <li><a href="">Airbrake</a></li>
+                            <li><a href="">Mailgun</a></li>
+                            <li><a href="">ObjectRocket</a></li>
+                            <li><a href="">RedisToGo</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-dropdown" id="dropdown-community">
+            <div class="dropdown-container">
+                <div class="dropdown-grid">
+                    <div class="dropdown-column">
+                        <h5>Developer Community</h5>
+                        <ul>
+                            <li><a href="">Developer Blog</a></li>
+                            <li><a href="">Knowledge Center</a></li>
+                            <li><a href="">Developer Forum</a></li>
+                            <li><a href="">Outreach &amp; Events</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>

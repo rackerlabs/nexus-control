@@ -1,0 +1,89 @@
+{% extends "_layouts/sidebar-left.html" %}
+
+{% set metaDescription = deconst.content.envelope.meta.metaDescription %}
+{% set metaTitle = deconst.content.envelope.meta.metaTitle %}
+{% set ogDescription = deconst.content.envelope.meta.ogDescription %}
+{% set ogImage = deconst.content.envelope.meta.ogImage %}
+{% set ogTitle = deconst.content.envelope.meta.ogTitle %}
+{% set twitterCreator = deconst.content.envelope.meta.twitterCreator %}
+{% set twitterDescription = deconst.content.envelope.meta.twitterDescription %}
+{% set twitterTitle = deconst.content.envelope.meta.twitterTitle %}
+
+{% block metaDescription %}{{ metaDescription|fallback(super()) }}{% endblock %}
+{% block metaTitle %}{{ metaTitle|fallback(super()) }}{% endblock %}
+{% block ogDescription %}{{ ogDescription|fallback(metaDescription, super()) }}{% endblock %}
+{% block ogTitle %}{{ ogTitle|fallback(metaTitle, super()) }}{% endblock %}
+{% block ogImage %}{{ ogImage|fallback(super()) }}{% endblock %}
+{% block twitterCreator %}{{ twitterCreator|fallback(super()) }}{% endblock %}
+{% block twitterDescription %}{{ twitterDescription|fallback(ogDescription, metaDescription, super()) }}{% endblock %}
+{% block twitterTitle %}{{ twitterTitle|fallback(ogTitle, metaTitle, super()) }}{% endblock %}
+
+{% block bodyClass %}sdks-home{% endblock %}
+{% set headlineTag = 'h1' %}
+{% set headlineAccent = 'Rackspace' %}
+{% set headline = 'SDKs &amp; Tools' %}
+{% set tagline = 'Let’s Build Something Powerful Together!' %}
+{% set stickyNavOffsetTop = 392 %}
+
+{% block header %}
+    <div class="sdk-quickstart-menu">
+        <div class="title"><h2>Quickstart Guides:</h2></div>
+        <div class="links">
+            <ul>
+                <li><a href="" data-drc-language-selector="sh"><span>CLI</span></a></li>
+                <li><a href="" data-drc-language-selector="python"><span>Python</span></a></li>
+                <li><a href="" data-drc-language-selector="go"><span>Go</span></a></li>
+                <li><a href="" data-drc-language-selector="csharp"><span>.NET</span></a></li>
+                <li><a href="" data-drc-language-selector="java"><span>Java</span></a></li>
+                <li><a href="" data-drc-language-selector="php"><span>PHP</span></a></li>
+                <li><a href="" data-drc-language-selector="javascript"><span>Node.js</span></a></li>
+                <li><a href="" data-drc-language-selector="ruby"><span>Ruby</span></a></li>
+            </ul>
+        </div>
+    </div>
+{% endblock %}
+
+{% block sidebar %}
+<div class="sidebar-container" data-drc-sticky data-offset-top="{{ stickyNavOffsetTop }}" data-drc-flex-height data-flex-bottom="302">
+  {% if deconst.content.envelope.meta.github_issues_url or deconst.content.envelope.meta.github_edit_url %}
+               {% if deconst.content.envelope.meta.preferGithubIssues %}
+                 {% set githubLinkUrl = deconst.content.envelope.meta.github_issues_url %}
+                 {% set githubLinkText = 'Submit an issue' %}
+               {% else %}
+                 {% set githubLinkUrl = deconst.content.envelope.meta.github_edit_url %}
+                 {% set githubLinkText = 'Edit on GitHub' %}
+               {% endif %}
+               <a href="{{ githubLinkUrl }}" target="_blank" class="github-link">
+                 <span class="icon fa fa-github"></span>
+                 <span class="link-text">{{ githubLinkText }}</span>
+               </a>
+             {% endif %}
+    <ul>
+        <li{% if deconst.request.path.indexOf('sdks/golang') != -1 %} class="active"{% endif %}>
+            <a href="/sdks/golang">Go</a>
+        </li>
+        <li{% if deconst.request.path.indexOf('sdks/java') != -1 %} class="active"{% endif %}>
+            <a href="/sdks/java">Java</a>
+        </li>
+        <li{% if deconst.request.path.indexOf('sdks/dot-net') != -1 %} class="active"{% endif %}>
+            <a href="/sdks/dot-net">.NET</a>
+        </li>
+        <li{% if deconst.request.path.indexOf('sdks/node-js') != -1 %} class="active"{% endif %}>
+            <a href="/sdks/node-js">Node.js</a>
+        </li>
+        <li{% if deconst.request.path.indexOf('sdks/php') != -1 %} class="active"{% endif %}>
+            <a href="/sdks/php">PHP</a>
+        </li>
+        <li{% if deconst.request.path.indexOf('sdks/python') != -1 %} class="active"{% endif %}>
+            <a href="/sdks/python">Python</a>
+        </li>
+        <li{% if deconst.request.path.indexOf('sdks/ruby') != -1 %} class="active"{% endif %}>
+            <a href="/sdks/ruby">Ruby</a>
+        </li>
+    </ul>
+</div>
+{% endblock %}
+
+{% block content %}
+  {{ deconst.content.envelope.body }}
+{% endblock %}

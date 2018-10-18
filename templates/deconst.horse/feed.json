@@ -1,0 +1,2 @@
+{{ deconst.content.envelope.body }}
+{% set contentType = deconst.response.set('Content-Type', 'application/json') %}
