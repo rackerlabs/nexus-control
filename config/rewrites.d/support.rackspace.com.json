@@ -1101,21 +1101,21 @@
       },
       {
         "description": "Redirect Managing my server article",
-        "from": "^\\/how-to\\/managing-my-server/(.*)$",
+        "from": "^\\/how-to\\/managing-my-server(.*)$",
         "to": "/how-to/manage-a-cloud-server/",
         "rewrite": false,
         "status": 301
       },
       {
         "description": "Redirect Managing your server article",
-        "from": "^\\/how-to\\/managing-your-server/(.*)$",
+        "from": "^\\/how-to\\/managing-your-server(.*)$",
         "to": "/how-to/manage-a-cloud-server/",
         "rewrite": false,
         "status": 301
       },
       {
         "description": "Redirect Updating Servicenet routes on cloud servers created before june 3, 2013 article",
-        "from": "^\\/how-to\\/updating-servicenet-routes-on-cloud-servers-created-before-june-3-2013/(.*)$",
+        "from": "^\\/how-to\\/updating-servicenet-routes-on-cloud-servers-created-before-june-3-2013(.*)$",
         "to": "/how-to/updating-servicenet-routes-on-cloud-servers/", 
         "rewrite": false,
         "status": 301
@@ -1131,6 +1131,13 @@
         "description": "retire Manually configure Outlook 2013 for Exchange 2007",
         "from": "^\\/how-to\\/manually-configure-outlook-2013-for-email-hosted-on-exchange-2007(.*)$",
         "to": "/how-to/manually-configure-outlook-2013-for-email-hosted-on-exchange-2013/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
+        "description": "Redirect Username updates article",
+        "from": "^\\/how-to\\/myrackspace-username-updates(.*)$",
+        "to": "/how-to/myrackspace-login-and-username-updates/", 
         "rewrite": false,
         "status": 301
       }
