@@ -1128,9 +1128,30 @@
         "status": 301
       },
       {
-        "description": "retire Manually configure Outlook 2013 for Exchange 2007",
+        "description": "redirect Manually configure Outlook 2013 for Exchange 2007",
         "from": "^\\/how-to\\/manually-configure-outlook-2013-for-email-hosted-on-exchange-2007(.*)$",
         "to": "/how-to/manually-configure-outlook-2013-for-email-hosted-on-exchange-2013/",
+        "rewrite": false,
+        "status": 301
+      },
+     {
+        "description": "redirect onstall ssl certificates on windows",
+        "from": "^\\/how-to\\/install-ssl-certificates-on-windows-server-2008r2-and-2012(.*)$",
+        "to": "/how-to/install-an-ssl-certificate/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
+        "description": "redirect upload ssl certificate for sitecore and azure",
+        "from": "^\\/how-to\\/upload-an-ssl-certificate-to-a-custom-domain(.*)$",
+        "to": "/how-to/install-an-ssl-certificate/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
+        "description": "retire install ssl certificate on apache",
+        "from": "^\\/how-to\\/installing-an-ssl-certificate-on-apache(.*)$",
+        "to": "/how-to/install-an-ssl-certificate/",
         "rewrite": false,
         "status": 301
       },
