@@ -50,7 +50,7 @@
             "^/docs/appformix/": "user-guide.html",
             "^/docs/offerings/": "user-guide.html",
             "^/docs/customer-service/": "user-guide.html",
-            "^/docs/billing-apiguide/": "user-guide.html",
+            "^/docs/billing-apiguide/v2/": "user-guide.html",
             "^/sdks": "sdks-home.html",
             "^/sdks/.+?": "sdks-page.html",
             "\\.xml$": "feed.xml",
