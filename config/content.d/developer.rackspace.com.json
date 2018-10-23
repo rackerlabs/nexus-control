@@ -47,6 +47,8 @@
           "/docs/ticketing/": "https://github.com/rackerlabs/docs-SDP/",
           "/docs/appformix/": "https://github.com/rackerlabs/docs-appformix/",
           "/docs/offerings/": "https://github.com/rackerlabs/docs-offerings/",
+          "/docs/customer-service/": "https://github.com/rackerlabs/docs-customer-service/",
+          "/docs/billing-api/": "https://github.com/rackerlabs/docs-billing-api/",
           "/docs/style-guide/": "https://github.com/rackerlabs/docs-style-guide/",
           "/docs/microsoft-hyper-v/hyper-v-handbook/": "https://github.com/rackerlabs/mpc-hyper-v/hyper-v-handbook/",
           "/search/": null

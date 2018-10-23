@@ -1101,21 +1101,21 @@
       },
       {
         "description": "Redirect Managing my server article",
-        "from": "^\\/how-to\\/managing-my-server/(.*)$",
+        "from": "^\\/how-to\\/managing-my-server(.*)$",
         "to": "/how-to/manage-a-cloud-server/",
         "rewrite": false,
         "status": 301
       },
       {
         "description": "Redirect Managing your server article",
-        "from": "^\\/how-to\\/managing-your-server/(.*)$",
+        "from": "^\\/how-to\\/managing-your-server(.*)$",
         "to": "/how-to/manage-a-cloud-server/",
         "rewrite": false,
         "status": 301
       },
       {
         "description": "Redirect Updating Servicenet routes on cloud servers created before june 3, 2013 article",
-        "from": "^\\/how-to\\/updating-servicenet-routes-on-cloud-servers-created-before-june-3-2013/(.*)$",
+        "from": "^\\/how-to\\/updating-servicenet-routes-on-cloud-servers-created-before-june-3-2013(.*)$",
         "to": "/how-to/updating-servicenet-routes-on-cloud-servers/", 
         "rewrite": false,
         "status": 301
@@ -1135,6 +1135,13 @@
         "status": 301
       },
       {
+        "description": "Redirect Username updates article",
+        "from": "^\\/how-to\\/myrackspace-username-updates(.*)$",
+        "to": "/how-to/myrackspace-login-and-username-updates/", 
+        "rewrite": false,
+        "status": 301
+      },
+      {
         "description": "redirect generate-a-csr-with-openssl/",
         "from": "^\\/how-to\\/generate-a-csr-with-openssl(.*)$",
         "to": "/how-to/generate-a-csr/",
@@ -1145,6 +1152,13 @@
         "description": "redirect create-a-csr-in-the-cloud-control-panel/",
         "from": "^\\/how-to\\/create-a-csr-in-the-cloud-control-panel(.*)$",
         "to": "/how-to/generate-a-csr/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
+        "description": "redirect update-an-existing-ssl-certificate/",
+        "from": "^\\/how-to\\/update-an-existing-ssl-certificate(.*)$",
+        "to": "/how-to/purchase-or-renew-an-ssl-certificate/",
         "rewrite": false,
         "status": 301
       }
