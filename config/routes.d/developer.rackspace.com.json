@@ -49,7 +49,7 @@
             "^/docs/ticketing/": "user-guide.html",
             "^/docs/appformix/": "user-guide.html",
             "^/docs/offerings/": "user-guide.html",
-            "^/docs/customer-service/v1/": "user-guide.html",
+            "^/docs/customer-service/": "user-guide.html",
             "^/docs/billing-apiguide/v2/": "user-guide.html",
             "^/sdks": "sdks-home.html",
             "^/sdks/.+?": "sdks-page.html",
