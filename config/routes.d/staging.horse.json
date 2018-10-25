@@ -4,7 +4,9 @@
       "^/docs/private-cloud/release-notes/": "developer.rackspace.com/docs-singlepage.html",
       "^/docs/private-cloud/": "developer.rackspace.com/user-guide.html",
       "^/docs/api-doc-template/": "developer.rackspace.com/user-guide.html",
-      "^/docs/rkaas/": "developer.rackspace.com/user-guide.html"
+      "^/docs/rkaas/": "developer.rackspace.com/user-guide.html",
+      "^docs/rpc-vmware/vmware-cloud/": "developer.rackspace.com/user-guide.html"
+     
     }
   }
 }
