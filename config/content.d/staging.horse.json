@@ -4,7 +4,7 @@
       "/docs/private-cloud/rpc/master/": "https://github.com/rcbops/privatecloud-docs/master/",
       "/docs/private-cloud/release-notes/": "https://github.com/rcbops/rpc-openstack/master/",
       "/docs/api-doc-template/": "https://github.com/rackerlabs/docs-common/",
-      "/docs/rpc-vmware/vmware-cloud/": "https://github.com/rackerlabs/rpc-vmware/vmware-cloud/"
+      "/doc/rpc-vmware/vmware-cloud/": "https://github.com/rackerlabs/rpc-vmware/vmware-cloud/"
     }
   }
 }
