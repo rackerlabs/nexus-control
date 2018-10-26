@@ -1196,6 +1196,13 @@
         "to": "/how-to/article-retired/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "redirect rescue-mode-on-windows-servers/",
+        "from": "^\\/how-to\\/rescue-mode-on-windows-servers(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
