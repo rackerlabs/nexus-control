@@ -28,35 +28,5 @@
       "rewrite": false,
       "status": 301
     }
-  ],
-  "www.getcarina.com": [
-    {
-      "from": "^(.*)$",
-      "to": "$1",
-      "toProtocol": "https",
-      "toHostname": "getcarina.com",
-      "rewrite": false,
-      "status": 301
-    }
-  ],
-  "runcarina.com": [
-    {
-      "from": "^(.*)$",
-      "to": "$1",
-      "toProtocol": "https",
-      "toHostname": "getcarina.com",
-      "rewrite": false,
-      "status": 301
-    }
-  ],
-  "www.runcarina.com": [
-    {
-      "from": "^(.*)$",
-      "to": "$1",
-      "toProtocol": "https",
-      "toHostname": "getcarina.com",
-      "rewrite": false,
-      "status": 301
-    }
   ]
 }
