@@ -1203,6 +1203,13 @@
         "to": "/how-to/article-retired/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "redirect logging-in-to-the-rackspace-intelligence-dashboard",
+        "from": "^\\/how-to\\/logging-in-to-the-rackspace-intelligence-dashboard(.*)$",
+        "to": "/how-to/getting-started-with-rackspace-intelligence-for-the-cloud/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
