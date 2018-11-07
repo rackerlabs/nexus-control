@@ -348,13 +348,6 @@
           "status": 301
         },
         {
-          "description": "Redirect all Rackspace KaaS docs to /latest",
-          "from": "^\\/docs\\/rkaas\\/1.0.x\\/(.*)",
-          "to": "/docs/rkaas/latest/$1",
-          "rewrite": false,
-          "status": 301
-        },
-        {
           "description": "Redirect Rackspace KaaS User Guide",
           "from": "^\\/docs\\/rkaas\\/latest\\/rkaas-userguide-external\\/?(.*)",
           "to": "/docs/rkaas/latest/external/rkaas-userguide/$1",
