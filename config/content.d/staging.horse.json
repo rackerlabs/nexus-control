@@ -4,12 +4,7 @@
       "/docs/private-cloud/rpc/master/": "https://github.com/rcbops/privatecloud-docs/master/",
       "/docs/private-cloud/release-notes/": "https://github.com/rcbops/rpc-openstack/master/",
       "/docs/api-doc-template/": "https://github.com/rackerlabs/docs-common/",
-      "/doc/rpc-vmware/vmware-cloud/": "https://github.com/rackerlabs/rpc-vmware/vmware-cloud/",
-      "/doc/rkaas/latest/": "https://github.com/rcbops/mk8s/master",
-      "/doc/rkaas/1.1.x/": "https://github.com/rcbops/mk8s/1.1.x/",
-      "/doc/rkaas/1.2.x/": "https://github.com/rcbops/mk8s/1.2.x/",
-      "/doc/rkaas/1.3.x/": "https://github.com/rcbops/mk8s/1.3.x/",
-      "/doc/rkaas/1.4.x/": "https://github.com/rcbops/mk8s/1.4.x/"
+      "/doc/rpc-vmware/vmware-cloud/": "https://github.com/rackerlabs/rpc-vmware/vmware-cloud/"
     }
   }
 }
