@@ -1,5 +1,5 @@
 {
-    "developer.rackspace.com": {
+    "developer.test.deconst.org": {
         "routes": {
             "^/": "default.html",
             "^/$": "index.html",

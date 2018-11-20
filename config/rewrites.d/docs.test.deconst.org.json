@@ -1,5 +1,5 @@
 {
-	"docs.rackspace.com": [
+	"docs.test.deconst.org": [
 		{
 			"description": "Redirect root traffic to developer.rs.com/docs/",
 			"from": "^/$",

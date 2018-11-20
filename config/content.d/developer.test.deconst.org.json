@@ -1,5 +1,5 @@
 {
-  "developer.rackspace.com": {
+  "developer.test.deconst.org": {
       "content": {
           "/": "https://github.com/rackerlabs/docs-core-infra-user-guide/",
           "/docs/": "https://github.com/rackerlabs/docs-quickstart/",
