@@ -1,5 +1,5 @@
 {
-    "support.rackspace.com": {
+    "support.test.deconst.org": {
       "routes": {
         "^/": "deferred.html",
         "^/how-to/$": "home.html",
