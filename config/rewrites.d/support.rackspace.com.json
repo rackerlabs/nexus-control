@@ -1224,6 +1224,13 @@
         "to": "/how-to/article-retired/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "redirect tls-ssl-encryption-cloud-office/",
+        "from": "^\\/how-to\\/tls-ssl-encryption-cloud-office(.*)$",
+        "to": "/how-to/rackspace-email-faq/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
