@@ -45,6 +45,7 @@
           "/docs/rpc-vmware/vcloud/v1.5/": "https://github.com/rackerlabs/rpc-vmware/vcloud-handbook-v1.5/",
           "/docs/docs-vmware-server-virt/server-virt-handbook/": "https://github.com/rackerlabs/rpc-vmware/server-virt-handbook/",
           "/docs/rpc-vmware/rpc-vmware-customer-handbook/": "https://github.com/rackerlabs/rpc-vmware/rpc-vmware-customer-handbook/",
+          "/doc/rpc-vmware/vmware-cloud/": "https://github.com/rackerlabs/rpc-vmware/vmware-cloud/",
           "/docs/private-cloud/red-hat/": "https://github.com/rackerlabs/docs-redhat-osp/",
           "/docs/rackspace-federation/": "https://github.com/rackerlabs/docs-rackspace-federation/",
           "/docs/ticketing/": "https://github.com/rackerlabs/docs-SDP/",
