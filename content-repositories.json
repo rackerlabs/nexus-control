@@ -26,7 +26,6 @@
   { "kind": "github", "project": "rackerlabs/docs-cloud-rackconnect" },
   { "kind": "github", "project": "rackerlabs/docs-dedicated-networking" },
   { "kind": "github", "project": "rackerlabs/docs-cloud-servers" },
-  { "kind": "github", "project": "rackerlabs/docs-common"},
   { "kind": "github", "project": "rackerlabs/docs-support-network"},
   { "kind": "github", "project": "rackerlabs/docs-rackspace" },
   { "kind": "github", "project": "rackerlabs/heat-resource-ref" },
