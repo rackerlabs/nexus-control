@@ -9,13 +9,13 @@
 {% set twitterDescription = deconst.content.envelope.meta.twitterDescription %}
 {% set twitterTitle = deconst.content.envelope.meta.twitterTitle %}
 
-{% block metaDescription %}{{ metaDescription|fallback(super()) }}{% endblock %}
+{% block metaDescription %}{{ metaDescription|fallback(deconst.content.envelope.excerpt, super()) }}{% endblock %}
 {% block metaTitle %}{{ metaTitle|fallback(deconst.content.envelope.title, super())}}{% endblock %}
-{% block ogDescription %}{{ ogDescription|fallback(metaDescription, super()) }}{% endblock %}
+{% block ogDescription %}{{ ogDescription|fallback(metaDescription, deconst.content.envelope.excerpt, super()) }}{% endblock %}
 {% block ogTitle %}{{ ogTitle|fallback(metaTitle, deconst.content.envelope.title, super()) }}{% endblock %}
 {% block ogImage %}{{ ogImage|fallback("/assets/src/img/default-blog-post-og-image.png") }}{% endblock %}
 {% block twitterCreator %}{{ twitterCreator|fallback(super()) }}{% endblock %}
-{% block twitterDescription %}{{ twitterDescription|fallback(ogDescription, metaDescription, super()) }}{% endblock %}
+{% block twitterDescription %}{{ twitterDescription|fallback(ogDescription, metaDescription, deconst.content.envelope.excerpt, super()) }}{% endblock %}
 {% block twitterTitle %}{{ twitterTitle|fallback(ogTitle, metaTitle, super()) }}{% endblock %}
 
 {% set headline = 'Developer Blog' %}
