@@ -13,7 +13,7 @@
 {% block metaTitle %}{{ metaTitle|fallback(deconst.content.envelope.title, super())}}{% endblock %}
 {% block ogDescription %}{{ ogDescription|fallback(metaDescription, deconst.content.envelope.body, super())|striptags|truncate(160) }}{% endblock %}
 {% block ogTitle %}{{ ogTitle|fallback(metaTitle, deconst.content.envelope.title, super()) }}{% endblock %}
-{% block ogImage %}{{ ogImage|fallback("/assets/src/img/default-blog-post-og-image.png") }}{% endblock %}
+{% block ogImage %}{{ ogImage|fallback(super()) }}{% endblock %}
 {% block twitterCreator %}{{ twitterCreator|fallback(super()) }}{% endblock %}
 {% block twitterDescription %}{{ twitterDescription|fallback(ogDescription, metaDescription, deconst.content.envelope.body, super())|striptags|truncate(160) }}{% endblock %}
 {% block twitterTitle %}{{ twitterTitle|fallback(ogTitle, metaTitle, super()) }}{% endblock %}
