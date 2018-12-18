@@ -39,7 +39,6 @@
           "/docs/rkaas/v1.2.x/": "https://github.com/rcbops/mk8s/1.2.x/",
           "/docs/rkaas/v1.3.x/": "https://github.com/rcbops/mk8s/1.3.x/",
           "/docs/rkaas/v1.4.x/": "https://github.com/rcbops/mk8s/1.4.x/",
-          "/docs/rkaas/v1.5.x/": "https://github.com/rcbops/mk8s/1.5.x/",
           "/docs/rkaas/latest/": "https://github.com/rcbops/mk8s/master/",
           "/docs/rpc-vmware/vcenter/": "https://github.com/rackerlabs/rpc-vmware/vcenter-handbook/",
           "/docs/rpc-vmware/vcloud/v1/": "https://github.com/rackerlabs/rpc-vmware/vcloud-handbook/",
