@@ -22,6 +22,11 @@
             {% set cssUrl = deconst.assets.assets_dist_css_main_css %}
         {% endif %}
         <link rel="stylesheet" href="{{ cssUrl }}">
+
+        {% if deconst.content.envelope.meta.canonical %}
+        <link rel="canonical" href="{{ deconst.content.envelope.meta.canonical }}" />
+        {% endif %}
+
         {% include "_includes/gtm-script.html" %}
         {% block headScripts %}{% endblock %}
     {% endblock %}
