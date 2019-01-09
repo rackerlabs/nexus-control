@@ -1238,6 +1238,13 @@
         "to": "/how-to/upgrade-a-cloud-databases-instance-from-mysql-56-to-mysql-57/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "redirect logging-in-with-an-ssh-private-key-on-windows",
+        "from": "^\\/how-to\\/logging-in-with-an-ssh-private-key-on-windows(.*)$",
+        "to": "/how-to/log-into-a-linux-server-with-an-ssh-private-key-on-windows/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
