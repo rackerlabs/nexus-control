@@ -1231,6 +1231,13 @@
         "to": "/how-to/rackspace-email-faq/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "redirect upgrade-a-cloud-databases-instance-from-mysql-51-to-mysql-56",
+        "from": "^\\/how-to\\/upgrade-a-cloud-databases-instance-from-mysql-51-to-mysql-56(.*)$",
+        "to": "/how-to/upgrade-a-cloud-databases-instance-from-mysql-56-to-mysql-57/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
