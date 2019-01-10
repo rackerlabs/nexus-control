@@ -1240,8 +1240,8 @@
         "status": 301
       },
       {
-        "description": "Retire {Email sorting issues on iOS and Android after an email migration}",
-        "from": "^\\/how-to\\/{email-sorting-issues-on-ios-and-android-after-an-email-migration/}(.*)$",
+        "description": "Retire Email sorting issues on iOS and Android after an email migration",
+        "from": "^\\/how-to\\/email-sorting-issues-on-ios-and-android-after-an-email-migration/(.*)$",
         "to": "/how-to/article-retired/",
         "rewrite": false,
         "status": 301
