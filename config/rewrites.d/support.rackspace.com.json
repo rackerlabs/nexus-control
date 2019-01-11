@@ -1245,6 +1245,13 @@
         "to": "/how-to/article-retired/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "Manually configure Mac Mail for email hosted on Exchange 2007",
+        "from": "^\\/how-to\\/manually-configure-mac-mail-for-email-hosted-on-exchange-2007(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
