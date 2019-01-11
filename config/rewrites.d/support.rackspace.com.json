@@ -1247,7 +1247,6 @@
         "status": 301
       },
       {
-<<<<<<< HEAD
         "description": "Manually configure Mac Mail for email hosted on Exchange 2007",
         "from": "^\\/how-to\\/manually-configure-mac-mail-for-email-hosted-on-exchange-2007(.*)$",
         "to": "/how-to/article-retired/",
@@ -1255,8 +1254,6 @@
         "status": 301
       },
       {
-=======
->>>>>>> 101ec4377308596ad2e95e18dc82febed2d6f4ec
         "description": "Manually configure Windows Phone devices for email hosted on Exchange 2007",
         "from": "^\\/how-to\\/manually-configure-windows-phone-devices-for-email-hosted-on-exchange-2007(.*)$",
         "to": "/how-to/article-retired/",
