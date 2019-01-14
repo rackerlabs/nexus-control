@@ -1,12 +1,5 @@
-                        <div class="feedback-container">
-                            <h3>Have Feedback?</h3>
-                            <p>We love customer feedback. Help us improve our products and service by <a href="https://community.rackspace.com/feedback/f/68">leaving your comments</a>.</p>
-                        </div>
-
-                        {% if deconst.content.envelope.meta.github_edit_url %}
-                        <hr/>
-
-                        <div class="contributing-container">
-                            <p class="button-wp"><a href="{{ deconst.content.envelope.meta.github_edit_url }}"><i class="fa fa-github"></i>Edit This Article</a></p>
-                        </div>
-                        {% endif %}
+{% if deconst.content.envelope.meta.github_edit_url %}
+   <div class="contributing-container">
+      <p class="button-wp"><a href="{{ deconst.content.envelope.meta.github_edit_url }}"><i class="fa fa-github"></i>Edit this article</a></p>
+   </div>
+{% endif %}
