@@ -1245,6 +1245,27 @@
         "to": "/how-to/log-into-a-linux-server-with-an-ssh-private-key-on-windows/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "Retire Email sorting issues on iOS and Android after an email migration",
+        "from": "^\\/how-to\\/email-sorting-issues-on-ios-and-android-after-an-email-migration(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
+        "description": "Manually configure Mac Mail for email hosted on Exchange 2007",
+        "from": "^\\/how-to\\/manually-configure-mac-mail-for-email-hosted-on-exchange-2007(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
+        "description": "Manually configure Windows Phone devices for email hosted on Exchange 2007",
+        "from": "^\\/how-to\\/manually-configure-windows-phone-devices-for-email-hosted-on-exchange-2007(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
