@@ -1308,6 +1308,13 @@
         "to": "/how-to/article-retired/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "Manually configure Blackberry 10 devices for email hosted on Exchange 2007",
+        "from": "^\\/how-to\\/manually-configure-blackberry-10-devices-for-email-hosted-on-exchange-2007(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
