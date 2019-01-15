@@ -1301,6 +1301,13 @@
         "to": "/how-to/article-retired/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "Work with public folders through Outlook for Exchange 2007 and 2010",
+        "from": "^\\/how-to\\/working-with-public-folders-through-outlook-for-exchange-2007-and-2010(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
