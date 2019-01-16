@@ -1322,6 +1322,13 @@
         "to": "/how-to/article-retired/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "Set up IMAP or POP for Windows Mail",
+        "from": "^\\/how-to\\/setting-up-imap-or-pop-windows-mail(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
