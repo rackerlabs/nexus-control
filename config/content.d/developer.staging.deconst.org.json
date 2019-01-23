@@ -1,0 +1,12 @@
+{
+  "developer.staging.deconst.org": {
+    "content": {
+      "/": "https://github.com/rackerlabs/docs-developer-blog/",
+      "/docs/": "https://github.com/rackerlabs/docs-quickstart/",
+      "/docs/private-cloud/rpc/master/": "https://github.com/rcbops/privatecloud-docs/master/",
+      "/docs/private-cloud/release-notes/": "https://github.com/rcbops/rpc-openstack/master/",
+      "/docs/api-doc-template/": "https://github.com/rackerlabs/docs-common/",
+      "/docs/rkaas/": "https://github.com/rcbops/mk8s/master/"
+    }
+  }
+}
