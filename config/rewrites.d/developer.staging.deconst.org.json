@@ -6,6 +6,346 @@
             "to": "/$1/",
             "rewrite": false,
             "status": 301
+        },
+        {
+            "from": "^\\/logs\\/?$",
+            "to": "/",
+            "toProtocol": "https",
+            "toHostname": "iad1-10096-kibana.es.objectrocket.com",
+            "toPort": "20096",
+            "rewrite": false,
+            "status": 302
+        },
+        {
+            "description": "Blog: Remove .html extension",
+            "from": "^\\/blog\\/(.+?)(\\.html)$",
+            "to": "/blog/$1/",
+            "rewrite": false,
+            "status": 301
+        },
+        {
+            "from": "^\\/devtrial",
+            "to": "/signup/",
+            "rewrite": false,
+            "status": 301
+        },
+        {
+            "from": "^\\/developer-plus\\/?$",
+            "to": "/signup/",
+            "rewrite": false,
+            "status": 301
+        },
+        {
+            "from": "^\\/signup",
+            "to": "/cloud",
+            "toProtocol": "https",
+            "toHostname": "cart.rackspace.com",
+            "rewrite": false,
+            "status": 301
+        },
+        {
+            "from": "^\\/sdks\\/?$",
+            "to": "/docs/#sdks",
+            "rewrite": false,
+            "status": 301
+        },
+        {
+            "from": "^\\/docs\\/user-guides\\/?$",
+            "to": "/docs/user-guides/infrastructure/",
+            "rewrite": false,
+            "status": 301
+        },
+        {
+            "from": "^\\/docs\\/cloud-autoscale\\/v1\\/developer-guide\\/?(.*)$",
+            "to": "/docs/autoscale/v1/developer-guide/$1",
+            "rewrite": false,
+            "status": 301
+        },
+        {
+            "description": "Redirect cdn developer-guide URL",
+            "from": "^\\/docs\\/cdn\\/v1\\/developer-guide\\/?(.*)$",
+            "to": "/docs/cdn/v1/",
+            "rewrite": false,
+            "status": 301
+        },
+        {
+          "description": "Redirect managed dns developer-guide URL",
+          "from": "^\\/docs\\/cloud-dns\\/v2\\/developer-guide\\/(.*?)",
+          "to": "/docs/cloud-dns/v2/",
+          "rewrite": false,
+          "status": 301
+        },
+        {
+            "description": "Redirect retired Cloud Big Data links to docs page",
+            "from": "^\\/docs\\/cloud-big-data\\/v2\\/(.*?)",
+            "to": "/docs/",
+            "rewrite": false,
+            "status": 301
+        },
+        {
+          "description": "Redirect cloud dns developer-guide URL",
+          "from": "^\\/docs\\/cloud-dns\\/v1\\/developer-guide\\/(.*?)",
+          "to": "/docs/cloud-dns/v1/",
+          "rewrite": false,
+          "status": 301
+        },
+        {
+          "description": "Redirect common annotated auth resp URL",
+          "from": "^\\/docs\\/cloud-identity\\/v2\\/developer-guide\\/#document-authentication-info\\/sample-auth-req-response(.*?)",
+          "to": "/docs/cloud-identity/v2/general-api-info/authentication-info/sample-auth-req-response/",
+          "rewrite": false,
+          "status": 301
+        },
+        {
+          "description": "Redirect common auth token api reference URL",
+          "from": "^\\/docs\\/cloud-identity\\/v2\\/developer-guide\\/#token-operations\\/?(.*)$",
+          "to": "/docs/cloud-identity/v2/api-reference/token-operations/",
+          "rewrite": false,
+          "status": 301
+        },
+        {
+          "description": "Redirect common manage auth tokens URL",
+          "from": "^\\/docs\\/cloud-identity\\/v2\\/developer-guide\\/#manage-authentication-tokens\\/?(.*)$",
+          "to": "/docs/cloud-identity/v2/getting-started/manage-auth-tokens/",
+          "rewrite": false,
+          "status": 301
+        },
+        {
+          "description": "Redirect common RBAC add user URL",
+          "from": "^\\/docs\\/cloud-identity\\/v2\\/developer-guide\\/#add-user\\/?(.*)$",
+          "to": "/docs/cloud-identity/v2/api-reference/users-operations/",
+          "rewrite": false,
+          "status": 301
+        },
+        {
+          "description": "Redirect common RBAC add role to user URL",
+          "from": "^\\/docs\\/cloud-identity\\/v2\\/developer-guide\\/#add-role-to-user\\/?(.*)$",
+          "to": "/docs/cloud-identity/v2/api-reference/role-operations/",
+          "rewrite": false,
+          "status": 301
+        },
+        {
+          "description": "Redirect common RBAC delete global role from user URL",
+          "from": "^\\/docs\\/cloud-identity\\/v2\\/developer-guide\\/#delete-global-role-from-user\\/?(.*)$",
+          "to": "/docs/cloud-identity/v2/api-reference/role-operations/",
+          "rewrite": false,
+          "status": 301
+        },
+        {
+            "description": "Redirect Identity Quickstart URL",
+            "from": "^\\/docs\\/cloud-identity\\/v2\\/developer-guide#document-quickstart-guide\\/?(.*)$",
+            "to": "/docs/cloud-identity/v2/getting-started/",
+            "rewrite": false,
+            "status": 301
+        },
+        {
+            "description": "Redirect Identity developer-guide URL",
+            "from": "^\\/docs\\/cloud-identity\\/v2\\/developer-guide\\/?(.*)$",
+            "to": "/docs/cloud-identity/v2/",
+            "rewrite": false,
+            "status": 301
+        },
+        {
+            "description": "Redirect load balancers v1 developer-guide URL",
+            "from": "^\\/docs\\/cloud-load-balancers\\/v1\\/developer-guide\\/(.*?)",
+            "to": "/docs/cloud-load-balancers/v1/",
+            "rewrite": false,
+            "status": 301
+        },
+        {
+            "description": "Redirect load balancers v2 developer-guide URL",
+            "from": "^\\/docs\\/cloud-load-balancers\\/v2\\/developer-guide\\/(.*?)",
+            "to": "/docs/cloud-load-balancers/v2/",
+            "rewrite": false,
+            "status": 301
+        },
+        {
+            "description": "Redirect servers developer-guide URL",
+            "from": "^\\/docs\\/cloud-servers\\/v2\\/developer-guide\\/(.*?)",
+            "to": "/docs/cloud-servers/v2/",
+            "rewrite": false,
+            "status": 301
+        },
+        {
+            "description": "Redirect first gen servers developer-guide URL",
+            "from": "^\\/docs\\/cloud-servers\\/v1.0\\/cs-devguide\\/(.*?)",
+            "to": "/docs/cloud-servers/v2/",
+            "rewrite": false,
+            "status": 301
+        },
+        {
+            "description": "Redirect images developer-guide URL",
+            "from": "^\\/docs\\/cloud-images\\/v2\\/developer-guide\\/(.*?)",
+            "to": "/docs/cloud-images/v2/",
+            "rewrite": false,
+            "status": 301
+        },
+        {
+            "description": "Redirect Cloud Block Storage developer-guide URL",
+            "from": "^\\/docs\\/cloud-block-storage\\/v1\\/developer-guide\\/(.*?)",
+            "to": "/docs/cloud-block-storage/v1/",
+            "rewrite": false,
+            "status": 301
+        },
+        {
+            "description": "Redirect Cloud Backup v1 developer-guide URL",
+            "from": "^\\/docs\\/cloud-backup\\/v1\\/developer-guide\\/(.*?)",
+            "to": "/docs/cloud-backup/v1/",
+            "rewrite": false,
+            "status": 301
+        },
+        {
+            "description": "Redirect Cloud Backup v2 developer-guide URL",
+            "from": "^\\/docs\\/cloud-backup\\/v2\\/developer-guide\\/(.*?)",
+            "to": "/docs/cloud-backup/v2/",
+            "rewrite": false,
+            "status": 301
+        },
+        {
+            "description": "Redirect Cloud Databases developer-guide URL",
+            "from": "^\\/docs\\/cloud-databases\\/v1\\/developer-guide\\/(.*?)",
+            "to": "/docs/cloud-databases/v1/",
+            "rewrite": false,
+            "status": 301
+        },
+        {
+            "description": "Redirect Cloud Files developer-guide URL",
+            "from": "^\\/docs\\/cloud-files\\/v1\\/developer-guide\\/(.*?)",
+            "to": "/docs/cloud-files/v1/",
+            "rewrite": false,
+            "status": 301
+        },
+        {
+            "description": "Redirect deprecated Cloud Keep links to docs page",
+            "from": "^\\/docs\\/cloud-keep\\/v1\\/(.*?)",
+            "to": "/docs/",
+            "rewrite": false,
+            "status": 301
+        },
+        {
+            "description": "Redirect Cloud Queues developer-guide URL",
+            "from": "^\\/docs\\/cloud-queues\\/v1\\/developer-guide\\/(.*?)",
+            "to": "/docs/cloud-queues/v1/",
+            "rewrite": false,
+            "status": 301
+        },
+        {
+           "description:": "Redirect metrics links with old product name",
+            "from": "^\\/docs\\/cloud-metrics\\/v1\\/developer-guide\\/?(.*)$",
+            "to": "/docs/metrics/v1/",
+            "rewrite": false,
+            "status": 301
+        },
+        {
+           "description:": "Redirect metrics links with new product name",
+            "from": "^\\/docs\\/metrics\\/v1\\/developer-guide\\/?(.*)$",
+            "to": "/docs/metrics/v1/",
+            "rewrite": false,
+            "status": 301
+        },
+        {
+           "description:": "Redirect monitor links with old product name",
+           "from": "^\\/docs\\/cloud-monitoring\\/v1\\/developer-guide\\/?(.*)$",
+           "to": "/docs/rackspace-monitoring/v1/",
+           "rewrite": false,
+           "status": 301
+        },
+        {   "description": "Redirect monitor links with new product name",
+            "from": "^\\/docs\\/rackspace-monitoring\\/v1\\/developer-guide\\/?(.*)$",
+            "to": "/docs/rackspace-monitoring/v1/",
+            "rewrite": false,
+            "status": 301
+        },
+        {
+            "description": "Redirect Cloud Networks developer-guide URL",
+            "from": "^\\/docs\\/cloud-networks\\/v1\\/developer-guide\\/?(.*)$",
+            "to": "/docs/cloud-networks/v2/",
+            "rewrite": false,
+            "status": 301
+        },
+        {
+            "description": "Redirect Cloud Networks v2 developer-guide URL",
+            "from": "^\\/docs\\/cloud-networks\\/v2\\/developer-guide\\/(.*?)",
+            "to": "/docs/cloud-networks/v2/",
+            "rewrite": false,
+            "status": 301
+        },
+        {
+            "description": "Redirect orchestration developer-guide URL",
+            "from": "^\\/docs\\/cloud-orchestration\\/v1\\/developer-guide\\/(.*?)",
+            "to": "/docs/cloud-orchestration/v1/",
+            "rewrite": false,
+            "status": 301
+        },
+        {
+          "description": "Redirect vCenter doc to URL for Managed VMWare services",
+          "from": "^\\/docs/private-cloud\\/dedicated-vcloud\\/vcenter-handbook\\/?(.*)$",
+          "to": "/docs/managed-vmware-services/vcenter/",
+          "rewrite": false,
+          "status": 301
+        },
+        {
+          "description": "Redirect vCloud v1.5 doc to URL for Managed VMWare services",
+          "from": "^\\/docs\\/private-cloud\\/dedicated-vcloud\\/vcloud-handbook-v1.5\\/?(.*)$",
+          "to": "/docs/managed-vmware-services/vcloud/v1.5/",
+          "rewrite": false,
+          "status": 301
+        },
+        {
+          "description": "Redirect vCloud v1.0 doc to URL for managed VMWare services",
+          "from": "^\\/docs\\/private-cloud\\/dedicated-vcloud\\/vcloud-handbook\\/?(.*)$",
+          "to": "/docs/managed-vmware-services/vcloud/v1/",
+          "rewrite": false,
+          "status": 301
+        },
+        {
+          "description": "Redirect dedicated vCloud doc menu to managed VMWare services menu",
+          "from": "^\\/docs\\/private-cloud\\/dedicated-vcloud\\/?(.*)$",
+          "to": "/docs/",
+          "rewrite": false,
+          "status": 301
+        },
+        {
+          "description": "Redirect RPC Admin URL to OpenStack Admin Guide",
+          "from": "^/docs/private-cloud/rpc/([a-zA-Z0-9%_-]*)/rpc-admin/?(.*)$",
+          "to": "http://docs.openstack.org/admin-guide/index.html",
+          "rewrite:": false,
+          "status": 301
+        },
+        {
+          "description": "Redirect RPC Ops URL to OpenStack Ops Guide",
+          "from": "^/docs/private-cloud/rpc/([a-zA-Z0-9%_-]*)/rpc-ops/?(.*)$",
+          "to": "https://docs.openstack.org/ops-guide/index.html",
+          "rewrite:": false,
+          "status": 301
+        },
+        {
+          "description": "Redirect unversioned RPC URL to current version",
+          "from": "^\\/docs\\/private-cloud\\/rpc\\/?$",
+          "to": "/docs/private-cloud/rpc/v17",
+          "rewrite:": false,
+          "status": 301
+        },
+        {
+          "description": "Redirect retired RPC versions to current version minus one",
+          "from": "^\\/docs\\/private-cloud\\/rpc\\/\bv(9|1[01])\b\\/?(.*)$",
+          "to": "/docs/private-cloud/rpc/v16",
+          "rewrite:": false,
+          "status": 301
+        },
+        {
+          "description": "Redirect getting started URLs to quickstart content",
+          "from": "^\\/docs\\/([^/]+?)\\/getting-started\\/(.*?)",
+          "to": "/docs/$1/quickstart/$2",
+          "rewrite": false,
+          "status": 301
+        },
+        {
+          "description": "Redirect Server Virtualization URL",
+          "from": "^\\/docs\\/managed-vmware-services\\/server-virt-handbook\\/?(.*)$",
+          "to": "/docs/docs-vmware-server-virt/server-virt-handbook/",
+          "rewrite": false,
+          "status": 301
         }
     ]
 }
