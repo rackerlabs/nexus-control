@@ -1,0 +1,22 @@
+{
+  "developer-revs.staging.deconst.org": {
+    "routes": {
+      "^/": "developer.test.deconst.org/default.html",
+      "^/$": "developer.test.deconst.org/index.html",
+      "^/search": "developer.test.deconst.org/search.html",
+      "^/databases": "developer.test.deconst.org/databases-index.html",
+      "^/blog": "developer.test.deconst.org/blog-index.html",
+      "^/blog/.+?": "developer.test.deconst.org/blog-single.html",
+      "^/docs": "developer.test.deconst.org/docs-home.html",
+      "^/docs/.+?": "developer.test.deconst.org/docs-page.html",
+      "^/sdks": "developer.test.deconst.org/sdks-home.html",
+      "^/sdks/.+?": "developer.test.deconst.org/sdks-page.html",
+      "\\.xml$": "developer.test.deconst.org/feed.xml",
+      "\\.json$": "developer.test.deconst.org/feed.json",      
+      "^/docs/private-cloud/release-notes/": "developer.test.deconst.org/docs-singlepage.html",
+      "^/docs/private-cloud/": "developer.test.deconst.org/user-guide.html",
+      "^/docs/api-doc-template/": "developer.test.deconst.org/user-guide.html",
+      "^/docs/rkaas/": "developer.test.deconst.org/user-guide.html"
+    }
+  }
+}
