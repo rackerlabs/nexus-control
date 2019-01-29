@@ -21,7 +21,7 @@
   ],
   "www.rackspace.com": [
     {
-     "from": "^\\/knowledge-center\\/(.*)$",
+     "from": "^\\/knowledge-center\\/article/(.*)$",
      "to": "$1",
      "toProtocol": "https",
      "toHostname": "support.rackspace.com",
