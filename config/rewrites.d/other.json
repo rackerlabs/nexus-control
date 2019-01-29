@@ -19,6 +19,16 @@
       "status": 301
     }
   ],
+  "www.rackspace.com": [
+    {
+     "from": "^\\/knowledge-center\\/(.*)$",
+     "to": "$1",
+     "toProtocol": "https",
+     "toHostname": "support.rackspace.com",
+     "rewrite": false,
+     "status": 301
+    }
+  ],
   "sdk.rackspace.com": [
     {
       "from": "^(.*)$",
