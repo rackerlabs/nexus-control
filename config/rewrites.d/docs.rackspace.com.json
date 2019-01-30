@@ -145,7 +145,7 @@
 			"status": 301
 		},
 		{
-			"description": "identity",
+			"description": "cloud identity",
 			"from": "^/auth/api/v2.0/?(.*)$",
 			"to": "/docs/cloud-identity/v2/",
 			"toProtocol": "https",
