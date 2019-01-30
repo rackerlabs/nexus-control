@@ -145,7 +145,7 @@
 			"status": 301
 		},
 		{
-			"description": "cloud identity",
+			"description": "identity",
 			"from": "^/auth/api/v2.0/?(.*)$",
 			"to": "/docs/cloud-identity/v2/",
 			"toProtocol": "https",
@@ -171,7 +171,7 @@
 			"rewrite": false,
 			"status": 301
 		},
-		
+
 		{
 			"description": "cloud load balancers",
 			"from": "^/loadbalancers/api/v1.0/?(.*)$",
@@ -315,7 +315,7 @@
 			"toHostname": "developer.rackspace.com",
 			"rewrite": false,
 			"status": 301
-		},		
+		},
 		{
 			"description": "REACH orchestration concepts link",
 			"from": "^/orchestration/api/v1/orchestration-devguide/content/Concepts-d1e565.html",
