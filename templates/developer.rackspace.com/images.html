@@ -32,7 +32,7 @@
 <li><a class="reference internal" href="index.html#media-types"><span>Media Types</span></a></li>
 <li><a class="reference internal" href="index.html#json-schemas"><span>JSON Schemas</span></a></li>
 <li><a class="reference internal" href="index.html#how-curl-commands-work"><span>How cURL commands work</span></a></li>
-<li><a class="reference internal" href="index.html#authenticate-through-the-rackspace-cloud-identity-service"><span>Authenticate through the Rackspace Cloud Identity Service</span></a></li>
+<li><a class="reference internal" href="index.html#authenticate-through-the-rackspace-cloud-identity-service"><span>Authenticate through the Identity Service</span></a></li>
 <li><a class="reference internal" href="index.html#role-based-access-control"><span>Role Based Access Control</span></a></li>
 <li><a class="reference internal" href="index.html#service-access-endpoints"><span>Service access endpoints</span></a></li>
 </ul>
@@ -686,8 +686,7 @@
     and using service endpoints.</p>
     <p>The Cloud Images API is defined as a RESTful HTTP service that uses all aspects of the
     HTTP protocol, including methods, URIs, media types, and response codes. To request
-    Cloud Images services, you must first issue an authentication request to the Rackspace
-    Cloud Identity Service.</p>
+    Cloud Images services, you must first issue an authentication request to the Identity service.</p>
     <p>The Cloud Images API supports JSON data serialization request and response formats.</p>
     <div class="section" id="sending-api-requests-and-receiving-responses">
     <span id="send-request-receive-responses"></span><h3>Sending API requests and receiving responses<a class="headerlink" href="#sending-api-requests-and-receiving-responses" title="Permalink to this headline">#</a></h3>
@@ -842,27 +841,27 @@
     </div>
     </div>
     <div class="section" id="authenticate-through-the-rackspace-cloud-identity-service">
-    <span id="id18"></span><h2>Authenticate through the Rackspace Cloud Identity Service<a class="headerlink" href="#authenticate-through-the-rackspace-cloud-identity-service" title="Permalink to this headline">#</a></h2>
+    <span id="id18"></span><h2>Authenticate through the Identity service<a class="headerlink" href="#authenticate-through-the-rackspace-cloud-identity-service" title="Permalink to this headline">#</a></h2>
     <p>To authenticate access to the Rackspace Cloud Images service, you issue an
-    authentication request to the Rackspace Cloud Identity Service endpoint.</p>
+    authentication request to the Identity service endpoint.</p>
     <p>In response to valid credentials, an authentication request to the
-    Rackspace Cloud Identity Service returns an authentication token and a
+    Identity service returns an authentication token and a
     service catalog that contains a list of all services and endpoints
     available for this token. Because the authentication token expires after
     24 hours, you must generate a token each day that you need access.</p>
-    <p>The following sections list the Rackspace Cloud Identity Service
+    <p>The following sections list the Identity service
     endpoint, show you how make an authentication request, and describe the
     authentication response.</p>
-    <p>For detailed information about the Identity Service v2.0, see the
-    <em>Cloud Identity Client Developer Guide API v2.0</em>.</p>
+    <p>For detailed information about the Identity service v2.0, see the
+    <em>Identity Client Developer Guide API v2.0</em>.</p>
     <div class="section" id="rackspace-cloud-identity-service-endpoint">
-    <h3>Rackspace Cloud Identity Service Endpoint<a class="headerlink" href="#rackspace-cloud-identity-service-endpoint" title="Permalink to this headline">#</a></h3>
+    <h3>Identity Service Endpoint<a class="headerlink" href="#rackspace-cloud-identity-service-endpoint" title="Permalink to this headline">#</a></h3>
     <p>When you authenticate, use the following endpoint:
     <code class="docutils literal"><span class="pre">https://identity.api.rackspacecloud.com/v2.0/</span></code></p>
     </div>
     <div class="section" id="authentication-request">
     <h3>Authentication Request<a class="headerlink" href="#authentication-request" title="Permalink to this headline">#</a></h3>
-    <p>To authenticate, issue a <strong>POST</strong> <strong>/tokens</strong> request to the Rackspace Cloud Identity
+    <p>To authenticate, issue a <strong>POST</strong> <strong>/tokens</strong> request to the Identity
     Service endpoint.</p>
     <p>In the request body, supply one of the following sets of credentials:</p>
     <ul class="simple">
@@ -1113,7 +1112,7 @@
     next gen Cloud Servers service. Each account has only one account owner,
     and that role is assigned by default to any Rackspace Cloud account when
     the account is created.</p>
-    <p>See the <em>Cloud Identity Client Developer Guide</em> for information about how
+    <p>See the <em>Identity Client Developer Guide</em> for information about how
     to perform the following tasks:</p>
     <ul class="simple">
     <li><a class="reference external" href="http://docs.rackspace.com/auth/api/v2.0/auth-client-devguide/content/POST_addUser_v2.0_users_User_Calls.html">Create account users</a></li>
@@ -1202,7 +1201,7 @@
     <p class="first admonition-title">Note</p>
     <p>You should copy the base URLs directly from the catalog rather than
     trying to construct them manually.</p>
-    <p class="last">Rackspace Cloud Identity returns a service catalog, which includes
+    <p class="last">The Identity service returns a service catalog, which includes
     regional endpoints with your account ID. Your account ID, also known as
     project ID or tenant ID, refers to your Rackspace account number.</p>
     </div>
