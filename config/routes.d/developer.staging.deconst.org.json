@@ -55,8 +55,7 @@
       "^/sdks": "developer.test.deconst.org/sdks-home.html",
       "^/sdks/.+?": "developer.test.deconst.org/sdks-page.html",
       "\\.xml$": "developer.test.deconst.org/feed.xml",
-      "\\.json$": "developer.test.deconst.org/feed.json",
-      "^/docs/api-doc-template/": "developer.test.deconst.org/user-guide.html"
+      "\\.json$": "developer.test.deconst.org/feed.json"
     }
   }
 }
