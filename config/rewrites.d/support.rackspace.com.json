@@ -902,15 +902,6 @@
         "status": 301
       },
       {
-        "description": "redirect Configure Cloud Files with Cyberduck to community",
-        "from": "^\\/how-to\\/configuring-rackspace-cloud-files-with-cyberduck(.*)$",
-        "to": "/general/f/general-discussion-forum/8486/how-to-configure-cyberduck-for-rackspace-cloud-files",
-        "toProtocol": "https",
-        "toHostname": "community.rackspace.com",
-        "rewrite": false,
-        "status": 301
-      },
-      {
         "description": "Retire General Info in the Cloud Control Panel",
         "from": "^\\/how-to\\/general-information-cloud-office-control-panel(.*)$",
         "to": "/how-to/cloud-office-control-panel-overview/",
