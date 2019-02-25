@@ -52,11 +52,11 @@
             "^/docs/offerings/": "user-guide.html",
             "^/docs/customer-service/v1/": "user-guide.html",
             "^/docs/billing-apiguide/v2/": "user-guide.html",
+            "^/docs/docs-starter-kit-external/": "user-guide.html",
             "^/sdks": "sdks-home.html",
             "^/sdks/.+?": "sdks-page.html",
             "\\.xml$": "feed.xml",
-            "\\.json$": "feed.json",
-            "^/docs/docs-starter-kit-external/": "user-guide.html"
+            "\\.json$": "feed.json"
         }
     }
 }
