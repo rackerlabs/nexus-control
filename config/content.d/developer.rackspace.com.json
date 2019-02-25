@@ -56,6 +56,7 @@
           "/docs/customer-service/v1/": "https://github.com/rackerlabs/docs-customer-service/",
           "/docs/billing-apiguide/v2/": "https://github.com/rackerlabs/docs-billing-apiguide/",
           "/docs/style-guide/": "https://github.com/rackerlabs/docs-style-guide/",
+          "/docs/docs-starter-kit-external/": "https://github.com/rackerlabs/docs-starter-kit-external/",
           "/docs/microsoft-hyper-v/hyper-v-handbook/": "https://github.com/rackerlabs/mpc-hyper-v/hyper-v-handbook/",
           "/search/": null
       },
