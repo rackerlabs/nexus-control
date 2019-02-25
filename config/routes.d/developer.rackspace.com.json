@@ -55,7 +55,8 @@
             "^/sdks": "sdks-home.html",
             "^/sdks/.+?": "sdks-page.html",
             "\\.xml$": "feed.xml",
-            "\\.json$": "feed.json"
+            "\\.json$": "feed.json",
+            "^/docs/docs-starter-kit-external/": "user-guide.html"
         }
     }
 }
