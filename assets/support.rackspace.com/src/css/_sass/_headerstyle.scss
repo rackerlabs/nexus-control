@@ -443,18 +443,20 @@ a {
       }
 
       &.rax-logo {
-        background-image: url("https://c6046a54729453dc43d4-2df5b2d27d704c411ac6d714647ed975.ssl.cf1.rackcdn.com/rackspace_logo_support-164x60.png");
-        background-image: none, url("https://c6046a54729453dc43d4-2df5b2d27d704c411ac6d714647ed975.ssl.cf1.rackcdn.com/rackspace_logo_support-164x60.svg");
+        background-image: url('https://c0e9a73362c5d06f19d6-b39ff74cb91d713ac1253c5ae00eaccb.ssl.cf1.rackcdn.com/UI/logos/PNG/Rackspace_Logo_wt.png');
+        background-image: none, url('https://c0e9a73362c5d06f19d6-b39ff74cb91d713ac1253c5ae00eaccb.ssl.cf1.rackcdn.com/UI/logos/SVG/Rackspace_Logo_wt.svg');
         background-repeat: no-repeat;
         background-position: center;
         text-indent: -9999px;
         width: 140px;
+        background-size: 140px;
+        background-position: 20px 16px;
         background-color: $color-brand;
 
         &:hover {
           background: $color-brand;
-          background-image: url("https://c6046a54729453dc43d4-2df5b2d27d704c411ac6d714647ed975.ssl.cf1.rackcdn.com/rackspace_logo_support-164x60.png");
-          background-image: none, url("https://c6046a54729453dc43d4-2df5b2d27d704c411ac6d714647ed975.ssl.cf1.rackcdn.com/rackspace_logo_support-164x60.svg");
+          background-image: url('https://c0e9a73362c5d06f19d6-b39ff74cb91d713ac1253c5ae00eaccb.ssl.cf1.rackcdn.com/UI/logos/PNG/Rackspace_Logo_wt.png');
+          background-image: none, url('https://c0e9a73362c5d06f19d6-b39ff74cb91d713ac1253c5ae00eaccb.ssl.cf1.rackcdn.com/UI/logos/SVG/Rackspace_Logo_wt.svg');
           background-repeat: no-repeat;
           background-position: center;
         }

@@ -4,9 +4,9 @@
             <li class="logo">
                 <a href="http://www.rackspace.com/">
                     {% if deconst.env.PRESENTER_DEVMODE == 'true' %}
-                        {% set logoUrl = '/assets/src/img/rackspace-logo.svg' %}
+                        {% set logoUrl = "https://c0e9a73362c5d06f19d6-b39ff74cb91d713ac1253c5ae00eaccb.ssl.cf1.rackcdn.com/UI/logos/SVG/Rackspace_Logo_wt.svg" %}
                     {% else %}
-                        {% set logoUrl = deconst.assets.assets_dist_img_rackspace_logo_svg %}
+                        {% set logoUrl = "https://c0e9a73362c5d06f19d6-b39ff74cb91d713ac1253c5ae00eaccb.ssl.cf1.rackcdn.com/UI/logos/SVG/Rackspace_Logo_wt.svg" %}
                     {% endif %}
                     <img src="{{ logoUrl }}" alt="Rackspace Logo" />
                 </a>
