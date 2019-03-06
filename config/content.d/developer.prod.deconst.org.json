@@ -2,7 +2,7 @@
   "developer.prod.deconst.org": {
     "content": {
       "/": "https://github.com/rackerlabs/docs-developer-blog/",
-      "/docs/": "https://github.com/rackerlabs/docs-quickstart/",
+      "/docs/": "https://github.com/rackerlabs/docs-quickstart/prod/",
       "/docs/user-guides/infrastructure/": "https://github.com/rackerlabs/docs-core-infra-user-guide/",
       "/docs/user-guides/orchestration/": "https://github.com/rackerlabs/rs-heat-docs/",
       "/docs/rack-cli/": "https://github.com/rackspace/rack/",
