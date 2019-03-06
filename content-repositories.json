@@ -43,6 +43,5 @@
   { "kind": "github", "project": "rackerlabs/docs-ras-databases" },
   { "kind": "github", "project": "rackerlabs/mpc-hyper-v" },
   { "kind": "github", "project": "rackerlabs/docs-customer-service" },
-  { "kind": "github", "project": "rackerlabs/docs-billing-apiguide" },
-  { "kind": "github", "project": "rackerlabs/docs-starter-kit-external" }
+  { "kind": "github", "project": "rackerlabs/docs-billing-apiguide" }
 ]
