@@ -1,9 +1,9 @@
 {
     "support.staging.deconst.org": {
         "content": {
-            "/": "https://github.com/rackerlabs/docs-support-network/",
-            "/launch/": "https://github.com/rackerlabs/docs-support-launch/",
-            "/how-to/": "https://github.com/rackerlabs/rackspace-how-to/",
+            "/": "https://github.com/rackerlabs/docs-support-network/staging/",
+            "/launch/": "https://github.com/rackerlabs/docs-support-launch/staging/",
+            "/how-to/": "https://github.com/rackerlabs/rackspace-how-to/staging/",
             "/search/": null
         },
         "proxy": {
