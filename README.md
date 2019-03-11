@@ -21,7 +21,7 @@ To test changes to templates or assets on your local machine before pushing them
   git clone https://github.com/rackerlabs/docs-developer-blog.git
   ```
 
-3. Copy the file `integrated-env` from the nexus-control clone to `env` and replace the value of `CONTROL_REPO_HOST_PATH` with the path to your nexus-control clone.
+3. Copy the file `integrated-env` from the `nexus-control` clone to `env` and replace the value of `CONTROL_REPO_HOST_PATH` with the path to your nexus-control clone.
 
     ```bash
     cp /path/to/nexus-control/integrated-env /path/to/integrated/env
