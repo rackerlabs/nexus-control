@@ -1336,6 +1336,13 @@
         "status": 301
       },
       {
+        "description": "Install mod rails on Ubuntu 9.04",
+        "from": "^\\/how-to\\/ubuntu-mod-rails-installation(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
         "description": "Administrator management Cloud Office Control Panel",
         "from": "^\\/how-to\\/administrator-management-cloud-office-control-panel(.*)$",
         "to": "/how-to/manage-email-administrators-with-the-cloud-office-control-panel/",
