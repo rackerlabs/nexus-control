@@ -1343,6 +1343,13 @@
         "status": 301
       },
       {
+        "description": "retire SDKs for Java, Ruby, Python, Node.js, PHP, and Microsoft.NET",
+        "from": "^\\/how-to\\/sdks-for-java-ruby-python-nodejs-php-and-microsoftnet(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
         "description": "Administrator management Cloud Office Control Panel",
         "from": "^\\/how-to\\/administrator-management-cloud-office-control-panel(.*)$",
         "to": "/how-to/manage-email-administrators-with-the-cloud-office-control-panel/",
