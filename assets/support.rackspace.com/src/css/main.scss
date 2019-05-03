@@ -334,27 +334,28 @@ a {
     }
 
     .cta {
-        text-align: center;
+        text-align: left;
 
         h3 {
             font-weight: 400;
-            font-size: 28px;
+            font-size: 20px;
         }
 
         .button {
             margin-bottom: 20px;
 
             a {
-                background: #5AAA28;
+                border: 1px solid #EB0000;
+                background: none;
                 display: inline-block;
                 padding: 20px 25px;
-                font-size: 16px;
-                color: #fff;
+                font-size: 14px;
+                color: #EB0000;
                 font-weight: 400;
 
                 &:hover {
-                    text-decoration: none;
-                    background: #499917;
+                    background: #EB0000;
+                    color: #fff;
                 }
             }
         }
