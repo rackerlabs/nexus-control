@@ -17,21 +17,24 @@
 .share-button {
     margin: 0px;
     margin-bottom: 10px;
-    margin-right: 3px;
+    margin-right: 0px;
     border: 1px solid #D3D6D2;
-    padding: 5px 10px 5px 10px;
+    padding: 20px 20px 20px 20px;
 }
+
 .share-button:hover {
+    text-decoration: none!important;
+    box-shadow: none;
     opacity: 1;
     color: #ffffff;
 }
 
 /* Facebook button */
 .fa-facebook-official {
-    color: #3b5998;
+    color: #3b5999;
 }
 .fa-facebook-official:hover {
-    background-color: #3b5998;
+    background-color: #3b5999;
 }
 
 /* Twitter button */
@@ -40,22 +43,6 @@
 }
 .fa-twitter:hover {
     background-color: #55acee;
-}
-
-/* Google-PLus button */
-.fa-google-plus {
-    color: #dd4b39;
-}
-.fa-google-plus:hover {
-    background-color: #dd4b39;
-}
-
-/* Pinterest button */
-.fa-pinterest-p {
-    color: #cb2027;
-}
-.fa-pinterest-p:hover {
-    background-color: #cb2027;
 }
 
 /* Tumblr button */
@@ -68,18 +55,18 @@
 
 /* Reddit button */
 .fa-reddit-alien {
-    color: #ff4500;
+    color: #ff5700;
 }
 .fa-reddit-alien:hover {
-    background-color: #ff4500;
+    background-color: #ff5700;
 }
 
 /* LinkedIn button */
 .fa-linkedin {
-    color: #007bb5;
+    color: #0077b5;
 }
 .fa-linkedin:hover {
-    background-color: #007bb5;
+    background-color: #0077b5;
 }
 
 /* Email button */
