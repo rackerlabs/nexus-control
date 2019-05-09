@@ -17,7 +17,7 @@
         "pages/search",
         "landingpage",
         "maintenancebanner",
-        "share-bar",
+        "share-buttons",
 
         url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700),
         url(https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700),
@@ -1187,64 +1187,4 @@ div.dropdown {
 select {
   -webkit-appearance: none;
   -moz-appearance: none;
-}
-
-/* Share Bar */
-.share-bar {
-    font-size: 20px;
-}
-
-/* Title */
-.share-bar h4 {
-    margin-bottom: 10px;
-    font-weight: 500;
-}
-
-/* All buttons */
-.share-buttons {
-}
-
-/* Each button */
-.share-button {
-    margin: 0px;
-    margin-bottom: 10px;
-    margin-right: 3px;
-    border: none;
-    padding: none;
-}
-.share-button:hover {
-    opacity: 1;
-    color: #ffffff;
-}
-
-/* Facebook button */
-.fa-facebook {
-    color: #3b5998;
-}
-.fa-facebook:hover {
-    background-color: #3b5998;
-}
-
-/* Twitter button */
-.fa-twitter {
-    color: #00aced;
-}
-.fa-twitter:hover {
-    background-color: #00aced;
-}
-
-/* LinkedIn button */
-.fa-linkedin {
-    color: #007bb6;
-}
-.fa-linkedin:hover {
-    background-color: #007bb6;
-}
-
-/* Email button */
-.fa-envelope {
-    color: #444444;
-}
-.fa-envelope:hover {
-    background-color: #444444;
 }
