@@ -5,7 +5,7 @@
     <h4>Share this article:</h4>
 
     <div class="share-buttons">
-        <a href="https://www.facebook.com/sharer/sharer.php?u=https://support.rackspace.com/{{ page.url }}"
+        <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}"
             onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
             title="Share on Facebook" >
             <i class="fab fa-facebook"></i>
@@ -13,13 +13,13 @@
 
         <a
                href="https://twitter.com/intent/tweet?text=Check%20out%20this%20handy%20tutorial%20from%20Rackspace:{{
-               page.title }}&url=https://support.rackspace.com/{{ page.url }}"
+               page.title }}&url={{ site.url }}{{ page.url }}"
             onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
             title="Share on Twitter" >
             <i class="fab fa-twitter"></i>
         </a>
 
-        <a  href="https://www.linkedin.com/shareArticle?mini=true&url=https://support.rackspace.com/{{ page.url }}&title={{ page.title }}&summary={{ page.description }}&source={{ site.title }}"
+        <a  href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}&title={{ page.title }}&summary={{ page.description }}&source={{ site.title }}"
             onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
             title="Share on LinkedIn" >
             <i class="fab fa-linkedin-in"></i>
