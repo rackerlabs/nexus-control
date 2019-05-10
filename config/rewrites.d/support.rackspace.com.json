@@ -1357,6 +1357,13 @@
         "status": 301
       },
       {
+        "description": "retire Rackconnect image validation scripts",
+        "from": "^\\/how-to\\/rackconnect-image-validation-scripts(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
         "description": "Administrator management Cloud Office Control Panel",
         "from": "^\\/how-to\\/administrator-management-cloud-office-control-panel(.*)$",
         "to": "/how-to/manage-email-administrators-with-the-cloud-office-control-panel/",
