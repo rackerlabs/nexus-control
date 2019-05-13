@@ -1,5 +1,5 @@
 {
-    "developer.prod.deconst.org": [
+    "developer.rackspace.com": [
         {
             "description": "Force trailing slash",
             "from": "\\/([a-zA-Z0-9%_-]*?[^/])$",

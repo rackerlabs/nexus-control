@@ -1,5 +1,5 @@
 {
-    "support.prod.deconst.org": {
+    "support.rackspace.com": {
         "content": {
             "/": "https://github.com/rackerlabs/docs-support-network/prod/",
             "/launch/": "https://github.com/rackerlabs/docs-support-launch/prod/",
