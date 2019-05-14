@@ -17,6 +17,7 @@
         "pages/search",
         "landingpage",
         "maintenancebanner",
+        "share-bar",
 
         url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700),
         url(https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700),
@@ -1110,7 +1111,6 @@ a {
     z-index: 1;
 }
 
-
 // Search Results
 
 .support-results-container {
@@ -1187,4 +1187,5 @@ div.dropdown {
 select {
   -webkit-appearance: none;
   -moz-appearance: none;
+
 }

@@ -5,9 +5,19 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{{ title }}</title>
+        <meta name="description" content="{% block metaDescription %}The Rackspace Support Documentation provides guidance for users of all Rackspace services.{% endblock %}">
+        <meta name="og:title" content="{% block ogTitle %}Rackspace Support Documentation{% endblock %}">
+        <meta name="og:description" content="{% block ogDescription %}The Rackspace Support Documentation provides guidance for users of all Rackspace services.{% endblock %}">
+        <meta name="og:image" content="{% block ogImage %}{{ deconst.assets.assets_dist_img_default_og_image_jpg }}{% endblock %}">
+        <meta name="og:type" content="site">
+        <meta name="twitter:title" content="{% block twitterTitle %}Rackspace Support Documentation{% endblock %}">
+        <meta name="twitter:description" content="{% block twitterDescription %}The Rackspace Support Documentation provides guidance for users of all Rackspace services.{% endblock %}">
+        <meta name="twitter:creator" content="{% block twitterCreator %}@rackspace{% endblock %}">
+        <meta name="twitter:site" content="@rackspace">
+
         <meta name="google-site-verification" content="9VicGSui2u8w9ndu-B2blKwq6OQbcBC6_7xi-Ng4GTU" />
 
-        <title>{{ title }}</title>
         {% if excerpt %}<meta name="description" content="{{ excerpt | striptags | truncate(160) }}" />{% endif %}
         {% if deconst.content.envelope.meta.noindex == true %}<meta name="robots" content="noindex">{% endif %}
 
