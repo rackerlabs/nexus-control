@@ -3,21 +3,22 @@
 <div id="share-bar">
 
     <h4>Share this information:</h4>
-
+;
     <div class="share-buttons">
-        <a href="https://www.facebook.com/sharer/sharer.php?u={{ permalink }}" style="text-decoration: none!important"
+        <a href="https://www.facebook.com/sharer/sharer.php?u=+window.location.href+" style="text-decoration: none!important"
             onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
             title="Share on Facebook" >
             <i class="fa fa-facebook-official share-button"></i>
         </a>
 
-        <a href="https://twitter.com/intent/tweet?url={{ permalink }}&text={{page.title}}&hashtags=rackspace" style="text-decoration: none!important"
-            onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+        <a id="ref_twitter"
+           onclick="javascript:window.open('http://twitter.com/home?status='+encodeURIComponent(location.href)+' '+encodeURIComponent(document.title),'das','location=no,links=no,scrollbars=no,left=20,top=20,width=500,height=500,toolbar=1,resizable=0');return false;" style="text-decoration: none!important"
             title="Share on Twitter" >
             <i class="fa fa-twitter share-button"></i>
         </a>
 
-        <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ permalink }}&title={{ page.title }}&summary={{ page.description }}&source={{ site.title }}" style="text-decoration: none!important"
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url={{<a
+        href="https://www.facebook.com/sharer/sharer.php?u={{{{ page.url | absolute_url | escape }}&amp; }}&title={{ page.title }}&summary={{ page.description }}&source={{ site.title }}" style="text-decoration: none!important"
             onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
             title="Share on LinkedIn" >
             <i class="fa fa-linkedin share-button"></i>
