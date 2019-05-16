@@ -710,6 +710,11 @@ a {
                 background-image: none, url($assets_support_rackspace_com_dist_img_icon_private_cloud_svg);
             }
 
+            .pdr {
+                background-image: url($assets_support_rackspace_com_dist_img_icon_rackspace_pdr_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_rackspace_pdr_svg);
+            }
+
         }
 
         &.product-type-email {
