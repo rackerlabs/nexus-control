@@ -5,20 +5,22 @@
     <h4>Share this information:</h4>
 
     <div class="share-buttons">
-        <a href="https://www.facebook.com/sharer/sharer.php?u={{ permalink }}" style="text-decoration: none!important"
-            onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
-            title="Share on Facebook" >
-            <i class="fa fa-facebook-official share-button"></i>
+        <a class="w-inline-block ref_facebook"
+           href="https://www.facebook.com/sharer/sharer.php?u=&t="
+           title="Share on Facebook" target="_blank"
+           onclick="javascript:window.open('https://www.facebook.com/sharer/sharer.php?u='
+           + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL), 'width=500,height=500,toolbar=1,resizable=0'); return false;">
+           <i class="fa fa-facebook-official share-button"></i>
         </a>
 
-        <a href="https://twitter.com/intent/tweet?url={{ permalink }}&text={{page.title}}&hashtags=rackspace" style="text-decoration: none!important"
-            onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+        <a id="ref_twitter"
+            href="" onclick="javascript:window.open('http://twitter.com/home?status='+encodeURIComponent(window.location.href)+' '+encodeURIComponent(document.title),'das','location=no,links=no,scrollbars=no,left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" style="text-decoration: none!important"
             title="Share on Twitter" >
             <i class="fa fa-twitter share-button"></i>
         </a>
 
-        <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ permalink }}&title={{ page.title }}&summary={{ page.description }}&source={{ site.title }}" style="text-decoration: none!important"
-            onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+        <a id="ref_linkedin"
+            href="" onclick="javascript:window.open('https://www.linkedin.com/shareArticle?mini=true&url=' + encodeURIComponent(window.location.href)+ '&title=' + encodeURIComponent(document.title) + ' &source=' + encodeURIComponent(location.href), 'sharer', 'toolbar=no,status=no,width=626,height=436'); return false;" style="text-decoration: none!important"
             title="Share on LinkedIn" >
             <i class="fa fa-linkedin share-button"></i>
         </a>
