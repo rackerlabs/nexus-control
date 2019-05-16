@@ -1362,6 +1362,27 @@
         "to": "/how-to/manage-email-administrators-with-the-cloud-office-control-panel/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "Redirect billing faq to Account Management faq",
+        "from": "^\\/how-to\\/rackspace-billing-faq(.*)$",
+        "to": "/how-to/account-management-faq/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
+        "description": "Redirect when am I billed to Account Management faq",
+        "from": "^\\/how-to\\/when-am-i-billed-for-my-account(.*)$",
+        "to": "/how-to/account-management-faq/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
+        "description": "Redirect RBAC faq to Account Management faq",
+        "from": "^\\/how-to\\/faq-role-based-access-control-rbac(.*)$",
+        "to": "/how-to/account-management-faq/",
+        "rewrite": false,
+        "status": 301
       }
    ]
 }
