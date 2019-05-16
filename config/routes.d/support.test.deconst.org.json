@@ -33,6 +33,7 @@
         "^/how-to/exchange/$": "support.rackspace.com/product.html",
         "^/how-to/dedicated-hosting/$": "support.rackspace.com/product.html",
         "^/how-to/rackspace-pdr/$": "support.rackspace.com/product.html",
+        "^/how-to/account-management/$": "support.rackspace.com/product.html",
         "^/how-to/cloud-servers-faq/$": "support.rackspace.com/faq.html",
         "^/how-to/cloud-images-faq/$": "support.rackspace.com/faq.html",
         "^/how-to/cloud-networks-faq/$": "support.rackspace.com/faq.html",
@@ -62,6 +63,7 @@
         "^/how-to/exchange-faq/$": "support.rackspace.com/faq.html",
         "^/how-to/dedicated-hosting-faq/$": "support.rackspace.com/faq.html",
         "^/how-to/rackspace-pdr-faq/$": "support.rackspace.com/faq.html",
+        "^/how-to/account-management-faq/$": "support.rackspace.com/faq.html",
         "^/how-to/.+?-all-articles/$": "support.rackspace.com/page-list.html",
         "^/how-to/.+?-get-started/$": "support.rackspace.com/getting-started.html",
         "^/search/?": "support.rackspace.com/search.html"
