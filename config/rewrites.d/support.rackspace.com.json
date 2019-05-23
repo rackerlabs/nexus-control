@@ -1390,6 +1390,13 @@
         "to": "/how-to/account-management-faq/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "Upgrading your Exchange version",
+        "from": "^\\/how-to\\/upgrading-to-exchange-2016(.*)$",
+        "to": "/how-to/upgrading-your-exchange-version/",
+        "rewrite": false,
+        "status": 301
       }
    ]
 }
