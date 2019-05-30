@@ -26,7 +26,7 @@
 
 html, body {
   height: 100%;
-  line-height: 1.6;
+  line-height: 1.0;
 }
 
 a {
@@ -71,7 +71,7 @@ a {
     h2 {
         font-weight: 400;
         font-size: 28px;
-        line-height: 33px;
+        line-height: 28px;
 
         &.less-margin {margin-bottom: 10px;}
     }
@@ -81,7 +81,7 @@ a {
     h4 {
         font-size: 18px;
         font-weight: 600;
-        line-height: 20px;
+        line-height: 15px;
     }
 
     h5 {font-size: 17px; font-weight: 400;}
@@ -97,13 +97,13 @@ a {
         margin-bottom: 35px;
         font-size: 14px;
         font-weight: 400;
-        line-height: 24px;
+        line-height: 19px;
 
         // Paragraph types
 
         &.lead {
             font-size: 16px;
-            line-height: 26px;
+            line-height: 21px;
             margin-bottom: 15px;
         }
 
@@ -180,7 +180,7 @@ a {
     ol, ul {
         font-size: 14px;
         font-weight: 400;
-        line-height: 21px;
+        line-height: 16px;
         margin-bottom: 40px;
 
         li {margin-bottom: 20px;}
@@ -222,7 +222,7 @@ a {
 
         margin-bottom: 30px;
         font-size: 13px;
-        line-height: 20px;
+        line-height: 15px;
         overflow: auto;
 
     }
@@ -251,7 +251,7 @@ a {
         margin-bottom: 35px;
         font-size: 14px;
         font-weight: 400;
-        line-height: 24px;
+        line-height: 19px;
         width: 100%;
 
         th {
@@ -592,7 +592,7 @@ a {
                 background-size: 35px 35px;
 
                 h4 {
-                    line-height: 17px;
+                    line-height: 11px;
 
                     a {
                         text-transform: uppercase;
@@ -726,7 +726,7 @@ a {
                 background-size: 35px 35px;
 
                 h4 {
-                    line-height: 16px;
+                    line-height: 11px;
 
                     a {
                         text-transform: uppercase;
