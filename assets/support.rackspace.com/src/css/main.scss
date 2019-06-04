@@ -695,11 +695,6 @@ a {
                 background-image: none, url($assets_support_rackspace_com_dist_img_icon_auto_scale_svg);
             }
 
-            .managed-operations {
-                background-image: url($assets_support_rackspace_com_dist_img_icon_managed-operations_png);
-                background-image: none, url($assets_support_rackspace_com_dist_img_icon_managed-operations_svg);
-            }
-
             .intelligence {
                 background-image: url($assets_support_rackspace_com_dist_img_icon_intelligence_png);
                 background-image: none, url($assets_support_rackspace_com_dist_img_icon_intelligence_svg);
@@ -708,11 +703,6 @@ a {
             .private {
                 background-image: url($assets_support_rackspace_com_dist_img_icon_private_cloud_png);
                 background-image: none, url($assets_support_rackspace_com_dist_img_icon_private_cloud_svg);
-            }
-
-            .pdr {
-                background-image: url($assets_support_rackspace_com_dist_img_icon_rackspace_pdr_png);
-                background-image: none, url($assets_support_rackspace_com_dist_img_icon_rackspace_pdr_svg);
             }
 
         }
@@ -805,6 +795,78 @@ a {
                 }
             }
         }
+
+        &.product-type-security {
+
+            h3 {
+                font-style: italic;
+                margin-bottom: 15px;
+                font-size: 18px;
+                font-weight: 300;
+                color: #999;
+            }
+
+            .icon {
+                background-repeat: no-repeat;
+                background-position: top left;
+                background-size: 35px 35px;
+
+                h4 {
+                    line-height: 16px;
+
+                    a {
+                        text-transform: uppercase;
+                        padding-left: 45px;
+                        font-size: 16px;
+                        font-weight: 600;
+                        display: block;
+
+                        span {
+                            font-size: 13px;
+                            display: block;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+            .pdr {
+                background-image: url($assets_support_rackspace_com_dist_img_icon_rackspace_pdr_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_rackspace_pdr_svg);
+            }
+
+          }
+
+          &.product-type-managed {
+              margin-top: 30px;
+
+              .icon {
+                  background-repeat: no-repeat;
+                  background-position: top left;
+                  background-size: 35px 35px;
+
+                  h4 {
+                      line-height: 11px;
+
+                      a {
+                          text-transform: uppercase;
+                          padding-left: 45px;
+                          font-size: 16px;
+                          font-weight: 600;
+                          display: block;
+
+                          span {
+                              font-size: 13px;
+                              display: block;
+                              font-weight: 400;
+                          }
+                      }
+                  }
+              }
+              .managed-operations {
+                  background-image: url($assets_support_rackspace_com_dist_img_icon_managed-operations_png);
+                  background-image: none, url($assets_support_rackspace_com_dist_img_icon_managed-operations_svg);
+              }
+            }
 
         &.one-half {margin-left: 0px;}
 
