@@ -8,7 +8,6 @@
           "/docs/rack-cli/": "https://github.com/rackspace/rack/test/",
           "/docs/cloud-images/v2/": "https://github.com/rackerlabs/docs-cloud-images/test/",
           "/docs/cloud-load-balancers/v1/": "https://github.com/rackerlabs/docs-cloud-load-balancers/v1/test/",
-          "/docs/cloud-load-balancers/v2/": "https://github.com/rackerlabs/docs-cloud-load-balancers/v2/test/",
           "/docs/cloud-block-storage/v1/": "https://github.com/rackerlabs/docs-cloud-block-storage/test/",
           "/docs/cloud-dns/v1/": "https://github.com/rackerlabs/docs-cloud-dns/v1/test/",
           "/docs/cdn/v1/": "https://github.com/rackerlabs/docs-cloud-cdn/test/",
