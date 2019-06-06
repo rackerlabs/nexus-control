@@ -1,13 +1,13 @@
 {
-  "api.rackspace.com": [
+  "api.test.deconst.org": [
       {
           "description": "Redirect root traffic to developer.rs.com/docs/",
           "from": "^\\/$",
           "to": "/docs/",
           "toProtocol": "https",
-	      "toHostname": "developer.rackspace.com",
-	      "rewrite": false,
-	      "status": 302
+	  "toHostname": "developer.test.deconst.org",
+	  "rewrite": false,
+	  "status": 302
       },
       {
           "description": "Cloud Servers redirect",
