@@ -1,5 +1,5 @@
 {
-  "support.rackspace.com": [
+  "support.test.deconst.org": [
       {
           "description": "Force trailing slash",
           "from": "\\/([a-zA-Z0-9%_-]*?[^/])$",
@@ -846,13 +846,6 @@
         "status": 301
       },
       {
-        "description": "Retire Administrator management: Cloud Office Control Panel",
-        "from": "^\\/how-to\\/administrator-management-cloud-office-control-panel(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
         "description": "retire test-and-send-mail-using-php",
         "from": "^\\/how-to\\/test-and-send-mail-using-php(.*)$",
         "to": "/how-to/article-retired/",
@@ -898,15 +891,6 @@
         "description": "Redirect Managed VMware Services FAQ",
         "from": "^\\/how-to\\/managed-vmware-services-faq(.*)$",
         "to": "/how-to/vmware-server-virtualization-faq/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "redirect Configure Cloud Files with Cyberduck to community",
-        "from": "^\\/how-to\\/configuring-rackspace-cloud-files-with-cyberduck(.*)$",
-        "to": "/general/f/general-discussion-forum/8486/how-to-configure-cyberduck-for-rackspace-cloud-files",
-        "toProtocol": "https",
-        "toHostname": "community.rackspace.com",
         "rewrite": false,
         "status": 301
       },
@@ -1414,5 +1398,5 @@
         "rewrite": false,
         "status": 301
       }
-    ]
+   ]
 }

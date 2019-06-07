@@ -1,9 +1,9 @@
 {
-    "support.rackspace.com": {
+    "support.test.deconst.org": {
         "content": {
-            "/": "https://github.com/rackerlabs/docs-support-network/prod/",
-            "/launch/": "https://github.com/rackerlabs/docs-support-launch/prod/",
-            "/how-to/": "https://github.com/rackerlabs/rackspace-how-to/prod/",
+            "/": "https://github.com/rackerlabs/docs-support-network/test/",
+            "/launch/": "https://github.com/rackerlabs/docs-support-launch/test/",
+            "/how-to/": "https://github.com/rackerlabs/rackspace-how-to/test/",
             "/search/": null
         },
         "proxy": {

@@ -1,0 +1,410 @@
+{
+	"docs.test.deconst.org": [
+		{
+			"description": "Redirect root traffic to developer.rs.com/docs/",
+			"from": "^/$",
+			"to": "/docs/",
+			"toProtocol": "https",
+			"toHostname": "developer.test.deconst.org",
+			"rewrite": false,
+			"status": 302
+		},
+			{
+			"description": "Configuring RackConnect dedicated load balancers",
+			"from": "^/cas/api/v1.0/autoscale-devguide/content/autoscale-groups.html",
+			"to": "https://support.rackspace.com/how-to/using-dedicated-load-balancers-with-rackconnect-v20/",
+			"toProtocol": "https",
+			"toHostname": "support.test.deconst.org",
+			"rewrite": false,
+			"status": 301
+		},
+		{
+			"description": "REACH autoscale getting started link",
+			"from": "^cas/api/v1.0/autoscale-gettingstarted/content/Overview.html",
+			"to": "/docs/autoscale/v1/developer-guide/",
+			"toProtocol": "https",
+			"toHostname": "developer.test.deconst.org",
+			"rewrite": false,
+			"status": 301
+		},
+		{
+			"description": "REACH autoscale create webhook policies link",
+			"from": "^/cas/api/v1.0/autoscale-devguide/content/POST_createPolicies_v1.0__tenantId__groups__groupId__policies_autoscale-policies.html",
+			"to": "https://support.rackspace.com/how-to/configure-rackspace-auto-scale-web-hooks-with-rackspace-monitoring/",
+			"toProtocol": "https",
+			"toHostname": "support.test.deconst.org",
+			"rewrite": false,
+			"status": 301
+		},
+		{
+			"description": "autoscale",
+			"from": "^/cas/api/v1.0/autoscale-devguide/?(.*)$",
+			"to": "/docs/autoscale/v1/developer-guide/",
+			"toProtocol": "https",
+			"toHostname": "developer.test.deconst.org",
+			"rewrite": false,
+			"status": 301
+		},
+		{
+			"description": "cloud backup",
+			"from": "^/rcbu/api/v1.0/rcbu-devguide/?(.*)$",
+			"to": "/docs/cloud-backup/v1/",
+			"toProtocol": "https",
+			"toHostname": "developer.test.deconst.org",
+			"rewrite": false,
+			"status": 301
+		},
+		{
+			"description": "cloud big data v2",
+			"from": "^/cbd/api/v1.0/cbd-devguide-2/content/overview.html",
+			"to": "/docs/cloud-big-data/v2/getting-started/",
+			"toProtocol": "https",
+			"toHostname": "developer.test.deconst.org",
+			"rewrite": false,
+			"status": 301
+		},
+		{
+			"description": "cloud big data v1",
+			"from": "^/cbd/api/v1.0/cbd-devguide",
+			"to": "/docs/cloud-big-data/v2/release-notes/",
+			"toProtocol": "https",
+			"toHostname": "developer.test.deconst.org",
+			"rewrite": false,
+			"status": 301
+		},
+		{
+			"description": "cloud big data",
+			"from": "^/cbd/api/v1.0/?(.*)$",
+			"to": "/docs/cloud-big-data/v2/",
+			"toProtocol": "https",
+			"toHostname": "developer.test.deconst.org",
+			"rewrite": false,
+			"status": 301
+		},
+		{
+			"description": "cloud block storage",
+			"from": "^/cbs/api/v1.0/?(.*)$",
+			"to": "/docs/cloud-block-storage/v1/",
+			"toProtocol": "https",
+			"toHostname": "developer.test.deconst.org",
+			"rewrite": false,
+			"status": 301
+		},
+		{
+			"description": "CDN",
+			"from": "^/cdn/api/v1.0/?(.*)$",
+			"to": "/docs/cdn/v1/",
+			"toProtocol": "https",
+			"toHostname": "developer.test.deconst.org",
+			"rewrite": false,
+			"status": 301
+		},
+		{
+			"description": "REACH cloud databases instance status link",
+			"from": "^/cdb/api/v1.0/cdb-devguide/content/database_instance_status.html",
+			"to": "/docs/cloud-databases/v1/general-api-info/database-instance-status/",
+			"toProtocol": "https",
+			"toHostname": "developer.test.deconst.org",
+			"rewrite": false,
+			"status": 301
+		},
+		{
+			"description": "cloud databases",
+			"from": "^/cdb/api/v1.0/?(.*)$",
+			"to": "/docs/cloud-databases/v1/",
+			"toProtocol": "https",
+			"toHostname": "developer.test.deconst.org",
+			"rewrite": false,
+			"status": 301
+		},
+		{
+			"description": "cloud DNS",
+			"from": "^/cdns/api/v1.0/?(.*)$",
+			"to": "/docs/cloud-dns/v1/",
+			"toProtocol": "https",
+			"toHostname": "developer.test.deconst.org",
+			"rewrite": false,
+			"status": 301
+		},
+		{
+			"description": "cloud feeds developer guide",
+			"from": "^/cloud-feeds/api/v1.0/feeds-devguide/?(.*)$",
+			"to": "/docs/cloud-feeds/v1/developer-guide/",
+			"toProtocol": "https",
+			"toHostname": "developer.test.deconst.org",
+			"rewrite": false,
+			"status": 301
+		},
+		{
+			"description": "cloud files",
+			"from": "^/files/api/v1/?(.*)$",
+			"to": "/docs/cloud-files/v1/",
+			"toProtocol": "https",
+			"toHostname": "developer.test.deconst.org",
+			"rewrite": false,
+			"status": 301
+		},
+		{
+			"description": "cloud identity",
+			"from": "^/auth/api/v2.0/?(.*)$",
+			"to": "/docs/cloud-identity/v2/",
+			"toProtocol": "https",
+			"toHostname": "developer.test.deconst.org",
+			"rewrite": false,
+			"status": 301
+		},
+		{
+			"description": "cloud images",
+			"from": "^/images/api/v2/?(.*)$",
+			"to": "/docs/cloud-images/v2/",
+			"toProtocol": "https",
+			"toHostname": "developer.test.deconst.org",
+			"rewrite": false,
+			"status": 301
+		},
+		{
+			"description": "REACH List cloud load balancers link",
+			"from": "^/loadbalancers/api/v1.0/clb-devguide/content/List_Usage-d1e3014.html",
+			"to": "/docs/cloud-load-balancers/v1/api-reference/load-balancers/",
+			"toProtocol": "https",
+			"toHostname": "developer.test.deconst.org",
+			"rewrite": false,
+			"status": 301
+		},
+
+		{
+			"description": "cloud load balancers",
+			"from": "^/loadbalancers/api/v1.0/?(.*)$",
+			"to": "/docs/cloud-load-balancers/v1/",
+			"toProtocol": "https",
+			"toHostname": "developer.test.deconst.org",
+			"rewrite": false,
+			"status": 301
+		},
+		{
+			"description": "Cloud Metrics",
+			"from": "^/cmet/api/v1.0/?(.*)$",
+			"to": "/docs/metrics/v2/",
+			"toProtocol": "https",
+			"toHostname": "developer.test.deconst.org",
+			"rewrite": false,
+			"status": 301
+		},
+		{
+			"description": "Reach Cloud Monitoring set up notificationstutorial link",
+			"from": "^/cm/api/v1.0/cm-getting-started/content/concepts-tutorial-setup-notifications.html",
+			"to": "/docs/rackspace-monitoring/v1/getting-started/create-first-monitor/",
+			"toProtocol": "https",
+			"toHostname": "developer.test.deconst.org",
+			"rewrite": false,
+			"status": 301
+		},
+		{
+			"description": "Reach Cloud Monitoring Alerts/Langauge Link",
+			"from": "^/cm/api/v1.0/cm-devguide/content/alerts-language.html",
+			"to": "/docs/rackspace-monitoring/v1/tech-ref-info/alert-triggers-and-alarms/",
+			"toProtocol": "https",
+			"toHostname": "developer.test.deconst.org",
+			"rewrite": false,
+			"status": 301
+		},
+		{
+			"description": "Reach Cloud Monitoring remote check type body match link",
+			"from": "^/cm/api/v1.0/cm-devguide//content/service-check-types.html#section-check-types-remote.http",
+			"to": "/docs/rackspace-monitoring/v1/tech-ref-info/check-type-reference/",
+			"toProtocol": "https",
+			"toHostname": "developer.test.deconst.org",
+			"rewrite": false,
+			"status": 301
+		},
+		{
+			"description": "Reach Cloud Monitoring Check types Link",
+			"from": "^/cm/api/v1.0/cm-devguide/content/service-check-types.html",
+			"to": "/docs/rackspace-monitoring/v1/tech-ref-info/check-type-reference/",
+			"toProtocol": "https",
+			"toHostname": "developer.test.deconst.org",
+			"rewrite": false,
+			"status": 301
+		},
+	        {
+			"description": "Reach Cloud Monitoring Concepts Link",
+			"from": "^/cm/api/v1.0/cm-devguide/content/Concepts.html",
+			"to": "/docs/rackspace-monitoring/v1/getting-started/concepts/",
+			"toProtocol": "https",
+			"toHostname": "developer.test.deconst.org",
+			"rewrite": false,
+			"status": 301
+		},
+	       {
+			"description": "Reach Cloud Monitoring Overview Link",
+			"from": "^/cm/api/v1.0/cm-devguide/content/overview.html",
+			"to": "/docs/rackspace-monitoring/v1/",
+			"toProtocol": "https",
+			"toHostname": "developer.test.deconst.org",
+			"rewrite": false,
+			"status": 301
+		},
+	        {
+			"description": "Reach Cloud Monitoring Data Granularity Link",
+			"from": "^/cm/api/v1.0/cm-devguide/content/metrics-api.html#metrics-data-granularity",
+			"to": "/docs/rackspace-monitoring/v1/api-reference/metrics-operations",
+			"toProtocol": "https",
+			"toHostname": "developer.test.deconst.org",
+			"rewrite": false,
+			"status": 301
+		},
+	        {
+			"description": "Reach Cloud Monitoring Metrics API Link",
+			"from": "^/cm/api/v1.0/cm-devguide/content/metrics-api.html",
+			"to": "/docs/rackspace-monitoring/v1/api-reference/metrics-operations/",
+			"toProtocol": "https",
+			"toHostname": "developer.test.deconst.org",
+			"rewrite": false,
+			"status": 301
+		},
+		{
+			"description": "Cloud Monitoring Developer Guide",
+			"from": "^/cm",
+			"to": "/docs/rackspace-monitoring/v1/",
+			"toProtocol": "https",
+			"toHostname": "developer.test.deconst.org",
+			"rewrite": false,
+			"status": 301
+		},
+		{
+			"description": "REACH cloud networks security groups API reference link",
+			"from": "^/networks/api/v2/cn-devguide/content/api_ext_security_neutron.html",
+			"to": "/docs/cloud-networks/v2/api-reference/sec-group-operations/",
+			"toProtocol": "https",
+			"toHostname": "developer.test.deconst.org",
+			"rewrite": false,
+			"status": 301
+		},
+		{
+			"description": "REACH cloud networks security groups getting started link",
+			"from": "^/networks/api/v2/cn-gettingstarted/content/security_groups.html",
+			"to": "/docs/cloud-networks/v2/getting-started/controlling-network-access/security-groups/",
+			"toProtocol": "https",
+			"toHostname": "developer.test.deconst.org",
+			"rewrite": false,
+			"status": 301
+		},
+		{
+			"description": "cloud networks",
+			"from": "^/networks/api/v2/?(.*)$",
+			"to": "/docs/cloud-networks/v2/",
+			"toProtocol": "https",
+			"toHostname": "developer.test.deconst.org",
+			"rewrite": false,
+			"status": 301
+		},
+		{
+			"description": "orchestration templates user guide template topic redirect for REACH",
+			"from": "^/orchestration/api/v1/orchestration-templates-devguide//content/Defining_Template_dle245.html?(.*)$",
+			"to": "/docs/user-guides/orchestration/generic-software-config/",
+			"toProtocol": "https",
+			"toHostname": "developer.test.deconst.org",
+			"rewrite": false,
+			"status": 301
+		},
+		{
+			"description": "orchestration templates user guide simple template topic redirect for REACH",
+			"from": "^/orchestration/api/v1/orchestration-templates-devguide/content/Simple_Template_Example-d1e637.html?(.*)$",
+			"to": "/docs/user-guides/orchestration/generic-software-config/",
+			"toProtocol": "https",
+			"toHostname": "developer.test.deconst.org",
+			"rewrite": false,
+			"status": 301
+		},
+		{
+			"description": "REACH orchestration concepts link",
+			"from": "^/orchestration/api/v1/orchestration-devguide/content/Concepts-d1e565.html",
+			"to": "/docs/cloud-orchestration/v1/getting-started/concepts/",
+			"toProtocol": "https",
+			"toHostname": "developer.test.deconst.org",
+			"rewrite": false,
+			"status": 301
+		},
+		{
+			"description": "orchestration API",
+			"from": "^/orchestration/api/v1/?(.*)$",
+			"to": "/docs/cloud-orchestration/v1/",
+			"toProtocol": "https",
+			"toHostname": "developer.test.deconst.org",
+			"rewrite": false,
+			"status": 301
+		},
+		{
+			"description": "Rackconnect",
+			"from": "^/rackconnect/api/v3/?(.*)$",
+			"to": "https://docs.rcv3.apiary.io/",
+			"toProtocol": "https",
+			"toHostname": "docs-rcv3.apiary.io",
+			"rewrite": false,
+			"status": 301
+		},
+		{
+			"description": "cloud servers legacy",
+			"from": "^/servers/api/v1.0/?(.*)$",
+			"to": "/docs/cloud-servers/v2/",
+			"toProtocol": "https",
+			"toHostname": "developer.test.deconst.org",
+			"rewrite": false,
+			"status": 301
+		},
+		{
+			"description": "REACH cloud servers rate limits link",
+			"from": "^/servers/api/v2/cs-devguide/content/Rate_Limits-d1e862.html",
+			"to": "/docs/cloud-servers/v2/general-api-info/limits/",
+			"toProtocol": "https",
+			"toHostname": "developer.test.deconst.org",
+			"rewrite": false,
+			"status": 301
+		},
+		{
+			"description": "REACH cloud servers absolute rate limits link",
+			"from": "^/servers/api/v2/cs-devguide/content/Absolute_Limits-d1e994.html",
+			"to":  "/docs/cloud-servers/v2/general-api-info/limits/",
+			"toProtocol": "https",
+			"toHostname": "developer.test.deconst.org",
+			"rewrite": false,
+			"status": 301
+		},
+		{
+			"description": "REACH cloud servers programmatic rate limits link",
+			"from": "^/servers/api/v2/cs-devguide/content/ProgrammaticLimits.html",
+			"to":  "docs/cloud-servers/v2/api-reference/svr-misc-operations/",
+			"toProtocol": "https",
+			"toHostname": "developer.test.deconst.org",
+			"rewrite": false,
+			"status": 301
+		},
+		{
+			"description": "cloud servers",
+			"from": "^/servers/api/v2/?(.*)$",
+			"to": "/docs/cloud-servers/v2/",
+			"toProtocol": "https",
+			"toHostname": "developer.test.deconst.org",
+			"rewrite": false,
+			"status": 301
+		},
+		{
+			"description": "Rackspace Private Cloud Operator and User Guide, v10",
+			"from": "^/rpc/api/v10/bk-rpc-guide",
+			"to": "/docs/",
+			"toProtocol": "https",
+			"toHostname": "developer.test.deconst.org",
+			"rewrite": false,
+			"status": 301
+		},
+		{
+			"description": "Rackspace Private Cloud Powered by Red Hat Features and Architecture",
+			"from": "^/rpc/api/rh1/bk-rpcr-refarch",
+			"to": "/docs/private-cloud/red-hat/rpcr-arch/",
+			"toProtocol": "https",
+			"toHostname": "developer.test.deconst.org",
+			"rewrite": false,
+			"status": 301
+		}
+	]
+}

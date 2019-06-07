@@ -1,23 +1,23 @@
 @charset "utf-8";
 
-@import "normalize",
-        "clearfix",
-        "reset",
-        "skeleton",
-        "variables",
-        "mixins",
-        "header",
-        "footer",
-        "syntax",
-        "headerstyle",
+@import "views/normalize",
+        "views/clearfix",
+        "views/reset",
+        "views/skeleton",
+        "views/variables",
+        "views/mixins",
+        "views/header",
+        "views/footer",
+        "views/syntax",
+        "views/headerstyle",
         "components/search-box",
         "components/search-paginator",
         "components/search-results",
         "components/carousel",
         "pages/search",
-        "landingpage",
-        "maintenancebanner",
-        "share-bar",
+        "views/landingpage",
+        "views/maintenancebanner",
+        "views/share-bar",
 
         url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700),
         url(https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700),
@@ -26,7 +26,7 @@
 
 html, body {
   height: 100%;
-  line-height: 1.0;
+  line-height: 1.2em;
 }
 
 a {
@@ -71,7 +71,7 @@ a {
     h2 {
         font-weight: 400;
         font-size: 28px;
-        line-height: 28px;
+        line-height: 1.2em;
 
         &.less-margin {margin-bottom: 10px;}
     }
@@ -81,7 +81,7 @@ a {
     h4 {
         font-size: 18px;
         font-weight: 600;
-        line-height: 15px;
+        line-height: 1.2em;
     }
 
     h5 {font-size: 17px; font-weight: 400;}
@@ -97,13 +97,13 @@ a {
         margin-bottom: 35px;
         font-size: 14px;
         font-weight: 400;
-        line-height: 19px;
+        line-height: 1.5em;
 
         // Paragraph types
 
         &.lead {
             font-size: 16px;
-            line-height: 21px;
+            line-height: 1.2em;
             margin-bottom: 15px;
         }
 
@@ -180,7 +180,7 @@ a {
     ol, ul {
         font-size: 14px;
         font-weight: 400;
-        line-height: 16px;
+        line-height: 1.5em;
         margin-bottom: 40px;
 
         li {margin-bottom: 20px;}
@@ -222,7 +222,7 @@ a {
 
         margin-bottom: 30px;
         font-size: 13px;
-        line-height: 15px;
+        line-height: 1.2em;
         overflow: auto;
 
     }
@@ -251,7 +251,7 @@ a {
         margin-bottom: 35px;
         font-size: 14px;
         font-weight: 400;
-        line-height: 19px;
+        line-height: 1.2em;
         width: 100%;
 
         th {
@@ -592,7 +592,7 @@ a {
                 background-size: 35px 35px;
 
                 h4 {
-                    line-height: 16px;
+                    line-height: 1.2em;
 
                     a {
                         text-transform: uppercase;
@@ -704,15 +704,13 @@ a {
                 background-image: url($assets_support_rackspace_com_dist_img_icon_private_cloud_png);
                 background-image: none, url($assets_support_rackspace_com_dist_img_icon_private_cloud_svg);
             }
-		
-	    .pdr {
-                background-image: url($assets_support_rackspace_com_dist_img_icon_rackspace_pdr_png);
-                background-image: none, url($assets_support_rackspace_com_dist_img_icon_rackspace_pdr_svg);
+            .pdr {
+                 background-image: url($assets_support_rackspace_com_dist_img_icon_rackspace_pdr_png);
+                 background-image: none, url($assets_support_rackspace_com_dist_img_icon_rackspace_pdr_svg);
             }
-            
-	    .managed-operations {
-                  background-image: url($assets_support_rackspace_com_dist_img_icon_managed-operations_png);
-                  background-image: none, url($assets_support_rackspace_com_dist_img_icon_managed-operations_svg);
+            .managed-operations {
+                background-image: url($assets_support_rackspace_com_dist_img_icon_managed-operations_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_managed-operations_svg);
             }
 		
         }
@@ -726,7 +724,7 @@ a {
                 background-size: 35px 35px;
 
                 h4 {
-                    line-height: 11px;
+                    line-height: 1.2em;
 
                     a {
                         text-transform: uppercase;
@@ -822,7 +820,7 @@ a {
                 background-size: 35px 35px;
 
                 h4 {
-                    line-height: 16px;
+                    line-height: 1.2em;
 
                     a {
                         text-transform: uppercase;
@@ -855,7 +853,7 @@ a {
                   background-size: 35px 35px;
 
                   h4 {
-                      line-height: 11px;
+                      line-height: 1.2em;
 
                       a {
                           text-transform: uppercase;
@@ -1058,7 +1056,7 @@ a {
     padding: 35px 20px 30px 0;
     font-family: $font-family-secondary;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.2em;
     color: #474747;
 
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
@@ -1227,7 +1225,7 @@ div.not-found-message {
 
     p {
         font-size: 11px;
-        line-height: 13px;
+        line-height: 1.5em;
         margin-bottom: 15px;
     }
 
