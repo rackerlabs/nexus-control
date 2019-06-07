@@ -5,7 +5,8 @@ var $ = require('jquery');
 var tabs = {
   'cloud-hosting': '#cloud-ctrl, #cloud-display',
   'cloud-office': '#office-ctrl, #office-display',
-  'dedicated-hosting': '#hosting-ctrl, #hosting-display'
+  'dedicated-hosting': '#hosting-ctrl, #hosting-display',
+  'security': '#security-ctrl, #security-display'
 };
 
 // set the specified tab as active
@@ -33,6 +34,7 @@ function setup() {
   $("#cloud-ctrl").click(setTabActive.bind(null, 'cloud-hosting', true));
   $("#office-ctrl").click(setTabActive.bind(null, 'cloud-office', true));
   $("#hosting-ctrl").click(setTabActive.bind(null, 'dedicated-hosting', true));
+  $("#security-ctrl").click(setTabActive.bind(null, 'security', true));
 };
 
 module.exports = setup;
