@@ -1,9 +1,9 @@
 {
-    "support.rackspace.com": {
+    "support-revs.staging.deconst.org": {
         "content": {
-            "/": "https://github.com/rackerlabs/docs-support-network/prod/",
-            "/launch/": "https://github.com/rackerlabs/docs-support-launch/prod/",
-            "/how-to/": "https://github.com/rackerlabs/rackspace-how-to/prod/",
+            "/": "https://github.com/rackerlabs/docs-support-network/staging-revs/",
+            "/launch/": "https://github.com/rackerlabs/docs-support-launch/staging-revs/",
+            "/how-to/": "https://github.com/rackerlabs/rackspace-how-to/staging-revs/",
             "/search/": null
         },
         "proxy": {

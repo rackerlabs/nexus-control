@@ -1,0 +1,78 @@
+/* Share Bar */
+#share-bar {
+    font-size: 20px;
+}
+
+/* Title */
+#share-bar h4 {
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+/* All buttons */
+.share-buttons {
+}
+
+/* Each button */
+.share-button {
+    margin: 0px;
+    margin-bottom: 10px;
+    margin-right: 0px;
+    border: 1px solid #D3D6D2;
+    padding: 20px 20px 20px 20px;
+}
+
+.share-button:hover {
+    text-decoration: none!important;
+    box-shadow: none;
+    opacity: 1;
+    color: #ffffff;
+}
+
+/* Facebook button */
+.fa-facebook-official {
+    color: #3b5999;
+}
+.fa-facebook-official:hover {
+    background-color: #3b5999;
+}
+
+/* Twitter button */
+.fa-twitter {
+    color: #55acee;
+}
+.fa-twitter:hover {
+    background-color: #55acee;
+}
+
+/* Tumblr button */
+.fa-tumblr {
+    color: #32506d;
+}
+.fa-tumblr:hover {
+    background-color: #32506d;
+}
+
+/* Reddit button */
+.fa-reddit-alien {
+    color: #ff5700;
+}
+.fa-reddit-alien:hover {
+    background-color: #ff5700;
+}
+
+/* LinkedIn button */
+.fa-linkedin {
+    color: #0077b5;
+}
+.fa-linkedin:hover {
+    background-color: #0077b5;
+}
+
+/* Email button */
+.fa-envelope {
+    color: #444444;
+}
+.fa-envelope:hover {
+    background-color: #444444;
+}

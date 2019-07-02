@@ -18,7 +18,6 @@
 {% block twitterDescription %}{{ twitterDescription|fallback(ogDescription, metaDescription, super()) }}{% endblock %}
 {% block twitterTitle %}{{ twitterTitle|fallback(ogTitle, metaTitle, super()) }}{% endblock %}
 
-
 {% block bodyClass %}docs active-language-override{% endblock %}
 
 {% set headlineTag = 'h1' %}

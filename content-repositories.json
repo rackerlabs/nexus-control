@@ -5,7 +5,7 @@
   { "kind": "github", "project": "rackerlabs/docs-redhat-osp" },
   { "kind": "github", "project": "rcbops/privatecloud-docs", "branches": ["master", "v12", "v13", "v14", "v16", "v17"] },
   { "kind": "github", "project": "rcbops/rpc-openstack", "branches": ["master", "mitaka-13.0"] },
-  { "kind": "github", "project": "rcbops/mk8s", "branches": ["master", "1.1.x", "1.2.x", "1.3.x", "1.4.x", "1.5.x", "2.0.x"] },
+  { "kind": "github", "project": "rackerlabs/kaas", "branches": ["master", "1.1.x", "1.2.x", "1.3.x", "1.4.x", "1.5.x", "2.0.x", "2.1.x"] },
   { "kind": "github", "project": "rackerlabs/rackspace-how-to" },
   { "kind": "github", "project": "rackerlabs/docs-core-infra-user-guide" },
   { "kind": "github", "project": "rackerlabs/docs-cloud-backup" },
@@ -26,7 +26,6 @@
   { "kind": "github", "project": "rackerlabs/docs-cloud-rackconnect" },
   { "kind": "github", "project": "rackerlabs/docs-dedicated-networking" },
   { "kind": "github", "project": "rackerlabs/docs-cloud-servers" },
-  { "kind": "github", "project": "rackerlabs/docs-common"},
   { "kind": "github", "project": "rackerlabs/docs-support-network"},
   { "kind": "github", "project": "rackerlabs/docs-rackspace" },
   { "kind": "github", "project": "rackerlabs/heat-resource-ref" },
@@ -34,7 +33,6 @@
   { "kind": "github", "project": "rackerlabs/rs-heat-docs" },
   { "kind": "github", "project": "rackerlabs/standard-usage-schemas" },
   { "kind": "github", "project": "rackspace/rack" },
-  { "kind": "github", "project": "rackerlabs/docs-billing-apiguide" },
   { "kind": "github", "project": "rackerlabs/docs-rackspace-federation" },
   { "kind": "github", "project": "rackerlabs/docs-sdp" },
   { "kind": "github", "project": "rackerlabs/docs-appformix" },
@@ -43,6 +41,5 @@
   { "kind": "github", "project": "rackerlabs/docs-ras-databases" },
   { "kind": "github", "project": "rackerlabs/mpc-hyper-v" },
   { "kind": "github", "project": "rackerlabs/docs-customer-service" },
-  { "kind": "github", "project": "rackerlabs/docs-billing-apiguide" },
-  { "kind": "github", "project": "rackerlabs/docs-starter-kit-external" }
+  { "kind": "github", "project": "rackerlabs/docs-billing-apiguide" }
 ]
