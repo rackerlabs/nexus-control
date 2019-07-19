@@ -1,0 +1,19 @@
+// FAQs styles and mods
+
+.faq {
+    h4 {
+        font-weight: 400;
+        margin-bottom: 20px;
+        padding-left: 25px;
+        background: url($assets_support_rackspace_com_dist_img_icon_plus_svg) 0 3px no-repeat;
+
+        &:hover{
+            cursor: pointer;
+            color: $color-kcblue;
+        }
+
+        &.active {background: url($assets_support_rackspace_com_dist_img_icon_minus_svg) 0 3px no-repeat}
+    }
+
+    hr {margin-top: 30px;}
+}
