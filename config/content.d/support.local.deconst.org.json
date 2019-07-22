@@ -1,0 +1,14 @@
+{
+    "support.local.deconst.org": {
+        "content": {
+            "/": "https://github.com/rackerlabs/docs-support-network/test/",
+            "/launch/": "https://github.com/rackerlabs/docs-support-launch/test/",
+            "/how-to/": "https://github.com/rackerlabs/rackspace-how-to/test/",
+            "/search/": null
+        },
+        "proxy": {
+            "/favicon.ico": "https://c0e9a73362c5d06f19d6-b39ff74cb91d713ac1253c5ae00eaccb.ssl.cf1.rackcdn.com/UI/favicon/favicon.ico",
+            "/images/favicon.ico": "https://c0e9a73362c5d06f19d6-b39ff74cb91d713ac1253c5ae00eaccb.ssl.cf1.rackcdn.com/UI/favicon/favicon.ico"
+        }
+    }
+}
