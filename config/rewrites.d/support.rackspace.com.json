@@ -1413,6 +1413,13 @@
         "to": "/how-to/upgrading-your-exchange-version/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "Redirect create an ubuntu 13 image",
+        "from": "^\\/how-to\\/creating-an-ubuntu-1310-image-for-the-rackspace-open-cloud(.*)$",
+        "to": "/how-to/cloud-image-creation-format-and-process/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
