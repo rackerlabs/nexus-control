@@ -1,0 +1,31 @@
+// Article-list Sort -- OUT OF SCOPE
+
+.list-sort-container {
+    margin: 20px 0 30px;
+
+    .row {
+        padding: 10px;
+        background: #f2f5f5;
+        border-top: 1px solid #bfbfbf;
+        color: #666;
+
+        // Sort & number of results
+
+        dl {
+            font-size: 14px;
+            font-family: $font-family-secondary;
+            font-weight: 400;
+            margin-top: 10px;
+            dd, dt {
+                display: inline-block;
+                margin-left: 11px;
+
+                a {color: #666;}
+
+                i {margin-left: 3px;}
+
+                &:first-child {margin: 0;}
+            }
+        }
+    }
+}

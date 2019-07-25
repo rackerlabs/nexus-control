@@ -1,0 +1,104 @@
+// Page Sidebar
+
+.sidebar {
+    min-height: 100%;
+    padding: 35px 20px 30px 0;
+    font-family: $font-family-secondary;
+    font-size: 14px;
+    line-height: 1.2em;
+    color: #474747;
+
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* IE 8+ */
+
+    h3 {
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+
+    a {
+        font-weight: 400;
+        text-decoration: none;
+        color: #777;
+
+        &:hover {color: $color-kcblue;}
+
+        &.home-link {
+            display: block;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #E1E1E1;
+
+            i {margin-right: 5px;}
+        }
+    }
+
+    ul {
+        margin-bottom: 40px;
+
+        li {margin-bottom: 13px;}
+
+        // Page Sidebar LISTS
+
+        &.area {
+            li.active {
+                display: block;
+                padding: 7px 10px;
+                background: $color-kcblue;
+                pointer-events: none;
+
+                a {color: #fff;}
+            }
+        }
+
+        &.nav {
+            li.active {
+                padding-left: 6px;
+                border-left: 3px solid $color-kcblue;
+                font-weight: 700;
+                pointer-events: none;
+
+                a {color: $color-text;}
+            }
+        }
+
+    }
+
+    hr {
+        margin-bottom: 40px;
+        border-width: 0;
+        border-top: 1px solid #E1E1E1;
+    }
+
+    p {
+        color: #757575;
+        margin-bottom: 40px;
+
+        a {
+            color: $color-kcblue;
+
+            &:hover {text-decoration: underline;}
+        }
+    }
+
+    .button-wp {
+        a {
+            display: block;
+            border: 1px solid $color-kcblue;
+            padding: 12px 35px;
+            margin-bottom: 35px;
+            white-space: nowrap;
+            font-weight: 600;
+
+            &:hover {
+                background: $color-kcblue;
+                color: #fff;
+                text-decoration: none;
+            }
+
+            i {margin-right: 10px;}
+        }
+    }
+}

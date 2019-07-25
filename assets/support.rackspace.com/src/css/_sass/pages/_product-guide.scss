@@ -1,0 +1,18 @@
+// Product Guide styles and mods (formerly Getting Started)
+
+.content.product-guide {
+
+    ul {
+        font-family: $font-family-secondary;
+        font-size: 18px;
+        font-weight: 400;
+        list-style: none;
+        margin-left: 0;
+
+        &.meta {
+            font-size: 14px;
+            font-family: $font-family-primary;
+        }
+        &.breadcrumbs {font-size: 11px;}
+    }
+}

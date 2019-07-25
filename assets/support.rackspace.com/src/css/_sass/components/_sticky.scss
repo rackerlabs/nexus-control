@@ -1,0 +1,11 @@
+// Sticky components
+
+.sticky {                       // Dude!!! The best!
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -o-sticky;
+    position: -ms-sticky;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}

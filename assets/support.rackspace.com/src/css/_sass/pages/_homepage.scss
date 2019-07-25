@@ -1,0 +1,413 @@
+// Home-page styles and mods
+
+    .content.home {
+        border-left: none;
+        padding: 0 0 0 0;
+
+        h2 {
+            font-size: 28px;
+            font-weight: 300;
+            margin: 30px 0 0 0;
+        }
+
+        p.lead {
+            font-size: 16px;
+            margin-bottom: 35px;
+        }
+
+        hr {margin-bottom: 30px;}
+
+        .filter-product-type {
+
+            ul {
+                margin: 0 0 40px 0;
+                list-style-type: none;
+
+                li {
+                    font-family: $font-family-secondary;
+                    display: inline;
+
+                    &:last-child {padding-right: 0px;}
+
+                    a {
+                        padding: 5px 25px;
+                        font-size: 16px;
+                        color: #888;
+                        font-weight: 400;
+
+                        &.active {
+                            background: $color-kcblue;
+                            color: #fff;
+
+                            &:hover {text-decoration: none;}
+                        }
+
+                        &.inactive {
+                            background: #f3f3f3;
+
+                            &:hover {
+                                text-decoration: none;
+                                background:$color-kcblue;
+                                color: #fff;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &.product-type-cloud {
+
+            h3 {
+                font-style: italic;
+                margin-bottom: 15px;
+                font-size: 18px;
+                font-weight: 300;
+                color: #999;
+            }
+
+            .icon {
+                background-repeat: no-repeat;
+                background-position: top left;
+                background-size: 35px 35px;
+
+                h4 {
+                    line-height: 1.2em;
+
+                    a {
+                        text-transform: uppercase;
+                        padding-left: 45px;
+                        font-size: 16px;
+                        font-weight: 600;
+                        display: block;
+
+                        span {
+                            font-size: 13px;
+                            display: block;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+
+            .servers {
+                background-image: url($assets_support_rackspace_com_dist_img_icon_servers_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_servers_svg);
+            }
+
+            .images {
+                background-image: url($assets_support_rackspace_com_dist_img_icon_images_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_images_svg);
+            }
+
+            .vmware {
+                background-image: url($assets_support_rackspace_com_dist_img_icon_vmware_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_vmware_svg);
+            }
+
+            .networks {
+                background-image: url($assets_support_rackspace_com_dist_img_icon_networks_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_networks_svg);
+            }
+
+            .dns {
+                background-image: url($assets_support_rackspace_com_dist_img_icon_dns_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_dns_svg);
+            }
+
+            .load-balancers {
+                background-image: url($assets_support_rackspace_com_dist_img_icon_load_balancers_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_load_balancers_svg);
+            }
+
+            .rackconnect {
+                background-image: url($assets_support_rackspace_com_dist_img_icon_rackconnect_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_rackconnect_svg);
+            }
+
+            .files {
+                background-image: url($assets_support_rackspace_com_dist_img_icon_files_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_files_svg);
+            }
+
+            .block-storage {
+                background-image: url($assets_support_rackspace_com_dist_img_icon_block-storage_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_block-storage_svg);
+            }
+
+            .cdn {
+                background-image: url($assets_support_rackspace_com_dist_img_icon_cdn_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_cdn_svg);
+            }
+
+            .databases {
+                background-image: url($assets_support_rackspace_com_dist_img_icon_databases_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_databases_svg);
+            }
+
+            .queues {
+                background-image: url($assets_support_rackspace_com_dist_img_icon_queues_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_queues_svg);
+            }
+
+            .backup {
+                background-image: url($assets_support_rackspace_com_dist_img_icon_backup_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_backup_svg);
+            }
+
+            .metrics {
+                background-image: url($assets_support_rackspace_com_dist_img_icon_metrics_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_metrics_svg);
+            }
+
+            .monitoring {
+                background-image: url($assets_support_rackspace_com_dist_img_icon_monitoring_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_monitoring_svg);
+            }
+
+            .orchestration {
+                background-image: url($assets_support_rackspace_com_dist_img_icon_orchestration_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_orchestration_svg);
+            }
+
+            .auto-scale {
+                background-image: url($assets_support_rackspace_com_dist_img_icon_auto_scale_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_auto_scale_svg);
+            }
+
+            .intelligence {
+                background-image: url($assets_support_rackspace_com_dist_img_icon_intelligence_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_intelligence_svg);
+            }
+
+            .private {
+                background-image: url($assets_support_rackspace_com_dist_img_icon_private_cloud_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_private_cloud_svg);
+            }
+            .pdr {
+                background-image: url($assets_support_rackspace_com_dist_img_icon_rackspace_pdr_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_rackspace_pdr_svg);
+            }
+            .managed-operations {
+                background-image: url($assets_support_rackspace_com_dist_img_icon_managed-operations_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_managed-operations_svg);
+            }
+
+        }
+
+        &.product-type-email {
+            margin-top: 30px;
+
+            .icon {
+                background-repeat: no-repeat;
+                background-position: top left;
+                background-size: 35px 35px;
+
+                h4 {
+                    line-height: 1.2em;
+
+                    a {
+                        text-transform: uppercase;
+                        padding-left: 45px;
+                        font-size: 16px;
+                        font-weight: 600;
+                        display: block;
+
+                        span {
+                            font-size: 13px;
+                            display: block;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+
+            .email {
+                background-image: url($assets_support_rackspace_com_dist_img_icon_email_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_email_svg);
+            }
+
+            .skype {
+                background-image: url($assets_support_rackspace_com_dist_img_icon_skype_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_skype_svg);
+            }
+
+            .exchange {
+                background-image: url($assets_support_rackspace_com_dist_img_icon_exchange_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_exchange_svg);
+            }
+
+            .email-archiving {
+                background-image: url($assets_support_rackspace_com_dist_img_icon_email-archiving_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_email-archiving_svg);
+            }
+
+            .office-365 {
+                background-image: url($assets_support_rackspace_com_dist_img_icon_office-365_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_office-365_svg);
+            }
+
+            .email-wizard {
+                background-image: url($assets_support_rackspace_com_dist_img_icon_wizard_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_wizard_svg);
+                background-repeat: no-repeat;
+                position: relative;
+                margin-bottom: 20px;
+
+                h4 {
+                    padding: 7px 0 0 60px;
+                    margin-bottom: 5px;
+                }
+
+                p {
+                    padding-left: 60px;
+                    margin-bottom: 20px;
+                }
+
+                aside.cta {
+                    text-align: right;
+
+                    #email-button {
+                        border: 1px solid #499917;
+                        background: none;
+                        color: #499917;
+                        padding: 12px 50px;
+                        margin-top: 7px;
+                        white-space: nowrap;
+
+                        &:hover {
+                            background: #499917;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.product-type-security {
+
+            h3 {
+                font-style: italic;
+                margin-bottom: 15px;
+                font-size: 18px;
+                font-weight: 300;
+                color: #999;
+            }
+
+            .icon {
+                background-repeat: no-repeat;
+                background-position: top left;
+                background-size: 35px 35px;
+
+                h4 {
+                    line-height: 1.2em;
+
+                    a {
+                        text-transform: uppercase;
+                        padding-left: 45px;
+                        font-size: 16px;
+                        font-weight: 600;
+                        display: block;
+
+                        span {
+                            font-size: 13px;
+                            display: block;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+            .pdr {
+                background-image: url($assets_support_rackspace_com_dist_img_icon_rackspace_pdr_png);
+                background-image: none, url($assets_support_rackspace_com_dist_img_icon_rackspace_pdr_svg);
+            }
+
+          }
+
+          &.product-type-managed {
+              margin-top: 30px;
+
+              .icon {
+                  background-repeat: no-repeat;
+                  background-position: top left;
+                  background-size: 35px 35px;
+
+                  h4 {
+                      line-height: 1.2em;
+
+                      a {
+                          text-transform: uppercase;
+                          padding-left: 45px;
+                          font-size: 16px;
+                          font-weight: 600;
+                          display: block;
+
+                          span {
+                              font-size: 13px;
+                              display: block;
+                              font-weight: 400;
+                          }
+                      }
+                  }
+              }
+              .managed-operations {
+                  background-image: url($assets_support_rackspace_com_dist_img_icon_managed-operations_png);
+                  background-image: none, url($assets_support_rackspace_com_dist_img_icon_managed-operations_svg);
+              }
+            }
+
+        &.one-half {margin-left: 0px;}
+
+        #inf-guide-callout {
+            margin-top: 25px;
+
+            h4 {margin-bottom: 5px;}
+
+            aside.cta {
+                text-align: right;
+
+                #guide-button {
+                    border: 1px solid #499917;
+                    background: none;
+                    color: #499917;
+                    padding: 12px 50px;
+                    margin-top: 7px;
+                    white-space: nowrap;
+
+                    &:hover {
+                        background: #499917;
+                        color: #fff;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .contact {
+        margin-top: 20px;
+        padding: 1px 0 25px 0;
+
+        div {
+            &:first-of-type {margin-left: 0px;}
+
+            h3 {
+                color: #666;
+                font-size: 16px;
+                font-weight: 300;
+
+                span {
+                    display: block;
+                    font-weight: 600;
+                    padding-bottom: 7px;
+                }
+                em {margin-left: 15px;}
+            }
+        }
+    }
+
+    #product-type-email #product-type-cloud,
+    #product-type-getstart {display: none;}
+
+    .content.inactive {display:none;}

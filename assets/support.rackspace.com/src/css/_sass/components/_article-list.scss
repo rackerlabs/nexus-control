@@ -1,0 +1,34 @@
+// Article-list styles and mods
+
+.article-list {
+
+    h4 {
+        font-weight: 400;
+        margin-bottom: 3px;
+        color: $color-kcblue;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    ul.meta {
+        padding-bottom: 25px;
+        margin-bottom: 25px;
+        border-bottom-color: #ddd;
+
+        dl {
+
+            dt, dd {
+                display: inline-block;
+                margin: 0 5px 0 0;
+            }
+            dd {
+                &:after {
+                    margin-left: 5px;
+                    content: "|";
+                }
+                &:last-child:after {content: "";}
+            }
+        }
+    }
+}
