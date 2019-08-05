@@ -1420,6 +1420,13 @@
         "to": "/how-to/cloud-image-creation-format-and-process/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "Retire windows overview",
+        "from": "^\\/how-to\\/windows-overview(.*)$",
+        "to": "/how-to/article-retired/windows-overview/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
