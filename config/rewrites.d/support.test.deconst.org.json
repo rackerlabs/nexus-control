@@ -1408,7 +1408,7 @@
       {
         "description": "Retire windows overview",
         "from": "^\\/how-to\\/windows-overview(.*)$",
-        "to": "/how-to/article-retired/windows-overview/",
+        "to": "/how-to/article-retired/",
         "rewrite": false,
         "status": 301
       }
