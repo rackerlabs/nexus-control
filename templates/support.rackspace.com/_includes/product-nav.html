@@ -20,7 +20,8 @@
     {% set productURL = deconst.content.envelope.meta.product.replace(" ", "-").toLowerCase() %}
     {% set productURL = productURL.replace("rackspace-private-cloud", "rpc") %}
 {% endif %}
-
+<label class="hamburger" for="toggle">&#9776;</label>
+<input type="checkbox" id="toggle"/>
 <ul class="area">
   <li{% if pageType == "product" %} class="active"{% endif %}><a href="/how-to/{{ productURL + "/" }}">Introduction</a></li>
   <li{% if pageType == "faq" %} class="active"{% endif %}><a href="/how-to/{{ productURL + "-faq/" }}">FAQ</a></li>
