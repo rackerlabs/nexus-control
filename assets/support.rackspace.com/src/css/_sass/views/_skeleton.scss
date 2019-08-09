@@ -21,10 +21,10 @@
 -------------------------------------------------- */
 .container {
     position: relative;
-    
+
     // width: 100%;
     // max-width: 980px; -- turned off responsiveness for now
-    
+
     width: 966px;
     margin: 0 auto;
     box-sizing: border-box;
@@ -36,14 +36,24 @@
     box-sizing: border-box;
 }
 
-/* For devices larger than 400px */
-@media (min-width: 400px) {
+/* For devices larger than 400px *//*
+@media screen and (min-width: 400px) and (max-width: 600px) {
   .container {
+    display: flex;
+    flex-wrap: wrap;
 //    width: 85%;
     padding: 0; }
 }
 
-/* For devices larger than 550px */
+@media (min-width: 601px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+//    width: 85%;
+    padding: 0; }
+}*/
+
+// For devices larger than 550px
 //@media (min-width: 550px) {
     // .container {width: 80%;}
   .column, .columns {margin-left: 4%;}
@@ -52,13 +62,45 @@
   .one.column,
   .one.columns                    { width: 4.66666666667%; }
   .two.columns                    { width: 13.3333333333%; }
+
+  // three.columns media queries set the column width and position of the page-sidebar element
   .three.columns                  { width: 22%;            }
   .four.columns                   { width: 30.6666666667%; }
   .five.columns                   { width: 39.3333333333%; }
   .six.columns                    { width: 48%;            }
   .seven.columns                  { width: 56.6666666667%; }
   .eight.columns                  { width: 65.3333333333%; }
-  .nine.columns                   { width: 74.0%;          }
+  // nine.columns media queries set the column width of the product landing pages and all aritcles pages
+
+  @media screen and (max-width: 375px){
+
+    .nine.columns {
+      max-width: 30%;
+      float: none;
+      text-align: left;
+    }
+  }
+  @media screen and (min-width: 376px) and (max-width: 700px){
+
+    .nine.columns {
+      max-width: 35%;
+      float: none;
+      text-align: left;
+    }
+  }
+  @media screen and (min-width: 701px) and (max-width: 980px){
+
+    .nine.columns {
+      max-width: 77%;
+      text-align: left;
+    }
+  }
+  @media screen and (min-width: 981px){
+
+    .nine.columns {
+      max-width: 74%;
+    }
+  }
   .ten.columns                    { width: 82.6666666667%; }
   .eleven.columns                 { width: 91.3333333333%; }
   .twelve.columns                 { width: 100%; margin-left: 0; }
@@ -68,7 +110,7 @@
 
   .one-half.column                { width: 48%; }
 
-  /* Offsets */
+  // Offsets
   .offset-by-one.column,
   .offset-by-one.columns          { margin-left: 8.66666666667%; }
   .offset-by-two.column,
@@ -100,7 +142,6 @@
   .offset-by-one-half.column,
   .offset-by-one-half.columns     { margin-left: 52%; }
 
-//}
 
 /* Clearing
 -------------------------------------------------- */
@@ -125,10 +166,8 @@ there.
 
 
 /* Larger than mobile */
-@media (min-width: 400px) {}
 
-/* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) {}
+
 
 /* Larger than tablet */
 @media (min-width: 750px) {}

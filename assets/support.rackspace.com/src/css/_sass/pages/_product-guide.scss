@@ -9,10 +9,30 @@
         list-style: none;
         margin-left: 0;
 
-        &.meta {
+        .meta {
             font-size: 14px;
             font-family: $font-family-primary;
         }
-        &.breadcrumbs {font-size: 11px;}
-     }
+        .breadcrumbs {font-size: 11px;}
+    }
+}
+
+@media screen and (max-width: 400px){
+    .content.product-guide {
+
+        ul {
+            font-family: $font-family-secondary;
+            font-size: 16px;
+            line-height: 1.2em;
+            font-weight: 400;
+            list-style: none;
+            margin-left: 0;
+
+            .meta {
+                font-size: 1.2em;
+                font-family: $font-family-primary;
+            }
+            .breadcrumbs {font-size: 11px;}
+        }
+    }
 }
