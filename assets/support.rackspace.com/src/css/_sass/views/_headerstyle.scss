@@ -316,7 +316,7 @@ a {
             margin: 0;
             padding: 0;
 
-            &::last-child {
+            &:last-child {
               margin-bottom: 10px;
             }
           }
@@ -487,6 +487,10 @@ a {
         background-size: 140px;
         background-position: 20px 16px;
         background-color: $color-brand;
+
+        @media only screen and (max-width: 375px) {
+          display: none;
+        }
 
         &:hover {
           background: $color-brand;
