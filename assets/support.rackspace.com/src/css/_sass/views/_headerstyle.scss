@@ -214,7 +214,7 @@ a {
         background-size: 90%;
         background-color: $color-brand;
 
-        @media only screen and (mid-width: 376px) {
+        @media only screen and (min-width: 376px) {
           display: none;
         }
       }
