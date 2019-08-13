@@ -4,6 +4,10 @@
     float: right;
     width: 580px;
 
+    @media only screen and (max-width: 375px) {
+      width: 100%;
+    }
+
     form {
       @include display(flex);
       margin-top: 5px !important;

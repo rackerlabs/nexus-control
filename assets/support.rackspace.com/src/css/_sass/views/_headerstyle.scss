@@ -180,17 +180,44 @@ a {
   /* Fix for webkit rendering */
   -webkit-text-size-adjust: 100%;
 
+  @media only screen and (max-width: 375px) {
+    min-width: 300px;
+  }
+
   #rax-eyebrow-wrapper {
     width: 100%;
     padding: 15px 0;
 
     #rax-eyebrow-container {
-      width: 960px;
+      width: 100%;
       margin: 0 auto;
       font-family: $font-family-primary;
       font-weight: 600;
       font-size: 10px;
       text-transform: uppercase;
+
+      a.rax-logo {
+        display: inline;
+        padding: 13px 55px;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+        -moz-transition: all 0.15s linear;
+        -webkit-transition: all 0.15s linear;
+        transition: all 0.15s linear;
+        background-image: url('https://c0e9a73362c5d06f19d6-b39ff74cb91d713ac1253c5ae00eaccb.ssl.cf1.rackcdn.com/UI/logos/PNG/Rackspace_Logo_wt.png');
+        background-image: none, url('https://c0e9a73362c5d06f19d6-b39ff74cb91d713ac1253c5ae00eaccb.ssl.cf1.rackcdn.com/UI/logos/SVG/Rackspace_Logo_wt.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        text-indent: -9999px;
+        width: 27%;
+        background-size: 90%;
+        background-color: $color-brand;
+
+        @media only screen and (mid-width: 376px) {
+          display: none;
+        }
+      }
 
       #rax-eyebrow-utility {
         float: left;
@@ -312,9 +339,7 @@ a {
 
   #rax-support-banner-wrapper {
     width: 100%;
-    background-image: url("https://d436c56f5a08c61c1089-2d9f45bbdbb04bfa80b3989d3f4c08b5.ssl.cf5.rackcdn.com/bg-header-2fd053fba7784de209e3ae99aba6c497bfd1659b42be48bb7ef912fcfffe637c.png");
-    background-size: cover;
-    min-width: 960px;
+    background-color: #fff;
   }
 
   #rax-support-nav-wrapper {
@@ -322,15 +347,15 @@ a {
     background-color: #000;
 
     #rax-support-nav-container {
-      width: 960px;
+      width: 100%;
       margin: 0 auto;
     }
   }
 
   #rax-support-banner-container {
-    width: 960px;
+    width: 100%;
     margin: 0 auto;
-    padding: 45px 0;
+    padding: 20px 0;
 
     #rax-header-link {
       float: left;
@@ -354,6 +379,11 @@ a {
       float: right;
       width: 580px;
 
+      @media only screen and (max-width: 375px) {
+        width: 100%;
+        float: none;
+      }
+
       #rax-support-search {
         position: relative;
         width: 100%;
@@ -361,7 +391,7 @@ a {
         background: #fff;
 
         input[type='text']#rax-support-search-input {
-          border-width: 0;
+          border: 2px solid #000;
           outline-width: 0;
           background: none;
           width: 90%;
@@ -434,6 +464,11 @@ a {
       -webkit-transition: all 0.15s linear;
       transition: all 0.15s linear;
 
+      @media only screen and (max-width: 375px) {
+        display: block;
+        padding: 13px 4px;
+      }
+
       &:hover {
         background: #222;
       }
@@ -473,6 +508,10 @@ a {
       width: 960px;
       margin: 0 auto;
       padding: 15px 0;
+
+      @media only screen and (max-width: 375px) {
+        width: 100%;
+      }
 
       i {
         position: absolute;
@@ -541,11 +580,20 @@ a {
   border-top: 10px solid $color-brand;
   background: #2a2a2a;
 
+  @media only screen and (max-width: 375px) {
+    min-width: 300px;
+  }
+
   #rax-footer-container {
     width: 960px;
     margin: 0 auto;
     padding: 25px 10px 30px;
     @include boxsize(border-box);
+
+    @media only screen and (max-width: 375px) {
+      width: 100%;
+    }
+
     .rax-footer-col {
       float: left;
       width: 20%;
