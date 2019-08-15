@@ -57,6 +57,35 @@
             }
         }
 
+        &.product-type-gs {
+
+            h3 {
+                font-style: bold;
+                margin-bottom: 15px;
+                font-size: 20px;
+                font-weight: 300;
+                color: #999;
+            }
+
+            aside.cta {
+                text-align: left;
+
+                #email-button {
+                    border: 1px solid #499917;
+                    background: none;
+                    color: #499917;
+                    padding: 12px 50px;
+                    margin-top: 7px;
+                    white-space: nowrap;
+
+                    &:hover {
+                        background: #499917;
+                        color: #fff;
+                    }
+                }
+            }
+          }
+
         &.product-type-cloud {
 
             h3 {
@@ -408,6 +437,6 @@
     }
 
     #product-type-email #product-type-cloud,
-    #product-type-getstart {display: none;}
+    #product-type-gs {display: none;}
 
     .content.inactive {display:none;}
