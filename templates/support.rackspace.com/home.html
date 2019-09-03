@@ -1,5 +1,84 @@
 {% extends "_layouts/base.html" %}
 
 {% block bodyContent %}
+<div class="middle">
+  <div class="menu">
+    <li class="item" id="getting-started">
+      <a href="#getting-started" class="btn">Getting Started</a>
+      <div class="smenu">
+        <a href="#">Getting started with Public Cloud </a>
+      </div>
+    </li>
+
+    <li class="item" id="account-management">
+      <a href="#account-management" class="btn">Account Management</a>
+      <div class="smenu">
+        <a href="/how-to/account-management/">Introduction</a>
+        <a href="/how-to/account-management-faq/">FAQ</a>
+        <a href="/how-to/account-management-all-articles/">All Articles</a>
+      </div>
+    </li>
+
+    <li class="item" id="cloud-office">
+      <a href="#cloud-office" class="btn">Cloud Office</a>
+      <div class="smenu">
+        <a href="/how-to/rackspace-email/">Rackspace Email</a>
+        <a href="/how-to/office-365/">Microsoft Office 365</a>
+        <a href="/how-to/rackspace-email-archiving/">Rackspace Email Archiving</a>
+        <a href="/how-to/microsoft-exchange/">Microsoft Exchange</a>
+      </div>
+    </li>
+
+    <li class="item" id="dedicated-hosting">
+      <a href="#dedicated-hosting" class="btn">Dedicated Hosting</a>
+      <div class="smenu">
+        <a href="/how-to/dedicated-hosting/">Introduction</a>
+        <a href="/how-to/dedicated-hosting-faq/">FAQ</a>
+        <a href="/how-to/dedicated-hosting-all-articles/">All Articles</a>
+      </div>
+    </li>
+
+    <li class="item" id="private-cloud">
+      <a href="#private-cloud" class="btn">Rackspace Private Cloud</a>
+      <div class="smenu">
+        <a href="/how-to/rpc-openstack/">Powered by Openstack</a>
+        <a href="/how-to/rpc-vmware/">Powered by VMWARE</a>
+      </div>
+    </li>
+
+    <li class="item" id="cloud-hosting">
+      <a href="#cloud-hosting" class="btn">Cloud Hosting</a>
+      <div class="smenu">
+        <a href="/how-to/cloud-servers/">Cloud Servers</a>
+        <a href="/how-to/cloud-images/">Cloud Images</a>
+        <a href="/how-to/managed-vmware-services/">VMWARE Server Virtualization</a>
+        <a href="/how-to/cloud-networks/">Cloud Networks</a>
+        <a href="/how-to/cloud-dns/">Cloud DNS</a>
+        <a href="/how-to/cloud-load-balancers/">Cloud Load Balancers</a>
+        <a href="/how-to/rackconnect/">Rackspace Connect</a>
+        <a href="/how-to/cloud-files/">Cloud Files</a>
+        <a href="/how-to/cloud-block-storage/">Cloud Block Storage</a>
+        <a href="/how-to/rackspace-cdn/">Rackspace CDN</a>
+        <a href="/how-to/cloud-databases/">Cloud Databases</a>
+        <a href="/how-to/cloud-queues/">Cloud Queues</a>
+        <a href="/how-to/cloud-images/">Cloud Images</a>
+        <a href="/how-to/rackspace-pdr/">Rackspace Proactive Detection & Response</a>
+        <a href="/how-to/managed-operations/">Managed Operations</a>
+      </div>
+    </li>
+
+    <li class="item" id="infrastructure-developer-tools">
+      <a href="#infrastructure-developer-tools" class="btn">Infrastructure and Developer Tools</a>
+      <div class="smenu">
+        <a href="/how-to/cloud-backup/">Cloud Backup</a>
+        <a href="/how-to/rackspace-monitoring/">Rackspace Monitoring</a>
+        <a href="/how-to/cloud-orchestration/">Cloud Orchestration</a>
+        <a href="/how-to/rackspace-auto-scale/">Rackspace Auto Scale</a>
+        <a href="/how-to/rackspace-intelligence/">Rackspace Intelligence</a>
+        <a href="/how-to/rackspace-metrics/">Rackspace Metrics</a>
+      </div>
+    </li>
+  </div>
+</div>
 {{ deconst.content.envelope.body }}
 {% endblock %}
