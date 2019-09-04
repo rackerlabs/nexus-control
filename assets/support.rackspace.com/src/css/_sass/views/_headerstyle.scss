@@ -184,6 +184,10 @@ a {
     min-width: 300px;
   }
 
+  @media only screen and (min-width: 376px) and (max-width: 600px) {
+    min-width: 300px;
+  }
+
   #rax-eyebrow-wrapper {
     width: 100%;
     padding: 15px 0;
@@ -214,7 +218,7 @@ a {
         background-size: 90%;
         background-color: $color-brand;
 
-        @media only screen and (min-width: 376px) {
+        @media only screen and (min-width: 601px) {
           display: none;
         }
       }
@@ -384,6 +388,11 @@ a {
         float: none;
       }
 
+      @media only screen and (min-width: 376px) and (max-width: 600px) {
+        width: 100%;
+        float: none;
+      }
+
       #rax-support-search {
         position: relative;
         width: 100%;
@@ -469,6 +478,11 @@ a {
         padding: 13px 4px;
       }
 
+      @media only screen and (min-width: 376px) and (max-width: 600px) {
+        display: block;
+        padding: 13px 4px;
+      }
+
       &:hover {
         background: #222;
       }
@@ -489,6 +503,10 @@ a {
         background-color: $color-brand;
 
         @media only screen and (max-width: 375px) {
+          display: none;
+        }
+
+        @media only screen and (min-width: 376px) and (max-width: 600px) {
           display: none;
         }
 
@@ -514,6 +532,10 @@ a {
       padding: 15px 0;
 
       @media only screen and (max-width: 375px) {
+        width: 100%;
+      }
+
+      @media only screen and (min-width: 376px) and (max-width: 600px) {
         width: 100%;
       }
 
@@ -588,6 +610,10 @@ a {
     min-width: 300px;
   }
 
+  @media only screen and (min-width: 376px) and (max-width: 600px) {
+    min-width: 300px;
+  }
+
   #rax-footer-container {
     width: 960px;
     margin: 0 auto;
@@ -598,9 +624,18 @@ a {
       width: 100%;
     }
 
+    @media only screen and (min-width: 376px) and (max-width: 600px) {
+      width: 100%;
+    }
+
     .rax-footer-col {
       float: left;
       width: 20%;
+
+      @media only screen and (max-width: 375px) {
+        width: 50%;
+        padding-bottom: 10px;
+      }
 
       &.rax-footer-about {
         width: 35%;
@@ -608,6 +643,10 @@ a {
         .rax-footer-about-list {
           float: left;
           width: 45%;
+
+          @media only screen and (max-width: 375px) {
+            width: 50%;
+          }
         }
       }
     }
@@ -625,6 +664,10 @@ a {
       margin: 0;
       line-height: 21px;
       padding: 0;
+
+      @media only screen and (max-width: 375px) {
+        line-height: 22px;
+      }
     }
 
     a {

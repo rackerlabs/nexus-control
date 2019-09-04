@@ -8,6 +8,10 @@
       width: 100%;
     }
 
+    @media only screen and (min-width: 376px) and (max-width: 600px) {
+      width: 100%;
+    }
+
     form {
       @include display(flex);
       margin-top: 5px !important;
