@@ -441,11 +441,13 @@
 
     .content.inactive {display:none;}
 
+    // middle controls the accordion menu
+
     .middle {
       display: none;
     }
 
-    @media only screen and (max-width: 800px){
+    @media only screen and (max-width: 375px){
 
       .middle {
         position: relative;

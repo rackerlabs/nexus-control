@@ -1,7 +1,4 @@
 // Page Content
-.nine.content {
-    width: 77%; //Temp fix
-}
 
 .content {
     margin-left: 0;
@@ -194,4 +191,18 @@
         -moz-box-sizing: border-box;    /* Firefox, other Gecko */
         box-sizing: border-box;         /* IE 8+ */
     }
+}
+
+@media only screen and (max-width: 375px) {
+
+  .content {
+    border-left: none;
+    padding: 0;
+  }
+  .content ul {
+    margin-left: 0;
+  }
+  .nine.content {
+    max-width: 100%;
+  }
 }
