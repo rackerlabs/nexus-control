@@ -93,6 +93,10 @@ ul {
 .cta {
     text-align: center;
 
+    @media only screen and (max-width: 375px) {
+      display: none;
+    }
+
     h3 {
         font-weight: 400;
         font-size: 28px;
