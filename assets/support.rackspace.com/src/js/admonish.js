@@ -2,7 +2,7 @@
 var $ = require('jquery');
 var _ = require('lodash');
 
-var options = ['note', 'note:', 'warning', 'warning:', 'important', 'important:', 'tip', 'tip:'];
+var options = ['note', 'note:', 'warning', 'warning:', 'important', 'important:', 'tip', 'tip:', 'nota', 'nota:', 'importante', 'importante:'];
 
 function setup() {
   // grab all of the candidate admonishments
@@ -27,6 +27,10 @@ function setup() {
       $(para).addClass('callout-important');
     } else if (type.search(/^tip/) != -1) {
       $(para).addClass('callout-tip');
+    } else if (type.search(/^nota/) != -1) {
+      $(para).addClass('callout-note');
+    } else if (type.search(/^importante/) != -1) {
+      $(para).addClass('callout-important');
     }
   });
 };
