@@ -7,7 +7,7 @@ var markalytics = require('markalytics');
 var setupHomepage = require('./homepage');
 var setupAllArticles = require('./all-articles');
 var setupAdmonish = require('./admonish');
-//var setupHeaderService = require('./raxheaderservice')
+//var setupHeaderService = require('./raxheaderservice') commented out line to test deletion of deprecated file
 
 // kick things off
 
@@ -36,7 +36,7 @@ angular.element(function(){
   }
 
   setupAdmonish();
-  //setupHeaderService();
+  //setupHeaderService(); commented out line to test deletion of deprecated file
 
   //setup the dropdown on the whitepaper site
   $('#topics').change(function() {
