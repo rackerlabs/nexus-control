@@ -16,7 +16,6 @@
   strong,
   ul {
     margin: 0;
-    padding: 0;
     border: 0;
     outline: 0;
     font-size: 100%;
@@ -370,6 +369,11 @@ a {
         font-size: 35px;
         font-weight: 300;
         text-transform: uppercase;
+        padding: 10px 19px 10px 19px;
+
+        @media only screen and (max-width: 375px) {
+          display: none;
+        }
 
         span {
           display: block;
@@ -383,6 +387,7 @@ a {
     #rax-support-search-container {
       float: right;
       width: 580px;
+      padding: 0;
 
       @media only screen and (max-width: 375px) {
         width: 100%;
