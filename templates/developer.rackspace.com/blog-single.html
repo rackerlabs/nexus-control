@@ -18,8 +18,8 @@
 {% block twitterDescription %}{{ twitterDescription|fallback(ogDescription, metaDescription, deconst.content.envelope.body, super())|striptags|truncate(160) }}{% endblock %}
 {% block twitterTitle %}{{ twitterTitle|fallback(ogTitle, metaTitle, super()) }}{% endblock %}
 
-{% set headline = 'Developer Blog' %}
-{% set tagline = 'News and Insights from Rackspace Developers' %}
+{% set headline = 'Technical Blog' %}
+{% set tagline = 'Technical and Product News and Insights from Rackspace' %}
 
 {% block bodyClass %}blog{% endblock %}
 
