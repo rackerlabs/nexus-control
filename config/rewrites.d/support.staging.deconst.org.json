@@ -1430,10 +1430,10 @@
       },
       {
         "description": "Retire Rackspace referral program",
-        "from": "^\\/how-to\\//rackspace-referral-program(.*)$",
+        "from": "^\\/how-to\\/rackspace-referral-program(.*)$",
         "to": "/how-to/article-retired/",
         "rewrite": false,
         "status": 301
-      }      
+      }
     ]
 }
