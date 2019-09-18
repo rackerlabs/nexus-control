@@ -3,7 +3,7 @@ var $ = require('jquery');
 
 // Homepage list toggle controls
 var tabs = {
-  'getting-started': '#getting-started, #gs-display',
+  'getting-started': '#gs-ctrl, #gs-display',
   'cloud-hosting': '#cloud-ctrl, #cloud-display',
   'cloud-office': '#office-ctrl, #office-display',
   'dedicated-hosting': '#hosting-ctrl, #hosting-display',
@@ -32,7 +32,7 @@ function setup() {
   }
 
   // add onclick handlers to the tabs
-  $("#getting-started").click(setTabActive.bind(null, 'getting-started', true));
+  $("#gs-ctrl").click(setTabActive.bind(null, 'getting-started', true));
   $("#cloud-ctrl").click(setTabActive.bind(null, 'cloud-hosting', true));
   $("#office-ctrl").click(setTabActive.bind(null, 'cloud-office', true));
   $("#hosting-ctrl").click(setTabActive.bind(null, 'dedicated-hosting', true));
