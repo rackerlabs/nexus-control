@@ -2,10 +2,18 @@
 .nine.content {
     width: 77%; //Temp fix
 }
+@media screen and (max-width: 600px){
 
+  .nine.content {
+    width: 100%;
+  }
+  .content ul {
+    margin-left: 0;
+  }
+}
 .content {
     margin-left: 0;
-    padding: 35px 0 10px 40px;
+    padding: 35px 20px 10px 40px;
     font-family: $font-family-primary;
     color: #474747;
     border-left: 1px solid #ccc;
@@ -155,7 +163,11 @@
         list-style-type: circle;
         list-style-position: outside;
         margin-left: 20px;
-    }
+
+        @media screen and (max-width: 600px){
+          margin-left: 0;
+        }
+      }
 
     code {
         font-family: $font-family-code;

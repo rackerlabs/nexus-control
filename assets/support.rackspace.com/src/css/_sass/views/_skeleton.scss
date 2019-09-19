@@ -21,11 +21,7 @@
 -------------------------------------------------- */
 .container {
     position: relative;
-
-    // width: 100%;
-    // max-width: 980px; -- turned off responsiveness for now
-
-    width: 966px;
+    width: 100%;
     margin: 0 auto;
     box-sizing: border-box;
 }
@@ -65,6 +61,20 @@
 
   // three.columns media queries set the column width and position of the page-sidebar element
   .three.columns                  { width: 22%;            }
+
+  @media screen and (max-width: 600px){
+
+    .three.columns {
+      width: 100%;
+    }
+  }
+
+  @media screen and (min-width: 601px) and (max-width: 980px){
+
+    .three.columns {
+      max-width: 77%;
+    }
+  }
   .four.columns                   { width: 30.6666666667%; }
   .five.columns                   { width: 39.3333333333%; }
   .six.columns                    { width: 48%;            }
@@ -72,23 +82,15 @@
   .eight.columns                  { width: 65.3333333333%; }
   // nine.columns media queries set the column width of the product landing pages and all aritcles pages
 
-  @media screen and (max-width: 375px){
+  @media screen and (max-width: 600px){
 
     .nine.columns {
-      max-width: 30%;
-      float: none;
+      width: 100%;
       text-align: left;
     }
   }
-  @media screen and (min-width: 376px) and (max-width: 700px){
 
-    .nine.columns {
-      max-width: 35%;
-      float: none;
-      text-align: left;
-    }
-  }
-  @media screen and (min-width: 701px) and (max-width: 980px){
+  @media screen and (min-width: 601px) and (max-width: 980px){
 
     .nine.columns {
       max-width: 77%;
