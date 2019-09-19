@@ -1350,6 +1350,13 @@
         "to": "/how-to/article-retired/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "Retire migrate email from google",
+        "from": "^\\/how-to\\/email-migration-from-google(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
       }
     ]
 }
