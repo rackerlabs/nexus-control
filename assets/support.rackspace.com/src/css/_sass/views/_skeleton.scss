@@ -21,9 +21,13 @@
 -------------------------------------------------- */
 .container {
     position: relative;
-    width: 100%;
+    width: 966px;
     margin: 0 auto;
     box-sizing: border-box;
+
+    @media screen and (max-width: 600px){
+        width: 100%;
+    }
 }
 
 .column, .columns {
