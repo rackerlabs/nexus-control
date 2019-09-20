@@ -1,6 +1,6 @@
 .site-header {
     .header-links {
-        background: black;
+        background: white;
         color: white;
         font-size: 11px;
         text-transform: uppercase;
@@ -41,7 +41,7 @@
             overflow: visible;
 
             .portal-links {
-                margin-bottom: 0;
+                margin-bottom: 5px;
                 text-align: right;
             }
 
@@ -50,7 +50,7 @@
             }
 
             @media (min-width: 769px) {
-                padding: 0 35px;
+                padding: 0px;
             }
         }
 
@@ -74,6 +74,20 @@
                     }
                 }
 
+                ul {
+                    display: none;
+                    position: absolute;
+                    right: 0px;
+                    cursor: pointer;
+                    background: @rax-green;
+                    color: white;
+                    border-top: 1px solid black;
+                    border-radius: 3px;
+                    padding-left: 0px;
+                    z-index: 10;
+                    text-align: right;
+                }
+
                 .extra-words {
                     display: none;
 
@@ -84,9 +98,10 @@
             }
 
             & > span, & > a {
-                background: shade(white, 13%);
+                background: #666;
                 border-radius: 3px;
-                color: black;
+                color: white;
+                font-weight: 700;
                 display: inline-block;
                 line-height: 24px;
                 margin: 5px 0 0 5px;
@@ -100,17 +115,15 @@
                 position: absolute;
                 right: 0px;
                 cursor: pointer;
-                background: shade(white, 8%);
+                background: #666;
+                color: white;
                 border-top: 1px solid black;
                 border-radius: 3px;
                 padding-left: 0px;
                 z-index: 10;
-                text-align: left;
+                text-align: right;
             }
             &:hover {
-                span {
-                    background: shade(white, 8%);
-                }
 
                 ul {
                     display: block;
@@ -118,7 +131,7 @@
 
                     li {
                         .open-sans('bold');
-                        color: @text-color;
+                        color: white;
                         display: block;
                         margin: 0;
 
@@ -133,7 +146,7 @@
                         }
 
                         a {
-                            color: black;
+                            color: white;
                             display: block;
                             padding: 4px 6px;
                             text-decoration: none;
@@ -141,10 +154,10 @@
                         }
 
                         &:hover {
-                            background: shade(white, 3%);
+                            background: #737373;
 
                             a {
-                                color: @text-color;
+                                color: color;
                             }
                         }
                     }
