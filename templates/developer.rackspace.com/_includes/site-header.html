@@ -1,11 +1,18 @@
 <header class="site-header">
     <div class="header-links">
         <div class="header-links-container">
-            <div class="phone-chat-links">
+          <div class="phone-chat-links">
             </div>
             <ul class="portal-links">
                 <li class="btn-link sign-up">
-                    <a href="https://cart.rackspace.com/cloud">Sign Up</a>
+                    <span>Buy Now</span>
+                        <ul>
+                          <li><a href="https://cart.rackspace.com/cloud">Rackspace Cloud</a></li>
+                          <li><a href="https://cart.rackspace.com/apps">Email &amp; Apps</a></li>
+                          <li><a href="https://cart.rackspace.com/aws">Fanatical Support for AWS</a></li>
+                          <li><a href="https://cart.rackspace.com/gcp">Managed Google Cloud Platform</a></li>
+                          <li><a href="https://cart.rackspace.com/office365">Office 365</a></li>
+                        </ul>
                 </li>
                 <li class="btn-link">
                    <span>Log In</span>
@@ -19,13 +26,11 @@
             </ul>
         </div>
     </div>
+
     {% include "_includes/header-nav.html" %}
     <div class="header-headline">
         <div class="header-headline-container">
             <{{ headlineTag }}>
-                {% if headlineAccent %}
-                    <span class="headline-accent">{{ headlineAccent }}</span>
-                {% endif %}
                 {% if headline %}
                     {{ headline }}
                 {% endif %}
