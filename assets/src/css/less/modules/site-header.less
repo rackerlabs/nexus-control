@@ -237,8 +237,15 @@
                             background: fadeout(shade(white, 3%), 5%);                       
                         }
                     }
-                    & > ul {
+                    
+                    //should display dropdown when menu item is hovered over
+                    &:hover ul {
                         display: block;
+                    }
+
+                    & > ul {
+                        //display set to none to hide dropdown list
+                        display: none;
                         position: absolute;
                         margin-top: 0;
                         background-color: rgb(201, 198, 193);
