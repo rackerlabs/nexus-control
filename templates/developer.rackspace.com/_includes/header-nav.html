@@ -4,9 +4,9 @@
             <li class="logo">
                 <a href="http://www.rackspace.com/">
                     {% if deconst.env.PRESENTER_DEVMODE == 'true' %}
-                        {% set logoUrl = "https://c0e9a73362c5d06f19d6-b39ff74cb91d713ac1253c5ae00eaccb.ssl.cf1.rackcdn.com/UI/logos/SVG/Rackspace_Logo_wt.svg" %}
+                    {% set logoUrl = "https://c0e9a73362c5d06f19d6-b39ff74cb91d713ac1253c5ae00eaccb.ssl.cf1.rackcdn.com/UI/logos/SVG/Rackspace_Logo_wt.svg" %}
                     {% else %}
-                        {% set logoUrl = "https://c0e9a73362c5d06f19d6-b39ff74cb91d713ac1253c5ae00eaccb.ssl.cf1.rackcdn.com/UI/logos/SVG/Rackspace_Logo_wt.svg" %}
+                    {% set logoUrl = "https://c0e9a73362c5d06f19d6-b39ff74cb91d713ac1253c5ae00eaccb.ssl.cf1.rackcdn.com/UI/logos/SVG/Rackspace_Logo_wt.svg" %}
                     {% endif %}
                     <img src="{{ logoUrl }}" alt="Rackspace Logo" />
                 </a>
@@ -17,15 +17,22 @@
             <li>
                 <a href="/docs/">Developer Documentation</a>
             </li>
-            <li>
-                <a href="/blog/">Technical Blog</a>
+            <li class="header-nav"><a href="#">Blogs &#9660;</a>
+                <ul>
+                    <li>
+                        <a href="/blog/">Technical Blog</a>
+                    </li>
+                    <li>
+                        <a href="https://blog.rackspace.com">Rackspace Blog</a>
+                    </li>
+                </ul>
             </li>
             <li>
                 <a href="https://support.rackspace.com/">Support Documentation</a>
             </li>
             <li class="search">
-              <div data-drc-search-box></div>
-              <div data-drc-search-results></div>
+                <div data-drc-search-box></div>
+                <div data-drc-search-results></div>
             </li>
         </ul>
     </nav>
