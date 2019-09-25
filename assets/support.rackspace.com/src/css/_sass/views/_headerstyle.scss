@@ -474,11 +474,80 @@ a {
       padding: 24px 19px 23px;
       text-align: center;
       text-decoration: none;
-      color: #fff;
+      color: white;
       -moz-transition: all 0.15s linear;
       -webkit-transition: all 0.15s linear;
       transition: all 0.15s linear;
 
+      ul {
+        margin-bottom: 0;
+        padding: 0;
+        width: 100%;
+        list-style-type: none;
+        
+        li {
+          display: inline-block;
+          list-style-type: none;
+          margin: 0;
+          margin-left: -0.25em;
+          position: relative;
+
+          a {
+            display: inline-block;
+            font-size: 12px;
+            line-height: 56px;
+            padding: 0 1em;
+            text-decoration: none;
+            text-transform: uppercase;
+
+            &:hover, &.active {
+                background: white;
+            }
+
+            &.active {
+                background: fadeout(shade(white, 3%), 5%);                       
+            }
+          }
+          
+          //should display dropdown when menu item is hovered over if set to block
+          &:hover ul {
+            background: rgb(243, 216, 216);
+            display: block;
+          }
+
+          ul {
+            //display set to none to hide dropdown list
+            display: none;
+            position: absolute;
+            margin-top: 0;
+            background-color: rgb(201, 198, 193);
+            text-decoration: none;
+            list-style-type: none;
+            padding: 10px;
+            border-radius: 0px 0px 4px 4px;
+
+            li { 
+              width: 220px;
+              border-radius: 4px;
+
+              a {
+                color: rgb(103, 103, 129);
+                font-size: 14px;
+                line-height: 25px;
+                text-decoration: none;
+                text-transform: uppercase;
+                list-style-type: none;
+
+                &:hover {
+                  background: rgb(243, 216, 216);
+                  display: block;                                    
+                }
+              }
+            }
+          }
+        }
+      }
+      
       @media only screen and (max-width: 375px) {
         display: block;
         padding: 13px 4px;

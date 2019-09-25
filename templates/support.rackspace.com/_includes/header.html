@@ -12,16 +12,16 @@
 <div id='rax-support-header'>
     <div id='rax-eyebrow-wrapper'>
         <div id='rax-eyebrow-container' class='rax-clearfix'>
-          <a class='rax-logo' href='https://www.rackspace.com'></a>
+            <a class='rax-logo' href='https://www.rackspace.com'></a>
             <div id='rax-eyebrow-login' class='rax-dropdown-menu'>
                 <ul>
                     <li>
                         <span class='rax-btn'>Log In</span>
                         <ul>
-                           <li><a href="https://my.rackspace.com/portal/auth/login">MyRackspace Portal</a></li>
-                           <li><a href="https://mycloud.rackspace.com">Cloud Control Panel</a></li>
-                           <li><a href="https://apps.rackspace.com">Rackspace Webmail Login</a></li>
-                           <li><a href="https://cp.rackspace.com">Cloud Office Control Panel</a></li>
+                            <li><a href="https://my.rackspace.com/portal/auth/login">MyRackspace Portal</a></li>
+                            <li><a href="https://mycloud.rackspace.com">Cloud Control Panel</a></li>
+                            <li><a href="https://apps.rackspace.com">Rackspace Webmail Login</a></li>
+                            <li><a href="https://cp.rackspace.com">Cloud Office Control Panel</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -30,13 +30,13 @@
                 <ul>
                     <li>
                         <span class='rax-btn'>Buy Now</span>
-                       <ul>
-                           <li><a href="https://cart.rackspace.com/cloud">Rackspace Cloud</a></li>
-                           <li><a href="https://cart.rackspace.com/apps">Email &amp; Apps</a></li>
-                           <li><a href="https://cart.rackspace.com/aws">Fanatical Support for AWS</a></li>
-                           <li><a href="https://cart.rackspace.com/gcp">Managed Google Cloud Platform</a></li>
-                           <li><a href="https://cart.rackspace.com/office365">Office 365</a></li>
-                       </ul>
+                        <ul>
+                            <li><a href="https://cart.rackspace.com/cloud">Rackspace Cloud</a></li>
+                            <li><a href="https://cart.rackspace.com/apps">Email &amp; Apps</a></li>
+                            <li><a href="https://cart.rackspace.com/aws">Fanatical Support for AWS</a></li>
+                            <li><a href="https://cart.rackspace.com/gcp">Managed Google Cloud Platform</a></li>
+                            <li><a href="https://cart.rackspace.com/office365">Office 365</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
@@ -46,9 +46,23 @@
         </div>
     </div>
     <div id='rax-support-nav-wrapper'>
-       <div id='rax-support-nav-container'>
+        <div id='rax-support-nav-container'>
             <nav id='nav-global'>
-                <a class="rax-logo" href='https://www.rackspace.com'>Rackspace</a><a id='raxhs-support' class="raxhs-tab {% if deconst.request.path.match('^/$') %}active{% endif %}" href='https://support.rackspace.com'>Support Home</a><a id='raxhs-how-to' class="raxhs-tab {% if deconst.request.path.match('how-to/?') %}active{% endif %}" href='https://support.rackspace.com/how-to/'>How-To</a><a id='raxhs-api' class='raxhs-tab' href='https://developer.rackspace.com/docs'>Developer Documentation</a><a id='raxhs-developer' class='raxhs-tab' href='https://developer.rackspace.com/blog/'>Technical Blog</a>
+                <a class="rax-logo" href='https://www.rackspace.com'>Rackspace</a>
+                <a id='raxhs-support' {% if deconst.request.path.match('^/$') %}active{% endif %}"
+                    href='https://support.rackspace.com'>Support Home</a>
+                <a id='raxhs-how-to' {% if deconst.request.path.match('how-to/?') %}active{% endif %}"
+                    href='https://support.rackspace.com/how-to/'>How-To</a>
+                <a id='raxhs-api' href='https://developer.rackspace.com/docs'>Developer Documentation</a>
+                <a href="#">Blogs &#9660;</a>
+                <ul>
+                    <li>
+                        <a href="https://developer.rackspace.com/blog/">Technical Blog</a>
+                    </li>
+                    <li>
+                        <a href="https://blog.rackspace.com">Thought-leadership Blog</a>
+                    </li>
+                </ul>
             </nav>
         </div>
     </div>
@@ -61,10 +75,11 @@
                     </aside>
                 </a>
                 <div class="search">
-                  {% if deconst.request.path.match('search/?') %}
+                    {% if deconst.request.path.match('search/?') %}
                     {% set pageType = "search" %}
-                  {% endif %}
-                  <div data-src-search-box {% if pageType == "search" %}data-load-initial="1" data-focus="1"{% endif %}></div>
+                    {% endif %}
+                    <div data-src-search-box {% if pageType == "search" %}data-load-initial="1" data-focus="1"
+                        {% endif %}></div>
                 </div>
             </div>
         </div>
