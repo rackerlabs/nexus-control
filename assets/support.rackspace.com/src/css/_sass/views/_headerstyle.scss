@@ -472,7 +472,7 @@ a {
     display: inline-block;
 
     ul {
-
+      //display: inline;
 
       li {
         list-style: none;
@@ -498,7 +498,7 @@ a {
         ul {
           display: none;
           position: absolute;
-          background-color: white;
+          background-color: rgb(104, 101, 101) ;
           padding: 5px;
           border-radius: 0px 0px 4px 4px;
           
@@ -508,12 +508,12 @@ a {
 
             a {
               padding: 8px 14px;
-              color: red;
+              color: white;
               padding: 10px;
 
               &:hover, &.active {
-                background: black;
-            }
+                background: rgb(122, 121, 121);
+              }
             }
           }
         }
