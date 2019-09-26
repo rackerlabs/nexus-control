@@ -80,10 +80,11 @@
                   white-space: nowrap;
                   width: 35%;
                   float: left;
+                  text-align: center;
 
 
                     &:hover {
-                        background: #499917;
+                        background: #3498DB;
                         color: #fff;
                     }
                 }
@@ -98,9 +99,10 @@
                   white-space: nowrap;
                   width: 35%;
                   float: right;
+                  text-align: center;
 
                     &:hover {
-                        background: #499917;
+                        background: #3498DB;
                         color: #fff;
                     }
                 }
