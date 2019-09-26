@@ -499,11 +499,11 @@ a {
           display: none;
           position: absolute;
           background-color: white;
-          padding: 10px;
+          padding: 5px;
           border-radius: 0px 0px 4px 4px;
           
           li {
-            width: 140px;
+            width: 130px;
             border-radius: 4px;
 
             a {
@@ -557,43 +557,6 @@ a {
 
             &.active {
                 background: fadeout(shade(white, 3%), 5%);                       
-            }
-          }
-          
-          //should display dropdown when menu item is hovered over if set to block
-          &:hover ul {
-            background: rgb(243, 216, 216);
-            display: block;
-          }
-
-          ul {
-            //display set to none to hide dropdown list
-            display: none;
-            position: absolute;
-            margin-top: 0;
-            background-color: rgb(201, 198, 193);
-            text-decoration: none;
-            list-style-type: none;
-            padding: 10px;
-            border-radius: 0px 0px 4px 4px;
-
-            li { 
-              width: 220px;
-              border-radius: 4px;
-
-              a {
-                color: rgb(103, 103, 129);
-                font-size: 14px;
-                line-height: 25px;
-                text-decoration: none;
-                text-transform: uppercase;
-                list-style-type: none;
-
-                &:hover {
-                  background: rgb(243, 216, 216);
-                  display: block;                                    
-                }
-              }
             }
           }
         }
