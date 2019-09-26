@@ -1,3 +1,4 @@
+
 /* START Header Reset -- based on http://meyerweb.com/eric/tools/css/reset/ v2.0b1 | 201101 */
 #rax-support-header {
   line-height: 1;
@@ -468,7 +469,56 @@ a {
     text-transform: uppercase;
     font-weight: 600;
     font-size: 13px;
+    display: inline-block;
 
+    ul {
+
+
+      li {
+        list-style: none;
+        float: left;
+        position: relative;
+      
+        //a copied from a section below
+        a {
+          display: inline-block;
+          padding: 24px 19px 23px;
+          text-align: center;
+          text-decoration: none;
+          color: white;
+          -moz-transition: all 0.15s linear;
+          -webkit-transition: all 0.15s linear;
+          transition: all 0.15s linear;
+        }
+        
+        &:hover ul{
+          display:block;
+        }
+
+        ul {
+          display: none;
+          position: absolute;
+          background-color: white;
+          padding: 10px;
+          border-radius: 0px 0px 4px 4px;
+          
+          li {
+            width: 140px;
+            border-radius: 4px;
+
+            a {
+              padding: 8px 14px;
+              color: red;
+              padding: 10px;
+
+              &:hover, &.active {
+                background: black;
+            }
+            }
+          }
+        }
+      }
+    }
     a {
       display: inline-block;
       padding: 24px 19px 23px;
@@ -484,6 +534,7 @@ a {
         padding: 0;
         width: 100%;
         list-style-type: none;
+        float: left;
         
         li {
           display: inline-block;
