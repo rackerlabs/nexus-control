@@ -476,8 +476,15 @@ a {
 
       li {
         list-style: none;
-        float: left;
+        //float: left;
         position: relative;
+        z-index: 9999;
+        display: inline-block;
+
+        @media only screen and (max-width: 600px) {
+          display: block;
+          padding: 13px 4px;
+        }
       
         //a copied from a section below
         a {
@@ -489,6 +496,11 @@ a {
           -moz-transition: all 0.15s linear;
           -webkit-transition: all 0.15s linear;
           transition: all 0.15s linear;
+
+          @media only screen and (max-width: 600px) {
+            display: block;
+            padding: 13px 4px;
+          }
         }
         
         &:hover ul{
@@ -529,6 +541,11 @@ a {
       -webkit-transition: all 0.15s linear;
       transition: all 0.15s linear;
 
+      @media only screen and (max-width: 600px) {
+        display: block;
+        padding: 13px 4px;
+      }
+
       ul {
         margin-bottom: 0;
         padding: 0;
@@ -543,6 +560,10 @@ a {
           margin-left: -0.25em;
           position: relative;
 
+          @media only screen and (max-width: 600px) {
+            display: block;
+          }
+
           a {
             display: inline-block;
             font-size: 12px;
@@ -550,6 +571,10 @@ a {
             padding: 0 1em;
             text-decoration: none;
             text-transform: uppercase;
+
+            @media only screen and (max-width: 600px) {
+              display: block;
+            }
 
             &:hover, &.active {
                 background: white;
