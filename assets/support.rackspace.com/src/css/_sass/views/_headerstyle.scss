@@ -214,7 +214,7 @@ a {
         background-repeat: no-repeat;
         background-position: center;
         text-indent: -9999px;
-        width: 27%;
+        //width: 27%;
         background-size: 90%;
         background-color: $color-brand;
 
@@ -297,7 +297,7 @@ a {
           border-radius: 3px;
           color: #fff;
 
-          &:hover {}
+         // &:hover {}
         }
 
         > ul > li > ul {
@@ -534,7 +534,7 @@ a {
           }
         }
       }
-    
+    }
     a {
       display: inline-block;
       padding: 24px 19px 23px;
@@ -869,6 +869,7 @@ ul.ui-autocomplete {
   width: 1px;
 }
 // END #rax-support-header
+
 @-moz-document url-prefix() {
   #rax-support-header #rax-eyebrow-container .rax-dropdown-menu > ul > li > ul {
     top: 22px;
