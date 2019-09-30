@@ -32,6 +32,7 @@ a.front-link {
     text-decoration: none;
     .caret {
       color: #1E82D7;
+      padding-left: 6px;
     }
   }
   &:hover {
@@ -39,7 +40,7 @@ a.front-link {
     color: #fff;
     .caret {
       color: #fff;
-      padding-left: 8px;
+      padding-left: 10px;
     }
   }
 }
@@ -64,6 +65,7 @@ a.first-links {
     text-decoration: none;
     .caret {
       color: #1E82D7;
+      padding-left: 6px;
     }
   }
   &:hover {
@@ -71,7 +73,7 @@ a.first-links {
     color: #fff;
     .caret {
       color: #fff;
-      padding-left: 8px;
+      padding-left: 10px;
     }
   }
 }
