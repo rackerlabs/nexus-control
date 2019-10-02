@@ -1,3 +1,4 @@
+
 /* START Header Reset -- based on http://meyerweb.com/eric/tools/css/reset/ v2.0b1 | 201101 */
 #rax-support-header {
   line-height: 1;
@@ -213,7 +214,7 @@ a {
         background-repeat: no-repeat;
         background-position: center;
         text-indent: -9999px;
-        width: 27%;
+        //width: 27%;
         background-size: 90%;
         background-color: $color-brand;
 
@@ -296,7 +297,7 @@ a {
           border-radius: 3px;
           color: #fff;
 
-          &:hover {}
+         // &:hover {}
         }
 
         > ul > li > ul {
@@ -468,17 +469,128 @@ a {
     text-transform: uppercase;
     font-weight: 600;
     font-size: 13px;
+    display: inline-block;
 
+    ul {
+      //display: inline;
+
+      li {
+        list-style: none;
+        //float: left;
+        position: relative;
+        z-index: 9999;
+        display: inline-block;
+
+        @media only screen and (max-width: 600px) {
+          display: block;
+        }
+      
+        //a copied from a section below
+        a {
+          display: inline-block;
+          padding: 24px 19px 23px;
+          text-align: center;
+          text-decoration: none;
+          color: white;
+          -moz-transition: all 0.15s linear;
+          -webkit-transition: all 0.15s linear;
+          transition: all 0.15s linear;
+
+          @media only screen and (max-width: 600px) {
+            display: block;
+            padding: 13px 4px;
+          }
+        }
+        
+        &:hover ul{
+          display:block;
+        }
+
+        ul {
+          display: none;
+          position: absolute;
+          background-color: rgb(104, 101, 101) ;
+          padding: 5px;
+          border-radius: 0px 0px 4px 4px;
+          width: 225px;
+          
+          @media only screen and (max-width: 600px) {
+            width: 100%;
+          }
+          
+          li {
+            width: 100%;
+            border-radius: 4px;
+            position: relative;
+
+            a {
+              padding: 8px 14px;
+              color: white;
+
+              &:hover, &.active {
+                background: rgb(122, 121, 121);
+              }
+            }
+          }
+        }
+      }
+    }
     a {
       display: inline-block;
       padding: 24px 19px 23px;
       text-align: center;
       text-decoration: none;
-      color: #fff;
+      color: white;
       -moz-transition: all 0.15s linear;
       -webkit-transition: all 0.15s linear;
       transition: all 0.15s linear;
 
+      @media only screen and (max-width: 600px) {
+        display: block;
+        padding: 13px 4px;
+      }
+
+      ul {
+        margin-bottom: 0;
+        padding: 0;
+        width: 100%;
+        list-style: none;
+        float: left;
+        
+        li {
+          display: inline-block;
+          list-style: none;
+          margin: 0;
+          margin-left: -0.25em;
+          position: relative;
+
+          @media only screen and (max-width: 600px) {
+            display: block;
+          }
+
+          a {
+            display: inline-block;
+            font-size: 12px;
+            line-height: 56px;
+            padding: 0 1em;
+            text-decoration: none;
+            text-transform: uppercase;
+
+            @media only screen and (max-width: 600px) {
+              display: block;
+            }
+
+            &:hover, &.active {
+                background: white;
+            }
+
+            &.active {
+                background: fadeout(shade(white, 3%), 5%);                       
+            }
+          }
+        }
+      }
+      
       @media only screen and (max-width: 375px) {
         display: block;
         padding: 13px 4px;
@@ -757,6 +869,7 @@ ul.ui-autocomplete {
   width: 1px;
 }
 // END #rax-support-header
+
 @-moz-document url-prefix() {
   #rax-support-header #rax-eyebrow-container .rax-dropdown-menu > ul > li > ul {
     top: 22px;
