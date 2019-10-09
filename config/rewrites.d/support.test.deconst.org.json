@@ -1439,6 +1439,13 @@
         "to": "/how-to/article-retired/",
         "rewrite": false,
         "status": 301
+      },
+      {
+        "description": "Retire Basic cloud server use scenarios",
+        "from": "^\\/how-to\\/basic-cloud-server-use-scenarios(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
       }
    ]
 }
