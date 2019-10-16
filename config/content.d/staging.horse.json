@@ -2,7 +2,8 @@
   "staging.horse": {
     "content": {
       "/docs/private-cloud/rpc/master/": "https://github.com/rcbops/privatecloud-docs/master/",
-      "/docs/private-cloud/release-notes/": "https://github.com/rcbops/rpc-openstack/master/"
+      "/docs/private-cloud/release-notes/": "https://github.com/rcbops/rpc-openstack/master/",
+      "/docs/docs-aws/master/": "https://github.com/rackerlabs/docs-aws/master/",
     }
   }
 }
