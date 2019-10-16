@@ -3,6 +3,7 @@
     "content": {
       "/": "https://github.com/rackerlabs/docs-developer-blog/staging/",
       "/docs/": "https://github.com/rackerlabs/docs-quickstart/staging/",
+      "/docs/aws/": "https://github.com/rackerlabs/docs-aws/staging/",
       "/docs/user-guides/infrastructure/": "https://github.com/rackerlabs/docs-core-infra-user-guide/staging/",
       "/docs/user-guides/orchestration/": "https://github.com/rackerlabs/rs-heat-docs/staging/",
       "/docs/rack-cli/": "https://github.com/rackspace/rack/staging/",
@@ -32,7 +33,7 @@
       "/docs/private-cloud/rpc/v14/": "https://github.com/rcbops/privatecloud-docs/v14/staging/",
       "/docs/private-cloud/rpc/v13/": "https://github.com/rcbops/privatecloud-docs/v13/staging/",
       "/docs/private-cloud/rpc/v12/": "https://github.com/rcbops/privatecloud-docs/v12/staging/",
-      "/docs/private-cloud/rpc/master/": "https://github.com/rcbops/privatecloud-docs/master/staging/",      
+      "/docs/private-cloud/rpc/master/": "https://github.com/rcbops/privatecloud-docs/master/staging/",
       "/docs/private-cloud/release-notes/": "https://github.com/rcbops/rpc-openstack/master/staging/",
       "/docs/ras-databases/": "https://github.com/rackerlabs/docs-ras-databases/staging/",
       "/docs/rkaas/v1.1.x/": "https://github.com/rackerlabs/kaas/1.1.x/staging/",
