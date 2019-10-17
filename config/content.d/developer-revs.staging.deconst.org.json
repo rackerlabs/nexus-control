@@ -3,7 +3,7 @@
     "content": {
       "/": "https://github.com/rackerlabs/docs-developer-blog/staging-revs/",
       "/docs/": "https://github.com/rackerlabs/docs-quickstart/staging-revs/",
-      "/docs/aws/": "https://github.com/rackerlabs/docs-aws/staging-revs/",
+      "/docs/fanatical-support-aws/": "https://github.com/rackerlabs/docs-aws/staging-revs/",
       "/docs/user-guides/infrastructure/": "https://github.com/rackerlabs/docs-core-infra-user-guide/staging-revs/",
       "/docs/user-guides/orchestration/": "https://github.com/rackerlabs/rs-heat-docs/staging-revs/",
       "/docs/rack-cli/": "https://github.com/rackspace/rack/staging-revs/",

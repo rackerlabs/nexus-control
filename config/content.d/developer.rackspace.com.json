@@ -3,7 +3,7 @@
     "content": {
       "/": "https://github.com/rackerlabs/docs-developer-blog/prod/",
       "/docs/": "https://github.com/rackerlabs/docs-quickstart/prod/",
-      "/docs/aws/": "https://github.com/rackerlabs/docs-aws/prod/",
+      "/docs/fanatical-support-aws/": "https://github.com/rackerlabs/docs-aws/prod/",
       "/docs/user-guides/infrastructure/": "https://github.com/rackerlabs/docs-core-infra-user-guide/prod/",
       "/docs/user-guides/orchestration/": "https://github.com/rackerlabs/rs-heat-docs/prod/",
       "/docs/rack-cli/": "https://github.com/rackspace/rack/prod/",
