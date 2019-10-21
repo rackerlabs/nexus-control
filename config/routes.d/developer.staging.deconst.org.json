@@ -52,7 +52,7 @@
       "^/docs/offerings/": "developer.rackspace.com/user-guide.html",
       "^/docs/customer-service/v1/": "developer.rackspace.com/user-guide.html",
       "^/docs/billing-apiguide/v2/": "developer.rackspace.com/user-guide.html",
-      "^/docs/fanatical-support-aws/": "user-guide.html",
+      "^/docs/fanatical-support-aws/": "developer.rackspace.com/user-guide.html",
       "^/sdks": "developer.rackspace.com/sdks-home.html",
       "^/sdks/.+?": "developer.rackspace.com/sdks-page.html",
       "\\.xml$": "developer.rackspace.com/feed.xml",
