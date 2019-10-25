@@ -1,5 +1,12 @@
 h2.front-page-heading {
   text-align: center;
+  font-weight: 400;
+  color: #666;
+  font-size: 26px;
+  line-height: 18px;
+  padding-bottom: 10px;
+  padding-top: 30px;
+  margin: 0px 0 25px 0;
 }
 p.front-blurb {
   text-align: center;
@@ -20,10 +27,12 @@ a.front-link {
   width: 90%;
   &:link {
     text-align: center;
+    font-size: 1.2em;
     color: #1E82D7;
     text-decoration: none;
     .caret {
       color: #1E82D7;
+      padding-left: 6px;
     }
   }
   &:hover {
@@ -31,7 +40,40 @@ a.front-link {
     color: #fff;
     .caret {
       color: #fff;
-      padding-left: 8px;
+      padding-left: 10px;
+    }
+  }
+}
+// top-links and first-links allow you to customize the styling of the top two
+// buttons on support.rackspace.com landing page
+div.top-links {
+  height: 70px;
+  margin: 20px 0;
+  display: flex;
+}
+
+a.first-links {
+  display: inline-block;
+  border: 1px solid #1E82D7;
+  padding: 20px 35px;
+  position: relative;
+  width: 90%;
+  &:link {
+    text-align: center;
+    font-size: 1.2em;
+    color: #1E82D7;
+    text-decoration: none;
+    .caret {
+      color: #1E82D7;
+      padding-left: 6px;
+    }
+  }
+  &:hover {
+    background: #1E82D7;
+    color: #fff;
+    .caret {
+      color: #fff;
+      padding-left: 10px;
     }
   }
 }
