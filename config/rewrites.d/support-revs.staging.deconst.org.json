@@ -1381,7 +1381,7 @@
       },
       {
          "description": "Configure a renamed email address on Windows phones",
-         "from": "^\\/how-to\\//configure-a-renamed-email-address-on-windows-phones(.*)$",
+         "from": "^\\/how-to\\/configure-a-renamed-email-address-on-windows-phones(.*)$",
          "to": "/how-to/article-retired/",
          "rewrite": false,
          "status": 301
