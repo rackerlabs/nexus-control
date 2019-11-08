@@ -1462,6 +1462,34 @@
         "to": "/how-to/article-retired/",
         "rewrite": false,
         "status": 301
+      },
+      {
+         "description": "Configure a renamed email address on Windows phones",
+         "from": "^\\/how-to\\/configure-a-renamed-email-address-on-windows-phones(.*)$",
+         "to": "/how-to/article-retired/",
+         "rewrite": false,
+         "status": 301
+      },
+      {
+         "description": "SDK errors due to an outdated certificate authority list on Open Cloud",
+         "from": "^\\/how-to\\/php-opencloud-sdk-errors-due-to-outdated-certificate-authority-list(.*)$",
+         "to": "/how-to/article-retired/",
+         "rewrite": false,
+         "status": 301
+      },
+      {
+         "description": "Build a new Cloud Server with automatic updates enabled",
+         "from": "^\\/how-to\\/build-a-new-cloud-server-with-automatic-updates-enabled(.*)$",
+         "to": "/how-to/article-retired/",
+         "rewrite": false,
+         "status": 301
+      },
+      {
+         "description": "Create an email archive login message",
+         "from": "^\\/how-to\\/create-an-email-archive-login-message(.*)$",
+         "to": "/how-to/article-retired/",
+         "rewrite": false,
+         "status": 301
       }
     ]
 }
