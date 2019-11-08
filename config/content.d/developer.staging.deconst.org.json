@@ -61,6 +61,7 @@
       "/docs/style-guide/": "https://github.com/rackerlabs/docs-style-guide/staging/",
       "/docs/docs-starter-kit-external/": "https://github.com/rackerlabs/docs-starter-kit-external/staging/",
       "/docs/microsoft-hyper-v/hyper-v-handbook/": "https://github.com/rackerlabs/mpc-hyper-v/hyper-v-handbook/staging/",
+      "/docs/service-blocks/": "https://github.com/rackerlabs/docs-service-blocks/staging/",
       "/search/": null
     },
     "proxy": {
