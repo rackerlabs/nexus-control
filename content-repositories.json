@@ -2,6 +2,7 @@
   { "kind": "github", "project": "rackerlabs/docs-developer-blog" },
   { "kind": "github", "project": "rackerlabs/docs-quickstart" },
   { "kind": "github", "project": "rackerlabs/rpc-vmware" },
+  { "kind": "github", "project": "rackerlabs/docs-aws" },
   { "kind": "github", "project": "rackerlabs/docs-redhat-osp" },
   { "kind": "github", "project": "rcbops/privatecloud-docs", "branches": ["master", "v12", "v13", "v14", "v16", "v17"] },
   { "kind": "github", "project": "rcbops/rpc-openstack", "branches": ["master", "mitaka-13.0"] },
