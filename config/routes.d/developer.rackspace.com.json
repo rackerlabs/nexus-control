@@ -53,6 +53,7 @@
       "^/docs/customer-service/v1/": "user-guide.html",
       "^/docs/billing-apiguide/v2/": "user-guide.html",
       "^/docs/fanatical-support-aws/": "user-guide.html",
+      "^/docs/service-blocks/": "user-guide.html",
       "^/sdks": "sdks-home.html",
       "^/sdks/.+?": "sdks-page.html",
       "\\.xml$": "feed.xml",
