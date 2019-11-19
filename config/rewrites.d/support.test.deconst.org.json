@@ -9,8 +9,8 @@
       },
       {
         "description": "Install Apache and PHP on CentOS 7",
-        "from": "^\\/how-to\\/centos-7-apache-and-php-install(.*)$",
-        "to": "/how-to/centos-6-apache-and-php-install/",
+        "from": "^\\/how-to\\/centos-6-apache-and-php-install(.*)$",
+        "to": "/how-to/centos-7-apache-and-php-install/",
         "rewrite": false,
         "status": 301
       },
