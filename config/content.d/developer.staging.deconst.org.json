@@ -4,6 +4,7 @@
       "/": "https://github.com/rackerlabs/docs-developer-blog/staging/",
       "/docs/": "https://github.com/rackerlabs/docs-quickstart/staging/",
       "/docs/fanatical-support-aws/": "https://github.com/rackerlabs/docs-aws/staging/",
+      "/docs/fanatical-support-gcp/": "https://github.com/rackerlabs/docs-gcp/staging/",
       "/docs/user-guides/infrastructure/": "https://github.com/rackerlabs/docs-core-infra-user-guide/staging/",
       "/docs/user-guides/orchestration/": "https://github.com/rackerlabs/rs-heat-docs/staging/",
       "/docs/rack-cli/": "https://github.com/rackspace/rack/staging/",
