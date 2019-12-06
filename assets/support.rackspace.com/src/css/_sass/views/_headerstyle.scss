@@ -471,6 +471,14 @@ a {
     font-size: 13px;
     display: inline-block;
 
+    @media only screen and (max-width: 600px) {
+      width: 100%;
+      float: none;
+      display: block;
+    }
+
+
+
     ul {
       //display: inline;
 
@@ -484,7 +492,7 @@ a {
         @media only screen and (max-width: 600px) {
           display: block;
         }
-      
+
         //a copied from a section below
         a {
           display: inline-block;
@@ -501,7 +509,7 @@ a {
             padding: 13px 4px;
           }
         }
-        
+
         &:hover ul{
           display:block;
         }
@@ -513,11 +521,11 @@ a {
           padding: 5px;
           border-radius: 0px 0px 4px 4px;
           width: 225px;
-          
+
           @media only screen and (max-width: 600px) {
             width: 100%;
           }
-          
+
           li {
             width: 100%;
             border-radius: 4px;
@@ -556,7 +564,7 @@ a {
         width: 100%;
         list-style: none;
         float: left;
-        
+
         li {
           display: inline-block;
           list-style: none;
@@ -585,12 +593,12 @@ a {
             }
 
             &.active {
-                background: fadeout(shade(white, 3%), 5%);                       
+                background: fadeout(shade(white, 3%), 5%);
             }
           }
         }
       }
-      
+
       @media only screen and (max-width: 375px) {
         display: block;
         padding: 13px 4px;
