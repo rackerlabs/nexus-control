@@ -101,6 +101,27 @@
             i {margin-right: 10px;}
         }
     }
+    .button-cart {
+        a {
+            display: block;
+            border: 1px solid $color-kcblue;
+            padding: 12px 35px;
+            margin-bottom: 35px;
+            white-space: nowrap;
+            font-weight: 600;
+            text-align: center;
+            background-color: #5aaa28;
+            color: #fff;
+
+            &:hover {
+                background: $color-kcblue;
+                color: #fff;
+                text-decoration: none;
+            }
+
+            i {margin-right: 10px;}
+        }
+    }
 }
 .hamburger {
   font-size: 26px;
@@ -177,6 +198,10 @@
     display: none;
   }
 
+  .button-cart {
+    display: none;
+  }
+
   .sidebar h3 {
     font-size: 1.5em;
     margin: 25px 0px 25px 10px;
@@ -216,6 +241,10 @@
   }
 
   .button-wp {
+    display: none;
+  }
+
+  .button-cart {
     display: none;
   }
 
