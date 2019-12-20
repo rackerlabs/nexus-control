@@ -1434,6 +1434,41 @@
          "to": "/how-to/article-retired/",
          "rewrite": false,
          "status": 301
+      },
+      {
+         "description": "Use Holland and Cloud Backup to back up databases with Ubuntu",
+         "from": "^\\/how-to\\/use-holland-and-cloud-backup-to-backup-databases-with-ubuntu(.*)$",
+         "to": "/how-to/use-holland-and-cloud-backup-to-back-up-mysql-databases/",
+         "rewrite": false,
+         "status": 301
+      },
+      {
+         "description": "Configure Apache on Ubuntu",
+         "from": "^\\/how-to\\/apache-configuration-on-ubuntu(.*)$",
+         "to": "/how-to/configure-apache-on-the-ubuntu-operating-system/",
+         "rewrite": false,
+         "status": 301
+      },
+      {
+         "description": "Configure MySQL server on Ubuntu",
+         "from": "^\\/how-to\\/configuring-mysql-server-on-ubuntu(.*)$",
+         "to": "/how-to/configure-mysql-server-on-the-ubuntu-operating-system/",
+         "rewrite": false,
+         "status": 301
+      },
+      {
+         "description": "Install MySQL server on Ubuntu",
+         "from": "^\\/how-to\\/installing-mysql-server-on-ubuntu(.*)$",
+         "to": "/how-to/install-mysql-server-on-the-ubuntu-operating-system/",
+         "rewrite": false,
+         "status": 301
+      },
+      {
+         "description": "Set up Apache virtual hosts on Ubuntu",
+         "from": "^\\/how-to\\/set-up-apache-virtual-hosts-on-ubuntu(.*)$",
+         "to": "/how-to/set-up-apache-virtual-hosts-on-the-ubuntu-operating-system/",
+         "rewrite": false,
+         "status": 301
       }
     ]
 }
