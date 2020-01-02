@@ -1469,6 +1469,13 @@
          "to": "/how-to/set-up-apache-virtual-hosts-on-the-ubuntu-operating-system/",
          "rewrite": false,
          "status": 301
+      },
+      {
+         "description": "Manually configure BlackBerry Enterprise Service (BES) for email hosted on Exchange",
+         "from": "^\\/how-to\\/manually-configure-blackberry-enterprise-service-bes-for-email-hosted-on-exchange(.*)$",
+         "to": "/how-to/article-retired/",
+         "rewrite": false,
+         "status": 301
       }
     ]
 }
