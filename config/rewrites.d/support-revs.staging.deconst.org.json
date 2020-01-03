@@ -1476,6 +1476,20 @@
          "to": "/how-to/article-retired/",
          "rewrite": false,
          "status": 301
+      },
+      {
+         "description": "Set up BIS (Blackberry Internet Service) with Exchange",
+         "from": "^\\/how-to\\/set-up-bis-blackberry-internet-service-with-exchange(.*)$",
+         "to": "/how-to/article-retired/",
+         "rewrite": false,
+         "status": 301
+      },
+      {
+         "description": "Delete and resend BlackBerry&reg; Service Books - (BES)",
+         "from": "^\\/how-to\\/deleting-and-resending-blackberry-service-books-bes(.*)$",
+         "to": "/how-to/article-retired/",
+         "rewrite": false,
+         "status": 301
       }
     ]
 }
