@@ -1551,6 +1551,20 @@
          "to": "/how-to/article-retired/",
          "rewrite": false,
          "status": 301
+      },
+      {
+         "description": "Set up SFTP users in RHEL 6, CentOS 6, Ubuntu, and Debian",
+         "from": "^\\/how-to\\/set-up-sftp-users-in-rhel-centos-ubuntu-and-debian(.*)$",
+         "to": "/how-to/set-up-sftp-users-in-linux-based-systems/",
+         "rewrite": false,
+         "status": 301
+      },
+      {
+         "description": "Install Mongrel and mongrel clusters on Ubuntu",
+         "from": "^\\/how-to\\/ubuntu-mongrel-and-mongrel-cluster-installation(.*)$",
+         "to": "/how-to/install-mongrel-and-mongrel-clusters-on-the-ubuntu-operating-system/",
+         "rewrite": false,
+         "status": 301
       }
    ]
 }
