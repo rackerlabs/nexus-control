@@ -1458,8 +1458,8 @@
       },
       {
         "description": "Retire Hosted Microsoft Lync at Rackspace deployment guide",
-        "from": "^\\/how-to\\/hosted-microsoft-skype-at-rackspace-deployment-guide/(.*)$",
-        "to": "/how-to/article-retired/",
+        "from": "^\\/how-to\\/hosted-microsoft-lync-at-rackspace-deployment-guide/(.*)$",
+        "to": "/how-to/hosted-microsoft-skype-at-rackspace-deployment-guide/",
         "rewrite": false,
         "status": 301
       },
