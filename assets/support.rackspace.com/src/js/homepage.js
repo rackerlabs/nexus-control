@@ -6,8 +6,7 @@ var tabs = {
   'getting-started': '#gs-ctrl, #gs-display',
   'cloud-hosting': '#cloud-ctrl, #cloud-display',
   'cloud-office': '#office-ctrl, #office-display',
-  'dedicated-hosting': '#hosting-ctrl, #hosting-display',
-  'security': '#security-ctrl, #security-display'
+  'private-cloud': '#rpc-ctrl, #rpc-display'
 };
 
 // set the specified tab as active
@@ -35,8 +34,7 @@ function setup() {
   $("#gs-ctrl").click(setTabActive.bind(null, 'getting-started', true));
   $("#cloud-ctrl").click(setTabActive.bind(null, 'cloud-hosting', true));
   $("#office-ctrl").click(setTabActive.bind(null, 'cloud-office', true));
-  $("#hosting-ctrl").click(setTabActive.bind(null, 'dedicated-hosting', true));
-  $("#security-ctrl").click(setTabActive.bind(null, 'security', true));
+  $("#rpc-ctrl").click(setTabActive.bind(null, 'private-cloud', true));
 };
 
 module.exports = setup;
