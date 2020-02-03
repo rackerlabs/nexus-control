@@ -51,6 +51,33 @@ a {
     &:visited {
         color: @link-color;
     }
+
+    &.cta {
+    border-radius: 1px;
+    display: inline-block;
+    padding: 1em 3em;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    .transition(background 0.1s ease-in-out);
+
+      &.red {
+        background: @cta-red;
+      }
+
+      &.blue {
+        background: @cta-blue;
+      }
+
+      &.purple {
+        background: @cta-purple;
+      }
+
+      &.teal {
+        background: @cta-teal;
+      }
+
+    }
 }
 
 p {
