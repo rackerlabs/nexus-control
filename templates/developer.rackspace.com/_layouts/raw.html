@@ -15,6 +15,10 @@
         <meta name="twitter:creator" content="{% block twitterCreator %}@rackspace{% endblock %}">
         <meta name="twitter:site" content="@rackspace">
 
+        {% if deconst.content.envelope.categories.length > 0 %}
+        <meta name="categories" content="{{ deconst.content.envelope.categories | join(',') }}" />
+        {% endif %}
+
         <meta name="google-site-verification" content="-mqrRO0re82bACL147Jd8LJIAQ2JtzxoezhwMMJbS2s" />
         {% if deconst.env.PRESENTER_DEVMODE == 'true' %}
             {% set cssUrl = '/assets/src/css/main.css' %}
