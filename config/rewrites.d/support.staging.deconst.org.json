@@ -593,6 +593,20 @@
         "status": 301
       },
       {
+        "description": "Redirect support.rackspace.com/how-to/delete-a-server/ URL to how-to/article-retired/ ",
+        "from": "^\\/how-to\\/delete-a-server(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
+        "description": "Redirect support.rackspace.com/how-to/close-your-rackspace-account/ URL to how-to/article-retired/ ",
+        "from": "^\\/how-to\\/close-your-rackspace-account(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
         "description": "Rackconnect Power users guide",
         "from": "^\\/how-to\\/rackconnect-power-users-guide(.*)$",
         "to": "/how-to/article-retired/",
