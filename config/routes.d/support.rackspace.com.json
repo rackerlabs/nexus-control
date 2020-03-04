@@ -2,6 +2,8 @@
     "support.rackspace.com": {
       "routes": {
         "^/": "deferred.html",
+        "\\.xml$": "feed.xml",
+        "\\.txt$": "robots.txt",
         "^/how-to/$": "home.html",
         "^/how-to/.+?": "article.html",
         "^/how-to/cloud-servers/$": "product.html",
