@@ -2,6 +2,8 @@
     "support.staging.deconst.org": {
       "routes": {
         "^/": "support.rackspace.com/deferred.html",
+        "\\.xml$": "feed.xml",
+        "\\.txt$": "robots.txt",
         "^/how-to/$": "support.rackspace.com/home.html",
         "^/how-to/.+?": "support.rackspace.com/article.html",
         "^/how-to/cloud-servers/$": "support.rackspace.com/product.html",
