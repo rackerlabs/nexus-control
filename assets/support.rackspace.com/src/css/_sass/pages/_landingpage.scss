@@ -77,3 +77,25 @@ a.first-links {
     }
   }
 }
+div.campaign-link {
+  height: 70px;
+  margin: 20px 0;
+  padding-left: 20%;
+}
+a.gcp-campaign {
+  display: inline-block;
+  border: 1px solid #1E82D7;
+  padding: 20px 35px;
+  position: relative;
+  width: 60%;
+  &:link {
+    text-align: center;
+    font-size: 1.2em;
+    color: #1E82D7;
+    text-decoration: none;
+  }
+  &:hover {
+    background: #1E82D7;
+    color: #fff;
+  }
+}
