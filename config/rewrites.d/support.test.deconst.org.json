@@ -131,6 +131,13 @@
         "status": 301
       },
       {
+        "description": "Redirect /manually-configure-blackberry-10-devices-for-email-hosted-on-exchange-2010",
+        "from": "^\\/knowledge_center\\/article\\/manually-configure-blackberry-10-devices-for-email-hosted-on-exchange-2010(.*)$",
+        "to":  "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
+      },
+      {
         "description": "Redirect /how-to/cloud-storage-app-for-microsoft-sharepoint-accessing-cloud-files-containers/ URL to /how-to/cloud-files/",
         "from": "^\\/how-to\\/cloud-storage-app-for-microsoft-sharepoint-accessing-cloud-files-containers(.*)$",
         "to": "/how-to/article-retired/",
