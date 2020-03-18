@@ -2,6 +2,7 @@
     "support.rackspace.com": {
         "content": {
             "/": "https://github.com/rackerlabs/docs-support-network/prod/",
+            "^/sitemap.xml$": "sitemap.xml",
             "/launch/": "https://github.com/rackerlabs/docs-support-launch/prod/",
             "/how-to/": "https://github.com/rackerlabs/rackspace-how-to/prod/",
             "/search/": null
