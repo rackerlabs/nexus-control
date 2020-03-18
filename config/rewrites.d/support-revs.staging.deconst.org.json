@@ -146,7 +146,7 @@
       },
       {
         "description": "Redirect /manually-configure-blackberry-10-devices-for-email-hosted-on-exchange-2010",
-        "from": "^\\/knowledge_center\\/article\\/manually-configure-blackberry-10-devices-for-email-hosted-on-exchange-2010(.*)$",
+        "from": "^\\/how-to\\/article\\/manually-configure-blackberry-10-devices-for-email-hosted-on-exchange-2010(.*)$",
         "to":  "/how-to/article-retired/",
         "rewrite": false,
         "status": 301
