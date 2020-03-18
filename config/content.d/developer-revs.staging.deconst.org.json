@@ -44,7 +44,7 @@
       "/docs/rkaas/v1.5.x/": "https://github.com/rackerlabs/kaas/1.5.x/staging-revs/",
       "/docs/rkaas/v2.0.x/": "https://github.com/rackerlabs/kaas/2.0.x/staging-revs/",
       "/docs/rkaas/v2.1.x/": "https://github.com/rackerlabs/kaas/2.1.x/staging-revs/",
-      "/docs/rkaas/v3.0.x/": "https://github.com/rackerlabs/kaas/v3.0.x/staging-revs/",
+      "/docs/rkaas/v3.0.x/": "https://github.com/rackerlabs/kaas/3.0.x/staging-revs/",
       "/docs/rkaas/": "https://github.com/rackerlabs/kaas/v3.0.x/staging-revs/",
       "/docs/rpc-vmware/vcenter/": "https://github.com/rackerlabs/rpc-vmware/vcenter-handbook/staging-revs/",
       "/docs/rpc-vmware/vcloud/v1/": "https://github.com/rackerlabs/rpc-vmware/vcloud-handbook/staging-revs/",
