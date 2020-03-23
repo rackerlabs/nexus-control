@@ -45,7 +45,7 @@
           "/docs/rkaas/v2.0.x/": "https://github.com/rackerlabs/kaas/2.0.x/test/",
           "/docs/rkaas/v2.1.x/": "https://github.com/rackerlabs/kaas/2.1.x/test/",
           "/docs/rkaas/v3.0.x/": "https://github.com/rackerlabs/kaas/3.0.x/test/",
-          "/docs/rkaas/": "https://github.com/rackerlabs/kaas/v3.0.x/test/",
+          "/docs/rkaas/master/": "https://github.com/rackerlabs/kaas/master/test/",
           "/docs/rpc-vmware/vcenter/": "https://github.com/rackerlabs/rpc-vmware/vcenter-handbook/test/",
           "/docs/rpc-vmware/vcloud/v1/": "https://github.com/rackerlabs/rpc-vmware/vcloud-handbook/test/",
           "/docs/rpc-vmware/vcloud/v1.5/": "https://github.com/rackerlabs/rpc-vmware/vcloud-handbook-v1.5/test/",
