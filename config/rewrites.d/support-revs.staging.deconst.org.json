@@ -1541,6 +1541,13 @@
          "status": 301
       },
       {
+         "description": "Rename linux security article",
+         "from": "^\\/how-to\\/basic-security-steps-for-linux/(.*)$",
+         "to": "/how-to/advanced-security-steps-for-linux/",
+         "rewrite": false,
+         "status": 301
+      },
+      {
          "description": "Retire cloud-native-security",
          "from": "^\\/how-to\\/cloud-native-security(.*)$",
          "to": "/how-to/article-retired/",
