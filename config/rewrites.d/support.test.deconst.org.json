@@ -1553,6 +1553,13 @@
          "status": 301
       },
       {
+        "description": "Why converting your server from PV to PVHVM is a good idea",
+        "from": "^\\/how-to\\/converting-your-server-from-pv-to-pvhvm/(.*)$",
+        "to": "/how-to/converting-your-server-from-pv-to-pvhvm//",
+        "rewrite": false,
+        "status": 301
+     },
+      {
          "description": "Set up Apache virtual hosts on Ubuntu",
          "from": "^\\/how-to\\/set-up-apache-virtual-hosts-on-ubuntu(.*)$",
          "to": "/how-to/set-up-apache-virtual-hosts-on-the-ubuntu-operating-system/",
