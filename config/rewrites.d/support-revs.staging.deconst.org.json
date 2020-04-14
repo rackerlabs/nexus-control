@@ -1536,7 +1536,7 @@
       {
         "description": "Retire Why converting your server from PV to PVHVM is a good idea",
         "from": "^\\/how-to\\/converting-your-server-from-pv-to-pvhvm/(.*)$",
-        "to": "//how-to/article-retired/",
+        "to": "/how-to/article-retired/",
         "rewrite": false,
         "status": 301
      },
