@@ -232,6 +232,11 @@
                     margin-left: -0.25em;
                     position: relative;
 
+                    @media (max-width: 500px) {
+                      display: block;
+                      text-align: center;
+                    }
+
                     & > a {
                         .open-sans('bold');
                         color: #fff;
@@ -255,6 +260,10 @@
                     //should display dropdown when menu item is hovered over
                     &:hover ul {
                         display: block;
+
+                        @media (max-width: 500px) {
+                          position: relative;
+                        }
                     }
 
                     & > ul {
@@ -272,6 +281,10 @@
                             width: 220px;
                             border-radius: 4px;
 
+                            @media (max-width: 500px) {
+                              width: 100%;
+                            }
+
                             & > a {
                                 .open-sans('bold');
                                 color: rgb(103, 103, 129);
@@ -284,6 +297,10 @@
                                 &:hover {
                                     display: block;
                                     color: #fff;
+                                }
+
+                                @media (max-width: 500px){
+                                  text-align: center;
                                 }
                             }
                         }
