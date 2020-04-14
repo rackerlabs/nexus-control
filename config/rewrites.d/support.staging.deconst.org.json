@@ -1625,6 +1625,13 @@
          "status": 301
       },
       {
+        "description": "Retire Why converting your server from PV to PVHVM is a good idea",
+        "from": "^\\/how-to\\/converting-your-server-from-pv-to-pvhvm/(.*)$",
+        "to": "/how-to/article-retired/",
+        "rewrite": false,
+        "status": 301
+     },
+      {
         "description": "Basic cloud server security",
         "from": "^\\/how-to\\/basic-cloud-server-security/(.*)$",
         "to": "/how-to/configuring-basic-security/",
