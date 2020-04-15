@@ -750,7 +750,7 @@
        {
         "description": "Redirect Install the Cloud Backup agent on Linux to new permalink",
         "from": "^\\/how-to\\/rackspace-cloud-backup-install-the-agent-on-linux(.*)$",
-        "to": "/how-to/install-or-update-the-cloud-backup-agent-on-linux/",
+        "to": "/how-to/update-or-install-the-cloud-backup-agent-on-linux/",
         "rewrite": false,
         "status": 301
       },
