@@ -1,1633 +1,1639 @@
 {
   "support.test.deconst.org": [
-      {
-          "description": "Force trailing slash",
-          "from": "\\/([a-zA-Z0-9%_-]*?[^/])$",
-          "to": "/$1/",
-          "rewrite": false,
-          "status": 301
-      },
-      {
-        "description": "Install Apache and PHP on CentOS 7",
-        "from": "^\\/how-to\\/centos-6-apache-and-php-install(.*)$",
-        "to": "/how-to/centos-7-apache-and-php-install/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-          "from": "^\\/logs\\/?$",
-          "to": "/",
-          "toProtocol": "https",
-          "toHostname": "iad1-10096-kibana.es.objectrocket.com",
-          "toPort": "20096",
-          "rewrite": false,
-          "status": 302
-      },
-      {
-          "description": "redirect whitepapers to customer stories page",
-          "from": "^\\/whitepapers\\/?(.*)$",
-          "to": "/customer-stories",
-          "toProtocol": "https",
-          "toHostname": "rackspace.com",
-          "rewrite": false,
-          "status": 301
-      },
-      {
-          "description": "Modify hosts article - Spanish translation",
-          "from": "\\/knowledge_center\\/es\\/article\\/how-do-i-modify-my-hosts-file(.*)$",
-          "to": "/how-to/como-modificar-mi-archivo-de-hosts/",
-          "rewrite": false,
-          "status": 301
-      },
-      {
-          "description": "Modify hosts article - Portuguese translation",
-          "from": "\\/knowledge_center\\/pt\\/article\\/how-do-i-modify-my-hosts-file(.*)$",
-          "to": "/how-to/como-modifico-meus-arquivos-de-hosts/",
-          "rewrite": false,
-          "status": 301
-      },
-      {
-          "description": "Getting started with Role-Based Access Control (RBAC)",
-          "from": "^\\/how-to\\/getting-started-with-role-based-access-control-rbac-0(.*)$",
-          "to": "/how-to/getting-started-with-role-based-access-control-rbac/",
-          "rewrite": false,
-          "status": 301
-      },
-      {
-        "description": "Redirect /knowledge_center/what-is-pci-compliance URL to /how-to/are-cloud-servers-pci-dss-compliant/",
-        "from": "^\\/knowledge_center\\/article\\/what-is-pci-compliance(.*)$",
-        "to": "/how-to/are-cloud-servers-pci-dss-compliant/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect /knowledge_center/email-apps/ to /how-to#cloud-office",
-        "from": "^\\/knowledge_center\\/email-apps\\/?",
-        "to": "/how-to/rackspace-email/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect /knowledge_center/Frequently_Asked_Questions/ to /how-to/cloud-servers-faq/",
-        "from": "^\\/knowledge_center\\/Frequently_Asked_Questions\\/?",
-        "to": "/how-to/cloud-servers-faq/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect /how-to/cloud-monitoring URLs to /how-to/rackspace-monitoring",
-         "from": "^\\/how-to\\/cloud-monitoring\\/?(.*)$",
-         "to": "/how-to/rackspace-monitoring/$1",
-         "rewrite": false,
-         "status": 301
-      },
-      {
-        "description": "Redirect support.rackspace.com /how-to/generating-your-encrypted-key-in-cloud-backup/ URL to how-to/generate-your-encrypted-key-in-cloud-backup/ ",
-        "from": "^\\/how-to\\/generating-your-encrypted-key-in-cloud-backup(.*)$",
-        "to": "/how-to/generate-your-encrypted-key-in-cloud-backup/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect support.rackspace.com /how-to/rackspace-auto-scale-overview-0 URL to /how-to/rackspace-auto-scale-overview ",
-        "from": "^\\/how-to\\/rackspace-auto-scale-overview-0(.*)$",
-        "to": "/how-to/rackspace-auto-scale-overview/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect support.rackspace.com /how-to/getting-started-with-cloud-files-and-cdn-0/ URL to how-to/how-to/getting-started-with-cloud-files-and-cdn/ ",
-        "from": "^\\/how-to\\/getting-started-with-cloud-files-and-cdn-0(.*)$",
-        "to": "/how-to/getting-started-with-cloud-files-and-cdn/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect support.rackspace.com/how-to/rackspace-private-cloud-backup-and-recovery/ URL to how-to/rpc-openstack/ ",
-        "from": "^\\/how-to\\/rackspace-private-cloud-backup-and-recovery(.*)$",
-        "to": "/how-to/rpc-openstack/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect /how-to/rackspace-cloud-backup-overview/ URL to /how-to/best-practices-for-cloud-backup/",
-        "from": "^\\/how-to\\/rackspace-cloud-backup-overview(.*)$",
-        "to": "/how-to/best-practices-for-cloud-backup/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect /how-to/rackspace-cloud-backup-preferences-0/ URL to /how-to/rackspace-cloud-backup-preferences/",
-        "from": "^\\/how-to\\/rackspace-cloud-backup-preferences-0(.*)$",
-        "to": "/how-to/rackspace-cloud-backup-preferences/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect /how-to/limits-for-rackspace-cdn/ URL to /how-to/rackspace-cdn-faq/",
-        "from": "^\\/how-to\\/limits-for-rackspace-cdn(.*)$",
-        "to": "/how-to/rackspace-cdn-faq/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect /how-to/manually-configure-blackberry-10-devices-for-email-hosted-on-exchange-2010",
-        "from": "^\\/how-to\\/manually-configure-blackberry-10-devices-for-email-hosted-on-exchange-2010(.*)$",
-        "to":  "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect /how-to/cloud-storage-app-for-microsoft-sharepoint-accessing-cloud-files-containers/ URL to /how-to/cloud-files/",
-        "from": "^\\/how-to\\/cloud-storage-app-for-microsoft-sharepoint-accessing-cloud-files-containers(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect /how-to/cloud-storage-app-for-microsoft-sharepoint-browser-compatibility-matrix/ URL to /how-to/cloud-files/",
-        "from": "^\\/how-to\\/cloud-storage-app-for-microsoft-sharepoint-browser-compatibility-matrix(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect /how-to/cloud-storage-app-for-microsoft-sharepoint-how-to-add-and-delete-files-in-a-container/ URL to /how-to/cloud-files/",
-        "from": "^\\/how-to\\/cloud-storage-app-for-microsoft-sharepoint-how-to-add-and-delete-files-in-a-container(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect /how-to/cloud-storage-app-for-microsoft-sharepoint-how-to-remove-your-credentials-from-the-app/ URL to /how-to/cloud-files/",
-        "from": "^\\/how-to\\/cloud-storage-app-for-microsoft-sharepoint-how-to-remove-your-credentials-from-the-app(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect /how-to/cloud-storage-app-for-microsoft-sharepoint-how-to-set-up-credentials-to-access-cloud-files/ URL to /how-to/cloud-files/",
-        "from": "^\\/how-to\\/cloud-storage-app-for-microsoft-sharepoint-how-to-set-up-credentials-to-access-cloud-files(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect /how-to/cloud-storage-app-for-microsoft-sharepoint-how-to-share-a-file-with-another-person/ URL to /how-to/cloud-files/",
-        "from": "^\\/how-to\\/cloud-storage-app-for-microsoft-sharepoint-how-to-share-a-file-with-another-person(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect /how-to/cloud-storage-app-for-microsoft-sharepoint-overview/ URL to /how-to/cloud-files/",
-        "from": "^\\/how-to\\/cloud-storage-app-for-microsoft-sharepoint-overview(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect /how-to/alarm-language-generic-thresholds-made-easy/ URL to /how-to/alarm-language-in-rackspace-monitoring",
-        "from": "^\\/how-to\\/alarm-language-generic-thresholds-made-easy(.*)$",
-        "to": "/how-to/alarm-language-in-rackspace-monitoring/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect /how-to/general-purpose-cloud-servers-how-to-articles-and-other-resources/ URL to /how-to/cloud-servers-how-to-articles-other-resources",
-        "from": "^\\/how-to\\/general-purpose-cloud-servers-how-to-articles-and-other-resources(.*)$",
-        "to": "/how-to/cloud-servers-how-to-articles-other-resources/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect /how-to/getting-fanatical-support-6-tickets/ URL to /how-to/create-a-support-ticket-in-the-cloud-control-panel/",
-        "from": "^\\/how-to\\/getting-fanatical-support-6-tickets(.*)$",
-        "to": "/how-to/create-a-support-ticket-in-the-cloud-control-panel/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect /how-to/rackspace-cloud-essentials-what-are-your-name-servers/ URL to /how-to/rackspace-name-servers/",
-        "from": "^\\/how-to\\/rackspace-cloud-essentials-what-are-your-name-servers(.*)$",
-        "to": "/how-to/rackspace-name-servers/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect /how-to/determine-if-your-server-is-a-first-generation-cloud-server/ URL to how-to/article-retired/ ",
-        "from": "^\\/how-to\\/determine-if-your-server-is-a-first-generation-cloud-server(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect /how-to/first-generation-to-next-generation-cloud-server-migration-faq/ URL to how-to/article-retired/ ",
-        "from": "^\\/how-to\\/first-generation-to-next-generation-cloud-server-migration-faq(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect /how-to/first-gen-to-next-gen-cloud-servers-migration-pre-checks/ URL to how-to/article-retired/ ",
-        "from": "^\\/how-to\\/first-gen-to-next-gen-cloud-servers-migration-pre-checks(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect /how-to/first-generation-cloud-servers-sample-code/ URL to how-to/article-retired/ ",
-        "from": "^\\/how-to\\/first-generation-cloud-servers-sample-code(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect how-to/add-another-wordpress-site-to-an-existing-cloud-orchestration-stack/ URL to how-to/article-retired/ ",
-        "from": "^\\/how-to\\/add-another-wordpress-site-to-an-existing-cloud-orchestration-stack(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect /how-to/first-generation-end-of-life-migrations/ URL to how-to/article-retired/ ",
-        "from": "^\\/how-to\\/first-generation-end-of-life-migrations(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect /how-to/migrate-a-first-generation-server-to-a-next-generation-server-with-minimal-downtime/ URL to how-to/article-retired/ ",
-        "from": "^\\/how-to\\/migrate-a-first-generation-server-to-a-next-generation-server-with-minimal-downtime(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect /how-to/next-generation-cloud-servers-migration-considerations-and-options/ URL to how-to/article-retired/ ",
-        "from": "^\\/how-to\\/next-generation-cloud-servers-migration-considerations-and-options(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect /how-to/permissions-matrix-for-first-generation-cloud-servers/ URL to how-to/article-retired/ ",
-        "from": "^\\/how-to\\/permissions-matrix-for-first-generation-cloud-servers(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect /how-to/fuse-a-custom-kernel-with-pv-grub/ URL to how-to/article-retired/ ",
-        "from": "^\\/how-to\\/use-a-custom-kernel-with-pv-grub(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect NGINX and PHP-FPM series to new /how-to/install-nginx-and-php-fpm-running-on-unix-file-sockets",
-        "from": "^\\/how-to\\/installing-nginx-and-php-fpm-preface(.*)$",
-        "to": "/how-to/install-nginx-and-php-fpm-running-on-unix-file-sockets/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect NGINX and PHP-FPM series to new /how-to/install-nginx-and-php-fpm-running-on-unix-file-sockets",
-        "from": "^\\/how-to\\/installing-nginx-and-php-fpm-running-on-unix-file-sockets(.*)$",
-        "to": "/how-to/install-nginx-and-php-fpm-running-on-unix-file-sockets/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect NGINX and PHP-FPM series to new /how-to/install-nginx-and-php-fpm-running-on-unix-file-sockets",
-        "from": "^\\/how-to\\/installing-nginx-and-php-fpm-setup-for-nginx(.*)$",
-        "to": "/how-to/install-nginx-and-php-fpm-running-on-unix-file-sockets/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect NGINX and PHP-FPM series to new /how-to/install-nginx-and-php-fpm-running-on-unix-file-sockets",
-        "from": "^\\/how-to\\/installing-nginx-and-php-fpm-setup-for-php-fpm(.*)$",
-        "to": "/how-to/install-nginx-and-php-fpm-running-on-unix-file-sockets/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect NGINX and PHP-FPM series to new /how-to/install-nginx-and-php-fpm-running-on-unix-file-sockets",
-        "from": "^\\/how-to\\/installing-nginx-and-php-fpm-the-fun-begins(.*)$",
-        "to": "/how-to/install-nginx-and-php-fpm-running-on-unix-file-sockets/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect NGINX and PHP-FPM series to new /how-to/install-nginx-and-php-fpm-running-on-unix-file-sockets",
-        "from": "^\\/how-to\\/installing-nginx-and-php-fpm(.*)$",
-        "to": "/how-to/install-nginx-and-php-fpm-running-on-unix-file-sockets/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect Cloud Sites php article to new /how-to/test-and-send-mail-using-php",
-        "from": "^\\/how-to\\/test-php-smtp-functionality(.*)$",
-        "to": "/how-to/test-and-send-mail-using-php/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect Cloud Sites html php article to new /how-to/test-and-send-mail-using-php",
-        "from": "^\\/how-to\\/sending-html-mail-via-php-in-cloud-sites(.*)$",
-        "to": "/how-to/test-and-send-mail-using-php/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect Cloud Sites html php article to new /how-to/test-and-send-mail-using-php",
-        "from": "^\\/how-to\\/test-php-mail-functionality(.*)$",
-        "to": "/how-to/test-and-send-mail-using-php/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect metrics article to new permalink /how-to/integrate-statsd-with-rackspace-metrics",
-        "from": "^\\/how-to\\/deploying-rackspace-metrics(.*)$",
-        "to": "/how-to/integrate-statsd-with-rackspace-metrics/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect email article to new permalink /how-to/migrate-your-email-by-using-the-self-service-migration-tool/",
-        "from": "^\\/how-to\\/migrate-your-email-by-using-the-self-service-tool(.*)$",
-        "to": "/how-to/migrate-your-email-by-using-the-self-service-migration-tool",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect  databases article to new permalink /how-to/manage-cloud-databases-ha-groups-in-the-cloud-control-panel/",
-        "from": "^\\/how-to\\/managing-cloud-databases-ha-groups-in-the-cloud-control-panel(.*)$",
-        "to": "/how-to/manage-cloud-databases-ha-groups-in-the-cloud-control-panel/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-       "description": "Redirect multiple domains article to new permalink /how-to/serve-multiple-domains-by-using-virtual-hosts/",
-        "from": "^\\/how-to\\/how-to-serve-multiple-domains-using-virtual-hosts(.*)$",
-        "to": "/how-to/serve-multiple-domains-by-using-virtual-hosts/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-       "description": "Redirect troubleshooting alarms article to new permalink /how-to/troubleshooting-alerts/",
-        "from": "^\\/how-to\\/troubleshooting-alarms(.*)$",
-        "to": "/how-to/troubleshooting-alerts/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect Exchange 2013 upgrade article to Exchange 2016 upgrade",
-        "from": "^\\/how-to\\/upgrading-to-exchange-2013(.*)$",
-        "to": "/how-to/upgrading-to-exchange-2016/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect /how-to/migrating-an-application-built-on-a-lamp-stack-from-amazon-web-services/ URL to how-to/article-retired/ ",
-        "from": "^\\/how-to\\/migrating-an-application-built-on-a-lamp-stack-from-amazon-web-services(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect Configure MS SQL Server for remote access to Troubleshoot remote access to SQL Server",
-        "from": "^\\/how-to\\/configuring-ms-sql-server-for-remote-access(.*)$",
-        "to": "/how-to/troubleshoot-remote-access-to-sql-server/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Retire Use enum metrics article",
-        "from": "^\\/how-to\\/use-enum-metrics(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect Rackspace Cloud Essentials image limitations article",
-        "from": "^\\/how-to\\/rackspace-cloud-essentials-cloud-server-image-limitations(.*)$",
-        "to": "/how-to/cloud-server-image-limitations/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Retire RPC software package update 20 march 2013 article",
-        "from": "^\\/how-to\\/rackspace-private-cloud-software-package-update-20-march-2013(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-          {
-        "description": "Retire RPC spheres of support article",
-        "from": "^\\/how-to\\/rackspace-private-cloud-spheres-of-support(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-          {
-        "description": "Retire detailed permissions matrix for Cloud Big Data v1",
-        "from": "^\\/how-to\\/detailed-permissions-matrix-for-cloud-big-data(\/*.|)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Retire RPC partner devices",
-        "from": "^\\/how-to\\/rackspace-private-cloud-partner-devices(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Retire Deploy RPC to bare metal",
-        "from": "^\\/how-to\\/bare-metal-to-rackspace-private-cloud(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Retire Building a RPC with Linux iSCSI volumes",
-        "from": "^\\/how-to\\/building-a-rackspace-private-cloud-with-linux-iscsi-volumes(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Retire Compute Cloud using SeaMicro",
-        "from": "^\\/how-to\\/compute-cloud-nova-using-seamicro-sm15000(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Retire Install and test Cinder in RPC lap environment",
-        "from": "^\\/how-to\\/installing-and-testing-cinder-in-your-rackspace-private-cloud-lab-environment(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Retire Object Storage (Swift) in Rack with SeeaMicro",
-        "from": "^\\/how-to\\/object-storage-swift-in-a-rack-with-amds-seamicro-sm15000(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Retire Private Cloud Certified Devices- Compute",
-        "from": "^\\/how-to\\/private-cloud-certified-devices-compute(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Retire Private Cloud Tech Resources",
-        "from": "^\\/how-to\\/private-cloud-tech-resources(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Retire RPC software VM Block Migration",
-        "from": "^\\/how-to\\/rackspace-private-cloud-software-vm-block-migration(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Retire Using CommVault to Backup Data in RPC",
-        "from": "^\\/how-to\\/using-commvault-to-backup-data-in-rackspace-private-cloud(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect upgrade-to-managed-operations-service-level/ to upgrade-to-the-managed-operations-service-level/",
-        "from": "^\\/how-to\\/upgrade-to-managed-operations-service-level(.*)$",
-        "to": "/how-to/upgrade-to-the-managed-operations-service-level/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect public-folder-permissions-for-exchange/ to public-folder-permissions-for-exchange-2007-and-2010/",
-        "from": "^\\/how-to\\/public-folder-permissions-for-exchange/(.*)$",
-        "to": "/how-to/public-folder-permissions-for-exchange-2007-and-2010/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Retire Synchronize files to Cloud Files with File Conveyor",
-        "from": "^\\/how-to\\/synchronizing-files-to-cloud-files-with-fileconveyor(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Retire OpenStack glossary",
-        "from": "^\\/how-to\\/openstack-glossary-of-terms(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-       {
-        "description": "Redirect items-migrated-during-an-cloud-office-migration to items-migrated-during-a-cloud-office-migration/",
-        "from": "^\\/how-to\\/items-migrated-during-an-cloud-office-migration(.*)$",
-        "to": "/how-to/items-migrated-during-a-cloud-office-migration/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect migrating-from-parse-to-rackspace/ to migrate-from-parse-to-rackspace/",
-        "from": "^\\/how-to\\/migrating-from-parse-to-rackspace(.*)$",
-        "to": "/how-to/migrate-from-parse-to-rackspace/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Retire Managed Cloud Pricing article",
-        "from": "^\\/how-to\\/managed-cloud-service-level-pricing(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Retire Create a CentOS 6.5 image for the Rackspace open cloud article",
-        "from": "^\\/how-to\\/creating-a-centos-65-image-for-the-rackspace-open-cloud(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect redundant WordPress article",
-        "from": "^\\/how-to\\/accelerating-wordpress-with-cloud-files-cdn-and-the-w3-total-cache-plugin(.*)$",
-        "to": "/how-to/configure-w3-total-cache-for-wordpress-with-rackspace-cloud-files-cdn/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Retire Migrate your Drupal database from Cloud Sites to Cloud Servers",
-        "from": "^\\/how-to\\/migrating-your-drupal-database-to-cloud-servers(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect retired Linux SOS article to new Linux SOS article",
-        "from": "^\\/how-to\\/cloud-servers-with-managed-operations-support-for-linux(.*)$",
-        "to": "/how-to/linux-spheres-of-support-for-dedicated-and-managed-ops/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Retire Adding a Mobile Sync license",
-        "from": "^\\/how-to\\/adding-a-mobile-sync-license(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect support.rackspace.com/how-to/delete-a-server/ URL to how-to/article-retired/ ",
-        "from": "^\\/how-to\\/delete-a-server(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect support.rackspace.com/how-to/close-your-rackspace-account/ URL to how-to/article-retired/ ",
-        "from": "^\\/how-to\\/close-your-rackspace-account(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect retired Mobile Sync set up article",
-        "from": "^\\/how-to\\/set-up-mobile-sync-for-webmail-on-ios-devices(.*)$",
-        "to": "/how-to/set-up-mobile-sync/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Rackconnect Power users guide",
-        "from": "^\\/how-to\\/rackconnect-power-users-guide(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Retire RackConnect release notes",
-        "from": "^\\/how-to\\/rackconnect-release-notes(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect Before you move to a General Purpose cloud server article",
-        "from": "^\\/how-to\\/before-you-move-to-general-purpose-or-io-cloud-server-checklist(.*)$",
-        "to": "/how-to/considerations-for-migrating-to-a-general-purpose-or-io-cloud-server/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Retire Configure on RAID Linux GP Cloud Server article",
-        "from": "^\\/how-to\\/configuring-a-software-raid-on-a-linux-general-purpose-cloud-server(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect Cloud Office CP to Cloud Office CP overview",
-        "from": "^\\/how-to\\/cloud-office-control-panel(\/$|$)",
-        "to": "/how-to/cloud-office-control-panel-overview/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Retire Server Name Transitions",
-        "from": "^\\/how-to\\/cloud-server-name-transitions(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-
-      },
-      {
-        "description": "Redirect Set up DNS records for Cloud Office email and Skype for Business to Set up DNS records for Cloud Office email",
-        "from": "^\\/how-to\\/set-up-dns-records-for-cloud-office-email-and-skype-for-business(.*)$",
-        "to": "/how-to/set-up-dns-records-for-cloud-office-email/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Retire Cloud Big Data intro page",
-        "from": "^\\/how-to\\/cloud-big-data(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Retire cloud-big-data-faq",
-        "from": "^\\/how-to\\/cloud-big-data-faq(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Retire cloud-big-data-platform-provisioning-and-pricing",
-        "from": "^\\/how-to\\/cloud-big-data-platform-provisioning-and-pricing(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Retire deploying-rackspace-cloud-big-data",
-        "from": "^\\/how-to\\/deploying-rackspace-cloud-big-data(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Retire detailed-permissions-matrix-for-cloud-big-data-v2",
-        "from": "^\\/how-to\\/detailed-permissions-matrix-for-cloud-big-data-v2(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Retire limits-for-cloud-big-data",
-        "from": "^\\/how-to\\/limits-for-cloud-big-data(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Retire rackspace-cloud-big-data-service-glossary",
-        "from": "^\\/how-to\\/rackspace-cloud-big-data-service-glossary(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Retire getting-data-into-your-big-data-cluster",
-        "from": "^\\/how-to\\/getting-data-into-your-big-data-cluster(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Retire use-tableau-desktop-with-hive-on-cloud-big-data",
-        "from": "^\\/how-to\\/use-tableau-desktop-with-hive-on-cloud-big-data(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect Using MyFirewallManager to FirewallManagerv2",
-        "from": "^\\/how-to\\/using-the-myrackspace-firewall-manager(.*)$",
-        "to": "/how-to/firewall-manager-v2/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect Managed Ops RBAC article to General RBAC article",
-        "from": "^\\/how-to\\/using-rbac-with-myrackspace(.*)$",
-        "to": "/how-to/overview-role-based-access-control-rbac/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Retire Cloud Feeds archiving in the Cloud Control panel",
-        "from": "^\\/how-to\\/configure-cloud-feeds-archiving-in-the-cloud-control-panel(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-       {
-        "description": "Redirect Install the Cloud Backup agent on Linux to new permalink",
-        "from": "^\\/how-to\\/rackspace-cloud-backup-install-the-agent-on-linux(.*)$",
-        "to": "/how-to/update-or-install-the-cloud-backup-agent-on-linux/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect Adding Exchange mailboxes to new permalink",
-        "from": "^\\/how-to\\/adding-microsoft-exchange-mailboxes(.*)$",
-        "to": "/how-to/add-microsoft-exchange-mailboxes/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect Security for RPC to retired-article",
-        "from": "^\\/how-to\\/security-for-rackspace-private-cloud-powered-by-openstack(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect List cloud servers to View information about available cloud servers",
-        "from": "^\\/how-to\\/list-cloud-servers-and-cloud-server-information(.*)$",
-        "to": "/how-to/view-information-about-available-cloud-servers/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect View basic graphs of activity to Viewing basic graphs of activity",
-        "from": "^\\/how-to\\/viewing-basic-graphs-of-activity-in-rackspace-intelligence(.*)$",
-        "to": "/how-to/view-basic-graphs-of-activity-in-rackspace-intelligence/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Retire Viewing and creating graphs of activity in Rackspace Intelligence for dedicated accounts",
-        "from": "^\\/how-to\\/viewing-and-creating-graphs-of-activity-in-rackspace-intelligence-for-dedicated-accounts(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect Rackspace Email Mailbox Features",
-        "from": "^\\/how-to\\/rackspace-email-mailbox-features(.*)$",
-        "to": "/how-to/rackspace-email-control-panel-overview/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect retired About volume types",
-        "from": "^\\/how-to\\/about-volume-types(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect retired Managed DNS FAQ",
-        "from": "^\\/how-to\\/managed-dns-faq(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Rename Sitecore Cloud FAQ to Sitecore Managed Cloud Premium FAQ",
-        "from": "^\\/how-to\\/sitecore-cloud-faq(.*)$",
-        "to": "/how-to/sitecore-managed-cloud-premium-faq/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Rename Rename a Rackspace email mailbox",
-        "from": "^\\/how-to\\/rename-a-rackspace-email-mailbox(.*)$",
-        "to": "/how-to/rename-a-rackspace-email-address/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Retire Migrate a Linux server per-package from the command line",
-        "from": "^\\/how-to\\/migrating-a-linux-server-from-the-command-line-2(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect what is managed colocation from rackspace",
-        "from": "^\\/how-to\\/what-is-managed-colocation-from-rackspace(.*)$",
-        "to": "/how-to/traditional-colocation-vs-rackspace-managed-colocation/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Comparison of hosting methods",
-        "from": "^\\/how-to\\/cloud-hosting-vs-shared-hosting-vs-vps(.*)$",
-        "to": "/how-to/comparison-of-hosting-methods/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Using managed colocation",
-        "from": "^\\/how-to\\/when-is-managed-colocation-a-good-fit(.*)$",
-        "to": "/how-to/using-managed-colocation/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "redirect reclaim vat to billing overview",
-        "from": "^\\/how-to\\/why-do-you-need-my-vat-id-number(.*)$",
-        "to": "/how-to/billing-services-overview/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "redirect Outgoing email issue on andriod phones to Email issue on andriod phones",
-        "from": "^\\/how-to\\/outgoing-email-issue-on-android-phones(.*)$",
-        "to": "/how-to/email-issue-on-android-phones/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "redirect Supported Operating Systems",
-        "from": "^\\/how-to\\/supported-operating-systems/(.*)$",
-        "to": "/how-to/supported-operating-systems-and-browsers-in-rackspace-public-cloud/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "redirect Supported Browsers to new /how-to/supported-operating-systems-and-browsers-in-rackspace-public-cloud/",
-        "from": "^\\/how-to\\/supported-browsers(.*)$",
-        "to": "/how-to/supported-operating-systems-and-browsers-in-rackspace-public-cloud/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "retire test-and-send-mail-using-php",
-        "from": "^\\/how-to\\/test-and-send-mail-using-php(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "retire email-access-options-during-an-email-migration",
-        "from": "^\\/how-to\\/email-access-options-during-an-email-migration(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "retire set-an-email-catch-all-address-in-the-cloud-office-control-panel",
-        "from": "^\\/how-to\\/set-an-email-catch-all-address-in-the-cloud-office-control-panel(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Retire Administrator management: Cloud Control Panel",
-        "from": "^\\/how-to\\/update-billing-information-for-cloud-hosting(.*)$",
-        "to": "/how-to/billing-services-overview/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect Detailed Invoices Overview",
-        "from": "^\\/how-to\\/detailed-invoices-overview(.*)$",
-        "to": "/how-to/billing-services-overview/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect Managed VMware Services landing page",
-        "from": "^\\/how-to\\/managed-vmware-services(.*)$",
-        "to": "/how-to/vmware-server-virtualization/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect Managed VMware Services FAQ",
-        "from": "^\\/how-to\\/managed-vmware-services-faq(.*)$",
-        "to": "/how-to/vmware-server-virtualization-faq/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Retire General Info in the Cloud Control Panel",
-        "from": "^\\/how-to\\/general-information-cloud-office-control-panel(.*)$",
-        "to": "/how-to/cloud-office-control-panel-overview/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect PV versus PVHVM article",
-        "from": "^\\/how-to\\/choosing-a-virtualization-mode-pv-versus-pvhvm(.*)$",
-        "to": "/how-to/converting-your-server-from-pv-to-pvhvm/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "retire 1st gen image article and redirect images intro",
-        "from": "^\\/how-to\\/access-contents-of-a-first-generation-cloud-server-image(.*)$",
-        "to": "/how-to/cloud-images/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "redirect Installing MySQL server on CentOS",
-        "from": "^\\/how-to\\/installing-mysql-server-on-centos(.*)$",
-        "to": "/how-to/installing-mariadb-server-on-centos/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "redirect Enable-email-archiving",
-        "from": "^\\/how-to\\/enable-email-archiving/(.*)$",
-        "to": "/how-to/enable-email-archiving-for-rackspace-email-and-hosted-exchange/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "redirect Enable Email Archiving: Cloud Office Control Panel",
-        "from": "^\\/how-to\\/enable-email-archiving-cloud-office-control-panel(.*)$",
-        "to": "/how-to/enable-email-archiving-for-rackspace-email-and-hosted-exchange/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "redirect Integrate Rackspace Email Archiving with Outlook",
-        "from": "^\\/how-to\\/integrate-rackspace-email-archiving-with-outlook(.*)$",
-        "to": "/how-to/integrate-email-archiving-with-outlook/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "redirect Add Rackspace Office 365 archiving",
-        "from": "^\\/how-to\\/add-rackspace-office-365-archiving(.*)$",
-        "to": "/how-to/enable-email-archiving-for-office-365/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "redirect Backup Your MySQL database with phpmyadmin",
-        "from": "^\\/how-to\\/backup-your-mysql-database-with-phpmyadmin(.*)$",
-        "to": "/how-to/managing-backups-for-cloud-databases/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "retire Sharepoint",
-        "from": "^\\/how-to\\/sharepoint/(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "retire Sharepoint FAQ",
-        "from": "^\\/how-to\\/sharepoint-faq(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "retire Getting started with Sharepoint",
-        "from": "^\\/how-to\\/getting-started-with-rackspace-services-for-sharepoint(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "retire how-to-install-the-rackspace-cloud-storage-app-for-microsoft-sharepoint",
-        "from": "^\\/how-to\\/how-to-install-the-rackspace-cloud-storage-app-for-microsoft-sharepoint(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "retire upgrade-sharepoint-site-storage-cloud-office-control-panel",
-        "from": "^\\/how-to\\/upgrade-sharepoint-site-storage-cloud-office-control-panel(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "retire ach-compliance-faq.md",
-        "from": "^\\/how-to\\/ach-compliance-faq(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "redirect create-dns-records-for-cloud-servers-with-the-control-panel",
-        "from": "^\\/how-to\\/create-dns-records-for-cloud-servers-with-the-control-panel(.*)$",
-        "to": "/how-to/creating-dns-records-with-cloud-dns/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "redirect configuring-mysql-server-on-centos",
-        "from": "^\\/how-to\\/configuring-mysql-server-on-centos(.*)$",
-        "to": "/how-to/configure-mariadb-server-on-centos/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "retire cloud-servers-how-to-articles-other-resources",
-        "from": "^\\/how-to\\/cloud-servers-how-to-articles-other-resources(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "retire getting-started-with-the-rackspace-mobile-application-and-managing-accounts",
-        "from": "^\\/how-to\\/getting-started-with-the-rackspace-mobile-application-and-managing-accounts(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "retire add-authorized-users-in-the-rackconnect-management-interface",
-        "from": "^\\/how-to\\/add-authorized-users-in-the-rackconnect-management-interface(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "retire Upcoming deprecation of resource rackspacecloudserver for cloud orchestration",
-        "from": "^\\/how-to\\/upcoming-deprecation-of-resource-rackspacecloudserver-for-cloud-orchestration(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "retire Automatic and manual disk partitioning on Cloud Servers",
-        "from": "^\\/how-to\\/using-automatic-and-manual-disk-partitioning-on-cloud-servers(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "retire RackConnect 1.0 post upgrade FAQ",
-        "from": "^\\/how-to\\/rackconnect-10-post-upgrade-faq(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect Delete your server article",
-        "from": "^\\/how-to\\/deleting-your-server(.*)$",
-        "to": "/how-to/delete-a-server/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect Reboot your server article",
-        "from": "^\\/how-to\\/reboot-your-server(.*)$",
-        "to": "/how-to/reboot-a-server/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect Reset your server's password article",
-        "from": "^\\/how-to\\/reset-your-server-password(.*)$",
-        "to": "/how-to/reset-a-server-password/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect Managing your server, resizing and standard and general purpose servers",
-        "from": "^\\/how-to\\/managing-your-server-resizing-standard-and-general-purpose-servers(.*)$",
-        "to": "/how-to/resize-standard-and-general-purpose-servers/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect Managing my server article",
-        "from": "^\\/how-to\\/managing-my-server(.*)$",
-        "to": "/how-to/manage-a-cloud-server/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect Managing your server article",
-        "from": "^\\/how-to\\/managing-your-server(.*)$",
-        "to": "/how-to/manage-a-cloud-server/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect Updating Servicenet routes on cloud servers created before june 3, 2013 article",
-        "from": "^\\/how-to\\/updating-servicenet-routes-on-cloud-servers-created-before-june-3-2013(.*)$",
-        "to": "/how-to/updating-servicenet-routes-on-cloud-servers/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "retire Upgrade to Cloud Office Control Panel",
-        "from": "^\\/how-to\\/upgrades-cloud-office-control-panel(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "redirect Manually configure Outlook 2013 for Exchange 2007",
-        "from": "^\\/how-to\\/manually-configure-outlook-2013-for-email-hosted-on-exchange-2007(.*)$",
-        "to": "/how-to/manually-configure-outlook-2013-for-email-hosted-on-exchange-2013/",
-        "rewrite": false,
-        "status": 301
-      },
-     {
-        "description": "redirect onstall ssl certificates on windows",
-        "from": "^\\/how-to\\/install-ssl-certificates-on-windows-server-2008r2-and-2012(.*)$",
-        "to": "/how-to/install-an-ssl-certificate/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "redirect upload ssl certificate for sitecore and azure",
-        "from": "^\\/how-to\\/upload-an-ssl-certificate-to-a-custom-domain(.*)$",
-        "to": "/how-to/install-an-ssl-certificate/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "retire install ssl certificate on apache",
-        "from": "^\\/how-to\\/installing-an-ssl-certificate-on-apache(.*)$",
-        "to": "/how-to/install-an-ssl-certificate/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect Username updates article",
-        "from": "^\\/how-to\\/myrackspace-username-updates(.*)$",
-        "to": "/how-to/myrackspace-login-and-username-updates/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "redirect generate-a-csr-with-openssl/",
-        "from": "^\\/how-to\\/generate-a-csr-with-openssl(.*)$",
-        "to": "/how-to/generate-a-csr/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "redirect create-a-csr-in-the-cloud-control-panel/",
-        "from": "^\\/how-to\\/create-a-csr-in-the-cloud-control-panel(.*)$",
-        "to": "/how-to/generate-a-csr/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "redirect update-an-existing-ssl-certificate/",
-        "from": "^\\/how-to\\/update-an-existing-ssl-certificate(.*)$",
-        "to": "/how-to/purchase-or-renew-an-ssl-certificate/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "redirect rackspace-cloud-essentials-rescue-mode-on-linux/",
-        "from": "^\\/how-to\\/rackspace-cloud-essentials-rescue-mode-on-linux-cloud-servers(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "redirect rackspace-cloud-essentials-rescue-mode-on-windows/",
-        "from": "^\\/how-to\\/rackspace-cloud-essentials-rescue-mode-on-windows-cloud-servers-behaviors(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "redirect rescue-mode-on-windows-servers/",
-        "from": "^\\/how-to\\/rescue-mode-on-windows-servers(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "redirect log-in-to-rackspace-intelligence-for-dedicated-accounts/",
-        "from": "^\\/how-to\\/log-in-to-rackspace-intelligence-for-dedicated-accounts(.*)$",
-        "to": "/how-to/getting-started-with-rackspace-intelligence-for-dedicated-accounts/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "redirect logging-in-to-the-rackspace-intelligence-dashboard",
-        "from": "^\\/how-to\\/logging-in-to-the-rackspace-intelligence-dashboard(.*)$",
-        "to": "/how-to/getting-started-with-rackspace-intelligence-for-the-cloud/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "redirect upgrade-email-hosting-cloud-office-control-panel/",
-        "from": "^\\/how-to\\/upgrade-email-hosting-cloud-office-control-panel(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "redirect tls-ssl-encryption-cloud-office/",
-        "from": "^\\/how-to\\/tls-ssl-encryption-cloud-office(.*)$",
-        "to": "/how-to/rackspace-email-faq/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "redirect upgrade-a-cloud-databases-instance-from-mysql-51-to-mysql-56",
-        "from": "^\\/how-to\\/upgrade-a-cloud-databases-instance-from-mysql-51-to-mysql-56(.*)$",
-        "to": "/how-to/upgrade-a-cloud-databases-instance-from-mysql-56-to-mysql-57/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "redirect logging-in-with-an-ssh-private-key-on-windows",
-        "from": "^\\/how-to\\/logging-in-with-an-ssh-private-key-on-windows(.*)$",
-        "to": "/how-to/log-into-a-linux-server-with-an-ssh-private-key-on-windows/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Retire Email sorting issues on iOS and Android after an email migration",
-        "from": "^\\/how-to\\/email-sorting-issues-on-ios-and-android-after-an-email-migration(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Manually configure Mac Mail for email hosted on Exchange 2007",
-        "from": "^\\/how-to\\/manually-configure-mac-mail-for-email-hosted-on-exchange-2007(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Manually configure Windows Phone devices for email hosted on Exchange 2007",
-        "from": "^\\/how-to\\/manually-configure-windows-phone-devices-for-email-hosted-on-exchange-2007(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Manually configure Outlook 2007 for email hosted on Exchange 2007",
-        "from": "^\\/how-to\\/manually-configure-outlook-2007-for-email-hosted-on-exchange-2007(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Manually configure Outlook 2010 for email hosted on Exchange 2007",
-        "from": "^\\/how-to\\/manually-configure-outlook-2010-for-email-hosted-on-exchange-2007(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Manually configure Entourage (EWS) for email hosted on Exchange 2007",
-        "from": "^\\/how-to\\/manually-configure-entourage-ews-for-email-hosted-on-exchange-2007(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Manually configure Android devices for email hosted on Exchange 2007",
-        "from": "^\\/how-to\\/manually-configure-android-devices-for-email-hosted-on-exchange-2007(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Manually configure Outlook 2011 for email hosted on Exchange 2007",
-        "from": "^\\/how-to\\/manually-configure-outlook-2011-for-email-hosted-on-exchange-2007(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Work with public folders through Outlook for Exchange 2007 and 2010",
-        "from": "^\\/how-to\\/working-with-public-folders-through-outlook-for-exchange-2007-and-2010(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Manually configure Blackberry 10 devices for email hosted on Exchange 2007",
-        "from": "^\\/how-to\\/manually-configure-blackberry-10-devices-for-email-hosted-on-exchange-2007(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Manually configure iOS devices for email hosted on Exchange 2007",
-        "from": "^\\/how-to\\/manually-configure-ios-devices-for-email-hosted-on-exchange-2007(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Set up IMAP or POP for Windows Mail",
-        "from": "^\\/how-to\\/setting-up-imap-or-pop-windows-mail(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect Set up a two server glusterfs array",
-        "from": "^\\/how-to\\/set-up-a-two-server-glusterfs-array(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect Create an archive login message",
-        "from": "^\\/how-to\\/create-an-archive-login-message(.*)$",
-        "to": "/how-to/create-an-email-archive-login-message/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Retire Move a Cloud Block Storage volume between servers",
-        "from": "^\\/how-to\\/moving-a-software-raid-cloud-block-storage-volume-from-one-cloud-server-to-another(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Install mod rails on Ubuntu 9.04",
-        "from": "^\\/how-to\\/ubuntu-mod-rails-installation(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "retire SDKs for Java, Ruby, Python, Node.js, PHP, and Microsoft.NET",
-        "from": "^\\/how-to\\/sdks-for-java-ruby-python-nodejs-php-and-microsoftnet(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "retire Using Private IP Address on Cloud Servers",
-        "from": "^\\/how-to\\/using-the-private-ip-address-on-your-cloud-server(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "retire Rackconnect image validation scripts",
-        "from": "^\\/how-to\\/rackconnect-image-validation-scripts(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Administrator management Cloud Office Control Panel",
-        "from": "^\\/how-to\\/administrator-management-cloud-office-control-panel(.*)$",
-        "to": "/how-to/manage-email-administrators-with-the-cloud-office-control-panel/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect billing faq to Account Management faq",
-        "from": "^\\/how-to\\/rackspace-billing-faq(.*)$",
-        "to": "/how-to/account-management-faq/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect when am I billed to Account Management faq",
-        "from": "^\\/how-to\\/when-am-i-billed-for-my-account(.*)$",
-        "to": "/how-to/account-management-faq/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect RBAC faq to Account Management faq",
-        "from": "^\\/how-to\\/faq-role-based-access-control-rbac(.*)$",
-        "to": "/how-to/account-management-faq/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Upgrading your Exchange version",
-        "from": "^\\/how-to\\/upgrading-to-exchange-2016(.*)$",
-        "to": "/how-to/upgrading-your-exchange-version/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Redirect create an ubuntu 13 image",
-        "from": "^\\/how-to\\/creating-an-ubuntu-1310-image-for-the-rackspace-open-cloud(.*)$",
-        "to": "/how-to/cloud-image-creation-format-and-process/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Retire windows overview",
-        "from": "^\\/how-to\\/windows-overview(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Retire Rackspace referral program",
-        "from": "^\\/how-to\\/rackspace-referral-program(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Retire migrate email from google",
-        "from": "^\\/how-to\\/email-migration-from-google(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Retire set access rules for achive end users",
-        "from": "^\\/how-to\\/set-access-rules-for-archive-end-users(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Retire Hosted Microsoft Lync at Rackspace deployment guide",
-        "from": "^\\/how-to\\/hosted-microsoft-lync-at-rackspace-deployment-guide/(.*)$",
-        "to": "/how-to/hosted-microsoft-skype-at-rackspace-deployment-guide/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-        "description": "Retire Basic cloud server use scenarios",
-        "from": "^\\/how-to\\/basic-cloud-server-use-scenarios(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-         "description": "Configure a renamed email address on Windows phones",
-         "from": "^\\/how-to\\/configure-a-renamed-email-address-on-windows-phones(.*)$",
-         "to": "/how-to/article-retired/",
-         "rewrite": false,
-         "status": 301
-      },
-      {
-         "description": "SDK errors due to an outdated certificate authority list on Open Cloud",
-         "from": "^\\/how-to\\/php-opencloud-sdk-errors-due-to-outdated-certificate-authority-list(.*)$",
-         "to": "/how-to/article-retired/",
-         "rewrite": false,
-         "status": 301
-      },
-      {
-         "description": "Build a new Cloud Server with automatic updates enabled",
-         "from": "^\\/how-to\\/build-a-new-cloud-server-with-automatic-updates-enabled(.*)$",
-         "to": "/how-to/article-retired/",
-         "rewrite": false,
-         "status": 301
-      },
-      {
-         "description": "Create an email archive login message",
-         "from": "^\\/how-to\\/create-an-email-archive-login-message(.*)$",
-         "to": "/how-to/article-retired/",
-         "rewrite": false,
-         "status": 301
-      },
-      {
-         "description": "Business Email 101: An 8-Step Guide To Selecting Email For Your Business",
-         "from": "^\\/how-to\\/business-email-101-an-8-step-guide-to-selecting-email-for-your-business(.*)$",
-         "to": "/how-to/article-retired/",
-         "rewrite": false,
-         "status": 301
-      },
-      {
-         "description": "Manage company contacts in the Cloud Office Control Panel",
-         "from": "^\\/how-to\\/manage-company-contacts-in-the-cloud-office-control-panel(.*)$",
-         "to": "/how-to/article-retired/",
-         "rewrite": false,
-         "status": 301
-      },
-      {
-         "description": "Use Holland and Cloud Backup to back up databases with Ubuntu",
-         "from": "^\\/how-to\\/use-holland-and-cloud-backup-to-backup-databases-with-ubuntu(.*)$",
-         "to": "/how-to/use-holland-and-cloud-backup-to-back-up-mysql-databases/",
-         "rewrite": false,
-         "status": 301
-      },
-      {
-         "description": "Configure Apache on Ubuntu",
-         "from": "^\\/how-to\\/apache-configuration-on-ubuntu(.*)$",
-         "to": "/how-to/configure-apache-on-the-ubuntu-operating-system/",
-         "rewrite": false,
-         "status": 301
-      },
-      {
-         "description": "Configure MySQL server on Ubuntu",
-         "from": "^\\/how-to\\/configuring-mysql-server-on-ubuntu(.*)$",
-         "to": "/how-to/configure-mysql-server-on-the-ubuntu-operating-system/",
-         "rewrite": false,
-         "status": 301
-      },
-      {
-         "description": "Install MySQL server on Ubuntu",
-         "from": "^\\/how-to\\/installing-mysql-server-on-ubuntu(.*)$",
-         "to": "/how-to/install-mysql-server-on-the-ubuntu-operating-system/",
-         "rewrite": false,
-         "status": 301
-      },
-      {
-        "description": "Retire Why converting your server from PV to PVHVM is a good idea",
-        "from": "^\\/how-to\\/converting-your-server-from-pv-to-pvhvm/(.*)$",
-        "to": "/how-to/article-retired/",
-        "rewrite": false,
-        "status": 301
-     },
-      {
-         "description": "Set up Apache virtual hosts on Ubuntu",
-         "from": "^\\/how-to\\/set-up-apache-virtual-hosts-on-ubuntu(.*)$",
-         "to": "/how-to/set-up-apache-virtual-hosts-on-the-ubuntu-operating-system/",
-         "rewrite": false,
-         "status": 301
-      },
-      {
-         "description": "Manually configure BlackBerry Enterprise Service (BES) for email hosted on Exchange",
-         "from": "^\\/how-to\\/manually-configure-blackberry-enterprise-service-bes-for-email-hosted-on-exchange(.*)$",
-         "to": "/how-to/article-retired/",
-         "rewrite": false,
-         "status": 301
-      },
-      {
-         "description": "Set up BIS (Blackberry Internet Service) with Exchange",
-         "from": "^\\/how-to\\/set-up-bis-blackberry-internet-service-with-exchange(.*)$",
-         "to": "/how-to/article-retired/",
-         "rewrite": false,
-         "status": 301
-      },
-      {
-         "description": "Delete and resend BlackBerry&reg; Service Books - (BES)",
-         "from": "^\\/how-to\\/deleting-and-resending-blackberry-service-books-bes(.*)$",
-         "to": "/how-to/article-retired/",
-         "rewrite": false,
-         "status": 301
-      },
-      {
-         "description": "Set up SFTP users in RHEL 6, CentOS 6, Ubuntu, and Debian",
-         "from": "^\\/how-to\\/set-up-sftp-users-in-rhel-centos-ubuntu-and-debian(.*)$",
-         "to": "/how-to/set-up-sftp-users-in-linux-based-systems/",
-         "rewrite": false,
-         "status": 301
-      },
-      {
-         "description": "Install Mongrel and mongrel clusters on Ubuntu",
-         "from": "^\\/how-to\\/ubuntu-mongrel-and-mongrel-cluster-installation(.*)$",
-         "to": "/how-to/install-mongrel-and-mongrel-clusters-on-the-ubuntu-operating-system/",
-         "rewrite": false,
-         "status": 301
-      },
-      {
-         "description": "Rename Install a LAMP stack article",
-         "from": "^\\/how-to\\/how-to-install-a-lamp-stack-on-centos-fedora-or-red-hat/(.*)$",
-         "to": "/how-to/how-to-install-a-lamp-stack-on-rhel-6-based-distributions/",
-         "rewrite": false,
-         "status": 301
-      },
-      {
-         "description": "Retire cloud-native-security",
-         "from": "^\\/how-to\\/cloud-native-security(.*)$",
-         "to": "/how-to/article-retired/",
-         "rewrite": false,
-         "status": 301
-      },
-      {
-        "description": "Basic cloud server security",
-        "from": "^\\/how-to\\/basic-cloud-server-security/(.*)$",
-        "to": "/how-to/configuring-basic-security/",
-        "rewrite": false,
-        "status": 301
-      },
-      {
-         "description": "Rename linux security article",
-         "from": "^\\/how-to\\/basic-security-steps-for-linux/(.*)$",
-         "to": "/how-to/configuring-basic-security/",
-         "rewrite": false,
-         "status": 301
-      }
-   ]
+    {
+      "description": "Force trailing slash",
+      "from": "\\/([a-zA-Z0-9%_-]*?[^/])$",
+      "to": "/$1/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Install Apache and PHP on CentOS 7",
+      "from": "^\\/how-to\\/centos-6-apache-and-php-install(.*)$",
+      "to": "/how-to/centos-7-apache-and-php-install/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "from": "^\\/logs\\/?$",
+      "to": "/",
+      "toProtocol": "https",
+      "toHostname": "iad1-10096-kibana.es.objectrocket.com",
+      "toPort": "20096",
+      "rewrite": false,
+      "status": 302
+    },
+    {
+      "description": "redirect whitepapers to customer stories page",
+      "from": "^\\/whitepapers\\/?(.*)$",
+      "to": "/customer-stories",
+      "toProtocol": "https",
+      "toHostname": "rackspace.com",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Modify hosts article - Spanish translation",
+      "from": "\\/knowledge_center\\/es\\/article\\/how-do-i-modify-my-hosts-file(.*)$",
+      "to": "/how-to/como-modificar-mi-archivo-de-hosts/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Modify hosts article - Portuguese translation",
+      "from": "\\/knowledge_center\\/pt\\/article\\/how-do-i-modify-my-hosts-file(.*)$",
+      "to": "/how-to/como-modifico-meus-arquivos-de-hosts/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Getting started with Role-Based Access Control (RBAC)",
+      "from": "^\\/how-to\\/getting-started-with-role-based-access-control-rbac-0(.*)$",
+      "to": "/how-to/getting-started-with-role-based-access-control-rbac/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect /knowledge_center/what-is-pci-compliance URL to /how-to/are-cloud-servers-pci-dss-compliant/",
+      "from": "^\\/knowledge_center\\/article\\/what-is-pci-compliance(.*)$",
+      "to": "/how-to/are-cloud-servers-pci-dss-compliant/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect /knowledge_center/email-apps/ to /how-to#cloud-office",
+      "from": "^\\/knowledge_center\\/email-apps\\/?",
+      "to": "/how-to/rackspace-email/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect /knowledge_center/Frequently_Asked_Questions/ to /how-to/cloud-servers-faq/",
+      "from": "^\\/knowledge_center\\/Frequently_Asked_Questions\\/?",
+      "to": "/how-to/cloud-servers-faq/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect /how-to/cloud-monitoring URLs to /how-to/rackspace-monitoring",
+      "from": "^\\/how-to\\/cloud-monitoring\\/?(.*)$",
+      "to": "/how-to/rackspace-monitoring/$1",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect support.rackspace.com /how-to/generating-your-encrypted-key-in-cloud-backup/ URL to how-to/generate-your-encrypted-key-in-cloud-backup/ ",
+      "from": "^\\/how-to\\/generating-your-encrypted-key-in-cloud-backup(.*)$",
+      "to": "/how-to/generate-your-encrypted-key-in-cloud-backup/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect support.rackspace.com /how-to/rackspace-auto-scale-overview-0 URL to /how-to/rackspace-auto-scale-overview ",
+      "from": "^\\/how-to\\/rackspace-auto-scale-overview-0(.*)$",
+      "to": "/how-to/rackspace-auto-scale-overview/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect support.rackspace.com /how-to/getting-started-with-cloud-files-and-cdn-0/ URL to how-to/how-to/getting-started-with-cloud-files-and-cdn/ ",
+      "from": "^\\/how-to\\/getting-started-with-cloud-files-and-cdn-0(.*)$",
+      "to": "/how-to/getting-started-with-cloud-files-and-cdn/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect support.rackspace.com/how-to/rackspace-private-cloud-backup-and-recovery/ URL to how-to/rpc-openstack/ ",
+      "from": "^\\/how-to\\/rackspace-private-cloud-backup-and-recovery(.*)$",
+      "to": "/how-to/rpc-openstack/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect /how-to/rackspace-cloud-backup-overview/ URL to /how-to/best-practices-for-cloud-backup/",
+      "from": "^\\/how-to\\/rackspace-cloud-backup-overview(.*)$",
+      "to": "/how-to/best-practices-for-cloud-backup/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect /how-to/rackspace-cloud-backup-preferences-0/ URL to /how-to/rackspace-cloud-backup-preferences/",
+      "from": "^\\/how-to\\/rackspace-cloud-backup-preferences-0(.*)$",
+      "to": "/how-to/rackspace-cloud-backup-preferences/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect /how-to/limits-for-rackspace-cdn/ URL to /how-to/rackspace-cdn-faq/",
+      "from": "^\\/how-to\\/limits-for-rackspace-cdn(.*)$",
+      "to": "/how-to/rackspace-cdn-faq/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect /how-to/manually-configure-blackberry-10-devices-for-email-hosted-on-exchange-2010",
+      "from": "^\\/how-to\\/manually-configure-blackberry-10-devices-for-email-hosted-on-exchange-2010(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect /how-to/cloud-storage-app-for-microsoft-sharepoint-accessing-cloud-files-containers/ URL to /how-to/cloud-files/",
+      "from": "^\\/how-to\\/cloud-storage-app-for-microsoft-sharepoint-accessing-cloud-files-containers(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect /how-to/cloud-storage-app-for-microsoft-sharepoint-browser-compatibility-matrix/ URL to /how-to/cloud-files/",
+      "from": "^\\/how-to\\/cloud-storage-app-for-microsoft-sharepoint-browser-compatibility-matrix(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect /how-to/cloud-storage-app-for-microsoft-sharepoint-how-to-add-and-delete-files-in-a-container/ URL to /how-to/cloud-files/",
+      "from": "^\\/how-to\\/cloud-storage-app-for-microsoft-sharepoint-how-to-add-and-delete-files-in-a-container(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect /how-to/cloud-storage-app-for-microsoft-sharepoint-how-to-remove-your-credentials-from-the-app/ URL to /how-to/cloud-files/",
+      "from": "^\\/how-to\\/cloud-storage-app-for-microsoft-sharepoint-how-to-remove-your-credentials-from-the-app(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect /how-to/cloud-storage-app-for-microsoft-sharepoint-how-to-set-up-credentials-to-access-cloud-files/ URL to /how-to/cloud-files/",
+      "from": "^\\/how-to\\/cloud-storage-app-for-microsoft-sharepoint-how-to-set-up-credentials-to-access-cloud-files(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect /how-to/cloud-storage-app-for-microsoft-sharepoint-how-to-share-a-file-with-another-person/ URL to /how-to/cloud-files/",
+      "from": "^\\/how-to\\/cloud-storage-app-for-microsoft-sharepoint-how-to-share-a-file-with-another-person(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect /how-to/cloud-storage-app-for-microsoft-sharepoint-overview/ URL to /how-to/cloud-files/",
+      "from": "^\\/how-to\\/cloud-storage-app-for-microsoft-sharepoint-overview(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect /how-to/alarm-language-generic-thresholds-made-easy/ URL to /how-to/alarm-language-in-rackspace-monitoring",
+      "from": "^\\/how-to\\/alarm-language-generic-thresholds-made-easy(.*)$",
+      "to": "/how-to/alarm-language-in-rackspace-monitoring/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect /how-to/general-purpose-cloud-servers-how-to-articles-and-other-resources/ URL to /how-to/cloud-servers-how-to-articles-other-resources",
+      "from": "^\\/how-to\\/general-purpose-cloud-servers-how-to-articles-and-other-resources(.*)$",
+      "to": "/how-to/cloud-servers-how-to-articles-other-resources/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect /how-to/getting-fanatical-support-6-tickets/ URL to /how-to/create-a-support-ticket-in-the-cloud-control-panel/",
+      "from": "^\\/how-to\\/getting-fanatical-support-6-tickets(.*)$",
+      "to": "/how-to/create-a-support-ticket-in-the-cloud-control-panel/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect /how-to/rackspace-cloud-essentials-what-are-your-name-servers/ URL to /how-to/rackspace-name-servers/",
+      "from": "^\\/how-to\\/rackspace-cloud-essentials-what-are-your-name-servers(.*)$",
+      "to": "/how-to/rackspace-name-servers/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect /how-to/determine-if-your-server-is-a-first-generation-cloud-server/ URL to how-to/article-retired/ ",
+      "from": "^\\/how-to\\/determine-if-your-server-is-a-first-generation-cloud-server(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect /how-to/first-generation-to-next-generation-cloud-server-migration-faq/ URL to how-to/article-retired/ ",
+      "from": "^\\/how-to\\/first-generation-to-next-generation-cloud-server-migration-faq(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect /how-to/first-gen-to-next-gen-cloud-servers-migration-pre-checks/ URL to how-to/article-retired/ ",
+      "from": "^\\/how-to\\/first-gen-to-next-gen-cloud-servers-migration-pre-checks(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect /how-to/first-generation-cloud-servers-sample-code/ URL to how-to/article-retired/ ",
+      "from": "^\\/how-to\\/first-generation-cloud-servers-sample-code(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect how-to/add-another-wordpress-site-to-an-existing-cloud-orchestration-stack/ URL to how-to/article-retired/ ",
+      "from": "^\\/how-to\\/add-another-wordpress-site-to-an-existing-cloud-orchestration-stack(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect /how-to/first-generation-end-of-life-migrations/ URL to how-to/article-retired/ ",
+      "from": "^\\/how-to\\/first-generation-end-of-life-migrations(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect /how-to/migrate-a-first-generation-server-to-a-next-generation-server-with-minimal-downtime/ URL to how-to/article-retired/ ",
+      "from": "^\\/how-to\\/migrate-a-first-generation-server-to-a-next-generation-server-with-minimal-downtime(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect /how-to/next-generation-cloud-servers-migration-considerations-and-options/ URL to how-to/article-retired/ ",
+      "from": "^\\/how-to\\/next-generation-cloud-servers-migration-considerations-and-options(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect /how-to/permissions-matrix-for-first-generation-cloud-servers/ URL to how-to/article-retired/ ",
+      "from": "^\\/how-to\\/permissions-matrix-for-first-generation-cloud-servers(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect /how-to/fuse-a-custom-kernel-with-pv-grub/ URL to how-to/article-retired/ ",
+      "from": "^\\/how-to\\/use-a-custom-kernel-with-pv-grub(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect NGINX and PHP-FPM series to new /how-to/install-nginx-and-php-fpm-running-on-unix-file-sockets",
+      "from": "^\\/how-to\\/installing-nginx-and-php-fpm-preface(.*)$",
+      "to": "/how-to/install-nginx-and-php-fpm-running-on-unix-file-sockets/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect NGINX and PHP-FPM series to new /how-to/install-nginx-and-php-fpm-running-on-unix-file-sockets",
+      "from": "^\\/how-to\\/installing-nginx-and-php-fpm-running-on-unix-file-sockets(.*)$",
+      "to": "/how-to/install-nginx-and-php-fpm-running-on-unix-file-sockets/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect NGINX and PHP-FPM series to new /how-to/install-nginx-and-php-fpm-running-on-unix-file-sockets",
+      "from": "^\\/how-to\\/installing-nginx-and-php-fpm-setup-for-nginx(.*)$",
+      "to": "/how-to/install-nginx-and-php-fpm-running-on-unix-file-sockets/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect NGINX and PHP-FPM series to new /how-to/install-nginx-and-php-fpm-running-on-unix-file-sockets",
+      "from": "^\\/how-to\\/installing-nginx-and-php-fpm-setup-for-php-fpm(.*)$",
+      "to": "/how-to/install-nginx-and-php-fpm-running-on-unix-file-sockets/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect NGINX and PHP-FPM series to new /how-to/install-nginx-and-php-fpm-running-on-unix-file-sockets",
+      "from": "^\\/how-to\\/installing-nginx-and-php-fpm-the-fun-begins(.*)$",
+      "to": "/how-to/install-nginx-and-php-fpm-running-on-unix-file-sockets/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect NGINX and PHP-FPM series to new /how-to/install-nginx-and-php-fpm-running-on-unix-file-sockets",
+      "from": "^\\/how-to\\/installing-nginx-and-php-fpm(.*)$",
+      "to": "/how-to/install-nginx-and-php-fpm-running-on-unix-file-sockets/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect Cloud Sites php article to new /how-to/test-and-send-mail-using-php",
+      "from": "^\\/how-to\\/test-php-smtp-functionality(.*)$",
+      "to": "/how-to/test-and-send-mail-using-php/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect Cloud Sites html php article to new /how-to/test-and-send-mail-using-php",
+      "from": "^\\/how-to\\/sending-html-mail-via-php-in-cloud-sites(.*)$",
+      "to": "/how-to/test-and-send-mail-using-php/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect Cloud Sites html php article to new /how-to/test-and-send-mail-using-php",
+      "from": "^\\/how-to\\/test-php-mail-functionality(.*)$",
+      "to": "/how-to/test-and-send-mail-using-php/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect metrics article to new permalink /how-to/integrate-statsd-with-rackspace-metrics",
+      "from": "^\\/how-to\\/deploying-rackspace-metrics(.*)$",
+      "to": "/how-to/integrate-statsd-with-rackspace-metrics/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect email article to new permalink /how-to/migrate-your-email-by-using-the-self-service-migration-tool/",
+      "from": "^\\/how-to\\/migrate-your-email-by-using-the-self-service-tool(.*)$",
+      "to": "/how-to/migrate-your-email-by-using-the-self-service-migration-tool",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect  databases article to new permalink /how-to/manage-cloud-databases-ha-groups-in-the-cloud-control-panel/",
+      "from": "^\\/how-to\\/managing-cloud-databases-ha-groups-in-the-cloud-control-panel(.*)$",
+      "to": "/how-to/manage-cloud-databases-ha-groups-in-the-cloud-control-panel/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect multiple domains article to new permalink /how-to/serve-multiple-domains-by-using-virtual-hosts/",
+      "from": "^\\/how-to\\/how-to-serve-multiple-domains-using-virtual-hosts(.*)$",
+      "to": "/how-to/serve-multiple-domains-by-using-virtual-hosts/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect troubleshooting alarms article to new permalink /how-to/troubleshooting-alerts/",
+      "from": "^\\/how-to\\/troubleshooting-alarms(.*)$",
+      "to": "/how-to/troubleshooting-alerts/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect Exchange 2013 upgrade article to Exchange 2016 upgrade",
+      "from": "^\\/how-to\\/upgrading-to-exchange-2013(.*)$",
+      "to": "/how-to/upgrading-to-exchange-2016/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect /how-to/migrating-an-application-built-on-a-lamp-stack-from-amazon-web-services/ URL to how-to/article-retired/ ",
+      "from": "^\\/how-to\\/migrating-an-application-built-on-a-lamp-stack-from-amazon-web-services(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect Configure MS SQL Server for remote access to Troubleshoot remote access to SQL Server",
+      "from": "^\\/how-to\\/configuring-ms-sql-server-for-remote-access(.*)$",
+      "to": "/how-to/troubleshoot-remote-access-to-sql-server/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Retire Use enum metrics article",
+      "from": "^\\/how-to\\/use-enum-metrics(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect Rackspace Cloud Essentials image limitations article",
+      "from": "^\\/how-to\\/rackspace-cloud-essentials-cloud-server-image-limitations(.*)$",
+      "to": "/how-to/cloud-server-image-limitations/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Retire RPC software package update 20 march 2013 article",
+      "from": "^\\/how-to\\/rackspace-private-cloud-software-package-update-20-march-2013(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Retire RPC spheres of support article",
+      "from": "^\\/how-to\\/rackspace-private-cloud-spheres-of-support(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Retire detailed permissions matrix for Cloud Big Data v1",
+      "from": "^\\/how-to\\/detailed-permissions-matrix-for-cloud-big-data(\/*.|)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Retire RPC partner devices",
+      "from": "^\\/how-to\\/rackspace-private-cloud-partner-devices(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Retire Deploy RPC to bare metal",
+      "from": "^\\/how-to\\/bare-metal-to-rackspace-private-cloud(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Retire Building a RPC with Linux iSCSI volumes",
+      "from": "^\\/how-to\\/building-a-rackspace-private-cloud-with-linux-iscsi-volumes(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Retire Compute Cloud using SeaMicro",
+      "from": "^\\/how-to\\/compute-cloud-nova-using-seamicro-sm15000(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Retire Install and test Cinder in RPC lap environment",
+      "from": "^\\/how-to\\/installing-and-testing-cinder-in-your-rackspace-private-cloud-lab-environment(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Retire Object Storage (Swift) in Rack with SeeaMicro",
+      "from": "^\\/how-to\\/object-storage-swift-in-a-rack-with-amds-seamicro-sm15000(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Retire Private Cloud Certified Devices- Compute",
+      "from": "^\\/how-to\\/private-cloud-certified-devices-compute(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Retire Private Cloud Tech Resources",
+      "from": "^\\/how-to\\/private-cloud-tech-resources(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Retire RPC software VM Block Migration",
+      "from": "^\\/how-to\\/rackspace-private-cloud-software-vm-block-migration(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Retire Using CommVault to Backup Data in RPC",
+      "from": "^\\/how-to\\/using-commvault-to-backup-data-in-rackspace-private-cloud(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect upgrade-to-managed-operations-service-level/ to upgrade-to-the-managed-operations-service-level/",
+      "from": "^\\/how-to\\/upgrade-to-managed-operations-service-level(.*)$",
+      "to": "/how-to/upgrade-to-the-managed-operations-service-level/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect public-folder-permissions-for-exchange/ to public-folder-permissions-for-exchange-2007-and-2010/",
+      "from": "^\\/how-to\\/public-folder-permissions-for-exchange/(.*)$",
+      "to": "/how-to/public-folder-permissions-for-exchange-2007-and-2010/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Retire Synchronize files to Cloud Files with File Conveyor",
+      "from": "^\\/how-to\\/synchronizing-files-to-cloud-files-with-fileconveyor(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Retire OpenStack glossary",
+      "from": "^\\/how-to\\/openstack-glossary-of-terms(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect items-migrated-during-an-cloud-office-migration to items-migrated-during-a-cloud-office-migration/",
+      "from": "^\\/how-to\\/items-migrated-during-an-cloud-office-migration(.*)$",
+      "to": "/how-to/items-migrated-during-a-cloud-office-migration/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect migrating-from-parse-to-rackspace/ to migrate-from-parse-to-rackspace/",
+      "from": "^\\/how-to\\/migrating-from-parse-to-rackspace(.*)$",
+      "to": "/how-to/migrate-from-parse-to-rackspace/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Retire Managed Cloud Pricing article",
+      "from": "^\\/how-to\\/managed-cloud-service-level-pricing(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Retire Create a CentOS 6.5 image for the Rackspace open cloud article",
+      "from": "^\\/how-to\\/creating-a-centos-65-image-for-the-rackspace-open-cloud(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect redundant WordPress article",
+      "from": "^\\/how-to\\/accelerating-wordpress-with-cloud-files-cdn-and-the-w3-total-cache-plugin(.*)$",
+      "to": "/how-to/configure-w3-total-cache-for-wordpress-with-rackspace-cloud-files-cdn/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Retire Migrate your Drupal database from Cloud Sites to Cloud Servers",
+      "from": "^\\/how-to\\/migrating-your-drupal-database-to-cloud-servers(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect retired Linux SOS article to new Linux SOS article",
+      "from": "^\\/how-to\\/cloud-servers-with-managed-operations-support-for-linux(.*)$",
+      "to": "/how-to/linux-spheres-of-support-for-dedicated-and-managed-ops/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Retire Adding a Mobile Sync license",
+      "from": "^\\/how-to\\/adding-a-mobile-sync-license(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect support.rackspace.com/how-to/delete-a-server/ URL to how-to/article-retired/ ",
+      "from": "^\\/how-to\\/delete-a-server(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect support.rackspace.com/how-to/close-your-rackspace-account/ URL to how-to/article-retired/ ",
+      "from": "^\\/how-to\\/close-your-rackspace-account(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect retired Mobile Sync set up article",
+      "from": "^\\/how-to\\/set-up-mobile-sync-for-webmail-on-ios-devices(.*)$",
+      "to": "/how-to/set-up-mobile-sync/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Rackconnect Power users guide",
+      "from": "^\\/how-to\\/rackconnect-power-users-guide(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Retire RackConnect release notes",
+      "from": "^\\/how-to\\/rackconnect-release-notes(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect Before you move to a General Purpose cloud server article",
+      "from": "^\\/how-to\\/before-you-move-to-general-purpose-or-io-cloud-server-checklist(.*)$",
+      "to": "/how-to/considerations-for-migrating-to-a-general-purpose-or-io-cloud-server/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Retire Configure on RAID Linux GP Cloud Server article",
+      "from": "^\\/how-to\\/configuring-a-software-raid-on-a-linux-general-purpose-cloud-server(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect Cloud Office CP to Cloud Office CP overview",
+      "from": "^\\/how-to\\/cloud-office-control-panel(\/$|$)",
+      "to": "/how-to/cloud-office-control-panel-overview/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Retire Server Name Transitions",
+      "from": "^\\/how-to\\/cloud-server-name-transitions(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect Set up DNS records for Cloud Office email and Skype for Business to Set up DNS records for Cloud Office email",
+      "from": "^\\/how-to\\/set-up-dns-records-for-cloud-office-email-and-skype-for-business(.*)$",
+      "to": "/how-to/set-up-dns-records-for-cloud-office-email/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Retire Cloud Big Data intro page",
+      "from": "^\\/how-to\\/cloud-big-data(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Retire cloud-big-data-faq",
+      "from": "^\\/how-to\\/cloud-big-data-faq(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Retire cloud-big-data-platform-provisioning-and-pricing",
+      "from": "^\\/how-to\\/cloud-big-data-platform-provisioning-and-pricing(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Retire deploying-rackspace-cloud-big-data",
+      "from": "^\\/how-to\\/deploying-rackspace-cloud-big-data(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Retire detailed-permissions-matrix-for-cloud-big-data-v2",
+      "from": "^\\/how-to\\/detailed-permissions-matrix-for-cloud-big-data-v2(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Retire limits-for-cloud-big-data",
+      "from": "^\\/how-to\\/limits-for-cloud-big-data(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Retire rackspace-cloud-big-data-service-glossary",
+      "from": "^\\/how-to\\/rackspace-cloud-big-data-service-glossary(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Retire getting-data-into-your-big-data-cluster",
+      "from": "^\\/how-to\\/getting-data-into-your-big-data-cluster(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Retire use-tableau-desktop-with-hive-on-cloud-big-data",
+      "from": "^\\/how-to\\/use-tableau-desktop-with-hive-on-cloud-big-data(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect Using MyFirewallManager to FirewallManagerv2",
+      "from": "^\\/how-to\\/using-the-myrackspace-firewall-manager(.*)$",
+      "to": "/how-to/firewall-manager-v2/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect Managed Ops RBAC article to General RBAC article",
+      "from": "^\\/how-to\\/using-rbac-with-myrackspace(.*)$",
+      "to": "/how-to/overview-role-based-access-control-rbac/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Retire Cloud Feeds archiving in the Cloud Control panel",
+      "from": "^\\/how-to\\/configure-cloud-feeds-archiving-in-the-cloud-control-panel(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect Install the Cloud Backup agent on Linux to new permalink",
+      "from": "^\\/how-to\\/rackspace-cloud-backup-install-the-agent-on-linux(.*)$",
+      "to": "/how-to/update-or-install-the-cloud-backup-agent-on-linux/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect Adding Exchange mailboxes to new permalink",
+      "from": "^\\/how-to\\/adding-microsoft-exchange-mailboxes(.*)$",
+      "to": "/how-to/add-microsoft-exchange-mailboxes/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect Security for RPC to retired-article",
+      "from": "^\\/how-to\\/security-for-rackspace-private-cloud-powered-by-openstack(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect List cloud servers to View information about available cloud servers",
+      "from": "^\\/how-to\\/list-cloud-servers-and-cloud-server-information(.*)$",
+      "to": "/how-to/view-information-about-available-cloud-servers/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect View basic graphs of activity to Viewing basic graphs of activity",
+      "from": "^\\/how-to\\/viewing-basic-graphs-of-activity-in-rackspace-intelligence(.*)$",
+      "to": "/how-to/view-basic-graphs-of-activity-in-rackspace-intelligence/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Retire Viewing and creating graphs of activity in Rackspace Intelligence for dedicated accounts",
+      "from": "^\\/how-to\\/viewing-and-creating-graphs-of-activity-in-rackspace-intelligence-for-dedicated-accounts(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect Rackspace Email Mailbox Features",
+      "from": "^\\/how-to\\/rackspace-email-mailbox-features(.*)$",
+      "to": "/how-to/rackspace-email-control-panel-overview/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect retired About volume types",
+      "from": "^\\/how-to\\/about-volume-types(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect retired Managed DNS FAQ",
+      "from": "^\\/how-to\\/managed-dns-faq(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Rename Sitecore Cloud FAQ to Sitecore Managed Cloud Premium FAQ",
+      "from": "^\\/how-to\\/sitecore-cloud-faq(.*)$",
+      "to": "/how-to/sitecore-managed-cloud-premium-faq/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Rename Rename a Rackspace email mailbox",
+      "from": "^\\/how-to\\/rename-a-rackspace-email-mailbox(.*)$",
+      "to": "/how-to/rename-a-rackspace-email-address/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Retire Migrate a Linux server per-package from the command line",
+      "from": "^\\/how-to\\/migrating-a-linux-server-from-the-command-line-2(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect what is managed colocation from rackspace",
+      "from": "^\\/how-to\\/what-is-managed-colocation-from-rackspace(.*)$",
+      "to": "/how-to/traditional-colocation-vs-rackspace-managed-colocation/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Comparison of hosting methods",
+      "from": "^\\/how-to\\/cloud-hosting-vs-shared-hosting-vs-vps(.*)$",
+      "to": "/how-to/comparison-of-hosting-methods/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Using managed colocation",
+      "from": "^\\/how-to\\/when-is-managed-colocation-a-good-fit(.*)$",
+      "to": "/how-to/using-managed-colocation/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "redirect reclaim vat to billing overview",
+      "from": "^\\/how-to\\/why-do-you-need-my-vat-id-number(.*)$",
+      "to": "/how-to/billing-services-overview/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "redirect Outgoing email issue on andriod phones to Email issue on andriod phones",
+      "from": "^\\/how-to\\/outgoing-email-issue-on-android-phones(.*)$",
+      "to": "/how-to/email-issue-on-android-phones/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "redirect Supported Operating Systems",
+      "from": "^\\/how-to\\/supported-operating-systems/(.*)$",
+      "to": "/how-to/supported-operating-systems-and-browsers-in-rackspace-public-cloud/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "redirect Supported Browsers to new /how-to/supported-operating-systems-and-browsers-in-rackspace-public-cloud/",
+      "from": "^\\/how-to\\/supported-browsers(.*)$",
+      "to": "/how-to/supported-operating-systems-and-browsers-in-rackspace-public-cloud/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "retire test-and-send-mail-using-php",
+      "from": "^\\/how-to\\/test-and-send-mail-using-php(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "retire email-access-options-during-an-email-migration",
+      "from": "^\\/how-to\\/email-access-options-during-an-email-migration(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "retire set-an-email-catch-all-address-in-the-cloud-office-control-panel",
+      "from": "^\\/how-to\\/set-an-email-catch-all-address-in-the-cloud-office-control-panel(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Retire Administrator management: Cloud Control Panel",
+      "from": "^\\/how-to\\/update-billing-information-for-cloud-hosting(.*)$",
+      "to": "/how-to/billing-services-overview/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect Detailed Invoices Overview",
+      "from": "^\\/how-to\\/detailed-invoices-overview(.*)$",
+      "to": "/how-to/billing-services-overview/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect Managed VMware Services landing page",
+      "from": "^\\/how-to\\/managed-vmware-services(.*)$",
+      "to": "/how-to/vmware-server-virtualization/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect Managed VMware Services FAQ",
+      "from": "^\\/how-to\\/managed-vmware-services-faq(.*)$",
+      "to": "/how-to/vmware-server-virtualization-faq/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Retire General Info in the Cloud Control Panel",
+      "from": "^\\/how-to\\/general-information-cloud-office-control-panel(.*)$",
+      "to": "/how-to/cloud-office-control-panel-overview/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect PV versus PVHVM article",
+      "from": "^\\/how-to\\/choosing-a-virtualization-mode-pv-versus-pvhvm(.*)$",
+      "to": "/how-to/converting-your-server-from-pv-to-pvhvm/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "retire 1st gen image article and redirect images intro",
+      "from": "^\\/how-to\\/access-contents-of-a-first-generation-cloud-server-image(.*)$",
+      "to": "/how-to/cloud-images/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "redirect Installing MySQL server on CentOS",
+      "from": "^\\/how-to\\/installing-mysql-server-on-centos(.*)$",
+      "to": "/how-to/installing-mariadb-server-on-centos/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "redirect Enable-email-archiving",
+      "from": "^\\/how-to\\/enable-email-archiving/(.*)$",
+      "to": "/how-to/enable-email-archiving-for-rackspace-email-and-hosted-exchange/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "redirect Enable Email Archiving: Cloud Office Control Panel",
+      "from": "^\\/how-to\\/enable-email-archiving-cloud-office-control-panel(.*)$",
+      "to": "/how-to/enable-email-archiving-for-rackspace-email-and-hosted-exchange/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "redirect Integrate Rackspace Email Archiving with Outlook",
+      "from": "^\\/how-to\\/integrate-rackspace-email-archiving-with-outlook(.*)$",
+      "to": "/how-to/integrate-email-archiving-with-outlook/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "redirect Add Rackspace Office 365 archiving",
+      "from": "^\\/how-to\\/add-rackspace-office-365-archiving(.*)$",
+      "to": "/how-to/enable-email-archiving-for-office-365/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "redirect Backup Your MySQL database with phpmyadmin",
+      "from": "^\\/how-to\\/backup-your-mysql-database-with-phpmyadmin(.*)$",
+      "to": "/how-to/managing-backups-for-cloud-databases/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "retire Sharepoint",
+      "from": "^\\/how-to\\/sharepoint/(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "retire Sharepoint FAQ",
+      "from": "^\\/how-to\\/sharepoint-faq(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "retire Getting started with Sharepoint",
+      "from": "^\\/how-to\\/getting-started-with-rackspace-services-for-sharepoint(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "retire how-to-install-the-rackspace-cloud-storage-app-for-microsoft-sharepoint",
+      "from": "^\\/how-to\\/how-to-install-the-rackspace-cloud-storage-app-for-microsoft-sharepoint(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "retire upgrade-sharepoint-site-storage-cloud-office-control-panel",
+      "from": "^\\/how-to\\/upgrade-sharepoint-site-storage-cloud-office-control-panel(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "retire ach-compliance-faq.md",
+      "from": "^\\/how-to\\/ach-compliance-faq(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "redirect create-dns-records-for-cloud-servers-with-the-control-panel",
+      "from": "^\\/how-to\\/create-dns-records-for-cloud-servers-with-the-control-panel(.*)$",
+      "to": "/how-to/creating-dns-records-with-cloud-dns/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "redirect configuring-mysql-server-on-centos",
+      "from": "^\\/how-to\\/configuring-mysql-server-on-centos(.*)$",
+      "to": "/how-to/configure-mariadb-server-on-centos/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "retire cloud-servers-how-to-articles-other-resources",
+      "from": "^\\/how-to\\/cloud-servers-how-to-articles-other-resources(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "retire getting-started-with-the-rackspace-mobile-application-and-managing-accounts",
+      "from": "^\\/how-to\\/getting-started-with-the-rackspace-mobile-application-and-managing-accounts(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "retire add-authorized-users-in-the-rackconnect-management-interface",
+      "from": "^\\/how-to\\/add-authorized-users-in-the-rackconnect-management-interface(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "retire Upcoming deprecation of resource rackspacecloudserver for cloud orchestration",
+      "from": "^\\/how-to\\/upcoming-deprecation-of-resource-rackspacecloudserver-for-cloud-orchestration(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "retire Automatic and manual disk partitioning on Cloud Servers",
+      "from": "^\\/how-to\\/using-automatic-and-manual-disk-partitioning-on-cloud-servers(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "retire RackConnect 1.0 post upgrade FAQ",
+      "from": "^\\/how-to\\/rackconnect-10-post-upgrade-faq(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect Delete your server article",
+      "from": "^\\/how-to\\/deleting-your-server(.*)$",
+      "to": "/how-to/delete-a-server/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect Reboot your server article",
+      "from": "^\\/how-to\\/reboot-your-server(.*)$",
+      "to": "/how-to/reboot-a-server/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect Reset your server's password article",
+      "from": "^\\/how-to\\/reset-your-server-password(.*)$",
+      "to": "/how-to/reset-a-server-password/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect Managing your server, resizing and standard and general purpose servers",
+      "from": "^\\/how-to\\/managing-your-server-resizing-standard-and-general-purpose-servers(.*)$",
+      "to": "/how-to/resize-standard-and-general-purpose-servers/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect Managing my server article",
+      "from": "^\\/how-to\\/managing-my-server(.*)$",
+      "to": "/how-to/manage-a-cloud-server/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect Managing your server article",
+      "from": "^\\/how-to\\/managing-your-server(.*)$",
+      "to": "/how-to/manage-a-cloud-server/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect Updating Servicenet routes on cloud servers created before june 3, 2013 article",
+      "from": "^\\/how-to\\/updating-servicenet-routes-on-cloud-servers-created-before-june-3-2013(.*)$",
+      "to": "/how-to/updating-servicenet-routes-on-cloud-servers/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "retire Upgrade to Cloud Office Control Panel",
+      "from": "^\\/how-to\\/upgrades-cloud-office-control-panel(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "redirect Manually configure Outlook 2013 for Exchange 2007",
+      "from": "^\\/how-to\\/manually-configure-outlook-2013-for-email-hosted-on-exchange-2007(.*)$",
+      "to": "/how-to/manually-configure-outlook-2013-for-email-hosted-on-exchange-2013/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "redirect onstall ssl certificates on windows",
+      "from": "^\\/how-to\\/install-ssl-certificates-on-windows-server-2008r2-and-2012(.*)$",
+      "to": "/how-to/install-an-ssl-certificate/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "redirect upload ssl certificate for sitecore and azure",
+      "from": "^\\/how-to\\/upload-an-ssl-certificate-to-a-custom-domain(.*)$",
+      "to": "/how-to/install-an-ssl-certificate/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "retire install ssl certificate on apache",
+      "from": "^\\/how-to\\/installing-an-ssl-certificate-on-apache(.*)$",
+      "to": "/how-to/install-an-ssl-certificate/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect Username updates article",
+      "from": "^\\/how-to\\/myrackspace-username-updates(.*)$",
+      "to": "/how-to/myrackspace-login-and-username-updates/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "redirect generate-a-csr-with-openssl/",
+      "from": "^\\/how-to\\/generate-a-csr-with-openssl(.*)$",
+      "to": "/how-to/generate-a-csr/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "redirect create-a-csr-in-the-cloud-control-panel/",
+      "from": "^\\/how-to\\/create-a-csr-in-the-cloud-control-panel(.*)$",
+      "to": "/how-to/generate-a-csr/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "redirect update-an-existing-ssl-certificate/",
+      "from": "^\\/how-to\\/update-an-existing-ssl-certificate(.*)$",
+      "to": "/how-to/purchase-or-renew-an-ssl-certificate/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "redirect rackspace-cloud-essentials-rescue-mode-on-linux/",
+      "from": "^\\/how-to\\/rackspace-cloud-essentials-rescue-mode-on-linux-cloud-servers(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "redirect rackspace-cloud-essentials-rescue-mode-on-windows/",
+      "from": "^\\/how-to\\/rackspace-cloud-essentials-rescue-mode-on-windows-cloud-servers-behaviors(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "redirect rescue-mode-on-windows-servers/",
+      "from": "^\\/how-to\\/rescue-mode-on-windows-servers(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "redirect log-in-to-rackspace-intelligence-for-dedicated-accounts/",
+      "from": "^\\/how-to\\/log-in-to-rackspace-intelligence-for-dedicated-accounts(.*)$",
+      "to": "/how-to/getting-started-with-rackspace-intelligence-for-dedicated-accounts/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "redirect logging-in-to-the-rackspace-intelligence-dashboard",
+      "from": "^\\/how-to\\/logging-in-to-the-rackspace-intelligence-dashboard(.*)$",
+      "to": "/how-to/getting-started-with-rackspace-intelligence-for-the-cloud/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "redirect upgrade-email-hosting-cloud-office-control-panel/",
+      "from": "^\\/how-to\\/upgrade-email-hosting-cloud-office-control-panel(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "redirect tls-ssl-encryption-cloud-office/",
+      "from": "^\\/how-to\\/tls-ssl-encryption-cloud-office(.*)$",
+      "to": "/how-to/rackspace-email-faq/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "redirect upgrade-a-cloud-databases-instance-from-mysql-51-to-mysql-56",
+      "from": "^\\/how-to\\/upgrade-a-cloud-databases-instance-from-mysql-51-to-mysql-56(.*)$",
+      "to": "/how-to/upgrade-a-cloud-databases-instance-from-mysql-56-to-mysql-57/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "redirect logging-in-with-an-ssh-private-key-on-windows",
+      "from": "^\\/how-to\\/logging-in-with-an-ssh-private-key-on-windows(.*)$",
+      "to": "/how-to/log-into-a-linux-server-with-an-ssh-private-key-on-windows/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Retire Email sorting issues on iOS and Android after an email migration",
+      "from": "^\\/how-to\\/email-sorting-issues-on-ios-and-android-after-an-email-migration(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Manually configure Mac Mail for email hosted on Exchange 2007",
+      "from": "^\\/how-to\\/manually-configure-mac-mail-for-email-hosted-on-exchange-2007(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Manually configure Windows Phone devices for email hosted on Exchange 2007",
+      "from": "^\\/how-to\\/manually-configure-windows-phone-devices-for-email-hosted-on-exchange-2007(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Manually configure Outlook 2007 for email hosted on Exchange 2007",
+      "from": "^\\/how-to\\/manually-configure-outlook-2007-for-email-hosted-on-exchange-2007(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Manually configure Outlook 2010 for email hosted on Exchange 2007",
+      "from": "^\\/how-to\\/manually-configure-outlook-2010-for-email-hosted-on-exchange-2007(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Manually configure Entourage (EWS) for email hosted on Exchange 2007",
+      "from": "^\\/how-to\\/manually-configure-entourage-ews-for-email-hosted-on-exchange-2007(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Manually configure Android devices for email hosted on Exchange 2007",
+      "from": "^\\/how-to\\/manually-configure-android-devices-for-email-hosted-on-exchange-2007(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Manually configure Outlook 2011 for email hosted on Exchange 2007",
+      "from": "^\\/how-to\\/manually-configure-outlook-2011-for-email-hosted-on-exchange-2007(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Work with public folders through Outlook for Exchange 2007 and 2010",
+      "from": "^\\/how-to\\/working-with-public-folders-through-outlook-for-exchange-2007-and-2010(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Manually configure Blackberry 10 devices for email hosted on Exchange 2007",
+      "from": "^\\/how-to\\/manually-configure-blackberry-10-devices-for-email-hosted-on-exchange-2007(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Manually configure iOS devices for email hosted on Exchange 2007",
+      "from": "^\\/how-to\\/manually-configure-ios-devices-for-email-hosted-on-exchange-2007(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Set up IMAP or POP for Windows Mail",
+      "from": "^\\/how-to\\/setting-up-imap-or-pop-windows-mail(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect Set up a two server glusterfs array",
+      "from": "^\\/how-to\\/set-up-a-two-server-glusterfs-array(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect Create an archive login message",
+      "from": "^\\/how-to\\/create-an-archive-login-message(.*)$",
+      "to": "/how-to/create-an-email-archive-login-message/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Retire Move a Cloud Block Storage volume between servers",
+      "from": "^\\/how-to\\/moving-a-software-raid-cloud-block-storage-volume-from-one-cloud-server-to-another(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Install mod rails on Ubuntu 9.04",
+      "from": "^\\/how-to\\/ubuntu-mod-rails-installation(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "retire SDKs for Java, Ruby, Python, Node.js, PHP, and Microsoft.NET",
+      "from": "^\\/how-to\\/sdks-for-java-ruby-python-nodejs-php-and-microsoftnet(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "retire Using Private IP Address on Cloud Servers",
+      "from": "^\\/how-to\\/using-the-private-ip-address-on-your-cloud-server(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "retire Rackconnect image validation scripts",
+      "from": "^\\/how-to\\/rackconnect-image-validation-scripts(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Administrator management Cloud Office Control Panel",
+      "from": "^\\/how-to\\/administrator-management-cloud-office-control-panel(.*)$",
+      "to": "/how-to/manage-email-administrators-with-the-cloud-office-control-panel/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect billing faq to Account Management faq",
+      "from": "^\\/how-to\\/rackspace-billing-faq(.*)$",
+      "to": "/how-to/account-management-faq/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect when am I billed to Account Management faq",
+      "from": "^\\/how-to\\/when-am-i-billed-for-my-account(.*)$",
+      "to": "/how-to/account-management-faq/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect RBAC faq to Account Management faq",
+      "from": "^\\/how-to\\/faq-role-based-access-control-rbac(.*)$",
+      "to": "/how-to/account-management-faq/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Upgrading your Exchange version",
+      "from": "^\\/how-to\\/upgrading-to-exchange-2016(.*)$",
+      "to": "/how-to/upgrading-your-exchange-version/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Redirect create an ubuntu 13 image",
+      "from": "^\\/how-to\\/creating-an-ubuntu-1310-image-for-the-rackspace-open-cloud(.*)$",
+      "to": "/how-to/cloud-image-creation-format-and-process/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Retire windows overview",
+      "from": "^\\/how-to\\/windows-overview(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Retire Rackspace referral program",
+      "from": "^\\/how-to\\/rackspace-referral-program(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Retire migrate email from google",
+      "from": "^\\/how-to\\/email-migration-from-google(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Retire set access rules for achive end users",
+      "from": "^\\/how-to\\/set-access-rules-for-archive-end-users(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Retire Hosted Microsoft Lync at Rackspace deployment guide",
+      "from": "^\\/how-to\\/hosted-microsoft-lync-at-rackspace-deployment-guide/(.*)$",
+      "to": "/how-to/hosted-microsoft-skype-at-rackspace-deployment-guide/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Retire Basic cloud server use scenarios",
+      "from": "^\\/how-to\\/basic-cloud-server-use-scenarios(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Configure a renamed email address on Windows phones",
+      "from": "^\\/how-to\\/configure-a-renamed-email-address-on-windows-phones(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "SDK errors due to an outdated certificate authority list on Open Cloud",
+      "from": "^\\/how-to\\/php-opencloud-sdk-errors-due-to-outdated-certificate-authority-list(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Build a new Cloud Server with automatic updates enabled",
+      "from": "^\\/how-to\\/build-a-new-cloud-server-with-automatic-updates-enabled(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Create an email archive login message",
+      "from": "^\\/how-to\\/create-an-email-archive-login-message(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Business Email 101: An 8-Step Guide To Selecting Email For Your Business",
+      "from": "^\\/how-to\\/business-email-101-an-8-step-guide-to-selecting-email-for-your-business(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Manage company contacts in the Cloud Office Control Panel",
+      "from": "^\\/how-to\\/manage-company-contacts-in-the-cloud-office-control-panel(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Use Holland and Cloud Backup to back up databases with Ubuntu",
+      "from": "^\\/how-to\\/use-holland-and-cloud-backup-to-backup-databases-with-ubuntu(.*)$",
+      "to": "/how-to/use-holland-and-cloud-backup-to-back-up-mysql-databases/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Configure Apache on Ubuntu",
+      "from": "^\\/how-to\\/apache-configuration-on-ubuntu(.*)$",
+      "to": "/how-to/configure-apache-on-the-ubuntu-operating-system/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Configure MySQL server on Ubuntu",
+      "from": "^\\/how-to\\/configuring-mysql-server-on-ubuntu(.*)$",
+      "to": "/how-to/configure-mysql-server-on-the-ubuntu-operating-system/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Install MySQL server on Ubuntu",
+      "from": "^\\/how-to\\/installing-mysql-server-on-ubuntu(.*)$",
+      "to": "/how-to/install-mysql-server-on-the-ubuntu-operating-system/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Retire Why converting your server from PV to PVHVM is a good idea",
+      "from": "^\\/how-to\\/converting-your-server-from-pv-to-pvhvm/(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Set up Apache virtual hosts on Ubuntu",
+      "from": "^\\/how-to\\/set-up-apache-virtual-hosts-on-ubuntu(.*)$",
+      "to": "/how-to/set-up-apache-virtual-hosts-on-the-ubuntu-operating-system/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Manually configure BlackBerry Enterprise Service (BES) for email hosted on Exchange",
+      "from": "^\\/how-to\\/manually-configure-blackberry-enterprise-service-bes-for-email-hosted-on-exchange(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Set up BIS (Blackberry Internet Service) with Exchange",
+      "from": "^\\/how-to\\/set-up-bis-blackberry-internet-service-with-exchange(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Delete and resend BlackBerry&reg; Service Books - (BES)",
+      "from": "^\\/how-to\\/deleting-and-resending-blackberry-service-books-bes(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Set up SFTP users in RHEL 6, CentOS 6, Ubuntu, and Debian",
+      "from": "^\\/how-to\\/set-up-sftp-users-in-rhel-centos-ubuntu-and-debian(.*)$",
+      "to": "/how-to/set-up-sftp-users-in-linux-based-systems/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Install Mongrel and mongrel clusters on Ubuntu",
+      "from": "^\\/how-to\\/ubuntu-mongrel-and-mongrel-cluster-installation(.*)$",
+      "to": "/how-to/install-mongrel-and-mongrel-clusters-on-the-ubuntu-operating-system/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Rename Install a LAMP stack article",
+      "from": "^\\/how-to\\/how-to-install-a-lamp-stack-on-centos-fedora-or-red-hat/(.*)$",
+      "to": "/how-to/how-to-install-a-lamp-stack-on-rhel-6-based-distributions/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Retire cloud-native-security",
+      "from": "^\\/how-to\\/cloud-native-security(.*)$",
+      "to": "/how-to/article-retired/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Basic cloud server security",
+      "from": "^\\/how-to\\/basic-cloud-server-security/(.*)$",
+      "to": "/how-to/configuring-basic-security/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Rename linux security article",
+      "from": "^\\/how-to\\/basic-security-steps-for-linux/(.*)$",
+      "to": "/how-to/configuring-basic-security/",
+      "rewrite": false,
+      "status": 301
+    },
+    {
+      "description": "Rename server delete article",
+      "from": "^\\/how-to\\/delete-a-cloud-server/(.*)$",
+      "to": "/how-to/shut-down-a-cloud-server/",
+      "rewrite": false,
+      "status": 301
+    }
+  ]
 }
