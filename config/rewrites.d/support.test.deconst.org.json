@@ -1628,6 +1628,13 @@
          "to": "/how-to/configuring-basic-security/",
          "rewrite": false,
          "status": 301
+      },
+      {
+      "description": "Rename server delete article",
+      "from": "^\\/how-to\\/delete-a-cloud-server/(.*)$",
+      "to": "/how-to/shut-down-a-cloud-server/",
+      "rewrite": false,
+      "status": 301
       }
    ]
 }
