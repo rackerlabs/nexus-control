@@ -69,7 +69,8 @@
       },
       "proxy": {
           "/favicon.ico": "https://c0e9a73362c5d06f19d6-b39ff74cb91d713ac1253c5ae00eaccb.ssl.cf1.rackcdn.com/UI/favicon/favicon.ico",
-          "/product-news-feed": "https://blog.rackspace.com/feed/"
+          "/product-news-feed": "https://blog.rackspace.com/feed/",
+          "/docs/rkaas/v3.1.x-containers/list.json": "https://kaas-public-resources-prod.s3.amazonaws.com/containers-3.1.x.json"
       }
   }
 }
