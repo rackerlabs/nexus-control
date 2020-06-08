@@ -649,7 +649,7 @@ a {
   }
   // Emergency Notice
   #banner-announcement-container {
-    background: #ffedcf;
+    background: #64005A;
 
     .banner-announcement {
       position: relative;
@@ -674,19 +674,23 @@ a {
       }
 
       p {
-        margin: 0 45px 0 30px;
+        text-align: center;
         font-family: $font-family-primary;
-        font-size: 14px;
-        font-weight: 400;
+        font-size: 18px;
+        font-weight: 500;
         line-height: 17px;
-        color: #665e4e;
+        color: #FFFFFF;
+
+        @media only screen and (max-width: 600px) {
+          font-size: 14px;
+        }
 
         strong {
           font-weight: 700;
         }
 
         a {
-          color: #665e4e;
+          color: #ffffff;
           text-decoration: underline;
 
           &:hover {
