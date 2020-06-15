@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="54px" height="68px" viewBox="0 0 54 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <g id="Wireframe" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-226.000000, -27.000000)" stroke="#3498DB">
+            <g id="Group" transform="translate(228.000000, 31.000000)">
+                <path d="M24.2592831,-1.30435368 C16.6618251,3.01009368 7.83713909,4.3724083 -0.5,4.01360089 L-0.5,31.3715639 C-0.5,38.0616827 2.14585838,44.1011216 6.34335044,49.1081063 C11.010726,54.6755922 17.6007505,58.9571629 24.4967604,61.413064 C24.6638573,61.4725728 24.8314925,61.5311375 24.9996435,61.5887494 C25.1676629,61.5314325 25.3357218,61.4727227 25.5032396,61.413064 C32.3992495,58.9571629 38.989274,54.6755922 43.6566496,49.1081063 C47.8541416,44.1011216 50.5,38.0616827 50.5,31.3715639 L50.5,4.01360089 C42.1628609,4.3724083 33.3381749,3.01009368 25.7407169,-1.30435368 C25.4921672,-1.44550015 25.2456581,-1.58939327 25.0011833,-1.73595938 C24.7552617,-1.58993019 24.5082965,-1.44576349 24.2592831,-1.30435368 Z" id="Path" stroke-width="3"></path>
+                <circle id="Oval" stroke-width="2" cx="20" cy="48" r="3"></circle>
+                <circle id="Oval-Copy-5" stroke-width="2" cx="30" cy="12" r="3"></circle>
+                <circle id="Oval-Copy-6" stroke-width="2" cx="25" cy="21" r="3"></circle>
+                <circle id="Oval-Copy-7" stroke-width="2" cx="20" cy="30" r="3"></circle>
+                <circle id="Oval-Copy-8" stroke-width="2" cx="15" cy="39" r="3"></circle>
+                <circle id="Oval-Copy" stroke-width="2" cx="25" cy="39" r="3"></circle>
+                <circle id="Oval-Copy-2" stroke-width="2" cx="30" cy="30" r="3"></circle>
+                <circle id="Oval-Copy-3" stroke-width="2" cx="35" cy="21" r="3"></circle>
+                <circle id="Oval-Copy-4" stroke-width="2" cx="40" cy="12" r="3"></circle>
+                <line x1="28" y1="39" x2="49" y2="39" id="Line-3-Copy" stroke-width="2" stroke-linecap="square"></line>
+                <line x1="33" y1="30" x2="50" y2="30" id="Line-3-Copy-2" stroke-width="2" stroke-linecap="square"></line>
+                <line x1="38" y1="21" x2="50" y2="21" id="Line-3-Copy-3" stroke-width="2" stroke-linecap="square"></line>
+                <line x1="43" y1="12" x2="50" y2="12" id="Line-3-Copy-4" stroke-width="2" stroke-linecap="square"></line>
+                <line x1="23" y1="48" x2="44" y2="48" id="Line-3" stroke-width="2" stroke-linecap="square"></line>
+                <line x1="0" y1="12" x2="26" y2="12" id="Line-3-Copy-5" stroke-width="2" stroke-linecap="square"></line>
+                <line x1="0" y1="21" x2="21" y2="21" id="Line-3-Copy-6" stroke-width="2" stroke-linecap="square"></line>
+                <line x1="0" y1="30" x2="16" y2="30" id="Line-3-Copy-7" stroke-width="2" stroke-linecap="square"></line>
+                <line x1="1" y1="39" x2="11" y2="39" id="Line-3-Copy-8" stroke-width="2" stroke-linecap="square"></line>
+            </g>
+        </g>
+    </g>
+</svg>
