@@ -209,8 +209,8 @@ a {
         -moz-transition: all 0.15s linear;
         -webkit-transition: all 0.15s linear;
         transition: all 0.15s linear;
-        background-image: url('https://c0e9a73362c5d06f19d6-b39ff74cb91d713ac1253c5ae00eaccb.ssl.cf1.rackcdn.com/UI/logos/PNG/Rackspace_Logo_wt.png');
-        background-image: none, url('https://c0e9a73362c5d06f19d6-b39ff74cb91d713ac1253c5ae00eaccb.ssl.cf1.rackcdn.com/UI/logos/SVG/Rackspace_Logo_wt.svg');
+        background-image: url($assets_support_rackspace_com_dist_img_rackspace_logo_png);
+        background-image: none, url($assets_support_rackspace_com_dist_img_rackspace_logo_svg);
         background-repeat: no-repeat;
         background-position: center;
         text-indent: -9999px;
