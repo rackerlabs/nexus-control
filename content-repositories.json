@@ -44,5 +44,6 @@
   { "kind": "github", "project": "rackerlabs/docs-customer-service" },
   { "kind": "github", "project": "rackerlabs/docs-billing-apiguide" },
   { "kind": "github", "project": "rackerlabs/docs-service-blocks" },
-  { "kind": "github", "project": "rackerlabs/docs-gcp" }
+  { "kind": "github", "project": "rackerlabs/docs-gcp" },
+  { "kind": "github", "project": "rackerlabs/docs-colocation-guide" }
 ]
