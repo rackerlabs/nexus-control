@@ -1659,6 +1659,13 @@
          "to": "/how-to/article-retired/",
          "rewrite": false,
          "status": 301
+      },
+      {
+         "description": "Retire swift-filesystem-for-hadoop",
+         "from": "^\\/how-to\\/swift-filesystem-for-hadoop(.*)$",
+         "to": "/how-to/article-retired/",
+         "rewrite": false,
+         "status": 301
       }
     ]
 }
