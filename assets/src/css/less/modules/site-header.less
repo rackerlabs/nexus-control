@@ -611,4 +611,57 @@
           }
       }
     }
+    .header-maintenance {
+      background: #fa2033;
+
+      .banner {
+        position: relative;
+        width: 960px;
+        margin: 0 auto;
+        padding: 15px 0;
+
+        @media only screen and (max-width: 375px) {
+          width: 100%;
+        }
+
+        @media only screen and (min-width: 376px) and (max-width: 600px) {
+          width: 100%;
+        }
+
+        i {
+          position: absolute;
+          top: 15px;
+          left: 0;
+          font-size: 18px;
+          color: #c23e4f;
+        }
+
+        p {
+          .open-sans('regular');
+          text-align: center;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 17px;
+          color: #FFFFFF;
+          margin-bottom: 0;
+
+          @media only screen and (max-width: 600px) {
+            font-size: 14px;
+          }
+
+          strong {
+            font-weight: 700;
+          }
+
+          a {
+            color: #ffffff;
+            text-decoration: underline;
+
+            &:hover {
+              color: #222;
+              }
+            }
+          }
+      }
+    }
 }
