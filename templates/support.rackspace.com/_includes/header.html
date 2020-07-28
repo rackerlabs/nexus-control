@@ -8,7 +8,7 @@
 <!--[if lt IE 9]>
 	<script src='//html5shim.googlecode.com/svn/trunk/html5.js'></script>
 <![endif]-->
-
+{% set ctaURL = deconst.content.envelope.meta.title %}
 <div id='rax-support-header'>
     <div id='rax-eyebrow-wrapper'>
         <div id='rax-eyebrow-container' class='rax-clearfix'>
@@ -87,9 +87,52 @@
             </div>
         </div>
     </div>
-    <div id='banner-announcement-container'>
-      <div class='banner-announcement'>
-        <p>End-to-End Multicloud Solutions.&nbsp;&nbsp;&nbsp;<strong>Solving Together.&trade;</strong>&nbsp;&nbsp;&nbsp;Learn more at <a href='https://www.rackspace.com/'>Rackspace.com</a></p>
+    <div id="banner-announcement-container">
+      <div class="banner-announcement">
+        {% if (ctaURL  == "Connect to a cloud server") or
+           (ctaURL == "Cloud Servers") or
+           (ctaURL == "Check Rackspace Cloud status") or
+           (ctaURL == "Cloud DNS") or
+           (ctaURL == "Create a cloud server") or
+           (ctaURL == "Create a backup") or
+           (ctaURL == "Cloud Files") or
+           (ctaURL == "Cloud Servers – All Articles") or
+           (ctaURL == "Cloud Backup") or
+           (ctaURL == "Connect to a Cloud Databases instance") or
+           (ctaURL == "Multi-factor authentication from the Cloud Control Panel") or
+           (ctaURL == "Cloud Load Balancers") or
+           (ctaURL == "Create and attach a Cloud Block Storage volume") or
+           (ctaURL == "Cloud Databases") or
+           (ctaURL == "Getting started with Rackspace Public Cloud")%}
+          <p>Try out the <a href='https://www.rackspace.com/openstack/public'>OpenStack Public Cloud</a> today!</p>
+        {% elif (ctaURL  == "Create a DKIM TXT record") or
+           (ctaURL == "Rackspace Email and Hosted Exchange settings") or
+           (ctaURL == "Identifying suspicious email") or
+           (ctaURL == "Set up DNS records for Cloud Office email") or
+           (ctaURL == "Change a Microsoft Exchange mailbox password") or
+           (ctaURL == "Open ports in the Linux firewall to access POP and IMAP mail servers") or
+           (ctaURL == "Rackspace Email") or
+           (ctaURL == "Export email address data from Outlook 2016 for Windows") or
+           (ctaURL == "Manage multi-factor authentication for users in Office 365") or
+           (ctaURL == "Manually configure iOS devices for email hosted on Exchange 2013") or
+           (ctaURL == "Create an SPF TXT record") or
+           (ctaURL == "Add a domain in Office 365") or
+           (ctaURL == "Manually configure Outlook 2013 for email hosted on Exchange 2013") or
+           (ctaURL == "Outlook Web Access for Exchange") or
+           (ctaURL == "Configure email clients and mobile devices for email hosted on Exchange") or
+           (ctaURL == "Export or import a set of rules from Outlook") or
+           (ctaURL == "Recover deleted email in Webmail") or
+           (ctaURL == "Manually configure Outlook 2010 for email hosted on Exchange 2010") or
+           (ctaURL == "Set up Autodiscover for Outlook") or
+           (ctaURL == "Set up Microsoft Exchange email forwarding") or
+           (ctaURL == "Getting started with Rackspace Hosted Email") or
+           (ctaURL == "Manually configure iOS devices for email hosted on Exchange 2010") or
+           (ctaURL == "Migrate your email by using the Self-Service Migration Tool") or
+           (ctaURL == "View and read email headers in the Outlook Web App")%}
+          <p>Try <a href='https://www.rackspace.com/email-hosting'>Microsoft or Rackspace email</a>, free for 14 days!</p>
+        {% else %}
+          <p>End-to-End Multicloud Solutions.&nbsp;&nbsp;&nbsp;<strong>Solving Together.&trade;</strong>&nbsp;&nbsp;&nbsp;Learn more at <a href='https://www.rackspace.com/'>Rackspace.com</a></p>
+        {% endif %}
       </div>
     </div>
 </div>
