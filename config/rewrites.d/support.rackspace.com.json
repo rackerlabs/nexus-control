@@ -1666,6 +1666,13 @@
          "to": "/how-to/article-retired/",
          "rewrite": false,
          "status": 301
+      },
+      {
+         "description": "Retire linux-htaccess-tips-and-tricks",
+         "from": "^\\/how-to\\/linux-htaccess-tips-and-tricks(.*)$",
+         "to": "/how-to/article-retired/",
+         "rewrite": false,
+         "status": 301
       }
     ]
 }
