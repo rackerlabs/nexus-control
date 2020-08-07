@@ -715,6 +715,74 @@ a {
       }
     }
   }
+
+  #banner-maintenance-container {
+    background: #EB0000;
+
+    .banner-maintenance {
+      position: relative;
+      width: 960px;
+      margin: 0 auto;
+      padding: 15px 0;
+
+      @media only screen and (max-width: 375px) {
+        width: 100%;
+      }
+
+      @media only screen and (min-width: 376px) and (max-width: 600px) {
+        width: 100%;
+      }
+
+      i {
+        position: absolute;
+        top: 15px;
+        left: 0;
+        font-size: 18px;
+        color: #EB0000;
+      }
+
+      p {
+        text-align: center;
+        font-family: $font-family-primary;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 17px;
+        color: #FFFFFF;
+
+        @media only screen and (max-width: 600px) {
+          font-size: 14px;
+        }
+
+        strong {
+          font-weight: 700;
+        }
+
+        a {
+          color: #ffffff;
+          text-decoration: underline;
+
+          &:hover {
+            color: #222;
+          }
+        }
+      }
+    }
+
+    #banner-maintenance-close {
+      position: absolute;
+      top: 18px;
+      right: 0;
+      font-size: 36px;
+      font-weight: 300;
+      line-height: 3px;
+      text-decoration: none;
+      color: #665e4e;
+
+      &:hover {
+        color: #312d26;
+      }
+    }
+  }
 }
 // Tooltip
 .ui-tooltip {
