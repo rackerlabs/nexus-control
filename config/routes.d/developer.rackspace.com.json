@@ -55,6 +55,7 @@
       "^/docs/fanatical-support-aws/": "user-guide.html",
       "^/docs/fanatical-support-gcp/": "user-guide.html",
       "^/docs/service-blocks/": "user-guide.html",
+      "^/docs/dxp-customer-handbook/": "user-guide.html",
       "^/sdks": "sdks-home.html",
       "^/sdks/.+?": "sdks-page.html",
       "\\.xml$": "feed.xml",
