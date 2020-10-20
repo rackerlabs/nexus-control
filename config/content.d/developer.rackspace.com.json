@@ -68,6 +68,7 @@
       "/docs/microsoft-hyper-v/hyper-v-handbook/": "https://github.com/rackerlabs/mpc-hyper-v/hyper-v-handbook/prod/",
       "/docs/service-blocks/": "https://github.com/rackerlabs/docs-service-blocks/prod/",
       "/docs/dxp-customer-handbook/": "https://github.com/rackerlabs/docs-dxp-handbook/prod/",
+      "/docs/portal-onboarding-guide/": "https://github.com/rackerlabs/docs-portal-onboarding-guide/prod/",
       "/search/": null
     },
     "proxy": {
