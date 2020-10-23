@@ -69,6 +69,7 @@
       "/docs/service-blocks/": "https://github.com/rackerlabs/docs-service-blocks/staging-revs/",
       "/docs/dxp-customer-handbook/": "https://github.com/rackerlabs/docs-dxp-handbook/staging-revs/",
       "/docs/portal-onboarding-guide/": "https://github.com/rackerlabs/docs-portal-onboarding-guide/staging-revs",
+        "/search/": null
     },
     "proxy": {
       "/favicon.ico": "https://c0e9a73362c5d06f19d6-b39ff74cb91d713ac1253c5ae00eaccb.ssl.cf1.rackcdn.com/UI/favicon/favicon.ico",
