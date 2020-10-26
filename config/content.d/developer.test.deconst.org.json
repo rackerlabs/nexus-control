@@ -46,9 +46,10 @@
           "/docs/rkaas/v2.1.x/": "https://github.com/rackerlabs/kaas/2.1.x/test/",
           "/docs/rkaas/v3.0.x/": "https://github.com/rackerlabs/kaas/3.0.x/test/",
           "/docs/rkaas/v3.1.x/": "https://github.com/rackerlabs/kaas/3.1.x/test/",
-          "/docs/rkaas/latest/": "https://github.com/rackerlabs/kaas/3.1.x/test/",
+          "/docs/rkaas/v4.0.x/": "https://github.com/rackerlabs/kaas/4.0.x/test/",
+          "/docs/rkaas/latest/": "https://github.com/rackerlabs/kaas/4.0.x/test/",
           "/docs/rkaas/master/": "https://github.com/rackerlabs/kaas/master/test/",
-          "/docs/rkaas/": "https://github.com/rackerlabs/kaas/3.1.x/test/",
+          "/docs/rkaas/": "https://github.com/rackerlabs/kaas/4.0.x/test/",
           "/docs/rpc-vmware/vcenter/": "https://github.com/rackerlabs/rpc-vmware/vcenter-handbook/test/",
           "/docs/rpc-vmware/vcloud/v1/": "https://github.com/rackerlabs/rpc-vmware/vcloud-handbook/test/",
           "/docs/rpc-vmware/vcloud/v1.5/": "https://github.com/rackerlabs/rpc-vmware/vcloud-handbook-v1.5/test/",
@@ -67,7 +68,8 @@
           "/docs/microsoft-hyper-v/hyper-v-handbook/": "https://github.com/rackerlabs/mpc-hyper-v/hyper-v-handbook/test/",
           "/docs/service-blocks/": "https://github.com/rackerlabs/docs-service-blocks/test/",
           "/docs/dxp-customer-handbook/": "https://github.com/rackerlabs/docs-dxp-handbook/test/",
-          "/docs/docs-colocation-guide/": "https://github.com/rackerlabs/docs-colocation-guide/staging-revs/",
+          "/docs/portal-onboarding-guide/": "https://github.com/rackerlabs/docs-portal-onboarding-guide/test/",
+          "/docs/docs-colocation-guide/": "https://github.com/rackerlabs/docs-colocation-guide/test/",
           "/search/": null
       },
       "proxy": {

@@ -46,9 +46,10 @@
       "/docs/rkaas/v2.1.x/": "https://github.com/rackerlabs/kaas/2.1.x/prod",
       "/docs/rkaas/v3.0.x/": "https://github.com/rackerlabs/kaas/3.0.x/prod/",
       "/docs/rkaas/v3.1.x/": "https://github.com/rackerlabs/kaas/3.1.x/prod/",
-      "/docs/rkaas/latest/": "https://github.com/rackerlabs/kaas/3.1.x/prod/",
+      "/docs/rkaas/v4.0.x/": "https://github.com/rackerlabs/kaas/4.0.x/prod/",
+      "/docs/rkaas/latest/": "https://github.com/rackerlabs/kaas/4.0.x/prod/",
       "/docs/rkaas/master/": "https://github.com/rackerlabs/kaas/master/prod/",
-      "/docs/rkaas/": "https://github.com/rackerlabs/kaas/3.1.x/prod/",
+      "/docs/rkaas/": "https://github.com/rackerlabs/kaas/4.0.x/prod/",
       "/docs/rpc-vmware/vcenter/": "https://github.com/rackerlabs/rpc-vmware/vcenter-handbook/prod/",
       "/docs/rpc-vmware/vcloud/v1/": "https://github.com/rackerlabs/rpc-vmware/vcloud-handbook/prod/",
       "/docs/rpc-vmware/vcloud/v1.5/": "https://github.com/rackerlabs/rpc-vmware/vcloud-handbook-v1.5/prod/",
@@ -67,6 +68,7 @@
       "/docs/microsoft-hyper-v/hyper-v-handbook/": "https://github.com/rackerlabs/mpc-hyper-v/hyper-v-handbook/prod/",
       "/docs/service-blocks/": "https://github.com/rackerlabs/docs-service-blocks/prod/",
       "/docs/dxp-customer-handbook/": "https://github.com/rackerlabs/docs-dxp-handbook/prod/",
+      "/docs/portal-onboarding-guide/": "https://github.com/rackerlabs/docs-portal-onboarding-guide/prod/",
       "/search/": null
     },
     "proxy": {

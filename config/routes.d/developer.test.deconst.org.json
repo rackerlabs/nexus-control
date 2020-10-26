@@ -56,6 +56,7 @@
             "^/docs/fanatical-support-gcp/": "developer.rackspace.com/user-guide.html",
             "^/docs/service-blocks/": "developer.rackspace.com/user-guide.html",
             "^/docs/dxp-customer-handbook/": "developer.rackspace.com/user-guide.html",
+            "^/docs/portal-onboarding-guide/": "developer.rackspace.com/user-guide.html",
             "^/docs/docs-colocation-guide/": "developer.rackspace.com/user-guide.html",
             "^/sdks": "developer.rackspace.com/sdks-home.html",
             "^/sdks/.+?": "developer.rackspace.com/sdks-page.html",

@@ -46,9 +46,10 @@
       "/docs/rkaas/v2.1.x/": "https://github.com/rackerlabs/kaas/2.1.x/staging-revs/",
       "/docs/rkaas/v3.0.x/": "https://github.com/rackerlabs/kaas/3.0.x/staging-revs/",
       "/docs/rkaas/v3.1.x/": "https://github.com/rackerlabs/kaas/3.1.x/staging-revs/",
-      "/docs/rkaas/latest/": "https://github.com/rackerlabs/kaas/3.1.x/staging-revs/",
+      "/docs/rkaas/v4.0.x/": "https://github.com/rackerlabs/kaas/4.0.x/staging-revs/",
+      "/docs/rkaas/latest/": "https://github.com/rackerlabs/kaas/4.0.x/staging-revs/",
       "/docs/rkaas/master/": "https://github.com/rackerlabs/kaas/master/staging-revs/",
-      "/docs/rkaas/": "https://github.com/rackerlabs/kaas/v3.1.x/staging-revs/",
+      "/docs/rkaas/": "https://github.com/rackerlabs/kaas/v4.0.x/staging-revs/",
       "/docs/rpc-vmware/vcenter/": "https://github.com/rackerlabs/rpc-vmware/vcenter-handbook/staging-revs/",
       "/docs/rpc-vmware/vcloud/v1/": "https://github.com/rackerlabs/rpc-vmware/vcloud-handbook/staging-revs/",
       "/docs/rpc-vmware/vcloud/v1.5/": "https://github.com/rackerlabs/rpc-vmware/vcloud-handbook-v1.5/staging-revs/",
@@ -67,8 +68,9 @@
       "/docs/microsoft-hyper-v/hyper-v-handbook/": "https://github.com/rackerlabs/mpc-hyper-v/hyper-v-handbook/staging-revs/",
       "/docs/service-blocks/": "https://github.com/rackerlabs/docs-service-blocks/staging-revs/",
       "/docs/dxp-customer-handbook/": "https://github.com/rackerlabs/docs-dxp-handbook/staging-revs/",
-      "/docs/docs-colocation-guide/": "https://github.com/rackerlabs/docs-colocation-guide/staging-revs/",
-      "/search/": null
+      "/docs/portal-onboarding-guide/": "https://github.com/rackerlabs/docs-portal-onboarding-guide/staging-revs",
+      "/docs/docs-colocation-guide/": "https://github.com/rackerlabs/docs-colocation-guide/staging-revs",
+        "/search/": null
     },
     "proxy": {
       "/favicon.ico": "https://c0e9a73362c5d06f19d6-b39ff74cb91d713ac1253c5ae00eaccb.ssl.cf1.rackcdn.com/UI/favicon/favicon.ico",
