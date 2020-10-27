@@ -57,6 +57,7 @@
       "^/docs/service-blocks/": "user-guide.html",
       "^/docs/dxp-customer-handbook/": "user-guide.html",
       "^/docs/portal-onboarding-guide/": "user-guide.html",
+      "^/docs/docs-colocation-guide/": "developer.rackspace.com/user-guide.html",
       "^/sdks": "sdks-home.html",
       "^/sdks/.+?": "sdks-page.html",
       "\\.xml$": "feed.xml",
