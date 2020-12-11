@@ -69,7 +69,7 @@
       "/docs/service-blocks/": "https://github.com/rackerlabs/docs-service-blocks/prod/",
       "/docs/dxp-customer-handbook/": "https://github.com/rackerlabs/docs-dxp-handbook/prod/",
       "/docs/portal-onboarding-guide/": "https://github.com/rackerlabs/docs-portal-onboarding-guide/prod/",
-      "/docs/docs-colocation-guide/": "https://github.com/rackerlabs/docs-colocation-guide/staging/",
+      "/docs/docs-colocation-guide/": "https://github.com/rackerlabs/docs-colocation-guide/prod/",
       "/search/": null
     },
     "proxy": {
