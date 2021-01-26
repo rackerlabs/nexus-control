@@ -47,5 +47,6 @@
   { "kind": "github", "project": "rackerlabs/docs-gcp" },
   { "kind": "github", "project": "rackerlabs/docs-colocation-guide" },
   { "kind": "github", "project": "rackerlabs/docs-dxp-handbook" },
-  { "kind": "github", "project": "rackerlabs/docs-portal-onboarding-guide" }
+  { "kind": "github", "project": "rackerlabs/docs-portal-onboarding-guide" },
+  { "kind": "github", "project": "rackerlabs/docs-dedicated-load-balancer-v3" }
 ]

@@ -70,6 +70,7 @@
           "/docs/dxp-customer-handbook/": "https://github.com/rackerlabs/docs-dxp-handbook/test/",
           "/docs/portal-onboarding-guide/": "https://github.com/rackerlabs/docs-portal-onboarding-guide/test/",
           "/docs/docs-colocation-guide/": "https://github.com/rackerlabs/docs-colocation-guide/test/",
+          "/docs/dedicated-load-balancer-v3/": "https://github.com/rackerlabs/docs-dedicated-load-balancer-v3/test/",
           "/search/": null
       },
       "proxy": {
