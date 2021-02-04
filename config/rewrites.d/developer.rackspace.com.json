@@ -139,13 +139,6 @@
             "status": 301
         },
         {
-            "description": "Redirect dedicated-load-balancer-v3 Quickstart URL",
-            "from": "^\\/docs\\/dedicated-load-balancer-v3\\/quickstart\\/?(.*)$",
-            "to": "/docs/dedicated-load-balancer-v3/getting-started/",
-            "rewrite": false,
-            "status": 301
-        },
-        {
             "description": "Redirect Identity developer-guide URL",
             "from": "^\\/docs\\/cloud-identity\\/v2\\/developer-guide\\/?(.*)$",
             "to": "/docs/cloud-identity/v2/",
@@ -338,13 +331,6 @@
           "from": "^\\/docs\\/private-cloud\\/rpc\\/\bv(9|1[01])\b\\/?(.*)$",
           "to": "/docs/private-cloud/rpc/v16",
           "rewrite:": false,
-          "status": 301
-        },
-        {
-          "description": "Redirect getting started URLs to quickstart content",
-          "from": "^\\/docs\\/([^/]+?)\\/getting-started\\/(.*?)",
-          "to": "/docs/$1/quickstart/$2",
-          "rewrite": false,
           "status": 301
         },
         {
