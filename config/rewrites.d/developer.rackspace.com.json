@@ -334,13 +334,6 @@
           "status": 301
         },
         {
-          "description": "Redirect getting started URLs to quickstart content",
-          "from": "^\\/docs\\/([^/]+?)\\/getting-started\\/(.*?)",
-          "to": "/docs/$1/quickstart/$2",
-          "rewrite": false,
-          "status": 301
-        },
-        {
           "description": "Redirect Server Virtualization URL",
           "from": "^\\/docs\\/managed-vmware-services\\/server-virt-handbook\\/?(.*)$",
           "to": "/docs/docs-vmware-server-virt/server-virt-handbook/",
