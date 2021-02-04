@@ -139,6 +139,13 @@
             "status": 301
         },
         {
+            "description": "Redirect dedicated-load-balancer-v3 Quickstart URL",
+            "from": "^\\/docs\\/dedicated-load-balancer-v3\\/quickstart\\/?(.*)$",
+            "to": "/docs/dedicated-load-balancer-v3/getting-started/",
+            "rewrite": false,
+            "status": 301
+        },
+        {
             "description": "Redirect Identity developer-guide URL",
             "from": "^\\/docs\\/cloud-identity\\/v2\\/developer-guide\\/?(.*)$",
             "to": "/docs/cloud-identity/v2/",
